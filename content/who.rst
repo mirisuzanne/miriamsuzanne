@@ -52,13 +52,18 @@ Then there are the artists
 who inspired, trained, and believed in me.
 *Bruce Hostetler*,
 *Dave Nofzinger*,
+*Susanne Ehst*,
 *Chris Wallace*,
 *Eric Good Kaufmann*,
 *Bryan Falcon*,
+*Don Yost*,
 *Jerry Peters*,
 *Eric Kanagy*,
 *Michelle Milne*,
 *Brian Freeland*,
+*E. Tracy Grinnell*,
+*Michelle Ellsworth*,
+*Caroline Bergvall*,
 and so on.
 
 This list is miserably incomplete.
