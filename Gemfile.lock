@@ -10,7 +10,7 @@ GEM
     modular-scale (0.0.5)
       compass (>= 0.11.5)
     sass (3.2.0.alpha.261)
-    susy (1.0.rc.2)
+    susy (1.0.rc.3)
       compass (>= 0.12.2)
       sass (>= 3.2.0.alpha.247)
 
@@ -22,4 +22,4 @@ DEPENDENCIES
   compass (~> 0.12.2)
   modular-scale (~> 0.0.5)
   sass (~> 3.2.0.alpha.261)
-  susy (~> 1.0.rc.2)
+  susy (~> 1.0.rc.3)

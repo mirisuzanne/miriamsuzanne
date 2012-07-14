@@ -5,9 +5,6 @@
     {{ ctx.pub_date.strftime("%B %d, %Y") }}
   </time>
   {% endif %}
-
-  by { author }
-
   {% if ctx.tags %}
     in
     {% for tag in ctx.tags|sort(case_sensitive=true) %}
