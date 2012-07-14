@@ -2,21 +2,21 @@
 {% block title %}Blog{% endblock %}
 {% block body %}
 
-  {%- for entry in pagination.get_slice() %}
+  {%- for ctx in pagination.get_slice() %}
   <article class="post">
     <h2>
-      <a href="{{ link_to('page', slug=entry.slug) }}">
-        {{ entry.title }}
+      <a href="{{ link_to('page', slug=ctx.slug) }}">
+        {{ ctx.title }}
       </a>
     </h2>
 
-    {# @@@ include "_byline.html" #}
+    {% include "_byline.html" %}
 
     <div class="body">
-      {% if entry.summary %}
-        {{ entry.render_summary() }}
+      {% if ctx.summary %}
+        {{ ctx.render_summary() }}
       {% else %}
-        {{ entry.render_contents() }}
+        {{ ctx.render_contents() }}
       {% endif %}
     </div>
   </article>
