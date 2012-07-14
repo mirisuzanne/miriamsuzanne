@@ -1,9 +1,5 @@
 public: yes
 tags: [rstblog, tumblr]
-summary: |
-  I'm moving my blog off tumblr
-  and onto rstblog
-  for more customization and control.
 
 Moving off Tumblr
 =================

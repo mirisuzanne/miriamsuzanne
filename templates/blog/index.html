@@ -4,17 +4,21 @@
 
   {%- for entry in pagination.get_slice() %}
   <article class="post">
-    <h3>
+    <h2>
       <a href="{{ link_to('page', slug=entry.slug) }}">
         {{ entry.title }}
       </a>
-    </h3>
+    </h2>
 
     {# @@@ include "_byline.html" #}
 
-    {% if entry.summary %}
-    <div class="summary">{{ entry.render_summary() }}</div>
-    {% endif %}
+    <div class="body">
+      {% if entry.summary %}
+        {{ entry.render_summary() }}
+      {% else %}
+        {{ entry.render_contents() }}
+      {% endif %}
+    </div>
   </article>
   {%- endfor %}
 
