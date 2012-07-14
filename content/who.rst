@@ -32,3 +32,38 @@ in conjunction with their upcoming
 .. _New World Arts: http://newworldarts.org/
 .. _The LIDA Project: http://lida.org/
 .. _EOAGH: http://eoagh.com/
+
+Coconspirators
+--------------
+
+My work wouldn't be possible
+without the network of amazing artists
+I collaborate with every day.
+*Carl Meyer* & *Jonny Gerig Meyer* at Oddbird;
+*Daniel Eisenstat* & *Sondra Eby* at Teacup Gorilla;
+*Julie Rada* at Vicious Trap;
+*Chris Eppstein* and many others on the Compass_ project;
+*Jacob Liechty*, *Aaron Liechty*, & *Brandi Homan* in my writing group;
+and so on.
+
+.. _Compass: http://compass-style.org/
+
+Then there are the artists
+who inspired, trained, and believed in me.
+*Bruce Hostetler*,
+*Dave Nofzinger*,
+*Chris Wallace*,
+*Eric Good Kaufmann*,
+*Bryan Falcon*,
+*Jerry Peters*,
+*Eric Kanagy*,
+*Michelle Milne*,
+*Brian Freeland*,
+and so on.
+
+This list is miserably incomplete.
+There are many more artists who I've worked with,
+learned from,
+been inspired by,
+and shamelessly ripped off.
+Thanks to all of them.
