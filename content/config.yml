@@ -1,0 +1,11 @@
+---
+active_modules: [pygments, tags, blog]
+author: Eric A. Meyer
+canonical_url: http://andmeyer.com/
+output_folder: ../output
+template_path: ../templates
+modules:
+  pygments:
+    style: tango
+  blog:
+    index_url: /
