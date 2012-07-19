@@ -1,5 +1,5 @@
 // ----------------------------------------------------------------------------
-// Imports
+// Reset
 
 @import "compass/reset";
 @import "fonts";
@@ -13,12 +13,7 @@ body { @include serif; }
 
 .amp { @include amp; }
 
-h1, h2, h3, h4, strong { font-weight: bold; }
-em { font-style: italic; }
+// ----------------------------------------------------------------------------
+// Imports
 
-p, ul, ol, pre { @include trailer; }
-
-pre {
-  @include adjust-font-size-to($smallpx);
-  @include mono;
-}
+@import "type";

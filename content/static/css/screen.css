@@ -188,19 +188,16 @@ body {
   font-family: "BaskervilleAmp", Baskerville, Palatino, Cambria, Georgia, serif;
 }
 
-h1, h2, h3, h4, strong {
+body h1, body h2, body h3, body h4, body strong {
   font-weight: bold;
 }
-
-em {
+body em {
   font-style: italic;
 }
-
-p, ul, ol, pre {
+body p, body ul, body ol, body pre {
   margin-bottom: 1.33333em;
 }
-
-pre {
+body pre {
   font-size: 0.77778em;
   line-height: 1.71429em;
   font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;

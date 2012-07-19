@@ -1,0 +1,16 @@
+// ----------------------------------------------------------------------------
+// Typography
+
+%type {
+
+  h1, h2, h3, h4, strong { font-weight: bold; }
+  em { font-style: italic; }
+
+  p, ul, ol, pre { @include trailer; }
+
+  pre {
+    @include adjust-font-size-to($smallpx);
+    @include mono;
+  }
+
+}
