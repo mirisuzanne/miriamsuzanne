@@ -1,4 +1,19 @@
 // ----------------------------------------------------------------------------
+// Ampersand
+
+@include font-face (
+  'BaskervilleAmp',
+  font-files(
+    'Baskerville-amp-webfont.woff', 'woff',
+    'Baskerville-amp-webfont.ttf', 'truetype',
+    'Baskerville-amp-webfont.svg#webfont', 'svg'
+  ),
+  'Baskerville-amp-webfont.eot',
+  normal,
+  normal
+);
+
+// ----------------------------------------------------------------------------
 // CenturyOldStyle
 
 @include font-face(
@@ -192,4 +207,8 @@ $mono-stack   : Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "D
 
 @mixin mono {
   font-family: $mono-stack;
+}
+
+@mixin amp {
+  font-family: 'BaskervilleAmp', $serif-stack;
 }

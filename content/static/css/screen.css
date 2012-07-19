@@ -56,6 +56,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @font-face {
+  font-family: "BaskervilleAmp";
+  src: url('../fonts/Baskerville-amp-webfont.eot');
+  src: url('../fonts/Baskerville-amp-webfont.eot?#iefix') format('eot'), url('../fonts/Baskerville-amp-webfont.woff') format('woff'), url('../fonts/Baskerville-amp-webfont.ttf') format('truetype'), url('../fonts/Baskerville-amp-webfont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "CenturyOldStyle";
   src: url('../fonts/CenturyOldStyle-Regular-webfont.eot');
   src: url('../fonts/CenturyOldStyle-Regular-webfont.eot?#iefix') format('eot'), url('../fonts/CenturyOldStyle-Regular-webfont.woff') format('woff'), url('../fonts/CenturyOldStyle-Regular-webfont.ttf') format('truetype'), url('../fonts/CenturyOldStyle-Regular-webfont.svg#webfontSMxOInhK') format('svg');
@@ -173,11 +181,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 html {
   font-size: 16px;
-  line-height: 1.313em;
+  line-height: 1.3125em;
 }
 
 body {
   font-family: "CenturyOldStyle", Baskerville, Palatino, Cambria, Georgia, serif;
+}
+
+.amp {
+  font-family: "BaskervilleAmp", Baskerville, Palatino, Cambria, Georgia, serif;
 }
 
 h1, h2, h3, h4, strong {
@@ -189,7 +201,7 @@ em {
 }
 
 p, ul, ol, pre {
-  margin-bottom: 1.313em;
+  margin-bottom: 1.3125em;
 }
 
 pre {

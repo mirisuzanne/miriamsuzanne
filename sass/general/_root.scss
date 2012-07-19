@@ -11,6 +11,8 @@
 
 body { @include serif; }
 
+.amp { @include amp; }
+
 h1, h2, h3, h4, strong { font-weight: bold; }
 em { font-style: italic; }
 
