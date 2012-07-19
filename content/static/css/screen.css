@@ -175,13 +175,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-style: italic;
 }
 
-* html {
-  font-size: 100%;
-}
-
 html {
-  font-size: 16px;
-  line-height: 1.3125em;
+  font-size: 112.5%;
+  line-height: 1.33333em;
 }
 
 body {
@@ -201,17 +197,17 @@ em {
 }
 
 p, ul, ol, pre {
-  margin-bottom: 1.3125em;
+  margin-bottom: 1.33333em;
 }
 
 pre {
-  font-size: 0.75em;
-  line-height: 1.75em;
+  font-size: 0.77778em;
+  line-height: 1.71429em;
   font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
 }
 
 body {
-  max-width: 44em;
+  max-width: 29em;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1em;
