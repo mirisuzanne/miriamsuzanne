@@ -1,4 +1,9 @@
 public: yes
+summary: |
+  In response to a request on twitter,
+  I wrote a simple function
+  for creating striped gradients
+  with Sass.
 
 Creating a striped background gradient in Sass
 ==============================================
@@ -8,7 +13,7 @@ She was working on a `bit of code`_ to create
 a rainbow-striped background gradient
 using any set of arbitrary colors.
 
-Here's my solution,
+This is my solution,
 in the form of a Sass function.
 This requires `Sass 3.2`_
 (currently in alpha)
@@ -24,7 +29,7 @@ Variables
 
 .. code:: scss
 
-  $mycolors: red orange yellow green blue indigo violet;
+  $rainbow: red orange yellow green blue indigo violet;
 
 You could set individual variables for each color as well.
 You would still pass them all as a single argument,
@@ -38,7 +43,7 @@ Function
   // Returns a striped gradient for use anywhere gradients are accepted.
   // - $position: the starting position or angle of the gradient.
   // - $colors: a list of all the colors to be used.
-  @function rainbow($position, $colors) {
+  @function stripes($position, $colors) {
     $colors: if(type-of($colors) != 'list', compact($colors), $colors);
     $gradient: compact();
     $width: 100% / length($colors);
@@ -58,5 +63,12 @@ Use
 .. code:: scss
 
   .rainbow {
-    @include background-image(rainbow(left, $colors));
+    @include background-image(stripes(left, $rainbow));
   }
+
+Demo
+----
+
+.. raw:: html
+
+  <div class="demo-rainbow"></div>

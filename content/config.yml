@@ -6,6 +6,6 @@ output_folder: ../output
 template_path: ../templates
 modules:
   pygments:
-    style: tango
+    style: borland
   blog:
     index_url: /

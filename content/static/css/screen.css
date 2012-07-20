@@ -215,3 +215,13 @@ body:after {
   display: table;
   clear: both;
 }
+
+.demo-rainbow {
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ff0000), color-stop(14.28571%, #ff0000), color-stop(14.28571%, #ffa500), color-stop(28.57143%, #ffa500), color-stop(28.57143%, #ffff00), color-stop(42.85714%, #ffff00), color-stop(42.85714%, #008000), color-stop(57.14286%, #008000), color-stop(57.14286%, #0000ff), color-stop(71.42857%, #0000ff), color-stop(71.42857%, #4b0082), color-stop(85.71429%, #4b0082), color-stop(85.71429%, #ee82ee), color-stop(100%, #ee82ee));
+  background-image: -webkit-linear-gradient(left, #ff0000 0%, #ff0000 14.28571%, #ffa500 14.28571%, #ffa500 28.57143%, #ffff00 28.57143%, #ffff00 42.85714%, #008000 42.85714%, #008000 57.14286%, #0000ff 57.14286%, #0000ff 71.42857%, #4b0082 71.42857%, #4b0082 85.71429%, #ee82ee 85.71429%, #ee82ee 100%);
+  background-image: -moz-linear-gradient(left, #ff0000 0%, #ff0000 14.28571%, #ffa500 14.28571%, #ffa500 28.57143%, #ffff00 28.57143%, #ffff00 42.85714%, #008000 42.85714%, #008000 57.14286%, #0000ff 57.14286%, #0000ff 71.42857%, #4b0082 71.42857%, #4b0082 85.71429%, #ee82ee 85.71429%, #ee82ee 100%);
+  background-image: -o-linear-gradient(left, #ff0000 0%, #ff0000 14.28571%, #ffa500 14.28571%, #ffa500 28.57143%, #ffff00 28.57143%, #ffff00 42.85714%, #008000 42.85714%, #008000 57.14286%, #0000ff 57.14286%, #0000ff 71.42857%, #4b0082 71.42857%, #4b0082 85.71429%, #ee82ee 85.71429%, #ee82ee 100%);
+  background-image: -ms-linear-gradient(left, #ff0000 0%, #ff0000 14.28571%, #ffa500 14.28571%, #ffa500 28.57143%, #ffff00 28.57143%, #ffff00 42.85714%, #008000 42.85714%, #008000 57.14286%, #0000ff 57.14286%, #0000ff 71.42857%, #4b0082 71.42857%, #4b0082 85.71429%, #ee82ee 85.71429%, #ee82ee 100%);
+  background-image: linear-gradient(left, #ff0000 0%, #ff0000 14.28571%, #ffa500 14.28571%, #ffa500 28.57143%, #ffff00 28.57143%, #ffff00 42.85714%, #008000 42.85714%, #008000 57.14286%, #0000ff 57.14286%, #0000ff 71.42857%, #4b0082 71.42857%, #4b0082 85.71429%, #ee82ee 85.71429%, #ee82ee 100%);
+  height: 5.33333em;
+}
