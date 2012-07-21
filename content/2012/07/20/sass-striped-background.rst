@@ -1,4 +1,5 @@
 public: yes
+tags: [sass, demo, code]
 summary: |
   In response to a request on twitter,
   I wrote a simple function
