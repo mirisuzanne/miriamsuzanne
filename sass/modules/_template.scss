@@ -13,11 +13,10 @@ $ampsize: $xxlargepx;
     display: inline-block;
     margin-left: -.1em;
     vertical-align: middle;
-    color: $blue-darker;
+    color: $blue-dark;
   }
 
   a {
-    #{$link} { color: $pink-dark; }
     #{$focus} { color: $blue-dark; }
   }
 }

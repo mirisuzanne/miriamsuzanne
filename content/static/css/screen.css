@@ -278,10 +278,7 @@ body:after {
   display: inline-block;
   margin-left: -0.1em;
   vertical-align: middle;
-  color: #007399;
-}
-[role="banner"] a:link, [role="banner"] a:visited {
-  color: #b30059;
+  color: #0099cc;
 }
 [role="banner"] a:focus, [role="banner"] a:hover, [role="banner"] a:active {
   color: #0099cc;
