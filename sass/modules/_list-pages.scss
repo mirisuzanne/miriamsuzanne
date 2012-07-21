@@ -1,0 +1,30 @@
+// ----------------------------------------------------------------------------
+// List Pages
+
+.blog-archive, .tag-archive {
+  @include leader;
+}
+
+// ----------------------------------------------------------------------------
+// Blog Archive
+
+.blog-archive {
+  li {
+    list-style-type: none;
+    ul { margin-left: 0; }
+    li {
+      list-style-type: disc;
+    }
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Tag List
+
+.tag-list {
+  @include delimited-list;
+  & {
+    @include leader;
+    display: block;
+  }
+}

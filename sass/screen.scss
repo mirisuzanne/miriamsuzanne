@@ -1,9 +1,13 @@
 // ----------------------------------------------------------------------------
-// Imports
+// Base
 
 @import "base/settings";
 @import "general/root";
 @import "layout/base";
 
+// ----------------------------------------------------------------------------
+// Modules
+
 @import "modules/template";
+@import "modules/list-pages";
 @import "modules/inline-demos";

@@ -2,7 +2,7 @@
 {% block title %}Tags{% endblock %}
 {% block body %}
   <h1 class="title">Tags</h1>
-  <ul class=tagcloud>
+  <ul class="tag-list">
   {%- for tag in get_tags(limit=50) %}
     <li>
       <a href="{{ link_to('tag', tag=tag.name) }}">{{ tag.name }}</a>
