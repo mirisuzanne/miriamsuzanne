@@ -1,16 +1,65 @@
 // ----------------------------------------------------------------------------
+// Links
+
+a {
+  &:hover, &:active {
+    outline: none;
+  }
+  #{$link} {
+    color: $alt;
+    text-decoration: none;
+  }
+  #{$focus} {
+    color: $accent;
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Ampersand
+
+.amp { @include amp; }
+
+// ----------------------------------------------------------------------------
 // Typography
 
 %type {
 
-  h1, h2, h3, h4, strong { font-weight: bold; }
-  em { font-style: italic; }
+  h1 {
+    @include adjust-font-size-to($xlargepx);
+    a {
+      #{$link} { color: $pink-dark; }
+      #{$focus} { color: $blue-dark; }
+    }
+  }
+
+  h2 {
+    @include adjust-font-size-to($largepx);
+    @include trailer(.5,$largepx)
+  }
+
+  h3, h4, strong { font-weight: bold; }
+  h5, h6, em { font-style: italic; }
 
   p, ul, ol, pre { @include trailer; }
+
+  ul, ol {
+    ul, ol { margin-left: rhythm(1); }
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
 
   pre {
     @include adjust-font-size-to($smallpx);
     @include mono;
+    margin-left: rhythm(-.5,$smallpx);
+    padding: rhythm(.5,$smallpx);
+    border-left: 3px solid $pink-lightest;
   }
 
 }

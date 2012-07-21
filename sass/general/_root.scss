@@ -7,11 +7,22 @@
 // ----------------------------------------------------------------------------
 // Root
 
+$noise    : image-url('noise.png');
+$bg1      : rgba($pink-lightest,.25);
+$bg2      : rgba($blue-lightest,.25);
+$gradient : linear-gradient(top, $bg1, $bg2);
+
 @include establish-baseline;
 
-body { @include serif; }
+html {
+  @include background($bg1);
+  @include background($gradient, $noise);
+  @include text-shadow(rgba(white,.5) 0 1px 0);
+  background-attachment: fixed;
+  color: $base;
+}
 
-.amp { @include amp; }
+body { @include serif; }
 
 // ----------------------------------------------------------------------------
 // Imports

@@ -5,6 +5,5 @@
 @import "general/root";
 @import "layout/base";
 
+@import "modules/template";
 @import "modules/inline-demos";
-
-body { @extend %type; }

@@ -1,0 +1,84 @@
+// ----------------------------------------------------------------------------
+// Banner
+
+$logosize: $largepx;
+$ampsize: $xxlargepx;
+
+[role="banner"] {
+  @include adjust-font-size-to($logosize);
+  @include leader(1,$logosize);
+
+  .amp {
+    @include adjust-font-size-to($ampsize,3,$logosize);
+    display: inline-block;
+    margin-left: -.1em;
+    vertical-align: middle;
+    color: $blue-darker;
+  }
+
+  a {
+    #{$link} { color: $pink-dark; }
+    #{$focus} { color: $blue-dark; }
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Navigation
+
+[role="navigation"] {
+  @include sanscond;
+  @include leader(-.5);
+  @include trailer(2);
+
+  ul { @include inline-block-list; }
+
+  a {
+    #{$link} {
+      margin-right: rhythm(1);
+      color: $pink-dark;
+      &:before { content: "/"; }
+    }
+    #{$focus} { color: $blue-dark; }
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Main
+
+[role="main"] {
+  @extend %type;
+  @include trailer(2);
+  .post { @include trailer(2); }
+  .byline {
+    color: $mid;
+    font-style: italic;
+  }
+  .readmore {
+    font-style: italic;
+    &:after { content: "»"; }
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Contentinfo
+
+$footsize: $smallpx;
+
+[role="contentinfo"] {
+  @include sanscond;
+  @include adjust-font-size-to($footsize);
+  @include border-top-radius;
+  clear: both;
+  margin: 0 0 - $grid-padding;
+  padding: rhythm(1,$footsize) $grid-padding;
+  overflow: hidden;
+  background: $pink-lightest;
+  background: rgba($pink-lightest,.5);
+  color: $mid;
+  text-transform: uppercase;
+
+  .colophon {
+    @include trailer(1,$footsize);
+  }
+}
+

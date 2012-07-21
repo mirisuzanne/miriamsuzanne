@@ -4,11 +4,11 @@
 
   {%- for ctx in pagination.get_slice() %}
   <article class="post">
-    <h2>
+    <h1 class="title">
       <a href="{{ link_to('page', slug=ctx.slug) }}">
         {{ ctx.title }}
       </a>
-    </h2>
+    </h1>
 
     {% include "_byline.html" %}
 
