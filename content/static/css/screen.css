@@ -213,8 +213,14 @@ a:focus, a:hover, a:active {
 }
 
 [role="main"] h1 {
-  font-size: 2.38889em;
-  line-height: 1.11628em;
+  font-size: 1.77778em;
+  line-height: 1.5em;
+}
+@media (min-width: 34.875em) {
+  [role="main"] h1 {
+    font-size: 2.38889em;
+    line-height: 1.11628em;
+  }
 }
 [role="main"] h1 a:link, [role="main"] h1 a:visited {
   color: #b30059;
@@ -223,9 +229,16 @@ a:focus, a:hover, a:active {
   color: #0099cc;
 }
 [role="main"] h2 {
-  font-size: 1.77778em;
-  line-height: 1.5em;
-  margin-bottom: 0.375em;
+  font-size: 1.33333em;
+  line-height: 2em;
+  margin-bottom: 0.5em;
+}
+@media (min-width: 34.875em) {
+  [role="main"] h2 {
+    font-size: 1.77778em;
+    line-height: 1.5em;
+    margin-bottom: 0.375em;
+  }
 }
 [role="main"] h3, [role="main"] h4, [role="main"] strong {
   font-weight: bold;

@@ -25,7 +25,10 @@ a {
 %type {
 
   h1 {
-    @include adjust-font-size-to($xlargepx);
+    @include adjust-font-size-to($largepx);
+    @include at-breakpoint($total-columns) {
+      @include adjust-font-size-to($xlargepx);
+    }
     a {
       #{$link} { color: $pink-dark; }
       #{$focus} { color: $blue-dark; }
@@ -33,8 +36,12 @@ a {
   }
 
   h2 {
-    @include adjust-font-size-to($largepx);
-    @include trailer(.5,$largepx)
+    @include adjust-font-size-to($medpx);
+    @include trailer(.5,$medpx);
+    @include at-breakpoint($total-columns) {
+      @include adjust-font-size-to($largepx);
+      @include trailer(.5,$largepx);
+    }
   }
 
   h3, h4, strong { font-weight: bold; }
