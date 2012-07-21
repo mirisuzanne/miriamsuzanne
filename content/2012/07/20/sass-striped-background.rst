@@ -6,8 +6,8 @@ summary: |
   for creating striped gradients
   with Sass.
 
-Creating a striped background gradient in Sass
-==============================================
+Creating a striped background in Sass
+=====================================
 
 Jina_ asked twitter for Sass advice the other day.
 She was working on a `bit of code`_ to create
