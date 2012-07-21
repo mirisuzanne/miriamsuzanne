@@ -11,18 +11,20 @@ and performance.
 He is a co-founder, designer, and web developer with OddBird_;
 multi-instrumentalist and poet with `Teacup Gorilla`_;
 and all-around co-sucker with `Vicious Trap`_.
+He is also the creator of Susy_,
+and a core contributor to Compass_.
 
 Formerly Artistic Director of `New World Arts`_
 and Technical Director of `The LIDA Project`_,
 Eric is currently developing
-“Pity+Fear”, a clusterfuck opera
-with Vicious Trap;
-“Into The Green Green Mud”, a multimedia novel
-with Teacup Gorilla and OddBird;
-and “Variations on Riding Sidesaddle”,
-an open-source collective queer memory of the body
+a clusterfuck opera
+with Vicious Trap,
+a multimedia novel
+with OddBird & Teacup Gorilla,
+and an open-source queer memory of the body
 with anyone who is interested.
-A selection of his poetry will be published by EOAGH_ this fall,
+
+A selection of Eric's poetry will be published by EOAGH_ this fall,
 in conjunction with their upcoming
 “Anthology of Trans and Genderqueer Poetry.”
 
@@ -32,6 +34,8 @@ in conjunction with their upcoming
 .. _New World Arts: http://newworldarts.org/
 .. _The LIDA Project: http://lida.org/
 .. _EOAGH: http://eoagh.com/
+.. _Susy: http://susy.oddbird.net/
+.. _Compass: http://compass-style.org/
 
 Coconspirators
 --------------
@@ -42,14 +46,12 @@ I collaborate with every day.
 *Carl Meyer* & *Jonny Gerig Meyer* at Oddbird;
 *Daniel Eisenstat* & *Sondra Eby* at Teacup Gorilla;
 *Julie Rada* at Vicious Trap;
-*Chris Eppstein* and many others on the Compass_ project;
+*Chris Eppstein*, *Danny Palmer*, and many others working on Compass and Susy;
 *Jacob Liechty*, *Aaron Liechty*, & *Brandi Homan* in my writing group;
 and so on.
 
-.. _Compass: http://compass-style.org/
-
 Then there are the artists
-who inspired, trained, and believed in me.
+who inspired & trained me.
 *Bruce Hostetler*,
 *Dave Nofzinger*,
 *Susanne Ehst*,
@@ -57,9 +59,13 @@ who inspired, trained, and believed in me.
 *Eric Good Kaufmann*,
 *Bryan Falcon*,
 *Don Yost*,
+*Merrill Krabill*,
 *Jerry Peters*,
+*Anne Bogart*,
+*Penny Metropulos*,
 *Eric Kanagy*,
 *Michelle Milne*,
+*Chuck Mee Jr*,
 *Brian Freeland*,
 *E. Tracy Grinnell*,
 *Michelle Ellsworth*,
