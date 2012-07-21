@@ -4,10 +4,6 @@ hide_title: yes
 projects
 ========
 
-.. |br| raw:: html
-
-  <br />
-
 events
 ------
 
@@ -60,7 +56,7 @@ organizations
   Like a mouse in a china shop.*
 
   - `Into the Green Green Mud`_:
-    *A love story, and an after-love story.*
+    *Love story, and after-love story.*
   - Misa Populi:
     *The Catholic Mass, dissected and rebuilt.*
 
@@ -71,9 +67,9 @@ organizations
   *A phrase, a blog, and occasionally a performance company.*
 
   - Pity+Fear (in development):
-    *A clusterfuck opera, and mythic science experiment.*
+    *Clusterfuck opera, and mythic science experiment.*
   - glASS (and other imponderables) (2011):
-    *A meditation on Indra’s Net,
+    *Meditation on Indra’s Net,
     the alchemy of sand into glass,
     and what constitutes polite behavior.*
   - Misa Populi (2010):
