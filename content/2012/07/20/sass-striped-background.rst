@@ -70,6 +70,13 @@ Use
 Demo
 ----
 
+Here is the resault:
+
 .. raw:: html
 
   <div class="demo-rainbow"></div>
+
+Jina has also posted a demo and explanation
+on CodePen_.
+
+.. _CodePen: http://codepen.io/jina/pen/iosjp
