@@ -267,6 +267,50 @@ a:focus, a:hover, a:active {
   border-left: 3px solid #ffcce6;
 }
 
+@font-face {
+  font-family: "IcoMoon";
+  src: url('../fonts/Icons.eot');
+  src: url('../fonts/Icons.eot?#iefix') format('eot'), url('../fonts/Icons.svg#Icons') format('svg'), url('../fonts/Icons.woff') format('woff'), url('../fonts/Icons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[data-icon]:before, .social a:before {
+  font-family: 'IcoMoon';
+  font-style: normal;
+  speak: none;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+  content: attr(data-icon);
+}
+
+.social [href*="facebook"]:before {
+  content: "\e000";
+}
+
+.social [href*="stackoverflow"]:before {
+  content: "\e003";
+}
+
+.social [href*="twitter"]:before {
+  content: "\e004";
+}
+
+.social [href*="vimeo"]:before {
+  content: "\e005";
+}
+
+.social [href*="github"]:before {
+  content: "\e006";
+}
+
+.social [href*="dribbble"]:before {
+  content: "\e007";
+}
+
 body {
   max-width: 29em;
   margin-left: auto;
@@ -361,7 +405,7 @@ body:after {
   -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
   clear: both;
-  margin: 0 -1em;
+  margin: 0 -1.28571em;
   padding: 1.71429em 1em;
   overflow: hidden;
   background: #ffcce6;
@@ -369,7 +413,38 @@ body:after {
   color: gray;
   text-transform: uppercase;
 }
-[role="contentinfo"] .colophon {
+
+.social {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  margin-bottom: 1.71429em;
+}
+.social li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  white-space: nowrap;
+}
+.social li {
+  *display: inline;
+}
+.social a {
+  margin-right: 0.85714em;
+}
+.social a:before {
+  font-size: 1.28571em;
+  line-height: 1.33333em;
+  padding-right: 0.33333em;
+}
+
+.colophon {
   margin-bottom: 1.71429em;
 }
 

@@ -68,16 +68,36 @@ $footsize: $smallpx;
   @include adjust-font-size-to($footsize);
   @include border-top-radius;
   clear: both;
-  margin: 0 0 - $grid-padding;
+  margin: 0 0 - ($base-font-size/$footsize*$grid-padding);
   padding: rhythm(1,$footsize) $grid-padding;
   overflow: hidden;
   background: $pink-lightest;
   background: rgba($pink-lightest,.5);
   color: $mid;
   text-transform: uppercase;
-
-  .colophon {
-    @include trailer(1,$footsize);
-  }
 }
 
+.social {
+  @include inline-block-list;
+  @include trailer(1,$footsize);
+
+  a {
+    margin-right: rhythm(.5,$footsize);
+    &:before {
+      @extend %icon-content;
+      @include adjust-font-size-to($base-font-size,1,$footsize);
+      padding-right: rhythm(.25);
+    }
+  }
+
+  [href*="twitter"] { @extend %icon-twitter; }
+  [href*="facebook"] { @extend %icon-facebook; }
+  [href*="dribbble"] { @extend %icon-dribbble; }
+  [href*="github"] { @extend %icon-github; }
+  [href*="vimeo"] { @extend %icon-vimeo; }
+  [href*="stackoverflow"] { @extend %icon-stack-overflow; }
+}
+
+.colophon {
+  @include trailer(1,$footsize);
+}

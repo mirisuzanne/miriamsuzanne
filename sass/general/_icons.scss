@@ -1,0 +1,51 @@
+@include font-face (
+  'IcoMoon',
+  font-files(
+    'Icons.svg#Icons', svg,
+    'Icons.woff', woff,
+    'Icons.ttf', truetype
+  ),
+  'Icons.eot',
+  normal,
+  normal
+);
+
+/* Use the following CSS code if you want to have a class per icon */
+%icon-content {
+  font-family: 'IcoMoon';
+  font-style: normal;
+  speak: none;
+}
+
+%icon:before {
+  @extend %icon-content;
+}
+
+%icon-replace {
+  @extend %icon;
+  position: relative;
+  min-width: 1em;
+  text-indent: -9999px;
+  &:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-indent: 0;
+  }
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+  @extend %icon-content;
+  content: attr(data-icon);
+}
+
+%icon-facebook:before       { content: "\e000"; }
+%icon-html5:before          { content: "\e001"; }
+%icon-css3:before           { content: "\e002"; }
+%icon-stack-overflow:before { content: "\e003"; }
+%icon-twitter:before        { content: "\e004"; }
+%icon-vimeo:before          { content: "\e005"; }
+%icon-github:before         { content: "\e006"; }
+%icon-dribbble:before       { content: "\e007"; }
+
