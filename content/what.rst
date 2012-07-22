@@ -1,10 +1,10 @@
 public: yes
 hide_title: yes
 
-projects
+Projects
 ========
 
-events
+Events
 ------
 
 - 7/21/12
@@ -12,7 +12,7 @@ events
   with Kelly Dulaney and `Teacup Gorilla`_
   (1112 E. 17th Avenue, Denver, CO.)
 
-projects
+Projects
 --------
 
 - `Into the Green Green Mud`_:
@@ -22,7 +22,7 @@ projects
 - Variations on Riding Sidesaddle:
   *Open-source queer memory of the body.*
 
-artifacts
+Artifacts
 ---------
 
 - `The Post-Obsolete Book <http://ericam.github.com/post-obsolete/>`_:
@@ -30,7 +30,7 @@ artifacts
 - Susy_:
   *Responsive grid system for web designers.*
 
-organizations
+Organizations
 -------------
 
 - `OddBird`_:
@@ -80,7 +80,7 @@ organizations
 
 .. _Vicious Trap: http://vicioustrap.com/
 
-and so on
+And so on
 ---------
 
 - Naropa Summer Writing Program (2012):
