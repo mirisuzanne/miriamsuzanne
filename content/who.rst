@@ -1,7 +1,7 @@
 public: yes
 hide_title: yes
 
-bio
+Bio
 ===
 
 **Eric A. Meyer** is a multimedia artist
