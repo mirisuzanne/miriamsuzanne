@@ -276,7 +276,7 @@ a:focus, a:hover, a:active {
 }
 
 /* Use the following CSS code if you want to have a class per icon */
-[data-icon]:before, .social a:before, .social .email:before {
+[data-icon]:before, .social a:before {
   font-family: 'IcoMoon';
   font-style: normal;
   speak: none;
@@ -315,7 +315,7 @@ a:focus, a:hover, a:active {
   content: "\e008";
 }
 
-.social .email:before {
+.social [href*="mailto"]:before {
   content: "\e009";
 }
 
@@ -425,16 +425,11 @@ body:after {
 .social {
   margin-bottom: 1.71429em;
 }
-.social p {
-  display: inline-block;
-  margin-right: 0.85714em;
-}
 .social ul {
   margin: 0;
   padding: 0;
   border: 0;
   overflow: hidden;
-  display: inline;
 }
 .social ul li {
   list-style-image: none;
@@ -450,10 +445,10 @@ body:after {
 .social ul li {
   *display: inline;
 }
-.social a, .social .email {
+.social a {
   margin-right: 0.85714em;
 }
-.social a:before, .social .email:before {
+.social a:before {
   font-size: 1.28571em;
   line-height: 1.33333em;
   padding-right: 0.33333em;

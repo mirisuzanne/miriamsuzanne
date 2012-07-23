@@ -80,17 +80,11 @@ $footsize: $smallpx;
 .social {
   @include trailer(1,$footsize);
 
-  p{
-    display: inline-block;
-    margin-right: rhythm(.5,$footsize);
-  }
-
   ul {
     @include inline-block-list;
-    display: inline;
   }
 
-  a, .email {
+  a {
     margin-right: rhythm(.5,$footsize);
     &:before {
       @extend %icon-content;
@@ -106,7 +100,7 @@ $footsize: $smallpx;
   [href*="vimeo"] { @extend %icon-vimeo; }
   [href*="stackoverflow"] { @extend %icon-stack-overflow; }
   [href*="feed"] { @extend %icon-feed; }
-  .email { @extend %icon-mail; }
+  [href*="mailto"] { @extend %icon-mail; }
 }
 
 .colophon {
