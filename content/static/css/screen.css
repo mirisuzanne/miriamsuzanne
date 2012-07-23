@@ -276,7 +276,7 @@ a:focus, a:hover, a:active {
 }
 
 /* Use the following CSS code if you want to have a class per icon */
-[data-icon]:before, .social a:before {
+[data-icon]:before, .social a:before, .social .email:before {
   font-family: 'IcoMoon';
   font-style: normal;
   speak: none;
@@ -309,6 +309,14 @@ a:focus, a:hover, a:active {
 
 .social [href*="dribbble"]:before {
   content: "\e007";
+}
+
+.social [href*="feed"]:before {
+  content: "\e008";
+}
+
+.social .email:before {
+  content: "\e009";
 }
 
 body {
@@ -415,13 +423,20 @@ body:after {
 }
 
 .social {
+  margin-bottom: 1.71429em;
+}
+.social p {
+  display: inline-block;
+  margin-right: 0.85714em;
+}
+.social ul {
   margin: 0;
   padding: 0;
   border: 0;
   overflow: hidden;
-  margin-bottom: 1.71429em;
+  display: inline;
 }
-.social li {
+.social ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
@@ -432,13 +447,13 @@ body:after {
   *vertical-align: auto;
   white-space: nowrap;
 }
-.social li {
+.social ul li {
   *display: inline;
 }
-.social a {
+.social a, .social .email {
   margin-right: 0.85714em;
 }
-.social a:before {
+.social a:before, .social .email:before {
   font-size: 1.28571em;
   line-height: 1.33333em;
   padding-right: 0.33333em;

@@ -1,5 +1,5 @@
 $(function () {
     'use strict';
 
-    $('#contact .email').defuscate();
+    $('.email').defuscate();
 });

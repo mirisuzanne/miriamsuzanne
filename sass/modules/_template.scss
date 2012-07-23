@@ -78,10 +78,19 @@ $footsize: $smallpx;
 }
 
 .social {
-  @include inline-block-list;
   @include trailer(1,$footsize);
 
-  a {
+  p{
+    display: inline-block;
+    margin-right: rhythm(.5,$footsize);
+  }
+
+  ul {
+    @include inline-block-list;
+    display: inline;
+  }
+
+  a, .email {
     margin-right: rhythm(.5,$footsize);
     &:before {
       @extend %icon-content;
@@ -96,6 +105,8 @@ $footsize: $smallpx;
   [href*="github"] { @extend %icon-github; }
   [href*="vimeo"] { @extend %icon-vimeo; }
   [href*="stackoverflow"] { @extend %icon-stack-overflow; }
+  [href*="feed"] { @extend %icon-feed; }
+  .email { @extend %icon-mail; }
 }
 
 .colophon {
