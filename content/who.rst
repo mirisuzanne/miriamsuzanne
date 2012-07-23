@@ -37,8 +37,8 @@ in conjunction with their upcoming
 .. _Susy: http://susy.oddbird.net/
 .. _Compass: http://compass-style.org/
 
-Coconspirators
---------------
+Co|conspirators
+---------------
 
 My work wouldn't be possible
 without the network of amazing artists

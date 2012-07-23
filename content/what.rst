@@ -22,16 +22,16 @@ Projects
 - Variations on Riding Sidesaddle:
   *Open-source queer memory of the body.*
 
-Artifacts
----------
+Art|ifacts
+----------
 
 - `The Post-Obsolete Book <http://ericam.github.com/post-obsolete/>`_:
   *Performance website memorializing obsolesence.*
 - Susy_:
   *Responsive grid system for web designers.*
 
-Organizations
--------------
+Dis|organizations
+-----------------
 
 - `OddBird`_:
   *Custom web tools for humans.*
@@ -80,8 +80,8 @@ Organizations
 
 .. _Vicious Trap: http://vicioustrap.com/
 
-And so on
----------
+And Cetera
+----------
 
 - Naropa Summer Writing Program (2012):
   *Student with E. Tracy Grinnell, Michelle Ellsworth, and Caroline Bergvall*
