@@ -6,8 +6,8 @@ summary: |
   for creating striped gradients
   with Sass.
 
-Creating a striped background in Sass
-=====================================
+Create a striped css background using Sass
+==========================================
 
 Jina_ asked twitter for Sass advice the other day.
 She was working on a `bit of code`_ to create
@@ -80,3 +80,8 @@ Jina has also posted a demo and explanation
 on CodePen_.
 
 .. _CodePen: http://codepen.io/jina/pen/iosjp
+
+(The real lesson here
+is that all the colors of the rainbow
+are acceptable CSS color keywords.
+Go forth and queer the web.)
