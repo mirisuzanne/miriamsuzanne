@@ -258,6 +258,13 @@ a:focus, a:hover, a:active {
 [role="main"] ol {
   list-style-type: decimal;
 }
+[role="main"] figcaption {
+  font-family: "FranklinGothicCond", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.77778em;
+  line-height: 1.71429em;
+  padding: 0.85714em;
+  background: rgba(255, 77, 166, 0.125);
+}
 [role="main"] pre {
   font-size: 0.77778em;
   line-height: 1.71429em;
@@ -390,6 +397,16 @@ body:after {
 }
 [role="main"] .post {
   margin-bottom: 2.66667em;
+  counter-reset: fig;
+}
+[role="main"] .post figcaption {
+  counter-increment: fig;
+}
+[role="main"] .post figcaption:before {
+  font-family: "CenturyOldStyle", Baskerville, Palatino, Cambria, Georgia, serif;
+  content: "fig." counter(fig);
+  margin-right: .4em;
+  font-style: italic;
 }
 [role="main"] .byline {
   color: gray;

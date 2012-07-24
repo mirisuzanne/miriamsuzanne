@@ -61,6 +61,13 @@ a {
     list-style-type: decimal;
   }
 
+  figcaption {
+    @include sanscond;
+    @include adjust-font-size-to($smallpx);
+    padding: rhythm(.5, $smallpx);
+    background: rgba($pink-light,.125);
+  }
+
   pre {
     @include adjust-font-size-to($smallpx);
     @include mono;
