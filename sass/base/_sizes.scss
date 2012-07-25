@@ -2,7 +2,7 @@
 // Defaults
 
 $base-size: 18px;
-$ratio: $fourth;
+$ratio: $minor-third $fifth;
 
 // ----------------------------------------------------------------------------
 // Variants
@@ -13,10 +13,10 @@ $small        : ms(-1,$norm);
 $xsmall       : ms(-2,$norm);
 $xxsmall      : ms(-3,$norm);
 $xxxsmall     : ms(-4,$norm);
-$large        : ms(2,$norm);
-$xlarge       : ms(3,$norm);
-$xxlarge      : ms(5,$norm);
-$xxxlarge     : ms(8,$norm);
+$large        : ms(3,$norm);
+$xlarge       : ms(5,$norm);
+$xxlarge      : ms(8,$norm);
+$xxxlarge     : ms(10,$norm);
 
 $normem       : 1em;
 $medem        : ms(1,$normem);
@@ -24,10 +24,10 @@ $smallem      : ms(-1,$normem);
 $xsmallem     : ms(-2,$normem);
 $xxsmallem    : ms(-3,$normem);
 $xxxsmallem   : ms(-4,$normem);
-$largeem      : ms(2,$normem);
-$xlargeem     : ms(3,$normem);
-$xxlargeem    : ms(5,$normem);
-$xxxlargeem   : ms(8,$normem);
+$largeem      : ms(3,$normem);
+$xlargeem     : ms(5,$normem);
+$xxlargeem    : ms(8,$normem);
+$xxxlargeem   : ms(10,$normem);
 
 $normpx       : $base-size;
 $medpx        : ms(1);
@@ -35,10 +35,10 @@ $smallpx      : ms(-1);
 $xsmallpx     : ms(-2);
 $xxsmallpx    : ms(-3);
 $xxxsmallpx   : ms(-4);
-$largepx      : ms(2);
-$xlargepx     : ms(3);
-$xxlargepx    : ms(5);
-$xxxlargepx   : ms(8);
+$largepx      : ms(3);
+$xlargepx     : ms(5);
+$xxlargepx    : ms(8);
+$xxxlargepx   : ms(10);
 
 // ----------------------------------------------------------------------------
 // Font Sizes

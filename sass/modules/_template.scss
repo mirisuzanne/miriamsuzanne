@@ -1,8 +1,8 @@
 // ----------------------------------------------------------------------------
 // Banner
 
-$logosize: $largepx;
-$ampsize: $xxlargepx;
+$logosize: $xlargepx;
+$ampsize: $xxxlargepx;
 
 [role="banner"] {
   @include adjust-font-size-to($logosize);

@@ -69,10 +69,10 @@ a {
   }
 
   pre {
-    @include adjust-font-size-to($smallpx);
+    @include adjust-font-size-to($xsmallpx);
     @include mono;
-    margin-left: rhythm(-.5,$smallpx);
-    padding: rhythm(.5,$smallpx);
+    margin-left: rhythm(-.5,$xsmallpx);
+    padding: rhythm(.5,$xsmallpx);
     border-left: 3px solid $pink-lightest;
   }
 
