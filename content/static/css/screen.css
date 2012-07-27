@@ -197,6 +197,10 @@ body {
   font-family: "CenturyOldStyle", Baskerville, Palatino, Cambria, Georgia, serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 a:hover, a:active {
   outline: none;
 }
