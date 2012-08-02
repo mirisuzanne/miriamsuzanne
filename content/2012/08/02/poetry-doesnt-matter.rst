@@ -85,7 +85,7 @@ If they look at my work and don't see a way in,
 they will turn around and leave.
 
 The concern for "poetry"
-is a nostalic yearning for a ready-made audience.
+is a nostalgic yearning for a ready-made audience.
 Let it die.
 We can do better with the audience that we build for ourselves.
 
