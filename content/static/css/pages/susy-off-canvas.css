@@ -56,7 +56,6 @@ header, footer {
     width: 74.46809%;
     float: left;
     margin-right: 2.12766%;
-    display: inline;
     margin-right: 0;
   }
 
@@ -64,7 +63,6 @@ header, footer {
     width: 23.40426%;
     float: left;
     margin-right: 2.12766%;
-    display: inline;
     margin-left: 0;
   }
 
@@ -72,8 +70,6 @@ header, footer {
     width: 23.40426%;
     float: right;
     margin-right: 0;
-    #margin-left: -1em;
-    display: inline;
     margin-right: -100%;
   }
 }
@@ -82,21 +78,17 @@ header, footer {
     width: 49.29577%;
     float: left;
     margin-right: 1.40845%;
-    display: inline;
   }
 
   .left, .right {
     width: 23.94366%;
     float: left;
     margin-right: 1.40845%;
-    display: inline;
   }
 
   .right {
     float: right;
     margin-right: 0;
-    #margin-left: -1em;
-    display: inline;
     margin-right: 0;
   }
 }
