@@ -44,7 +44,13 @@ a {
     }
   }
 
-  h3, h4, strong { font-weight: bold; }
+  h3 {
+    @include trailer;
+    text-transform: uppercase;
+    letter-spacing: .01em;
+  }
+
+  h4, strong { font-weight: bold; }
   h5, h6, em, blockquote { font-style: italic; }
 
   p, ul, ol, pre, blockquote { @include trailer; }
@@ -67,9 +73,17 @@ a {
     background: rgba($pink-light,.125);
   }
 
-  pre {
+  tt, code, pre {
     @include adjust-font-size-to($xsmallpx);
     @include mono;
+  }
+
+  tt, code {
+    padding: 0 rhythm(.25,$xsmallpx);
+    background: rgba(white,.75);
+  }
+
+  pre {
     margin-left: rhythm(-.5,$xsmallpx);
     padding: rhythm(.5,$xsmallpx);
     border-left: 3px solid $pink-lightest;

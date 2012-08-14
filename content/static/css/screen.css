@@ -243,7 +243,12 @@ a:focus, a:hover, a:active {
     margin-bottom: 0.40741em;
   }
 }
-[role="main"] h3, [role="main"] h4, [role="main"] strong {
+[role="main"] h3 {
+  margin-bottom: 1.22222em;
+  text-transform: uppercase;
+  letter-spacing: .01em;
+}
+[role="main"] h4, [role="main"] strong {
   font-weight: bold;
 }
 [role="main"] h5, [role="main"] h6, [role="main"] em, [role="main"] blockquote {
@@ -272,10 +277,16 @@ a:focus, a:hover, a:active {
   padding: 0.73333em;
   background: rgba(255, 77, 166, 0.125);
 }
-[role="main"] pre {
+[role="main"] tt, [role="main"] code, [role="main"] pre {
   font-size: 0.72222em;
   line-height: 1.69231em;
   font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+}
+[role="main"] tt, [role="main"] code {
+  padding: 0 0.42308em;
+  background: rgba(255, 255, 255, 0.75);
+}
+[role="main"] pre {
   margin-left: -0.84615em;
   padding: 0.84615em;
   border-left: 3px solid #ffcce6;
