@@ -70,7 +70,7 @@ Use
 Demo
 ----
 
-Here is the resault:
+Here is the result:
 
 .. raw:: html
 

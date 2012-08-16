@@ -5,14 +5,14 @@ Birthday Books
 ==============
 
 My birthday was on Tuesday,
-and I recieved several fantastic books
-from fantstic friends.
+and I received several fantastic books
+from fantastic friends.
 
 Julie gave me
 "Lighthead_"
 by `Terrance Hayes`_.
 `Toi Derricotte`_ had introduced us
-to this book durring the
+to this book during the
 `Naropa Summer Writing Program`_,
 and I can't wait to dive in.
 
@@ -34,7 +34,7 @@ and I can't wait to dive in.
     </figcaption>
   </figure>
 
-I also recieved
+I also received
 "The Use of Pleasure"
 by Michel Foucault,
 "Perdido Street Station"
