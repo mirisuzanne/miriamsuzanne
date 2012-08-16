@@ -7,10 +7,17 @@ Projects
 Events
 ------
 
-- 7/21/12
-  **Leon Presents a Reading Series #6**
-  with Kelly Dulaney and `Teacup Gorilla`_
-  (1112 E. 17th Avenue, Denver, CO.)
+- **Fall 2012** |
+  *Fuck the Muse: Grab Your Writing by the Naughty Bits*,
+  a class on writing process
+  with a multimedia/queer twist,
+  organized by the
+  `Boulder Writers' Workshop <http://www.boulderwritersworkshop.org/>`_.
+  (Time |&| location TBA)
+
+.. |&| raw:: html
+
+  <span class="amp">&</span>
 
 Projects
 --------
@@ -26,7 +33,7 @@ Art|ifacts
 ----------
 
 - `The Post-Obsolete Book <http://ericam.github.com/post-obsolete/>`_:
-  *Performance website memorializing obsolesence.*
+  *Performance website memorializing obsolescence.*
 - Susy_:
   *Responsive grid system for web designers.*
 

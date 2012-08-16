@@ -67,6 +67,7 @@ who inspired & trained me.
 *Michelle Milne*,
 *Chuck Mee Jr*,
 *Brian Freeland*,
+*Lori DeBoer*,
 *E. Tracy Grinnell*,
 *Michelle Ellsworth*,
 *Caroline Bergvall*,
