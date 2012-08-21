@@ -71,6 +71,13 @@ a {
     @include adjust-font-size-to($smallpx);
     padding: rhythm(.5, $smallpx);
     background: rgba($pink-light,.125);
+    counter-increment: fig;
+    &:before {
+      @include serif;
+      content: "fig." counter(fig);
+      margin-right: .4em;
+      font-style: italic;
+    }
   }
 
   tt, code, pre {

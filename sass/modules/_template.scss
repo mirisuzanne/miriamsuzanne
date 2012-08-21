@@ -50,15 +50,6 @@ $ampsize: $xxxlargepx;
   .post {
     @include trailer(2);
     counter-reset: fig;
-    figcaption {
-      counter-increment: fig;
-      &:before {
-        @include serif;
-        content: "fig." counter(fig);
-        margin-right: .4em;
-        font-style: italic;
-      }
-    }
   }
   .byline {
     color: $mid;

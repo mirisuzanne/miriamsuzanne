@@ -276,6 +276,13 @@ a:focus, a:hover, a:active {
   line-height: 1.46667em;
   padding: 0.73333em;
   background: rgba(255, 77, 166, 0.125);
+  counter-increment: fig;
+}
+[role="main"] figcaption:before {
+  font-family: "CenturyOldStyle", Baskerville, Palatino, Cambria, Georgia, serif;
+  content: "fig." counter(fig);
+  margin-right: .4em;
+  font-style: italic;
 }
 [role="main"] tt, [role="main"] code, [role="main"] pre {
   font-size: 0.72222em;
@@ -416,15 +423,6 @@ body:after {
 [role="main"] .post {
   margin-bottom: 2.44444em;
   counter-reset: fig;
-}
-[role="main"] .post figcaption {
-  counter-increment: fig;
-}
-[role="main"] .post figcaption:before {
-  font-family: "CenturyOldStyle", Baskerville, Palatino, Cambria, Georgia, serif;
-  content: "fig." counter(fig);
-  margin-right: .4em;
-  font-style: italic;
 }
 [role="main"] .byline {
   color: gray;
