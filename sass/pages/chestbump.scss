@@ -1,0 +1,103 @@
+// ----------------------------------------------------------------------------
+// imports
+
+@import "compass/reset";
+@import "../base/settings";
+@import "../general/fonts";
+@import "animate";
+
+// ----------------------------------------------------------------------------
+// settings
+
+$pg       : 'demos/chestbump/';
+$blood    : '#{$pg}blood.jpg';
+$hand     : '#{$pg}hand.png';
+$heart    : '#{$pg}heart.png';
+
+$rainbow  : red orange yellow green blue indigo violet;
+
+// ----------------------------------------------------------------------------
+// animations
+
+@include animate;
+
+@include keyframes(bg) {
+  @each $color in $rainbow {
+    $i: (index($rainbow, $color) - 1) * 14%;
+    #{$i} { background-color: $color; }
+  }
+}
+
+// ----------------------------------------------------------------------------
+// root
+
+@include establish-baseline;
+
+html {
+  @include animation(bg 4s linear infinite both);
+  position: relative;
+  background-color: nth($rainbow,1);
+  min-height: 100%;
+}
+
+body { @include sans; }
+
+// ----------------------------------------------------------------------------
+// blood
+
+.blood {
+  @include stretch;
+  @include animation(fadeIn 200ms 5s linear both);
+  @include background(image-url($blood) no-repeat scroll center);
+  @include background-size(cover);
+}
+
+// ----------------------------------------------------------------------------
+// hand & heart
+
+.hand, .heart {
+  @include replace-text-with-dimensions($hand);
+  position: relative;
+  z-index: 5;
+}
+
+.hand {
+  @include animation(fadeInLeftBig 200ms 4.8s linear both);
+}
+
+.heart {
+  @include animation(pulse 600ms 6s infinite both);
+  background-image: image-url($heart);
+}
+
+// ----------------------------------------------------------------------------
+// words
+
+h1 {
+  @include animation(flipInX 1s 10s linear both);
+  @include adjust-font-size-to($xxxlargepx*2);
+  @include text-shadow(white 0 0 .25em);
+  position: fixed;
+  right: 0;
+  bottom: 10%;
+  left: 0;
+  font-weight: bold;
+  text-align: center;
+  z-index: 10;
+  span { display: block; }
+  b {
+    @include animation(pulse 600ms ease infinite both);
+    @include text-shadow(black 0 0 .125em);
+    display: inline-block;
+    color: rgb(225,75,34);
+  }
+}
+
+h2 {
+  @include adjust-font-size-to($xxxlargepx*2);
+  @include text-shadow(white 0 0 .125em);
+  @include padding-leader(5,$xxxlargepx*2);
+  font-weight: bold;
+  text-align: center;
+  a { color: black; }
+}
