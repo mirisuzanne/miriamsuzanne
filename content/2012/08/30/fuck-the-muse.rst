@@ -47,8 +47,8 @@ but a large enough toolkit will go a long way.
 The Details:
 ------------
 
-- Six sessions, 6 to 8 p.m., class starts first week of October.
-- Denver location; details to be announced.
+- Wednesdays from 7-9pm, Oct 10 - Nov 14.
+- Laundry on Lawrence, 27th and Lawrence, Denver.
 - $205 Professional Members | $240 General Admission.
 
 It's going to be a blast.
