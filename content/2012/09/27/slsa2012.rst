@@ -1,0 +1,79 @@
+public: yes
+tags: [writing, elit, events, performance]
+summary: |
+  I'll be in `Milwaukee <http://goo.gl/maps/MZW3g>`_ this weekend
+  for a brief appearance at
+  `SLSA 2012 <http://www.litsciarts.org/slsa12/>`_.
+  The `ELO <http://eliterature.org/electronic-literature-the-nonhuman/>`_
+  is hosting a jurried elit event,
+  and accepted my `submission <http://ericam.github.com/post-obsolete>`_.
+
+Electronic Literature |&| the Nonhuman
+======================================
+
+I'll be in `Milwaukee`_ this weekend
+for a brief appearance at
+`SLSA 2012`_.
+The `ELO`_ is hosting a jurried elit event,
+and accepted my `submission`_:
+
+  We found the piece to be fun and entertaining,
+  but it also contains an argument that is worth considering
+  (and not just from a technical perspective).
+  The idea of objective forms dying and becoming immortal
+  is an interesting way to think about obsolete forms.
+  Against the backdrop of the death of the book,
+  the question of how to write seems as alive and well as it ever has.
+  This piece highlights that in a clever way.
+
+Thank you, ELO/SLSA jury.
+
+The Obsolete Book in a Post-Obsolete World
+------------------------------------------
+
+My text is `available online`_,
+but the performance includes text-to-speech voice-over,
+`Michelle Ellsworth`_ dancing,
+transparencies,
+party hats,
+diagrams,
+whiskey,
+powerpoint handouts,
+music by `The Widow's Bane`_,
+one human,
+and one post-obsolete book.
+
+Mortimer Leech of Widow's Bane
+was gracious about my theft:
+
+  Follow your bliss, Eric.
+  Take no prisoners.
+  We're already dead.
+  What the fuck do we want with money?
+
+Thank you Mr. Leech.
+
+Electronic Literature |&| the Nonhuman
+--------------------------------------
+
+Saturday, September 29th, 5-7pm |
+201C of the Frontier Airlines Center |
+Society for Literature, Science, and the Arts 2012 Conference
+
+I'll be performing along with `Mark Marino`_
+(who is a fantastic human)
+and many others I can't wait to meet.
+Maybe they're humans too! Who can say?
+
+.. _Milwaukee: http://goo.gl/maps/MZW3g
+.. _SLSA 2012: http://www.litsciarts.org/slsa12/
+.. _ELO: http://eliterature.org/electronic-literature-the-nonhuman/
+.. _submission: http://ericam.github.com/post-obsolete
+.. _available online: http://ericam.github.com/post-obsolete
+.. _Michelle Ellsworth: http://michelleellsworth.com/
+.. _The Widow's Bane: http://www.myspace.com/widowsbane
+.. _Mark Marino: http://markcmarino.com
+
+.. |&| raw:: html
+
+  <span class="amp">&</span>
