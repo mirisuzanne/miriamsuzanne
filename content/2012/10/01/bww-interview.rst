@@ -42,5 +42,5 @@ Don't miss it,
 .. _Boulder Writers' Workshop: http://www.boulderwritersworkshop.org/
 .. _interview with me: http://www.boulderwritersworkshop.org/2012/08/31/eric-meyer-discusses-collaboration-queer-art-and-his-multi-media-novel/
 .. _upcoming class: http://www.boulderwritersworkshop.org/writing-workshops-classes-events/event-registration/?ee=28
-.. _sign up now: http://www.boulderwritersworkshop.org/2012/08/31/eric-meyer-discusses-collaboration-queer-art-and-his-multi-media-novel/#ticketInfo
+.. _sign up now: http://www.eventbrite.com/event/4234481448?ref=ecal
 .. _2701 Lawrence St., Denver: http://goo.gl/maps/Q61rD
