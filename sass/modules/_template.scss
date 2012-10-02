@@ -62,6 +62,20 @@ $ampsize: $xxxlargepx;
 }
 
 // ----------------------------------------------------------------------------
+// Pagination
+
+.pagination {
+  text-align: center;
+  .prev { &:before { content: "« ";} }
+  .current {
+    @include adjust-font-size-to($xxlargepx);
+    vertical-align: middle;
+  }
+  .next { &:after { content: " »";} }
+  .disabled { color: $mid; }
+}
+
+// ----------------------------------------------------------------------------
 // Contentinfo
 
 $footsize: $smallpx;

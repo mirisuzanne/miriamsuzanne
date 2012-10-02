@@ -435,6 +435,24 @@ body:after {
   content: "»";
 }
 
+.pagination {
+  text-align: center;
+}
+.pagination .prev:before {
+  content: "« ";
+}
+.pagination .current {
+  font-size: 3em;
+  line-height: 1.22222em;
+  vertical-align: middle;
+}
+.pagination .next:after {
+  content: " »";
+}
+.pagination .disabled {
+  color: gray;
+}
+
 [role="contentinfo"] {
   font-family: "FranklinGothicCond", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.83333em;
