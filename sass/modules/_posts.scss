@@ -9,11 +9,15 @@
 }
 
 .gallery {
-  img {
+  > a, > img {
     @include span-columns(3);
     @include nth-omega(even);
     @include trailer(1);
     @include box-shadow($base 0 0 6px)
+  }
+  a {
+    #{$link} { @include transition(all 150ms); }
+    #{$focus} { @include scale(1.05); }
   }
   figcaption { clear: both; }
 }

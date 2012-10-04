@@ -197,6 +197,7 @@ body {
 }
 
 img {
+  vertical-align: bottom;
   max-width: 100%;
 }
 
@@ -509,7 +510,7 @@ body:after {
   font-style: italic;
 }
 
-.gallery img {
+.gallery > a, .gallery > img {
   width: 48.27586%;
   float: left;
   margin-right: 3.44828%;
@@ -518,9 +519,23 @@ body:after {
   -moz-box-shadow: #404040 0 0 6px;
   box-shadow: #404040 0 0 6px;
 }
-.gallery img:nth-child(even) {
+.gallery > a:nth-child(even), .gallery > img:nth-child(even) {
   float: right;
   margin-right: 0;
+}
+.gallery a:link, .gallery a:visited {
+  -webkit-transition: all 150ms;
+  -moz-transition: all 150ms;
+  -ms-transition: all 150ms;
+  -o-transition: all 150ms;
+  transition: all 150ms;
+}
+.gallery a:focus, .gallery a:hover, .gallery a:active {
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
 }
 .gallery figcaption {
   clear: both;

@@ -24,7 +24,10 @@ html {
 
 body { @include serif; }
 
-img { max-width: 100%; }
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
 
 // ----------------------------------------------------------------------------
 // Imports
