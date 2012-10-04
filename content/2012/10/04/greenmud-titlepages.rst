@@ -27,7 +27,7 @@ Six months ago we completed
 a `RocketHub campaign`_
 with your help.
 Since then
-We've been editing,
+we've been editing,
 sketching,
 adjusting,
 coding,
