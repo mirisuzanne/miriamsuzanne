@@ -141,7 +141,8 @@ Those Nice Bright Colors
       <img src="/static/pictures/greenmud-titles/ggm29.png" alt="" />
     </a>
     <figcaption>
-      Book & chapter titles for <em>Into the Green Green Mud</em>.
+      Book & chapter titles for
+      <a href="http://greengreenmud.com/">Into the Green Green Mud</a>.
     </figcaption>
   </figure>
 
