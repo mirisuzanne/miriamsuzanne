@@ -514,6 +514,9 @@ body:after {
   float: left;
   margin-right: 3.44828%;
   margin-bottom: 1.22222em;
+  -webkit-box-shadow: #404040 0 0 6px;
+  -moz-box-shadow: #404040 0 0 6px;
+  box-shadow: #404040 0 0 6px;
 }
 .gallery img:nth-child(even) {
   float: right;
