@@ -47,18 +47,7 @@ $ampsize: $xxxlargepx;
 [role="main"] {
   @extend %type;
   @include trailer(2);
-  .post {
-    @include trailer(2);
-    counter-reset: fig;
-  }
-  .byline {
-    color: $mid;
-    font-style: italic;
-  }
-  .readmore {
-    font-style: italic;
-    &:after { content: "»"; }
-  }
+  counter-reset: fig;
 }
 
 // ----------------------------------------------------------------------------

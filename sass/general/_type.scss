@@ -24,10 +24,15 @@ a {
 
 %type {
 
+  // -------
+  // Headers
+
+  $h1-size: $largepx;
+  $h1-break-size: $xlargepx;
   h1 {
-    @include adjust-font-size-to($largepx);
+    @include adjust-font-size-to($h1-size);
     @include at-breakpoint($total-columns) {
-      @include adjust-font-size-to($xlargepx);
+      @include adjust-font-size-to($h1-break-size);
     }
     a {
       #{$link} { color: $pink-dark; }
@@ -35,12 +40,14 @@ a {
     }
   }
 
+  $h2-size: $medpx;
+  $h2-break-size: $largepx;
   h2 {
-    @include adjust-font-size-to($medpx);
-    @include trailer(.5,$medpx);
+    @include adjust-font-size-to($h2-size);
+    @include trailer(.5,$h2-size);
     @include at-breakpoint($total-columns) {
-      @include adjust-font-size-to($largepx);
-      @include trailer(.5,$largepx);
+      @include adjust-font-size-to($h2-break-size);
+      @include trailer(.5,$h2-break-size);
     }
   }
 
@@ -50,10 +57,14 @@ a {
     letter-spacing: .01em;
   }
 
+  // ------
+  // Blocks
+
   h4, strong { font-weight: bold; }
   h5, h6, em, blockquote { font-style: italic; }
 
   p, ul, ol, pre, blockquote { @include trailer; }
+  p:empty { display: none; }
   ul { list-style-type: disc; }
   ol { list-style-type: decimal; }
 
@@ -62,14 +73,19 @@ a {
     border-left: rhythm(.25) solid $lighter;
   }
 
-  ul, ol {
+  ul, ol, blockquote {
     ul, ol { margin-left: rhythm(1); }
   }
 
+  // -------
+  // Figures
+
+  $caption-size: $smallpx;
   figcaption {
     @include sanscond;
-    @include adjust-font-size-to($smallpx);
-    padding: rhythm(.5, $smallpx);
+    @include adjust-font-size-to($caption-size);
+    @include trailer(1,$caption-size);
+    padding: rhythm(.5, $caption-size);
     background: rgba($pink-light,.125);
     counter-increment: fig;
     &:before {
@@ -80,19 +96,23 @@ a {
     }
   }
 
+  // ----
+  // Code
+
+  $code-size: $smallpx;
   tt, code, pre {
-    @include adjust-font-size-to($xsmallpx);
+    @include adjust-font-size-to($code-size);
     @include mono;
   }
 
   tt, code {
-    padding: 0 rhythm(.25,$xsmallpx);
+    padding: 0 rhythm(.25,$code-size);
     background: rgba(white,.75);
   }
 
   pre {
-    margin-left: rhythm(-.5,$xsmallpx);
-    padding: rhythm(.5,$xsmallpx);
+    margin-left: rhythm(-.5,$code-size);
+    padding: rhythm(.5,$code-size);
     border-left: 3px solid $pink-lightest;
   }
 

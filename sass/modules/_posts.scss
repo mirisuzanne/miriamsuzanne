@@ -1,0 +1,23 @@
+// ----------------------------------------------------------------------------
+// Posts
+
+.post { @include trailer(2); }
+
+.byline {
+  color: $mid;
+  font-style: italic;
+}
+
+.gallery {
+  img {
+    @include span-columns(3);
+    @include nth-omega(even);
+    @include trailer(1);
+  }
+  figcaption { clear: both; }
+}
+
+.readmore {
+  font-style: italic;
+  &:after { content: "»"; }
+}
