@@ -93,6 +93,19 @@ Frontier Airlines Center 201C,
 I performed for ten minutes,
 and flew out again the next day.
 
+The other performances included
+Jeremy Douglass,
+Katherine Hayles,
+Patrick Jagoda,
+Patrick LeMieux,
+Clarissa Lee,
+Amy Letter,
+M.D. Coverley,
+Mark Marino,
+Nick Montfort,
+and Stuart Moulthrop.
+A great group to be part of!
+
 Sunday
 ------
 
