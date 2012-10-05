@@ -8,7 +8,7 @@ summary: |
   and I went.
   This was not a reasonable thing to do.
 
-A whirlwind of digital humanities
+A Whirlwind of Digital Humanities
 =================================
 
 After submitting on a whim,
