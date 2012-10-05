@@ -1,4 +1,4 @@
-public: no
+public: yes
 tags: [writing, elit, events, performance]
 summary: |
   After submitting on a whim,
@@ -77,7 +77,7 @@ we found everything with time to spare.
     <img src="/static/pictures/slsa12/gay-bill.jpg" alt="Bill is mad gay. / I'm Gay Bill, & I approve this message." />
     <figcaption>
       (1) Two trips to FedEx & two shitty staplers, but we have handouts.
-      (2) Party supplies & a cute geek-boy behind the counter at Walgreen's.
+      (2) Party supplies & a cute boy behind the counter at Walgreen's.
       (3) Goodwill has tweed & an old book for me,
           and three gilded soccer trophies for Micah.
       (4) A bread knife helps make this old western more anonymous.
