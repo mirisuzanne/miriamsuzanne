@@ -104,7 +104,7 @@ M.D. Coverley,
 Mark Marino,
 Nick Montfort,
 and Stuart Moulthrop.
-A great group to be part of!
+A great group!
 
 Sunday
 ------
