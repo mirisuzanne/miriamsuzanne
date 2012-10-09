@@ -8,7 +8,7 @@ summary: |
   is hosting a jurried elit event,
   and accepted my `submission <http://ericam.github.com/post-obsolete>`_.
 
-Electronic Literature |&| the Nonhuman
+Electronic Literature and the Nonhuman
 ======================================
 
 I'll be in `Milwaukee`_ this weekend

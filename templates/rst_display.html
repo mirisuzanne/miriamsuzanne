@@ -1,6 +1,13 @@
 {% extends "layout.html" %}
 {% block title %}{{ rst.title }}{% endblock %}
 
+{% block styles %}
+  {{ super() }}
+  {% if config.styles %}
+    <link rel="stylesheet" href="/static/css/{{ config.styles }}">
+  {% endif %}
+{% endblock styles %}
+
 {% block body %}
 
   {%- if not config.hide_title %}

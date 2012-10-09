@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "GreenMudJJ";
+  src: url('../../fonts/jj/greenmudjj-regular-webfont.eot');
+  src: url('../../fonts/jj/greenmudjj-regular-webfont.eot?#iefix') format('eot'), url('../../fonts/jj/greenmudjj-regular-webfont.woff') format('woff'), url('../../fonts/jj/greenmudjj-regular-webfont.ttf') format('truetype'), url('../../fonts/jj/greenmudjj-regular-webfont.svg#GreenMudJJ') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.jjregular {
+  font-family: GreenMudJJ, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GreenMudJJ";
+  src: url('../../fonts/jj/greenmudjj-italic-webfont.eot');
+  src: url('../../fonts/jj/greenmudjj-italic-webfont.eot?#iefix') format('eot'), url('../../fonts/jj/greenmudjj-italic-webfont.woff') format('woff'), url('../../fonts/jj/greenmudjj-italic-webfont.ttf') format('truetype'), url('../../fonts/jj/greenmudjj-italic-webfont.svg#GreenMudJJ') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+.jjitalic {
+  font-family: GreenMudJJ, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GreenMudJJ";
+  src: url('../../fonts/jj/greenmudjj-bold-webfont.eot');
+  src: url('../../fonts/jj/greenmudjj-bold-webfont.eot?#iefix') format('eot'), url('../../fonts/jj/greenmudjj-bold-webfont.woff') format('woff'), url('../../fonts/jj/greenmudjj-bold-webfont.ttf') format('truetype'), url('../../fonts/jj/greenmudjj-bold-webfont.svg#GreenMudJJ') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.jjbold {
+  font-family: GreenMudJJ, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GreenMudSusy";
+  src: url('../../fonts/susy/greenmudsusy-regular-webfont.eot');
+  src: url('../../fonts/susy/greenmudsusy-regular-webfont.eot?#iefix') format('eot'), url('../../fonts/susy/greenmudsusy-regular-webfont.woff') format('woff'), url('../../fonts/susy/greenmudsusy-regular-webfont.ttf') format('truetype'), url('../../fonts/susy/greenmudsusy-regular-webfont.svg#GreenMudSusy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.susyregular {
+  font-family: GreenMudSusy, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GreenMudSusy";
+  src: url('../../fonts/susy/greenmudsusy-bold-webfont.eot');
+  src: url('../../fonts/susy/greenmudsusy-bold-webfont.eot?#iefix') format('eot'), url('../../fonts/susy/greenmudsusy-bold-webfont.woff') format('woff'), url('../../fonts/susy/greenmudsusy-bold-webfont.ttf') format('truetype'), url('../../fonts/susy/greenmudsusy-bold-webfont.svg#GreenMudSusy') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.susybold {
+  font-family: GreenMudSusy, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GreenMudSusySC";
+  src: url('../../fonts/susy/greenmudsusy-smallcaps-webfont.eot');
+  src: url('../../fonts/susy/greenmudsusy-smallcaps-webfont.eot?#iefix') format('eot'), url('../../fonts/susy/greenmudsusy-smallcaps-webfont.woff') format('woff'), url('../../fonts/susy/greenmudsusy-smallcaps-webfont.ttf') format('truetype'), url('../../fonts/susy/greenmudsusy-smallcaps-webfont.svg#GreenMudSusySC') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.susysc {
+  font-family: GreenMudSusySC, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GreenMudSusySC";
+  src: url('../../fonts/susy/greenmudsusy-smallcapsbold-webfont.eot');
+  src: url('../../fonts/susy/greenmudsusy-smallcapsbold-webfont.eot?#iefix') format('eot'), url('../../fonts/susy/greenmudsusy-smallcapsbold-webfont.woff') format('woff'), url('../../fonts/susy/greenmudsusy-smallcapsbold-webfont.ttf') format('truetype'), url('../../fonts/susy/greenmudsusy-smallcapsbold-webfont.svg#GreenMudSusySC') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.susyscbold {
+  font-family: GreenMudSusySC, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.susy-fonts, .jj-fonts {
+  font-size: 1.5em;
+  line-height: 1.62963em;
+  margin-bottom: 0.81481em;
+  padding: 0.40741em;
+  background: rgba(255, 77, 166, 0.125);
+}
+.susy-fonts li, .jj-fonts li {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.susy-fonts li:hover strong, .jj-fonts li:hover strong {
+  max-width: 100%;
+}
+.susy-fonts strong, .jj-fonts strong {
+  -webkit-transition: all 800ms;
+  -moz-transition: all 800ms;
+  -ms-transition: all 800ms;
+  -o-transition: all 800ms;
+  transition: all 800ms;
+  display: inline-block;
+  max-width: 0;
+  text-transform: uppercase;
+  font-weight: inherit;
+  overflow: hidden;
+  vertical-align: top;
+}

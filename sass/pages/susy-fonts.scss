@@ -1,0 +1,70 @@
+// ----------------------------------------------------------------------------
+// imports
+
+@import "../base/settings";
+
+// ----------------------------------------------------------------------------
+// fonts
+
+$jjregular        : GreenMudJJ      'jj/greenmudjj-regular-webfont'                 normal  normal;
+$jjitalic         : GreenMudJJ      'jj/greenmudjj-italic-webfont'                  normal  italic;
+$jjbold           : GreenMudJJ      'jj/greenmudjj-bold-webfont'                    bold    normal;
+
+$susyregular      : GreenMudSusy    'susy/greenmudsusy-regular-webfont'             normal  normal;
+$susybold         : GreenMudSusy    'susy/greenmudsusy-bold-webfont'                bold    normal;
+$susysc           : GreenMudSusySC  'susy/greenmudsusy-smallcaps-webfont'           normal  normal;
+$susyscbold       : GreenMudSusySC  'susy/greenmudsusy-smallcapsbold-webfont'       bold    normal;
+
+@mixin font($font, $class) {
+  $name: nth($font,1);
+  $location: nth($font,2);
+  $weight: if(nth($font,3), nth($font,3), normal);
+  $style: if(nth($font,4), nth($font,4), normal);
+  @include font-face(
+    $name,
+    font-files(
+      '#{$location}.woff', 'woff',
+      '#{$location}.ttf', 'truetype',
+      '#{$location}.svg##{$name}', 'svg'
+    ),
+    '#{$location}.eot',
+    $weight,
+    $style
+  );
+
+  .#{$class} {
+    font-family: $name, sans-serif;
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@include font($jjregular, jjregular);
+@include font($jjitalic, jjitalic);
+@include font($jjbold, jjbold);
+@include font($susyregular, susyregular);
+@include font($susybold, susybold);
+@include font($susysc, susysc);
+@include font($susyscbold, susyscbold);
+
+$sfs: $largepx;
+
+.susy-fonts, .jj-fonts {
+  @include adjust-font-size-to($sfs);
+  @include trailer(1,$sfs);
+  padding: rhythm(.5,$sfs);
+  background: rgba($pink-light,.125);
+  li {
+    @include ellipsis;
+    &:hover strong { max-width: 100%; }
+  }
+  strong {
+    @include transition(all 800ms);
+    display: inline-block;
+    max-width: 0;
+    text-transform: uppercase;
+    font-weight: inherit;
+    overflow: hidden;
+    vertical-align: top;
+  }
+}
