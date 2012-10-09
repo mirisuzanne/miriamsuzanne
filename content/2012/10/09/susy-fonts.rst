@@ -46,6 +46,27 @@ Susy's fonts look like this:
     </li>
   </ol>
 
+  <figure>
+    <img src="/static/pictures/susy-font.jpg" alt=" " />
+    <figcaption>
+      Susy Regular in action, Chapter 18.
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img src="/static/pictures/susy-font-vector.jpg" alt=" " />
+    <figcaption>
+      Susy Bold Q, under construction.
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img src="/static/pictures/susy-font-bio.jpg" alt=" " />
+    <figcaption>
+      Susy Bold, SmallCaps, and Regular on the "about" page.
+    </figcaption>
+  </figure>
+
 JJ's fonts (created earlier) look like this:
 
 |jjfonts|
@@ -66,3 +87,4 @@ JJ's fonts (created earlier) look like this:
       The quick & brown fox jumps over the lazy god.
     </li>
   </ol>
+
