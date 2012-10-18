@@ -1,5 +1,5 @@
-public: no
-tags: [greenmud, illustration, thanks]
+public: yes
+tags: [greenmud, illustration, crowdfunding]
 summary: |
   I was reminded yesterday,
   while being harassed outside the
