@@ -40,10 +40,10 @@ and this week I finished the first one:
 .. |fig1| raw:: html
 
   <figure class="gallery">
-    <img src="/static/pictures/portraits/Rachel-Icon.png" alt="" />
-    <img src="/static/pictures/portraits/Rachel-Full.png" alt="" />
+    <img src="/static/pictures/portraits/Kitten-Icon.png" alt="" />
+    <img src="/static/pictures/portraits/Kitten-Full.png" alt="" />
     <figcaption>
-      Rachel, close-up and in full.
+      Kitten Karlyle, close-up and in full.
       Follow her sex-positive blog,
       <a href="http://dirty-words-blog.blogspot.com/">Dirty Words</a>.
     </figcaption>
