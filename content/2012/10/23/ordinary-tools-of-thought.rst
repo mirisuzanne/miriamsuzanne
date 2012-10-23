@@ -98,8 +98,6 @@ Like inventors and scientists,
 our job is to facilitate the process of
 experimentation and transformation,
 then capture the results.
-To borrow a phrase from `Michelle Milne`_,
-we will instigate |&| then edit.
 
 These can be difficult skills to master,
 but they aren't magic,
@@ -121,7 +119,6 @@ The Mini-Series
 .. _Everything is a Remix: http://everythingisaremix.info/
 .. _*: http://samuel-beckett.net/endgame.html
 .. _Metamagical Themas: http://books.google.com/books/about/Metamagical_Themas.html?id=o8jzWF7rD6oC
-.. _Michelle Milne: http://mappingtheterrain.wordpress.com/
 .. _conceptual artists: http://en.wikipedia.org/wiki/Conceptual_art
 .. _remix artists: http://en.wikipedia.org/wiki/Remix
 
