@@ -271,6 +271,9 @@ a:focus, a:hover, a:active {
   padding: 0 0.91789em;
   border-left: 0.30556em solid #cccccc;
 }
+[role="main"] blockquote em {
+  font-style: normal;
+}
 [role="main"] ul ul, [role="main"] ul ol, [role="main"] ol ul, [role="main"] ol ol, [role="main"] blockquote ul, [role="main"] blockquote ol {
   margin-left: 1.22222em;
 }

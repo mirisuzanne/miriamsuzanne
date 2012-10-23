@@ -71,6 +71,7 @@ a {
   blockquote {
     padding: 0 rhythm(.751);
     border-left: rhythm(.25) solid $lighter;
+    em { font-style: normal; }
   }
 
   ul, ol, blockquote {

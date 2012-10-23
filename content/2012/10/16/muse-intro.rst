@@ -1,5 +1,5 @@
 public: yes
-tags: [art, process, writing]
+tags: [minifesto, fuck the muse, art, writing, process]
 summary: |
   I was planning to spend this month teaching
   `a class <http://eric.andmeyer.com/2012/08/30/fuck-the-muse>`_ for the
@@ -103,6 +103,12 @@ Don Fry's `Writing Your Way`_,
 `queer theory`_,
 and many years of working with ensemble theatres and bands.
 
+The Mini-Series
+---------------
+
+1. `Fuck the Muse: a Blog Mini-Series [intro] </2012/10/16/muse-intro/>`_
+2. `Ordinary Tools of Thought </2012/10/23/ordinary-tools-of-thought/>`_
+
 .. _Viewpoints: http://en.wikipedia.org/wiki/Viewpoints
 .. _(re)making project: http://www.charlesmee.org/indexf.html
 .. _The LIDA Project: http://lida.org/
@@ -114,4 +120,3 @@ and many years of working with ensemble theatres and bands.
 .. _Everything is a Remix: http://www.everythingisaremix.info/
 .. _queer theory: http://en.wikipedia.org/wiki/Queer_theory
 
-*Coming Soon*: **Define the Seed**.
