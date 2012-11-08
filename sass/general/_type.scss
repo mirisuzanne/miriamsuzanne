@@ -81,11 +81,13 @@ a {
   // -------
   // Figures
 
+  figure { @include trailer(1); }
+
   $caption-size: $smallpx;
   figcaption {
     @include sanscond;
     @include adjust-font-size-to($caption-size);
-    @include trailer(1,$caption-size);
+    @include leader(.5,$caption-size);
     padding: rhythm(.5, $caption-size);
     background: rgba($pink-light,.125);
     counter-increment: fig;

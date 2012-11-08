@@ -114,6 +114,7 @@ The Mini-Series
 
 1. `Fuck the Muse: a Blog Mini-Series [intro] </2012/10/16/muse-intro/>`_
 2. `Ordinary Tools of Thought </2012/10/23/ordinary-tools-of-thought/>`_
+3. `Creative Modes and Cycles </2012/11/08/creative-cycles>`_
 
 .. _five steps of creative process: /2012/10/16/muse-intro/
 .. _Everything is a Remix: http://everythingisaremix.info/

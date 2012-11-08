@@ -277,11 +277,14 @@ a:focus, a:hover, a:active {
 [role="main"] ul ul, [role="main"] ul ol, [role="main"] ol ul, [role="main"] ol ol, [role="main"] blockquote ul, [role="main"] blockquote ol {
   margin-left: 1.22222em;
 }
+[role="main"] figure {
+  margin-bottom: 1.22222em;
+}
 [role="main"] figcaption {
   font-family: "FranklinGothicCond", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.83333em;
   line-height: 1.46667em;
-  margin-bottom: 1.46667em;
+  margin-top: 0.73333em;
   padding: 0.73333em;
   background: rgba(255, 77, 166, 0.125);
   counter-increment: fig;
