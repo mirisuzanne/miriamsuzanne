@@ -180,7 +180,8 @@ html {
 }
 
 html {
-  background: rgba(255, 204, 230, 0.25);
+  background: #ffe5f2;
+  background: rgba(255, 204, 230, 0.25) url('../images/noise.png?1342825521');
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 204, 230, 0.25)), color-stop(100%, rgba(204, 242, 255, 0.25))), url('../images/noise.png?1342825521');
   background: -webkit-linear-gradient(top, rgba(255, 204, 230, 0.25), rgba(204, 242, 255, 0.25)), url('../images/noise.png?1342825521');
   background: -moz-linear-gradient(top, rgba(255, 204, 230, 0.25), rgba(204, 242, 255, 0.25)), url('../images/noise.png?1342825521');
@@ -221,7 +222,7 @@ a:focus, a:hover, a:active {
   line-height: 48px;
   line-height: 2.28571rem;
 }
-@media (min-width: 30.25rem) {
+@media (min-width: 39.70313em) {
   [role="main"] h1 {
     font-size: 44px;
     font-size: 2.09524rem;
@@ -241,7 +242,7 @@ a:focus, a:hover, a:active {
   line-height: 48px;
   line-height: 2.28571rem;
 }
-@media (min-width: 30.25rem) {
+@media (min-width: 39.70313em) {
   [role="main"] h2 {
     font-size: 32px;
     font-size: 1.52381rem;
@@ -383,11 +384,14 @@ a:focus, a:hover, a:active {
 }
 
 body {
+  max-width: 635px;
   max-width: 30.25rem;
+  padding-left: 21px;
+  padding-left: 1rem;
+  padding-right: 21px;
+  padding-right: 1rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 body:after {
   content: "";
@@ -401,6 +405,7 @@ body:after {
   margin-top: 1.52381rem;
   content: "— & —";
   display: block;
+  color: #ffcce6;
   color: rgba(179, 0, 89, 0.25);
   text-align: center;
 }

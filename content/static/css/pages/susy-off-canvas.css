@@ -13,10 +13,10 @@ body {
   *zoom: 1;
   max-width: 71em;
   _width: 71em;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 0;
   padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;

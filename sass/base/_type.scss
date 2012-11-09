@@ -1,0 +1,11 @@
+// ----------------------------------------------------------------------------
+// Type Settings
+
+$base-font-size     : $normpx;
+$base-line-height   : $xlargepx;
+
+$rhythm-unit                      : rem;
+$rem-with-px-fallback       : true;
+
+$round-to-nearest-half-line       : true;
+$grid-background-baseline-height  : $base-line-height;

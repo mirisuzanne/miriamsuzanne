@@ -23,7 +23,7 @@ GEM
     sass (3.2.2)
     sassy-math (1.2)
       compass (~> 0.11)
-    susy (1.0.4)
+    susy (1.0.5.alpha.0)
       compass (>= 0.12.2)
       sass (>= 3.2.0)
 
@@ -37,4 +37,4 @@ DEPENDENCIES
   modular-scale (~> 1.0.2)
   rb-fsevent (~> 0.9.1)
   sass (~> 3.2.1)
-  susy (~> 1.0.4)
+  susy (~> 1.0.5.alpha.0)

@@ -7,40 +7,41 @@ $orange           : hsl(24,100%,50%);
 $green            : hsl(75,100%,50%);
 $pink             : hsl(330,100%,50%);
 
-$dark             : darken($mid,15);
-$darker           : darken($mid,25);
-$darkest          : darken($mid,50);
-$light            : lighten($mid,15);
-$lighter          : lighten($mid,30);
-$lightest         : lighten($mid,45);
+$dark             : adjust-color($mid,$lightness: -15);
+$darker           : adjust-color($mid,$lightness: -25);
+$darkest          : adjust-color($mid,$lightness: -50);
+$light            : adjust-color($mid,$lightness: 15);
+$lighter          : adjust-color($mid,$lightness: 30);
+$lightest         : adjust-color($mid,$lightness: 45);
 
-$blue-dark        : darken($blue,10);
-$blue-darker      : darken($blue,20);
-$blue-darkest     : darken($blue,30);
-$blue-light       : lighten($blue,15);
-$blue-lighter     : lighten($blue,30);
-$blue-lightest    : lighten($blue,40);
+$blue-dark        : adjust-color($blue,$lightness: -10);
+$blue-darker      : adjust-color($blue,$lightness: -20);
+$blue-darkest     : adjust-color($blue,$lightness: -30);
+$blue-light       : adjust-color($blue,$lightness: 15);
+$blue-lighter     : adjust-color($blue,$lightness: 30);
+$blue-lightest    : adjust-color($blue,$lightness: 40);
 
-$orange-dark      : darken($orange,10);
-$orange-darker    : darken($orange,20);
-$orange-darkest   : darken($orange,30);
-$orange-light     : lighten($orange,15);
-$orange-lighter   : lighten($orange,30);
-$orange-lightest  : lighten($orange,40);
+$orange-dark      : adjust-color($orange,$lightness: -10);
+$orange-darker    : adjust-color($orange,$lightness: -20);
+$orange-darkest   : adjust-color($orange,$lightness: -30);
+$orange-light     : adjust-color($orange,$lightness: 15);
+$orange-lighter   : adjust-color($orange,$lightness: 30);
+$orange-lightest  : adjust-color($orange,$lightness: 40);
 
-$green-dark       : darken($green,10);
-$green-darker     : darken($green,20);
-$green-darkest    : darken($green,30);
-$green-light      : lighten($green,15);
-$green-lighter    : lighten($green,30);
-$green-lightest   : lighten($green,40);
+$green-dark       : adjust-color($green,$lightness: -10);
+$green-darker     : adjust-color($green,$lightness: -20);
+$green-darkest    : adjust-color($green,$lightness: -30);
+$green-light      : adjust-color($green,$lightness: 15);
+$green-lighter    : adjust-color($green,$lightness: 30);
+$green-lightest   : adjust-color($green,$lightness: 40);
 
-$pink-dark        : darken($pink,15);
-$pink-darker      : darken($pink,30);
-$pink-darkest     : darken($pink,40);
-$pink-light       : lighten($pink,15);
-$pink-lighter     : lighten($pink,30);
-$pink-lightest    : lighten($pink,40);
+$pink-dark        : adjust-color($pink,$lightness: -15);
+$pink-darker      : adjust-color($pink,$lightness: -30);
+$pink-darkest     : adjust-color($pink,$lightness: -40);
+$pink-light       : adjust-color($pink,$lightness: 15);
+$pink-lighter     : adjust-color($pink,$lightness: 30);
+$pink-lightest    : adjust-color($pink,$lightness: 40);
+$pink-hint        : adjust-color($pink,$lightness: 45);
 
 // ----------------------------------------------------------------------------
 // Defaults

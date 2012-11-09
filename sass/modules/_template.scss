@@ -7,6 +7,7 @@
     @include leader;
     content: "— & —";
     display: block;
+    color: $pink-lightest;
     color: rgba($pink-dark,.25);
     text-align: center;
   }

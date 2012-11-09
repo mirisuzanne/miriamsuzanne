@@ -49,14 +49,3 @@ $largepx      : ms($l);
 $xlargepx     : ms($xl);
 $xxlargepx    : ms($xxl);
 $xxxlargepx   : ms($xxxl);
-
-// ----------------------------------------------------------------------------
-// Font Sizes
-
-$base-font-size     : $normpx;
-$base-line-height   : $xlargepx;
-
-$rhythm-unit                      : rem;
-
-$round-to-nearest-half-line       : true;
-$grid-background-baseline-height  : $base-line-height;
