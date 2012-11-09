@@ -16,7 +16,7 @@ $gradient : linear-gradient(top, $bg1, $bg2);
 
 html {
   @include background($pink-hint);
-  @include background($bg1);
+  @include background($bg1, $noise);
   @include background($gradient, $noise);
   @include text-shadow(rgba(white,.5) 0 1px 0);
   background-attachment: fixed;
