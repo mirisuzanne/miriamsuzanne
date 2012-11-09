@@ -1,47 +1,62 @@
 // ----------------------------------------------------------------------------
 // Defaults
 
-$base-size: 18px;
+$base-size: 21px;
 $ratio: minor-third() fifth();
 
 // ----------------------------------------------------------------------------
 // Variants
 
+$m      : 1;
+$s      : -1;
+$xs     : -2;
+$xxs    : -3;
+$xxxs   : -4;
+$l      : 2;
+$xl     : 3;
+$xxl    : 5;
+$xxxl   : 8;
+
 $norm         : 1;
-$med          : ms(1,$norm);
-$small        : ms(-1,$norm);
-$xsmall       : ms(-2,$norm);
-$xxsmall      : ms(-3,$norm);
-$xxxsmall     : ms(-4,$norm);
-$large        : ms(3,$norm);
-$xlarge       : ms(5,$norm);
-$xxlarge      : ms(8,$norm);
-$xxxlarge     : ms(10,$norm);
+$med          : ms($m,$norm);
+$small        : ms($s,$norm);
+$xsmall       : ms($xs,$norm);
+$xxsmall      : ms($xxs,$norm);
+$xxxsmall     : ms($xxxs,$norm);
+$large        : ms($l,$norm);
+$xlarge       : ms($xl,$norm);
+$xxlarge      : ms($xxl,$norm);
+$xxxlarge     : ms($xxxl,$norm);
 
 $normem       : 1em;
-$medem        : ms(1,$normem);
-$smallem      : ms(-1,$normem);
-$xsmallem     : ms(-2,$normem);
-$xxsmallem    : ms(-3,$normem);
-$xxxsmallem   : ms(-4,$normem);
-$largeem      : ms(3,$normem);
-$xlargeem     : ms(5,$normem);
-$xxlargeem    : ms(8,$normem);
-$xxxlargeem   : ms(10,$normem);
+$medem        : ms($m,$normem);
+$smallem      : ms($s,$normem);
+$xsmallem     : ms($xs,$normem);
+$xxsmallem    : ms($xxs,$normem);
+$xxxsmallem   : ms($xxxs,$normem);
+$largeem      : ms($l,$normem);
+$xlargeem     : ms($xl,$normem);
+$xxlargeem    : ms($xxl,$normem);
+$xxxlargeem   : ms($xxxl,$normem);
 
 $normpx       : $base-size;
-$medpx        : ms(1);
-$smallpx      : ms(-1);
-$xsmallpx     : ms(-2);
-$xxsmallpx    : ms(-3);
-$xxxsmallpx   : ms(-4);
-$largepx      : ms(3);
-$xlargepx     : ms(5);
-$xxlargepx    : ms(8);
-$xxxlargepx   : ms(10);
+$medpx        : ms($m);
+$smallpx      : ms($s);
+$xsmallpx     : ms($xs);
+$xxsmallpx    : ms($xxs);
+$xxxsmallpx   : ms($xxxs);
+$largepx      : ms($l);
+$xlargepx     : ms($xl);
+$xxlargepx    : ms($xxl);
+$xxxlargepx   : ms($xxxl);
 
 // ----------------------------------------------------------------------------
 // Font Sizes
 
 $base-font-size     : $normpx;
-$base-line-height   : $medpx;
+$base-line-height   : $xlargepx;
+
+$rhythm-unit                      : rem;
+
+$round-to-nearest-half-line       : true;
+$grid-background-baseline-height  : $base-line-height;

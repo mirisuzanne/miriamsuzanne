@@ -35,7 +35,6 @@ header, footer {
 .left, .right, .main {
   -webkit-transition: 0.2s all ease;
   -moz-transition: 0.2s all ease;
-  -ms-transition: 0.2s all ease;
   -o-transition: 0.2s all ease;
   transition: 0.2s all ease;
   float: left;

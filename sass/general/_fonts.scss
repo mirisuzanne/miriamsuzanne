@@ -189,26 +189,9 @@ $mono-stack   : Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "D
 // ----------------------------------------------------------------------------
 // Font Mixins
 
-@mixin sans {
-  font-family: 'FranklinGothic',$sans-stack;
-}
-
-@mixin sanscond {
-  font-family: 'FranklinGothicCond',$sans-stack;
-}
-
-@mixin serif {
-  font-family: 'CenturyOldStyle',$serif-stack;
-}
-
-@mixin serifcaps {
-  font-family: 'CenturyOldStyleCaps',$serif-stack;
-}
-
-@mixin mono {
-  font-family: $mono-stack;
-}
-
-@mixin amp {
-  font-family: 'BaskervilleAmp', $serif-stack;
-}
+@mixin sans { font-family: 'FranklinGothic',$sans-stack; }
+@mixin sanscond { font-family: 'FranklinGothicCond',$sans-stack; }
+@mixin serif { font-family: 'CenturyOldStyle',$serif-stack; }
+@mixin serifcaps { font-family: 'CenturyOldStyleCaps',$serif-stack; }
+@mixin mono { font-family: $mono-stack; }
+@mixin amp { font-family: 'BaskervilleAmp', $serif-stack; }

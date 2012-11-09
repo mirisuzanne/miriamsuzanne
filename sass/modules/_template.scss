@@ -1,24 +1,33 @@
 // ----------------------------------------------------------------------------
+// Styleguides
+
+%spacer {
+  &:after {
+    @include amp;
+    @include leader;
+    content: "— & —";
+    display: block;
+    color: rgba($pink-dark,.25);
+    text-align: center;
+  }
+}
+
+// ----------------------------------------------------------------------------
 // Banner
 
-$logosize: $xlargepx;
-$ampsize: $xxxlargepx;
-
 [role="banner"] {
-  @include adjust-font-size-to($logosize);
-  @include leader(1,$logosize);
+  @include adjust-font-size-to($xlargepx);
+  @include leader(.5);
 
   .amp {
-    @include adjust-font-size-to($ampsize,3,$logosize);
+    @include adjust-font-size-to($xxxlargepx);
     display: inline-block;
     margin-left: -.1em;
     vertical-align: middle;
     color: $blue-dark;
   }
 
-  a {
-    #{$focus} { color: $blue-dark; }
-  }
+  a { #{$focus} { color: $blue-dark; } }
 }
 
 // ----------------------------------------------------------------------------
@@ -26,16 +35,17 @@ $ampsize: $xxxlargepx;
 
 [role="navigation"] {
   @include sanscond;
-  @include leader(-.5);
-  @include trailer(2);
+  @include adjust-font-size-to($smallpx);
+  @include leader(-.75);
+  @include trailer(1);
 
   ul { @include inline-block-list; }
 
   a {
     #{$link} {
-      margin-right: rhythm(1);
+      @include rem(margin-right, rhythm(.5));
       color: $pink-dark;
-      &:before { content: "/"; }
+      &:before { content: "+"; }
     }
     #{$focus} { color: $blue-dark; }
   }
@@ -46,7 +56,7 @@ $ampsize: $xxxlargepx;
 
 [role="main"] {
   @extend %type;
-  @include trailer(2);
+  @include trailer;
   counter-reset: fig;
 }
 
@@ -57,7 +67,7 @@ $ampsize: $xxxlargepx;
   text-align: center;
   .prev { &:before { content: "« ";} }
   .current {
-    @include adjust-font-size-to($xxlargepx);
+    @include adjust-font-size-to($xxxlargepx);
     vertical-align: middle;
   }
   .next { &:after { content: " »";} }
@@ -67,15 +77,13 @@ $ampsize: $xxxlargepx;
 // ----------------------------------------------------------------------------
 // Contentinfo
 
-$footsize: $smallpx;
-
 [role="contentinfo"] {
   @include sanscond;
-  @include adjust-font-size-to($footsize);
+  @include adjust-font-size-to($smallpx);
   @include border-top-radius;
+  @include rem(margin, 0 0 - $grid-padding);
+  @include rem(padding, rhythm(.5) $grid-padding);
   clear: both;
-  margin: 0 0 - ($base-font-size/$footsize*$grid-padding);
-  padding: rhythm(1,$footsize) $grid-padding;
   overflow: hidden;
   background: $pink-lightest;
   background: rgba($pink-lightest,.5);
@@ -84,18 +92,16 @@ $footsize: $smallpx;
 }
 
 .social {
-  @include trailer(1,$footsize);
+  @include trailer;
 
-  ul {
-    @include inline-block-list;
-  }
+  ul { @include inline-block-list; }
 
   a {
-    margin-right: rhythm(.5,$footsize);
+    margin-right: rhythm(.5);
     &:before {
       @extend %icon-content;
-      @include adjust-font-size-to($base-font-size,1,$footsize);
-      padding-right: rhythm(.25);
+      @include adjust-font-size-to($base-font-size,1);
+      @include rem(padding-right, rhythm(.25));
     }
   }
 
@@ -109,6 +115,4 @@ $footsize: $smallpx;
   [href*="mailto"] { @extend %icon-mail; }
 }
 
-.colophon {
-  @include trailer(1,$footsize);
-}
+.colophon { @include trailer; }

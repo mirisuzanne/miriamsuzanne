@@ -1,7 +1,11 @@
 // ----------------------------------------------------------------------------
 // Posts
 
-.post { @include trailer(2); }
+.post {
+  @extend %spacer;
+  @include trailer;
+  &:last-of-type:after { display: none; }
+}
 
 .byline {
   color: $mid;

@@ -97,10 +97,14 @@
 }
 
 .susy-fonts, .jj-fonts {
-  font-size: 1.5em;
-  line-height: 1.62963em;
-  margin-bottom: 0.81481em;
-  padding: 0.40741em;
+  font-size: 30px;
+  font-size: 1.42857rem;
+  line-height: 48px;
+  line-height: 2.28571rem;
+  margin-bottom: 32px;
+  margin-bottom: 1.52381rem;
+  padding: 16px;
+  padding: 0.7619rem;
   background: rgba(255, 77, 166, 0.125);
 }
 .susy-fonts li, .jj-fonts li {
@@ -116,7 +120,6 @@
 .susy-fonts strong, .jj-fonts strong {
   -webkit-transition: all 800ms;
   -moz-transition: all 800ms;
-  -ms-transition: all 800ms;
   -o-transition: all 800ms;
   transition: all 800ms;
   display: inline-block;
