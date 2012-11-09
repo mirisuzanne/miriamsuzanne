@@ -181,7 +181,7 @@ html {
 
 html {
   background: #ffe5f2;
-  background: rgba(255, 204, 230, 0.25) url('../images/noise.png?1342825521');
+  background: rgba(255, 204, 230, 0.25);
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 204, 230, 0.25)), color-stop(100%, rgba(204, 242, 255, 0.25))), url('../images/noise.png?1342825521');
   background: -webkit-linear-gradient(top, rgba(255, 204, 230, 0.25), rgba(204, 242, 255, 0.25)), url('../images/noise.png?1342825521');
   background: -moz-linear-gradient(top, rgba(255, 204, 230, 0.25), rgba(204, 242, 255, 0.25)), url('../images/noise.png?1342825521');
