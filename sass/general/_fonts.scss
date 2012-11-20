@@ -62,76 +62,6 @@
 );
 
 // ----------------------------------------------------------------------------
-// FranklinGothic
-
-@include font-face(
-  'FranklinGothic',
-  font-files(
-    'FranklinGothic-Book-webfont.woff',woff,
-    'FranklinGothic-Book-webfont.ttf',truetype,
-    'FranklinGothic-Book-webfont.svg#webfontSMxOInhK',svg
-  ),
-  'FranklinGothic-Book-webfont.eot',
-  normal,
-  normal
-);
-@include font-face(
-  'FranklinGothic',
-  font-files(
-    'FranklinGothic-BookIt-webfont.woff',woff,
-    'FranklinGothic-BookIt-webfont.ttf',truetype,
-    'FranklinGothic-BookIt-webfont.svg#webfontSMxOInhK',svg
-  ),
-  'FranklinGothic-BookIt-webfont.eot',
-  normal,
-  italic
-);
-@include font-face(
-  'FranklinGothic',
-  font-files(
-    'FranklinGothic-Demi-webfont.woff',woff,
-    'FranklinGothic-Demi-webfont.ttf',truetype,
-    'FranklinGothic-Demi-webfont.svg#webfontSMxOInhK',svg
-  ),
-  'FranklinGothic-Demi-webfont.eot',
-  500,
-  normal
-);
-@include font-face(
-  'FranklinGothic',
-  font-files(
-    'FranklinGothic-DemiIt-webfont.woff',woff,
-    'FranklinGothic-DemiIt-webfont.ttf',truetype,
-    'FranklinGothic-DemiIt-webfont.svg#webfontSMxOInhK',svg
-  ),
-  'FranklinGothic-DemiIt-webfont.eot',
-  500,
-  italic
-);
-@include font-face(
-  'FranklinGothic',
-  font-files(
-    'FranklinGothic-Hvy-webfont.woff',woff,
-    'FranklinGothic-Hvy-webfont.ttf',truetype,
-    'FranklinGothic-Hvy-webfont.svg#webfontSMxOInhK',svg
-  ),
-  'FranklinGothic-Hvy-webfont.eot',
-  bold,
-  normal
-);
-@include font-face(
-  'FranklinGothic',
-  font-files(
-    'FranklinGothic-HvyIt-webfont.woff',woff,
-    'FranklinGothic-HvyIt-webfont.ttf',truetype,
-    'FranklinGothic-HvyIt-webfont.svg#webfontSMxOInhK',svg
-  ),
-  'FranklinGothic-HvyIt-webfont.eot',
-  bold,
-  italic
-);
-
-// ----------------------------------------------------------------------------
 // FranklinGothic Cond
 
 @include font-face(
@@ -164,7 +94,7 @@
     'FranklinGothic-DemiCd-webfont.svg#webfontSMxOInhK',svg
   ),
   'FranklinGothic-DemiCd-webfont.eot',
-  500,
+  bold,
   normal
 );
 @include font-face(
@@ -175,7 +105,7 @@
     'FranklinGothic-DemiCdIt-webfont.svg#webfontSMxOInhK',svg
   ),
   'FranklinGothic-DemiCdIt-webfont.eot',
-  500,
+  bold,
   italic
 );
 
@@ -189,8 +119,8 @@ $mono-stack   : Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "D
 // ----------------------------------------------------------------------------
 // Font Mixins
 
-@mixin sans { font-family: 'FranklinGothic',$sans-stack; }
 @mixin sanscond { font-family: 'FranklinGothicCond',$sans-stack; }
+@mixin sans { @include sanscond; }
 @mixin serif { font-family: 'CenturyOldStyle',$serif-stack; }
 @mixin serifcaps { font-family: 'CenturyOldStyleCaps',$serif-stack; }
 @mixin mono { font-family: $mono-stack; }
