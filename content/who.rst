@@ -24,7 +24,7 @@ with OddBird & Teacup Gorilla,
 and an open-source queer memory of the body
 with anyone who is interested.
 
-A selection of Eric's poetry will be published by EOAGH_ this fall,
+A selection of Eric's poetry will be published by EOAGH_ this spring,
 in conjunction with their upcoming
 “Anthology of Trans and Genderqueer Poetry.”
 
@@ -47,7 +47,8 @@ I collaborate with every day.
 *Daniel Eisenstat* & *Sondra Eby* at Teacup Gorilla;
 *Julie Rada* at Vicious Trap;
 *Chris Eppstein*, *Danny Palmer*, and many others working on Compass and Susy;
-*Jacob Liechty*, *Aaron Liechty*, & *Brandi Homan* in my writing group;
+*Jacob Liechty*, *Aaron Liechty*, |&| *Brandi Homan* in my writing group;
+*Megan Sumner* editing my work and making me laugh;
 and so on.
 
 Then there are the artists
@@ -71,6 +72,12 @@ who inspired & trained me.
 *E. Tracy Grinnell*,
 *Michelle Ellsworth*,
 *Caroline Bergvall*,
+*Erin Costello*,
+*Derrick Mund*,
+*Mark Rockswold*,
+*Kenny Storms*,
+*Michael Flatt*,
+*Aaron Angello*,
 and so on.
 
 This list is miserably incomplete.
@@ -79,3 +86,7 @@ learned from,
 been inspired by,
 and shamelessly ripped off.
 Thanks to all of them.
+
+.. |&| raw:: html
+
+  <span class="amp">&amp;</span>
