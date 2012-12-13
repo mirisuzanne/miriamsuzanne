@@ -69,7 +69,7 @@ until other ideas attach themselves.
 Once the parts begin to gel,
 I know it's time to pay closer attention.
 In the end,
-I'm have a list roughly similar to Anne's
+I have a list similar to Anne's
 before I move to the next step.
 
 A Seed of My Own
