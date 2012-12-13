@@ -559,6 +559,10 @@ body:after {
   content: "»";
 }
 
+.section {
+  clear: both;
+}
+
 .blog-archive, .tag-archive {
   margin-top: 32px;
   margin-top: 1.52381rem;
