@@ -1,5 +1,12 @@
 public: yes
 tags: [minifesto, fuck the muse, art, writing, process]
+summary: |
+  You can't start working
+  until you know what you are working towards.
+  That doesn't mean knowing all the answers,
+  it means knowing the questions that will guide you.
+  I refer to those guiding questions as
+  the "seed" of a project.
 
 Starting from a Seed
 ====================
