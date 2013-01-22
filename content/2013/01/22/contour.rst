@@ -33,8 +33,8 @@ using my iPad as a light table.
 
 .. _blind contours: http://en.wikipedia.org/wiki/Blind_contour_drawing
 
-Final Design
-------------
+Final(ish) Design
+-----------------
 
 |final|
 
