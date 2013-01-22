@@ -19,8 +19,6 @@ for *The Posture of Contour*,
 a new book by `James Belflower`_.
 I used the opportunity to get my mind out of an all-digital space,
 and spent most of my time with pen, paper, and oil pastel.
-Print design is a strange world
-with physical objects of predictable size & shape.
 
 Sketches
 --------
