@@ -71,7 +71,10 @@ a {
   // -------
   // Figures
 
-  figure { @include trailer(1); }
+  figure {
+    @include trailer(1);
+    > a, > img { @include box-shadow($base 0 0 6px); }
+  }
 
   figcaption {
     @include sanscond;

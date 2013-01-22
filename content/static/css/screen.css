@@ -244,6 +244,11 @@ a:focus, a:hover, a:active {
   margin-bottom: 32px;
   margin-bottom: 1.52381rem;
 }
+[role="main"] figure > a, [role="main"] figure > img {
+  -webkit-box-shadow: #404040 0 0 6px;
+  -moz-box-shadow: #404040 0 0 6px;
+  box-shadow: #404040 0 0 6px;
+}
 [role="main"] figcaption {
   font-family: "FranklinGothicCond", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
@@ -527,9 +532,6 @@ body:after {
   margin-right: 4.13223%;
   margin-bottom: 32px;
   margin-bottom: 1.52381rem;
-  -webkit-box-shadow: #404040 0 0 6px;
-  -moz-box-shadow: #404040 0 0 6px;
-  box-shadow: #404040 0 0 6px;
 }
 .gallery > a:nth-child(even), .gallery > img:nth-child(even) {
   float: right;
