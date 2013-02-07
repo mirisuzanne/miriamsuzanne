@@ -7,6 +7,7 @@ summary: |
   and tear it down just as fast if you need more space.
   This time I made a double-decker standing desk.
 
+
 Double-decker standing desk
 ===========================
 

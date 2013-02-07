@@ -12,6 +12,7 @@ summary: |
   What will be your inspirations?
   What will be your constraints?
 
+
 Get Curious [Part 1]
 ====================
 

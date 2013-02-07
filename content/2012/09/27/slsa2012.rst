@@ -8,6 +8,7 @@ summary: |
   is hosting a jurried elit event,
   and accepted my `submission <http://ericam.github.com/post-obsolete>`_.
 
+
 Electronic Literature and the Nonhuman
 ======================================
 

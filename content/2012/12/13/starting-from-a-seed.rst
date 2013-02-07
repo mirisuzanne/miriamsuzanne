@@ -8,6 +8,7 @@ summary: |
   I refer to those guiding questions as
   the "seed" of a project.
 
+
 Starting from a Seed
 ====================
 

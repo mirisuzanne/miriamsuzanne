@@ -6,6 +6,7 @@ summary: |
   for creating striped gradients
   with Sass.
 
+
 Create a striped css background using Sass
 ==========================================
 

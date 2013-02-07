@@ -9,6 +9,7 @@ summary: |
   We've planned a 6-week class in Denver,
   starting the first week of October.
 
+
 Fuck the Muse: Grab Your Writing by the Nasty Bits
 ==================================================
 

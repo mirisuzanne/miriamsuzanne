@@ -8,6 +8,7 @@ summary: |
   If I'm stuck, it's time for a new mindset.
   If my last move was to zig, my next move is to zag.
 
+
 Creative Modes and Cycles
 =========================
 

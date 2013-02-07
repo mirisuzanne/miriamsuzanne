@@ -5,6 +5,7 @@ summary: |
   ran this `interview with me <http://www.boulderwritersworkshop.org/2012/08/31/eric-meyer-discusses-collaboration-queer-art-and-his-multi-media-novel/>`_
   at the end of August.
 
+
 Collaboration, Queer Art, and a Multi-Media Novel
 =================================================
 

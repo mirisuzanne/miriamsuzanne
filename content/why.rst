@@ -1,5 +1,6 @@
 public: yes
 
+
 notes towards a queer art.
 ==========================
 

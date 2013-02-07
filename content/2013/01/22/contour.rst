@@ -10,6 +10,7 @@ summary: |
   I used the opportunity to get my mind out of an all-digital space,
   and spent most of my time with pen, paper, and oil pastel.
 
+
 The Contours of Book Design
 ===========================
 

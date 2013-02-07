@@ -9,6 +9,7 @@ summary: |
   let's start by establishing some broad themes
   that will resurface regularly along the way.
 
+
 Ordinary Tools of Thought
 =========================
 

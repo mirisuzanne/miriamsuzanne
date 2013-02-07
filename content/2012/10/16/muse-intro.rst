@@ -10,6 +10,7 @@ summary: |
   in a six-part *Fuck the Muse* blog
   `mini-series <http://www.imdb.com/title/tt0088727/>`_.
 
+
 Fuck the Muse: A Blog Mini-Series
 =================================
 
