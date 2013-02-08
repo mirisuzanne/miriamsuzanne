@@ -8,6 +8,23 @@ GIT
       listen (~> 0.5.3)
       sass (~> 3.2.0.alpha.93)
 
+GIT
+  remote: git://github.com/ericam/accoutrement
+  revision: f6a8873119d327cf3f72a67a26c9834bebd9086f
+  branch: master
+  specs:
+    accoutrement (0.0.4)
+      compass (>= 0.12.2)
+
+GIT
+  remote: git://github.com/ericam/susy
+  revision: 68a84c65f2b78c577d7c42c83ead7f44020f3c84
+  branch: master
+  specs:
+    susy (1.0.5)
+      compass (>= 0.12.2)
+      sass (>= 3.2.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -23,18 +40,16 @@ GEM
     sass (3.2.2)
     sassy-math (1.2)
       compass (~> 0.11)
-    susy (1.0.5.alpha.0)
-      compass (>= 0.12.2)
-      sass (>= 3.2.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  accoutrement!
   animate (~> 0.2.beta.0)
   chunky_png (~> 1.2.5)
   compass!
   modular-scale (~> 1.0.2)
   rb-fsevent (~> 0.9.1)
   sass (~> 3.2.1)
-  susy (~> 1.0.5.alpha.0)
+  susy!

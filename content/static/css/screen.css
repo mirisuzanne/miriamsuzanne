@@ -357,36 +357,50 @@ body:after {
 }
 
 .post:after {
-  font-family: "BaskervilleAmp", Baskerville, Palatino, Cambria, Georgia, serif;
-  margin-top: 32px;
-  margin-top: 1.52381rem;
   content: "— & —";
+  font-family: "BaskervilleAmp", Baskerville, Palatino, Cambria, Georgia, serif;
   display: block;
   color: #ff99cc;
   color: rgba(179, 0, 89, 0.25);
   text-align: center;
 }
 
+[role="contentinfo"] {
+  overflow: hidden;
+  margin-left: -1rem;
+  padding-left: 1rem;
+  margin-right: -1rem;
+  padding-right: 1rem;
+  -webkit-box-shadow: rgba(255, 77, 166, 0.25) 0 0 0.38095rem inset;
+  -moz-box-shadow: rgba(255, 77, 166, 0.25) 0 0 0.38095rem inset;
+  box-shadow: rgba(255, 77, 166, 0.25) 0 0 0.38095rem inset;
+  background: rgba(255, 204, 230, 0.25);
+}
+
 [role="banner"] {
-  font-size: 32px;
-  font-size: 1.52381rem;
-  line-height: 48px;
-  line-height: 2.28571rem;
-  margin-top: 16px;
-  margin-top: 0.7619rem;
+  font-size: 25px;
+  font-size: 1.19048rem;
+  line-height: 64px;
+  line-height: 3.04762rem;
+  white-space: nowrap;
+  text-align: center;
 }
 [role="banner"] .amp {
   font-size: 63px;
   font-size: 3rem;
-  line-height: 80px;
-  line-height: 3.80952rem;
+  line-height: 64px;
+  line-height: 3.04762rem;
   display: inline-block;
   margin-left: -0.1em;
+  margin-right: -0.1em;
   vertical-align: middle;
-  color: #0099cc;
+  color: #007399;
+}
+[role="banner"] a:link, [role="banner"] a:visited {
+  color: #b30059;
 }
 [role="banner"] a:focus, [role="banner"] a:hover, [role="banner"] a:active {
-  color: #0099cc;
+  color: #007399;
 }
 
 [role="navigation"] {
@@ -397,8 +411,9 @@ body:after {
   line-height: 1.52381rem;
   margin-top: -24px;
   margin-top: -1.14286rem;
-  margin-bottom: 32px;
-  margin-bottom: 1.52381rem;
+  margin-bottom: 16px;
+  margin-bottom: 0.7619rem;
+  text-align: center;
 }
 [role="navigation"] ul {
   margin: 0;
@@ -416,23 +431,87 @@ body:after {
   white-space: nowrap;
 }
 [role="navigation"] a:link, [role="navigation"] a:visited {
-  margin-right: 16px;
   margin-right: 0.7619rem;
-  color: #b30059;
+  color: rgba(179, 0, 89, 0.5);
 }
 [role="navigation"] a:link:before, [role="navigation"] a:visited:before {
   content: "+";
+  display: inline-block;
+  width: .5em;
 }
 [role="navigation"] a:focus, [role="navigation"] a:hover, [role="navigation"] a:active {
-  color: #0099cc;
+  color: #007399;
+}
+[role="navigation"] a:focus:before, [role="navigation"] a:hover:before, [role="navigation"] a:active:before {
+  content: "/";
+}
+.who [role="navigation"] a[href*="who"] {
+  color: #b30059;
+}
+.who [role="navigation"] a[href*="who"]:before {
+  content: "/";
+}
+.what [role="navigation"] a[href*="what"] {
+  color: #b30059;
+}
+.what [role="navigation"] a[href*="what"]:before {
+  content: "/";
+}
+.why [role="navigation"] a[href*="why"] {
+  color: #b30059;
+}
+.why [role="navigation"] a[href*="why"]:before {
+  content: "/";
+}
+[role="navigation"] li:last-child a:link, [role="navigation"] li:last-child a:visited {
+  margin: 0;
 }
 
 [role="main"] {
+  border-top-width: 2px;
+  border-top-width: 0.09524rem;
+  border-top-style: solid;
+  padding-top: 14px;
+  padding-top: 0.66667rem;
   margin-bottom: 32px;
   margin-bottom: 1.52381rem;
+  clear: both;
   counter-reset: fig;
+  border-top: 2px dashed rgba(179, 0, 89, 0.25);
 }
 
+@media (min-width: 39.70313em) {
+  [role="banner"], [role="navigation"] {
+    width: 47.93388%;
+    float: left;
+    margin-right: 4.13223%;
+    margin-top: 16px;
+    margin-top: 0.7619rem;
+  }
+
+  [role="banner"] {
+    text-align: left;
+  }
+
+  [role="navigation"] {
+    float: right;
+    margin-right: 0;
+    line-height: 56px;
+    line-height: 2.66667rem;
+    margin-bottom: 24px;
+    margin-bottom: 1.14286rem;
+    text-align: right;
+  }
+
+  [role="main"] {
+    border-top-width: 2px;
+    border-top-width: 0.09524rem;
+    border-top-style: solid;
+    padding-top: 30px;
+    padding-top: 1.42857rem;
+    border-top: 2px dashed rgba(179, 0, 89, 0.25);
+  }
+}
 .pagination {
   text-align: center;
 }
@@ -465,14 +544,9 @@ body:after {
   -moz-border-radius-topright: 5px;
   -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
-  margin: 0 -21px;
-  margin: 0 -1rem;
-  padding: 16px 21px;
-  padding: 0.7619rem 1rem;
+  padding-top: 0.7619rem;
+  padding-bottom: 0.7619rem;
   clear: both;
-  overflow: hidden;
-  background: #ffcce6;
-  background: rgba(255, 204, 230, 0.5);
   color: gray;
   text-transform: uppercase;
 }

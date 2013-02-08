@@ -2,10 +2,8 @@
 // Styleguides
 
 %spacer {
-  &:after {
+  @include after("— & —") {
     @include amp;
-    @include leader;
-    content: "— & —";
     display: block;
     color: $pink-lighter;
     color: rgba($pink-dark,.25);
@@ -13,52 +11,106 @@
   }
 }
 
+%boilerplate {
+  @include clearfix;
+  @include bleed($grid-padding);
+  @include box-shadow(rgba($pink-light,.25) 0 0 rhythm(.25) inset);
+  background: rgba($pink-lightest,.25);
+}
+
 // ----------------------------------------------------------------------------
 // Banner
 
 [role="banner"] {
-  @include adjust-font-size-to($xlargepx);
-  @include leader(.5);
+  @include adjust-font-size-to($medpx,2);
+  white-space: nowrap;
+  text-align: center;
 
   .amp {
-    @include adjust-font-size-to($xxxlargepx);
+    @include adjust-font-size-to($xxxlargepx,2);
     display: inline-block;
     margin-left: -.1em;
+    margin-right: -.1em;
     vertical-align: middle;
-    color: $blue-dark;
+    color: $blue-darker;
   }
 
-  a { #{$focus} { color: $blue-dark; } }
+  a {
+    #{$link} { color: $pink-dark; }
+    #{$focus} { color: $blue-darker; }
+  }
 }
 
 // ----------------------------------------------------------------------------
 // Navigation
 
+@mixin active-nav($slug) {
+  .#{$slug} &[href*="#{$slug}"] {
+    @include before("/");
+    color: $pink-dark;
+  }
+}
+
 [role="navigation"] {
   @include sanscond;
   @include adjust-font-size-to($smallpx);
   @include leader(-.75);
-  @include trailer(1);
+  @include trailer(.5);
+  text-align: center;
 
   ul { @include inline-block-list; }
 
   a {
     #{$link} {
-      @include rem(margin-right, rhythm(.5));
-      color: $pink-dark;
-      &:before { content: "+"; }
+      margin-right: rhythm(.5);
+      color: rgba($pink-dark,.5);
+      @include before("+") {
+        display: inline-block;
+        width: .5em;
+      }
     }
-    #{$focus} { color: $blue-dark; }
+    #{$focus} {
+      @include before("/");
+      color: $blue-darker;
+    }
+    @include active-nav(who);
+    @include active-nav(what);
+    @include active-nav(why);
   }
+  li:last-child a { #{$link} { margin: 0; } }
 }
 
 // ----------------------------------------------------------------------------
 // Main
 
+$main-top-border: 2px dashed rgba($pink-dark,.25);
+
 [role="main"] {
   @extend %type;
+  @include leading-border(2px,.5);
   @include trailer;
+  clear: both;
   counter-reset: fig;
+  border-top: $main-top-border;
+}
+
+@include at-breakpoint($total-columns) {
+  $half: floor($total-columns/2);
+  [role="banner"], [role="navigation"] {
+    @include span-columns($half);
+    @include leader(.5);
+  }
+  [role="banner"] { text-align: left; }
+  [role="navigation"] {
+    @include omega;
+    @include adjust-leading-to(1.75);
+    @include trailer(.75);
+    text-align: right;
+  }
+  [role="main"] {
+    @include leading-border(2px,1);
+    border-top: $main-top-border;
+  }
 }
 
 // ----------------------------------------------------------------------------
@@ -79,15 +131,13 @@
 // Contentinfo
 
 [role="contentinfo"] {
+  @extend %boilerplate;
   @include sanscond;
   @include adjust-font-size-to($smallpx);
   @include border-top-radius;
-  @include rem(margin, 0 0 - $grid-padding);
-  @include rem(padding, rhythm(.5) $grid-padding);
+  padding-top: rhythm(.5);
+  padding-bottom: rhythm(.5);
   clear: both;
-  overflow: hidden;
-  background: $pink-lightest;
-  background: rgba($pink-lightest,.5);
   color: $mid;
   text-transform: uppercase;
 }

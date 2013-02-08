@@ -8,6 +8,8 @@
   {% endif %}
 {% endblock styles %}
 
+{% block bodyclasses %}{{ super() }}{% if config.bodyclasses %} {{ config.bodyclasses }}{% endif %}{% endblock %}
+
 {% block body %}
 
   {%- if not config.hide_title %}
