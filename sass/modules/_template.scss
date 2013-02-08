@@ -104,7 +104,7 @@ $main-top-border: 2px dashed rgba($pink-dark,.25);
   [role="navigation"] {
     @include omega;
     @include adjust-leading-to(1.75);
-    @include trailer(.75);
+    @include trailer(.5);
     text-align: right;
   }
   [role="main"] {
