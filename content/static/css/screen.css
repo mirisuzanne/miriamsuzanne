@@ -431,7 +431,8 @@ body:after {
   white-space: nowrap;
 }
 [role="navigation"] a:link, [role="navigation"] a:visited {
-  margin-right: 0.7619rem;
+  display: block;
+  padding: 0 0.38095rem;
   color: rgba(179, 0, 89, 0.5);
 }
 [role="navigation"] a:link:before, [role="navigation"] a:visited:before {
@@ -462,9 +463,6 @@ body:after {
 }
 .why [role="navigation"] a[href*="why"]:before {
   content: "/";
-}
-[role="navigation"] li:last-child a:link, [role="navigation"] li:last-child a:visited {
-  margin: 0;
 }
 
 [role="main"] {
