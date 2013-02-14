@@ -2,11 +2,10 @@ public: yes
 tags: [minifesto, fuck the muse, art, writing, process]
 summary: |
   |ftm|:
-  Last week we started compiling our curiosity shopping lists.
-  We need to push out from our `seed`_ in every direction,
-  and the list is there to help guide us.
-
-  Now it's time to go shopping.
+  Last week we compiled our curiosity shopping lists,
+  preparing to push out from our `seed`_ in every direction.
+  We have the list to guide us:
+  now it's time to go shopping.
 
   .. _seed: /2012/12/13/starting-from-a-seed/
 
