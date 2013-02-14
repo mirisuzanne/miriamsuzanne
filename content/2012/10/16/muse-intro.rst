@@ -1,6 +1,7 @@
 public: yes
 tags: [minifesto, fuck the muse, art, writing, process]
 summary: |
+  |ftm|:
   I was planning to spend this month teaching
   `a class <http://eric.andmeyer.com/2012/08/30/fuck-the-muse>`_ for the
   `Boulder Writers' Workshop <http://www.boulderwritersworkshop.org/>`_.
@@ -10,9 +11,16 @@ summary: |
   in a six-part *Fuck the Muse* blog
   `mini-series <http://www.imdb.com/title/tt0088727/>`_.
 
+  .. |ftm| raw:: html
+
+    <em><a href="/2012/10/16/muse-intro/">Fuck the Muse</a> pt.1</em>
+
 
 Fuck the Muse: A Blog Mini-Series
 =================================
+
+[This is *part 1* in the ongoing
+`Fuck the Muse </2012/10/16/muse-intro/>`_ mini-series.]
 
 I was planning to spend this month
 teaching `a class`_ for the
@@ -110,6 +118,9 @@ The Mini-Series
 1. `Fuck the Muse: a Blog Mini-Series [intro] </2012/10/16/muse-intro/>`_
 2. `Ordinary Tools of Thought </2012/10/23/ordinary-tools-of-thought/>`_
 3. `Creative Modes and Cycles </2012/11/08/creative-cycles>`_
+4. `Starting from a Seed </2012/12/13/starting-from-a-seed/>`_
+5. `Get Curious </2013/02/07/get-curious/>`_
+6. `Explosive Growth </2013/02/14/explosive-growth/>`_
 
 .. _Viewpoints: http://en.wikipedia.org/wiki/Viewpoints
 .. _(re)making project: http://www.charlesmee.org/indexf.html

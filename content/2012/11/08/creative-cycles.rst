@@ -1,6 +1,7 @@
 public: yes
 tags: [minifesto, fuck the muse, art, writing, process]
 summary: |
+  |ftm|:
   Cycles have become the core of my creative process.
   Thinking in cycles means I always know
   where I am and where I'm going,
@@ -8,9 +9,16 @@ summary: |
   If I'm stuck, it's time for a new mindset.
   If my last move was to zig, my next move is to zag.
 
+  .. |ftm| raw:: html
+
+    <em><a href="/2012/10/16/muse-intro/">Fuck the Muse</a> pt.3</em>
+
 
 Creative Modes and Cycles
 =========================
+
+[This is *part 3* in the ongoing
+`Fuck the Muse </2012/10/16/muse-intro/>`_ mini-series.]
 
 In his 1991 `lecture on creativity`_,
 John Cleese describes two modes of operating:
@@ -189,6 +197,9 @@ The Mini-Series
 1. `Fuck the Muse: a Blog Mini-Series [intro] </2012/10/16/muse-intro/>`_
 2. `Ordinary Tools of Thought </2012/10/23/ordinary-tools-of-thought/>`_
 3. `Creative Modes and Cycles </2012/11/08/creative-cycles>`_
+4. `Starting from a Seed </2012/12/13/starting-from-a-seed/>`_
+5. `Get Curious </2013/02/07/get-curious/>`_
+6. `Explosive Growth </2013/02/14/explosive-growth/>`_
 
 .. |&| raw:: html
 

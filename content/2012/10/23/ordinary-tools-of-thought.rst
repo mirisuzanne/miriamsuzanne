@@ -1,6 +1,7 @@
 public: yes
 tags: [minifesto, fuck the muse, art, writing, process]
 summary: |
+  |ftm|:
   It seems I can't dive straight into
   the `five steps of creative process </2012/10/16/muse-intro/>`_ —
   my content wants to take a different route
@@ -9,9 +10,16 @@ summary: |
   let's start by establishing some broad themes
   that will resurface regularly along the way.
 
+  .. |ftm| raw:: html
+
+    <em><a href="/2012/10/16/muse-intro/">Fuck the Muse</a> pt.2</em>
+
 
 Ordinary Tools of Thought
 =========================
+
+[This is *part 2* in the ongoing
+`Fuck the Muse </2012/10/16/muse-intro/>`_ mini-series.]
 
   "Creativity isn't magic.
   It happens by applying ordinary tools of thought
@@ -116,6 +124,9 @@ The Mini-Series
 1. `Fuck the Muse: a Blog Mini-Series [intro] </2012/10/16/muse-intro/>`_
 2. `Ordinary Tools of Thought </2012/10/23/ordinary-tools-of-thought/>`_
 3. `Creative Modes and Cycles </2012/11/08/creative-cycles>`_
+4. `Starting from a Seed </2012/12/13/starting-from-a-seed/>`_
+5. `Get Curious </2013/02/07/get-curious/>`_
+6. `Explosive Growth </2013/02/14/explosive-growth/>`_
 
 .. _five steps of creative process: /2012/10/16/muse-intro/
 .. _Everything is a Remix: http://everythingisaremix.info/

@@ -1,6 +1,7 @@
 public: yes
 tags: [minifesto, fuck the muse, art, writing, process]
 summary: |
+  |ftm|:
   Now that you have
   `a seed worth exploring </2012/12/13/starting-from-a-seed/>`_,
   you are ready for step 2 of the creative process.
@@ -12,9 +13,16 @@ summary: |
   What will be your inspirations?
   What will be your constraints?
 
+  .. |ftm| raw:: html
 
-Get Curious [Part 1]
-====================
+    <em><a href="/2012/10/16/muse-intro/">Fuck the Muse</a> pt.5</em>
+
+
+Get Curious
+===========
+
+[This is *part 5* in the ongoing
+`Fuck the Muse </2012/10/16/muse-intro/>`_ mini-series.]
 
 Now that you have `a seed worth exploring`_,
 you are ready for step 2 of the creative process.
@@ -168,6 +176,7 @@ The Mini-Series
 3. `Creative Modes and Cycles </2012/11/08/creative-cycles>`_
 4. `Starting from a Seed </2012/12/13/starting-from-a-seed/>`_
 5. `Get Curious </2013/02/07/get-curious/>`_
+6. `Explosive Growth </2013/02/14/explosive-growth/>`_
 
 .. |bullshit| raw:: html
 

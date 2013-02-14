@@ -6,14 +6,13 @@ fuck the muse: notes
 
 get curious
 -----------
-- minimum viable artwork
-- gathering vs. creating, collaborating, avoiding chiches
 - blind variation / selective retention
 - Judgemental brainstorming
 - viewing all the points
 
 organize
 --------
+- minimum viable artwork
 
 draft
 -----

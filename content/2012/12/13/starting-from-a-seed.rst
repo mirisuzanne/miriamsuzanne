@@ -1,6 +1,7 @@
 public: yes
 tags: [minifesto, fuck the muse, art, writing, process]
 summary: |
+  |ftm|:
   You can't start working
   until you know what you are working towards.
   That doesn't mean knowing all the answers,
@@ -8,9 +9,16 @@ summary: |
   I refer to those guiding questions as
   the "seed" of a project.
 
+  .. |ftm| raw:: html
+
+    <em><a href="/2012/10/16/muse-intro/">Fuck the Muse</a> pt.4</em>
+
 
 Starting from a Seed
 ====================
+
+[This is *part 4* in the ongoing
+`Fuck the Muse </2012/10/16/muse-intro/>`_ mini-series.]
 
 *"What's the driving force behind this project?"*
 
@@ -143,6 +151,8 @@ The Mini-Series
 2. `Ordinary Tools of Thought </2012/10/23/ordinary-tools-of-thought/>`_
 3. `Creative Modes and Cycles </2012/11/08/creative-cycles>`_
 4. `Starting from a Seed </2012/12/13/starting-from-a-seed/>`_
+5. `Get Curious </2013/02/07/get-curious/>`_
+6. `Explosive Growth </2013/02/14/explosive-growth/>`_
 
 .. |specimen| raw:: html
 
