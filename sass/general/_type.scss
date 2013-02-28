@@ -73,7 +73,8 @@ a {
 
   figure {
     @include trailer(1);
-    > a, > img { @include box-shadow($base 0 0 6px); }
+    > a, > img, > .video { @include box-shadow($base 0 0 6px); }
+    .video { @include fluid-ratio; }
   }
 
   figcaption {
