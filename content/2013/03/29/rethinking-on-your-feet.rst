@@ -1,4 +1,4 @@
-public: no
+public: yes
 tags: [minifesto, fuck the muse, art, writing, process]
 summary: |
   |ftm|:
