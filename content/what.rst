@@ -1,36 +1,9 @@
 public: yes
-hide_title: yes
 bodyclasses: what
 
 
 Projects
 ========
-
-Events
-------
-
-- **Sept 29, 5-7pm** |
-  *Electronic Literature & the Nonhuman*,
-  The `Electronic Literature Organization <http://eliterature.org/electronic-literature-the-nonhuman/>`_
-  is featuring performances from an exciting mix of artists and works,
-  from ARGs to single-line programs,
-  at the `Society for Literature, Science, and the Arts <http://www.litsciarts.org/slsa12/>`_
-  conference in Milwaukee on Saturday.
-  (201C of the Frontier Airlines Center, SLSA 2012 Conference)
-- **Oct 10 - Nov 14, Wednesdays 7-9pm** |
-  *Fuck the Muse: Grab Your Writing by the Naughty Bits*,
-  a class on writing process
-  with a multimedia/queer twist,
-  organized by the
-  `Boulder Writers' Workshop <http://www.boulderwritersworkshop.org/>`_.
-  (Laundry on Lawrence, 27th and Lawrence, Denver)
-
-.. |&| raw:: html
-
-  <span class="amp">&</span>
-
-Projects
---------
 
 - `Into the Green Green Mud`_:
   *Love story, and after-love story.*
@@ -69,8 +42,7 @@ Dis|organizations
 .. _virtualenv: http://virtualenv.org/
 
 - `Teacup Gorilla`_:
-  *Pre-apocalyptic post-rock, and other multimedia experiments.
-  Like a mouse in a china shop.*
+  *Pre-apocalyptic post-rock, and other multimedia experiments.*
 
   - `Into the Green Green Mud`_:
     *Love story, and after-love story.*

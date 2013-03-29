@@ -7,28 +7,23 @@ Bio
 ===
 
 **Eric A. Meyer** is a multimedia artist
-specializing in collaborative creation,
-writing,
-and performance.
+based in Denver, CO.
 He is a co-founder, designer, and web developer with OddBird_;
-multi-instrumentalist and poet with `Teacup Gorilla`_;
-and all-around co-sucker with `Vicious Trap`_.
+musician and poet with `Teacup Gorilla`_;
+and writer/producer/performer with `Vicious Trap`_.
 He is also the creator of Susy_,
 and a core contributor to Compass_.
 
-Formerly Artistic Director of `New World Arts`_
-and Technical Director of `The LIDA Project`_,
-Eric is currently developing
-a clusterfuck opera
-with Vicious Trap,
-a multimedia novel
-with OddBird & Teacup Gorilla,
-and an open-source queer memory of the body
-with anyone who is interested.
+Before all that, Eric was the
+Artistic Director for `New World Arts`_,
+and Technical Director at `The LIDA Project`_.
 
 A selection of Eric's poetry will be published by EOAGH_ this spring,
-in conjunction with their upcoming
-“Anthology of Trans and Genderqueer Poetry.”
+in a digital adendum to
+"`Troubling the Line`_: Trans and Genderqueer Poetry and Poetics",
+and exerpts from his new novel will appear in
+`Exit Strata`_'s Print! Vol. 3
+and accompanying art installation.
 
 .. _OddBird: http://oddbird.net/
 .. _Teacup Gorilla: http://teacupgorilla.com/
@@ -38,6 +33,8 @@ in conjunction with their upcoming
 .. _EOAGH: http://eoagh.com/
 .. _Susy: http://susy.oddbird.net/
 .. _Compass: http://compass-style.org/
+.. _Troubling the Line: http://www.nightboat.org/title/troubling-line-trans-and-genderqueer-poetry-and-poetics
+.. _Exit Strata: http://www.exitstrata.com/
 
 Co|conspirators
 ---------------
