@@ -21,7 +21,7 @@ $mycolors: red orange yellow green blue indigo violet;
 }
 
 .demo-rainbow {
-  @include background-image(rainbow(left, $mycolors));
+  @include background-image(rainbow(to right, $mycolors));
   @include trailer;
   height: rhythm(4);
 }

@@ -1,7 +1,15 @@
 // ----------------------------------------------------------------------------
 // Layout
 
-body {
+body { @include baseline-grid-background; }
+
+[role="main"] {
+  @include h-borders(2px,1);
+  border-style: dashed;
+  border-color: color($pink lightest,.25);
+}
+
+.header, .main-content, [role="contentinfo"] {
   @include container;
-  @include baseline-grid-background;
+  @include susy-grid-background;
 }

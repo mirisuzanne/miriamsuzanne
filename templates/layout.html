@@ -1,35 +1,37 @@
 {% extends "base.html" %}
 
 {% block template %}
-<h1 role="banner"><a href="/" rel="home">Eric<span class="amp">&</span>Meyer</a></h1>
+<div class="header">
+  <h1 role="banner"><a href="/" rel="home">Eric<span class="amp">&</span>Meyer</a></h1>
 
-<nav role="navigation">
-  <ul>
-    <li><a href="/why/">manifesto</a></li>
-    <li><a href="/what/">projects</a></li>
-    <li><a href="/who/">bio</a></li>
-  </ul>
-</nav>
+  <nav role="navigation">
+    <ul>
+      <li><a href="/why/">manifesto</a></li>
+      <li><a href="/what/">projects</a></li>
+      <li><a href="/who/">bio</a></li>
+    </ul>
+  </nav>
+</div>
 
 <section role="main">
-
+<div class="main-content">
   {% block body %}
 
   {% endblock body %}
-
+</div>
 </section>
 
 <footer role="contentinfo">
   <div class="social">
     <ul>
-      <li class="email">eric(put the 'at' sign here)andmeyer.com</li>
-      <li><a rel="me" href="http://feeds.feedburner.com/ericandmeyer/">feed</a></li>
-      <li><a rel="me" href="http://twitter.com/eriiicam/">twitter</a></li>
-      <li><a rel="me" href="http://facebook.com/eriiicam/">facebook</a></li>
-      <li><a rel="me" href="http://dribbble.com/players/ericam/">dribbble</a></li>
-      <li><a rel="me" href="http://vimeo.com/eriiicam">vimeo</a></li>
-      <li><a rel="me" href="http://www.github.com/ericam/">github</a></li>
-      <li><a rel="me" href="http://stackoverflow.com/users/108625/eric-meyer/">stack overflow</a></li>
+      <li class="email" title="Email">eric(put the 'at' sign here)andmeyer.com</li>
+      <li><a rel="me" href="http://feeds.feedburner.com/ericandmeyer/" title="RSS feed">feed</a></li>
+      <li><a rel="me" href="http://twitter.com/eriiicam/" title="Twitter">twitter</a></li>
+      <li><a rel="me" href="http://facebook.com/eriiicam/" title="Facebook">facebook</a></li>
+      <li><a rel="me" href="http://dribbble.com/players/ericam/" title="Dribbble">dribbble</a></li>
+      <li><a rel="me" href="http://vimeo.com/eriiicam" title="Vimeo">vimeo</a></li>
+      <li><a rel="me" href="http://www.github.com/ericam/" title="Github">github</a></li>
+      <li><a rel="me" href="http://stackoverflow.com/users/108625/eric-meyer/" title="Stack Overflow">stack overflow</a></li>
     </ul>
   </div>
 
@@ -40,7 +42,6 @@
     for <a href="http://www.python.org">Python</a>,
     and styled using <a href="http://www.w3.org/TR/css-2010/">CSS3</a>,
     with help from
-    <a href="http://subtlepatterns.com/">Subtle Patterns</a>,
     <a href="http://www.jquery.com/">jQuery</a>,
     <a href="http://www.modernizr.com/">Modernizr</a>,
     <a href="http://keyamoon.com/icomoon/">IcoMoon</a>,

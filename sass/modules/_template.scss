@@ -5,29 +5,21 @@
   @include after("— & —") {
     @include amp;
     display: block;
-    color: $pink-lighter;
-    color: rgba($pink-dark,.25);
+    color: color($pink lightest, .25);
     text-align: center;
   }
-}
-
-%boilerplate {
-  @include clearfix;
-  @include bleed($grid-padding);
-  @include box-shadow(rgba($pink-light,.25) 0 0 rhythm(.25) inset);
-  background: rgba($pink-lightest,.25);
 }
 
 // ----------------------------------------------------------------------------
 // Banner
 
 [role="banner"] {
-  @include adjust-font-size-to($medpx,2);
+  @include leader(.25);
   white-space: nowrap;
   text-align: center;
 
   .amp {
-    @include adjust-font-size-to($xxxlargepx,2);
+    @include adjust-font-size-to($xxlargepx);
     display: inline-block;
     margin-left: -.1em;
     margin-right: -.1em;
@@ -54,8 +46,8 @@
 [role="navigation"] {
   @include sanscond;
   @include adjust-font-size-to($smallpx);
-  @include leader(-.75);
-  @include trailer(.5);
+  @include leader(-.5);
+  @include trailer(.25);
   text-align: center;
 
   ul { @include inline-block-list; }
@@ -80,37 +72,28 @@
   }
 }
 
-// ----------------------------------------------------------------------------
-// Main
-
-$main-top-border: 2px dashed rgba($pink-dark,.25);
-
-[role="main"] {
-  @extend %type;
-  @include leading-border(2px,.5);
-  @include trailer;
-  clear: both;
-  counter-reset: fig;
-  border-top: $main-top-border;
-}
-
-@include at-breakpoint($total-columns) {
+@include at-breakpoint(25em $total-columns) {
   $half: floor($total-columns/2);
+
+  .header { @include rhythm-padding(.25); }
   [role="banner"], [role="navigation"] {
     @include span-columns($half);
-    @include leader(.5);
   }
   [role="banner"] { text-align: left; }
   [role="navigation"] {
     @include omega;
-    @include adjust-leading-to(1.75);
-    @include trailer(.5);
+    @include leader(.375);
     text-align: right;
   }
-  [role="main"] {
-    @include leading-border(2px,1);
-    border-top: $main-top-border;
-  }
+}
+
+// ----------------------------------------------------------------------------
+// Main
+
+[role="main"] {
+  @extend %type;
+  clear: both;
+  counter-reset: fig;
 }
 
 // ----------------------------------------------------------------------------
@@ -131,9 +114,8 @@ $main-top-border: 2px dashed rgba($pink-dark,.25);
 // Contentinfo
 
 [role="contentinfo"] {
-  @extend %boilerplate;
   @include sanscond;
-  @include adjust-font-size-to($smallpx);
+  @include adjust-font-size-to($xsmallpx);
   @include border-top-radius;
   padding-top: rhythm(.5);
   padding-bottom: rhythm(.5);
@@ -143,16 +125,21 @@ $main-top-border: 2px dashed rgba($pink-dark,.25);
 }
 
 .social {
-  @include trailer;
+  @include trailer(.25);
 
-  ul { @include inline-block-list; }
+  li { display: inline-block; }
 
   a {
-    margin-right: rhythm(.5);
-    &:before {
-      @extend %icon-content;
-      @include adjust-font-size-to($base-font-size,1);
-      @include rem(padding-right, rhythm(.25));
+    @extend %icon-replace;
+    @include adjust-font-size-to($medpx,1.5);
+    @include border-radius(rhythm(.25));
+    display: inline-block;
+    width: rhythm(1.5);
+    border: 1px solid color($accent,0);
+    text-align: center;
+    &:before { right: 0; }
+    #{$focus} {
+      border: 1px solid $accent;
     }
   }
 
@@ -166,4 +153,4 @@ $main-top-border: 2px dashed rgba($pink-dark,.25);
   [href*="mailto"] { @extend %icon-mail; }
 }
 
-.colophon { @include trailer; }
+.colophon { @include trailer(.25); }
