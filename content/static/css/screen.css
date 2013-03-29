@@ -228,9 +228,16 @@ a:focus, a:hover, a:active {
 [role="main"] blockquote em {
   font-style: normal;
 }
-[role="main"] ul ul, [role="main"] ul ol, [role="main"] ol ul, [role="main"] ol ol, [role="main"] blockquote ul, [role="main"] blockquote ol {
-  margin-left: 32px;
+[role="main"] ul, [role="main"] ol, [role="main"] blockquote {
   margin-left: 1.52381rem;
+}
+@media (min-width: 46.59375em) {
+  [role="main"] ul, [role="main"] ol, [role="main"] blockquote {
+    margin-left: 0;
+  }
+  [role="main"] ul ul, [role="main"] ul ol, [role="main"] ol ul, [role="main"] ol ol, [role="main"] blockquote ul, [role="main"] blockquote ol {
+    margin-left: 1.52381rem;
+  }
 }
 [role="main"] figure {
   margin-bottom: 32px;
