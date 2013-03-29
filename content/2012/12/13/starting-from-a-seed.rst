@@ -144,8 +144,8 @@ and then pay attention to how you get there.
 De-mystify the process,
 then learn to repeat it.
 
-The Mini-Series
----------------
+The Series
+----------
 
 1. `Fuck the Muse: a Blog Mini-Series [intro] </2012/10/16/muse-intro/>`_
 2. `Ordinary Tools of Thought </2012/10/23/ordinary-tools-of-thought/>`_
@@ -153,6 +153,7 @@ The Mini-Series
 4. `Starting from a Seed </2012/12/13/starting-from-a-seed/>`_
 5. `Get Curious </2013/02/07/get-curious/>`_
 6. `Explosive Growth </2013/02/14/explosive-growth/>`_
+7. `(re)Thinking on Your Feet </2013/03/29/rethinking-on-your-feet/>`_
 
 .. |specimen| raw:: html
 

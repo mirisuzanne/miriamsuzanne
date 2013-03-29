@@ -118,8 +118,8 @@ and we'll borrow from them regularly —
 but I want to show that the conceptual/remix process is essential
 for *every* medium and *every* genre.
 
-The Mini-Series
----------------
+The Series
+----------
 
 1. `Fuck the Muse: a Blog Mini-Series [intro] </2012/10/16/muse-intro/>`_
 2. `Ordinary Tools of Thought </2012/10/23/ordinary-tools-of-thought/>`_
@@ -127,6 +127,7 @@ The Mini-Series
 4. `Starting from a Seed </2012/12/13/starting-from-a-seed/>`_
 5. `Get Curious </2013/02/07/get-curious/>`_
 6. `Explosive Growth </2013/02/14/explosive-growth/>`_
+7. `(re)Thinking on Your Feet </2013/03/29/rethinking-on-your-feet/>`_
 
 .. _five steps of creative process: /2012/10/16/muse-intro/
 .. _Everything is a Remix: http://everythingisaremix.info/

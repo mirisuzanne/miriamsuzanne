@@ -11,6 +11,10 @@ Projects
   *Clusterfuck opera, and mythic science experiment.*
 - Variations on Riding Sidesaddle:
   *Open-source queer memory of the body.*
+- `Fuck The Muse`_:
+  *blog mini-series on cretive process.*
+
+.. _Fuck The Muse: /2012/10/16/muse-intro/
 
 Art|ifacts
 ----------

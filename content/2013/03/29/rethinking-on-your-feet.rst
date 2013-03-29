@@ -19,6 +19,9 @@ summary: |
 (re)Thinking on Your Feet
 =========================
 
+[This is *part 7* in the ongoing
+`Fuck the Muse </2012/10/16/muse-intro/>`_ mini-series.]
+
 Sometimes you have a great idea for a project,
 or one aspect of a project,
 and you throw everything at it,
