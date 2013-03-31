@@ -31,8 +31,8 @@ a {
     @include adjust-font-size-to($xlargepx);
     @include at-breakpoint($total-columns) { @include adjust-font-size-to($xxlargepx); }
     a {
-      #{$link} { color: $pink-dark; }
-      #{$focus} { color: $blue-dark; }
+      #{$link} { color: color($alt dark); }
+      #{$focus} { color: color($accent dark); }
     }
   }
 
@@ -60,7 +60,7 @@ a {
 
   blockquote {
     @include rem(padding, 0 rhythm(.751));
-    @include rem(border-left, rhythm(.25) solid $lighter);
+    @include rem(border-left, rhythm(.25) solid color(lighter));
     em { font-style: normal; }
   }
 
@@ -86,7 +86,7 @@ a {
     @include adjust-font-size-to($smallpx,.75);
     @include leader(.5);
     @include rem(padding, rhythm(.5));
-    background: rgba($pink-light,.125);
+    background: color($alt light,.125);
     counter-increment: fig;
     &:before {
       @include serif;
@@ -112,7 +112,7 @@ a {
   pre {
     @include rem(margin-left, rhythm(-.5));
     @include rem(padding, rhythm(.5));
-    border-left: 3px solid $pink-lightest;
+    border-left: 3px solid color($alt lightest);
   }
 
 }

@@ -2,6 +2,7 @@
 
 {% block template %}
 <div class="header">
+<div class="header-content">
   <h1 role="banner"><a href="/" rel="home">Eric<span class="amp">&</span>Meyer</a></h1>
 
   <nav role="navigation">
@@ -11,6 +12,7 @@
       <li><a href="/who/">bio</a></li>
     </ul>
   </nav>
+</div>
 </div>
 
 <section role="main">
@@ -22,16 +24,17 @@
 </section>
 
 <footer role="contentinfo">
+<div class="footer-content">
   <div class="social">
     <ul>
-      <li class="email" title="Email">eric(put the 'at' sign here)andmeyer.com</li>
-      <li><a rel="me" href="http://feeds.feedburner.com/ericandmeyer/" title="RSS feed">feed</a></li>
-      <li><a rel="me" href="http://twitter.com/eriiicam/" title="Twitter">twitter</a></li>
-      <li><a rel="me" href="http://facebook.com/eriiicam/" title="Facebook">facebook</a></li>
-      <li><a rel="me" href="http://dribbble.com/players/ericam/" title="Dribbble">dribbble</a></li>
-      <li><a rel="me" href="http://vimeo.com/eriiicam" title="Vimeo">vimeo</a></li>
-      <li><a rel="me" href="http://www.github.com/ericam/" title="Github">github</a></li>
-      <li><a rel="me" href="http://stackoverflow.com/users/108625/eric-meyer/" title="Stack Overflow">stack overflow</a></li>
+      <li class="email" data-title="Email">eric(put the 'at' sign here)andmeyer.com</li>
+      <li data-title="RSS feed"><a rel="me" href="http://feeds.feedburner.com/ericandmeyer/" >feed</a></li>
+      <li data-title="Twitter"><a rel="me" href="http://twitter.com/eriiicam/" >twitter</a></li>
+      <li data-title="Facebook"><a rel="me" href="http://facebook.com/eriiicam/" >facebook</a></li>
+      <li data-title="Dribbble"><a rel="me" href="http://dribbble.com/players/ericam/" >dribbble</a></li>
+      <li data-title="Vimeo"><a rel="me" href="http://vimeo.com/eriiicam" >vimeo</a></li>
+      <li data-title="Github"><a rel="me" href="http://www.github.com/ericam/" >github</a></li>
+      <li data-title="Stack Overflow"><a rel="me" href="http://stackoverflow.com/users/108625/eric-meyer/" >stack overflow</a></li>
     </ul>
   </div>
 
@@ -53,5 +56,6 @@
   <p class="copyright vcard">copyright &copy; 2011-2012
     <a href="http://eric.andmeyer.com/" class="fn url">Eric A. Meyer</a>
   </p>
+</div>
 </footer>
 {% endblock template %}

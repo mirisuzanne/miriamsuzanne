@@ -1,15 +1,209 @@
 // ----------------------------------------------------------------------------
+// Styleguides
+
+%spacer {
+  @include after("— & —") {
+    @include amp;
+    display: block;
+    color: color($alt lightest, .75);
+    text-align: center;
+  }
+}
+
+// ----------------------------------------------------------------------------
 // Layout
 
 body { @include baseline-grid-background; }
 
 [role="main"] {
-  @include h-borders(2px,1);
+  // @include rotate(180deg);
+  @include h-borders(2px,.5);
   border-style: dashed;
-  border-color: color($pink lightest,.25);
+  border-color: color($alt lightest, .5);
+  background: color(white,.95) image-url('noise2.png') repeat fixed;
 }
 
-.header, .main-content, [role="contentinfo"] {
+.header-content, .main-content, .footer-content {
+  // @include susy-grid-background;
   @include container;
-  @include susy-grid-background;
 }
+
+.main-content, .footer-content {
+  @include rhythm-padding(.5);
+}
+
+// ----------------------------------------------------------------------------
+// Banner
+
+[role="banner"] {
+  @include leader(.25);
+  white-space: nowrap;
+  text-align: center;
+
+  .amp {
+    @include adjust-font-size-to($xxlargepx);
+    display: inline-block;
+    margin-left: -.1em;
+    margin-right: -.1em;
+    vertical-align: middle;
+    color: color($accent darker);
+  }
+
+  a {
+    #{$link} { color: color($alt dark); }
+    #{$focus} { color: color($accent darker); }
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Navigation
+
+@mixin active-nav($slug) {
+  .#{$slug} &[href*="#{$slug}"] {
+    @include before("/");
+    color: color($alt dark);
+  }
+}
+
+[role="navigation"] {
+  @include sanscond;
+  @include adjust-font-size-to($smallpx);
+  @include leader(-.5);
+  @include trailer(.25);
+  text-align: center;
+
+  ul { @include inline-block-list; }
+
+  a {
+    #{$link} {
+      display: block;
+      padding: 0 rhythm(.25);
+      color: color($alt dark,.5);
+      @include before("+") {
+        display: inline-block;
+        width: .5em;
+      }
+    }
+    #{$focus} {
+      @include before("/");
+      color: color($accent darker);
+    }
+    @include active-nav(who);
+    @include active-nav(what);
+    @include active-nav(why);
+  }
+}
+
+@include at-breakpoint(25em $total-columns) {
+  $half: floor($total-columns/2);
+
+  .header { @include rhythm-padding(.25); }
+  [role="banner"], [role="navigation"] {
+    @include span-columns($half);
+  }
+  [role="banner"] { text-align: left; }
+  [role="navigation"] {
+    @include omega;
+    @include leader(.375);
+    text-align: right;
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Main
+
+[role="main"] {
+  @extend %type;
+  clear: both;
+  counter-reset: fig;
+}
+
+// ----------------------------------------------------------------------------
+// Pagination
+
+.pagination {
+  text-align: center;
+  .prev { &:before { content: "« ";} }
+  .current {
+    @include adjust-font-size-to($xxxlargepx);
+    vertical-align: middle;
+  }
+  .next { &:after { content: " »";} }
+  .disabled { color: $mid; }
+}
+
+// ----------------------------------------------------------------------------
+// Contentinfo
+
+[role="contentinfo"] {
+  @include sanscond;
+  @include adjust-font-size-to($xsmallpx);
+  @include border-top-radius;
+  padding-top: rhythm(.5);
+  padding-bottom: rhythm(.5);
+  clear: both;
+  color: $mid;
+  text-transform: uppercase;
+}
+
+.social {
+  @include trailer(.25);
+  text-align: center;
+
+  li {
+    position: relative;
+    display: inline-block;
+    @include before(" ") {
+      display: none;
+      position: absolute;
+      bottom: 100%;
+      left: rhythm(.5);
+      height: 0;
+      width: 0;
+      border: rhythm(.25) solid rgba(black,0);
+      border-bottom: 0;
+      border-top-color: color($base);
+    }
+    @include after(attr(data-title)) {
+      display: none;
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      margin-bottom: rhythm(.25);
+      padding: rhythm(.25) rhythm(.5);
+      background: color(darker);
+      color: color(lightest);
+      text-shadow: color(darkest) 0 1px 0;
+      white-space: nowrap;
+    }
+    #{$focus} {
+      &:before, &:after { display: block; }
+    }
+  }
+
+  a {
+    @extend %icon-replace;
+    @include adjust-font-size-to($medpx,1.5);
+    @include border-radius(rhythm(.25));
+    display: inline-block;
+    width: rhythm(1.5);
+    border: 1px solid color($accent,0);
+    text-align: center;
+    &:before { right: 0; }
+    #{$focus} {
+      border: 1px solid $accent;
+      background: color(white);
+    }
+  }
+
+  [href*="twitter"] { @extend %icon-twitter; }
+  [href*="facebook"] { @extend %icon-facebook; }
+  [href*="dribbble"] { @extend %icon-dribbble; }
+  [href*="github"] { @extend %icon-github; }
+  [href*="vimeo"] { @extend %icon-vimeo; }
+  [href*="stackoverflow"] { @extend %icon-stack-overflow; }
+  [href*="feed"] { @extend %icon-feed; }
+  [href*="mailto"] { @extend %icon-mail; }
+}
+
+.colophon { @include trailer(.25); }

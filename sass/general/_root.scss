@@ -14,7 +14,11 @@ html {
   color: $base;
 }
 
-body { @include serif; }
+body {
+  @include serif;
+  @include background(image-url('backgrounds/finger.png') no-repeat fixed center);
+  @include background-size(cover);
+}
 
 img {
   vertical-align: bottom;
