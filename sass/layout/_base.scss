@@ -16,7 +16,7 @@
 body { @include baseline-grid-background; }
 
 [role="main"] {
-  // @include rotate(180deg);
+  @include rotate(180deg);
   @include h-borders(2px,.5);
   border-style: dashed;
   border-color: color($alt lightest, .5);
