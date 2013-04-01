@@ -122,14 +122,25 @@ body { @include baseline-grid-background; }
 // Pagination
 
 .pagination {
+  font-style: italic;
   text-align: center;
-  .prev { &:before { content: "« ";} }
-  .current {
-    @include adjust-font-size-to($xxxlargepx);
-    vertical-align: middle;
+  .location {
+    @include wrap-content(" • ");
+    margin: 0 1em;
   }
-  .next { &:after { content: " »";} }
-  .disabled { color: $mid; }
+  .now, .context {
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+  }
+  .now { @include adjust-font-size-to($xxxlargepx + $largepx); }
+  .context {
+    @include adjust-font-size-to($xxxlargepx);
+    padding: 0 .125em;
+  }
+  .prev { @include before("« "); }
+  .next { @include after(" »"); }
+  .disabled { color: color(dark,.25); }
 }
 
 // ----------------------------------------------------------------------------
