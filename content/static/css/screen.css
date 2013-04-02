@@ -380,11 +380,6 @@ a:focus, a:hover, a:active {
 }
 
 [role="main"] {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
   border-top-width: 2px;
   border-top-width: 0.09524rem;
   border-top-style: solid;
