@@ -6,9 +6,9 @@ Projects
 ========
 
 - `Into the Green Green Mud`_:
-  *Love story, and after-love story.*
+  *Love story & after-love story.*
 - Pity+Fear:
-  *Clusterfuck opera, and mythic science experiment.*
+  *Clusterfuck opera & mythic science experiment.*
 - Variations on Riding Sidesaddle:
   *Open-source queer memory of the body.*
 - `Fuck The Muse`_:
@@ -73,11 +73,100 @@ Dis|organizations
 
 .. _Vicious Trap: http://vicioustrap.com/
 
+Productions
+-----------
+
+- **Missa Populi** (2010 - World Premier)
+
+  - *Creator, Writer, and Director*
+  - *Vicious Trap & The Packing House Center for the Arts*
+
+- **Roller Skating With My Cousin** (2010 - World Premier)
+
+  - *Ensemble Member*
+  - *The LIDA Project*
+
+- **A Murder One Less** (2009 - World Premier)
+
+  - *Producer, Designer, and Operator*
+  - *Vicious Trap & The Boulder International Fringe Festival*
+
+- **Rain /of Terror** (2009 - World Premier)
+
+  - *Lighting Designer*
+  - *The LIDA Project*
+  - **Denver Post Ovation Award Nomination**: *Best Lighting Design*
+
+- **The Resistible Rise of Arturo Ui** (2008)
+
+  - *Technical Director*
+  - *Countdown to Zero*
+
+- **Dar al-Harb** (2008 - World Premier)
+
+  - *Assistant Media Designer*
+  - *Theatreworks*
+
+- **The Anonymous Mr. W.** (2008)
+
+  - *Assistant Director*
+  - *The LIDA Project*
+
+- **My Name Is Rachel Corrie** (2007)
+
+  - *Tour Manager & Technical Director*
+  - *Countdown to Zero*
+
+- **Bigger Guns III: Revenge of the Apocalypse (Again)** (2007 - World Premier)
+
+  - *co-Creator, Writer, and Director*
+  - *New World Arts*
+
+- **Fear/Falling** (2006 - World Premier)
+
+  - *Director*
+  - *New World Arts*
+
+- **Danny and the Deep Blue Sea** (2006)
+
+  - *Director*
+  - *New World Arts*
+
+- **Hello and Goodbye** (2006)
+
+  - *Director*
+  - *New World Arts*
+
+- **Sadomasochism** (2005 - World Premier)
+
+  - *Writer & Director*
+  - *New World Arts*
+
+- **In a Time of War** (2004)
+
+  - *Writer*
+  - *New World Arts*
+  - **Goshen College International Peace Play Contest**: *Second place*
+
+- **Every Other Day** (2004 - World Premier)
+
+  - *Writer*
+  - *New World Arts*
+  - **Pinchpenny Press**: *Chapbook publication*
+  - **Kennedy Center ACTF Finalist**: *Best one-act play*
+
+- **Daffodil MF** (2003)
+
+  - *Writer*
+  - **shortfilmfest03**: *Audience Choice Award*
+  - **Kennedy Center ACTF Finalist**: *Best 10-minute play*
+
+
 And Cetera
 ----------
 
 - Naropa Summer Writing Program (2012):
-  *Student with E. Tracy Grinnell, Michelle Ellsworth, and Caroline Bergvall*
+  *Studied writing & performance with E. Tracy Grinnell, Michelle Ellsworth, and Caroline Bergvall*
 - Raven Jane (2010-2012):
   *Bass*
 - The LIDA Project (2008-2010):
@@ -91,5 +180,8 @@ And Cetera
 - Oregon Shakespeare Festival (2001):
   *Stage Management Intern*
 - Goshen College (2001-2006):
-  *Student of writing and theater*
+  *Studied of writing, theatre, and art*
 
+.. |br| raw:: html
+
+  <br />

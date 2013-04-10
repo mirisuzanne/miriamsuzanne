@@ -6,24 +6,25 @@ bodyclasses: who
 Bio
 ===
 
-**Eric A. Meyer** is a multimedia artist
-based in Denver, CO.
-He is a co-founder, designer, and web developer with OddBird_;
-musician and poet with `Teacup Gorilla`_;
-and writer/producer/performer with `Vicious Trap`_.
-He is also the creator of Susy_,
-and a core contributor to Compass_.
+**Eric A. Meyer** is a multimedia artist and developer.
+Formerly Artistic Director for `New World Arts`_
+and Technical Director at `The LIDA Project`_,
+Eric is a co-founder, designer, and web developer at OddBird_;
+musician & poet with `Teacup Gorilla`_;
+and writer/producer with `Vicious Trap`_.
+He created the Susy_ grid system,
+and is a core contributor to the Compass_ project.
 
-Before all that, Eric was the
-Artistic Director for `New World Arts`_,
-and Technical Director at `The LIDA Project`_.
-
-A selection of Eric's poetry will be published by EOAGH_ this spring,
+Eric has written, directed and designed
+enseble theatre productions across the country,
+including Missa Populi, Untitled #39, Rain /of Terror,
+Fear/Falling, Danny and the Deep Blue Sea, and Sadomasochism.
+A selection of his poetry will be published by EOAGH_ this spring,
 in a digital adendum to
 "`Troubling the Line`_: Trans and Genderqueer Poetry and Poetics",
 and exerpts from his new novel will appear in
 `Exit Strata`_'s Print! Vol. 3
-and accompanying art installation.
+and accompanying art installation this summer.
 
 .. _OddBird: http://oddbird.net/
 .. _Teacup Gorilla: http://teacupgorilla.com/
