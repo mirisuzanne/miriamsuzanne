@@ -12,5 +12,5 @@ $red              : hsl(0,100%,50%);
 // Defaults
 
 $base             : color(darker);
-$alt              : $red;
+$alt              : color($pink);
 $accent           : color($blue dark);

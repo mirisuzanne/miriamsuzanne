@@ -16,7 +16,7 @@ html {
 
 body {
   @include serif;
-  @include background(image-url('backgrounds/finger.png') no-repeat fixed center);
+  @include background(image-url('backgrounds/volley6.jpg') no-repeat fixed center);
   @include background-size(cover);
 }
 

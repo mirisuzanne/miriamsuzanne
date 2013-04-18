@@ -1,95 +1,131 @@
-/*
-Syntax error: Undefined variable: "$pink-light".
-        on line 56 of /Users/eric/Sites/andmeyer/sass/pages/susy-fonts.scss
+@font-face {
+  font-family: "GreenMudJJ";
+  src: url('../../fonts/jj/greenmudjj-regular-webfont.eot');
+  src: url('../../fonts/jj/greenmudjj-regular-webfont.eot?#iefix') format('eot'), url('../../fonts/jj/greenmudjj-regular-webfont.woff') format('woff'), url('../../fonts/jj/greenmudjj-regular-webfont.ttf') format('truetype'), url('../../fonts/jj/greenmudjj-regular-webfont.svg#GreenMudJJ') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
-Backtrace:
-/Users/eric/Sites/andmeyer/sass/pages/susy-fonts.scss:56
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/script/variable.rb:49:in `_perform'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/script/node.rb:40:in `perform'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/script/funcall.rb:93:in `_perform'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/script/funcall.rb:93:in `map'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/script/funcall.rb:93:in `_perform'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/script/node.rb:40:in `perform'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:298:in `visit_prop'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:320:in `visit_rule'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:128:in `visit_root'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/tree/root_node.rb:20:in `render'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/engine.rb:315:in `_render'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/sass-3.2.7/lib/sass/../sass/engine.rb:262:in `render'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/compiler.rb:146:in `compile'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/compiler.rb:132:in `timed'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/compiler.rb:145:in `compile'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/logger.rb:46:in `red'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/compiler.rb:144:in `compile'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/compiler.rb:124:in `compile_if_required'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/compiler.rb:109:in `run'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/compiler.rb:107:in `each'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/compiler.rb:107:in `run'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/compiler.rb:132:in `timed'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/compiler.rb:106:in `run'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/watcher/compiler.rb:24:in `compile'
-(__FORWARDABLE__):3:in `__send__'
-(__FORWARDABLE__):3:in `compile'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/watcher/project_watcher.rb:92:in `sass_modified'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/watcher/project_watcher.rb:85:in `sass_callback'
-/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/forwardable.rb:148:in `to_proc'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/watcher/watch.rb:17:in `call'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/watcher/watch.rb:17:in `run_callback'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/watcher/project_watcher.rb:78:in `listen_callback'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/watcher/project_watcher.rb:77:in `each'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/watcher/project_watcher.rb:77:in `listen_callback'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/watcher/project_watcher.rb:76:in `each'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/watcher/project_watcher.rb:76:in `listen_callback'
-/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/forwardable.rb:148:in `to_proc'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/listen-0.7.3/lib/listen/listener.rb:212:in `call'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/listen-0.7.3/lib/listen/listener.rb:212:in `on_change'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/listen-0.7.3/lib/listen/listener.rb:221:in `initialize_adapter'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `call'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `report_changes'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/listen-0.7.3/lib/listen/adapter.rb:210:in `poll_changed_dirs'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `start'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `initialize'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `new'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `start'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/gems/listen-0.7.3/lib/listen/listener.rb:49:in `start'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/watcher/project_watcher.rb:31:in `watch!'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/commands/watch_project.rb:70:in `perform'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/commands/base.rb:18:in `execute'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/bin/compass:30
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/bin/compass:44:in `call'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bundler/gems/compass-2408d23b4c3d/bin/compass:44
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bin/compass:23:in `load'
-/Users/eric/Sites/.venvs/andmeyer/rubygems/bin/compass:23
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$pink-light\".\A         on line 56 of /Users/eric/Sites/andmeyer/sass/pages/susy-fonts.scss"; }
+.jjregular {
+  font-family: GreenMudJJ, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GreenMudJJ";
+  src: url('../../fonts/jj/greenmudjj-italic-webfont.eot');
+  src: url('../../fonts/jj/greenmudjj-italic-webfont.eot?#iefix') format('eot'), url('../../fonts/jj/greenmudjj-italic-webfont.woff') format('woff'), url('../../fonts/jj/greenmudjj-italic-webfont.ttf') format('truetype'), url('../../fonts/jj/greenmudjj-italic-webfont.svg#GreenMudJJ') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+.jjitalic {
+  font-family: GreenMudJJ, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GreenMudJJ";
+  src: url('../../fonts/jj/greenmudjj-bold-webfont.eot');
+  src: url('../../fonts/jj/greenmudjj-bold-webfont.eot?#iefix') format('eot'), url('../../fonts/jj/greenmudjj-bold-webfont.woff') format('woff'), url('../../fonts/jj/greenmudjj-bold-webfont.ttf') format('truetype'), url('../../fonts/jj/greenmudjj-bold-webfont.svg#GreenMudJJ') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.jjbold {
+  font-family: GreenMudJJ, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GreenMudSusy";
+  src: url('../../fonts/susy/greenmudsusy-regular-webfont.eot');
+  src: url('../../fonts/susy/greenmudsusy-regular-webfont.eot?#iefix') format('eot'), url('../../fonts/susy/greenmudsusy-regular-webfont.woff') format('woff'), url('../../fonts/susy/greenmudsusy-regular-webfont.ttf') format('truetype'), url('../../fonts/susy/greenmudsusy-regular-webfont.svg#GreenMudSusy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.susyregular {
+  font-family: GreenMudSusy, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GreenMudSusy";
+  src: url('../../fonts/susy/greenmudsusy-bold-webfont.eot');
+  src: url('../../fonts/susy/greenmudsusy-bold-webfont.eot?#iefix') format('eot'), url('../../fonts/susy/greenmudsusy-bold-webfont.woff') format('woff'), url('../../fonts/susy/greenmudsusy-bold-webfont.ttf') format('truetype'), url('../../fonts/susy/greenmudsusy-bold-webfont.svg#GreenMudSusy') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.susybold {
+  font-family: GreenMudSusy, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GreenMudSusySC";
+  src: url('../../fonts/susy/greenmudsusy-smallcaps-webfont.eot');
+  src: url('../../fonts/susy/greenmudsusy-smallcaps-webfont.eot?#iefix') format('eot'), url('../../fonts/susy/greenmudsusy-smallcaps-webfont.woff') format('woff'), url('../../fonts/susy/greenmudsusy-smallcaps-webfont.ttf') format('truetype'), url('../../fonts/susy/greenmudsusy-smallcaps-webfont.svg#GreenMudSusySC') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.susysc {
+  font-family: GreenMudSusySC, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GreenMudSusySC";
+  src: url('../../fonts/susy/greenmudsusy-smallcapsbold-webfont.eot');
+  src: url('../../fonts/susy/greenmudsusy-smallcapsbold-webfont.eot?#iefix') format('eot'), url('../../fonts/susy/greenmudsusy-smallcapsbold-webfont.woff') format('woff'), url('../../fonts/susy/greenmudsusy-smallcapsbold-webfont.ttf') format('truetype'), url('../../fonts/susy/greenmudsusy-smallcapsbold-webfont.svg#GreenMudSusySC') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.susyscbold {
+  font-family: GreenMudSusySC, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.susy-fonts, .jj-fonts {
+  font-size: 30px;
+  font-size: 1.42857rem;
+  line-height: 48px;
+  line-height: 2.28571rem;
+  margin-bottom: 32px;
+  margin-bottom: 1.52381rem;
+  padding: 16px;
+  padding: 0.7619rem;
+  background: rgba(255, 51, 153, 0.125);
+}
+.susy-fonts li, .jj-fonts li {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.susy-fonts li:hover strong, .jj-fonts li:hover strong {
+  max-width: 100%;
+}
+.susy-fonts strong, .jj-fonts strong {
+  -webkit-transition: all 800ms;
+  -moz-transition: all 800ms;
+  -o-transition: all 800ms;
+  transition: all 800ms;
+  display: inline-block;
+  max-width: 0;
+  text-transform: uppercase;
+  font-weight: inherit;
+  overflow: hidden;
+  vertical-align: top;
+}

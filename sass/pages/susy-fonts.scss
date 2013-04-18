@@ -53,7 +53,7 @@ $sfs: $largepx;
   @include adjust-font-size-to($sfs);
   @include trailer(1,$sfs);
   @include rem(padding, rhythm(.5,$sfs));
-  background: rgba($pink-light,.125);
+  background: color($pink light,.125);
   li {
     @include ellipsis;
     &:hover strong { max-width: 100%; }

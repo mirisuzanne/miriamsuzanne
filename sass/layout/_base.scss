@@ -71,7 +71,15 @@ body { @include baseline-grid-background; }
   @include trailer(.25);
   text-align: center;
 
-  ul { @include inline-block-list; }
+  ul {
+    @include inline-block-list;
+    @include border-radius(rhythm(.125));
+    @include transition(background-color 1s);
+    display: inline-block;
+    padding: 0 rhythm(.25);
+    background: color(white,.25);
+    &:hover { background: color(white,.75); }
+  }
 
   a {
     #{$link} {
