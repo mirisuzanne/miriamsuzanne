@@ -18,13 +18,10 @@ and is a core contributor to the Compass_ project.
 Eric has written, directed and designed
 enseble theatre productions across the country,
 including Missa Populi, Untitled #39, Rain /of Terror,
-Fear/Falling, Danny and the Deep Blue Sea, and Sadomasochism.
+Fear/Falling, Danny and the Deep Blue Sea, Sadomasochism, and more.
 A selection of his poetry will be published by EOAGH_ this spring,
-in a digital adendum to
-"`Troubling the Line`_: Trans and Genderqueer Poetry and Poetics",
-and exerpts from his new novel will appear in
-`Exit Strata`_'s Print! Vol. 3
-and accompanying art installation this summer.
+and exerpts from a new novel will appear in
+`Exit Strata`_ Print! Vol 3 this summer.
 
 .. _OddBird: http://oddbird.net/
 .. _Teacup Gorilla: http://teacupgorilla.com/
@@ -37,22 +34,23 @@ and accompanying art installation this summer.
 .. _Troubling the Line: http://www.nightboat.org/title/troubling-line-trans-and-genderqueer-poetry-and-poetics
 .. _Exit Strata: http://www.exitstrata.com/
 
-Co|conspirators
+Co-conspirators
 ---------------
 
 My work wouldn't be possible
-without the network of amazing artists
-I collaborate with every day.
+without the brilliant artists and developers
+I'm fortunate to work with every day.
 *Carl Meyer* & *Jonny Gerig Meyer* at Oddbird;
 *Daniel Eisenstat* & *Sondra Eby* at Teacup Gorilla;
 *Julie Rada* at Vicious Trap;
-*Chris Eppstein*, *Danny Palmer*, and many others working on Compass and Susy;
-*Jacob Liechty*, *Aaron Liechty*, |&| *Brandi Homan* in my writing group;
-*Megan Sumner* editing my work and making me laugh;
-and so on.
+*Chris Eppstein*, *Danny Palmer*,
+and many others working on open-source projects;
+*Jacob Liechty*, *Aaron Liechty*, & *Brandi Homan* in my writing group;
+*Megan Sumner* editing my work and making me laugh.
+The list goes on.
 
-Then there are the artists
-who inspired & trained me.
+Many more have
+inspired & trained me.
 *Bruce Hostetler*,
 *Dave Nofzinger*,
 *Susanne Ehst*,
@@ -80,13 +78,4 @@ who inspired & trained me.
 *Aaron Angello*,
 and so on.
 
-This list is miserably incomplete.
-There are many more artists who I've worked with,
-learned from,
-been inspired by,
-and shamelessly ripped off.
-Thanks to all of them.
-
-.. |&| raw:: html
-
-  <span class="amp">&amp;</span>
+Thanks to everyone.

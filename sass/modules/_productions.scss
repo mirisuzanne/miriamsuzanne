@@ -1,0 +1,25 @@
+// Productions
+// ===========
+
+#productions, #and-cetera {
+  > ul > li {
+    > em, > strong {
+      @include adjust-font-size-to($xsmallpx);
+      @include sans;
+      @include before(" | ");
+      display: inline-block;
+      color: color($base,.5);
+      text-transform: uppercase;
+      font-style: normal;
+    }
+    strong {
+      font-weight: bold;
+      &:before { font-weight: normal; }
+    }
+    ul {
+      @include adjust-font-size-to($xsmallpx,.75);
+      @include trailer(.5);
+      @include sans;
+    }
+  }
+}

@@ -252,6 +252,8 @@ a:focus, a:hover, a:active {
   -webkit-box-shadow: #4c4c4c 0 0 6px;
   -moz-box-shadow: #4c4c4c 0 0 6px;
   box-shadow: #4c4c4c 0 0 6px;
+  display: block;
+  vertical-align: top;
 }
 [role="main"] figure .video {
   position: relative;
@@ -721,6 +723,36 @@ a:focus, a:hover, a:active {
 
 .section {
   clear: both;
+}
+
+#productions > ul > li > em, #productions > ul > li > strong, #and-cetera > ul > li > em, #and-cetera > ul > li > strong {
+  font-size: 15px;
+  font-size: 0.71429rem;
+  line-height: 32px;
+  line-height: 1.52381rem;
+  font-family: "FranklinGothicCond", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  color: rgba(76, 76, 76, 0.5);
+  text-transform: uppercase;
+  font-style: normal;
+}
+#productions > ul > li > em:before, #productions > ul > li > strong:before, #and-cetera > ul > li > em:before, #and-cetera > ul > li > strong:before {
+  content: " | ";
+}
+#productions > ul > li strong, #and-cetera > ul > li strong {
+  font-weight: bold;
+}
+#productions > ul > li strong:before, #and-cetera > ul > li strong:before {
+  font-weight: normal;
+}
+#productions > ul > li ul, #and-cetera > ul > li ul {
+  font-size: 15px;
+  font-size: 0.71429rem;
+  line-height: 24px;
+  line-height: 1.14286rem;
+  margin-bottom: 16px;
+  margin-bottom: 0.7619rem;
+  font-family: "FranklinGothicCond", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .blog-archive, .tag-archive {

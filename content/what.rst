@@ -5,183 +5,193 @@ bodyclasses: what
 Projects
 ========
 
-- `Into the Green Green Mud`_:
-  *Love story & after-love story.*
-- Pity+Fear:
-  *Clusterfuck opera & mythic science experiment.*
-- Variations on Riding Sidesaddle:
-  *Open-source queer memory of the body.*
-- `Fuck The Muse`_:
-  *blog mini-series on cretive process.*
+|greenmud|
 
+- `Into the Green Green Mud`_:
+  *A Love story & after-love story.*
+- Pity+Fear:
+  *A clusterfuck opera & mythic science experiment.*
+- Variations on Riding Sidesaddle:
+  *An open-source queer memory of the body.*
+- `Fuck The Muse`_:
+  *A blog mini-series on cretive process.*
+
+.. _Into the Green Green Mud: http://greengreenmud.com/
 .. _Fuck The Muse: /2012/10/16/muse-intro/
 
-Art|ifacts
-----------
+.. |greenmud| raw:: html
 
-- `The Post-Obsolete Book <http://ericam.github.com/post-obsolete/>`_:
-  *Performance website memorializing obsolescence.*
-- Susy_:
-  *Responsive grid system for web designers.*
+  <figure>
+    <a href="http://greengreenmud.com">
+      <img src="/static/pictures/what/greenmud.png" />
+    </a>
+  </figure>
 
-Dis|organizations
------------------
+Artifacts
+---------
+
+|nobook|
+
+- `The Post-Obsolete Book`_:
+  *A performance website in honor of obsolescence.*
+- `Susy`_:
+  *A responsive grid system for web designers.*
+- `The Posture of Contour`_ [cover design]:
+  *Performative poem-prompts.*
+
+.. _The Post-Obsolete Book: /post-obsolete/
+.. _Susy: http://susy.oddbird.net/
+.. _The Posture of Contour: http://www.springgunpress.com/posture
+
+.. |nobook| raw:: html
+
+  <figure>
+    <a href="/post-obsolete/">
+      <img src="/static/pictures/what/nobook.jpg" />
+    </a>
+  </figure>
+
+Organizations
+-------------
+
+|tg|
 
 - `OddBird`_:
   *Custom web tools for humans.*
 
-  - K Network: Portfoliyo_
-  - Mozilla: MozTrap_
-  - Providence Plan: `Master Lookup Table`_
-  - Open Source: Django_, Compass_, Susy_, pip_, virtualenv_
-
-.. _OddBird: http://oddbird.net/
-.. _Portfoliyo: http://portfoliyo.org/
-.. _MozTrap: http://moztrap.mozilla.org/
-.. _Master Lookup Table: http://github.com/oddbird/mlt
-.. _Django: http://djangoproject.com/
-.. _Compass: http://compass-style.org/
-.. _Susy: http://susy.oddbird.net/
-.. _pip: http://pip-installer.org/
-.. _virtualenv: http://virtualenv.org/
-
 - `Teacup Gorilla`_:
   *Pre-apocalyptic post-rock, and other multimedia experiments.*
 
-  - `Into the Green Green Mud`_:
-    *Love story, and after-love story.*
-  - Misa Populi:
-    *The Catholic Mass, dissected and rebuilt.*
-
-.. _Teacup Gorilla: http://teacupgorilla.com/
-.. _Into the Green Green Mud: http://greengreenmud.com/
-
 - `Vicious Trap`_:
-  *A phrase, a blog, and occasionally a performance company.*
+  *A phrase & a performance collaboration.*
 
-  - Pity+Fear (in development):
-    *Clusterfuck opera, and mythic science experiment.*
-  - glASS (and other imponderables) (2011):
-    *Meditation on Indra’s Net,
-    the alchemy of sand into glass,
-    and what constitutes polite behavior.*
-  - Misa Populi (2010):
-    *The Catholic Mass, dissected and rebuilt.*
-  - A Murder One Less (2009):
-    *One evening, woman, man, and house collide;
-    not all of them survive.*
+- `Denver Poets' Theatre`_:
+  *A collection of poets and theatre artists.*
 
+.. _OddBird: http://oddbird.net/
+.. _Teacup Gorilla: http://teacupgorilla.com/
 .. _Vicious Trap: http://vicioustrap.com/
+.. _Denver Poets' Theatre: http://www.denverpoetstheatre.com/
+
+.. |tg| raw:: html
+
+  <figure>
+    <a href="http://teacupgorilla.com">
+      <img src="/static/pictures/what/tg.jpg" />
+    </a>
+  </figure>
 
 Productions
 -----------
 
-- **Missa Populi** (2010 - World Premier)
+- Missa Populi **World Premier** *2010*
 
-  - *Creator, Writer, and Director*
-  - *Vicious Trap & The Packing House Center for the Arts*
+  - Creator, Writer, and Director |
+    Vicious Trap & The Packing House Center for the Arts
 
-- **Roller Skating With My Cousin** (2010 - World Premier)
+- Roller Skating With My Cousin **World Premier** *2010*
 
-  - *Ensemble Member*
-  - *The LIDA Project*
+  - Ensemble Member | The LIDA Project
 
-- **A Murder One Less** (2009 - World Premier)
+- A Murder One Less **World Premier** *2009*
 
-  - *Producer, Designer, and Operator*
-  - *Vicious Trap & The Boulder International Fringe Festival*
+  - Producer & Light Designer |
+    Vicious Trap & The Boulder International Fringe Festival
 
-- **Rain /of Terror** (2009 - World Premier)
+- Rain /of Terror **World Premier** *2009*
 
-  - *Lighting Designer*
-  - *The LIDA Project*
-  - **Denver Post Ovation Award Nomination**: *Best Lighting Design*
+  - Light Designer | The LIDA Project
+  - Denver Post Ovation Award Nomination: *Best Lighting Design*
 
-- **The Resistible Rise of Arturo Ui** (2008)
+- Untitled #39 *2008*
 
-  - *Technical Director*
-  - *Countdown to Zero*
+  - Co-Creator & Director | Countdown to Zero
 
-- **Dar al-Harb** (2008 - World Premier)
+- The Resistible Rise of Arturo Ui *2008*
 
-  - *Assistant Media Designer*
-  - *Theatreworks*
+  - Technical Director | Countdown to Zero
 
-- **The Anonymous Mr. W.** (2008)
+- Dar al-Harb **World Premier** *2008*
 
-  - *Assistant Director*
-  - *The LIDA Project*
+  - Assistant Media Designer | Theatreworks
 
-- **My Name Is Rachel Corrie** (2007)
+- The Anonymous Mr. W. *2008*
 
-  - *Tour Manager & Technical Director*
-  - *Countdown to Zero*
+  - Assistant Director | The LIDA Project
 
-- **Bigger Guns III: Revenge of the Apocalypse (Again)** (2007 - World Premier)
+- My Name Is Rachel Corrie **Regional Premier** *2007*
 
-  - *co-Creator, Writer, and Director*
-  - *New World Arts*
+  - Tour Manager & Technical Director | Countdown to Zero
 
-- **Fear/Falling** (2006 - World Premier)
+- Bigger Guns III: Revenge of the Apocalypse (Again) **World Premier** *2007*
 
-  - *Director*
-  - *New World Arts*
+  - Co-Creator, Writer, and Director | New World Arts
 
-- **Danny and the Deep Blue Sea** (2006)
+- Fear/Falling **World Premier** *2006*
 
-  - *Director*
-  - *New World Arts*
+  - Director | New World Arts
 
-- **Hello and Goodbye** (2006)
+- Danny and the Deep Blue Sea *2006*
 
-  - *Director*
-  - *New World Arts*
+  - Director | New World Arts
 
-- **Sadomasochism** (2005 - World Premier)
+- Hello and Goodbye **Regional Premier** *2006*
 
-  - *Writer & Director*
-  - *New World Arts*
+  - Director | New World Arts
 
-- **In a Time of War** (2004)
+- Sadomasochism **World Premier** *2005*
 
-  - *Writer*
-  - *New World Arts*
-  - **Goshen College International Peace Play Contest**: *Second place*
+  - Writer & Director | New World Arts
 
-- **Every Other Day** (2004 - World Premier)
+- In a Time of War **World Premier** *2004*
 
-  - *Writer*
-  - *New World Arts*
-  - **Pinchpenny Press**: *Chapbook publication*
-  - **Kennedy Center ACTF Finalist**: *Best one-act play*
+  - Writer | New World Arts
+  - Goshen College International Peace Play Contest: *Second place*
 
-- **Daffodil MF** (2003)
+- Every Other Day **World Premier** *2004*
 
-  - *Writer*
-  - **shortfilmfest03**: *Audience Choice Award*
-  - **Kennedy Center ACTF Finalist**: *Best 10-minute play*
+  - Writer | New World Arts
+  - Pinchpenny Press: *Chapbook publication*
+  - Kennedy Center ACTF Finalist: *Best one-act play*
+
+- Daffodil MF *2003*
+
+  - Writer
+  - shortfilmfest03: *Audience Choice Award*
+  - Kennedy Center ACTF Finalist: *Best 10-minute play*
 
 
 And Cetera
 ----------
 
-- Naropa Summer Writing Program (2012):
-  *Studied writing & performance with E. Tracy Grinnell, Michelle Ellsworth, and Caroline Bergvall*
-- Raven Jane (2010-2012):
-  *Bass*
-- The LIDA Project (2008-2010):
-  *Technical Director, Assistant Director, Light Designer*
-- Countdown to Zero (2008-2010):
-  *Technical Director, Tour Manager*
-- Dirt Circle Dogs (2007-2010):
-  *Multi-instrumentalist*
-- New World Arts (2001-2007):
-  *Artistic Director, Technical Director*
-- Oregon Shakespeare Festival (2001):
-  *Stage Management Intern*
-- Goshen College (2001-2006):
-  *Studied of writing, theatre, and art*
+- Naropa Summer Writing Program *2012*
 
-.. |br| raw:: html
+  - Studied writing & performance with E. Tracy Grinnell, Michelle Ellsworth, and Caroline Bergvall
 
-  <br />
+- Raven Jane *2010-2012*
+
+  - Manager & Bass Player
+
+- The LIDA Project *2008-2010*
+
+  - Technical Director, Assistant Director, and Light Designer
+
+- Countdown to Zero *2008-2010*
+
+  - Technical Director & Tour Manager
+
+- Dirt Circle Dogs *2007-2010*
+
+  - Multi-instrumentalist
+
+- New World Arts *2001-2007*
+
+  - Artistic & Technical Director
+
+- Oregon Shakespeare Festival *2001*
+
+  - Stage Management Intern
+
+- Goshen College *2001-2006*
+
+  - Studied of writing, theatre, and art

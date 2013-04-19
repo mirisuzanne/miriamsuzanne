@@ -77,7 +77,11 @@ a {
 
   figure {
     @include trailer(1);
-    > a, > img, > .video { @include box-shadow($base 0 0 6px); }
+    > a, > img, > .video {
+      @include box-shadow($base 0 0 6px);
+      display: block;
+      vertical-align: top;
+    }
     .video { @include fluid-ratio; }
   }
 
