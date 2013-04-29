@@ -81,13 +81,69 @@ Organizations
     </a>
   </figure>
 
-Productions
------------
+The Course of My Vitae
+----------------------
+
+- Variations on Riding Side Saddle (excerpts) **coming soon** *2013*
+
+  - Writer & Artist |
+    Exit Strata PRINT! vol. 3
+
+- EOAGH Journal of the Arts **coming soon** *2013*
+
+  - Poetry | Online suplementary for *Troubling the Line*
+
+- Guest Lecture at CU Boulder  *2013*
+
+  - Intro to Digital Media for Humanities, with Lori Emerson
+
+- Boulder Writer's Workshop *2013*
+
+  - Hosted reading & discussion around multimedia art & process
+
+- Bouldering Poets *2013*
+
+  - Music & Poetry | Teacup Gorilla
+
+- Electronic Literature & the Nonhuman *2012*
+
+  - Multimedia Performance |
+    Electronic Literature Organization &
+    The Society for Literature Science and the Arts
+
+- Leon Presents a Reading Series #6 *2012*
+
+  - Music & Poetry | Teacup Gorilla
+
+- Naropa Summer Writing Program *2012*
+
+  - Studied writing & performance with E. Tracy Grinnell, Michelle Ellsworth, and Caroline Bergvall
+
+- What if CSS Made Sense? *2012*
+
+  - Invited Speaker |
+    HTML5 Denver Users Group
+
+- Raven Jane *2010-2012*
+
+  - Manager & Bass Player
 
 - Missa Populi **World Premier** *2010*
 
   - Creator, Writer, and Director |
     Vicious Trap & The Packing House Center for the Arts
+
+- Dirt Circle Dogs *2007-2010*
+
+  - Multi-instrumentalist
+
+- The LIDA Project *2008-2010*
+
+  - Technical Director, Assistant Director, and Light Designer
+
+- Countdown to Zero *2008-2010*
+
+  - Technical Director & Tour Manager
 
 - Roller Skating With My Cousin **World Premier** *2010*
 
@@ -123,6 +179,10 @@ Productions
 
   - Tour Manager & Technical Director | Countdown to Zero
 
+- New World Arts *2003-2007*
+
+  - Artistic Director
+
 - Bigger Guns III: Revenge of the Apocalypse (Again) **World Premier** *2007*
 
   - Co-Creator, Writer, and Director | New World Arts
@@ -154,43 +214,35 @@ Productions
   - Pinchpenny Press: *Chapbook publication*
   - Kennedy Center ACTF Finalist: *Best one-act play*
 
+- Criminal Hearts *2004*
+
+  - Director | New World Arts
+
+- New World Arts *2001-2003*
+
+  - Technical Director
+
 - Daffodil MF *2003*
 
   - Writer
   - shortfilmfest03: *Audience Choice Award*
   - Kennedy Center ACTF Finalist: *Best 10-minute play*
 
-
-And Cetera
-----------
-
-- Naropa Summer Writing Program *2012*
-
-  - Studied writing & performance with E. Tracy Grinnell, Michelle Ellsworth, and Caroline Bergvall
-
-- Raven Jane *2010-2012*
-
-  - Manager & Bass Player
-
-- The LIDA Project *2008-2010*
-
-  - Technical Director, Assistant Director, and Light Designer
-
-- Countdown to Zero *2008-2010*
-
-  - Technical Director & Tour Manager
-
-- Dirt Circle Dogs *2007-2010*
-
-  - Multi-instrumentalist
-
-- New World Arts *2001-2007*
-
-  - Artistic & Technical Director
-
-- Oregon Shakespeare Festival *2001*
+- Oregon Shakespeare Festival *2003*
 
   - Stage Management Intern
+
+- A Lie of the Mind *2002*
+
+  - Light Designer | New World Arts
+
+- The House of Yes *2001*
+
+  - Light Designer & Assistant Director | New World Arts
+
+- Danny and the Deep Blue Sea *2001*
+
+  - Light Designer | New World Arts
 
 - Goshen College *2001-2006*
 

@@ -1,7 +1,7 @@
 // Productions
 // ===========
 
-#productions, #and-cetera {
+#the-course-of-my-vitae {
   > ul > li {
     > em, > strong {
       @include adjust-font-size-to($xsmallpx);

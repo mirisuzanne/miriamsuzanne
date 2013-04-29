@@ -725,7 +725,7 @@ a:focus, a:hover, a:active {
   clear: both;
 }
 
-#productions > ul > li > em, #productions > ul > li > strong, #and-cetera > ul > li > em, #and-cetera > ul > li > strong {
+#the-course-of-my-vitae > ul > li > em, #the-course-of-my-vitae > ul > li > strong {
   font-size: 15px;
   font-size: 0.71429rem;
   line-height: 32px;
@@ -736,16 +736,16 @@ a:focus, a:hover, a:active {
   text-transform: uppercase;
   font-style: normal;
 }
-#productions > ul > li > em:before, #productions > ul > li > strong:before, #and-cetera > ul > li > em:before, #and-cetera > ul > li > strong:before {
+#the-course-of-my-vitae > ul > li > em:before, #the-course-of-my-vitae > ul > li > strong:before {
   content: " | ";
 }
-#productions > ul > li strong, #and-cetera > ul > li strong {
+#the-course-of-my-vitae > ul > li strong {
   font-weight: bold;
 }
-#productions > ul > li strong:before, #and-cetera > ul > li strong:before {
+#the-course-of-my-vitae > ul > li strong:before {
   font-weight: normal;
 }
-#productions > ul > li ul, #and-cetera > ul > li ul {
+#the-course-of-my-vitae > ul > li ul {
   font-size: 15px;
   font-size: 0.71429rem;
   line-height: 24px;
