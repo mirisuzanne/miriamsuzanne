@@ -1023,17 +1023,21 @@ nav[role="navigation"].appendix a[href="#banner"]:link, nav[role="navigation"].a
   -webkit-border-radius: 0.125rem;
   -moz-border-radius: 0.125rem;
   border-radius: 0.125rem;
+  -webkit-box-shadow: #4c4c4c 0 0 0.125rem;
+  -moz-box-shadow: #4c4c4c 0 0 0.125rem;
+  box-shadow: #4c4c4c 0 0 0.125rem;
   display: block;
   padding: 0 0.72222rem 0.36111rem;
   font-weight: bold;
   color: green;
+  background: rgba(255, 255, 255, 0.75);
   text-shadow: white 1px 1px 0;
   cursor: pointer;
 }
 .rel .prev:hover, .rel .prev:focus, .rel .prev:active, .rel .next:hover, .rel .next:focus, .rel .next:active {
-  -webkit-box-shadow: #4c4c4c 0 0 0.125rem;
-  -moz-box-shadow: #4c4c4c 0 0 0.125rem;
-  box-shadow: #4c4c4c 0 0 0.125rem;
+  -webkit-box-shadow: #4c4c4c 0 0 0.25rem;
+  -moz-box-shadow: #4c4c4c 0 0 0.25rem;
+  box-shadow: #4c4c4c 0 0 0.25rem;
   background: white;
 }
 .rel .prev[disabled], .rel .next[disabled] {
