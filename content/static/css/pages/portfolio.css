@@ -934,6 +934,9 @@ nav[role="navigation"].appendix a[href="#banner"]:link, nav[role="navigation"].a
   -o-transform: translateX(100%);
   transform: translateX(100%);
 }
+#branding input {
+  top: auto !important;
+}
 #branding article {
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
