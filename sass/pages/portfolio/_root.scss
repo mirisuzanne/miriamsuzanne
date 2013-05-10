@@ -1,11 +1,11 @@
 // Root
 // ====
 
-@include establish-baseline;
-@include border-box-sizing;
+@import "../../general/icons";
 
 // Body
-// ----
+@include establish-baseline;
+@include border-box-sizing;
 
 body {
   @extend .serif;
@@ -13,8 +13,6 @@ body {
 }
 
 // Selected Text
-// -------------
-
 @mixin accessible-color($background: white) {
   @if lightness($background) >= 65% {
     color: $base;

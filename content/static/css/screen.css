@@ -302,8 +302,7 @@ a:focus, a:hover, a:active {
 
 @font-face {
   font-family: "IcoMoon";
-  src: url('../fonts/Icons.eot');
-  src: url('../fonts/Icons.eot?#iefix') format('eot'), url('../fonts/Icons.svg#Icons') format('svg'), url('../fonts/Icons.woff') format('woff'), url('../fonts/Icons.ttf') format('truetype');
+  src: url('../fonts/Icons.woff') format('woff'), url('../fonts/Icons.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

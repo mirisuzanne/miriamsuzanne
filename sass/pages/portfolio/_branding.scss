@@ -3,12 +3,15 @@
 
 #branding {
   @extend .sans;
-  @extend .container;
-  @include clearfix;
   border-bottom: rhythm(1) solid black;
 
   @include at-breakpoint($break) {
     background: white image-url("portfolio/print-black.png") no-repeat fixed 110% center;
+  }
+
+  > div {
+    @extend .container;
+    @include clearfix;
   }
 
   h2 { display: none; }
@@ -58,9 +61,14 @@
     }
   }
 
-  img { width: 100%; }
+  img {
+    @include trailer;
+    @include box-shadow($base 0 0 rhythm(.125));
+    width: 100%;
+  }
 
   figcaption {
+    @include adjust-font-size-to($medpx);
     display: inline;
     background: white;
   }
@@ -70,10 +78,10 @@
   @include leader;
 
   .prev, .next {
-    @include adjust-font-size-to($xlargepx,2);
+    @include adjust-font-size-to($xxlargepx,2);
     @include border-radius(.125rem);
     display: block;
-    padding: 0 rhythm(.5) rhythm(.5);
+    padding: 0 rhythm(.5) rhythm(.25);
     font-weight: bold;
     color: green;
     cursor: pointer;

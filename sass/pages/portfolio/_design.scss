@@ -60,14 +60,19 @@
     }
   }
   article {
-    @include span-columns(4, 8);
     @include trailer;
-    &:nth-of-type(even) { @include omega; }
+    overflow: hidden;
+
     @include site(carrot-project, carrot);
     @include site(steel-wheels, wheels);
     @include site(teacup-gorilla, teacup);
     @include site(green-mud, mud);
     @include site(oddbird);
     @include site(susy);
+
+    @include at-breakpoint($med) {
+      @include span-columns(4,8);
+      @include nth-omega(even);
+    }
   }
 }

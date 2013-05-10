@@ -1,14 +1,7 @@
-@include font-face (
-  'IcoMoon',
-  font-files(
-    'Icons.svg#Icons', svg,
-    'Icons.woff', woff,
-    'Icons.ttf', truetype
-  ),
-  'Icons.eot',
-  normal,
-  normal
-);
+// Icons
+// =====
+
+@include font('IcoMoon' 'Icons');
 
 /* Use the following CSS code if you want to have a class per icon */
 %icon-content {

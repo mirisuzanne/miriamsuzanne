@@ -27,7 +27,7 @@ nav[role="navigation"] {
     list-style: none;
   }
   li {
-    @include adjust-font-size-to(14px);
+    @include adjust-font-size-to($smallpx);
     white-space: nowrap;
   }
   a {

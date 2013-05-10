@@ -24,7 +24,7 @@ header[role="banner"] {
     @include adjust-font-size-to($medpx);
     position: relative;
     .amp {
-      @include adjust-font-size-to($largepx,2);
+      @include adjust-font-size-to($xxlargepx,2);
       position: relative;
       top: 15px / 96px * 1em;
     }
@@ -46,8 +46,8 @@ header[role="banner"] {
 
   @include at-breakpoint($break) {
     h1 {
-      @include adjust-font-size-to($largepx);
-      .amp { @include adjust-font-size-to($xlargepx,4); }
+      @include adjust-font-size-to($xlargepx);
+      .amp { @include adjust-font-size-to($xxxlargepx,4); }
     }
     p { @include adjust-font-size-to($medpx); }
   }
