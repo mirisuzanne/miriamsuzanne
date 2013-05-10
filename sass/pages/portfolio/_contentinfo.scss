@@ -38,27 +38,19 @@ $grid-background-column-color: rgba(lightblue, .125);
     }
 
     @include at-breakpoint($break) {
-      &#hcard-eric-a-meyer {
-        p { @include span-columns(6, 10); }
-        address { @include span-columns(4 omega, 10); }
-      }
       &#inspirations { @include span-columns(6, 10); }
       &#colophon { @include span-columns(4 omega, 10); }
     }
   }
   strong, address {
-    font-weight: normal;
     @extend .smallcaps;
+    font-weight: normal;
   }
   address {
     @include trailer(1, 14px);
-    .adr, .street-address {
-      display: block;
-    }
+    font-style: normal;
     a {
-      &:link, &:visited {
-        white-space: nowrap;
-      }
+      &:link, &:visited { white-space: nowrap; }
     }
   }
 

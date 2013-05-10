@@ -44,6 +44,7 @@
     text-shadow: white 0 2px 0;
     a {
       &, &:link, &:visited {
+        @include ellipsis;
         @include rhythm-borders(16px, 2.5, 18px);
         display: block;
         padding: {
@@ -64,11 +65,9 @@
     overflow: hidden;
 
     @include site(carrot-project, carrot);
-    @include site(steel-wheels, wheels);
-    @include site(teacup-gorilla, teacup);
     @include site(green-mud, mud);
-    @include site(oddbird);
-    @include site(susy);
+    @include site(moztrap, moz);
+    @include site(portfoliyo, pyo);
 
     @include at-breakpoint($med) {
       @include span-columns(4,8);

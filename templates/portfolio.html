@@ -17,9 +17,9 @@
     <ul>
       <li><a href="#banner">Top of Page</a></li>
       <li><a href="#bio">The Artists</a></li>
-      <li><a href="#web">Design</a></li>
+      <li><a href="#web">Sites</a></li>
       <li><a href="#development">Development</a></li>
-      <li><a href="#branding">Branding</a></li>
+      <li><a href="#branding">Brands</a></li>
       <li><a href="#appendix">Appendix</a></li>
     </ul>
   </div>
@@ -90,31 +90,7 @@
   -->
 
   <section id="web">
-    <div><div><h2>Design</h2>
-
-    <article class="vcard" id="carrot-project">
-      <h3 class="fn org">
-        <a href="http://www.carrotproject.com" class="url">
-          The Carrot Project
-        </a>
-      </h3>
-    </article>
-
-    <article class="vcard" id="steel-wheels">
-      <h3 class="fn org">
-        <a href="http://www.thesteelwheels.com/" class="url">
-          The Steel Wheels
-        </a>
-      </h3>
-    </article>
-
-    <article class="vcard" id="teacup-gorilla">
-      <h3 class="fn org">
-        <a href="http://www.teacupgorilla.com/">
-          Teacup Gorilla
-        </a>
-      </h3>
-    </article>
+    <div><div><h2>Sites</h2>
 
     <article id="green-mud">
       <h3>
@@ -124,21 +100,39 @@
       </h3>
     </article>
 
-    <article class="vcard" id="oddbird">
+    <article class="vcs" id="carrot-project">
       <h3 class="fn org">
-        <a href="http://www.oddbird.net/">
-          OddBird
+        <a href="http://www.carrotproject.com" class="url">
+          The Carrot Project
         </a>
       </h3>
     </article>
 
-    <article id="susy">
-      <h3>
-        <a href="http://susy.oddbird.net/">
-          Susy
+    <article class="vcard" id="moztrap">
+      <h3 class="fn org">
+        <a href="http://moztrap.mozilla.org/" class="url">
+          Mozilla Moztrap
         </a>
       </h3>
     </article>
+
+    <article class="vcard" id="portfoliyo">
+      <h3 class="fn org">
+        <a href="http://www.portfoliyo.org/">
+          Portfoliyo
+        </a>
+      </h3>
+    </article>
+
+    <p>
+      We pride ourselves in building apps with an iterative process,
+      focussed on handing off real features to real users.
+      Several of our recent apps have launched as MVP versions,
+      without full branding,
+      and we still hear that they are easy to use,
+      and easy on the eyes.
+    </p>
+
   </section>
 
   <!--
@@ -190,32 +184,109 @@
   -->
 
   <section id="branding">
-    <div><h2>Brand Identity</h2>
+    <div><h2>Brands</h2>
 
-    <input type="radio" name="brand-toggle" id="carrot-brand-toggle" checked>
+    <input type="radio" name="brand-toggle" id="mozilla-brand-toggle" checked>
+    <input type="radio" name="brand-toggle" id="portfoliyo-brand-toggle">
+    <input type="radio" name="brand-toggle" id="carrot-brand-toggle">
+    {# <input type="radio" name="brand-toggle" id="kimbra-brand-toggle"> #}
+    {# <input type="radio" name="brand-toggle" id="ironcity-brand-toggle"> #}
     <input type="radio" name="brand-toggle" id="oddbird-brand-toggle">
     <input type="radio" name="brand-toggle" id="dcd-brand-toggle">
     <input type="radio" name="brand-toggle" id="pricescope-brand-toggle">
     <input type="radio" name="brand-toggle" id="darrt-brand-toggle">
+    {# <input type="radio" name="brand-toggle" id="imatter-brand-toggle"> #}
+
+    <article class="mozilla-brand">
+      <nav class="rel">
+        <label class="prev" disabled>«</label>
+        <label class="next" for="portfoliyo-brand-toggle">»</label>
+      </nav>
+
+      <h3>Moztrap</h3>
+      <figure>
+        <img src="/static/images/portfolio/brands/moztrap-logo.jpg" alt="logo" />
+        <figcaption>
+          <span>
+            The brand for Mozilla's new test-management system,
+            used by all their product development teams.
+            We began by generating a broad "style"
+            in collaboration with the client -
+            then moved into logo sketches along with a possible re-naming,
+            and eventually brought it all together.
+            The working title (Case Conductor),
+            drove much of the process,
+            but gave way to Moztrap in the final stages.
+            The process was cut short before the rest of the brand
+            could be implemented on the&nbsp;site.
+          </span>
+        </figcaption>
+        <img src="/static/images/portfolio/brands/mozilla/style.jpg" alt="style" />
+        <img src="/static/images/portfolio/brands/mozilla/drafts1.jpg" alt="drafts" />
+        <img src="/static/images/portfolio/brands/mozilla/drafts2.jpg" alt="drafts" />
+        <img src="/static/images/portfolio/brands/mozilla/semifinal.jpg" alt="semi-final" />
+      </figure>
+    </article>
+
+    <article class="portfoliyo-brand">
+      <nav class="rel">
+        <label class="prev" for="mozilla-brand-toggle">«</label>
+        <label class="next" for="carrot-brand-toggle">»</label>
+      </nav>
+
+      <h3>Portfoliyo</h3>
+      <figure>
+        <img src="/static/images/portfolio/brands/portfoliyo-brand.png" alt="logo" />
+        <figcaption>
+          <span>
+            The Portfoliyo brand has not yet been implemented on the app,
+            but was developed around hand-drawn origami animal&nbsp;mascots.
+          </span>
+        </figcaption>
+        <img src="/static/images/portfolio/brands/portfoliyo/drafts1.jpg" alt="drafts" />
+        <img src="/static/images/portfolio/brands/portfoliyo/drafts2.jpg" alt="drafts" />
+      </figure>
+    </article>
 
     <article class="carrot-brand">
       <nav class="rel">
-        <label class="prev" for="darrt-brand-toggle">«</label>
+        <label class="prev" for="portfoliyo-brand-toggle">«</label>
         <label class="next" for="oddbird-brand-toggle">»</label>
       </nav>
 
       <h3>The Carrot Project</h3>
       <figure>
-        <img src="/static/images/portfolio/carrot-brand.gif" alt="logo" />
+        <img src="/static/images/portfolio/brands/carrot-brand.gif" alt="logo" />
         <figcaption>
-          A web-based community of socially and environmentally
-          conscious consumers, interested in tracking and supporting the
-          'crunchiest' brands and companies. The site combines expert and
-          community reviews to help consumers stay informed and share their
-          own research with&nbsp;others.
+          A web-based community of socially &amp; environmentally
+          conscious consumers, interested in supporting the
+          'crunchiest' brands. The app combines expert and
+          community reviews to help consumers stay informed,
+          and share their&nbsp;research.
         </figcaption>
       </figure>
     </article>
+
+<!--
+    <article class="kimbra-brand">
+      <nav class="rel">
+        <label class="prev" for="carrot-brand-toggle">«</label>
+        <label class="next" for="oddbird-brand-toggle">»</label>
+      </nav>
+
+      <h3>Kimbra</h3>
+      <figure>
+        <figcaption>
+          <span>
+            We didn't create the Kimbra Studios brand from scratch,
+            but we have designed and maintained their email&nbsp;campaigns.
+          </span>
+        </figcaption>
+        <img src="/static/images/portfolio/brands/kimbra/kimbra-email.jpg" alt="logo" />
+        <img src="/static/images/portfolio/brands/kimbra/kimbra-email2.jpg" alt="logo" />
+      </figure>
+    </article>
+-->
 
     <article class="oddbird-brand">
       <nav class="rel">
@@ -225,13 +296,14 @@
 
       <h3>OddBird</h3>
       <figure>
-        <img src="/static/images/portfolio/oddbird-brand.gif" alt="logo" />
+        <img src="/static/images/portfolio/brands/oddbird-brand.png" alt="logo" />
         <figcaption>
-          As a design and development firm we thrive on possibilities and
-          daydreams, freely shared ideas and playful collaboration. We
-          cross disciplines, break boundaries, and eat our soup with the
-          dessert spoon. The brand has to reflect this mix of professional
-          design with playfulness and a joy in the&nbsp;absurd.
+          <span>
+            OddBird thrives on possibilities &amp;
+            daydreams, freely shared ideas &amp; playful collaboration. We
+            cross disciplines, break boundaries, and eat our soup with the
+            dessert&nbsp;spoon.
+          </span>
         </figcaption>
       </figure>
     </article>
@@ -244,12 +316,12 @@
 
       <h3>Dirt Circle Dogs</h3>
       <figure>
-        <img src="/static/images/portfolio/dcd-brand.gif" alt="logo" width="624">
+        <img src="/static/images/portfolio/brands/dcd-brand.gif" alt="logo" width="624">
         <figcaption>
-          A now-defunct indie rock band with roots in post-punk, bluegrass,
-          literature and mythology. The mix of roots music with ancient
-          mythology and a sense of darkness under every surface lead us to
-          the raven and western floral&nbsp;design.
+          <span>
+            An indie-rock band with roots in post-punk, bluegrass,
+            literature, and&nbsp;mythology.
+          </span>
         </figcaption>
       </figure>
     </article>
@@ -262,10 +334,11 @@
 
       <h3>PriceScope</h3>
       <figure>
-        <img src="/static/images/portfolio/pricescope-brand.gif" alt="logo" width="624">
+        <img src="/static/images/portfolio/brands/pricescope-brand.gif" alt="logo" width="624">
         <figcaption>
-          A consumer advocacy and networking site for diamond enthusiasts.
-          This logo was comissioned but never used by the&nbsp;client.
+          <span>
+            A social consumer-advocacy site for diamond&nbsp;enthusiasts.
+          </span>
         </figcaption>
       </figure>
     </article>
@@ -273,15 +346,16 @@
     <article class="darrt-brand">
       <nav class="rel">
         <label class="prev" for="pricescope-brand-toggle">«</label>
-        <label class="next" for="carrot-brand-toggle">»</label>
+        <label class="next" disabled>»</label>
       </nav>
 
       <h3>DARRT</h3>
       <figure>
-        <img src="/static/images/portfolio/darrt-brand.gif" alt="logo" width="624">
+        <img src="/static/images/portfolio/brands/darrt-brand.gif" alt="logo" width="624">
         <figcaption>
-          An organization dedicated to addressing racism through education.
-          This logo was comissioned but never used by the&nbsp;client.
+          <span>
+            An organization dedicated to addressing racism through&nbsp;education.
+          </span>
         </figcaption>
       </figure>
     </article>
@@ -293,24 +367,18 @@
 <footer role="contentinfo" id="appendix">
   <div><div>
       <article id="hcard-eric-a-meyer" class="author vcard">
-        <p>
-          This is a small cross-section of my work, and will be updated with
-          additional categories (theatre, writing, illustration, photography) as
-          well as new projects as they launch. If you are interested in my work,
-          or want to scold me for any reason please contact me
-          at&nbsp;<strong class="contact">eric( is at )oddbird.net</strong>.
-        </p>
         <address>
-          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">copyleft &copy; <span class="numbers">2010</span></a>
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">copyright &copy; <span class="numbers">2010-2013</span></a>
           <a xmlns:cc="http://creativecommons.org/ns#" href="http://eric.oddbird.net/" property="cc:attributionName" rel="cc:attributionURL" class="fn">Eric A. Meyer</a>
           <span class="adr">
-            <span class="street-address"><span class="numbers">1550</span> Detroit St. <span class="numbers">#201</span></span>
+            <span class="street-address"><span class="numbers">3132</span> Race St.</span>
             <span class="locality">Denver</span>,
             <span class="region caps">CO</span>,
-            <span class="postal-code numbers">80206</span>
+            <span class="postal-code numbers">80205</span>
           </span>
           <span class="tel numbers">574.975.3620</span>
         </address>
+
         <ul class="social">
           <li data-title="Dribbble"><a href="http://dribbble.com/players/ericam/" rel="me">Dribbble</a></li>
           <li data-title="Github"><a href="http://www.github.com/ericam/" rel="me">Github</a></li>
@@ -319,9 +387,10 @@
           <li data-title="StackOverflow"><a href="http://stackoverflow.com/users/108625/eric-meyer/" rel="me">StackOverflow</a></li>
         </ul>
       </article>
+
       <article id="inspirations">
         <p>
-          Everything is stolen, broken and re-built. Thanks to my&nbsp;inspirations:
+          Everything is stolen, broken, and re-built. Thanks to my&nbsp;inspirations:
         </p>
         <p>
           Crush+Lovely, Tom Waits, Miranda July, The Sex Pistols, Divya Manian,
@@ -339,6 +408,7 @@
           Brandon Mathis, Lorca and so on&nbsp;and&nbsp;on.
         </p>
       </article>
+
       <article id="colophon">
         <p>
           This site is built on plain old semantic <span class="caps">HTML5</span> and styled using
@@ -369,6 +439,7 @@
           The League of Moveable Type as well as various fonts pulled directly from your&nbsp;device.
         </p>
       </article>
+
     </div></div>
 </footer><!-- /~contentinfo -->
 

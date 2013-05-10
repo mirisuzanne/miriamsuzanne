@@ -28,7 +28,7 @@
     ~ article { @include translateX(100%); }
   }
 
-  @include tabs(carrot oddbird dcd pricescope darrt);
+  @include tabs(mozilla portfoliyo carrot xtreme kimbra ironcity oddbird dcd pricescope darrt imatter);
 
   article {
     @include transition(all 300ms);
@@ -45,7 +45,7 @@
 
   h3 {
     @include adjust-font-size-to($medpx, 2.5);
-    @include trailer(1.5);
+    @include trailer(.5);
     text-transform: uppercase;
     letter-spacing: 0.01em;
     font-weight: bold;
@@ -68,9 +68,17 @@
   }
 
   figcaption {
-    @include adjust-font-size-to($medpx);
-    display: inline;
-    background: white;
+    @include trailer;
+
+    span {
+      display: inline;
+      background: white;
+    }
+
+    ~ img {
+      @include span-columns(4,8);
+      @include nth-omega(even);
+    }
   }
 }
 
@@ -84,11 +92,17 @@
     padding: 0 rhythm(.5) rhythm(.25);
     font-weight: bold;
     color: green;
+    text-shadow: white 1px 1px 0;
     cursor: pointer;
 
     &:hover, &:focus, &:active {
       @include box-shadow($base 0 0 .125rem);
       background: white;
+    }
+
+    &[disabled] {
+      opacity: .25;
+      color: $base;
     }
   }
 
