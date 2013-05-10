@@ -7,7 +7,7 @@
   {% block htmlhead %}
 
   <!-- Page Info -->
-  <title>{% block title %}Home{% endblock %} | Eric&Meyer</title>
+  <title>{% block fulltitle %}{% block title %}Home{% endblock %} | Eric&Meyer{% endblock %}</title>
   <meta name="description" content="{% block description %}Multimedia artist, writer, designer, developer.{% endblock description %}" />
 
   <!-- Site Info -->
