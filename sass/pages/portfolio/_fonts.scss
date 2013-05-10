@@ -1,0 +1,166 @@
+// Fonts
+// =====
+
+@mixin font(
+  $font
+) {
+  $name: false;
+  $location: false;
+  $weight: normal;
+  $style: normal;
+
+  $style-options: italic, oblique;
+  $weight-options: 100, 200, 300, 400, 500, 600, 700, 800, 900, bold, bolder, lighter;
+
+  @each $option in $style-options {
+    @if index($font, $option) {
+      $style: $option;
+      $font: filter($font, $option);
+    }
+  }
+
+  @each $option in $weight-options {
+    @if index($font, $option) {
+      $weight: $option;
+      $font: filter($font, $option);
+    }
+  }
+
+  @each $item in $font {
+    @if type-of($item) == string {
+      $name: if($name, $name, $item);
+      $location: $item;
+    }
+  }
+
+  @include font-face(
+    $name,
+    font-files(
+      '#{$location}.woff', 'woff',
+      '#{$location}.ttf', 'truetype'
+    ),
+    false,
+    $weight,
+    $style
+  );
+}
+
+// Fonts
+// -----
+
+@include font('BaskervilleFSAmp' 'Baskerville-amp-webfont');
+
+@include font('CenturyOldStyle' 'CenturyOldStyle-Regular-webfont');
+@include font('CenturyOldStyle' 'CenturyOldStyle-Italic-webfont' italic);
+@include font('CenturyOldStyle' 'CenturyOldStyle-Bold-webfont' bold);
+@include font('CenturyOldStyleCaps' 'CenturyOldStyleCaps-Regular-webfont');
+
+@include font('FranklinGothicCond' 'FranklinGothic-Cd-webfont');
+@include font('FranklinGothicCond' 'FranklinGothic-CdIt-webfont' italic);
+@include font('FranklinGothicCond' 'FranklinGothic-MedCd-webfont' bold);
+@include font('FranklinGothicCond' 'FranklinGothic-MedCdIt-webfont' bold italic);
+
+@include font('Silkscreen' 'slkscr-webfont');
+@include font('Silkscreen' 'slkscrb-webfont' bold);
+
+@include font('ChunkFive' 'Chunkfive-webfont');
+
+// Stacks
+// ------
+
+$serif-stack: Baskerville, Palatino, 'Palatino Linotype', "Hoefler Text", Garamond, "URW Palladio L", "Book Antiqua", Georgia, serif;
+$sans-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$mono-stack: "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, Courier, monospace, sans-serif;
+
+// Mixins
+// ------
+
+@mixin sans {
+  font-family: 'FranklinGothicCond', $sans-stack;
+}
+
+@mixin serif {
+  font-family: 'CenturyOldStyle', $serif-stack;
+}
+
+@mixin serif-italic {
+  @include serif;
+  font-style: italic;
+}
+
+@mixin serif-bold {
+  @include serif;
+  font-weight: bold;
+}
+
+@mixin serif-smallcaps {
+  font-family: 'CenturyOldStyleCaps', $serif-stack;
+  letter-spacing: .15em;
+  text-transform: lowercase;
+}
+
+@mixin monospace {
+  font-family: $mono-stack;
+}
+
+@mixin pixel {
+  font-family: 'Silkscreen', $mono-stack;
+}
+
+@mixin pixel-bold {
+  @include pixel;
+  font-weight: bold;
+}
+
+@mixin slab {
+  font-family: 'ChunkFive', sans-serif;
+}
+
+// Classes
+// -------
+
+.sans {
+  @include sans;
+}
+
+.serifitalic {
+  @include serif-italic;
+}
+
+.serifbold {
+  @include serif-bold;
+}
+
+.smallcaps, .caps, .numbers {
+  @include serif-smallcaps;
+}
+
+.serif {
+  @include serif;
+}
+
+.amp {
+  font-family: "BaskervilleFSAmp", Baskerville, "Baskerville old face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.mono {
+  @include monospace;
+}
+
+.pixel {
+  @include pixel;
+}
+
+.pixelbold {
+  @include pixel-bold;
+}
+
+.slab {
+  @include slab;
+}
+
+.allcaps {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-style: normal;
+}

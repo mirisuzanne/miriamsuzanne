@@ -1,0 +1,95 @@
+// Branding
+// ========
+
+#branding {
+  @extend .sans;
+  @extend .container;
+  @include clearfix;
+  border-bottom: rhythm(1) solid black;
+
+  @include at-breakpoint($break) {
+    background: white image-url("portfolio/print-black.png") no-repeat fixed 110% center;
+  }
+
+  h2 { display: none; }
+
+  %hide-tab-content {
+    @include translateX(-100%);
+    opacity: 0;
+  }
+
+  %show-tab-content {
+    @include translateX(0);
+    opacity: 1;
+
+    ~ article { @include translateX(100%); }
+  }
+
+  @include tabs(carrot oddbird dcd pricescope darrt);
+
+  article {
+    @include transition(all 300ms);
+    @include trailer(2);
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-right: -200%;
+  }
+
+  figure, .rel {
+    @include at-breakpoint($break) { @include squish(2,2); }
+  }
+
+  h3 {
+    @include adjust-font-size-to($medpx, 2.5);
+    @include trailer(1.5);
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    font-weight: bold;
+    text-shadow: white 1px 1px 0px, white 2px 2px 0px;
+    text-align: center;
+
+    @include at-breakpoint($med) {
+      @include adjust-font-size-to($largepx, 2.5);
+    }
+
+    @include at-breakpoint($break) {
+      @include adjust-font-size-to($medpx * 2, 2.5);
+    }
+  }
+
+  img { width: 100%; }
+
+  figcaption {
+    display: inline;
+    background: white;
+  }
+}
+
+.rel {
+  @include leader;
+
+  .prev, .next {
+    @include adjust-font-size-to($xlargepx,2);
+    @include border-radius(.125rem);
+    display: block;
+    padding: 0 rhythm(.5) rhythm(.5);
+    font-weight: bold;
+    color: green;
+    cursor: pointer;
+
+    &:hover, &:focus, &:active {
+      @include box-shadow($base 0 0 .125rem);
+      background: white;
+    }
+  }
+
+  .prev {
+    float: left;
+    margin-right: rhythm(.5);
+  }
+  .next {
+    float: right;
+    margin-left: rhythm(.5);
+  }
+}

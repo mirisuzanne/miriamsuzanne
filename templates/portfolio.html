@@ -1,0 +1,381 @@
+{% extends "base.html" %}
+
+{% block title %}Portfolio{% endblock %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/static/css/pages/portfolio.css">
+{% endblock styles %}
+
+{% block template %}
+<header role="banner" id="banner" class="vcard">
+  <h1>Spark <span class="amp">&amp;</span> Slip</h1>
+  <p class="tagline">An Odd Portfolio</p>
+</header><!-- /~banner -->
+
+<nav role="navigation">
+  <div>
+    <ul>
+      <li><a href="#banner">Top of Page</a></li>
+      <li><a href="#bio">The Artists</a></li>
+      <li><a href="#web">Design</a></li>
+      <li><a href="#development">Development</a></li>
+      <li><a href="#branding">Branding</a></li>
+      <li><a href="#appendix">Appendix</a></li>
+    </ul>
+  </div>
+</nav><!-- /~navigation -->
+
+<div role="main">
+
+  <section id="intro">
+    <div><div>
+      <h2>
+        Creativity is not a single moment of inspiration,
+        but a process that can be practiced and taught.
+      </h2>
+      <blockquote>
+        <p>
+          Human thoughts have a way of slipping easily
+          along certain conceptual dimensions into other thoughts, and resisting such
+          slippage along other&nbsp;dimensions.
+        </p>
+        <cite>&mdash;<a href="http://www.cogs.indiana.edu/people/homepages/hofstadter.html">Douglas&nbsp;Hofstadter</a></cite>
+      </blockquote>
+      <blockquote>
+        <p>
+          And so, whether we mean to or not, the work we do is both received and
+          created, both an adaptation and an original, at the same time. We re-make
+          things as we&nbsp;go.
+        </p>
+        <cite>&mdash;<a href="http://www.charlesmee.org/html/charlesMee.html" rel="colleague">Chuck&nbsp;Mee&nbsp;Jr.</a></cite>
+      </blockquote>
+    </div></div>
+  </section>
+
+  <!--
+    BIO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  -->
+
+  <section id="bio">
+    <div><div><h2>Hello World:</h2>
+    <p>
+      Eric Meyer is a multimedia artist with experience in theatre, music, film,
+      writing, design, photography, <span class="amp">&amp;</span> illustration.
+      He specializes in collaborative process, leading creative teams in the
+      development of new work.
+    </p>
+    <p>
+      Formerly the Artistic Director of <span class="vcard"><a href="http://www.newworldarts.org" class="fn org url">New World Arts</a></span>
+      and Technical Director of <span class="vcard"><a href="http://www.lida.org" class="fn org url">The LIDA Project</a></span>,
+      Eric is now the lead designer at <a href="http://www.oddbird.net/">OddBird</a>,
+      a musician with <a href="http://www.teacupgorilla.com/">Teacup Gorilla</a>
+      writer/producer/performer with <span class="vcard"><a href="http://www.vicioustrap.com/" class="fn org url">Vicious Trap</a></span>,
+      creator of the <a href="http://susy.oddbird.net/">Susy</a> responsive grid framework,
+      and a core developer on the <span class="vcard"><a href="http://www.compass-style.org/" class="fn org url">Compass</a></span>&nbsp;project.
+    </p>
+    <p>
+      Also on the team:
+      <a href="http://sondraedesign.tumblr.com/">Sondra Eisenstat</a>
+      is a marketing consultant,
+      writer, and designer
+      who specializes in brand development;
+      and <a href="http://aaronliechty.tumblr.com/">Aaron Liechty</a>
+      is a writer, performer, and illustrator.
+    </p>
+    </div></div>
+  </section>
+
+  <!--
+    WEB DESIGN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  -->
+
+  <section id="web">
+    <div><div><h2>Web Design</h2>
+
+    <article class="vcard" id="carrot-project">
+      <h3 class="fn org">
+        <a href="http://www.carrotproject.com" class="url">
+          The Carrot Project
+        </a>
+      </h3>
+    </article>
+
+    <article class="vcard" id="steel-wheels">
+      <h3 class="fn org">
+        <a href="http://www.thesteelwheels.com/" class="url">
+          The Steel Wheels
+        </a>
+      </h3>
+    </article>
+
+    <article class="vcard" id="teacup-gorilla">
+      <h3 class="fn org">
+        <a href="http://www.teacupgorilla.com/">
+          Teacup Gorilla
+        </a>
+      </h3>
+    </article>
+
+    <article id="green-mud">
+      <h3>
+        <a href="http://www.greengreenmud.com/">
+          Into The Green Green Mud
+        </a>
+      </h3>
+    </article>
+
+    <article class="vcard" id="oddbird">
+      <h3 class="fn org">
+        <a href="http://www.oddbird.net/">
+          OddBird
+        </a>
+      </h3>
+    </article>
+
+    <article id="susy">
+      <h3>
+        <a href="http://susy.oddbird.net/">
+          Susy
+        </a>
+      </h3>
+    </article>
+  </section>
+
+  <!--
+    DEVELOPMENT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  -->
+
+  <section id="development">
+    <div><div><h2>Web Development</h2>
+
+    <article>
+      <h3>Front-End</h3>
+      <h4>html, css &amp; javascript</h4>
+      <p>
+        Over 10 years of experience working with the front-end
+        open-web&nbsp;languages.
+        We specialize in clean, accessible, content-focused design,
+        and our code reflects that.
+      </p>
+      <h4>edge</h4>
+      <p>
+        We have been early adopters, exploring the boundaries of both html5
+        and css3, as well as advocates for microformats, sass and other
+        cutting-edge&nbsp;techniques.
+      </p>
+    </article>
+
+    <article>
+      <h3><a href="http://www.sass-lang.com/">Sass</a></h3>
+      <h4>compass</h4>
+      <p>
+        Eric has been a core contributor to Compass since 2009,
+        maintaining the css3 modules,
+        and contributing to many&nbsp;plugins.
+      </p>
+      <h4>Susy</h4>
+      <p>
+        The most popular compass grid system,
+        Susy helps designers manage responsive sites,
+        without requiring any math,
+        and without touching the&nbsp;HTML.
+      </p>
+    </article>
+
+    </div></div>
+  </section>
+
+  <!--
+    BRANDING ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  -->
+
+  <section id="branding">
+    <h2>Brand Identity</h2>
+
+    <input type="radio" name="brand-toggle" id="carrot-brand-toggle" checked>
+    <input type="radio" name="brand-toggle" id="oddbird-brand-toggle">
+    <input type="radio" name="brand-toggle" id="dcd-brand-toggle">
+    <input type="radio" name="brand-toggle" id="pricescope-brand-toggle">
+    <input type="radio" name="brand-toggle" id="darrt-brand-toggle">
+
+    <article class="carrot-brand">
+      <nav class="rel">
+        <label class="prev" for="darrt-brand-toggle">«</label>
+        <label class="next" for="oddbird-brand-toggle">»</label>
+      </nav>
+
+      <h3>The Carrot Project</h3>
+      <figure>
+        <img src="/static/images/portfolio/carrot-brand.gif" alt="logo" />
+        <figcaption>
+          A web-based community of socially and environmentally
+          conscious consumers, interested in tracking and supporting the
+          'crunchiest' brands and companies. The site combines expert and
+          community reviews to help consumers stay informed and share their
+          own research with&nbsp;others.
+        </figcaption>
+      </figure>
+    </article>
+
+    <article class="oddbird-brand">
+      <nav class="rel">
+        <label class="prev" for="carrot-brand-toggle">«</label>
+        <label class="next" for="dcd-brand-toggle">»</label>
+      </nav>
+
+      <h3>OddBird</h3>
+      <figure>
+        <img src="/static/images/portfolio/oddbird-brand.gif" alt="logo" />
+        <figcaption>
+          As a design and development firm we thrive on possibilities and
+          daydreams, freely shared ideas and playful collaboration. We
+          cross disciplines, break boundaries, and eat our soup with the
+          dessert spoon. The brand has to reflect this mix of professional
+          design with playfulness and a joy in the&nbsp;absurd.
+        </figcaption>
+      </figure>
+    </article>
+
+    <article class="dcd-brand">
+      <nav class="rel">
+        <label class="prev" for="oddbird-brand-toggle">«</label>
+        <label class="next" for="pricescope-brand-toggle">»</label>
+      </nav>
+
+      <h3>Dirt Circle Dogs</h3>
+      <figure>
+        <img src="/static/images/portfolio/dcd-brand.gif" alt="logo" width="624">
+        <figcaption>
+          A now-defunct indie rock band with roots in post-punk, bluegrass,
+          literature and mythology. The mix of roots music with ancient
+          mythology and a sense of darkness under every surface lead us to
+          the raven and western floral&nbsp;design.
+        </figcaption>
+      </figure>
+    </article>
+
+    <article class="pricescope-brand">
+      <nav class="rel">
+        <label class="prev" for="dcd-brand-toggle">«</label>
+        <label class="next" for="darrt-brand-toggle">»</label>
+      </nav>
+
+      <h3>PriceScope</h3>
+      <figure>
+        <img src="/static/images/portfolio/pricescope-brand.gif" alt="logo" width="624">
+        <figcaption>
+          A consumer advocacy and networking site for diamond enthusiasts.
+          This logo was comissioned but never used by the&nbsp;client.
+        </figcaption>
+      </figure>
+    </article>
+
+    <article class="darrt-brand">
+      <nav class="rel">
+        <label class="prev" for="pricescope-brand-toggle">«</label>
+        <label class="next" for="carrot-brand-toggle">»</label>
+      </nav>
+
+      <h3>DARRT</h3>
+      <figure>
+        <img src="/static/images/portfolio/darrt-brand.gif" alt="logo" width="624">
+        <figcaption>
+          An organization dedicated to addressing racism through education.
+          This logo was comissioned but never used by the&nbsp;client.
+        </figcaption>
+      </figure>
+    </article>
+
+  </section>
+
+</div><!-- /~main -->
+
+<footer role="contentinfo" id="appendix">
+  <div><div>
+      <article id="hcard-eric-a-meyer" class="author vcard">
+        <p>
+          This is a small cross-section of my work, and will be updated with
+          additional categories (theatre, writing, illustration, photography) as
+          well as new projects as they launch. If you are interested in my work,
+          or want to scold me for any reason please contact me
+          at&nbsp;<strong class="contact">eric( is at )oddbird.net</strong>.
+        </p>
+        <address>
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">copyleft &copy; <span class="numbers">2010</span></a>
+          <a xmlns:cc="http://creativecommons.org/ns#" href="http://eric.oddbird.net/" property="cc:attributionName" rel="cc:attributionURL" class="fn">Eric A. Meyer</a>
+          <span class="adr">
+            <span class="street-address"><span class="numbers">1550</span> Detroit St. <span class="numbers">#201</span></span>
+            <span class="locality">Denver</span>,
+            <span class="region caps">CO</span>,
+            <span class="postal-code numbers">80206</span>
+          </span>
+          <span class="tel numbers">574.975.3620</span>
+        </address>
+        <ul class="social">
+          <li><a href="http://dribbble.com/players/ericam/" rel="me">Dribbble</a></li>
+          <li><a href="http://www.github.com/ericam/" rel="me">Github</a></li>
+          <li><a href="http://www.twitter.com/eriiicam/" rel="me">Twitter</a></li>
+          <li><a href="http://delicious.com/eriiicam/" rel="me">Delicious</a></li>
+          <li><a href="http://stackoverflow.com/users/108625/eric-meyer/" rel="me">StackOverflow</a></li>
+        </ul>
+      </article>
+      <article id="inspirations">
+        <p>
+          Everything is stolen, broken and re-built. Thanks to my&nbsp;inspirations:
+        </p>
+        <p>
+          Crush+Lovely, Tom Waits, Miranda July, The Sex Pistols, Divya Manian,
+          Michelle Milne, Douglas Hofstadter, Anne Bogart, Bat For Lashes,
+          Andrea Dworkin, Andy Clarke, Bruce Hostetler, Eric Meyer [the other
+          one], Sappho, Jina Bolton, Tom Phillips, Twisty Faster, Jon Tan,
+          Contrast, Chuck Mee Jr, Chris Eppstein, Anton Chekhov, Jonny Gerig Meyer,
+          The Pixies, Amiri Baraka, The <span class="caps">LIDA</span> Project,
+          Jason Santa Maria, Bertolt Brecht, Robert Bringhurst, Julie Rada,
+          Kurt Vonnegut Jr, Simon Collison, Philip Glass, Paul Irish, Carl Meyer,
+          Natalie Downe, CocoRosie, Nathan Weizenbaum, Maira Kalman, Kenny Storms,
+          Jeffrey Zeldman, Harold Pinter, Nicole Sullivan, Brandon Kruhm,
+          Tadashi Suzuki, Caridad Svich, Nico Hagenburger, Sherman Alexie,
+          John Cage, Sarah Ruhl, Ethan Dunham, Jenna Smith, James Joyce,
+          Brandon Mathis, Lorca and so on&nbsp;and&nbsp;on.
+        </p>
+      </article>
+      <article id="colophon">
+        <p>
+          This site is built on plain old semantic <span class="caps">HTML5</span> and styled using
+          <span class="caps">CSS3</span> with help from <a href="http://www.modernizr.com/">Modernizr</a>,
+          <a href="http://susy.oddbird.net/">Susy</a>, <a href="http://www.compass-style.org/">Compass</a>,
+          <a href="http://www.sass-lang.com/">Sass</a>, <a href="http://github.com/aaronrussell/compass-rgbapng">rgbapng</a>,
+          <a href="http://www.hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html">Lemonade</a>,
+          <a href="http://github.com/ericam/compass-css-lightbox">css-lightbox</a>
+          and <a href="http://github.com/ericam/compass-css-slideshow">css-slideshow</a>.
+        </p>
+        <p>
+          Interaction is aided by <a href="http://jquery.com/">jQuery</a> and the <a href="http://plugins.jquery.com/project/ScrollTo">ScrollTo</a>,
+          <a href="http://www.appelsiini.net/projects/viewport">Viewport</a> and
+          <a href="http://jquery.malsup.com/cycle/">Cycle</a> plugins, including
+          associated scripts by <a href="http://crushlovely.com/">Crush+Lovely</a>,
+          used with&nbsp;permission.
+        </p>
+        <p class="fonts">
+          The main serif text face is <a href="http://www.fontspring.com/fonts/fontsite/century-old-style-fs">Century Old Style FS</a>
+          with an ampersand borrowed from <a href="http://www.fontspring.com/fonts/fontsite/baskerville-fs">Baskerville FS Italic</a>,
+          both &copy; <span class="numbers">2010</span> <a href="http://www.fontsite.com/">Font Site</a>
+          and made available for web use by <a href="http://www.fontspring.com/">Font&nbsp;Spring</a>.
+        </p>
+        <p class="fonts">
+          I also use the freely available
+          <a href="http://www.fontsquirrel.com/fonts/Silkscreen">Silkscreen</a> by Jason Kottke
+          and <a href="http://www.theleagueofmoveabletype.com/fonts/4-chunk">Chunk Five</a> by
+          The League of Moveable Type as well as various fonts pulled directly from your&nbsp;device.
+        </p>
+      </article>
+    </div></div>
+</footer><!-- /~contentinfo -->
+
+{% endblock template %}
+
+{% block extrajs %}
+  <script src="/static/js/jquery.scrollTo-1.4.2-min.js"></script>
+  <script src="/static/js/jquery.viewport.mini.js"></script>
+  <script src="/static/js/portfolio.js"></script>
+{% endblock extrajs %}

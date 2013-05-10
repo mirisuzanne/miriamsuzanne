@@ -1,0 +1,55 @@
+// Base
+// ====
+
+@import "compass";
+@import "compass/layout";
+@import "compass/reset";
+@import "susy";
+@import "modular-scale";
+@import "accoutrement";
+// @import "breakpoint";
+
+@mixin full($whatever) {
+  @include pie-clearfix;
+  clear: both;
+  width: auto;
+}
+
+// Font Sizes
+
+$base-size: 16px;
+$ratio: fifth();
+
+$normpx       : $base-size;
+$medpx        : ms(1);
+$smallpx      : ms(-1);
+$xsmallpx     : ms(-2);
+$xxsmallpx    : ms(-3);
+$xxxsmallpx   : ms(-4);
+$largepx      : ms(2);
+$xlargepx     : ms(4);
+$xxlargepx    : ms(6);
+$xxxlargepx   : ms(8);
+
+$base-font-size: $base-size;
+$base-line-height: $medpx;
+
+$rhythm-unit: rem;
+$rem-with-px-fallback: true;
+
+$base-rhythm-unit: rhythm();
+
+// Grid
+
+$total-columns: 12;
+$column-width: 5em;
+$gutter-width: 1.25em;
+$grid-padding: 1em;
+
+$med: 30em $total-columns;
+$break: 60em $total-columns;
+
+// Colors
+
+$base: #4c4c4c;
+$alt: #005498;

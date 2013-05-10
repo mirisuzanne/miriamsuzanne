@@ -1,0 +1,16 @@
+// Main Content
+// ============
+
+.default {
+  > div {
+    @extend .container;
+    > div {
+      position: relative;
+      clear: both;
+      z-index: 15;
+      @include at-breakpoint($break) {
+        @include squish(2,2);
+      }
+    }
+  }
+}

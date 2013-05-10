@@ -1,0 +1,157 @@
+// Footer
+// ======
+
+[role="contentinfo"] {
+  @extend .serifitalic;
+  @extend .default;
+  position: relative;
+  > div {
+    @include susy-grid-background;
+    @include padding-leader;
+    @include padding-trailer(3, 14px);
+  }
+  article {
+    @include adjust-font-size-to(14px);
+    &#hcard-eric-a-meyer {
+      position: relative;
+      clear: both;
+      z-index: 15;
+      margin: {
+        left: columns(2) + gutter() + side-gutter();
+        right: side-gutter();
+      };
+      p {
+        @include span-columns(6, 10);
+        margin-right: 0;
+      }
+    }
+    &#inspirations {
+      @include span-columns(6);
+      position: relative;
+      z-index: 15;
+      margin-left: columns(2) + gutter() + side-gutter();
+    }
+    &#colophon {
+      @include span-columns(4);
+      @include omega;
+      position: relative;
+      z-index: 15;
+    }
+  }
+  strong, address {
+    font-weight: normal;
+    @extend .smallcaps;
+  }
+  address {
+    @include span-columns(4, 10);
+    @include omega;
+    @include trailer(1, 14px);
+    .adr, .street-address {
+      display: block;
+    }
+    a {
+      &:link, &:visited {
+        white-space: nowrap;
+      }
+    }
+  }
+  p {
+    @include trailer(1, 14px);
+  }
+  ul {
+    @include no-style-list;
+    @include leader(1, 14px);
+  }
+  .no-fontface & {
+    .fonts {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  footer[role="contentinfo"] {
+    > div {
+      @include padding-leader(2);
+    }
+    article {
+      &#hcard-eric-a-meyer {
+        margin: {
+          left: columns(1) + gutter() + side-gutter();
+          right: columns(1) + gutter() + side-gutter();
+        };
+      }
+      &#inspirations {
+        @include span-columns(6);
+        margin-left: columns(1) + gutter() + side-gutter();
+      }
+      &#colophon {
+        margin-right: columns(1) + gutter() + side-gutter();
+      }
+    }
+  }
+}
+
+/* Social -------------------------------------------------------------- */
+
+$social-spacing: 48px;
+$social-position: 50%;
+@import "portfolio/social/*.png";
+
+@mixin social-icon($href, $img: $href) {
+  &[href*='#{$href}'] {
+    &:link, &:visited {
+      @include social-sprite("#{$img}-grey");
+    }
+    &:hover, &:focus, &:active {
+      @include social-sprite("#{$img}-color");
+    }
+  }
+}
+
+.social {
+  @include full(10);
+  @include leader(0);
+  @include clearfix;
+  li {
+    @include span-columns(2, 10);
+    @include trailer(1, 14px);
+    &:nth-child(5n) {
+      @include omega;
+    }
+    &.css5n {
+      @include omega;
+    }
+    &:hover {
+      background: image-url("portfolio/highlight.png") no-repeat scroll top;
+    }
+  }
+  a {
+    &:link, &:visited {
+      @include hide-text;
+      @include padding-leader(3, 14px);
+      @include social-sprite("default-grey");
+      display: block;
+      height: $base-rhythm-unit;
+      overflow: visible;
+      position: relative;
+      top: 1px;
+    }
+    &:hover, &:focus, &:active {
+      @extend .allcaps;
+      @include serif;
+      text-indent: 0;
+      text-align: center;
+      font-style: normal;
+      font-weight: bold;
+      color: black;
+      text-shadow: white 0 0 2px;
+    }
+    @include social-icon(dribbble);
+    @include social-icon(github);
+    @include social-icon(twitter);
+    @include social-icon(delicious);
+    @include social-icon(stackoverflow, stack);
+  }
+}
+

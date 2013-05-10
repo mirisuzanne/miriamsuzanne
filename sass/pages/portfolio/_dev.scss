@@ -1,0 +1,69 @@
+// Development
+// ===========
+
+#development {
+  @extend .mono;
+  @extend .default;
+  @include padding-leader(1);
+  @include padding-trailer(3);
+  background: #111111 image-url("portfolio/arrow-pixel.png") repeat-y fixed 105% center;
+  color: lime;
+  text-shadow: black 1px 1px 0;
+  h2 {
+    text-transform: capitalize;
+    letter-spacing: 0;
+    text-align: center;
+    text-shadow: none;
+  }
+  h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: white;
+    a {
+      &:link, &:visited {
+        color: white;
+      }
+      &:hover, &:focus, &:active {
+        color: #6666ff;
+      }
+    }
+  }
+  h4 {
+    @extend .mono;
+    margin-bottom: 0;
+    margin-left: columns(1, 8) + gutter(8);
+    text-transform: lowercase;
+    &::before {
+      content: "--";
+    }
+  }
+  a {
+    &:link, &:visited {
+      color: #9999ff;
+    }
+    &:hover, &:focus, &:active {
+      color: white;
+    }
+  }
+  p {
+    text-transform: lowercase;
+    margin-left: columns(1, 8) + gutter(8) * 3;
+  }
+  strong, b {
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #development {
+    @include padding-leader(2);
+    background-image: none;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  #development {
+    background-image: none;
+  }
+}

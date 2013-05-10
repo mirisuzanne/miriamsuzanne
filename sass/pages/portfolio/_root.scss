@@ -1,0 +1,37 @@
+// Root
+// ====
+
+@include establish-baseline;
+@include border-box-sizing;
+
+// Body
+// ----
+
+body {
+  @extend .serif;
+  color: $base;
+}
+
+// Selected Text
+// -------------
+
+@mixin accessible-color($background: white) {
+  @if lightness($background) >= 65% {
+    color: $base;
+  }
+  @else {
+    color: white;
+  }
+}
+
+::-moz-selection {
+  @include accessible-color($alt);
+  background: $alt;
+  text-shadow: none;
+}
+
+::selection {
+  @include accessible-color($alt);
+  background: $alt;
+  text-shadow: none;
+}

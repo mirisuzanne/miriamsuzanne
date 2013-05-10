@@ -1,113 +1,64 @@
-// ----------------------------------------------------------------------------
-// Ampersand
+// Fonts
+// =====
 
-@include font-face (
-  'BaskervilleAmp',
-  font-files(
-    'Baskerville-amp-webfont.woff', 'woff',
-    'Baskerville-amp-webfont.ttf', 'truetype',
-    'Baskerville-amp-webfont.svg#webfont', 'svg'
-  ),
-  'Baskerville-amp-webfont.eot',
-  normal,
-  normal
-);
+@mixin font(
+  $font
+) {
+  $name: false;
+  $location: false;
+  $weight: normal;
+  $style: normal;
 
-// ----------------------------------------------------------------------------
-// CenturyOldStyle
+  $style-options: italic, oblique;
+  $weight-options: 100, 200, 300, 400, 500, 600, 700, 800, 900, bold, bolder, lighter;
 
-@include font-face(
-  'CenturyOldStyle',
-  font-files(
-    'CenturyOldStyle-Regular-webfont.woff',woff,
-    'CenturyOldStyle-Regular-webfont.ttf',truetype,
-    'CenturyOldStyle-Regular-webfont.svg#webfontSMxOInhK',svg
-  ),
-  'CenturyOldStyle-Regular-webfont.eot',
-  normal,
-  normal
-);
-@include font-face(
-  'CenturyOldStyle',
-  font-files(
-    'CenturyOldStyle-Italic-webfont.woff',woff,
-    'CenturyOldStyle-Italic-webfont.ttf',truetype,
-    'CenturyOldStyle-Italic-webfont.svg#webfontSMxOInhK',svg
-  ),
-  'CenturyOldStyle-Italic-webfont.eot',
-  normal,
-  italic
-);
-@include font-face(
-  'CenturyOldStyle',
-  font-files(
-    'CenturyOldStyle-Bold-webfont.woff',woff,
-    'CenturyOldStyle-Bold-webfont.ttf',truetype,
-    'CenturyOldStyle-Bold-webfont.svg#webfontSMxOInhK',svg
-  ),
-  'CenturyOldStyle-Bold-webfont.eot',
-  bold,
-  normal
-);
-@include font-face(
-  'CenturyOldStyleCaps',
-  font-files(
-    'CenturyOldStyleCaps-Regular-webfont.woff',woff,
-    'CenturyOldStyleCaps-Regular-webfont.ttf',truetype,
-    'CenturyOldStyleCaps-Regular-webfont.svg#webfontSMxOInhK',svg
-  ),
-  'CenturyOldStyleCaps-Regular-webfont.eot',
-  normal,
-  normal
-);
+  @each $option in $style-options {
+    @if index($font, $option) {
+      $style: $option;
+      $font: filter($font, $option);
+    }
+  }
 
-// ----------------------------------------------------------------------------
-// FranklinGothic Cond
+  @each $option in $weight-options {
+    @if index($font, $option) {
+      $weight: $option;
+      $font: filter($font, $option);
+    }
+  }
 
-@include font-face(
-  'FranklinGothicCond',
-  font-files(
-    'FranklinGothic-Cd-webfont.woff',woff,
-    'FranklinGothic-Cd-webfont.ttf',truetype,
-    'FranklinGothic-Cd-webfont.svg#webfontSMxOInhK',svg
-  ),
-  'FranklinGothic-Cd-webfont.eot',
-  normal,
-  normal
-);
-@include font-face(
-  'FranklinGothicCond',
-  font-files(
-    'FranklinGothic-CdIt-webfont.woff',woff,
-    'FranklinGothic-CdIt-webfont.ttf',truetype,
-    'FranklinGothic-CdIt-webfont.svg#webfontSMxOInhK',svg
-  ),
-  'FranklinGothic-CdIt-webfont.eot',
-  normal,
-  italic
-);
-@include font-face(
-  'FranklinGothicCond',
-  font-files(
-    'FranklinGothic-DemiCd-webfont.woff',woff,
-    'FranklinGothic-DemiCd-webfont.ttf',truetype,
-    'FranklinGothic-DemiCd-webfont.svg#webfontSMxOInhK',svg
-  ),
-  'FranklinGothic-DemiCd-webfont.eot',
-  bold,
-  normal
-);
-@include font-face(
-  'FranklinGothicCond',
-  font-files(
-    'FranklinGothic-DemiCdIt-webfont.woff',woff,
-    'FranklinGothic-DemiCdIt-webfont.ttf',truetype,
-    'FranklinGothic-DemiCdIt-webfont.svg#webfontSMxOInhK',svg
-  ),
-  'FranklinGothic-DemiCdIt-webfont.eot',
-  bold,
-  italic
-);
+  @each $item in $font {
+    @if type-of($item) == string {
+      $name: if($name, $name, $item);
+      $location: $item;
+    }
+  }
+
+  @include font-face(
+    $name,
+    font-files(
+      '#{$location}.woff', 'woff',
+      '#{$location}.ttf', 'truetype'
+    ),
+    false,
+    $weight,
+    $style
+  );
+}
+
+// Amp
+@include font('BaskervilleAmp' 'Baskerville-amp-webfont');
+
+// Century OldStyle
+@include font('CenturyOldStyle' 'CenturyOldStyle-Regular-webfont');
+@include font('CenturyOldStyle' 'CenturyOldStyle-Italic-webfont' italic);
+@include font('CenturyOldStyle' 'CenturyOldStyle-Bold-webfont' bold);
+@include font('CenturyOldStyleCaps' 'CenturyOldStyleCaps-Regular-webfont');
+
+// Franklin Gothic Condensed
+@include font('FranklinGothicCond' 'FranklinGothic-Cd-webfont');
+@include font('FranklinGothicCond' 'FranklinGothic-CdIt-webfont' italic);
+@include font('FranklinGothicCond' 'FranklinGothic-MedCd-webfont' bold);
+@include font('FranklinGothicCond' 'FranklinGothic-MedCdIt-webfont' bold italic);
 
 // ----------------------------------------------------------------------------
 // Font Stacks
