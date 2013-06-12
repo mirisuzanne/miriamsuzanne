@@ -129,11 +129,6 @@ html {
 
 body {
   font-family: "CenturyOldStyle", Baskerville, Palatino, Cambria, Georgia, serif;
-  background: url('../images/backgrounds/volley6.jpg?1366274389') no-repeat fixed center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 img {
@@ -384,7 +379,6 @@ a:focus, a:hover, a:active {
   padding-bottom: 0.66667rem;
   border-style: dashed;
   border-color: rgba(255, 204, 229, 0.5);
-  background: rgba(255, 255, 255, 0.95) url('../images/noise2.png?1364765648') repeat fixed;
 }
 
 .header-content, .main-content, .footer-content {

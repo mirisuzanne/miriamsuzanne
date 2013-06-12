@@ -16,8 +16,9 @@ html {
 
 body {
   @include serif;
-  @include background(image-url('backgrounds/volley6.jpg') no-repeat fixed center);
-  @include background-size(cover);
+  // Use for sitewide background-images
+  // @include background(image-url('backgrounds/volley6.jpg') no-repeat fixed center);
+  // @include background-size(cover);
 }
 
 img {

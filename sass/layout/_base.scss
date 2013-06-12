@@ -19,7 +19,7 @@ body { @include baseline-grid-background; }
   @include h-borders(2px,.5);
   border-style: dashed;
   border-color: color($alt lightest, .5);
-  background: color(white,.95) image-url('noise2.png') repeat fixed;
+  // background: color(white,.95) image-url('noise2.png') repeat fixed;
 }
 
 .header-content, .main-content, .footer-content {
