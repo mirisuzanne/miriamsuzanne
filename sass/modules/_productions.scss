@@ -1,7 +1,7 @@
 // Productions
 // ===========
 
-#the-course-of-my-vitae {
+.when .main-content {
   > ul > li {
     > em, > strong {
       @include adjust-font-size-to($xsmallpx);

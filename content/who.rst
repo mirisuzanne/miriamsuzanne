@@ -6,33 +6,40 @@ bodyclasses: who
 Bio
 ===
 
-**Eric A. Meyer** is a multimedia artist and developer.
-Formerly Artistic Director for `New World Arts`_
-and Technical Director at `The LIDA Project`_,
-Eric is a co-founder, designer, and web developer at OddBird_;
-musician & poet with `Teacup Gorilla`_;
-and writer/producer with `Vicious Trap`_.
-He created the Susy_ grid system,
-and is a core contributor to the Compass_ project.
+**Eric A. Meyer** is a multimedia artist.
+He is a co-founder & creative director at OddBird_;
+a musician & poet with `Teacup Gorilla`_;
+and a writer/producer with `Vicious Trap`_.
+He has written, directed, and designed
+for enemble theatres including
+`New World Arts`_ (Artistic Director),
+`The Lida Project`_ (Technical Director),
+and the `Denver Poets' Theatre`_.
 
-Eric has written, directed and designed
-enseble theatre productions across the country,
-including Missa Populi, Untitled #39, Rain /of Terror,
-Fear/Falling, Danny and the Deep Blue Sea, Sadomasochism, and more.
-A selection of his poetry will be published by EOAGH_ this spring,
-and exerpts from a new novel will appear in
-`Exit Strata`_ Print! Vol 3 this summer.
+Eric is the author of two forthcoming novels —
+*Into the Green Green Mud* and
+*Variations on Riding Side Saddle* —
+and many original performances including
+*Missa Populi*, *Untitled #39*, *Sadomasochism*, and *Every Other Day*.
+He is an open-source contributor,
+a core developer on the Compass_ project,
+and the creator of Susy_,
+a felxible grid system for web designers.
+
+|cv|
 
 .. _OddBird: http://oddbird.net/
 .. _Teacup Gorilla: http://teacupgorilla.com/
 .. _Vicious Trap: http://vicioustrap.com/
 .. _New World Arts: http://newworldarts.org/
 .. _The LIDA Project: http://lida.org/
-.. _EOAGH: http://eoagh.com/
+.. _Denver Poets' Theatre: http://www.denverpoetstheatre.com/
 .. _Susy: http://susy.oddbird.net/
 .. _Compass: http://compass-style.org/
-.. _Troubling the Line: http://www.nightboat.org/title/troubling-line-trans-and-genderqueer-poetry-and-poetics
-.. _Exit Strata: http://www.exitstrata.com/
+
+.. |cv| raw:: html
+
+  <em><a href="/when/">See the full curriculum vitae »</a></em>
 
 Co-conspirators
 ---------------
