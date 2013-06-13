@@ -709,7 +709,7 @@ a:focus, a:hover, a:active {
   clear: both;
 }
 
-.when .main-content > ul > li > em, .when .main-content > ul > li > strong {
+.when .section > ul > li > em, .when .section > ul > li > strong {
   font-size: 15px;
   font-size: 0.71429rem;
   line-height: 32px;
@@ -720,16 +720,16 @@ a:focus, a:hover, a:active {
   text-transform: uppercase;
   font-style: normal;
 }
-.when .main-content > ul > li > em:before, .when .main-content > ul > li > strong:before {
+.when .section > ul > li > em:before, .when .section > ul > li > strong:before {
   content: " | ";
 }
-.when .main-content > ul > li strong {
+.when .section > ul > li strong {
   font-weight: bold;
 }
-.when .main-content > ul > li strong:before {
+.when .section > ul > li strong:before {
   font-weight: normal;
 }
-.when .main-content > ul > li ul {
+.when .section > ul > li ul {
   font-size: 15px;
   font-size: 0.71429rem;
   line-height: 24px;

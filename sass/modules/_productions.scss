@@ -1,7 +1,7 @@
 // Productions
 // ===========
 
-.when .main-content {
+.when .section {
   > ul > li {
     > em, > strong {
       @include adjust-font-size-to($xsmallpx);
