@@ -39,7 +39,7 @@ cultivate the open mode of operating.
 .. |vid1| raw:: html
 
   <figure>
-    <iframe width="520" height="390" src="http://www.youtube.com/embed/VShmtsLhkQg" frameborder="0" allowfullscreen></iframe>
+    <iframe width="640" height="480" src="http://www.youtube.com/embed/f9rtmxJrKwc" frameborder="0" allowfullscreen></iframe>
   </figure>
 
 Your Brain at Work
