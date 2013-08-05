@@ -9,11 +9,6 @@ CV
 The Course of My Vitae
 ----------------------
 
-- SpringGun Journal: Issue 8  **coming soon** *2013*
-
-  - Writer, Artist, and Developer |
-    The Post-Obsolete Book
-
 - Exit Strata PRINT! vol. 3 **coming soon** *2013*
 
   - Writer & Artist |
@@ -22,6 +17,11 @@ The Course of My Vitae
 - EOAGH Journal of the Arts **coming soon** *2013*
 
   - Poetry | Online suplementary for *Troubling the Line*
+
+- SpringGun Journal: `Issue 8`_ *2013*
+
+  - Writer, Artist, and Developer |
+    `The Post-Obsolete Book`_
 
 - Intro to Digital Media for Humanities *2013*
 
@@ -150,6 +150,8 @@ The Course of My Vitae
 
   - Light Designer | New World Arts
 
+.. _Issue 8: http://www.springgunpress.com/issue-8-2013
+.. _The Post-Obsolete Book: http://www.springgunpress.com/ericmeyer/post-obsolete/
 .. _If I’m Post-Obsolescent Do I Still Have to Write This?: http://www.boulderwritersworkshop.org/2013/04/17/post-obsolete-a-bww-salon/
 .. _Denver Post Ovation Award Nomination: http://www.denverpost.com/theater/ci_13971871
 .. _Actors, dance acts give depth to 'Deep Blue Sea': http://articles.southbendtribune.com/2006-09-17/news/26981141_1_danny-and-roberta-dance-characters
@@ -215,11 +217,12 @@ Education
 
 - Naropa Summer Writing Program *2012*
 
-  - Studied writing & performance with E. Tracy Grinnell, Michelle Ellsworth, and Caroline Bergvall
+  - Studied writing & performance with
+    E. Tracy Grinnell, Michelle Ellsworth, and Caroline Bergvall
 
 - Oregon Shakespeare Festival *2003*
 
-  - Stage Management Intern
+  - Stage Management and Lighting Intern
 
 - Goshen College *2001-2006*
 

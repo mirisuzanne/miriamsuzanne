@@ -56,8 +56,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 #branding [id*="mozilla"], #branding [id*="portfoliyo"], #branding [id*="carrot"], #branding [id*="xtreme"], #branding [id*="kimbra"], #branding [id*="ironcity"], #branding [id*="oddbird"], #branding [id*="dcd"], #branding [id*="pricescope"], #branding [id*="darrt"], #branding [id*="imatter"] {
   position: absolute;
-  top: -9999px;
   left: -9999px;
+  opacity: 0;
 }
 
 @font-face {

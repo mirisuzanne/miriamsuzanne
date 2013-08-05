@@ -7,24 +7,29 @@ Bio
 ===
 
 **Eric A. Meyer** is a multimedia artist.
-He is a co-founder & creative director at OddBird_;
-a musician & poet with `Teacup Gorilla`_;
-and a writer/producer with `Vicious Trap`_.
-He has written, directed, and designed
-for enemble theatres including
-`New World Arts`_ (Artistic Director),
-`The Lida Project`_ (Technical Director),
-and the `Denver Poets' Theatre`_.
+Former Artistic Director of `New World Arts`_,
+and Technical Director of `The Lida Project`_,
+he is now a designer/developer at `OddBird`_,
+musician with `Teacup Gorilla`_,
+sucker for `Vicious Trap`_,
+and member of the `Denver Poets' Theatre`_.
 
-Eric is the author of two forthcoming novels —
+He is the author of two forthcoming novels —
 *Into the Green Green Mud* and
 *Variations on Riding Side Saddle* —
 and many original performances including
 *Missa Populi*, *Untitled #39*, *Sadomasochism*, and *Every Other Day*.
-He is an open-source contributor,
-a core developer on the Compass_ project,
-and the creator of Susy_,
-a felxible grid system for web designers.
+His multimedia *Post-Obsolete Book* was recently featured
+in the `SpringGun Journal`_,
+and `more is on the way`_ via
+Exit Strata PRINT!,
+the EOAGH Journal,
+the Brakhage Center Media Arts Lunchtime Series,
+and the Media Archeology Lab/&Now Festival.
+
+Eric is an open-source contributor,
+core developer on the `Compass`_ project,
+and creator of the `Susy`_ grid system.
 
 |cv|
 
@@ -34,30 +39,30 @@ a felxible grid system for web designers.
 .. _New World Arts: http://newworldarts.org/
 .. _The LIDA Project: http://lida.org/
 .. _Denver Poets' Theatre: http://www.denverpoetstheatre.com/
+.. _SpringGun Journal: www.springgunpress.com/issue-8-2013/
 .. _Susy: http://susy.oddbird.net/
 .. _Compass: http://compass-style.org/
 
+.. _more is on the way: /what/
+
 .. |cv| raw:: html
 
-  <em><a href="/when/">See the full curriculum vitae »</a></em>
+  <em><a href="/when/">More details »</a></em>
 
 Co-conspirators
 ---------------
 
-My work wouldn't be possible
-without the brilliant artists and developers
-I'm fortunate to work with every day.
+I'm fortunate to work with amazing people every day.
 *Carl Meyer* & *Jonny Gerig Meyer* at Oddbird;
 *Daniel Eisenstat* & *Sondra Eby* at Teacup Gorilla;
 *Julie Rada* at Vicious Trap;
 *Chris Eppstein*, *Danny Palmer*,
 and many others working on open-source projects;
-*Jacob Liechty*, *Aaron Liechty*, & *Brandi Homan* in my writing group;
-*Megan Sumner* editing my work and making me laugh.
+and *Jacob Liechty*, *Aaron Liechty*,
+*Brandi Homan*, & *Megan Sumner* as writers.
 The list goes on.
 
-Many more have
-inspired & trained me.
+Thanks for the training and inspiration:
 *Bruce Hostetler*,
 *Dave Nofzinger*,
 *Susanne Ehst*,

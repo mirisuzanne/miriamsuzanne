@@ -1,9 +1,57 @@
 public: yes
 bodyclasses: what
+hide_title: yes
 
 
 Projects
 ========
+
+Upcoming Appearances
+--------------------
+
+- **Sept. 27, 1:00pm** |
+  `Media Archeology Lab Resident Performance`_
+
+  - *The Post-Obsolete Book* [MultiMedia]
+  - In conjunction with the `&Now Festival`_
+  - Media Archaeology Lab | 1320 Grandview Ave. — Boulder, CO
+
+.. _Media Archeology Lab Resident Performance: http://mediaarchaeologylab.com/eric-meyer/
+.. _&Now Festival: http://andnowfestival.com/index.html
+
+- **Oct. 7, 11:30am** |
+  `Media Arts Lunchtime Series`_
+
+  - *Minimum Viable Artwork: An HTML-Inspired Approach to Art-Making*
+    [Workshop]
+  - Brakhage Center | ATLAS 311, Colorado University — Boulder, CO
+
+.. _Media Arts Lunchtime Series: http://brakhagecenter.com/?cat=32
+
+.. @@@ READING
+.. - **Oct.** |
+..   `The Operating System`_ [Reading]
+
+.. _The Operating System: http://exitstrata.com/
+
+- **Oct. 12** |
+  `SassConf`_
+
+  - *Show Your Work & Share Your Toys* [Workshop]
+  - Scholastic Auditorium | 557 Broadway — New York, NY
+
+.. _SassConf: http://sassconf.com/
+
+.. @@@ READING
+.. - **Nov. 16, 7:00pm** |
+..   `Bad Shadow Affair`_ [Reading]
+
+..   - Lost Lake Lounge | 3602 East Colfax — Denver, CO
+
+.. _Bad Shadow Affair: http://badshadowaffair.blogspot.com/
+
+Ongoing Projects
+----------------
 
 |greenmud|
 

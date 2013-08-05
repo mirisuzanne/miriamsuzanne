@@ -1,16 +1,16 @@
 GIT
   remote: git://github.com/chriseppstein/compass
-  revision: 2408d23b4c3d26925d77c9dcc21fb70c4a4ec1ae
+  revision: 34159da9a92c97a59629b4ca23cc6f7412016379
   branch: master
   specs:
-    compass (0.13.alpha.2.2408d23)
+    compass (0.13.alpha.4.34159da)
       chunky_png (~> 1.2)
-      listen (<= 0.9.9)
-      sass (~> 3.2.5)
+      listen (~> 1.0.0)
+      sass (>= 3.2.5, < 3.4)
 
 GIT
   remote: git://github.com/ericam/accoutrement
-  revision: 92b0099dd21f0a2238bea582c2559dc71cdddd82
+  revision: c9265399900c619191bc79cc5987a34ade747b50
   branch: master
   specs:
     accoutrement (0.0.5)
@@ -18,10 +18,10 @@ GIT
 
 GIT
   remote: git://github.com/ericam/susy
-  revision: 5865792ceb92055e013a4e1e8242429ca499aa4d
+  revision: e31b53b64aec7f603f11f1d9edd68ed9a0aeb7c9
   branch: master
   specs:
-    susy (1.0.8)
+    susy (1.0.9)
       compass (>= 0.12.2)
       sass (>= 3.2.0)
 
@@ -31,14 +31,22 @@ GEM
     animate (0.2.beta.0)
       compass (>= 0.13.alpha.0)
       sass (>= 3.2.0)
-    chunky_png (1.2.7)
-    listen (0.7.3)
+    chunky_png (1.2.8)
+    ffi (1.9.0)
+    listen (1.0.3)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+      rb-kqueue (>= 0.2)
     modular-scale (1.0.6)
       compass (>= 0.12.1)
       sass (>= 3.2.0)
       sassy-math (>= 1.5)
     rb-fsevent (0.9.3)
-    sass (3.2.7)
+    rb-inotify (0.9.0)
+      ffi (>= 0.5.0)
+    rb-kqueue (0.2.0)
+      ffi (>= 0.5.0)
+    sass (3.2.10)
     sassy-math (1.5)
       compass (~> 0.11)
 
