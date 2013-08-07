@@ -31,7 +31,7 @@ Eric is an open-source contributor,
 core developer on the `Compass`_ project,
 and creator of the `Susy`_ grid system.
 
-|cv|
+|links|
 
 .. _OddBird: http://oddbird.net/
 .. _Teacup Gorilla: http://teacupgorilla.com/
@@ -45,9 +45,10 @@ and creator of the `Susy`_ grid system.
 
 .. _more is on the way: /what/
 
-.. |cv| raw:: html
+.. |links| raw:: html
 
-  <em><a href="/when/">More details »</a></em>
+  <em><a href="/when/">« Explore The Past</a></em> |
+  <em><a href="/what/">See The Future »</a></em>
 
 Co-conspirators
 ---------------

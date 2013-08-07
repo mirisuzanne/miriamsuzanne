@@ -22,15 +22,17 @@ Upcoming Appearances
 - **Oct. 7, 11:30am** |
   `Media Arts Lunchtime Series`_
 
-  - *Minimum Viable Artwork: An HTML-Inspired Approach to Art-Making*
-    [Workshop]
+  - *Minimum Viable Artwork* [Workshop]
   - Brakhage Center | ATLAS 311, Colorado University — Boulder, CO
 
 .. _Media Arts Lunchtime Series: http://brakhagecenter.com/?cat=32
 
-.. @@@ READING
+.. @@@ UNCONFIRMED
 .. - **Oct.** |
 ..   `The Operating System`_ [Reading]
+
+..   - TBA [Performance]
+..   - Launchpad Brooklyn | 721 Franklin Avenue — Brooklyn, NY
 
 .. _The Operating System: http://exitstrata.com/
 
@@ -42,11 +44,11 @@ Upcoming Appearances
 
 .. _SassConf: http://sassconf.com/
 
-.. @@@ READING
-.. - **Nov. 16, 7:00pm** |
-..   `Bad Shadow Affair`_ [Reading]
+- **Nov. 16, 7:00pm** |
+  `Bad Shadow Affair`_
 
-..   - Lost Lake Lounge | 3602 East Colfax — Denver, CO
+  - TBA [Performance]
+  - Lost Lake Lounge | 3602 East Colfax — Denver, CO
 
 .. _Bad Shadow Affair: http://badshadowaffair.blogspot.com/
 
