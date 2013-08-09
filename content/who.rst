@@ -6,15 +6,15 @@ bodyclasses: who
 Bio
 ===
 
-**Eric A. Meyer** is a multimedia artist.
+**Eric A. Meyer** likes making things and sharing them.
 Former Artistic Director of `New World Arts`_,
 and Technical Director of `The Lida Project`_,
-he is now a designer/developer at `OddBird`_,
+he is now a designer & web developer at `OddBird`_,
 musician with `Teacup Gorilla`_,
 sucker for `Vicious Trap`_,
 and member of the `Denver Poets' Theatre`_.
 
-He is the author of two forthcoming novels —
+Eric is the author of two forthcoming novels —
 *Into the Green Green Mud* and
 *Variations on Riding Side Saddle* —
 and many original performances including
@@ -25,11 +25,13 @@ and `more is on the way`_ via
 Exit Strata PRINT!,
 the EOAGH Journal,
 the Brakhage Center Media Arts Lunchtime Series,
-and the Media Archeology Lab/&Now Festival.
+the Media Archeology Lab/&Now Festival,
+and SassConf 2013.
 
 Eric is an open-source contributor,
 core developer on the `Compass`_ project,
-and creator of the `Susy`_ grid system.
+and creator of the `Susy`_ grid system,
+among other `front-end tools`_.
 
 |links|
 
@@ -42,6 +44,7 @@ and creator of the `Susy`_ grid system.
 .. _SpringGun Journal: www.springgunpress.com/issue-8-2013/
 .. _Susy: http://susy.oddbird.net/
 .. _Compass: http://compass-style.org/
+.. _front-end tools: http://github.com/ericam
 
 .. _more is on the way: /what/
 
