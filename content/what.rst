@@ -48,7 +48,7 @@ Upcoming Appearances
   - Workshop: *Show Your Work & Share Your Toys*
   - Scholastic Auditorium | 557 Broadway — New York, NY
 
-- **Oct. 17, 7pm** |
+- **Oct. 17** |
   `The Operating System`_ Launch Party
 
   - Reading, TBA

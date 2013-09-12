@@ -6,13 +6,13 @@ bodyclasses: when
 CV
 ===
 
-The Course of My Vitae
-----------------------
+Past Appearances
+----------------
 
-- Exit Strata PRINT! vol. 3 **coming soon** *2013*
+- The Operating System PRINT! vol. 3 **coming soon** *2013*
 
   - Writer & Artist |
-    Excerpts from Variations on Riding Side Saddle
+    Excerpts from *Variations on Riding Side Saddle*
 
 - EOAGH Journal of the Arts **coming soon** *2013*
 
