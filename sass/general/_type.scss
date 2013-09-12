@@ -68,7 +68,11 @@ a {
     margin-left: rhythm(1);
     @include at-breakpoint($total-columns + 1) {
       margin-left: 0;
-      ul, ol { margin-left: rhythm(1); }
+      ul, ol {
+        @include adjust-font-size-to($smallpx);
+        @include trailer(.5);
+        margin-left: rhythm(1);
+      }
     }
   }
 

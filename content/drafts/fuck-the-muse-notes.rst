@@ -27,6 +27,135 @@ etc...
 - Processes of abstraction & representation
 - Re-thinking on your feet
 
+Tools of Creative Summoning
+===========================
+
+We're still `working our way`_ through
+the `curiosity shopping lists`_
+we created a while back.
+This is still step 2 in the
+`overall creative process`_,
+but it's a large step.
+This is where we
+*find or create all the material*.
+
+We're trying to gather enough material
+to organize (step 3) into a rough draft (step 4).
+
+.. _working our way: #
+.. _curiosity shopping lists: #
+.. _overall creative process: #
+
+Blind Variation and Selective Retention
+=======================================
+
+|campbell|
+
+In the 1960's,
+psychologist `Donald Campbell`_ proposed
+a theory of creative thought based on a process he called
+*blind variation and selective retention*.
+
+*Blind variation*
+means generating ideas
+without worrying about the utility of each one.
+At some point you have to generate ideas
+simply to see what the options are.
+
+You've heard that idea before,
+often called brainstorming.
+But simply brainstorming `doesn't work`_.
+There are wrong answers.
+In fact, *most answers are wrong*,
+and it's your job to determine which ones and why.
+It's not good enough to blindly generate ideas,
+we have to critique those ideas,
+debate them,
+and push deeper.
+
+Your ability to criticize your own ideas as they come
+helps you generate more (and better) ideas.
+That's *selective retention*.
+Keep the best, trash the rest,
+rinse, and repeat.
+
+Expand, contract, expand again.
+
+This isn't *editing* yet,
+because you don't yet have a draft worth revising.
+You're honing the idea,
+in order to generate more and better content.
+
+.. _Donald Campbell: http://www.informationphilosopher.com/solutions/scientists/campbell/
+.. _doesn't work: http://www.newyorker.com/reporting/2012/01/30/120130fa_fact_lehrer
+
+.. |campbell| raw:: html
+
+  <figure>
+    <img src="/static/pictures/campbell.jpg" alt="" />
+    <figcaption>
+      The wrong Donald Campbell:
+      "There's been a complete accident. No details. Over."
+    </figcaption>
+  </figure>
+
+
+Expanding
+---------
+
+  Take a tune, sing high when they sing low,
+  sing fast when they sing slow,
+  and you’ve got a new tune.
+
+  *— Woody Guthrie*
+
+Conceptual artists are masters of blind variation,
+and everyone can learn from their process.
+The tools available are endless,
+but always boil down to a simple setup:
+a set of ingredients,
+and a set rules for manipulating them.
+
+Mary Overlie developed a terminology of `viewpoints`_
+for looking at dance as a collection of its parts,
+similar to the `elements of design`_
+used by many visual artists.
+She started with
+Space, Story, Time, Emotion, Movement, and Shape.
+Anne Bogart and Tina Landau expanded on the list,
+translating it for the theatre:
+
+- Time: Tempo, Duration, Kinesthetic Response, and Repetition.
+- Space: Shape, Gesture, Architecture, Spatial Relationship, and Topography.
+- Vocal: Pitch, Dynamic, and Timbre.
+
+These overlapp with the elements and principles of design
+(different people use slightly different lists):
+
+- Elements: Line, Shape, Direction, Size, Texture, Color, and Value.
+- Principles: Balance, Gradation, Repetition, Contrast, Harmony, Dominance, and Unity.
+
+Writing elements might include
+Tone, Vocabulary, Perspective, Sentence Structure, and Imagery,
+as well as Repetition, Duration, and many others that overlap
+with theatre and design.
+
+It's not important that these lists be perfect or complete,
+what matters is that we can use them to generate ideas.
+Explore each viewpoint to see what happens —
+faster, slower, longer, shorter, etc.
+The experiment doesn't need to succeed
+in order to be useful.
+Take what works and leave the rest behind.
+
+.. _brainstorming doesn't work: http://www.newyorker.com/reporting/2012/01/30/120130fa_fact_lehrer#ixzz2OmlN3kj4
+
+
+Contracting
+-----------
+
+
+
 From Suck to Non-Suck
 ---------------------
 
@@ -62,8 +191,8 @@ and wherever you start is bound to suck.
 Your job as an artist
 is to hate the work enough that you can fix it.
 
-Fail More: You'll be Fine
--------------------------
+Failure isn't Failure
+---------------------
 
 `This American Life`_ host Ira Glass
 has some advice for young artists,

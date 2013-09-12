@@ -6,32 +6,36 @@ bodyclasses: who
 Bio
 ===
 
-**Eric A. Meyer** likes making things and sharing them.
-Former Artistic Director of `New World Arts`_,
-and Technical Director of `The Lida Project`_,
-he is now a designer & web developer at `OddBird`_,
-musician with `Teacup Gorilla`_,
-sucker for `Vicious Trap`_,
-and member of the `Denver Poets' Theatre`_.
+**Eric A. Meyer** is an artist & experience designer.
+He creates web software with `OddBird`_,
+soundscapes with `Teacup Gorilla`_,
+words and images on his own time,
+and performances with `Vicious Trap`_
+& the `Denver Poets' Theatre`_.
+Whatever the format,
+he is focussed on bringing people together
+into new and unexpected experiences.
 
-Eric is the author of two forthcoming novels —
+Eric is the former Artistic Director of `New World Arts`_
+and Technical Director of `The LIDA Project`_,
+the author of two forthcoming novels —
 *Into the Green Green Mud* and
 *Variations on Riding Side Saddle* —
-and many original performances including
-*Missa Populi*, *Untitled #39*, *Sadomasochism*, and *Every Other Day*.
-His multimedia *Post-Obsolete Book* was recently featured
-in the `SpringGun Journal`_,
-and `more is on the way`_ via
-Exit Strata PRINT!,
-the EOAGH Journal,
-the Brakhage Center Media Arts Lunchtime Series,
-the Media Archeology Lab/&Now Festival,
-and SassConf 2013.
-
-Eric is an open-source contributor,
+and creator of many original performances such as
+*Missa Populi*, *Untitled #39*, *Sadomasochism*,
+and *The Post-Obsolete Book*
+(recently featured in the `SpringGun Journal`_).
+Eric is also an open-source contributor,
 core developer on the `Compass`_ project,
-and creator of the `Susy`_ grid system,
-among other `front-end tools`_.
+and creator of the `Susy`_ grid system
+(among other `developer tools`_).
+
+`More is on the way`_ via
+The Operating System,
+the EOAGH Journal,
+the `Brakhage Center Media Arts`_,
+the `Media Archeology Lab`_/`&Now Festival`_,
+and `SassConf 2013`_.
 
 |links|
 
@@ -44,9 +48,13 @@ among other `front-end tools`_.
 .. _SpringGun Journal: www.springgunpress.com/issue-8-2013/
 .. _Susy: http://susy.oddbird.net/
 .. _Compass: http://compass-style.org/
-.. _front-end tools: http://github.com/ericam
+.. _developer tools: http://github.com/ericam
 
-.. _more is on the way: /what/
+.. _More is on the way: /what/
+.. _Brakhage Center Media Arts:
+.. _Media Archeology Lab: http://mediaarchaeologylab.com/eric-meyer/
+.. _&Now Festival: http://sched.co/10Y0fIS
+.. _SassConf 2013: http://sassconf.com/
 
 .. |links| raw:: html
 

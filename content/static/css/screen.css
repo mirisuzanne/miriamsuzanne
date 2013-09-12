@@ -227,6 +227,12 @@ a:focus, a:hover, a:active {
     margin-left: 0;
   }
   [role="main"] ul ul, [role="main"] ul ol, [role="main"] ol ul, [role="main"] ol ol, [role="main"] blockquote ul, [role="main"] blockquote ol {
+    font-size: 18px;
+    font-size: 0.85714rem;
+    line-height: 32px;
+    line-height: 1.52381rem;
+    margin-bottom: 16px;
+    margin-bottom: 0.7619rem;
     margin-left: 1.52381rem;
   }
 }
