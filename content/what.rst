@@ -54,12 +54,12 @@ Upcoming Appearances
   - Reading, TBA
   - Launchpad Brooklyn | 721 Franklin Avenue — Brooklyn, NY
 
-- **Oct. 24, 7:00pm doors** |
+- **Oct. 24, 7pm doors** |
   `Teacup Gorilla`_ at `Toad Tavern`_
 
   -  Toad Tavern | 5302 S. Federal Circle — Littleton, CO
 
-- **Nov. 16, 7:00pm** |
+- **Nov. 16, 7pm** |
   `Bad Shadow Affair`_
 
   - Reading with Matt Cook and others
