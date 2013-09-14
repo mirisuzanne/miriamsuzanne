@@ -219,6 +219,29 @@ a:focus, a:hover, a:active {
 [role="main"] blockquote em {
   font-style: normal;
 }
+[role="main"] blockquote cite {
+  font-size: 15px;
+  font-size: 0.71429rem;
+  line-height: 32px;
+  line-height: 1.52381rem;
+  display: block;
+  font-style: normal;
+}
+[role="main"] blockquote cite:before {
+  content: "—";
+}
+[role="main"] blockquote cite em {
+  font-style: italic;
+}
+[role="main"] blockquote cite .pubdate {
+  display: inline-block;
+}
+[role="main"] blockquote cite .pubdate:before {
+  content: "[";
+}
+[role="main"] blockquote cite .pubdate:after {
+  content: "]";
+}
 [role="main"] ul, [role="main"] ol, [role="main"] blockquote {
   margin-left: 1.52381rem;
 }

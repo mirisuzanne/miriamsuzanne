@@ -62,6 +62,19 @@ a {
     @include rem(padding, 0 rhythm(.751));
     @include rem(border-left, rhythm(.25) solid color(lighter));
     em { font-style: normal; }
+
+    cite {
+      @include before("—");
+      @include adjust-font-size-to($xsmallpx);
+      display: block;
+      font-style: normal;
+
+      em { font-style: italic; }
+      .pubdate {
+        @include wrap-content("[" "]");
+        display: inline-block;
+      }
+    }
   }
 
   ul, ol, blockquote {
