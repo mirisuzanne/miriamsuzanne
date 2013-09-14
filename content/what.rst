@@ -42,10 +42,10 @@ Upcoming Appearances
   - Workshop: *No One Wants Your Media Arts*
   - Brakhage Center | ATLAS 311, Colorado University — Boulder, CO
 
-- **Oct. 12** |
+- **Oct. 12, 3pm** |
   `SassConf`_
 
-  - Workshop: *Show Your Work & Share Your Toys*
+  - Featured Speaker: *Show Your Work & Share Your Toys*
   - Scholastic Auditorium | 557 Broadway — New York, NY
 
 - **Oct. 17** |
