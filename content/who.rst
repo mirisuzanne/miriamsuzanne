@@ -6,37 +6,38 @@ bodyclasses: who
 Bio
 ===
 
-**Eric A. Meyer** is an artist & experience designer.
-He creates web software with `OddBird`_,
+**Eric A. Meyer** is an artist & experience designer,
+working across a broad range of genre and media.
+He develops web software with `OddBird`_,
 soundscapes with `Teacup Gorilla`_,
-words and images on his own time,
-and performances with `Vicious Trap`_
-& the `Denver Poets' Theatre`_.
-Whatever the format,
-he is focussed on bringing people together
-into new and unexpected experiences.
+performances with `Vicious Trap`_
+or the `Denver Poets' Theatre`_,
+and extra-curricular words/images/code in solitude.
 
 Eric is the former Artistic Director of `New World Arts`_
-and Technical Director of `The LIDA Project`_,
-the author of two forthcoming novels —
-*Into the Green Green Mud* and
-*Variations on Riding Side Saddle* —
+& Technical Director of `The LIDA Project`_.
+He has developed work for
+`Mozilla`_, `RedBull`_, `The Providence Plan`_, `The K Netowrk`_, `Junyo`_,
+`Illiterate Magazine`_, and Pittsburgh's `City Theatre`_,
+while remaining an active `open-source contributor`_ —
+core developer on the `Compass`_ project,
+and creator/maintainer of `Susy`_.
+
+Eric is the author of two forthcoming novels
+(*Into the Green Green Mud* &
+*Variations on Riding Side Saddle*),
 and creator of many original performances such as
 *Missa Populi*, *Untitled #39*, *Sadomasochism*,
 and *The Post-Obsolete Book*
 (recently featured in the `SpringGun Journal`_).
-Eric is also an open-source contributor,
-core developer on the `Compass`_ project,
-and creator of the `Susy`_ grid system
-(among other `developer tools`_).
 
 `More is on the way`_ via
-`SpringGun Press`_,
-`Operating System`_,
-`EOAGH Journal`_,
-the `Brakhage Center Media Arts Lunchtime Series`_,
 the `Media Archeology Lab`_/`&Now Festival`_,
-and `SassConf 2013`_.
+the `Brakhage Center Media Arts Lunchtime Series`_,
+`SassConf 2013`_,
+`The Operating System`_,
+`SpringGun Press`_,
+and `EOAGH Journal`_.
 
 |links|
 
@@ -46,14 +47,23 @@ and `SassConf 2013`_.
 .. _New World Arts: http://newworldarts.org/
 .. _The LIDA Project: http://lida.org/
 .. _Denver Poets' Theatre: http://www.denverpoetstheatre.com/
-.. _SpringGun Journal: www.springgunpress.com/issue-8-2013/
+
+.. _Mozilla: http://www.mozilla.org/
+.. _RedBull: http://redbull.com/
+.. _The Providence Plan: http://provplan.org/
+.. _The K Netowrk: http://theknetwork.org/
+.. _Junyo: http://junyo.com/
+.. _Illiterate Magazine: http://www.illiteratemagazine.com/blog/tag/Theatre
+.. _City Theatre: http://www.citytheatrecompany.org/
 .. _Susy: http://susy.oddbird.net/
 .. _Compass: http://compass-style.org/
-.. _developer tools: http://github.com/ericam
+.. _open-source contributor: http://github.com/ericam
+
+.. _SpringGun Journal: www.springgunpress.com/issue-8-2013/
 
 .. _More is on the way: /what/
 .. _SpringGun Press: http://springgunpress.com/
-.. _Operating System: http://exitstrata.com/
+.. _The Operating System: http://exitstrata.com/
 .. _EOAGH Journal: http://eoagh.com/
 .. _Brakhage Center Media Arts Lunchtime Series: http://brakhagecenter.com/?cat=32
 .. _Media Archeology Lab: http://mediaarchaeologylab.com/eric-meyer/
@@ -103,6 +113,27 @@ Press
     <strong>Michael Carson</strong>,
     <a href="http://www.boulderwritersworkshop.org/2013/04/17/post-obsolete-a-bww-salon/" class="org url">Boulder Writer's Workshop</a>
     <time datetime="2013-04-17" class="pubdate">April 17, 2013</time>
+  </cite>
+
+`Onion AV Club`_ on Dirt Circle Dogs' `Kingdom Come`_:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  The album closes with “Static,”
+  a haunting meeting of strings and electronic fuzz
+  with vocalist/drummer Sondra Eisenstat’s lush vocals and spoken word.
+  Eisenstat sings that there is “No voice on the radio,”
+  and perhaps, for now, that’s true.
+  Kingdom, though, is certainly worth a private listen at home.
+  |decider|
+
+.. _Onion AV Club: http://www.avclub.com/
+.. _Kingdom Come: http://www.cdbaby.com/cd/dirtcircledogs
+.. |decider| raw:: html
+
+  <cite class="vcard">
+    <strong class="fn">Cat Carroll</strong>,
+    <a href="http://www.avclub.com/" class="org url">Onion AV Club</a>
+    <time datetime="2009-08-14" class="pubdate">August 14, 2009</time>
   </cite>
 
 `South Bend Tribune`_ on **Hello and Goodbye**

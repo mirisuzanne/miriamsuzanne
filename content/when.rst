@@ -30,7 +30,8 @@ Past Appearances
 - Boulder Writer's Workshop *2013*
 
   - Salon Host | Reading & Discussion
-  - Review: `If I’m Post-Obsolescent Do I Still Have to Write This?`_
+  - Boulder Writer's Workshop Review:
+    `If I’m Post-Obsolescent Do I Still Have to Write This?`_
   - *“I was impressed by the purest form of outrageous creation.”*
 
 - Bouldering Poets *2013*
@@ -52,6 +53,14 @@ Past Appearances
   - Invited Speaker |
     HTML5 Denver Users Group
 
+- `Bloody Morbid Humor at Buntport`_ **review** *2010*
+
+  - Theatre Critic | Illiterate Magazine
+
+- `The LIDA Project: Mouse in a Jar`_ **review** *2010*
+
+  - Theatre Critic | Illiterate Magazine
+
 - Missa Populi **World Premier** *2010*
 
   - Creator, Writer, and Director |
@@ -70,6 +79,16 @@ Past Appearances
 
   - Light Designer | The LIDA Project
   - `Denver Post Ovation Award Nomination`_: *Best Lighting Design*
+
+- Kingdom Come **Album Release** *2009*
+
+  - Musician | Dirt Circle Dogs
+  - Onion AV Club Review:
+    `Kingdom Come`_
+  - *"Eisenstat sings that there is "No voice on the radio,"
+    and perhaps, for now, that's true.
+    Kingdom, though, is certainly worth a private listen at home.
+    A.V. Club Grade: B"*
 
 - Untitled #39 *2008*
 
@@ -102,14 +121,16 @@ Past Appearances
 - Danny and the Deep Blue Sea *2006*
 
   - Director | New World Arts
-  - Review: `Actors, dance acts give depth to 'Deep Blue Sea'`_
+  - South Bend Tribune Review:
+    `Actors, dance acts give depth to 'Deep Blue Sea'`_
   - *"Meyer adds a depth... that the script doesn't have
     and makes this a provocative production."*
 
 - Hello and Goodbye **Regional Premier** *2006*
 
   - Director | New World Arts
-  - Review: `Set, tone carry 'Hello, Goodbye'`_
+  - South Bend Tribune Review:
+    `Set, tone carry 'Hello, Goodbye'`_
   - *"Rarely does one encounter a production
     undertaken with such a tremendous amount of care and consideration."*
 
@@ -150,10 +171,17 @@ Past Appearances
 
   - Light Designer | New World Arts
 
+- Another Round *2001*
+
+  - Assistant Director | Pittsburgh City Theatre 4x5 Festival
+
 .. _Issue 8: http://www.springgunpress.com/issue-8-2013
 .. _The Post-Obsolete Book: http://www.springgunpress.com/ericmeyer/post-obsolete/
 .. _If I’m Post-Obsolescent Do I Still Have to Write This?: http://www.boulderwritersworkshop.org/2013/04/17/post-obsolete-a-bww-salon/
+.. _Bloody Morbid Humor at Buntport: http://www.illiteratemagazine.com/blog/view/404
+.. _`The LIDA Project: Mouse in a Jar`: http://www.illiteratemagazine.com/blog/view/387
 .. _Denver Post Ovation Award Nomination: http://www.denverpost.com/theater/ci_13971871
+.. _Kingdom Come: /misc/dcd-onion-review/
 .. _Actors, dance acts give depth to 'Deep Blue Sea': http://articles.southbendtribune.com/2006-09-17/news/26981141_1_danny-and-roberta-dance-characters
 .. _Set, tone carry 'Hello, Goodbye': http://articles.southbendtribune.com/2006-01-29/news/26962892_1_hester-darkness-athol-fugard
 .. _Peace Play: http://www.goshen.edu/theater/peace-play/

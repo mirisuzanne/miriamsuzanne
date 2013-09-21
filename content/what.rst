@@ -48,11 +48,11 @@ Upcoming Appearances
   - Featured Speaker: *Show Your Work & Share Your Toys*
   - Scholastic Auditorium | 557 Broadway — New York, NY
 
-- **Oct. 17** |
+- **Oct. 17, 8pm** |
   `The Operating System`_ Launch Party
 
   - Reading, TBA
-  - Launchpad Brooklyn | 721 Franklin Avenue — Brooklyn, NY
+  - `Launchpad Brooklyn` | 721 Franklin Avenue — Brooklyn, NY
 
 - **Oct. 24, 7pm doors** |
   `Teacup Gorilla`_ at `Toad Tavern`_
@@ -82,6 +82,7 @@ Upcoming Appearances
 .. _Media Arts Lunchtime Series: http://brakhagecenter.com/?cat=32
 .. _SassConf: http://sassconf.com/
 .. _The Operating System: http://exitstrata.com/
+.. _Launchpad Brooklyn: http://brooklynlaunchpad.org/
 .. _Toad Tavern: http://www.toadtavern.com
 .. _Bad Shadow Affair: http://badshadowaffair.blogspot.com/
 
