@@ -6,8 +6,8 @@ bodyclasses: when
 CV
 ===
 
-Past Appearances
-----------------
+Past Work
+---------
 
 - The Operating System PRINT! vol. 3 **coming soon** *2013*
 
@@ -17,6 +17,11 @@ Past Appearances
 - EOAGH Journal of the Arts **coming soon** *2013*
 
   - Poetry | Online suplementary for *Troubling the Line*
+
+- `The Post-Obsolete Book`_
+
+  - Resident Artist | `Media Archeology Lab`_
+  - In conjunction with the `&Now Festival`_
 
 - SpringGun Journal: `Issue 8`_ *2013*
 
@@ -175,6 +180,9 @@ Past Appearances
 
   - Assistant Director | Pittsburgh City Theatre 4x5 Festival
 
+.. _The Post-Obsolete Book: /post-obsolete/
+.. _Media Archeology Lab: http://mediaarchaeologylab.com/eric-meyer/
+.. _&Now Festival: http://andnowfestival.com/
 .. _Issue 8: http://www.springgunpress.com/issue-8-2013
 .. _The Post-Obsolete Book: http://www.springgunpress.com/ericmeyer/post-obsolete/
 .. _If I’m Post-Obsolescent Do I Still Have to Write This?: http://www.boulderwritersworkshop.org/2013/04/17/post-obsolete-a-bww-salon/

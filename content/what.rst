@@ -6,28 +6,8 @@ hide_title: yes
 Projects
 ========
 
-Upcoming Appearances
---------------------
-
-- **Sept. 19, 7pm doors** |
-  `Teacup Gorilla`_ at `Herman's Hideaway`_
-
-  - With `Nikol&Zack`_, `Blame Gravity`_, and `Lindsey Saunders Band`_
-  - `$4 with coupon`_ or **password** (mini monkeys), $8 at the door
-  - Herman's Hideaway | 1578 South Broadway — Denver, CO
-
-- **Sept. 27, 1pm** |
-  `Media Archeology Lab Resident Performance`_
-
-  - Performance: *The Post-Obsolete Book*
-  - In conjunction with the `&Now Festival`_
-  - Media Archaeology Lab | 1320 Grandview Ave. — Boulder, CO
-
-- **Sept. 27, 4pm** |
-  `&Now Festival Small Press Panel`_
-
-  - Moderator: *Making a Small Press Work*
-  - University Memorial Center 353 | 1669 Euclid Avenue — Boulder, CO
+Upcoming Events
+---------------
 
 - **Sept. 30, 7pm doors** |
   `Teacup Gorilla`_ at `Larimer Lounge`_
@@ -66,14 +46,6 @@ Upcoming Appearances
   - Lost Lake Lounge | 3602 East Colfax — Denver, CO
 
 
-.. _Nikol&Zack: http://www.ourstage.com/epk/nikolzack
-.. _Blame Gravity: http://www.blamegravity.com/
-.. _Lindsey Saunders Band: http://lindseysaundersmusic.com/
-.. _Herman's Hideaway: http://www.hermanshideaway.com/event/367897-teacup-gorilla-denver/
-.. _$4 with coupon: http://teacupgorilla.com/static/pictures/shows/Hermans-9-19-tix.jpg
-.. _Media Archeology Lab Resident Performance: http://mediaarchaeologylab.com/eric-meyer/
-.. _&Now Festival: http://sched.co/10Y0fIS
-.. _&Now Festival Small Press Panel: http://sched.co/ZgeE3D
 .. _Larimer Lounge: http://www.larimerlounge.com/event_details.cfm?blogid=1278
 .. _Evan Holm Band: https://www.facebook.com/EvanHolmDenver
 .. _Jaques Crow: https://www.facebook.com/JaquesCrow

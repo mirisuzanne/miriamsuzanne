@@ -24,15 +24,15 @@ core developer on the `Compass`_ project,
 and creator/maintainer of `Susy`_.
 
 Eric is the author of two forthcoming novels
-(*Into the Green Green Mud* &
+(*Into the Green Green Mud* and
 *Variations on Riding Side Saddle*),
 and creator of many original performances such as
 *Missa Populi*, *Untitled #39*, *Sadomasochism*,
 and *The Post-Obsolete Book*
-(recently featured in the `SpringGun Journal`_).
+(recently featured by `SpringGun Journal`_
+and the `Media Archeology Lab`_).
 
 `More is on the way`_ via
-the `Media Archeology Lab`_/`&Now Festival`_,
 the `Brakhage Center Media Arts Lunchtime Series`_,
 `SassConf 2013`_,
 `The Operating System`_,
