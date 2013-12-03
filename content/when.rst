@@ -9,16 +9,39 @@ CV
 Past Work
 ---------
 
-- The Operating System PRINT! vol. 3 **coming soon** *2013*
+- `Organizing Sass Partials`_ *2013*
+
+  - Featured Speaker | `NYCSass Meetup`_
+
+- `Bad Shadow Affair`_ *2013*
+
+  - Poetry Reading (with Teacup Gorilla)
+  - with Marcia Douglas & Matt Cook
+
+- `Show Your Work & Share Your Toys`_ *2013*
+
+  - Featured Speaker | `SassConf`_
+
+- `Art is for People`_ (neé "No One Wants Your Media Arts") *2013*
+
+  - Guest Lecture Series | `Brakhage Center Media Arts Lunchtime Series`_
+
+- Digital Art *2013*
+
+  -  Guest Lecture | CU Boulder, Prof. Erin Costello
+
+- `The Operating System`_ PRINT! vol. 3 *2013*
 
   - Writer & Artist |
+    Cover art &
     Excerpts from *Variations on Riding Side Saddle*
+  - Launch Party Reading | Launchpad Brooklyn
 
-- EOAGH Journal of the Arts **coming soon** *2013*
+- Making a Small Press Work
 
-  - Poetry | Online suplementary for *Troubling the Line*
+  - Moderator | `&Now Festival`_
 
-- `The Post-Obsolete Book`_
+- `The Post-Obsolete Book`_ *2013*
 
   - Resident Artist | `Media Archeology Lab`_
   - In conjunction with the `&Now Festival`_
@@ -30,7 +53,7 @@ Past Work
 
 - Intro to Digital Media for Humanities *2013*
 
-  - Invited Lectur at CU Boulder | professor: Lori Emerson
+  - Guest Lecture | CU Boulder, Prof. Lori Emerson
 
 - Boulder Writer's Workshop *2013*
 
@@ -41,7 +64,7 @@ Past Work
 
 - Bouldering Poets *2013*
 
-  - Music & Poetry | Teacup Gorilla
+  - Poetry Reading (with Teacup Gorilla)
 
 - Electronic Literature & the Nonhuman *2012*
 
@@ -51,7 +74,7 @@ Past Work
 
 - Leon Presents a Reading Series #6 *2012*
 
-  - Music & Poetry | Teacup Gorilla
+  - Poetry Reading (with Teacup Gorilla)
 
 - What if CSS Made Sense? *2012*
 
@@ -180,9 +203,16 @@ Past Work
 
   - Assistant Director | Pittsburgh City Theatre 4x5 Festival
 
-.. _The Post-Obsolete Book: /post-obsolete/
+.. _Bad Shadow Affair: http://badshadowaffair.blogspot.com/
+.. _NYCSass Meetup: http://www.meetup.com/nyc-sass/events/146898452/
+.. _Organizing Sass Partials: /pres/sass-partials/
+.. _Art is for People: /art-is-for-people/
+.. _Brakhage Center Media Arts Lunchtime Series: http://brakhagecenter.com/?cat=32
+.. _Show Your Work & Share Your Toys: /pres/plugins/
+.. _SassConf: http://sassconf.com/
+.. _The Operating System: http://www.theoperatingsystem.org/
 .. _Media Archeology Lab: http://mediaarchaeologylab.com/eric-meyer/
-.. _&Now Festival: http://andnowfestival.com/
+.. _`&Now Festival`: http://andnowfestival.com/
 .. _Issue 8: http://www.springgunpress.com/issue-8-2013
 .. _The Post-Obsolete Book: http://www.springgunpress.com/ericmeyer/post-obsolete/
 .. _If I’m Post-Obsolescent Do I Still Have to Write This?: http://www.boulderwritersworkshop.org/2013/04/17/post-obsolete-a-bww-salon/
