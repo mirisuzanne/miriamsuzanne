@@ -40,7 +40,7 @@ and creator of `Susy`_, and `True`_.
 .. _The LIDA Project: http://lida.org/
 .. _Mozilla: http://www.mozilla.org/
 .. _Junyo: http://junyo.com/
-.. _SpringGun Press: www.springgunpress.com/
+.. _SpringGun Press: http://www.springgunpress.com/
 .. _The Operating System: http://www.theoperatingsystem.org/
 .. _The Media Archeology Lab: http://mediaarchaeologylab.com/eric-meyer/
 .. _Illiterate Magazine: http://www.illiteratemagazine.com/blog/tag/Theatre
