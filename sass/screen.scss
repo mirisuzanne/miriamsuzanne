@@ -1,13 +1,31 @@
-// ----------------------------------------------------------------------------
-// Base
+// Screen
+// ======
 
 @import "base/settings";
+
+
+// General
+// -------
+
 @import "general/root";
+@import "general/type";
+
+
+// Layout
+// ------
+
 @import "layout/base";
+@import "layout/banner";
+@import "layout/navigation";
+@import "layout/main";
+@import "layout/pagination";
+@import "layout/contentinfo";
 
-// ----------------------------------------------------------------------------
+
 // Modules
+// -------
 
+@import "modules/tooltips";
 @import "modules/posts";
 @import "modules/productions";
 @import "modules/list-pages";

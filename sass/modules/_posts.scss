@@ -8,15 +8,19 @@
 }
 
 .byline {
-  color: $mid;
+  @include font-size(small);
+  color: $gray;
   font-style: italic;
 }
 
 .gallery {
+  $half: floor(susy-get(columns)/2);
+
   > a, > img {
-    @include span-columns(3);
-    @include nth-omega(even);
+    @include span($half after);
     @include trailer(1);
+
+    &:nth-child(even) { @include last(after); }
   }
   a {
     #{$link} { @include transition(all 150ms); }

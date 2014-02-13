@@ -1,0 +1,43 @@
+// Contentinfo
+// ===========
+
+[role="contentinfo"] {
+  @include sans;
+  @include break;
+  @include font-size(xsmall);
+  @include rhythm-padding;
+  color: $gray;
+  text-transform: uppercase;
+}
+
+.social {
+  text-align: center;
+
+  li {
+    @include tooltip(bottom) {
+      left: -100%;
+      min-width: 300%;
+      text-align: center;
+    }
+    display: inline-block;
+  }
+
+  .tooltip-text::before {
+    left: 50%;
+    margin-left: rhythm(-.25);
+  }
+
+  a {
+    #{$link} {
+      @include font-size(medium, 1.5);
+      @include transition(all 150ms);
+      display: block;
+      width: rhythm(1.5);
+      text-align: center;
+    }
+  }
+}
+
+.colophon {
+  @include container;
+}

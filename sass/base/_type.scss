@@ -1,11 +1,17 @@
-// ----------------------------------------------------------------------------
 // Type Settings
+// =============
 
-$base-font-size     : $normpx;
-$base-line-height   : $xlargepx;
+$base-font-size: 21px;
+$base-line-height: size(medium);
 
-$rhythm-unit                      : rem;
-$rem-with-px-fallback       : true;
+$rhythm-unit: rem;
+$rem-with-px-fallback: true;
 
-$round-to-nearest-half-line       : true;
-$grid-background-baseline-height  : $base-line-height;
+$round-to-nearest-half-line: true;
+
+
+// Link Variables
+// --------------
+
+$link   : '&:link, &:visited';
+$focus  : '&:focus, &:hover, &:active';

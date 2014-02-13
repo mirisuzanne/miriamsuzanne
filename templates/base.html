@@ -78,7 +78,7 @@
   {% endblock htmlhead %}
 </head>
 
-<body id="andmeyer" class="{% block bodyclasses %}{% endblock %}">
+<body id="andmeyer" class="{% block bodyclasses %}{% endblock %}"{% block bodyattrs %}{% endblock bodyattrs %}>
 
 {% block template %}{% endblock template %}
 

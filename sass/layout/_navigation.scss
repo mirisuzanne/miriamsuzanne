@@ -1,0 +1,54 @@
+// Navigation
+// ==========
+
+[role="navigation"] {
+  @extend %sans;
+  @include span(100%);
+  @include font-size(xsmall);
+  @include trailer(.25);
+  text-align: center;
+
+  a {
+    #{$link} {
+      display: inline-block;
+      padding: 0 rhythm(.25);
+      color: color($alt lighter);
+      @include before("+") {
+        display: inline-block;
+        width: .5em;
+      }
+    }
+
+    #{$focus} {
+      @include before("/");
+      color: color($accent dark);
+    }
+
+    @each $slug in who what why {
+      .#{$slug} &[href*="#{$slug}"] {
+        @include before("/");
+        color: color($alt dark);
+      }
+    }
+  }
+}
+
+
+// Breakpoint
+// ----------
+
+@include breakpoint(30em) {
+  $half: floor(susy-get(columns)/2);
+
+  [role="banner"], [role="navigation"] {
+    @include span($half);
+    margin: 0;
+    text-align: left;
+    a {
+      #{$link} {
+        @include rhythm-padding(.5);
+      }
+    }
+  }
+  [role="navigation"] { text-align: right; }
+}

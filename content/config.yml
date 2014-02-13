@@ -1,4 +1,63 @@
 ---
+# banner
+brand: GreenMud
+tagline: Eric a Meyer
+bgimage: /static/pictures/tennis/volley6.jpg
+
+# navigation
+nav:
+  - title: manifesto
+    url: "/why/"
+  - title: projects
+    url: "/what/"
+  - title: bio
+    url: "/who/"
+
+
+# social
+social:
+  - title: email
+    url: mailto:eric(put the 'at' sign here)andmeyer.com
+    icon: mail
+  - title: feed
+    url: "http://feeds.feedburner.com/ericandmeyer/"
+  - title: twitter
+    url: http://twitter.com/eriiicam/
+  - title: facebook
+    url: http://facebook.com/eriiicam/
+  - title: dribbble
+    url: http://dribbble.com/players/ericam/
+  - title: vimeo
+    url: http://vimeo.com/eriiicam
+  - title: github
+    url: http://www.github.com/ericam/
+  - title: stack overflow
+    url: http://stackoverflow.com/users/108625/eric-meyer/
+
+
+# colophon
+colophon:
+  - name: rstblog
+    url: "https://github.com/mitsuhiko/rstblog/"
+  - name: Python
+    url: "http://www.python.org"
+  - name: jQuery
+    url: "http://www.jquery.com/"
+  - name: Modernizr
+    url: "http://www.modernizr.com/"
+  - name: IcoMoon
+    url: "http://keyamoon.com/icomoon/"
+  - name: Susy
+    url: "http://susy.oddbird.net/"
+  - name: Compass
+    url: "http://compass-style.org/"
+  - name: Breakpoint
+    url: "http://breakpoint-sass.com/"
+  - name: Sass
+    url: "http://sass-lang.com/"
+
+
+# settings
 active_modules: [pygments, tags, blog, typogrify]
 author: Eric A. Meyer
 canonical_url: http://andmeyer.com/

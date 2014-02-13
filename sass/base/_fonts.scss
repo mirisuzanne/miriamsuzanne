@@ -1,0 +1,90 @@
+// Fonts
+// =====
+
+$sans-stack   : "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif-stack  : Baskerville, Palatino, Cambria, Georgia, serif;
+$mono-stack   : Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+
+
+// Font Files
+// ----------
+
+@function font-files(
+  $pre,
+  $styles: regular,
+  $post: -webfont
+) {
+  $_return: ();
+  $_value: null;
+
+  @each $style in $styles {
+    @if length($style) == 2 {
+      $_value: nth($style, 1) + nth($style, 2);
+    } @else {
+      $_value: $style;
+    }
+
+    $_value: $pre + $_value + $post;
+
+    @if type-of($style) == list {
+      $new: ();
+      @each $this in $style {
+        $new: append($new, to-lower-case($this));
+      }
+      $style: $new;
+    } @else {
+      $style: to-lower-case($style);
+    }
+
+    $_return: map-merge($_return, ($style: $_value));
+  }
+
+  @return $_return;
+}
+
+
+// Fonts
+// -----
+
+@include set(fonts, (
+  amp: (
+    name: 'BaskervilleAmp',
+    type: serif,
+    stack: $serif-stack,
+    files: (regular: 'Baskerville-amp-webfont'),
+  ),
+
+  serif: (
+    name: 'CenturyOldStyle',
+    type: serif,
+    stack: $serif-stack,
+    files: font-files(
+      'CenturyOldStyle-',
+      (Regular, Italic, Bold)
+    ),
+  ),
+
+  sans: (
+    name: 'FranklinGothicCond',
+    type: sans,
+    stack: $sans-stack,
+    files: font-files(
+      'FranklinGothicCd-',
+      (Regular, Italic, Bold, Bold Italic)
+    ),
+  ),
+
+  andmeyer: (
+    name: 'andmeyer',
+    files: (regular: 'Icons'),
+  ),
+
+));
+
+// Mixins
+// ------
+
+@mixin amp { font-family: get(fonts, amp, name), $serif-stack; }
+@mixin serif { font-family: get(fonts, serif, name), $serif-stack; }
+@mixin sans { font-family: get(fonts, sans, name), $sans-stack; }
+@mixin mono { font-family: $mono-stack; }

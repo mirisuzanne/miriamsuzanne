@@ -32,21 +32,6 @@ Susy's fonts look like this:
 
 .. |susyfonts| raw:: html
 
-  <ol class="susy-fonts">
-    <li class="susyregular">
-      <strong>Susy Regular:</strong>
-      The quick & brown fox jumps over the lazy god.
-    </li>
-    <li class="susybold">
-      <strong>Susy Bold:</strong>
-      The quick & brown fox jumps over the lazy god.
-    </li>
-    <li class="susysc">
-      <strong>Susy SmallCaps:</strong>
-      The quick & brown fox jumps over the lazy god.
-    </li>
-  </ol>
-
   <figure>
     <img src="/static/pictures/susy-font.jpg" alt=" " />
     <figcaption>
@@ -67,25 +52,4 @@ Susy's fonts look like this:
       Susy Bold, SmallCaps, and Regular on the "about" page.
     </figcaption>
   </figure>
-
-JJ's fonts (created earlier) look like this:
-
-|jjfonts|
-
-.. |jjfonts| raw:: html
-
-  <ol class="jj-fonts">
-    <li class="jjregular">
-      <strong>JJ Regular:</strong>
-      The quick & brown fox jumps over the lazy god.
-    </li>
-    <li class="jjbold">
-      <strong>JJ Bold:</strong>
-      The quick & brown fox jumps over the lazy god.
-    </li>
-    <li class="jjitalic">
-      <strong>JJ Italic:</strong>
-      The quick & brown fox jumps over the lazy god.
-    </li>
-  </ol>
 

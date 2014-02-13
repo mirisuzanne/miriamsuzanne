@@ -1,0 +1,17 @@
+// Main
+// ====
+
+[role="main"] {
+  @include break;
+  @include h-borders(2px, 1);
+  @include gutters;
+  border-style: dashed;
+  border-color: color($alt lightest, .5);
+  counter-reset: fig;
+
+  [data-bg] & {
+    border: 0;
+    background-color: color(white, .98);
+    box-shadow: 0 0 rhythm(.125) color(dark $alt);
+  }
+}

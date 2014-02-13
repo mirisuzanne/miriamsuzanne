@@ -1,22 +1,18 @@
 {% extends "base.html" %}
 
-{% block template %}
-<div class="header">
-<div class="header-content">
-  <h1 role="banner"><a href="/" rel="home">Eric<span class="amp">&</span>Meyer</a></h1>
+{% block bodyattrs %}
+  {%- if config.bgimage -%}
+    data-bg="true" style="background-image: url({{ config.bgimage }});"
+  {%- endif -%}
+{% endblock bodyattrs %}
 
-  <nav role="navigation">
-    <ul>
-      <li><a href="/why/">manifesto</a></li>
-      <li><a href="/what/">projects</a></li>
-      <li><a href="/who/">bio</a></li>
-    </ul>
-  </nav>
-</div>
-</div>
+{% block template %}
+
+{% include "_banner.html.j2" %}
+{% include "_nav.html.j2" %}
 
 <section role="main">
-<div class="main-content">
+<div class="container">
   {% block body %}
 
   {% endblock body %}
@@ -24,38 +20,8 @@
 </section>
 
 <footer role="contentinfo">
-<div class="footer-content">
-  <div class="social">
-    <ul>
-      <li class="email" data-title="Email">eric(put the 'at' sign here)andmeyer.com</li>
-      <li data-title="RSS feed"><a rel="me" href="http://feeds.feedburner.com/ericandmeyer/" >feed</a></li>
-      <li data-title="Twitter"><a rel="me" href="http://twitter.com/eriiicam/" >twitter</a></li>
-      <li data-title="Facebook"><a rel="me" href="http://facebook.com/eriiicam/" >facebook</a></li>
-      <li data-title="Dribbble"><a rel="me" href="http://dribbble.com/players/ericam/" >dribbble</a></li>
-      <li data-title="Vimeo"><a rel="me" href="http://vimeo.com/eriiicam" >vimeo</a></li>
-      <li data-title="Github"><a rel="me" href="http://www.github.com/ericam/" >github</a></li>
-      <li data-title="Stack Overflow"><a rel="me" href="http://stackoverflow.com/users/108625/eric-meyer/" >stack overflow</a></li>
-    </ul>
-  </div>
-
-  <p class="colophon">
-    This site is built on plain old semantic <a href="http://www.w3.org/TR/html5/">HTML5</a>,
-    powered by
-    the <a href="https://github.com/mitsuhiko/rstblog/">rstblog</a> static site generator
-    for <a href="http://www.python.org">Python</a>,
-    and styled using <a href="http://www.w3.org/TR/css-2010/">CSS3</a>,
-    with help from
-    <a href="http://www.jquery.com/">jQuery</a>,
-    <a href="http://www.modernizr.com/">Modernizr</a>,
-    <a href="http://keyamoon.com/icomoon/">IcoMoon</a>,
-    <a href="http://susy.oddbird.net/">Susy</a>,
-    <a href="http://compass-style.org/">Compass</a>,
-    and <a href="http://sass-lang.com/">Sass</a>.
-  </p>
-
-  <p class="copyright vcard">copyright &copy; 2011-2012
-    <a href="http://eric.andmeyer.com/" class="fn url">Eric A. Meyer</a>
-  </p>
-</div>
+  {% include "_social.html.j2" %}
+  {% include "_colophon.html.j2" %}
 </footer>
+
 {% endblock template %}

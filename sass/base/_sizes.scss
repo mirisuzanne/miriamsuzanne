@@ -1,51 +1,17 @@
-// ----------------------------------------------------------------------------
-// Defaults
+// Scale
+// =====
 
-$base-size: 21px;
-$ratio: minor-third() fifth();
+@include set(ratio, major-third);
 
-// ----------------------------------------------------------------------------
-// Variants
-
-$m      : 1;
-$s      : -1;
-$xs     : -2;
-$xxs    : -3;
-$xxxs   : -4;
-$l      : 2;
-$xl     : 3;
-$xxl    : 5;
-$xxxl   : 8;
-
-$norm         : 1;
-$med          : ms($m,$norm);
-$small        : ms($s,$norm);
-$xsmall       : ms($xs,$norm);
-$xxsmall      : ms($xxs,$norm);
-$xxxsmall     : ms($xxxs,$norm);
-$large        : ms($l,$norm);
-$xlarge       : ms($xl,$norm);
-$xxlarge      : ms($xxl,$norm);
-$xxxlarge     : ms($xxxl,$norm);
-
-$normem       : 1em;
-$medem        : ms($m,$normem);
-$smallem      : ms($s,$normem);
-$xsmallem     : ms($xs,$normem);
-$xxsmallem    : ms($xxs,$normem);
-$xxxsmallem   : ms($xxxs,$normem);
-$largeem      : ms($l,$normem);
-$xlargeem     : ms($xl,$normem);
-$xxlargeem    : ms($xxl,$normem);
-$xxxlargeem   : ms($xxxl,$normem);
-
-$normpx       : $base-size;
-$medpx        : ms($m);
-$smallpx      : ms($s);
-$xsmallpx     : ms($xs);
-$xxsmallpx    : ms($xxs);
-$xxxsmallpx   : ms($xxxs);
-$largepx      : ms($l);
-$xlargepx     : ms($xl);
-$xxlargepx    : ms($xxl);
-$xxxlargepx   : ms($xxxl);
+@include set(scale, (
+  xxxlarge  : 8,
+  xxlarge   : 5,
+  xlarge    : 3,
+  large     : 2,
+  medium    : 1,
+  normal    : 0,
+  small     : -1,
+  xsmall    : -1.5,
+  xxsmall   : -2,
+  xxxsmall  : -3,
+));

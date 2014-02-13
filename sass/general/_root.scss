@@ -1,33 +1,22 @@
-// ----------------------------------------------------------------------------
-// Reset
+// Root
+// ====
 
 @import "compass/reset";
-@import "fonts";
 
-// ----------------------------------------------------------------------------
-// Root
-
+@include fonts;
 @include establish-baseline;
+@include border-box-sizing;
+@include icon-placeholder(andmeyer);
 
 html {
-  @include text-shadow(rgba(white,.5) 0 1px 0);
+  @extend %serif;
   color: $base;
+  text-shadow: rgba(white,.5) 0 1px 0;
 }
 
 body {
-  @include serif;
-  // Use for sitewide background-images
-  // @include background(image-url('backgrounds/volley6.jpg') no-repeat fixed center);
-  // @include background-size(cover);
+  background: no-repeat fixed;
+  background-size: cover;
 }
 
-img {
-  vertical-align: bottom;
-  width: 100%;
-}
-
-// ----------------------------------------------------------------------------
-// Imports
-
-@import "type";
-@import "icons";
+@include data-icons;

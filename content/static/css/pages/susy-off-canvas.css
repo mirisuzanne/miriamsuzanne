@@ -4,8 +4,8 @@ body {
 }
 
 * {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -17,8 +17,8 @@ body {
   padding-right: 0;
   margin-left: auto;
   margin-right: auto;
-  -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   overflow: hidden;
 }
@@ -33,9 +33,9 @@ header, footer {
 }
 
 .left, .right, .main {
-  -webkit-transition: 0.2s all ease;
   -moz-transition: 0.2s all ease;
   -o-transition: 0.2s all ease;
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
   float: left;
   width: 100%;

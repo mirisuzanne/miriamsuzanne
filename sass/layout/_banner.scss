@@ -1,0 +1,26 @@
+// Banner
+// ======
+
+[role="banner"] {
+  @include span(100%);
+  @include leader(.25);
+  font-style: italic;
+  text-transform: lowercase;
+  text-align: center;
+
+  .brand {
+    @include font-size(normal);
+    display: inline;
+  }
+
+  a {
+    #{$link} { display: inline-block; }
+  }
+
+  .tagline {
+    @include before(" / ");
+    @include font-size(small);
+    color: $gray;
+    font-style: normal;
+  }
+}

@@ -1,0 +1,24 @@
+// Pagination
+// ==========
+
+.pagination {
+  font-style: italic;
+  text-align: center;
+  .location {
+    @include wrap-content(" • ");
+    margin: 0 1em;
+  }
+  .now, .context {
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+  }
+  .now { @include font-size(xxxlarge); }
+  .context {
+    @include font-size(xxlarge);
+    padding: 0 .125em;
+  }
+  .prev { @include before("« "); }
+  .next { @include after(" »"); }
+  .disabled { color: color(dark,.25); }
+}

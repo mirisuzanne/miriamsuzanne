@@ -4,7 +4,7 @@
 .when .section {
   > ul > li {
     > em, > strong {
-      @include adjust-font-size-to($xsmallpx);
+      @include font-size(xsmall);
       @include sans;
       @include before(" | ");
       display: inline-block;
@@ -17,7 +17,7 @@
       &:before { font-weight: normal; }
     }
     ul {
-      @include adjust-font-size-to($xsmallpx,.75);
+      @include font-size(xsmall, .75);
       @include trailer(.5);
       @include sans;
     }

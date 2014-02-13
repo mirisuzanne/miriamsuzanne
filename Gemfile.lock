@@ -1,64 +1,53 @@
-GIT
-  remote: git://github.com/chriseppstein/compass
-  revision: 34159da9a92c97a59629b4ca23cc6f7412016379
-  branch: master
-  specs:
-    compass (0.13.alpha.4.34159da)
-      chunky_png (~> 1.2)
-      listen (~> 1.0.0)
-      sass (>= 3.2.5, < 3.4)
-
-GIT
-  remote: git://github.com/ericam/accoutrement
-  revision: c9265399900c619191bc79cc5987a34ade747b50
-  branch: master
-  specs:
-    accoutrement (0.0.5)
-      compass (>= 0.12.2)
-
-GIT
-  remote: git://github.com/ericam/susy
-  revision: e31b53b64aec7f603f11f1d9edd68ed9a0aeb7c9
-  branch: master
-  specs:
-    susy (1.0.9)
-      compass (>= 0.12.2)
-      sass (>= 3.2.0)
-
 GEM
   remote: http://rubygems.org/
   specs:
-    animate (0.2.beta.0)
-      compass (>= 0.13.alpha.0)
-      sass (>= 3.2.0)
-    chunky_png (1.2.8)
-    ffi (1.9.0)
-    listen (1.0.3)
+    accoutrement (0.1.7)
+      compass (~> 1.0.0.alpha.17)
+      sass (~> 3.3.0.rc.1)
+    breakpoint (2.4.1)
+      compass (~> 1.0.0.alpha.13)
+      sass (~> 3.3.0.rc.2)
+      sassy-maps (< 1.0.0)
+    chunky_png (1.3.0)
+    compass (1.0.0.alpha.18)
+      chunky_png (~> 1.2)
+      compass-core (~> 1.0.0.alpha.17)
+      compass-import-once (~> 1.0.2)
+      json
+      listen (~> 1.1.0)
+      sass (~> 3.3.0.rc.3)
+    compass-core (1.0.0.alpha.17)
+      multi_json (~> 1.0)
+      sass (>= 3.3.rc.3)
+    compass-import-once (1.0.2)
+    ffi (1.9.3)
+    json (1.8.1)
+    listen (1.1.6)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
-    modular-scale (1.0.6)
-      compass (>= 0.12.1)
-      sass (>= 3.2.0)
-      sassy-math (>= 1.5)
-    rb-fsevent (0.9.3)
-    rb-inotify (0.9.0)
+    modular-scale (2.0.4)
+      compass (>= 0.12.0)
+    multi_json (1.8.4)
+    rb-fsevent (0.9.4)
+    rb-inotify (0.9.3)
       ffi (>= 0.5.0)
     rb-kqueue (0.2.0)
       ffi (>= 0.5.0)
-    sass (3.2.10)
-    sassy-math (1.5)
-      compass (~> 0.11)
+    sass (3.3.0.rc.3)
+    sassy-maps (0.3.1)
+      compass (~> 1.0.0.alpha.13)
+      sass (~> 3.3.0.rc.2)
+    susy (2.0.0.rc.1)
+      sass (~> 3.3.0.rc.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  accoutrement!
-  animate (~> 0.2.beta.0)
-  chunky_png (~> 1.2.5)
-  compass!
-  modular-scale (~> 1.0.2)
-  rb-fsevent (~> 0.9.1)
-  sass (~> 3.2.1)
-  susy!
+  accoutrement (~> 0.1.7)
+  breakpoint (~> 2.4.1)
+  compass (~> 1.0.0.alpha.18)
+  modular-scale (~> 2.0.4)
+  sass (~> 3.3.0.rc.3)
+  susy (~> 2.0.0.rc.1)

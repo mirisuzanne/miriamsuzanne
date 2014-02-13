@@ -1,5 +1,9 @@
-// ----------------------------------------------------------------------------
+// Typography
+// ==========
+
+
 // Links
+// -----
 
 a {
   &:hover, &:active {
@@ -14,126 +18,135 @@ a {
   }
 }
 
-// ----------------------------------------------------------------------------
+
 // Ampersand
+// ---------
 
 .amp { @include amp; }
 
-// ----------------------------------------------------------------------------
-// Typography
 
-%type {
+// Images
+// ------
 
-  // -------
-  // Headers
+img {
+  vertical-align: bottom;
+  width: 100%;
+}
 
-  h1 {
-    @include adjust-font-size-to($xlargepx);
-    @include at-breakpoint($total-columns) { @include adjust-font-size-to($xxlargepx); }
-    a {
-      #{$link} { color: color($alt dark); }
-      #{$focus} { color: color($accent dark); }
+
+// Headers
+// -------
+
+h1 {
+  @include font-size(large);
+  @include breakpoint(container()) { @include font-size(xlarge); }
+  a {
+    #{$link} { color: color($alt dark); }
+    #{$focus} { color: color($accent dark); }
+  }
+}
+
+h2 {
+  @include font-size(large);
+  @include breakpoint(container()) { @include font-size(xlarge); }
+}
+
+h3 {
+  @include trailer;
+  text-transform: uppercase;
+  letter-spacing: .01em;
+}
+
+
+// Blocks
+// ------
+
+h4, strong { font-weight: bold; }
+h5, h6, em, blockquote { font-style: italic; }
+
+p, ul, ol, pre, blockquote { @include trailer; }
+p:empty { display: none; }
+ul { list-style-type: disc; }
+ol { list-style-type: decimal; }
+
+blockquote {
+  @include rem(padding, 0 rhythm(.751));
+  @include rem(border-left, rhythm(.25) solid color(lighter));
+  em { font-style: normal; }
+
+  cite {
+    @include before("—");
+    @include font-size(xsmall);
+    display: block;
+    font-style: normal;
+
+    em { font-style: italic; }
+    .pubdate {
+      @include wrap-content("[" "]");
+      display: inline-block;
     }
   }
+}
 
-  h2 {
-    @include adjust-font-size-to($largepx);
-    @include at-breakpoint($total-columns) { @include adjust-font-size-to($xlargepx); }
-  }
-
-  h3 {
-    @include trailer;
-    text-transform: uppercase;
-    letter-spacing: .01em;
-  }
-
-  // ------
-  // Blocks
-
-  h4, strong { font-weight: bold; }
-  h5, h6, em, blockquote { font-style: italic; }
-
-  p, ul, ol, pre, blockquote { @include trailer; }
-  p:empty { display: none; }
-  ul { list-style-type: disc; }
-  ol { list-style-type: decimal; }
-
-  blockquote {
-    @include rem(padding, 0 rhythm(.751));
-    @include rem(border-left, rhythm(.25) solid color(lighter));
-    em { font-style: normal; }
-
-    cite {
-      @include before("—");
-      @include adjust-font-size-to($xsmallpx);
-      display: block;
-      font-style: normal;
-
-      em { font-style: italic; }
-      .pubdate {
-        @include wrap-content("[" "]");
-        display: inline-block;
-      }
+ul, ol, blockquote {
+  margin-left: rhythm(1);
+  @include breakpoint(container(susy-get(columns) + 1)) {
+    margin-left: 0;
+    ul, ol {
+      @include font-size(small);
+      @include trailer(.5);
+      margin-left: rhythm(1);
     }
   }
+}
 
-  ul, ol, blockquote {
-    margin-left: rhythm(1);
-    @include at-breakpoint($total-columns + 1) {
-      margin-left: 0;
-      ul, ol {
-        @include adjust-font-size-to($smallpx);
-        @include trailer(.5);
-        margin-left: rhythm(1);
-      }
-    }
+
+// Figures
+// -------
+
+figure {
+  @include trailer(1);
+  > a, > img, > .video {
+    @include box-shadow($base 0 0 6px);
+    display: block;
+    vertical-align: top;
   }
-
-  // -------
-  // Figures
-
-  figure {
-    @include trailer(1);
-    > a, > img, > .video {
-      @include box-shadow($base 0 0 6px);
-      display: block;
-      vertical-align: top;
-    }
-    .video { @include fluid-ratio; }
+  .video {
+    @include fluid-ratio;
   }
+}
 
-  figcaption {
-    @include sanscond;
-    @include adjust-font-size-to($smallpx,.75);
-    @include leader(.5);
-    @include rem(padding, rhythm(.5));
-    background: color($alt light,.125);
-    counter-increment: fig;
-    &:before {
-      @include serif;
-      content: "fig." counter(fig);
-      margin-right: .4em;
-      font-style: italic;
-    }
+figcaption {
+  @include sans;
+  @include font-size(xsmall, .75);
+  @include leader(.5);
+  @include rem(padding, rhythm(.5));
+  background: color($alt light,.125);
+  counter-increment: fig;
+  &:before {
+    @include serif;
+    content: "fig." counter(fig);
+    margin-right: .4em;
+    font-style: italic;
   }
+}
 
-  // ----
-  // Code
 
-  tt, code, pre {
-    @include adjust-font-size-to($xxsmallpx,.75);
-    @include mono;
-  }
+// Code
+// ----
 
-  tt, code {
-    @include rem(padding, 0 rhythm(.25));
-    background: rgba(white,.75);
-  }
+tt, code, pre {
+  @include font-size(xxsmall, .75);
+  @include mono;
+}
 
-  pre {
-    @include rem(margin-left, rhythm(-.5));
-    @include rem(padding, rhythm(.5));
-    border-left: 3px solid color($alt lightest);
-  }
+tt, code {
+  @include rem(padding, 0 rhythm(.25));
+  background: rgba(white,.75);
+}
 
+pre {
+  @include rem(margin-left, rhythm(-.5));
+  @include rem(padding, rhythm(.5));
+  border-left: 3px solid color($alt lightest);
 }

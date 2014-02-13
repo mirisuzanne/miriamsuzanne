@@ -55,10 +55,10 @@
 @include font('CenturyOldStyle' 'CenturyOldStyle-Bold-webfont' bold);
 @include font('CenturyOldStyleCaps' 'CenturyOldStyleCaps-Regular-webfont');
 
-@include font('FranklinGothicCond' 'FranklinGothic-Cd-webfont');
-@include font('FranklinGothicCond' 'FranklinGothic-CdIt-webfont' italic);
-@include font('FranklinGothicCond' 'FranklinGothic-MedCd-webfont' bold);
-@include font('FranklinGothicCond' 'FranklinGothic-MedCdIt-webfont' bold italic);
+@include font('FranklinGothicCond' 'FranklinGothicCd-Regular-webfont');
+@include font('FranklinGothicCond' 'FranklinGothicCd-Italic-webfont' italic);
+@include font('FranklinGothicCond' 'FranklinGothicCd-Bold-webfont' bold);
+@include font('FranklinGothicCond' 'FranklinGothicCd-BoldItalic-webfont' bold italic);
 
 @include font('Silkscreen' 'slkscr-webfont');
 @include font('Silkscreen' 'slkscrb-webfont' bold);

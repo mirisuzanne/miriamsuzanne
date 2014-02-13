@@ -1,16 +1,19 @@
 // Root
 // ====
 
-@import "../../general/icons";
+@import "../../base/icons";
 
 // Body
 @include establish-baseline;
 @include border-box-sizing;
+@include icon-placeholder(andmeyer);
 
 body {
   @extend .serif;
   color: $base;
 }
+
+@include data-icons;
 
 // Selected Text
 @mixin accessible-color($background: white) {

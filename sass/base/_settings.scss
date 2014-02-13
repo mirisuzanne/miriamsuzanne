@@ -1,29 +1,10 @@
-// ----------------------------------------------------------------------------
-// Imports
+// Settings
+// ========
 
-@import "compass";
-@import "compass/layout";
-@import "modular-scale";
-@import "accoutrement";
-@import "susy";
-
-// ----------------------------------------------------------------------------
-// Modules
-
+@import "requirements";
 @import "sizes";
 @import "colors";
 @import "grids";
 @import "type";
-
-// ----------------------------------------------------------------------------
-// Browser Support
-
-$legacy-support-for-ie6         : false;
-$legacy-support-for-ie7         : false;
-$legacy-support-for-ie8         : true;
-
-// ----------------------------------------------------------------------------
-// Link Variables
-
-$link   : '&:link, &:visited';
-$focus  : '&:focus, &:hover, &:active';
+@import "fonts";
+@import "icons";
