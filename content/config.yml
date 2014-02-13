@@ -1,8 +1,8 @@
 ---
 # banner
-brand: GreenMud
-tagline: Eric a Meyer
-bgimage: /static/pictures/tennis/volley6.jpg
+brand: 'GreenMud'
+tagline: 'Eric<i class="amp">&</i>Meyer'
+bgimage: '/static/pictures/tennis/volley6.jpg'
 
 # navigation
 nav:
