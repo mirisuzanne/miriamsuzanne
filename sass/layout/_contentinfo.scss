@@ -14,11 +14,7 @@
   text-align: center;
 
   li {
-    @include tooltip(bottom) {
-      left: -100%;
-      min-width: 300%;
-      text-align: center;
-    }
+    @include tooltip(bottom);
     display: inline-block;
   }
 

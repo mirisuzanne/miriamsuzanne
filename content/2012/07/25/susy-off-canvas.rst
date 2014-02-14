@@ -1,6 +1,5 @@
 public: yes
 tags: [susy, demo, rwd]
-author: eric
 summary: |
   The off-canvas design pattern
   for creating responsive websites

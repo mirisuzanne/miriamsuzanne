@@ -2,88 +2,46 @@
 // ========
 
 $tooltip-arrow-size: rhythm(.25);
-$tooltip-background: color($alt, .75);
+$tooltip-background: color($accent, .9);
 
 @include tooltips {
   @include sans;
   @include font-size(xxsmall);
+  @include box-shadow(0 0 1px color(darkest));
   padding: rhythm(.125) rhythm(.5);
   color: white;
   background: $tooltip-background;
   border-radius: rhythm(.25);
+  border: 1px solid color(darker);
   text-shadow: none;
 
   [data-tooltip] { @include before(attr(data-tooltip)); }
 }
 
 
-// Arrows
-// ------
-
-%tooltip-down-arrow {
-  @include arrow($tooltip-arrow-size down $tooltip-background, $root: null) {
-    top: 100%;
-  }
-}
-
-%tooltip-up-arrow {
-  @include arrow($tooltip-arrow-size up $tooltip-background, $root: null) {
-    bottom: 100%;
-  }
-}
-
-%tooltip-left-arrow {
-  @include arrow($tooltip-arrow-size left $tooltip-background, $root: null) {
-    right: 100%;
-    top: 50%;
-    margin-top: - $tooltip-arrow-size / 2;
-  }
-}
-
-%tooltip-right-arrow {
-  @include arrow($tooltip-arrow-size right $tooltip-background, $root: null) {
-    left: 100%;
-    top: 50%;
-    margin-top: - $tooltip-arrow-size / 2;
-  }
-}
-
-
 // Positions
 // ---------
 
+%tooltip-vertical {
+  left: -100%;
+  min-width: 300%;
+  text-align: center;
+}
+
 %tooltip-top {
-  @extend %tooltip-down-arrow;
+  @extend %tooltip-vertical;
   margin-bottom: $tooltip-arrow-size;
 }
 
-%tooltip-top-left {
-  &::before { right: $tooltip-arrow-size; }
-}
-
-%tooltip-top-right {
-  &::before { left: $tooltip-arrow-size; }
-}
-
 %tooltip-bottom {
-  @extend %tooltip-up-arrow;
+  @extend %tooltip-vertical;
   margin-top: $tooltip-arrow-size;
 }
 
-%tooltip-bottom-left {
-  &::before { right: $tooltip-arrow-size; }
-}
-
-%tooltip-bottom-right {
-  &::before { left: $tooltip-arrow-size; }
+%tooltip-left {
+  margin-right: $tooltip-arrow-size;
 }
 
 %tooltip-right {
-  @extend %tooltip-left-arrow;
   margin-left: $tooltip-arrow-size;
-}
-
-%tooltip-left {
-  @extend %tooltip-right-arrow;
-  margin-right: $tooltip-arrow-size;
 }

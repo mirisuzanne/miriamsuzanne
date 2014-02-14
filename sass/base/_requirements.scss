@@ -6,3 +6,22 @@
 @import "accoutrement";
 @import "breakpoint";
 @import "susy";
+
+// Font Feature Settings
+// =====================
+
+@import "compass/support";
+
+// The prefixed support threshold for box-sizing.
+// Defaults to the $graceful-usage-threshold.
+$font-feature-support-threshold: $graceful-usage-threshold !default;
+
+// The default font-feature when no argument is provided to the mixin:
+$default-font-feature: "liga" !default;
+
+// Set font features for Mozilla, Webkit, IE10 and the future
+//
+//     $font-feature: [ normal | <feature-tag-value> ]
+@mixin font-feature-settings($font-feature: $default-font-feature) {
+  @include prefixed-properties(font-feature, $font-feature-support-threshold, (font-feature-settings: $font-feature));
+}

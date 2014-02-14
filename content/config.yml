@@ -1,8 +1,8 @@
 ---
-# banner
 brand: 'GreenMud'
-tagline: 'Eric<i class="amp">&</i>Meyer'
+tagline: 'Eric M.'
 bgimage: '/static/pictures/tennis/volley6.jpg'
+
 
 # navigation
 nav:
@@ -17,22 +17,22 @@ nav:
 # social
 social:
   - title: email
-    url: mailto:eric(put the 'at' sign here)andmeyer.com
     icon: mail
+    url: "mailto:eric(put the 'at' sign here)andmeyer.com"
   - title: feed
     url: "http://feeds.feedburner.com/ericandmeyer/"
   - title: twitter
-    url: http://twitter.com/eriiicam/
+    url: "http://twitter.com/eriiicam/"
   - title: facebook
-    url: http://facebook.com/eriiicam/
+    url: "http://facebook.com/eriiicam/"
   - title: dribbble
-    url: http://dribbble.com/players/ericam/
+    url: "http://dribbble.com/players/ericam/"
   - title: vimeo
-    url: http://vimeo.com/eriiicam
+    url: "http://vimeo.com/eriiicam"
   - title: github
-    url: http://www.github.com/ericam/
+    url: "http://www.github.com/ericam/"
   - title: stack overflow
-    url: http://stackoverflow.com/users/108625/eric-meyer/
+    url: "http://stackoverflow.com/users/108625/eric-meyer/"
 
 
 # colophon
@@ -59,7 +59,7 @@ colophon:
 
 # settings
 active_modules: [pygments, tags, blog, typogrify]
-author: Eric A. Meyer
+author: "Eric Meyer"
 canonical_url: http://andmeyer.com/
 output_folder: ../output
 template_path: ../templates

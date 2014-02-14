@@ -15,6 +15,7 @@ html {
 }
 
 body {
+  @include font-feature-settings("liga");
   background: no-repeat fixed;
   background-size: cover;
 }
