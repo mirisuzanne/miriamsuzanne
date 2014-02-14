@@ -300,6 +300,8 @@ blockquote em {
   font-style: normal;
 }
 blockquote cite {
+  margin-top: 13px;
+  margin-top: 0.61905rem;
   font-size: 15px;
   font-size: 0.71429rem;
   line-height: 26px;
@@ -312,9 +314,6 @@ blockquote cite::before {
 }
 blockquote cite em {
   font-style: italic;
-}
-blockquote cite .pubdate {
-  display: inline-block;
 }
 blockquote cite .pubdate::before, blockquote cite .pubdate::after {
   content: "[";

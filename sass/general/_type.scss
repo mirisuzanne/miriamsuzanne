@@ -75,6 +75,7 @@ blockquote {
   em { font-style: normal; }
 
   cite {
+    @include leader(.5);
     @include before("—");
     @include font-size(xsmall);
     display: block;
@@ -83,7 +84,6 @@ blockquote {
     em { font-style: italic; }
     .pubdate {
       @include wrap-content("[" "]");
-      display: inline-block;
     }
   }
 }
