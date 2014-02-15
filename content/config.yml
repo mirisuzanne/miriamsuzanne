@@ -58,7 +58,7 @@ colophon:
 
 # settings
 active_modules: [pygments, tags, blog, typogrify]
-author: "Eric Meyer"
+author: 'Eric Meyer'
 canonical_url: http://andmeyer.com/
 output_folder: ../output
 template_path: ../templates
