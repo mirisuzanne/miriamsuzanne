@@ -7,12 +7,12 @@
   {% block htmlhead %}
 
   <!-- Page Info -->
-  <title>{% block fulltitle %}{% block title %}Home{% endblock %} | Eric&Meyer{% endblock %}</title>
-  <meta name="description" content="{% block description %}Eric A. Meyer is an artist & experience designer, working across a broad range of genre and media — live performance, web software, music, writing, design, etc.{% endblock description %}" />
+  <title>{% block fulltitle %}{% block title %}Home{% endblock %} | {{ config.brand }}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{{ config.author }} is an artist & experience designer, working across a broad range of genre and media — live performance, web software, music, writing, design, etc.{% endblock description %}" />
 
   <!-- Site Info -->
   {% block robots %}<meta name="robots" content="index, follow" />{% endblock %}
-  <meta name="author" content="Eric A. Meyer" />
+  <meta name="author" content="{{ config.author }}" />
   <meta name="keywords" content="" />
   <meta name="language" content="en-us" />
 

@@ -6,7 +6,7 @@ bodyclasses: who
 Bio
 ===
 
-**Eric A. Meyer**
+**Eric Meyer**
 plays math-rock at poetry readings,
 performs poetry in crowded bars,
 develops web software with `OddBird`_,
@@ -22,7 +22,8 @@ he's also worked for `Mozilla`_,
 Pittsburgh's `City Theatre`_, and many more.
 
 Eric is the author of two upcoming novels —
-*Into the Green Green Mud* and *Variations on Riding Side Saddle* —
+*Into the Green Green Mud* (TBA)
+and *Variations on Riding Side Saddle* (`SpringGun Press`_, 2014) —
 creator of many original performances
 (including *Missa Populi*, *Sadomasochism*, and *The Post-Obsolete Book*),
 and an active `open-source contributor`_ —

@@ -3,7 +3,7 @@
 
 [role="main"] {
   @include break;
-  @include h-borders(2px, 1);
+  @include h-borders(2px, 2);
   @include gutters;
   border-style: dashed;
   border-color: color($alt lightest, .5);
