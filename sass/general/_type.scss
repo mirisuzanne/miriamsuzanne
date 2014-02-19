@@ -47,8 +47,9 @@ h1 {
 }
 
 h2 {
-  @include font-size(large);
-  @include breakpoint(container()) { @include font-size(xlarge); }
+  @include font-size(medium);
+  @include trailer;
+  @include breakpoint(container()) { @include font-size(large); }
 }
 
 h3 {

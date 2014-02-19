@@ -6,17 +6,17 @@ bodyclasses: who
 Bio
 ===
 
-**Eric Meyer**
-plays math-rock at poetry readings,
-performs poetry in crowded bars,
-develops web software with `OddBird`_,
+**Eric Suzanne Meyer**
+creates web software with `OddBird`_,
 soundscapes with `Teacup Gorilla`_,
 and performance art with `Vicious Trap`_
 or the `Denver Poets' Theatre`_.
+He plays math-rock at poetry readings,
+and reads poetry in crowded bars.
 
-The former Artistic Director of `New World Arts`_ &
+Formerly Artistic Director of `New World Arts`_ &
 Technical Director of `The LIDA Project`_,
-he's also worked for `Mozilla`_,
+Eric has also developed work for `Mozilla`_,
 `Junyo`_, `SpringGun Press`_, `The Operating System`_,
 `The Media Archeology Lab`_, `Illiterate Magazine`_,
 Pittsburgh's `City Theatre`_, and many more.
@@ -28,7 +28,7 @@ creator of many original performances
 (including *Missa Populi*, *Sadomasochism*, and *The Post-Obsolete Book*),
 and an active `open-source contributor`_ —
 core developer on the `Compass`_ project,
-and creator of `Susy`_, and `True`_.
+and creator of `Susy`_ and `True`_.
 
 |links|
 
@@ -132,14 +132,16 @@ Press
     <time datetime="2006-01-29" class="pubdate">January 29, 2006</time>
   </cite>
 
-Co-conspirators
+Co-belligerents
 ---------------
 
 I'm fortunate to work with amazing people every day.
-*Carl Meyer* & *Jonny Gerig Meyer* at Oddbird;
+*Carl Meyer*, *Jonny Gerig Meyer*, and *Claudina Sarahe* at Oddbird;
 *Daniel Eisenstat* & *Sondra Eby* at Teacup Gorilla;
 *Julie Rada* at Vicious Trap;
-*Chris Eppstein*, *Danny Palmer*,
+*Chris Eppstein*, *Aaron Gray*,
+*Rachel Nabors*, *Jina Bolton*,
+*Tsachi Schlidor*, *Danny Palmer*,
 and many others working on open-source projects;
 and *Jacob Liechty*, *Aaron Liechty*,
 *Brandi Homan*, & *Megan Sumner* as writers.

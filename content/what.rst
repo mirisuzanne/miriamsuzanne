@@ -6,14 +6,6 @@ hide_title: yes
 Projects
 ========
 
-Upcoming Events
----------------
-
-- **Feb. 2014** |
-  SF Sass Meetup
-
-  - TBA | San Francisco
-
 
 Ongoing Projects
 ----------------

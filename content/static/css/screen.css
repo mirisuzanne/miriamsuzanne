@@ -244,17 +244,19 @@ h1 a:focus, h1 a:hover, h1 a:active {
 }
 
 h2 {
-  font-size: 33px;
-  font-size: 1.57143rem;
+  font-size: 26px;
+  font-size: 1.2381rem;
   line-height: 39px;
   line-height: 1.85714rem;
+  margin-bottom: 26px;
+  margin-bottom: 1.2381rem;
 }
 @media (min-width: 33.75rem) {
   h2 {
-    font-size: 41px;
-    font-size: 1.95238rem;
-    line-height: 52px;
-    line-height: 2.47619rem;
+    font-size: 33px;
+    font-size: 1.57143rem;
+    line-height: 39px;
+    line-height: 1.85714rem;
   }
 }
 
@@ -453,7 +455,6 @@ pre {
 }
 [role="banner"] a:link, [role="banner"] a:visited {
   display: inline-block;
-  font-style: italic;
 }
 [role="banner"] .tagline {
   font-size: 17px;
@@ -461,6 +462,7 @@ pre {
   line-height: 26px;
   line-height: 1.2381rem;
   color: gray;
+  font-style: italic;
 }
 [role="banner"] .tagline::before {
   content: " / ";
