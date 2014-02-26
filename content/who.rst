@@ -6,7 +6,7 @@ bodyclasses: who
 Bio
 ===
 
-**Eric Suzanne Meyer**
+**Eric M Suzanne**
 creates web software with `OddBird`_,
 soundscapes with `Teacup Gorilla`_,
 and performance art with `Vicious Trap`_

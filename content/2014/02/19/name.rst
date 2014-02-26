@@ -20,7 +20,7 @@ It's past time for me to make a change.
 As a first step,
 let me introduce my new middle name:
 
-*Eric Suzanne Meyer*.
+*Eric Suzanne Meyer*. [`see update </2014/02/26/name/>`_]
 
 Suzanne is the middle name I would have had at birth
 under different genital circumstances,

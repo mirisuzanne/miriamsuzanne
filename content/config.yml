@@ -141,7 +141,7 @@ colophon:
 
 # settings
 active_modules: [pygments, tags, blog, typogrify]
-author: 'Eric Suzanne Meyer'
+author: 'Eric M Suzanne'
 canonical_url: http://andmeyer.com/
 output_folder: ../output
 template_path: ../templates
