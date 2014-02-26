@@ -15,7 +15,7 @@ events:
 # curiculum vite
 cv:
   - title: Organizing Sass Partials
-    title-url: 'http://andmeyer.hexxie.com:5000/pres/sass-partials/'
+    title-url: 'http://ericsuzanne.com/pres/sass-partials/'
     forum: NYC Sass & Compass Meetup
     forum-url: 'http://www.meetup.com/nyc-sass/events/146898452/'
     date: Nov. 2013

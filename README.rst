@@ -1,5 +1,9 @@
-AndMeyer
-========
+GreenMud / Eric Suzanne
+=======================
+
+The official website for Eric M. Suzanne —
+formerly the Compass/Sass/Susy "Eric Meyer",
+not the CSS Complete Guide/Reset "Eric Meyer".
 
 Development
 -----------
