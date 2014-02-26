@@ -10,7 +10,7 @@ Last week I took on *Suzanne* as a new middle name.
 This week I get *Meyer* out of the way,
 by flipping middle name with last initial.
 
-*Eric M Suzanne*
+*Eric M Suzanne* or simply *Eric Suzanne*
 
 As part of the transition,
 I'm moving this website URL to
