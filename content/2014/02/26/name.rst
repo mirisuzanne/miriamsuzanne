@@ -14,8 +14,8 @@ by flipping middle name with last initial.
 
 As part of the transition,
 I'm moving this website URL to
-`ericsuzanne.com <ericsuzanne.com>`_.
-Old links pointing to `andmeyer.com <andmeyer.com>`_
+`ericsuzanne.com <http://ericsuzanne.com>`_.
+Old links pointing to `andmeyer.com <http://andmeyer.com>`_
 should continue to work for the time being.
 
 Step 3 is to publish more work under my new name.
