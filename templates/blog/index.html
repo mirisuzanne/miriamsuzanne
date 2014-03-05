@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% block title %}Blog{% endblock %}
+{% block fulltitle %}{{ config.author }}{% endblock %}
 {% block body %}
 
   {%- for ctx in pagination.get_slice() %}
