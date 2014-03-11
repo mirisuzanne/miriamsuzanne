@@ -1,6 +1,8 @@
 public: yes
 bodyclasses: what
 hide_title: yes
+before:
+  - include: 'modules/_calendar.html.j2'
 
 
 Projects

@@ -1,0 +1,10 @@
+{% import "modules/event.macros.html.j2" as e %}
+
+{% if config.events %}
+<section class="section section--cal">
+  <h2 class="cal-title">Upcoming Events</h2>
+  {% for event in config.events %}
+    {{ e.show(event) }}
+  {% endfor %}
+</section>
+{% endif %}

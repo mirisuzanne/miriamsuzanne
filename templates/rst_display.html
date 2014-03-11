@@ -18,10 +18,14 @@
 
   {% include "_byline.html" %}
 
+  {% for module in config.before %}
+    {% include module.include %}
+  {% endfor %}
+
   {{ rst.fragment }}
 
-  {% if 'disqus' in config.active_modules %}
-    {{ get_disqus() }}
-  {% endif %}
+  {% for module in config.after %}
+    {% include module.include %}
+  {% endfor %}
 
 {% endblock %}

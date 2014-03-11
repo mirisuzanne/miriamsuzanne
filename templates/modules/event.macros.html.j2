@@ -1,0 +1,29 @@
+{% macro show(event) %}
+  <article class="h-event">
+    {% if event.date %}
+    <time class="dt-start" {% if event.datetime %}datetime="{{ datetime }}"{% endif %}>
+      {{ event.date }}
+    </time>
+    {% endif %}
+
+    <h3 class="p-name">
+      {% if event.url %}
+        <a href="{{ event.url }}">{{ event.name }}</a>
+      {% else %}
+        {{ event.name }}
+      {% endif %}
+    </h3>
+
+    <p class="p-summary">
+      {{ event.summary|safe }}
+
+      {% if event.type %}
+      <span class="p-category">{{ event.type }}</span>
+      {% endif %}
+    </p>
+
+    <p class="p-location">
+      {{ event.location|safe }}
+    </p>
+  </article>
+{% endmacro %}

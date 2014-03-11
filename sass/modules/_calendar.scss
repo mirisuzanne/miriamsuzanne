@@ -1,0 +1,42 @@
+// Calendar
+// --------
+
+$date-span: rhythm(5);
+
+.section--cal {
+  @include trailer;
+}
+
+.h-event {
+  @include trailer(.5);
+}
+
+.dt-start {
+  @include span($date-span);
+  @include font-size(small);
+  text-align: right;
+  font-style: italic;
+  padding-left: 0;
+}
+
+.p-name {
+  @include trailer(0);
+  @include prefix($date-span);
+}
+
+.p-summary, .p-location {
+  @include trailer(0);
+  @include prefix($date-span);
+  @include font-size(small);
+  font-style: italic;
+}
+
+.p-category {
+  @include sans;
+  @include font-size(xsmall);
+  color: color(light);
+  font-style: normal;
+  text-transform: uppercase;
+
+  @include before(' | ') { @include font-size(small); }
+}

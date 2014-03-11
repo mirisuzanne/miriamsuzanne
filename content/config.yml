@@ -5,11 +5,45 @@ bgimage: '/static/pictures/tennis/volley6.jpg'
 
 # events
 events:
-  - title: 'Susy 2.0'
-    forum: Bmore Sass
-    url: http://bmore-sass.com/
+  - name: Teacup Gorilla
+    summary: 'with <a href="http://thetruthandspectacle.com/">The Truth & Spectacle</a>'
+    url: 'http://pikespeakbrewing.com/fall-music-schedule-updated-november-19th/'
+    date: April 5, 2014
+    datetime: 2014-04-05
+    location: Pikes Peak Brewing — Monument, CO
+    type: music
+
+  - name: The Mixin
+    summary: 'DISusy: your layout, our math'
+    url: 'https://themixin.eventbrite.com/'
+    date: April 16, 2014
+    datetime: 2014-04-16
+    location: Salesforce — San Francisco, CA
+    type: meetup talk
+
+  - name: Bmore Sass
+    summary: 'DISusy: your layout, our math'
+    url: 'http://bmore-sass.com/'
     date: April 17, 2014
-    location: online
+    datetime: 2014-04-17
+    location: Betamore/online — Baltimore, MD
+    type: meetup talk
+
+  - name: CampSass
+    summary: 'Show Your Work & Share Your Toys'
+    url: 'http://campsass.com/'
+    date: April 19, 2014
+    datetime: 2014-04-19
+    location: Code for America — San Francisco, CA
+    type: conference talk
+
+  - name: 'Hold the Light: 2014 ELO Conference'
+    summary: 'The Obsolete Book in a Post-Obsolete World'
+    url: 'http://conference.eliterature.org/'
+    date: June 19, 2014
+    datetime: 2014-06-19
+    location: University of Wisconsin-Milwaukee — Milwaukee, WI
+    type: installation/performance
 
 
 # curiculum vite
@@ -19,8 +53,8 @@ cv:
     forum: NYC Sass & Compass Meetup
     forum-url: 'http://www.meetup.com/nyc-sass/events/146898452/'
     date: Nov. 2013
-    role: featured speaker
-    type: meetup
+    role: speaker
+    type: Meetup
     location: online
 
   - forum: Bad Shadow Affair
@@ -33,14 +67,14 @@ cv:
   - title: Show Your Work & Share Your Toys
     forum: SassConf
     date: Oct. 2013
-    role: featured speaker
+    role: speaker
     type: conference
     location: Scolastic Auditorium, NYC
 
   - title: No One Wants Your Media Arts
     forum: Brakhage Center Media Arts Lunchtime Series
     date: Oct. 2013
-    role: featured speaker
+    role: speaker
     type: lecture series
     location: Colorado University, Boulder
 

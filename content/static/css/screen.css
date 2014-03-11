@@ -788,6 +788,70 @@ pre {
   font-family: "FranklinGothicCond", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.section--cal {
+  margin-bottom: 26px;
+  margin-bottom: 1.2381rem;
+}
+
+.h-event {
+  margin-bottom: 13px;
+  margin-bottom: 0.61905rem;
+}
+
+.dt-start {
+  width: 130px;
+  width: 6.19048rem;
+  float: left;
+  padding-left: 12px;
+  padding-left: 0.5625rem;
+  padding-right: 12px;
+  padding-right: 0.5625rem;
+  font-size: 17px;
+  font-size: 0.80952rem;
+  line-height: 26px;
+  line-height: 1.2381rem;
+  text-align: right;
+  font-style: italic;
+  padding-left: 0;
+}
+
+.p-name {
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
+  padding-left: 142px;
+  padding-left: 6.75298rem;
+}
+
+.p-summary, .p-location {
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
+  padding-left: 142px;
+  padding-left: 6.75298rem;
+  font-size: 17px;
+  font-size: 0.80952rem;
+  line-height: 26px;
+  line-height: 1.2381rem;
+  font-style: italic;
+}
+
+.p-category {
+  font-family: "FranklinGothicCond", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-size: 0.71429rem;
+  line-height: 26px;
+  line-height: 1.2381rem;
+  color: #999999;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.p-category::before {
+  content: " | ";
+  font-size: 17px;
+  font-size: 0.80952rem;
+  line-height: 26px;
+  line-height: 1.2381rem;
+}
+
 .blog-archive, .tag-archive {
   margin-top: 26px;
   margin-top: 1.2381rem;
