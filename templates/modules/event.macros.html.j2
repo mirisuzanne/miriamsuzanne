@@ -8,7 +8,7 @@
 
     <h3 class="p-name">
       {% if event.url %}
-        <a href="{{ event.url }}">{{ event.name }}</a>
+        <a href="{{ event.url }}" class="u-url">{{ event.name }}</a>
       {% else %}
         {{ event.name }}
       {% endif %}

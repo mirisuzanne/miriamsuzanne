@@ -5,6 +5,14 @@ bgimage: '/static/pictures/tennis/volley6.jpg'
 
 # events
 events:
+  - name: SassBites
+    summary: Susy Grids 2.0
+    url: 'bit.ly/SassBites29'
+    date: March 13, 2014
+    datetime: 2014-03-13
+    location: 'online — https://www.youtube.com/user/sassbites'
+    type: podcast
+
   - name: Teacup Gorilla
     summary: 'with <a href="http://thetruthandspectacle.com/">The Truth & Spectacle</a>'
     url: 'http://pikespeakbrewing.com/fall-music-schedule-updated-november-19th/'
