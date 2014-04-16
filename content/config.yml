@@ -45,6 +45,14 @@ events:
     location: Betamore/online — Baltimore, MD
     type: meetup talk
 
+  - name: Teacup Gorilla @ Bouldering Poets
+    summary: Two Year Anniversary
+    url: http://boulderingpoets.wordpress.com/2014/04/07/may-17-2014-two-year-anniversary/
+    date: May 17, 2014
+    datetime: 2014-05-17
+    location: Trident Booksellers & Cafe
+    type: poetry/music
+
   - name: 'Hold the Light: 2014 ELO Conference'
     summary: 'The Obsolete Book in a Post-Obsolete World'
     url: 'http://conference.eliterature.org/'
