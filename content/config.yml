@@ -29,14 +29,6 @@ events:
     location: Salesforce — San Francisco, CA
     type: meetup talk
 
-  - name: Bmore Sass
-    summary: 'DISusy: your layout, our math'
-    url: 'http://bmore-sass.com/'
-    date: April 17, 2014
-    datetime: 2014-04-17
-    location: Betamore/online — Baltimore, MD
-    type: meetup talk
-
   - name: CampSass
     summary: 'Show Your Work & Share Your Toys'
     url: 'http://campsass.com/'
@@ -44,6 +36,14 @@ events:
     datetime: 2014-04-19
     location: Code for America — San Francisco, CA
     type: conference talk
+
+  - name: Bmore Sass
+    summary: 'DISusy: your layout, our math'
+    url: 'http://bmore-sass.com/'
+    date: April 24, 2014
+    datetime: 2014-04-24
+    location: Betamore/online — Baltimore, MD
+    type: meetup talk
 
   - name: 'Hold the Light: 2014 ELO Conference'
     summary: 'The Obsolete Book in a Post-Obsolete World'
