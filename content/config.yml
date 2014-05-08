@@ -5,46 +5,6 @@ bgimage: '/static/pictures/tennis/volley6.jpg'
 
 # events
 events:
-  - name: SassBites
-    summary: Susy Grids 2.0
-    url: 'bit.ly/SassBites29'
-    date: March 13, 2014
-    datetime: 2014-03-13
-    location: 'online — https://www.youtube.com/user/sassbites'
-    type: podcast
-
-  - name: Teacup Gorilla
-    summary: 'with <a href="http://thetruthandspectacle.com/">The Truth & Spectacle</a>'
-    url: 'http://pikespeakbrewing.com/fall-music-schedule-updated-november-19th/'
-    date: April 5, 2014
-    datetime: 2014-04-05
-    location: Pikes Peak Brewing — Monument, CO
-    type: music
-
-  - name: The Mixin
-    summary: 'DISusy: your layout, our math'
-    url: 'https://themixin.eventbrite.com/'
-    date: April 16, 2014
-    datetime: 2014-04-16
-    location: Salesforce — San Francisco, CA
-    type: meetup talk
-
-  - name: CampSass
-    summary: 'Show Your Work & Share Your Toys'
-    url: 'http://campsass.com/'
-    date: April 19, 2014
-    datetime: 2014-04-19
-    location: Code for America — San Francisco, CA
-    type: conference talk
-
-  - name: Bmore Sass
-    summary: 'DISusy: your layout, our math'
-    url: 'http://bmore-sass.com/'
-    date: April 24, 2014
-    datetime: 2014-04-24
-    location: Betamore/online — Baltimore, MD
-    type: meetup talk
-
   - name: 'Bouldering Poets: Two Year Anniversary'
     summary: Alan Mudd, Teacup Gorilla, and Chris Shugrue
     url: http://boulderingpoets.wordpress.com/2014/04/07/may-17-2014-two-year-anniversary/
@@ -64,6 +24,38 @@ events:
 
 # curiculum vite
 cv:
+  - name: Bmore Sass
+    summary: 'DISusy: your layout, our math'
+    url: 'http://bmore-sass.com/'
+    date: April 24, 2014
+    datetime: 2014-04-24
+    location: Betamore/online — Baltimore, MD
+    type: meetup talk
+
+  - name: CampSass
+    summary: 'Show Your Work & Share Your Toys'
+    url: 'http://campsass.com/'
+    date: April 19, 2014
+    datetime: 2014-04-19
+    location: Code for America — San Francisco, CA
+    type: conference talk
+
+  - name: The Mixin
+    summary: 'DISusy: your layout, our math'
+    url: 'https://themixin.eventbrite.com/'
+    date: April 16, 2014
+    datetime: 2014-04-16
+    location: Salesforce — San Francisco, CA
+    type: meetup talk
+
+  - name: SassBites
+    summary: Susy Grids 2.0
+    url: 'bit.ly/SassBites29'
+    date: March 13, 2014
+    datetime: 2014-03-13
+    location: 'online — https://www.youtube.com/user/sassbites'
+    type: podcast
+
   - title: Organizing Sass Partials
     title-url: 'http://ericsuzanne.com/pres/sass-partials/'
     forum: NYC Sass & Compass Meetup

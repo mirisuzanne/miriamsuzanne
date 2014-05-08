@@ -56,8 +56,26 @@ and creator of `Susy`_ and `True`_.
   <em><a href="/when/">« Explore The Past</a></em> |
   <em><a href="/what/">See The Future »</a></em>
 
+
 Press
 -----
+
+`SitePoint`_ on `Susy`_:
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+  If you’re interested in reading Sass poetry,
+  be sure to look at Susy’s source code!
+  |sitepoint|
+
+.. _SitePoint: http://www.sitepoint.com/my-favorite-sass-tools/
+.. |sitepoint| raw:: html
+
+  <cite class="vcard">
+    <strong class="fn">Hugo Giraudel</strong>,
+    <a href="http://www.sitepoint.com/my-favorite-sass-tools/" class="org url">SitePoint</a>
+    <time datetime="2014-04-22" class="pubdate">April 22, 2014</time>
+  </cite>
+
 
 `I ♥ E-Poetry`_ on `Into the Green Green Mud`_:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -79,6 +97,7 @@ Press
     <time datetime="2013-05-02" class="pubdate">May 2, 2013</time>
   </cite>
 
+
 `Boulder Writer's Workshop`_ on `The Post-Obsolete Book`_:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -95,6 +114,7 @@ Press
     <a href="http://www.boulderwritersworkshop.org/2013/04/17/post-obsolete-a-bww-salon/" class="org url">Boulder Writer's Workshop</a>
     <time datetime="2013-04-17" class="pubdate">April 17, 2013</time>
   </cite>
+
 
 `Onion AV Club`_ on Dirt Circle Dogs' `Kingdom Come`_:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -117,6 +137,7 @@ Press
     <time datetime="2009-08-14" class="pubdate">August 14, 2009</time>
   </cite>
 
+
 `South Bend Tribune`_ on **Hello and Goodbye**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -131,6 +152,7 @@ Press
     <a href="http://articles.southbendtribune.com/2006-01-29/news/26962892_1_hester-darkness-athol-fugard" class="org url">Soth Bend Tribune</a>
     <time datetime="2006-01-29" class="pubdate">January 29, 2006</time>
   </cite>
+
 
 Co-belligerents
 ---------------
