@@ -5,14 +5,14 @@ bgimage: '/static/pictures/tennis/volley6.jpg'
 
 # events
 events:
-  - name: 'Bouldering Poets: Two Year Anniversary'
-    summary: Alan Mudd, Teacup Gorilla, and Chris Shugrue
-    url: http://boulderingpoets.wordpress.com/2014/04/07/may-17-2014-two-year-anniversary/
-    date: May 17, 2014
-    datetime: 2014-05-17
-    location: Trident Booksellers & Cafe — Boulder, CO
-    type: poetry/music
+  - name: 'Teacup Gorilla'
+    url: http://pikespeakbrewing.com/
+    date: Aug. 23, 2014
+    datetime: 2014-08-23
+    location: Pikes Peak Brewing Co.
 
+# curiculum vite
+cv:
   - name: 'Hold the Light: 2014 ELO Conference'
     summary: 'The Obsolete Book in a Post-Obsolete World'
     url: 'http://conference.eliterature.org/'
@@ -21,9 +21,14 @@ events:
     location: University of Wisconsin-Milwaukee — Milwaukee, WI
     type: installation/performance
 
+  - name: 'Bouldering Poets: Two Year Anniversary'
+    summary: Alan Mudd, Teacup Gorilla, and Chris Shugrue
+    url: http://boulderingpoets.wordpress.com/2014/04/07/may-17-2014-two-year-anniversary/
+    date: May 17, 2014
+    datetime: 2014-05-17
+    location: Trident Booksellers & Cafe — Boulder, CO
+    type: poetry/music
 
-# curiculum vite
-cv:
   - name: Bmore Sass
     summary: 'DISusy: your layout, our math'
     url: 'http://bmore-sass.com/'
