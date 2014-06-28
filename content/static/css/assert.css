@@ -1,0 +1,420 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "BaskervilleAmp";
+  src: url('../fonts/Baskerville-amp-webfont.woff?1385345363') format("woff"), url('../fonts/Baskerville-amp-webfont.ttf?1385345363') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CenturyOldStyle";
+  src: url('../fonts/CenturyOldStyle-Regular-webfont.woff?1385345363') format("woff"), url('../fonts/CenturyOldStyle-Regular-webfont.ttf?1385345363') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CenturyOldStyle";
+  src: url('../fonts/CenturyOldStyle-Italic-webfont.woff?1385345363') format("woff"), url('../fonts/CenturyOldStyle-Italic-webfont.ttf?1385345363') format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "CenturyOldStyle";
+  src: url('../fonts/CenturyOldStyle-Bold-webfont.woff?1385345363') format("woff"), url('../fonts/CenturyOldStyle-Bold-webfont.ttf?1385345363') format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FranklinGothicCond";
+  src: url('../fonts/FranklinGothicCd-Regular-webfont.woff?1385345363') format("woff"), url('../fonts/FranklinGothicCd-Regular-webfont.ttf?1385345363') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FranklinGothicCond";
+  src: url('../fonts/FranklinGothicCd-Italic-webfont.woff?1385345363') format("woff"), url('../fonts/FranklinGothicCd-Italic-webfont.ttf?1385345363') format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "FranklinGothicCond";
+  src: url('../fonts/FranklinGothicCd-Bold-webfont.woff?1385345363') format("woff"), url('../fonts/FranklinGothicCd-Bold-webfont.ttf?1385345363') format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FranklinGothicCond";
+  src: url('../fonts/FranklinGothicCd-BoldItalic-webfont.woff?1385345363') format("woff"), url('../fonts/FranklinGothicCd-BoldItalic-webfont.ttf?1385345363') format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "andmeyer";
+  src: url('../fonts/Icons.woff?1385345363') format("woff"), url('../fonts/Icons.ttf?1385345363') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-family: "CenturyOldStyle", Baskerville, Palatino, Cambria, Georgia, serif, serif;
+}
+
+html {
+  font-size: 131.25%;
+  line-height: 1.2381em;
+}
+
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+[data-icon] {
+  font-family: andmeyer;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: none;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-icon]::before {
+  content: attr(data-icon);
+}
+
+html {
+  color: #404040;
+  text-shadow: rgba(255, 255, 255, 0.5) 0 1px 0;
+}
+
+body {
+  -moz-font-feature-settings: "liga";
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  background: no-repeat fixed;
+  background-size: cover;
+}
+
+[data-icon='facebook']:before {
+  content: "\e000";
+}
+
+[data-icon='html5']:before {
+  content: "\e001";
+}
+
+[data-icon='css3']:before {
+  content: "\e002";
+}
+
+[data-icon='stack overflow']:before {
+  content: "\e003";
+}
+
+[data-icon='twitter']:before {
+  content: "\e004";
+}
+
+[data-icon='vimeo']:before {
+  content: "\e005";
+}
+
+[data-icon='github']:before {
+  content: "\e006";
+}
+
+[data-icon='dribbble']:before {
+  content: "\e007";
+}
+
+[data-icon='feed']:before {
+  content: "\e008";
+}
+
+[data-icon='mail']:before {
+  content: "\e009";
+}
+
+a:hover, a:active {
+  outline: none;
+}
+a:link, a:visited {
+  color: #ff0080;
+  text-decoration: none;
+}
+a:focus, a:hover, a:active {
+  color: #0098cc;
+}
+
+.amp {
+  font-family: "BaskervilleAmp", Baskerville, Palatino, Cambria, Georgia, serif;
+}
+
+img {
+  vertical-align: bottom;
+  width: 100%;
+}
+
+h1 {
+  font-size: 33px;
+  font-size: 1.57143rem;
+  line-height: 39px;
+  line-height: 1.85714rem;
+}
+@media (min-width: 33.75rem) {
+  h1 {
+    font-size: 41px;
+    font-size: 1.95238rem;
+    line-height: 52px;
+    line-height: 2.47619rem;
+  }
+}
+h1 a:link, h1 a:visited {
+  color: #cc0066;
+}
+h1 a:focus, h1 a:hover, h1 a:active {
+  color: #0079a3;
+}
+
+h2 {
+  font-size: 26px;
+  font-size: 1.2381rem;
+  line-height: 39px;
+  line-height: 1.85714rem;
+  margin-bottom: 26px;
+  margin-bottom: 1.2381rem;
+}
+@media (min-width: 33.75rem) {
+  h2 {
+    font-size: 33px;
+    font-size: 1.57143rem;
+    line-height: 39px;
+    line-height: 1.85714rem;
+  }
+}
+
+h3 {
+  margin-bottom: 26px;
+  margin-bottom: 1.2381rem;
+  text-transform: uppercase;
+  letter-spacing: .01em;
+}
+
+h4, strong {
+  font-weight: bold;
+}
+
+h5, h6, em, blockquote {
+  font-style: italic;
+}
+
+p, ul, ol, pre, blockquote {
+  margin-bottom: 26px;
+  margin-bottom: 1.2381rem;
+}
+
+p:empty {
+  display: none;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+blockquote {
+  padding: 0 20px;
+  padding: 0 0.92981rem;
+  border-left: 7px solid #bfbfbf;
+  border-left: 0.30952rem solid #bfbfbf;
+}
+blockquote em {
+  font-style: normal;
+}
+blockquote cite {
+  margin-top: 13px;
+  margin-top: 0.61905rem;
+  font-size: 15px;
+  font-size: 0.71429rem;
+  line-height: 26px;
+  line-height: 1.2381rem;
+  display: block;
+  font-style: normal;
+}
+blockquote cite::before {
+  content: "—";
+}
+blockquote cite em {
+  font-style: italic;
+}
+blockquote cite .pubdate::before, blockquote cite .pubdate::after {
+  content: "[";
+}
+blockquote cite .pubdate::after {
+  content: "]";
+}
+
+ul, ol, blockquote {
+  margin-left: 1.2381rem;
+}
+@media (min-width: 39.375rem) {
+  ul, ol, blockquote {
+    margin-left: 0;
+  }
+  ul ul, ul ol, ol ul, ol ol, blockquote ul, blockquote ol {
+    font-size: 17px;
+    font-size: 0.80952rem;
+    line-height: 26px;
+    line-height: 1.2381rem;
+    margin-bottom: 13px;
+    margin-bottom: 0.61905rem;
+    margin-left: 1.2381rem;
+  }
+}
+
+figure {
+  margin-bottom: 26px;
+  margin-bottom: 1.2381rem;
+}
+figure > a, figure > img, figure > .video {
+  -moz-box-shadow: #404040 0 0 6px;
+  -webkit-box-shadow: #404040 0 0 6px;
+  box-shadow: #404040 0 0 6px;
+  display: block;
+  vertical-align: top;
+}
+figure .video {
+  position: relative;
+  height: 0;
+  padding-top: 56.25%;
+  width: 100%;
+}
+figure .video > * {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+figcaption {
+  font-family: "FranklinGothicCond", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-size: 0.71429rem;
+  line-height: 20px;
+  line-height: 0.92857rem;
+  margin-top: 13px;
+  margin-top: 0.61905rem;
+  padding: 13px;
+  padding: 0.61905rem;
+  background: rgba(255, 51, 153, 0.125);
+  counter-increment: fig;
+}
+figcaption:before {
+  font-family: "CenturyOldStyle", Baskerville, Palatino, Cambria, Georgia, serif;
+  content: "fig." counter(fig);
+  margin-right: .4em;
+  font-style: italic;
+}
+
+tt, code, pre {
+  font-size: 13px;
+  font-size: 0.61905rem;
+  line-height: 20px;
+  line-height: 0.92857rem;
+  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+}
+
+tt, code {
+  padding: 0 7px;
+  padding: 0 0.30952rem;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+pre {
+  margin-left: -13px;
+  margin-left: -0.61905rem;
+  padding: 13px;
+  padding: 0.61905rem;
+  border-left: 3px solid #ffcce5;
+}
+
+body {
+  padding: 1.2381rem;
+}
+
+p {
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+  margin-bottom: 0.61905rem;
+}
+p:last-child {
+  opacity: 0;
+}

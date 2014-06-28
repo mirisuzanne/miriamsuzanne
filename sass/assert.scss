@@ -1,0 +1,29 @@
+// Assert!
+// =======
+
+
+@import "base/settings";
+
+
+// General
+// -------
+
+@import "general/root";
+@import "general/type";
+
+
+// Assertions
+// ----------
+
+body {
+  padding: rhythm(1);
+}
+
+p {
+  @include transition(opacity 300ms);
+  margin-bottom: rhythm(.5);
+
+  &:last-child {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Page Info -->
+  <title>{{ rst.title }} | Eric M. Suzanne</title>
+
+  <!-- Site Info -->
+  <meta name="author" content="{{ config.author }}" />
+  <meta name="language" content="en-us" />
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+  <meta http-equiv="cleartype" content="on">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="viewport" content="initial-scale=1">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/static/css/assert.css" />
+
+</head>
+<body>
+
+<main>
+  {{ rst.fragment }}
+</main>
+
+<script src="/static/js/jquery-1.7.2.js"></script>
+
+<script>
+  var saySomething = function(what, where, when) {
+    var also = [
+          "Trust me.",
+        ];
+
+    what = what.concat(what, what, what, what, also);
+
+    setInterval(function() {
+      var straw = Math.floor(Math.random() * what.length);
+
+      $(where).append('<p>' + what[straw] + '</p>')
+      $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+    }, when);
+  };
+
+  var what = [
+        {% for say in config.assert %}
+          "{{ say }}",
+        {% endfor %}
+      ],
+      where = 'main',
+      when = {{ assert_time|default(1000) }};
+
+  saySomething(what, where, when);
+</script>
+
+</body>
+</html>
