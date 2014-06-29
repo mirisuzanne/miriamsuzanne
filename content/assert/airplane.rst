@@ -7,7 +7,7 @@ assert:
   - "(in the sky)"
 
 
-I'm on an Airplane
+I'm on an airplane
 ==================
 
 Jesus.
