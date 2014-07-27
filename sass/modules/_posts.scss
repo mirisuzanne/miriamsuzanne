@@ -29,6 +29,48 @@
   figcaption { clear: both; }
 }
 
+@mixin fluid-media($ratio, $width) {
+  height: 0;
+  padding-top: (1 / $ratio) * $width;
+  position: relative;
+  width: $width;
+
+  * {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+}
+
+.gallery-body {
+  $full: susy-get(columns);
+  $half: floor($full/2);
+
+  @include pie-clearfix;
+
+  img { width: 100%; }
+
+  .gallery-item {
+    @include span($half split);
+    @include trailer(.5);
+    outline: 1px solid color(darker, .5);
+  }
+  .full {
+    @include span(100% no-gutters);
+    margin-left: 0;
+  }
+  .video {
+    @include fluid-media(16/9, span($half split));
+    &.full { @include fluid-media(16/9, span($full)); }
+  }
+}
+
 .readmore {
   font-style: italic;
   &:after { content: "»"; }

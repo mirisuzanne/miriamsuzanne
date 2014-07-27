@@ -747,6 +747,64 @@ pre {
   clear: both;
 }
 
+.gallery-body {
+  *zoom: 1;
+}
+.gallery-body:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.gallery-body img {
+  width: 100%;
+}
+.gallery-body .gallery-item {
+  width: 46.66667%;
+  float: left;
+  margin-left: 1.66667%;
+  margin-right: 1.66667%;
+  margin-bottom: 13px;
+  margin-bottom: 0.61905rem;
+  outline: 1px solid rgba(64, 64, 64, 0.5);
+}
+.gallery-body .full {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+}
+.gallery-body .video {
+  height: 0;
+  padding-top: 26.25%;
+  position: relative;
+  width: 46.66667%;
+}
+.gallery-body .video * {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.gallery-body .video.full {
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+  width: 100%;
+}
+.gallery-body .video.full * {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .readmore {
   font-style: italic;
 }

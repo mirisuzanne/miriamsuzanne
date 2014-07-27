@@ -1,0 +1,13 @@
+{% if gallery.caption %}
+<figcaption class="gallery-caption">
+  {% if gallery.caption is string %}
+    {{ gallery.caption|safe }}
+  {% else %}
+    {% if gallery.caption.url %}
+      <a href="{{ gallery.caption.url }}">{{ gallery.caption.text }}</a>
+    {% else %}
+      {{ gallery.caption.text }}
+    {% endif %}
+  {% endif %}
+</figcaption>
+{% endif %}
