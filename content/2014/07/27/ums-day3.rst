@@ -87,13 +87,3 @@ We played with Abandin Pictures
 back when they were just getting started,
 and it was great to see them rocking the Hi Dive.
 If you haven't heard them yet, it's time.
-
-
-Tonight:
---------
-
-- Landlines
-- Kitty Crimes
-- Broken Spirits
-- Blonde Redhead
-- etc.

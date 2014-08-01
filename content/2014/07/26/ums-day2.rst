@@ -113,14 +113,3 @@ Hey guys, want to share a bill sometime?
 .. _Mako1972: http://mako1972.weebly.com/
 .. _Dragondeer: http://dragondeer.com/
 .. _Dave Devine Relay: http://davedevine.com/relay
-
-
-Tonight:
---------
-
-- Magic Cyclops
-- Jen Korte & The Loss
-- Dirty Femmes
-- A Band In Pictures
-- The Raven and The Writing Desk
-- and more!
