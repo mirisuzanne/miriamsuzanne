@@ -1,5 +1,4 @@
 public: yes
-author: eric
 before:
   - include: 'gallery/_gallery.html'
 gallery:
