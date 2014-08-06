@@ -5,11 +5,26 @@ bgimage: '/static/pictures/tennis/volley6.jpg'
 
 # events
 events:
+  - name: 'PROPHETIA VETITUM MUNDI'
+    summary: Screw Tooth
+    url: www.screwtooth.com
+    date: Aug. 2-8, 2014
+    datetime: 2014-08-02
+    location: Buntport Theatre – Denver, CO
+    type: installation
+
   - name: 'Teacup Gorilla'
     url: http://pikespeakbrewing.com/
     date: Aug. 23, 2014
     datetime: 2014-08-23
-    location: Pikes Peak Brewing Co.
+    location: Pikes Peak Brewing Company — Monument, CO
+
+  - name: 'BlendConf'
+    url: https://ti.to/blendconf/blendconf2014?discount_code=ericisfabulous
+    date: Sept. 11–13, 2014
+    datetime: 2014-09-11
+    location: Charlotte, NC
+
 
 # curiculum vite
 cv:

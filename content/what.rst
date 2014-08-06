@@ -87,3 +87,100 @@ Organizations
       <img src="/static/pictures/what/tg.jpg" />
     </a>
   </figure>
+
+
+Press
+-----
+
+`SitePoint`_ on `Susy`_:
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+  If you’re interested in reading Sass poetry,
+  be sure to look at Susy’s source code!
+  |sitepoint|
+
+.. _SitePoint: http://www.sitepoint.com/my-favorite-sass-tools/
+.. |sitepoint| raw:: html
+
+  <cite class="vcard">
+    <strong class="fn">Hugo Giraudel</strong>,
+    <a href="http://www.sitepoint.com/my-favorite-sass-tools/" class="org url">SitePoint</a>
+    <time datetime="2014-04-22" class="pubdate">April 22, 2014</time>
+  </cite>
+
+
+`I ♥ E-Poetry`_ on `Into the Green Green Mud`_:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  This virtuoso creation by a talented young poet,
+  writer, artist, typographer, programmer, and musician
+  is a taste of things to come
+  as new generations of digital media
+  and code literate creators come of age.
+  |iloveepoetry|
+
+.. _I ♥ E-Poetry: http://iloveepoetry.com/?p=2571
+.. _Into the Green Green Mud: http://greengreenmud.com/
+.. |iloveepoetry| raw:: html
+
+  <cite class="vcard">
+    <strong class="fn">Leonardo Flores</strong>,
+    <a href="http://iloveepoetry.com/?p=2571" class="org url">I ♥ E-Poetry</a>
+    <time datetime="2013-05-02" class="pubdate">May 2, 2013</time>
+  </cite>
+
+
+`Boulder Writer's Workshop`_ on `The Post-Obsolete Book`_:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  I was impressed by the purest form of outrageous creation.
+  |bww|
+
+.. _Boulder Writer's Workshop: http://www.boulderwritersworkshop.org/2013/04/17/post-obsolete-a-bww-salon/
+.. |bww| raw:: html
+
+  <cite class="vcard">
+    <strong class="fn">Judy Rose</strong> quoted by
+    <strong>Michael Carson</strong>,
+    <a href="http://www.boulderwritersworkshop.org/2013/04/17/post-obsolete-a-bww-salon/" class="org url">Boulder Writer's Workshop</a>
+    <time datetime="2013-04-17" class="pubdate">April 17, 2013</time>
+  </cite>
+
+
+`Onion AV Club`_ on Dirt Circle Dogs' `Kingdom Come`_:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  The album closes with “Static,”
+  a haunting meeting of strings and electronic fuzz
+  with vocalist/drummer Sondra Eisenstat’s lush vocals and spoken word.
+  Eisenstat sings that there is “No voice on the radio,”
+  and perhaps, for now, that’s true.
+  Kingdom, though, is certainly worth a private listen at home.
+  |decider|
+
+.. _Onion AV Club: http://www.avclub.com/
+.. _Kingdom Come: http://www.cdbaby.com/cd/dirtcircledogs
+.. |decider| raw:: html
+
+  <cite class="vcard">
+    <strong class="fn">Cat Carroll</strong>,
+    <a href="http://www.avclub.com/" class="org url">Onion AV Club</a>
+    <time datetime="2009-08-14" class="pubdate">August 14, 2009</time>
+  </cite>
+
+
+`South Bend Tribune`_ on **Hello and Goodbye**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Rarely does one encounter a production undertaken with such a tremendous amount of care and consideration.
+  |sbt|
+
+.. _South Bend Tribune: http://articles.southbendtribune.com/2006-01-29/news/26962892_1_hester-darkness-athol-fugard
+.. |sbt| raw:: html
+
+  <cite class="vcard">
+    <strong class="fn">Jack Walton</strong>,
+    <a href="http://articles.southbendtribune.com/2006-01-29/news/26962892_1_hester-darkness-athol-fugard" class="org url">Soth Bend Tribune</a>
+    <time datetime="2006-01-29" class="pubdate">January 29, 2006</time>
+  </cite>
+
