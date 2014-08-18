@@ -5,6 +5,25 @@ bgimage: '/static/pictures/tennis/volley6.jpg'
 
 # events
 events:
+  - name: 'Teacup Gorilla'
+    summary: 'with <a href="https://www.facebook.com/millicanmusic/">Millican</a>'
+    url: https://www.facebook.com/events/411594105649725/
+    date: Aug. 23, 2014
+    datetime: 2014-08-23
+    location: Pikes Peak Brewing Company — Monument, CO
+    type: music
+
+  - name: 'BlendConf'
+    summary: 'The Magic of Sassy Maps'
+    url: https://ti.to/blendconf/blendconf2014?discount_code=ericisfabulous
+    date: Sept. 11–13, 2014
+    datetime: 2014-09-11
+    location: Charlotte Sheraton Hotel — Charlotte, NC
+    type: talk
+
+
+# curiculum vite
+cv:
   - name: 'PROPHETIA VETITUM MUNDI'
     summary: Screw Tooth
     url: www.screwtooth.com
@@ -13,21 +32,6 @@ events:
     location: Buntport Theatre – Denver, CO
     type: installation
 
-  - name: 'Teacup Gorilla'
-    url: http://pikespeakbrewing.com/
-    date: Aug. 23, 2014
-    datetime: 2014-08-23
-    location: Pikes Peak Brewing Company — Monument, CO
-
-  - name: 'BlendConf'
-    url: https://ti.to/blendconf/blendconf2014?discount_code=ericisfabulous
-    date: Sept. 11–13, 2014
-    datetime: 2014-09-11
-    location: Charlotte, NC
-
-
-# curiculum vite
-cv:
   - name: 'Hold the Light: 2014 ELO Conference'
     summary: 'The Obsolete Book in a Post-Obsolete World'
     url: 'http://conference.eliterature.org/'
@@ -58,7 +62,7 @@ cv:
     date: April 19, 2014
     datetime: 2014-04-19
     location: Code for America — San Francisco, CA
-    type: conference talk
+    type: talk
 
   - name: The Mixin
     summary: 'DISusy: your layout, our math'

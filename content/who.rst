@@ -23,9 +23,9 @@ Pittsburgh's `City Theatre`_, and many more.
 
 Eric is the author of two upcoming novels —
 *Into the Green Green Mud* (TBA)
-and *Variations on Riding Side Saddle* (`SpringGun Press`_, 2014) —
+and *Variations on Riding Side Saddle* (`SpringGun Press`_, 2015) —
 creator of many original performances
-(including *Missa Populi*, *Sadomasochism*, and *The Post-Obsolete Book*),
+(including *Missa Populi*, *Sadomasochism*, and `The Post-Obsolete Book`_),
 and an active `open-source contributor`_ —
 core developer on the `Compass`_ project,
 and creator of `Susy`_ and `True`_.
@@ -46,6 +46,7 @@ and creator of `Susy`_ and `True`_.
 .. _The Media Archeology Lab: http://mediaarchaeologylab.com/eric-meyer/
 .. _Illiterate Magazine: http://www.illiteratemagazine.com/blog/tag/Theatre
 .. _City Theatre: http://www.citytheatrecompany.org/
+.. _The Post-Obsolete Book: /post-obsolete/
 .. _open-source contributor: http://github.com/ericam
 .. _Compass: http://compass-style.org/
 .. _Susy: http://susy.oddbird.net/
