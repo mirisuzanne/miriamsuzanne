@@ -25,7 +25,7 @@ summary: |
   at Buntport Theatre,
   with contributions from myself and many others (August 8-9, 2014).
 
-  .. _Screw Tooth: www.screwtooth.com
+  .. _Screw Tooth: http://www.screwtooth.com
 
   .. |feature| raw:: html
 
@@ -48,7 +48,7 @@ Created by Adam Stone & Erin Rollman
 at Buntport Theatre,
 with contributions from myself and many others (August 8-9, 2014).
 
-.. _Screw Tooth: www.screwtooth.com
+.. _Screw Tooth: http://www.screwtooth.com
 
 .. |feature| raw:: html
 
