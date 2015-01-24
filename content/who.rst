@@ -9,26 +9,22 @@ Bio
 **Eric M Suzanne**
 creates web software with `OddBird`_,
 soundscapes with `Teacup Gorilla`_,
+wordscapes with [WriteyWrite],
 and performance art with `Vicious Trap`_
 or the `Denver Poets' Theatre`_.
-He plays math-rock at poetry readings,
+She plays math-rock at poetry readings,
 and reads poetry in crowded bars.
 
 Formerly Artistic Director of `New World Arts`_ &
 Technical Director of `The LIDA Project`_,
-Eric has also developed work for `Mozilla`_,
-`Junyo`_, `SpringGun Press`_, `The Operating System`_,
-`The Media Archeology Lab`_, `Illiterate Magazine`_,
-Pittsburgh's `City Theatre`_, and many more.
-
-Eric is the author of two upcoming novels —
-*Into the Green Green Mud* (TBA)
-and *Variations on Riding Side Saddle* (`SpringGun Press`_, 2015) —
-creator of many original performances
-(including *Missa Populi*, *Sadomasochism*, and `The Post-Obsolete Book`_),
-and an active `open-source contributor`_ —
-core developer on the `Compass`_ project,
+Eric is the author of
+*Riding SideSaddle\** (`SpringGun Press`_),
+*Every Other Day* (Pinchpenny Press),
+and `The Post-Obsolete Book`_.
+She's an avid open-source contributor —
+core developer on `Compass`_,
 and creator of `Susy`_ and `True`_.
+
 
 |links|
 
@@ -72,15 +68,14 @@ Co-belligerents
 ---------------
 
 I'm fortunate to work with amazing people every day.
-*Carl Meyer*, *Jonny Gerig Meyer*, and *Claudina Sarahe* at Oddbird;
 *Daniel Eisenstat* & *Sondra Eby* at Teacup Gorilla;
+*Carl Meyer*, *Jonny Gerig Meyer*, and *Claudina Sarahe* at Oddbird;
+*Jacob Liechty*, *Aaron Liechty* at [WriteyWrite];
 *Julie Rada* at Vicious Trap;
-*Chris Eppstein*, *Aaron Gray*,
+and *Chris Eppstein*, *Aaron Gray*,
 *Rachel Nabors*, *Jina Bolton*,
-*Tsachi Schlidor*, *Danny Palmer*,
-and many others working on open-source projects;
-and *Jacob Liechty*, *Aaron Liechty*,
-*Brandi Homan*, & *Megan Sumner* as writers.
+*Tsachi Schlidor*,
+and many others working on open-source projects.
 The list goes on.
 
 Thanks for the training and inspiration:
