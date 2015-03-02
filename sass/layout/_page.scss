@@ -1,0 +1,18 @@
+// Layout
+// ======
+
+%spacer {
+  @include after('— & —') {
+    @extend %amp;
+    color: color(brand (rgba: .5));
+    display: block;
+    margin-top: size(spacer);
+    text-align: center;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: size(page);
+  padding: 0 size(gutter);
+}

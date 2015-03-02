@@ -1,0 +1,22 @@
+{
+  "name": "accoutrement-maps",
+  "version": "1.0.0",
+  "homepage": "https://github.com/oddbird/accoutrement-maps",
+  "authors": [
+    "Eric M. Suzanne"
+  ],
+  "description": "Sass map helpers",
+  "main": "sass/_maps.scss",
+  "keywords": [
+    "sass",
+    "css",
+    "accoutrement"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}

@@ -1,0 +1,31 @@
+// Scale
+// =====
+
+$base-size: 21px;
+
+$ratio: major-third;
+
+$sizes: (
+  normal: $base-size,
+  rhythm: 1,
+
+  h1: 3,
+  h2: 2,
+  h3: rhythm,
+
+  small: -1,
+  smaller: -2,
+
+  gutter: rhythm,
+  spacer: 3,
+  page: 36rem,
+
+  corners: -2,
+);
+
+$meta-sizes: (
+  shim: size(gutter)/2,
+  half-shim: size(gutter)/4,
+);
+
+$sizes: map-merge($sizes, $meta-sizes);

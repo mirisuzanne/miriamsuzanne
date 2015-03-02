@@ -1,0 +1,44 @@
+// Pseudo Elements
+// ===============
+
+
+// Before
+// ------
+@mixin before(
+  $content
+) {
+  &:before {
+    content: $content;
+    @content;
+  }
+}
+
+
+// After
+// -----
+@mixin after(
+  $content
+) {
+  &:after {
+    content: $content;
+    @content;
+  }
+}
+
+
+// Wrap Content
+// ------------
+@mixin wrap-content(
+  $content: "“" "”"
+) {
+  $_before: nth($content, 1);
+
+  &:before, &:after {
+    content: $_before;
+    @content;
+  }
+
+  @if length($content) > 1 {
+    &:after { content: nth($content, 2); }
+  }
+}

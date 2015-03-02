@@ -1,0 +1,24 @@
+# Default application configuration that all configurations inherit from
+# see https://github.com/causes/scss-lint/blob/master/config/default.yml
+# ----------------------------------------------------------------------
+# * `_range-field.scss` references noUI selectors
+# * @@@todo: SCSS would be more readable with variables for CSS entity codes
+# * Shorthand is disabled because the linter doesn't understand functions in mixins
+# * NameFormat is disabled because the linter wants e.g. "translateY" to be "translate-y"
+
+exclude:
+  - 'sass/plugins/**'
+  - 'sass/base/_license.scss'
+  - 'sass/components/forms/_forms.config.scss'
+
+linters:
+  NameFormat:
+    enabled: false
+
+  PropertySortOrder:
+    enabled: false
+
+  SelectorDepth:
+    enabled: true
+    max_depth: 4
+

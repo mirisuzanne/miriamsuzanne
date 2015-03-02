@@ -2,26 +2,19 @@
 // =======
 
 
-@import "base/settings";
-
-
-// General
-// -------
-
-@import "general/root";
-@import "general/type";
+@import 'base/base';
 
 
 // Assertions
 // ----------
 
 body {
-  padding: rhythm(1);
+  padding: size(rhythm);
 }
 
 p {
-  @include transition(opacity 300ms);
-  margin-bottom: rhythm(.5);
+  margin-bottom: size(shim);
+  transition: opacity 300ms;
 
   &:last-child {
     opacity: 0;

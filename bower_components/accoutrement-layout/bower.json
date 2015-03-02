@@ -1,0 +1,22 @@
+{
+  "name": "accoutrement-layout",
+  "version": "1.0.1",
+  "homepage": "https://github.com/oddbird/accoutrement-layout",
+  "authors": [
+    "Eric Suzanne"
+  ],
+  "description": "Layout helpers",
+  "main": "sass/_layout.scss",
+  "keywords": [
+    "sass",
+    "css",
+    "accoutrement"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}

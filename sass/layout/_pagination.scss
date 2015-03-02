@@ -4,21 +4,37 @@
 .pagination {
   font-style: italic;
   text-align: center;
+
   .location {
-    @include wrap-content(" • ");
+    @include wrap-content(' • ');
     margin: 0 1em;
   }
-  .now, .context {
-    display: inline-block;
-    vertical-align: middle;
-    font-style: normal;
-  }
-  .now { @include font-size(xxxlarge); }
+
+  .now,
   .context {
-    @include font-size(xxlarge);
+    display: inline-block;
+    font-style: normal;
+    vertical-align: middle;
+  }
+
+  .now {
+    @include font-size(8);
+  }
+
+  .context {
+    @include font-size(5);
     padding: 0 .125em;
   }
-  .prev { @include before("« "); }
-  .next { @include after(" »"); }
-  .disabled { color: color(dark,.25); }
+
+  .prev {
+    @include before('« ');
+  }
+
+  .next {
+    @include after(' »');
+  }
+
+  .disabled {
+    color: color('gray');
+  }
 }

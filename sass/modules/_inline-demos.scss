@@ -1,3 +1,5 @@
+// scss-lint:disable ColorKeyword
+
 // ----------------------------------------------------------------------------
 // 12.07.20 - Sass Striped Background
 
@@ -7,12 +9,11 @@ $mycolors: red orange yellow green blue indigo violet;
 // - $position: the starting position or angle of the gradient.
 // - $colors: a list of all the colors to be used.
 @function rainbow($position, $colors) {
-  $colors: if(type-of($colors) != 'list', compact($colors), $colors);
-  $gradient: compact();
+  $gradient: ();
   $width: 100% / length($colors);
 
   @for $i from 1 through length($colors) {
-    $pop: nth($colors,$i);
+    $pop: nth($colors, $i);
     $new: $pop ($width * ($i - 1)), $pop ($width * $i);
     $gradient: join($gradient, $new, comma);
   }
@@ -21,9 +22,7 @@ $mycolors: red orange yellow green blue indigo violet;
 }
 
 .demo-rainbow {
-  @include background-image(rainbow(to right, $mycolors));
-  @include trailer;
-  height: rhythm(4);
+  background-image: rainbow(to right, $mycolors);
+  height: size(rhythm)*4;
+  margin-bottom: size(rhythm);
 }
-
-// ----------------------------------------------------------------------------

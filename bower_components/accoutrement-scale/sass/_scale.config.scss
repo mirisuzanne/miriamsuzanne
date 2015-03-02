@@ -1,0 +1,47 @@
+// Scale Settings
+// --------------
+
+$_browser-default-font-size: 16px;
+
+$_ratio-options: (
+  linear            : linear,
+  octave            : 2,
+  major-seventh     : 15/8,
+  minor-seventh     : 16/9,
+  major-sixth       : 5/3,
+  minor-sixth       : 8/5,
+  fifth             : 3/2,
+  augmented-fourth  : 45/32,
+  fourth            : 4/3,
+  major-third       : 5/4,
+  minor-third       : 6/5,
+  major-second      : 9/8,
+  minor-second      : 16/15,
+);
+
+
+// Config
+// ------
+
+$base-size: $_browser-default-font-size !default;
+
+$rhythm-unit: rem !default;
+
+$ratio: fifth !default;
+
+$sizes: (
+  normal: 0,
+  rhythm: 1,
+
+  h1: 4,
+  h2: 3,
+  h3: 2,
+
+  small: -1,
+
+  gutter: rhythm,
+  column: 4,
+  shim: -2,
+
+  corners: shim,
+) !default;

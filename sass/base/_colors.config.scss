@@ -1,0 +1,25 @@
+// Colors
+// ======
+
+$colors: (
+  'white': #fff,
+  'gray': hsl(0, 0%, 50%),
+  'blue': hsl(195, 100%, 50%),
+  'red': hsl(0, 100%, 50%),
+  'pink': hsl(330, 100%, 50%),
+
+  background: 'white',
+  text: 'gray' (darken: 50%),
+  brand: 'pink',
+  accent: 'blue' (darken: 15%),
+
+  light: 'gray' (lighten: 15%),
+
+  action: brand,
+  focus: accent,
+
+  title: action (darken: 15%),
+  alt-title: accent (darken: 15%),
+
+  border: title,
+);

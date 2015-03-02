@@ -3,77 +3,51 @@
 
 .post {
   @extend %spacer;
-  @include trailer;
-  &:last-of-type:after { display: none; }
+  margin-bottom: size(spacer);
+
+  &:last-of-type:after {
+    display: none;
+  }
 }
 
 .byline {
   @include font-size(small);
-  color: $gray;
+  color: color('gray');
   font-style: italic;
 }
 
-.gallery {
-  $half: floor(susy-get(columns)/2);
-
-  > a, > img {
-    @include span($half after);
-    @include trailer(1);
-
-    &:nth-child(even) { @include last(after); }
-  }
-  a {
-    #{$link} { @include transition(all 150ms); }
-    #{$focus} { @include scale(1.05); }
-  }
-  figcaption { clear: both; }
-}
-
-@mixin fluid-media($ratio, $width) {
-  height: 0;
-  padding-top: (1 / $ratio) * $width;
-  position: relative;
-  width: $width;
-
-  * {
-    display: block;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-
-}
-
 .gallery-body {
-  $full: susy-get(columns);
-  $half: floor($full/2);
+  display: flex;
+  flex-wrap: wrap;
 
-  @include pie-clearfix;
-
-  img { width: 100%; }
+  img {
+    width: 100%;
+    outline: 1px solid color(text);
+  }
 
   .gallery-item {
-    @include span($half split);
-    @include trailer(.5);
-    outline: 1px solid color(darker, .5);
+    flex: 1 1 48%;
+    margin: size(half-shim) 1%;
   }
+
   .full {
-    @include span(100% no-gutters);
-    margin-left: 0;
+    flex: 1 1 98%;
   }
+
   .video {
-    @include fluid-media(16/9, span($half split));
-    &.full { @include fluid-media(16/9, span($full)); }
+    padding-top: 1/(16/9) * 48%;
+
+    &.full {
+      padding-top: 1/(16/9) * 98%;
+    }
   }
 }
 
 .readmore {
+  @include after('»');
   font-style: italic;
-  &:after { content: "»"; }
 }
 
-.section { clear: both; }
+.section {
+  clear: both;
+}

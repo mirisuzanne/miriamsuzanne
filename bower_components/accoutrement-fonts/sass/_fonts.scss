@@ -1,0 +1,135 @@
+// Fontface Tools
+// ==============
+
+
+$font-formats: woff ttf !default;
+$font-path: '../fonts/' !default;
+
+
+// Font-URL [function]
+// -------------------
+@function font-url(
+  $path
+) {
+  @return url('#{$font-path}#{$path}');
+}
+
+
+// Font-Face [mixin]
+// -----------------
+@mixin font-face(
+  $font
+) {
+  $font: _parse-font($font);
+
+  @font-face {
+    font-family: map-get($font, font-family);
+    font-style: map-get($font, font-style);
+    font-weight: map-get($font, font-weight);
+
+    // IE9 compat mode (eot)
+    src: map-get($font, eot);
+
+    // IE6-IE8 (eot)
+    // Modern Browsers (woff, woff2)
+    // Safari, Android, iOS (ttf, otf)
+    // Legacy iOS (svg, svgz)
+    src: map-get($font, src);
+  }
+}
+
+
+// Name from path
+// --------------
+@function _name-from-path(
+  $path
+) {
+  @if ($path) and str-index($path, '/') {
+    $_i: str-index($path, '/');
+    $_name: str-slice($path, $_i + 1);
+    @return _name-from-path($_name);
+  } @else {
+    @return $path;
+  }
+}
+
+
+// Parse Font
+// ----------
+@function _parse-font(
+  $font
+) {
+  $_styles: italic oblique;
+  $_weights: 100 200 300 400 500 600 700 800 900 bold;
+  $_type-options: eot woff woff2 ttf otf svg svgz;
+  $_type-names: (
+    ttf: 'truetype',
+    otf: 'opentype',
+    woff: 'woff',
+    woff2: 'woff2',
+    svg: 'svg',
+    svgz: 'svg',
+    eot: 'embedded-opentype',
+  );
+
+  $_name: null;
+  $_path: null;
+  $_style: null;
+  $_weight: null;
+  $_types: ();
+  $_eot: null;
+  $_src: ();
+  $_svg-name: null;
+
+  @each $item in $font {
+    @if $item == normal {
+      $_style: $_style or normal;
+      $_weight: $_weight or normal;
+    } @else if index($_styles, $item) or index($_weights, $item) {
+      $_style: if(index($_styles, $item), $item, $_style);
+      $_weight: if(index($_weights, $item), $item, $_weight);
+    } @else if index($_type-options, $item) {
+      $_types: append($_types, $item);
+    } @else if str-index($item, '#') == 1 {
+      $_svg-name: $item;
+    } @else if $_name or str-index($item, '/') {
+      $_path: $item;
+    } @else {
+      $_name: $item;
+    }
+  }
+
+  @if $_path and not($_name) {
+    $_name: _name-from-path($_path);
+  }
+
+  $_path: $_path or $_name;
+  $_types: if(length($_types) > 0, $_types, $font-formats);
+
+  // SVG Name should come from svg file, if possible.
+  $_svg-name: $_svg-name or '#' + $_name;
+
+  // Ideally, this checks for available files in the specified location
+  // before adding them to the $_eot or $_src lists.
+  @each $type in $_types {
+    $_url: $_path + '.' + $type;
+
+    @if $type == eot {
+      $_eot: font-url($_url);
+      $_url: $_url + '?#iefix';
+    } @else if $type == svg or $type == svgz {
+      $_url: $_url + $_svg-name;
+    }
+
+    $_this: font-url($_url) format(map-get($_type-names, $type));
+    $_src: append($_src, $_this, comma);
+  }
+
+  @return (
+    font-family: quote($_name),
+    font-style: $_style,
+    font-weight: $_weight,
+    eot: $_eot,
+    src: $_src,
+  );
+}

@@ -1,0 +1,23 @@
+{
+  "name": "accoutrement-layout",
+  "version": "1.0.1",
+  "description": "Layout helpers",
+  "homepage": "https://github.com/oddbird/accoutrement-layout",
+  "main": "sass/_layout.scss",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oddbird/accoutrement-layout.git"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "sass-true": "^2.0.0-beta.1"
+  },
+  "author": "Eric M Suzanne <eric@oddbird.net>",
+  "license": "MIT",
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  },
+  "bugs": {
+    "url": "https://github.com/oddbird/accoutrement-layout/issues"
+  }
+}

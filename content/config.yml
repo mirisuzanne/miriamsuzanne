@@ -1,18 +1,29 @@
 ---
 brand: 'GreenMud'
-bgimage: '/static/pictures/tennis/volley6.jpg'
+# bgimage: '/static/pictures/tennis/volley6.jpg'
 
 
 # events
 events:
-  - name: 'Teacup Gorilla'
-    summary: 'with <a href="https://www.facebook.com/millicanmusic/">Millican</a>'
-    url: https://www.facebook.com/events/411594105649725/
-    date: Aug. 23, 2014
-    datetime: 2014-08-23
-    location: Pikes Peak Brewing Company — Monument, CO
-    type: music
+  - name: 'Riding SideSaddle* [a novel affair]'
+    summary: 'with <a href="http://teacupgorilla.com">Teacup Gorilla</a>, <a href="http://jkandtheloss.com">Jen Korte</a>, and <a href="http://opentothehound.com">Open to the Hound</a>.'
+    url: http://ridingsidesaddle.net
+    date: Apr. 2, 2015
+    datetime: 2015-04-02
+    location: '<a href="http://physicopera.com">Syntax Physic Opera</a> — Denver, CO'
+    type: book release
 
+  - name: 'Future Insights Live'
+    summary: 'Sass Map Magic'
+    url: https://futureinsightslive.com/las-vegas-2015/
+    date: Jun. 1-4, 2015
+    datetime: 2015-06-01
+    location: Tropicana Hotel — Las Vegas, NV
+    type: talk
+
+
+# curiculum vite
+cv:
   - name: 'BlendConf'
     summary: 'The Magic of Sassy Maps'
     url: https://ti.to/blendconf/blendconf2014?discount_code=ericisfabulous
@@ -21,9 +32,6 @@ events:
     location: Charlotte Sheraton Hotel — Charlotte, NC
     type: talk
 
-
-# curiculum vite
-cv:
   - name: 'PROPHETIA VETITUM MUNDI'
     summary: Screw Tooth
     url: www.screwtooth.com

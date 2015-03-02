@@ -1,0 +1,28 @@
+// Base
+// ====
+
+@import 'license.config';
+@import 'requirements.config';
+@import 'colors.config';
+@import 'scale.config';
+@import 'fonts.config';
+@import 'breakpoints.config';
+
+@include fonts;
+@include global-box-sizing;
+
+html {
+  @extend %body;
+  @include baseline;
+  background: color(background);
+  color: color(text);
+  text-shadow: 0 1px 0 color(background);
+}
+
+body {
+  background: no-repeat fixed;
+  background-size: cover;
+  font-variant-ligatures: common-ligatures;
+}
+
+@import 'type';

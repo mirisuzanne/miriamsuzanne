@@ -1,0 +1,16 @@
+{
+  "name": "accoutrement-pseudo",
+  "version": "1.0.0",
+  "description": "Sass helpers for psuedo elements",
+  "homepage": "https://github.com/oddbird/accoutrement-pseudo",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oddbird/accoutrement-pseudo.git"
+  },
+  "main": "sass/_pseudo-elements.scss",
+  "author": "Eric M Suzanne <eric@oddbird.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oddbird/accoutrement-pseudo/issues"
+  }
+}

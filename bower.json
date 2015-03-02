@@ -1,0 +1,36 @@
+{
+  "name": "ericsuzanne",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ericam/ericsuzanne",
+  "authors": [
+    "Eric M Suzanne <eric@oddbird.net>"
+  ],
+  "description": "an open-source novel",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "queer",
+    "trans",
+    "novel",
+    "gender",
+    "art"
+  ],
+  "devDependencies": {
+    "accoutrement-color": "~1.0.1",
+    "accoutrement-reset": "~1.0.0",
+    "accoutrement-layout": "~1.0.1",
+    "accoutrement-scale": "~1.0.4",
+    "accoutrement-fonts": "~1.0.0",
+    "accoutrement-maps": "~1.0.0",
+    "accoutrement-pseudo": "~1.0.0",
+    "accoutrement-strings": "~1.0.0",
+    "accoutrement-queries": "~1.0.0"
+  }
+}

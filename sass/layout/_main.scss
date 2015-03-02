@@ -2,16 +2,15 @@
 // ====
 
 [role="main"] {
-  @include break;
-  @include h-borders(2px, 2);
-  @include gutters;
-  border-style: dashed;
-  border-color: color($alt lightest, .5);
+  border: 2px solid color(title);
+  border-width: 2px 0;
+  clear: both;
   counter-reset: fig;
+  padding: size(spacer) 0;
 
   [data-bg] & {
+    background-color: color(background (rgba: .98));
     border: 0;
-    background-color: color(white, .98);
-    box-shadow: 0 0 rhythm(.125) color(dark $alt);
+    box-shadow: 0 0 .125em color(brand);
   }
 }

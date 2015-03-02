@@ -2,32 +2,32 @@
 // ==========
 
 [role="navigation"] {
-  @extend %sans;
-  @include span(100%);
-  @include font-size(xsmall);
-  @include trailer(.25);
+  @extend %boilerplate;
+  @include font-size(small);
+  padding-bottom: size(half-shim);
   text-align: center;
 
   a {
     #{$link} {
+      color: color(title);
       display: inline-block;
-      padding: 0 rhythm(.25);
-      color: color($alt lighter);
-      @include before("+") {
+      padding: 0 size(half-shim);
+
+      @include before('+') {
         display: inline-block;
         width: .5em;
       }
     }
 
     #{$focus} {
-      @include before("/");
-      color: color($accent dark);
+      @include before('/');
+      color: color(focus);
     }
 
     @each $slug in who what why {
       .#{$slug} &[href*="#{$slug}"] {
-        @include before("/");
-        color: color($alt dark);
+        @include before('/');
+        color: color(focus);
       }
     }
   }
@@ -37,18 +37,23 @@
 // Breakpoint
 // ----------
 
-@include breakpoint(30em) {
-  $half: floor(susy-get(columns)/2);
-
-  [role="banner"], [role="navigation"] {
-    @include span($half);
-    margin: 0;
+@include at(page) {
+  [role="banner"],
+  [role="navigation"] {
+    float: left;
+    padding: 0;
     text-align: left;
+    width: 50%;
+
     a {
       #{$link} {
-        @include rhythm-padding(.5);
+        padding: size(shim);
       }
     }
   }
-  [role="navigation"] { text-align: right; }
+
+  [role="navigation"] {
+    float: right;
+    text-align: right;
+  }
 }

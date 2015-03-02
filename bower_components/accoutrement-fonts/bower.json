@@ -1,0 +1,23 @@
+{
+  "name": "accoutrement-fonts",
+  "version": "1.0.0",
+  "homepage": "https://github.com/oddbird/accoutrement-fonts",
+  "authors": [
+    "Eric M. Suzanne"
+  ],
+  "description": "Font helpers",
+  "main": "sass/_fonts.scss",
+  "keywords": [
+    "sass",
+    "css",
+    "accoutrement"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

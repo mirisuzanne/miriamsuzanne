@@ -1,34 +1,26 @@
 // Screen
 // ======
 
-@import "base/settings";
-
-
-// General
-// -------
-
-@import "general/root";
-@import "general/type";
+@import 'base/base';
 
 
 // Layout
 // ------
 
-@import "layout/base";
-@import "layout/banner";
-@import "layout/navigation";
-@import "layout/main";
-@import "layout/pagination";
-@import "layout/contentinfo";
+@import 'layout/page';
+@import 'layout/banner';
+@import 'layout/navigation';
+@import 'layout/main';
+@import 'layout/pagination';
+@import 'layout/contentinfo';
 
 
 // Modules
 // -------
 
-@import "modules/tooltips";
-@import "modules/posts";
-@import "modules/productions";
-@import "modules/calendar";
-@import "modules/list-pages";
-@import "modules/inline-demos";
-@import "modules/pygments";
+@import 'modules/posts';
+@import 'modules/productions';
+@import 'modules/calendar';
+@import 'modules/list-pages';
+@import 'modules/inline-demos';
+@import 'modules/pygments';

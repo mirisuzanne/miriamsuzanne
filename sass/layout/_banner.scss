@@ -2,10 +2,9 @@
 // ======
 
 [role="banner"] {
-  @include span(100%);
-  @include leader(.25);
-  text-transform: lowercase;
+  padding-top: size(half-shim);
   text-align: center;
+  text-transform: lowercase;
 
   .brand {
     @include font-size(normal);
@@ -19,9 +18,9 @@
   }
 
   .tagline {
-    @include before(" / ");
+    @include before(' / ');
     @include font-size(small);
-    color: $gray;
+    color: color('gray');
     font-style: italic;
   }
 }

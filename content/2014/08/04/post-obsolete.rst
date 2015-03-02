@@ -5,7 +5,7 @@ gallery:
   - body:
     - image: 'elo14/dancesex.jpg'
       class: full
-    - video: <iframe src="//player.vimeo.com/video/86628115?title=0&amp;byline=0&amp;portrait=0&amp;color=ff0080" width="720" height="405" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    - video: <iframe src="//player.vimeo.com/video/86628115?title=0&amp;byline=0&amp;portrait=0&amp;color=ff0080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     - image: 'elo14/dance.jpg'
     caption: |
       "Say 'ooooooooo' while you dance" —
@@ -39,7 +39,7 @@ Thanks for keeping the obsolete book alive!
   <figure class="gallery">
     <div class="gallery-body">
     <div class="video gallery-item full">
-      <iframe width="560" height="315" src="//www.youtube.com/embed/yt37eIen7JU" frameborder="0" allowfullscreen=""></iframe>
+      <iframe src="//www.youtube.com/embed/yt37eIen7JU" frameborder="0" allowfullscreen=""></iframe>
     </div>
     </div>
   </figure>

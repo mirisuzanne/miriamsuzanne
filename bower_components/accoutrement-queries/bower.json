@@ -1,0 +1,22 @@
+{
+  "name": "accoutrement-queries",
+  "version": "1.0.0",
+  "homepage": "https://github.com/oddbird/accoutrement-queries",
+  "authors": [
+    "Eric M. Suzanne"
+  ],
+  "description": "Media query helpers",
+  "main": "sass/_queries.scss",
+  "keywords": [
+    "sass",
+    "css",
+    "accoutrement"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}

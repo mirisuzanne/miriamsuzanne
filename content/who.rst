@@ -12,36 +12,28 @@ soundscapes with `Teacup Gorilla`_,
 wordscapes with [WriteyWrite],
 and performance art with `Vicious Trap`_
 or the `Denver Poets' Theatre`_.
-She plays math-rock at poetry readings,
-and reads poetry in crowded bars.
-
 Formerly Artistic Director of `New World Arts`_ &
 Technical Director of `The LIDA Project`_,
 Eric is the author of
-*Riding SideSaddle\** (`SpringGun Press`_),
-*Every Other Day* (Pinchpenny Press),
+`Riding SideSaddle*`_,
 and `The Post-Obsolete Book`_.
 She's an avid open-source contributor —
+organizer of `SassHack Denver`_,
 core developer on `Compass`_,
 and creator of `Susy`_ and `True`_.
 
 
 |links|
 
+.. _Riding SideSaddle*: http://ridingsidesaddle.net
 .. _OddBird: http://oddbird.net/
 .. _Teacup Gorilla: http://teacupgorilla.com/
 .. _Vicious Trap: http://vicioustrap.com/
 .. _Denver Poets' Theatre: http://www.denverpoetstheatre.com/
+.. _SassHack Denver: http://www.meetup.com/Sass-Hack-Denver/
 
 .. _New World Arts: http://newworldarts.org/
 .. _The LIDA Project: http://lida.org/
-.. _Mozilla: http://www.mozilla.org/
-.. _Junyo: http://junyo.com/
-.. _SpringGun Press: http://www.springgunpress.com/
-.. _The Operating System: http://www.theoperatingsystem.org/
-.. _The Media Archeology Lab: http://mediaarchaeologylab.com/eric-meyer/
-.. _Illiterate Magazine: http://www.illiteratemagazine.com/blog/tag/Theatre
-.. _City Theatre: http://www.citytheatrecompany.org/
 .. _The Post-Obsolete Book: /post-obsolete/
 .. _open-source contributor: http://github.com/ericam
 .. _Compass: http://compass-style.org/

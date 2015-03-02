@@ -24,21 +24,10 @@ off-canvas design is as simple with Susy
 as any other design pattern.
 All you need to do
 is pull some of your columns off the screen.
-It's that simple.
 
-I've thrown together a very `rough demo`_
-that only shows Susy's part of the equation.
-You still need to add JS interaction
-and no-js fallbacks.
 
-.. _rough demo: /demos/susy-off-canvas/
-
-If anyone wants to take what I've done,
-and flesh it out,
-I would be glad to pull that in.
-
-Simple Markup:
---------------
+Basic Markup:
+-------------
 
 .. code:: html
 
@@ -49,6 +38,7 @@ Simple Markup:
     <div class="right">right</div>
     <footer>footer</footer>
   </div>
+
 
 The Susy/Sass Part:
 -------------------

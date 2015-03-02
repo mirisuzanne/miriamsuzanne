@@ -1,25 +1,33 @@
+// scss-lint:disable NestingDepth, SelectorDepth
+
 // Productions
 // ===========
 
 .when .section {
   > ul > li {
-    > em, > strong {
-      @include font-size(xsmall);
-      @include sans;
-      @include before(" | ");
+    > em,
+    > strong {
+      @extend %boilerplate;
+      @include before(' | ');
+      @include font-size(small);
+      color: color(text);
       display: inline-block;
-      color: color($base,.5);
-      text-transform: uppercase;
       font-style: normal;
+      text-transform: uppercase;
     }
+
     strong {
       font-weight: bold;
-      &:before { font-weight: normal; }
+
+      &:before {
+        font-weight: normal;
+      }
     }
+
     ul {
-      @include font-size(xsmall, .75);
-      @include trailer(.5);
-      @include sans;
+      @extend %boilerplate;
+      @include font-size(small);
+      margin-bottom: size(shim);
     }
   }
 }

@@ -2,38 +2,26 @@
 // ===========
 
 [role="contentinfo"] {
-  @include sans;
-  @include break;
-  @include font-size(xsmall);
-  @include rhythm-padding;
-  color: $gray;
+  @extend %boilerplate;
+  @include font-size(small);
+  clear: both;
+  color: color('gray');
+  padding: size(rhythm) 0;
   text-transform: uppercase;
 }
 
 .social {
+  @include font-size(smaller);
   text-align: center;
 
   li {
-    @include tooltip(bottom);
     display: inline-block;
-  }
-
-  .tooltip-text::before {
-    left: 50%;
-    margin-left: rhythm(-.25);
-  }
-
-  a {
-    #{$link} {
-      @include font-size(medium, 1.5);
-      @include transition(all 150ms);
-      display: block;
-      width: rhythm(1.5);
-      text-align: center;
-    }
+    margin: 0 size(half-shim);
   }
 }
 
 .colophon {
-  @include container;
+  margin: 0 auto;
+  max-width: size(page);
+  padding: 0 size(gutter);
 }

@@ -1,42 +1,43 @@
 // Calendar
 // --------
 
-$date-span: rhythm(5);
+$date-span: size(rhythm)*5;
 
 .section--cal {
-  @include trailer;
+  margin-bottom: size(rhythm);
 }
 
 .h-event {
-  @include trailer(.5);
+  margin-bottom: size(shim);
 }
 
 .dt-start {
-  @include span($date-span);
   @include font-size(small);
   text-align: right;
+  float: left;
   font-style: italic;
-  padding-left: 0;
+  padding-right: size(shim);
+  width: $date-span;
 }
 
 .p-name {
-  @include trailer(0);
-  @include prefix($date-span);
+  margin-bottom: 0;
+  padding-left: $date-span + size(shim);
 }
 
-.p-summary, .p-location {
-  @include trailer(0);
-  @include prefix($date-span);
+.p-summary,
+.p-location {
   @include font-size(small);
   font-style: italic;
+  margin-bottom: 0;
+  padding-left: $date-span + size(shim);
 }
 
 .p-category {
-  @include sans;
-  @include font-size(xsmall);
+  @extend %boilerplate;
+  @include before(' | ');
+  @include font-size(smaller);
   color: color(light);
   font-style: normal;
   text-transform: uppercase;
-
-  @include before(' | ') { @include font-size(small); }
 }

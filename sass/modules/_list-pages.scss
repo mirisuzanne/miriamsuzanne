@@ -1,9 +1,11 @@
 // ----------------------------------------------------------------------------
 // List Pages
 
-.blog-archive, .tag-archive {
-  @include leader;
+.blog-archive,
+.tag-archive {
+  margin-top: size(rhythm);
 }
+
 
 // ----------------------------------------------------------------------------
 // Blog Archive
@@ -11,20 +13,31 @@
 .blog-archive {
   li {
     list-style-type: none;
-    ul { margin-left: 0; }
+
+    ul {
+      margin-left: 0;
+    }
+
     li {
       list-style-type: disc;
     }
   }
 }
 
+
 // ----------------------------------------------------------------------------
 // Tag List
 
 .tag-list {
-  @include delimited-list;
-  & {
-    @include leader;
-    display: block;
+  margin-top: size(rhythm);
+  display: block;
+
+  li {
+    @include after(', ');
+    display: inline;
+
+    &:last-child:after {
+      display: none;
+    }
   }
 }

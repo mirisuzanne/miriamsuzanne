@@ -9,65 +9,33 @@ Projects
 ========
 
 
-Ongoing Projects
-----------------
-
-|greenmud|
-
-- `Into the Green Green Mud`_:
-  *A Love story & after-love story.*
-- Pity+Fear:
-  *A clusterfuck opera & mythic science experiment.*
-- Variations on Riding Sidesaddle:
-  *An open-source queer memory of the body.*
-- `Fuck The Muse`_:
-  *A blog mini-series on cretive process.*
-
-.. _Into the Green Green Mud: http://greengreenmud.com/
-.. _Fuck The Muse: /2012/10/16/muse-intro/
-
-.. |greenmud| raw:: html
-
-  <figure>
-    <a href="http://greengreenmud.com">
-      <img src="/static/pictures/what/greenmud.png" />
-    </a>
-  </figure>
-
-
 Artifacts
 ---------
 
-|music|
+|sidesaddle|
+
+- `Riding SideSaddle*`_:
+  *A memory of our time together, and these bodies we inhabit.*
 
 - `The Post-Obsolete Book`_:
   *A performance website in honor of obsolescence.*
+
 - `Susy`_:
   *A responsive grid system for web designers.*
-- `The Posture of Contour`_ [cover design]:
-  *Performative poem-prompts.*
 
-.. _The Post-Obsolete Book: /post-obsolete/
-.. _Susy: http://susy.oddbird.net/
-.. _The Posture of Contour: http://www.springgunpress.com/posture
+- `Into the Green Green Mud`_:
+  *A Love story & after-love story.*
 
-.. |music| raw:: html
+- `Fuck The Muse`_:
+  *A blog mini-series on cretive process.*
 
-  <figure>
-    <iframe width="100%" height="420" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/9012016&amp;color=ff0000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-  </figure>
-
-
-Organizations
--------------
-
-|tg|
-
-- `OddBird`_:
-  *Custom web design & development.*
+|music|
 
 - `Teacup Gorilla`_:
   *Pre-apocalyptic post-rock & other experiments.*
+
+- `OddBird`_:
+  *Custom web design & development.*
 
 - `Vicious Trap`_:
   *Performance collaboration & scapegoat.*
@@ -79,13 +47,24 @@ Organizations
 .. _Teacup Gorilla: http://teacupgorilla.com/
 .. _Vicious Trap: http://vicioustrap.com/
 .. _Denver Poets' Theatre: http://www.denverpoetstheatre.com/
+.. _Into the Green Green Mud: http://greengreenmud.com/
+.. _Fuck The Muse: /2012/10/16/muse-intro/
+.. _Riding SideSaddle*: http://ridingsidesaddle.net/
+.. _The Post-Obsolete Book: /post-obsolete/
+.. _Susy: http://susy.oddbird.net/
 
-.. |tg| raw:: html
+.. |sidesaddle| raw:: html
 
   <figure>
-    <a href="http://teacupgorilla.com">
-      <img src="/static/pictures/what/tg.jpg" />
+    <a href="http://ridingsidesaddle.net">
+      <img src="/static/pictures/what/sidesaddle.jpg" alt="Riding SideSaddle* | a novel" />
     </a>
+  </figure>
+
+.. |music| raw:: html
+
+  <figure>
+    <iframe width="100%" height="420" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/9012016&amp;color=ff0000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
   </figure>
 
 
