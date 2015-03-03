@@ -39,6 +39,61 @@ $font-path: '../fonts/' !default;
 }
 
 
+// Font Family [mixin]
+// -------------------
+@mixin font-family(
+  $font
+) {
+  $_name: map-get($font, name);
+  $_path: map-get($font, path);
+  $_styles: map-get($font, styles);
+  $_files: map-get($font, files);
+
+  @if $_path and $_styles {
+    @each $style in $_styles {
+      $_a: nth($style, 1);
+      $_b: if(length($style) > 1, nth($style, 2), null);
+
+      $_a: if($_a == 'normal', null, $_a);
+      $_b: if($_b == 'normal', null, $_b);
+
+      $_location: interpolate($_path, $_a, $_b);
+
+      $_a: if($_a, to-lower-case($_a), 'normal');
+      $_b: if($_b, to-lower-case($_b), 'normal');
+
+      $_a: if($_a == 'regular', 'normal', $_a);
+      $_b: if($_b == 'regular', 'normal', $_b);
+
+      @include font-face($_name $_location $_a $_b);
+    }
+  } @else if $_files {
+    @each $_style, $_location in $_files {
+      @include font-face(join($_name $_location, $_style));
+    }
+  } @else {
+    @include font-face($_name $_path);
+  }
+}
+
+
+// Fonts [mixin]
+// -------------
+@mixin fonts(
+  $fonts: $fonts
+) {
+  @each $selector, $font in $fonts {
+    $_stack: map-get($font, stack);
+
+    @include font-family($font);
+
+    %#{$selector} {
+      font-family: map-get($font, name), $_stack;
+    }
+  }
+}
+
+
 // Name from path
 // --------------
 @function _name-from-path(

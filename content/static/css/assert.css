@@ -58,7 +58,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
 
 tt, code, pre {
-  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif; }
+  font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif; }
 
 @font-face {
   font-family: 'BaskervilleAmp';
@@ -123,7 +123,7 @@ html, figcaption:before {
   src: url('../fonts/FranklinGothicCd-bolditalic.woff') format('woff'), url('../fonts/FranklinGothicCd-bolditalic.ttf') format('truetype'); }
 
 figcaption {
-  font-family: 'FranklinGothicCond', "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: 'FranklinGothicCond', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 *, *:before, *:after {
   box-sizing: border-box; }

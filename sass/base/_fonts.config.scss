@@ -1,11 +1,11 @@
 // Fonts
 // =====
 
-$sans-stack   : "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif-stack  : Baskerville, Palatino, Cambria, Georgia, serif;
-$mono-stack   : Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
-
 $font-formats: 'woff' 'ttf';
+
+$sans-stack   : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$serif-stack  : Baskerville, Palatino, Cambria, Georgia, serif;
+$mono-stack   : Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;
 
 $fonts: (
   amp: (
@@ -29,34 +29,9 @@ $fonts: (
   ),
 );
 
-@mixin fonts(
-  $fonts: $fonts
-) {
-  @each $font, $detail in $fonts {
-    $name: map-get($detail, name);
 
-    $path: map-get($detail, path);
-    $styles: map-get($detail, styles);
-
-    @if $styles {
-      @each $style in $styles {
-        $path-keys: if(length($style) == 1, $style null, $style);
-        $full-path: interpolate($path, $path-keys...);
-
-        $style: if($style == 'regular', 'normal', $style);
-        $style: if(length($style) == 1, $style normal, $style);
-
-        @include font-face(join($name $full-path, $style));
-      }
-    } @else {
-      @include font-face($name $path);
-    }
-
-    %#{$font} {
-      font-family: $name, map-get($detail, stack);
-    }
-  }
-}
+// Code
+// ----
 
 %mono {
   font-family: $mono-stack;
