@@ -6,6 +6,8 @@ bodyclasses: who
 Bio
 ===
 
+|head|
+
 **Eric M Suzanne**
 creates web software with `OddBird`_,
 soundscapes with `Teacup Gorilla`_,
@@ -21,7 +23,6 @@ She's an avid open-source contributor —
 organizer of `SassHack Denver`_,
 core developer on `Compass`_,
 and creator of `Susy`_ and `True`_.
-
 
 |links|
 
@@ -39,6 +40,14 @@ and creator of `Susy`_ and `True`_.
 .. _Compass: http://compass-style.org/
 .. _Susy: http://susy.oddbird.net/
 .. _True: /true/
+
+
+.. |head| raw:: html
+
+  <figure>
+    <img src="https://www.dropbox.com/s/vo68rb5irzimv65/head.jpg?dl=1" alt="" />
+  </figure>
+
 
 .. |links| raw:: html
 

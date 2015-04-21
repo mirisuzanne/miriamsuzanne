@@ -5,25 +5,39 @@ brand: 'GreenMud'
 
 # events
 events:
-  - name: 'Riding SideSaddle* [a novel affair]'
-    summary: 'with <a href="http://teacupgorilla.com">Teacup Gorilla</a>, <a href="http://jkandtheloss.com">Jen Korte</a>, and <a href="http://opentothehound.com">Open to the Hound</a>.'
-    url: http://ridingsidesaddle.net
-    date: Apr. 2, 2015
-    datetime: 2015-04-02
-    location: '<a href="http://physicopera.com">Syntax Physic Opera</a> — Denver, CO'
-    type: book release
-
   - name: 'Future Insights Live'
     summary: 'Sass Map Magic'
     url: https://futureinsightslive.com/las-vegas-2015/
-    date: Jun. 1-4, 2015
+    date: June 1-4, 2015
     datetime: 2015-06-01
     location: Tropicana Hotel — Las Vegas, NV
+    type: talk
+
+  - name: 'WordCamp Denver'
+    summary: 'Sassy Toolkits (the WordPress way)'
+    url: http://denver.wordcamp.org/2015/
+    date: June 13-14, 2015
+    datetime: 2015-06-13
+    location: Tropicana Hotel — Las Vegas, NV
+    type: talk
+
+  - name: 'CSS Summit'
+    summary: 'Sass Map Magic'
+    url: http://environmentsforhumans.com/2015/css-summit/
+    date: July 7-9, 2015
+    datetime: 2015-07-07
     type: talk
 
 
 # curiculum vite
 cv:
+  - name: 'Riding SideSaddle*'
+    summary: 'Open-source, multimedia novel on note cards'
+    url: http://ridingsidesaddle.net
+    date: Apr. 2, 2015
+    datetime: 2015-04-02
+    type: novel
+
   - name: 'BlendConf'
     summary: 'The Magic of Sassy Maps'
     url: https://ti.to/blendconf/blendconf2014?discount_code=ericisfabulous
