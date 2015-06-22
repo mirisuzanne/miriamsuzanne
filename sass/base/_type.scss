@@ -65,8 +65,10 @@ h2 {
 
 h3 {
   margin-bottom: size(gutter);
-  text-transform: uppercase;
-  letter-spacing: .01em;
+
+  @include at(page) {
+    @include font-size(h3);
+  }
 }
 
 
@@ -112,22 +114,6 @@ blockquote {
   em {
     font-style: normal;
   }
-
-  cite {
-    @include before('—');
-    @include font-size(-2);
-    display: block;
-    font-style: normal;
-    margin-top: size(shim);
-
-    em {
-      font-style: italic;
-    }
-
-    .pubdate {
-      @include wrap-content('[' ']');
-    }
-  }
 }
 
 ul,
@@ -146,6 +132,19 @@ blockquote {
     }
   }
 }
+
+cite,
+.citation {
+  @include before('—');
+  @include font-size('small');
+  display: block;
+  font-style: normal;
+
+  em {
+    font-style: italic;
+  }
+}
+
 
 
 // Figures

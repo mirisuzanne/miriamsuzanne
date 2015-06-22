@@ -6,24 +6,26 @@
     </time>
     {% endif %}
 
-    <h3 class="p-name">
-      {% if event.url %}
-        <a href="{{ event.url }}" class="u-url">{{ event.name }}</a>
-      {% else %}
-        {{ event.name }}
-      {% endif %}
-    </h3>
+    <div class="event-details">
+      <h3 class="p-name">
+        {% if event.url %}
+          <a href="{{ event.url }}" class="u-url">{{ event.name|safe }}</a>
+        {% else %}
+          {{ event.name|safe }}
+        {% endif %}
+      </h3>
 
-    <p class="p-summary">
-      {{ event.summary|safe }}
+      <p class="p-summary">
+        {{ event.summary|safe }}
 
-      {% if event.type %}
-      <span class="p-category">{{ event.type }}</span>
-      {% endif %}
-    </p>
+        {% if event.type %}
+        <span class="p-category">{{ event.type }}</span>
+        {% endif %}
+      </p>
 
-    <p class="p-location">
-      {{ event.location|safe }}
-    </p>
+      <p class="p-location">
+        {{ event.location|safe }}
+      </p>
+    </div>
   </article>
 {% endmacro %}

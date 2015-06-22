@@ -1,59 +1,16 @@
 public: yes
 hide_title: yes
-bodyclasses: when
+bodyclasses: what
+show_events: past
+before:
+  - include: 'modules/_calendar.html.j2'
 
 
 CV
 ===
 
-Past Work
----------
-
-- `Organizing Sass Partials`_ *2013*
-
-  - Featured Speaker | `NYCSass Meetup`_
-
-- `Bad Shadow Affair`_ *2013*
-
-  - Poetry Reading (with Teacup Gorilla)
-  - with Marcia Douglas & Matt Cook
-
-- `Show Your Work & Share Your Toys`_ *2013*
-
-  - Featured Speaker | `SassConf`_
-
-- `Art is for People`_ (neé "No One Wants Your Media Arts") *2013*
-
-  - Guest Lecture Series | `Brakhage Center Media Arts Lunchtime Series`_
-
-- Digital Art *2013*
-
-  -  Guest Lecture | CU Boulder, Prof. Erin Costello
-
-- `The Operating System`_ PRINT! vol. 3 *2013*
-
-  - Writer & Artist |
-    Cover art &
-    Excerpts from *Variations on Riding Side Saddle*
-  - Launch Party Reading | Launchpad Brooklyn
-
-- Making a Small Press Work
-
-  - Moderator | `&Now Festival`_
-
-- `The Post-Obsolete Book`_ *2013*
-
-  - Resident Artist | `Media Archeology Lab`_
-  - In conjunction with the `&Now Festival`_
-
-- SpringGun Journal: `Issue 8`_ *2013*
-
-  - Writer, Artist, and Developer |
-    `The Post-Obsolete Book`_
-
-- Intro to Digital Media for Humanities *2013*
-
-  - Guest Lecture | CU Boulder, Prof. Lori Emerson
+Archive
+-------
 
 - Boulder Writer's Workshop *2013*
 
@@ -223,6 +180,7 @@ Past Work
 .. _Actors, dance acts give depth to 'Deep Blue Sea': http://articles.southbendtribune.com/2006-09-17/news/26981141_1_danny-and-roberta-dance-characters
 .. _Set, tone carry 'Hello, Goodbye': http://articles.southbendtribune.com/2006-01-29/news/26962892_1_hester-darkness-athol-fugard
 .. _Peace Play: http://www.goshen.edu/theater/peace-play/
+
 
 Associations
 ------------

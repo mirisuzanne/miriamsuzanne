@@ -1,0 +1,19 @@
+{% if config.interviews %}
+<section class="section section--interviews">
+  <h2 class="interviews-title">Interviews</h2>
+  <ul class="interview-list">
+    {% for item in config.interviews %}
+      <li class="interview">
+        <h3 class="interview-title">
+          <a href="{{ item.url }}">{{ item.title }}</a>
+        </h3>
+        <p class="citation">
+          {{ item.credit }},
+          {{ item.source }}
+          <time datetime="{{ item.datetime }}" class="pubdate">[{{ item.date }}]</time>
+        </p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

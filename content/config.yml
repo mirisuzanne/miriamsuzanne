@@ -5,22 +5,6 @@ brand: 'GreenMud'
 
 # events
 events:
-  - name: 'Future Insights Live'
-    summary: 'Sass Map Magic'
-    url: https://futureinsightslive.com/las-vegas-2015/
-    date: June 1-4, 2015
-    datetime: 2015-06-01
-    location: Tropicana Hotel — Las Vegas, NV
-    type: talk
-
-  - name: 'WordCamp Denver'
-    summary: 'Sassy Toolkits (the WordPress way)'
-    url: http://denver.wordcamp.org/2015/
-    date: June 13-14, 2015
-    datetime: 2015-06-13
-    location: Tropicana Hotel — Las Vegas, NV
-    type: talk
-
   - name: 'CSS Summit'
     summary: 'Sass Map Magic'
     url: http://environmentsforhumans.com/2015/css-summit/
@@ -28,15 +12,141 @@ events:
     datetime: 2015-07-07
     type: talk
 
+  - name: 'The Holes They Leave [EP Release]'
+    summary: 'with Bad Luck City, Teacup Gorilla, and Coastal Wives'
+    url: http://www.teacupgorilla.com/2015/06/10/ep-release/
+    date: July 9, 2015
+    datetime: 2015-07-09
+    location: '<a href="http://www.hi-dive.com/event/864133-teacup-gorilla-denver/">Hi Dive</a> — Denver, CO'
+    type: music
+
+  - name: 'Frontend Conference Zurich'
+    summary: 'Sassy Toolkits'
+    url: http://frontendconf.ch
+    date: Aug. 27-28, 2015
+    datetime: 2015-08-28
+    type: talk
+
+  - name: 'The In-Between'
+    summary: 'site-specific installation devised with Julie Rada'
+    date: Sept. 6, 2015
+    datetime: 2015-09-06
+    type: performance
+
+  - name: 'Clyfford Still Museum: ReTriplicate'
+    summary: 'with Buntport Theater, Hoarded Stuff, and Screw Tooth'
+    url: https://clyffordstillmuseum.org/
+    date: Sept. 24-26, 2015
+    datetime: 2015-09-24
+    type: music/performance
+
+  - name: 'SassConf 2015'
+    summary: TBA
+    date: Nov. 11-13, 2015
+    datetime: 2015-11-11
+    type: moderated discussion
+
+
+# press
+press:
+  - quote: One of the most ambitious projects that has come across our desk recently.
+    credit: Tim Wenger
+    source: Colorado Music Buzz
+    url: http://www.colomusicbuzz.com/eric-suzanne-drops-non-linear-novel-in-conjunction-with-teacup-gorilla/
+    date: April 1, 2015
+    datetime: 2015-04-01
+
+  - quote: If you’re interested in reading Sass poetry, be sure to look at Susy’s source code!
+    credit: Hugo Giraudel
+    source: SitePoint
+    url: http://www.sitepoint.com/my-favorite-sass-tools/
+    date: April 22, 2014
+    datetime: 2014-04-22
+
+  - quote: This virtuoso creation by a talented young poet, writer, artist, typographer, programmer, and musician is a taste of things to come as new generations of digital media and code literate creators come of age.
+    credit: Leonardo Flores
+    source: I ♥ E-Poetry
+    url: http://iloveepoetry.com/?p=2571
+    date: May 2, 2013
+    datetime: 2013-05-02
+
+  - quote: I was impressed by the purest form of outrageous creation.
+    credit: Judy Rose
+    source: Boulder Writer’s Workshop
+    url: http://www.boulderwritersworkshop.org/2013/04/17/post-obsolete-a-bww-salon/
+    date: April 17, 2013
+    datetime: 2013-04-17
+
+  - quote: The album closes with “Static,” a haunting meeting of strings and electronic fuzz with vocalist/drummer Sondra Eisenstat’s lush vocals and spoken word. Eisenstat sings that there is “No voice on the radio,” and perhaps, for now, that’s true. Kingdom, though, is certainly worth a private listen at home.
+    credit: Cat Carroll
+    source: Onion AV Club
+    url: http://www.avclub.com/
+    date: August 14, 2009
+    datetime: 2009-08-14
+
+  - quote: Rarely does one encounter a production undertaken with such a tremendous amount of care and consideration.
+    credit: Jack Walton
+    source: South Bend Tribune
+    url: http://articles.southbendtribune.com/2006-01-29/news/26962892_1_hester-darkness-athol-fugard
+    date: January 29, 2006
+    datetime: 2006-01-29
+
+
+# interviews
+interviews:
+  - title: On Riding SideSaddle*
+    credit: Ryo Yamaguchi
+    source: Michigan Quarterly Review
+    url: http://www.michiganquarterlyreview.com/2015/06/on-riding-sidesaddle-an-interview-with-eric-suzanne/
+    date: June 1, 2015
+    datetime: 2015-06-01
+
+  - title: Eric Suzanne Drops Non-Linear Novel...
+    credit: Tim Wenger
+    source: Colorado Music Buzz
+    url: http://www.colomusicbuzz.com/eric-suzanne-drops-non-linear-novel-in-conjunction-with-teacup-gorilla/
+    date: April 1, 2015
+    datetime: 2015-04-01
+
+  - title: Ideas, Process, Obsolescence, and the Iterative
+    credit: Mél Hogan
+    source: Media Archeology Lab
+    url: http://mediaarchaeologylab.com/eric-meyer-ideas-process-obsolescence-iterative-interview-mel-hogan/
+    date: November 15, 2013
+    datetime: 2013-11-15
+
+  - title: Collaboration, Queer Art, and the Multi-Media Novel
+    credit: Richard Wall
+    source: Boulder Writers Workshop
+    url: http://www.boulderwritersworkshop.org/2012/08/31/eric-meyer-discusses-collaboration-queer-art-and-his-multi-media-novel
+    date: August 31, 2012
+    datetime: 2012-08-31
+
 
 # curiculum vite
 cv:
+  - name: 'WordCamp Denver'
+    summary: '<a href="http://oddbooksapp.com/book/sassy-toolkits">Sassy Toolkits</a> [the WordPress way]'
+    url: http://denver.wordcamp.org/2015/
+    date: June 13-14, 2015
+    datetime: 2015-06-13
+    location: Tropicana Hotel — Las Vegas, NV
+    type: talk
+
+  - name: 'Future Insights Live'
+    summary: '<a href="http://oddbooksapp.com/book/sass-map-magic">Sass Map Magic</a>'
+    url: https://futureinsightslive.com/las-vegas-2015/
+    date: June 1-4, 2015
+    datetime: 2015-06-01
+    location: Tropicana Hotel — Las Vegas, NV
+    type: talk
+
   - name: 'Riding SideSaddle*'
-    summary: 'Open-source, multimedia novel on note cards'
+    summary: 'published by <a href="http://springgunpress.com">SpringGun Press</a>'
     url: http://ridingsidesaddle.net
     date: Apr. 2, 2015
     datetime: 2015-04-02
-    type: novel
+    type: hybrid novel
 
   - name: 'BlendConf'
     summary: 'The Magic of Sassy Maps'
@@ -63,7 +173,7 @@ cv:
     type: installation/performance
 
   - name: 'Bouldering Poets: Two Year Anniversary'
-    summary: Alan Mudd, Teacup Gorilla, and Chris Shugrue
+    summary: with Alan Mudd, Teacup Gorilla, and Chris Shugrue
     url: http://boulderingpoets.wordpress.com/2014/04/07/may-17-2014-two-year-anniversary/
     date: May 17, 2014
     datetime: 2014-05-17
@@ -75,8 +185,8 @@ cv:
     url: 'http://bmore-sass.com/'
     date: April 24, 2014
     datetime: 2014-04-24
-    location: Betamore/online — Baltimore, MD
-    type: meetup talk
+    location: Betamore — Baltimore, MD
+    type: talk
 
   - name: CampSass
     summary: 'Show Your Work & Share Your Toys'
@@ -92,86 +202,89 @@ cv:
     date: April 16, 2014
     datetime: 2014-04-16
     location: Salesforce — San Francisco, CA
-    type: meetup talk
+    type: talk
 
   - name: SassBites
     summary: Susy Grids 2.0
     url: 'bit.ly/SassBites29'
     date: March 13, 2014
     datetime: 2014-03-13
-    location: 'online — https://www.youtube.com/user/sassbites'
     type: podcast
 
-  - title: Organizing Sass Partials
-    title-url: 'http://ericsuzanne.com/pres/sass-partials/'
-    forum: NYC Sass & Compass Meetup
-    forum-url: 'http://www.meetup.com/nyc-sass/events/146898452/'
+  - name: NYC Sass & Compass Meetup
+    summary: Organizing Sass Partials
+    url: 'http://www.meetup.com/nyc-sass/events/146898452/'
     date: Nov. 2013
-    role: speaker
-    type: Meetup
-    location: online
+    datetime: 2013-11-01
+    type: talk
 
-  - forum: Bad Shadow Affair
+  - name: Bad Shadow Affair
+    summary: with Teacup Gorilla, Marcia Douglas, and Matt Cook
+    url: http://badshadowaffair.blogspot.com/2013/11/november-16th-douglas-cook-meyer.html
     date: Nov. 2013
-    role: poet & musician
-    type: reading series
-    with: Teacup Gorilla, Marcia Douglas, and Matt Cook
-    location: Lost Lake Lounge, Denver
+    datetime: 2013-10-01
+    type: music/poetry
+    location: Lost Lake Lounge — Denver, CO
 
-  - title: Show Your Work & Share Your Toys
-    forum: SassConf
+  - name: SassConf
+    summary: Show Your Work & Share Your Toys
+    url: https://vimeo.com/channels/sassconf2013/86306775
     date: Oct. 2013
-    role: speaker
-    type: conference
+    datetime: 2013-10-01
+    type: talk
     location: Scolastic Auditorium, NYC
 
-  - title: No One Wants Your Media Arts
-    forum: Brakhage Center Media Arts Lunchtime Series
+  - name: Brakhage Center Media Arts Lunchtime Series
+    summary: No One Wants Your Media Arts
+    url: http://brakhagecenter.com/?p=932
     date: Oct. 2013
-    role: speaker
-    type: lecture series
+    datetime: 2013-10-01
+    type: talk
     location: Colorado University, Boulder
 
-  - forum: The Operating System PRINT! vol. 3
+  - name: The Operating System PRINT! vol. 3
+    summary: 'Cover design & excerpts from Riding SideSaddle*'
+    url: http://www.theoperatingsystem.org/layer-tennis-live-stream-print-vol-3-ole/
     date: Nov. 2013
-    role: writer & designer
-    type: literary journal & reading series
-    notes: 'cover art & excerpts from <em>Variations on Riding Side Saddle</em>'
+    datetime: 2013-10-01
+    type: literary journal
     location: Launchpad Brooklyn
 
-  - forum: Digital Art
+  - name: Digital Art
+    summary: with professor Erin Costello
     date: Sept. 2013
-    role: guest lecture
-    type: class
-    with: Prof. Erin Costello
+    datetime: 2013-09-01
+    type: guest lecture
     location: Colorado University, Boulder
 
-  - title: Making a Small Press Work
+  - name: '<span class="amp">&</span>Now Festival'
+    summary: Making a Small Press Work
     date: Sept. 2013
-    role: moderator
-    forum: '&Now Festival'
-    type: conference
+    datetime: 2013-09-01
+    type: panel moderator
     location: Colorado University, Boulder
 
-  - title: The Post-Obsolete Book
+  - name: 'Media Archeology Lab / <span class="amp">&</span>Now Festival'
+    summary: The Post-Obsolete Book
+    url: http://mediaarchaeologylab.com/eric-meyer-2/
     date: Sept. 2013
-    role: resident artist
-    forum: Media Archeology Lab
+    datetime: 2013-09-01
     type: residency/performance
     location: Colorado University, Boulder
-    notes: 'In conjunction with the &Now Festival'
 
-  - title: The Post-Obsolete Book
-    forum: SpringGun Journal, Issue 8
+  - name: SpringGun Journal, Issue 8
+    summary: The Post-Obsolete Book
+    url: http://www.springgunpress.com/issue-8-2013/
     date: Sept. 2013
-    role: digital artist
+    datetime: 2013-09-01
     type: literary journal
 
-  - forum: Intro to Digital Media for Humanities
+  - name: Intro to Digital Media for Humanities
+    summary: with proffessor Lori Emerson
     date: Aug. 2013
-    role: guest lecture
+    datetime: 2013-08-01
+    type: guest lecture
     location: Colorado University, Boulder
-    with: Prof. Lori Emerson
 
 
 # navigation
@@ -182,6 +295,8 @@ nav:
     url: "/what/"
   - title: bio
     url: "/who/"
+  - title: press
+    url: "/press/"
 
 
 # social

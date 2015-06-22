@@ -122,7 +122,7 @@ html, figcaption:before {
   
   src: url('../fonts/FranklinGothicCd-bolditalic.woff') format('woff'), url('../fonts/FranklinGothicCd-bolditalic.ttf') format('truetype'); }
 
-figcaption, [role="navigation"], [role="contentinfo"], .when .section > ul > li > em, .when .section > ul > li > strong, .when .section > ul > li ul, .p-category {
+figcaption, [role="navigation"], [role="contentinfo"], .p-category {
   font-family: 'FranklinGothicCond', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 *, *:before, *:after {
@@ -174,9 +174,11 @@ h2 {
       line-height: 1.85714rem; } }
 
 h3 {
-  margin-bottom: 1.2381rem;
-  text-transform: uppercase;
-  letter-spacing: .01em; }
+  margin-bottom: 1.2381rem; }
+  @media (min-width: 47.25em) {
+    h3 {
+      font-size: 1.2381rem;
+      line-height: 1.2381rem; } }
 
 h4, strong {
   font-weight: bold; }
@@ -201,20 +203,6 @@ blockquote {
   padding: 0 1.2381rem; }
   blockquote em {
     font-style: normal; }
-  blockquote cite {
-    font-size: 0.61905rem;
-    line-height: 0.61905rem;
-    display: block;
-    font-style: normal;
-    margin-top: 0.61905rem; }
-    blockquote cite:before {
-      content: '—'; }
-    blockquote cite em {
-      font-style: italic; }
-    blockquote cite .pubdate:before, blockquote cite .pubdate:after {
-      content: '['; }
-    blockquote cite .pubdate:after {
-      content: ']'; }
 
 ul, ol, blockquote {
   margin-left: 1.2381rem; }
@@ -226,6 +214,16 @@ ul, ol, blockquote {
         line-height: 1.2381rem;
         margin-bottom: 0.61905rem;
         margin-left: 1.2381rem; } }
+
+cite, .citation {
+  font-size: 0.80952rem;
+  line-height: 1.2381rem;
+  display: block;
+  font-style: normal; }
+  cite:before, .citation:before {
+    content: '—'; }
+  cite em, .citation em {
+    font-style: italic; }
 
 figure {
   margin-bottom: 1.2381rem; }
@@ -330,11 +328,15 @@ pre {
     color: #0086b3; }
     .why [role="navigation"] a[href*="why"]:before {
       content: '/'; }
+  .press [role="navigation"] a[href*="press"] {
+    color: #0086b3; }
+    .press [role="navigation"] a[href*="press"]:before {
+      content: '/'; }
 
 @media (min-width: 47.25em) {
   [role="banner"], [role="navigation"] {
     float: left;
-    padding: 0;
+    padding: 0 0.30952rem;
     text-align: left;
     width: 50%; }
     [role="banner"] a:link, [role="banner"] a:visited, [role="navigation"] a:link, [role="navigation"] a:visited {
@@ -443,26 +445,21 @@ pre {
 .section {
   clear: both; }
 
-.when .section > ul > li > em, .when .section > ul > li > strong {
-  font-size: 0.80952rem;
-  line-height: 1.2381rem;
-  color: black;
-  display: inline-block;
-  font-style: normal;
-  text-transform: uppercase; }
-  .when .section > ul > li > em:before, .when .section > ul > li > strong:before {
-    content: ' | '; }
-.when .section > ul > li strong {
-  font-weight: bold; }
-  .when .section > ul > li strong:before {
-    font-weight: normal; }
-.when .section > ul > li ul {
-  font-size: 0.80952rem;
-  line-height: 1.2381rem;
-  margin-bottom: 0.61905rem; }
+@media (min-width: 35em) {
+  .headshot {
+    float: left;
+    margin-right: 1.2381rem;
+    width: 25%; }
+    .headshot ~ p {
+      margin-left: 1.2381rem;
+      padding-left: 25%; } }
 
 .section--cal {
   margin-bottom: 1.2381rem; }
+  .section--cal:after {
+    clear: both;
+    content: ' ';
+    display: block; }
 
 .h-event {
   margin-bottom: 0.61905rem; }
@@ -470,22 +467,25 @@ pre {
 .dt-start {
   font-size: 0.80952rem;
   line-height: 1.2381rem;
-  text-align: right;
-  float: left;
-  font-style: italic;
-  padding-right: 0.61905rem;
-  width: 6.19048rem; }
+  font-style: italic; }
+  @media (min-width: 47.25em) {
+    .dt-start {
+      text-align: right;
+      float: left;
+      padding-right: 0.61905rem;
+      width: 6.19048rem; } }
+
+@media (min-width: 47.25em) {
+  .event-details {
+    padding-left: 6.80952rem; } }
 
 .p-name {
-  margin-bottom: 0;
-  padding-left: 6.80952rem; }
+  margin-bottom: 0; }
 
 .p-summary, .p-location {
   font-size: 0.80952rem;
   line-height: 1.2381rem;
-  font-style: italic;
-  margin-bottom: 0;
-  padding-left: 6.80952rem; }
+  margin-bottom: 0; }
 
 .p-category {
   font-size: 0.61905rem;
@@ -495,6 +495,13 @@ pre {
   text-transform: uppercase; }
   .p-category:before {
     content: ' | '; }
+
+.history-link {
+  float: right;
+  font-style: italic; }
+
+.interview-title {
+  margin: 0; }
 
 .blog-archive, .tag-archive {
   margin-top: 1.2381rem; }

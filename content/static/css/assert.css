@@ -174,9 +174,11 @@ h2 {
       line-height: 1.85714rem; } }
 
 h3 {
-  margin-bottom: 1.2381rem;
-  text-transform: uppercase;
-  letter-spacing: .01em; }
+  margin-bottom: 1.2381rem; }
+  @media (min-width: 47.25em) {
+    h3 {
+      font-size: 1.2381rem;
+      line-height: 1.2381rem; } }
 
 h4, strong {
   font-weight: bold; }
@@ -201,20 +203,6 @@ blockquote {
   padding: 0 1.2381rem; }
   blockquote em {
     font-style: normal; }
-  blockquote cite {
-    font-size: 0.61905rem;
-    line-height: 0.61905rem;
-    display: block;
-    font-style: normal;
-    margin-top: 0.61905rem; }
-    blockquote cite:before {
-      content: '—'; }
-    blockquote cite em {
-      font-style: italic; }
-    blockquote cite .pubdate:before, blockquote cite .pubdate:after {
-      content: '['; }
-    blockquote cite .pubdate:after {
-      content: ']'; }
 
 ul, ol, blockquote {
   margin-left: 1.2381rem; }
@@ -226,6 +214,16 @@ ul, ol, blockquote {
         line-height: 1.2381rem;
         margin-bottom: 0.61905rem;
         margin-left: 1.2381rem; } }
+
+cite, .citation {
+  font-size: 0.80952rem;
+  line-height: 1.2381rem;
+  display: block;
+  font-style: normal; }
+  cite:before, .citation:before {
+    content: '—'; }
+  cite em, .citation em {
+    font-style: italic; }
 
 figure {
   margin-bottom: 1.2381rem; }

@@ -44,7 +44,7 @@ and creator of `Susy`_ and `True`_.
 
 .. |head| raw:: html
 
-  <figure>
+  <figure class="headshot">
     <img src="https://www.dropbox.com/s/vo68rb5irzimv65/head.jpg?dl=1" alt="" />
   </figure>
 
@@ -53,58 +53,3 @@ and creator of `Susy`_ and `True`_.
 
   <em><a href="/when/">« Explore The Past</a></em> |
   <em><a href="/what/">See The Future »</a></em>
-
-
-Interviews
-----------
-
-- `Ideas, process, obsolescence, and the iterative <http://mediaarchaeologylab.com/eric-meyer-ideas-process-obsolescence-iterative-interview-mel-hogan/>`_
-  *[by Mél Hogan]*
-
-- `Collaboration, Queer Art, and the Multi-Media Novel <http://www.boulderwritersworkshop.org/2012/08/31/eric-meyer-discusses-collaboration-queer-art-and-his-multi-media-novel/>`_
-  *[by Richard Wall]*
-
-
-Co-belligerents
----------------
-
-I'm fortunate to work with amazing people every day.
-*Daniel Eisenstat* & *Sondra Eby* at Teacup Gorilla;
-*Carl Meyer*, *Jonny Gerig Meyer*, and *Claudina Sarahe* at Oddbird;
-*Jacob Liechty*, *Aaron Liechty* at [WriteyWrite];
-*Julie Rada* at Vicious Trap;
-and *Chris Eppstein*, *Aaron Gray*,
-*Rachel Nabors*, *Jina Bolton*,
-*Tsachi Schlidor*,
-and many others working on open-source projects.
-The list goes on.
-
-Thanks for the training and inspiration:
-*Bruce Hostetler*,
-*Dave Nofzinger*,
-*Susanne Ehst*,
-*Chris Wallace*,
-*Eric Good Kaufmann*,
-*Bryan Falcon*,
-*Don Yost*,
-*Merrill Krabill*,
-*Jerry Peters*,
-*Anne Bogart*,
-*Penny Metropulos*,
-*Eric Kanagy*,
-*Michelle Milne*,
-*Chuck Mee Jr*,
-*Brian Freeland*,
-*Lori DeBoer*,
-*E. Tracy Grinnell*,
-*Michelle Ellsworth*,
-*Caroline Bergvall*,
-*Erin Costello*,
-*Derrick Mund*,
-*Mark Rockswold*,
-*Kenny Storms*,
-*Michael Flatt*,
-*Aaron Angello*,
-and so on.
-
-Thanks to everyone.

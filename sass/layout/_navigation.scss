@@ -1,6 +1,9 @@
 // Navigation
 // ==========
 
+$nav: who what why press;
+
+
 [role="navigation"] {
   @extend %boilerplate;
   @include font-size(small);
@@ -24,7 +27,7 @@
       color: color(focus);
     }
 
-    @each $slug in who what why {
+    @each $slug in $nav {
       .#{$slug} &[href*="#{$slug}"] {
         @include before('/');
         color: color(focus);
@@ -41,7 +44,7 @@
   [role="banner"],
   [role="navigation"] {
     float: left;
-    padding: 0;
+    padding: 0 size(half-shim);
     text-align: left;
     width: 50%;
 

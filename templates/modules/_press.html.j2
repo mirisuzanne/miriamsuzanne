@@ -1,0 +1,15 @@
+{% if config.press %}
+<section class="section section--press">
+  <h2 class="press-title">Other News</h2>
+  {% for item in config.press %}
+    <blockquote class="clipping">
+      <p class="quote">{{ item.quote }}</p>
+      <p class="citation">
+        {{ item.credit }},
+        <a href="{{ item.url }}">{{ item.source }}</a>
+        <time datetime="{{ item.datetime }}" class="pubdate">[{{ item.date }}]</time>
+      </p>
+    </blockquote>
+  {% endfor %}
+</section>
+{% endif %}

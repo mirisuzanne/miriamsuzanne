@@ -4,6 +4,7 @@
 $date-span: size(rhythm)*5;
 
 .section--cal {
+  @include micro-clearfix;
   margin-bottom: size(rhythm);
 }
 
@@ -13,24 +14,30 @@ $date-span: size(rhythm)*5;
 
 .dt-start {
   @include font-size(small);
-  text-align: right;
-  float: left;
   font-style: italic;
-  padding-right: size(shim);
-  width: $date-span;
+
+  @include at(page) {
+    text-align: right;
+    float: left;
+    padding-right: size(shim);
+    width: $date-span;
+  }
+}
+
+.event-details {
+  @include at(page) {
+    padding-left: $date-span + size(shim);
+  }
 }
 
 .p-name {
   margin-bottom: 0;
-  padding-left: $date-span + size(shim);
 }
 
 .p-summary,
 .p-location {
   @include font-size(small);
-  font-style: italic;
   margin-bottom: 0;
-  padding-left: $date-span + size(shim);
 }
 
 .p-category {
@@ -40,4 +47,9 @@ $date-span: size(rhythm)*5;
   color: color(light);
   font-style: normal;
   text-transform: uppercase;
+}
+
+.history-link {
+  float: right;
+  font-style: italic;
 }
