@@ -2,18 +2,18 @@
 // =======
 
 
-@import 'base/base';
+@import 'config/manifest';
 
 
 // Assertions
 // ----------
 
 body {
-  padding: size(rhythm);
+  padding: size('rhythm');
 }
 
 p {
-  margin-bottom: size(shim);
+  margin-bottom: size('shim');
   transition: opacity 300ms;
 
   &:last-child {

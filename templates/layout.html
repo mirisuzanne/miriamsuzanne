@@ -1,27 +1,18 @@
 {% extends "base.html" %}
 
-{% block bodyattrs %}
-  {%- if config.bgimage -%}
-    data-bg="true" style="background-image: url({{ config.bgimage }});"
-  {%- endif -%}
-{% endblock bodyattrs %}
-
-{% block template %}
-
-{% include "_banner.html.j2" %}
-{% include "_nav.html.j2" %}
-
-<section role="main">
-<div class="container">
-  {% block body %}
-
-  {% endblock body %}
+{% block layout %}
+<div data-region="banner">
+  {% include "layout/_banner.html.j2" %}
+  {% include "layout/_nav.html.j2" %}
 </div>
-</section>
 
-<footer role="contentinfo">
-  {% include "_social.html.j2" %}
-  {% include "_colophon.html.j2" %}
+<main data-region="main">
+  {% block body %}{% endblock body %}
+</main>
+
+<footer data-region="contentinfo">
+  {% include "layout/_social.html.j2" %}
+  {% include "layout/_colophon.html.j2" %}
+  {% include "layout/_copyright.html.j2" %}
 </footer>
-
-{% endblock template %}
+{% endblock %}

@@ -1,0 +1,24 @@
+{% import "blog/macros.j2" as blog %}
+
+{%- if not config.hide_title %}
+<header class="page-header">
+  {{ rst.html_title }}
+  {{ blog.byline(ctx) }}
+</header>
+{%- endif %}
+
+{%- for module in config.before -%}
+  {% include module.include %}
+{%- endfor -%}
+
+{% if rst.fragment %}
+  <div class="rst-body section">
+  <div class="container">
+    {{ rst.fragment }}
+  </div>
+  </div>
+{% endif %}
+
+{%- for module in config.after -%}
+  {% include module.include %}
+{%- endfor -%}

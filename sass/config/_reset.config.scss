@@ -1,0 +1,25 @@
+// Sanitize Settings
+// =================
+// https://github.com/10up/sanitize.css
+
+
+$root-font-family: 'CenturyOldStyle', $serif-stack;
+$root-font-size: percentage($base-size / $_browser-default-font-size);
+$root-line-height: size('rhythm', em);
+$root-text-rendering: auto;
+
+$monospace-font-family: $mono-stack;
+
+$html-background-color: color('background');
+$html-color: color('text');
+
+$selection-background-color: color('action');
+$selection-color: contrast('action');
+
+$small-font-size: size('small');
+
+
+// @@@ temporary
+::selection {
+  color: $selection-color;
+}

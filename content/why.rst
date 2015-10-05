@@ -1,5 +1,5 @@
 public: yes
-bodyclasses: why
+location: why
 
 
 notes towards a queer art.

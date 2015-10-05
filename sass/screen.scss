@@ -1,27 +1,8 @@
 // Screen
 // ======
 
-@import 'base/base';
-
-
-// Layout
-// ------
-
-@import 'layout/page';
-@import 'layout/banner';
-@import 'layout/navigation';
-@import 'layout/main';
-@import 'layout/pagination';
-@import 'layout/contentinfo';
-
-
-// Modules
-// -------
-
-@import 'modules/posts';
-@import 'modules/bio';
-@import 'modules/calendar';
-@import 'modules/press';
-@import 'modules/list-pages';
-@import 'modules/inline-demos';
-@import 'modules/pygments';
+@import 'config/manifest';
+@import '../node_modules/sanitize.css/sanitize';
+@import 'patterns/manifest';
+@import 'layout/manifest';
+@import 'components/manifest';

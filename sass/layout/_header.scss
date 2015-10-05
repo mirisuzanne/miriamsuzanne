@@ -1,0 +1,70 @@
+// Site Header
+// ===========
+
+
+[data-region='banner'] {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: size('gutter') 0;
+  text-transform: lowercase;
+  width: size('page');
+}
+
+
+// Banner
+// ------
+
+[role='banner'] {
+  @include font-size('normal');
+  font-style: italic;
+
+  [rel='home'] {
+    #{$link} {
+      @include contrasted('action');
+      display: inline-block;
+      padding: size('half-shim') size('shim');
+      padding-left: calc(50vw + #{size('shim')});
+      transform: translate3d(-50vw, 0, 0);
+      white-space: nowrap;
+    }
+
+    #{$focus} {
+      @include contrasted('title');
+    }
+  }
+}
+
+
+// Navigation
+// ----------
+
+$nav: who what why blog;
+
+[role='navigation'] {
+  @extend %boilerplate;
+  @include font-size('small');
+  padding: size('half-shim') size('shim');
+
+  a {
+    #{$link} {
+      display: inline-block;
+      margin-right: size('shim');
+
+      @include before('+') {
+        display: inline-block;
+        width: .5em;
+      }
+    }
+
+    #{$focus} {
+      @include before('/');
+    }
+
+    @each $slug in $nav {
+      [data-location='#{$slug}'] &[href*='#{$slug}'] {
+        @include before('/');
+        color: color('focus');
+      }
+    }
+  }
+}

@@ -1,30 +1,29 @@
 public: yes
 hide_title: yes
-bodyclasses: who
+location: who
 
 
 Bio
 ===
 
-|head|
-
 **Eric M Suzanne**
-creates web software with `OddBird`_,
+is an author, performer, musician, designer,
+and web developer.
+She is the author of
+`Riding SideSaddle*`_ (a novel on note cards),
+`The Post-Obsolete Book`_ (a performable website),
+and a number of open-source frameworks including
+`Susy`_ and `True`_.
+Formerly
+Artistic Director of `New World Arts`_ &
+Technical Director of `The LIDA Project`_ —
+Eric creates web software with `OddBird`_,
 soundscapes with `Teacup Gorilla`_,
-wordscapes with [WriteyWrite],
-and performance art with `Vicious Trap`_
+words with [WriteyWrite],
+and performances with `Vicious Trap`_
 or the `Denver Poets' Theatre`_.
-Formerly Artistic Director of `New World Arts`_ &
-Technical Director of `The LIDA Project`_,
-Eric is the author of
-`Riding SideSaddle*`_,
-and `The Post-Obsolete Book`_.
-She's an avid open-source contributor —
-organizer of `SassHack Denver`_,
-core developer on `Compass`_,
-and creator of `Susy`_ and `True`_.
 
-|links|
+|head|
 
 .. _Riding SideSaddle*: http://ridingsidesaddle.net
 .. _OddBird: http://oddbird.net/
@@ -47,9 +46,3 @@ and creator of `Susy`_ and `True`_.
   <figure class="headshot">
     <img src="https://www.dropbox.com/s/vo68rb5irzimv65/head.jpg?dl=1" alt="" />
   </figure>
-
-
-.. |links| raw:: html
-
-  <em><a href="/when/">« Explore The Past</a></em> |
-  <em><a href="/what/">See The Future »</a></em>

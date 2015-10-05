@@ -1,0 +1,33 @@
+{% macro figure(gallery) %}
+<figure class="gallery section" {% if gallery.slug %}id="{{ gallery.slug }}"{% endif %}>
+<div class="container">
+  {% include "gallery/_caption.html" %}
+
+  <div class="gallery-body">
+    {% for item in gallery.body -%}
+    {%- if item.image -%}
+    <div class="image gallery-item{% if item.class %} {{ item.class }}{% endif %}">
+      <img src="/static/pictures/{{ item.image }}" {% if item.alt %} alt="{{ item.alt }}"{% endif %} />
+    </div>
+    {%- elif item.video -%}
+    <div class="video gallery-item{% if item.class %} {{ item.class }}{% endif %}">
+      <div class="video-wrap">
+        {{ item.video|safe }}
+      </div>
+    </div>
+    {%- elif item.music -%}
+    <div class="music gallery-item{% if item.class %} {{ item.class }}{% endif %}">
+      {{ item.music|safe }}
+    </div>
+    {%- endif -%}
+    {%- endfor %}
+  </div>
+
+  {% if gallery.citation %}
+  <cite class="gallery-citation">
+    {{ gallery.citation|safe }}
+  </cite>
+  {% endif %}
+</div>
+</figure>
+{% endmacro %}

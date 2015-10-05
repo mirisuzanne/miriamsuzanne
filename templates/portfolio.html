@@ -4,9 +4,9 @@
 
 {% block styles %}
   <link rel="stylesheet" href="/static/css/pages/portfolio.css">
-{% endblock styles %}
+{% endblock %}
 
-{% block template %}
+{% block layout %}
 <header role="banner" id="banner" class="vcard">
   <h1>Spark <span class="amp">&amp;</span> Slip</h1>
   <p class="tagline">An Odd Portfolio</p>
@@ -443,11 +443,10 @@
 
     </div></div>
 </footer><!-- /~contentinfo -->
-
-{% endblock template %}
+{% endblock %}
 
 {% block extrajs %}
   <script src="/static/js/jquery.scrollTo-1.4.2-min.js"></script>
   <script src="/static/js/jquery.viewport.mini.js"></script>
   <script src="/static/js/portfolio.js"></script>
-{% endblock extrajs %}
+{% endblock %}

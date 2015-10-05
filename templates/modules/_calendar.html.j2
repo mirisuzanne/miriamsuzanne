@@ -1,23 +1,15 @@
-{% import "modules/event.macros.html.j2" as e %}
+{% import "modules/event.macros.html.j2" as calendar %}
 
-{% if config.events and (config.show_events == 'future' or config.show_events == 'all') %}
-<section class="section section--cal">
-  <h2 class="cal-title">Upcoming Events</h2>
-  {% for event in config.events %}
-    {{ e.show(event) }}
+{% set events = config.past if module.time == 'past' else config.future %}
+
+{% if events %}
+<section class="section future">
+<div class="container">
+  <h1 class="section-title">the {{ module.time }}</h1>
+
+  {% for event in events %}
+    {{ calendar.show(event) }}
   {% endfor %}
-
-  {% if config.show_events == 'future' %}
-    <a href="/when/" class="history-link">past events »</a>
-  {% endif %}
-</section>
-{% endif %}
-
-{% if config.cv and (config.show_events == 'past' or config.show_events == 'all') %}
-<section class="section section--cv">
-  <h2 class="cal-title">Past Events</h2>
-  {% for event in config.cv %}
-    {{ e.show(event) }}
-  {% endfor %}
+</div>
 </section>
 {% endif %}

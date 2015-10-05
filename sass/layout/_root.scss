@@ -1,0 +1,15 @@
+// Root
+// ====
+
+html,
+body {
+  min-height: 100%;
+}
+
+html {
+  background: linear-gradient(to top left, color('gradient'), color('background') 75%);
+}
+
+:root {
+  font-size: calc(#{percentage(18/16)} + .25vw);
+}

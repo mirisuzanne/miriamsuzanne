@@ -18,11 +18,11 @@
   }
 
   .now {
-    @include font-size(8);
+    @include font-size('page-active');
   }
 
   .context {
-    @include font-size(5);
+    @include font-size('page-count');
     padding: 0 .125em;
   }
 

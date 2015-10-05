@@ -1,0 +1,188 @@
+// Typography
+// ==========
+
+
+a {
+  #{$link} {
+    color: color('action');
+    text-decoration: none;
+  }
+
+  #{$focus} {
+    color: color('focus');
+    text-decoration: underline;
+  }
+}
+
+
+// Ampersand
+// ---------
+
+.amp { @extend %amp; }
+
+
+// Images
+// ------
+
+img { width: 100%; }
+
+
+// Headers
+// -------
+
+h1 {
+  @include font-size('h1');
+
+  a {
+    #{$link} {
+      color: color('title');
+    }
+
+    #{$focus} {
+      color: color('focus');
+    }
+  }
+}
+
+h2 {
+  @include font-size('h2');
+}
+
+h3 {
+  @include font-size('h3');
+  margin-bottom: size('half-shim');
+}
+
+
+// Blocks
+// ------
+
+@mixin pullquote {
+  border-left: size('half-shim') solid color('primary');
+  margin-left: negative('shim') - size('half-shim');
+  padding: 0 size('shim');
+}
+
+h4,
+strong {
+  font-weight: bold;
+}
+
+h5,
+h6,
+em,
+blockquote {
+  font-style: italic;
+}
+
+p,
+ul,
+ol,
+pre,
+blockquote {
+  margin-bottom: size('gutter');
+}
+
+p:empty {
+  display: none;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+blockquote {
+  @include pullquote;
+
+  em {
+    font-style: normal;
+  }
+}
+
+ul,
+ol,
+blockquote {
+  margin-bottom: size('shim');
+
+  ul,
+  ol {
+    margin-left: size('gutter');
+  }
+}
+
+cite,
+.citation {
+  @include before('—');
+  @include font-size('small');
+  display: block;
+  font-style: normal;
+
+  em {
+    font-style: italic;
+  }
+}
+
+
+
+// Figures
+// -------
+
+figure {
+  margin-bottom: size('gutter');
+
+  > a,
+  > img,
+  > .video {
+    display: block;
+    outline: 1px solid color('text');
+    vertical-align: middle;
+  }
+
+  .video {
+    height: 0;
+    padding-top: (1 / (16/9)) * 100%;
+    position: relative;
+
+    * {
+      @include stretch;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+figcaption {
+  @extend %boilerplate;
+  @include font-size('small');
+  background: color('callout');
+  counter-increment: fig;
+  margin-bottom: size('shim');
+  padding: size('shim');
+
+  &:before {
+    @extend %body;
+    color: color('title');
+    content: 'fig.' counter(fig);
+    font-style: italic;
+    margin-right: .4em;
+  }
+}
+
+
+// Code
+// ----
+
+tt,
+code,
+pre {
+  @extend %mono;
+  @include font-size('small');
+}
+
+pre {
+  @include pullquote;
+}

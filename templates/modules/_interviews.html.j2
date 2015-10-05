@@ -1,12 +1,14 @@
 {% if config.interviews %}
-<section class="section section--interviews">
-  <h2 class="interviews-title">Interviews</h2>
+<section class="section interviews">
+<div class="container">
+  <h1 class="section-title">Interviews</h1>
+
   <ul class="interview-list">
     {% for item in config.interviews %}
       <li class="interview">
-        <h3 class="interview-title">
+        <h2 class="interview-title">
           <a href="{{ item.url }}">{{ item.title }}</a>
-        </h3>
+        </h2>
         <p class="citation">
           {{ item.credit }},
           {{ item.source }}
@@ -15,5 +17,6 @@
       </li>
     {% endfor %}
   </ul>
+</div>
 </section>
 {% endif %}

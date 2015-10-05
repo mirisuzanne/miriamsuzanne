@@ -1,0 +1,28 @@
+// Colors
+// ======
+
+@import '../../node_modules/accoutrement-color/sass/color';
+
+
+$colors: (
+  'white': #fff,
+  'gray': hsl(0, 0%, 50%),
+  'blue': hsl(195, 100%, 50%),
+  'red': hsl(0, 100%, 50%),
+  'pink': hsl(330, 100%, 50%),
+
+  'background': 'white',
+  'gradient': 'gray' ('tint': 80%),
+  'text': 'gray' ('shade': 50%),
+  'light': 'gray' ('tint': 15%),
+
+  'primary': 'pink',
+  'callout': 'primary' ('tint': 90%),
+  'accent': 'blue' ('shade': 15%),
+
+  'action': 'primary',
+  'focus': 'accent',
+
+  'title': 'action' ('shade': 15%),
+  'border': 'title',
+);

@@ -1,34 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
+{% extends "base.html" %}
 
-  <!-- Page Info -->
-  <title>{{ rst.title }} | Eric M. Suzanne</title>
+{% block styles %}
+<link rel="stylesheet" href="/static/css/assert.css" />
+{% endblock %}
 
-  <!-- Site Info -->
-  <meta name="author" content="{{ config.author }}" />
-  <meta name="language" content="en-us" />
-
-  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
-  <meta http-equiv="cleartype" content="on">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="viewport" content="initial-scale=1">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="/static/css/assert.css" />
-
-</head>
-<body>
-
+{% block template %}
 <main>
   {{ rst.fragment }}
 </main>
+{% endblock %}
 
-<script src="/static/js/jquery-1.7.2.js"></script>
-
+{% block extrajs %}
 <script>
   var saySomething = function(what, where, when) {
     var also = [
@@ -55,6 +37,4 @@
 
   saySomething(what, where, when);
 </script>
-
-</body>
-</html>
+{% endblock %}

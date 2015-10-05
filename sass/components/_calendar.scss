@@ -1,0 +1,42 @@
+// Calendar
+// --------
+
+$date-span: size(rhythm)*5;
+
+.section--cal {
+  @include micro-clearfix;
+  margin-bottom: size(rhythm);
+}
+
+.h-event {
+  margin-bottom: size(shim);
+}
+
+.dt-start {
+  @include font-size(small);
+  font-style: italic;
+}
+
+.p-name {
+  margin-bottom: 0;
+}
+
+.p-summary,
+.p-location {
+  @include font-size(small);
+  margin-bottom: 0;
+}
+
+.p-category {
+  @extend %boilerplate;
+  @include wrap-content('[' ']');
+  @include font-size(smaller);
+  color: color(light);
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.history-link {
+  float: right;
+  font-style: italic;
+}

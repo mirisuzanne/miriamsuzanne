@@ -1,27 +1,22 @@
 // Contentinfo
 // ===========
 
-[role="contentinfo"] {
+[data-region="contentinfo"] {
   @extend %boilerplate;
-  @include font-size(small);
+  @include font-size('smaller', .75);
+  border-top: 2px dotted color('border');
   clear: both;
   color: color('gray');
-  padding: size(rhythm) 0;
+  margin: size('spacer') auto 0;
+  max-width: size('page');
+  padding: size('half-shim') size('shim') size('spacer');
   text-transform: uppercase;
 }
 
 .social {
-  @include font-size(smaller);
-  text-align: center;
-
-  li {
-    display: inline-block;
-    margin: 0 size(half-shim);
+  a + a {
+    @include before(' | ') {
+      color: color('gray');
+    }
   }
-}
-
-.colophon {
-  margin: 0 auto;
-  max-width: size(page);
-  padding: 0 size(gutter);
 }
