@@ -1,5 +1,5 @@
 public: yes
-before:
+after:
   - include: 'gallery/_gallery.html'
 gallery:
   - body:

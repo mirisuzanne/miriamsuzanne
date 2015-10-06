@@ -46,6 +46,7 @@ h1 {
 
 h2 {
   @include font-size('h2');
+  margin-bottom: size('shim');
 }
 
 h3 {
@@ -60,7 +61,7 @@ h3 {
 @mixin pullquote {
   border-left: size('half-shim') solid color('primary');
   margin-left: negative('shim') - size('half-shim');
-  padding: 0 size('shim');
+  padding: size('shim');
 }
 
 h4,
@@ -106,8 +107,6 @@ blockquote {
 ul,
 ol,
 blockquote {
-  margin-bottom: size('shim');
-
   ul,
   ol {
     margin-left: size('gutter');
@@ -185,4 +184,6 @@ pre {
 
 pre {
   @include pullquote;
+  margin-top: size('gutter');
+  margin-bottom: size('gutter');
 }

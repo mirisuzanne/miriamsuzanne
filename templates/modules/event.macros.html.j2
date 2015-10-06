@@ -1,31 +1,91 @@
 {% macro show(event) %}
   <article class="h-event">
-    {% if event.date %}
-    <time class="dt-start" {% if event.datetime %}datetime="{{ datetime }}"{% endif %}>
-      {{ event.date }}
-    </time>
-    {% endif %}
-
-    <div class="event-details">
-      <h3 class="p-name">
-        {% if event.url %}
-          <a href="{{ event.url }}" class="u-url">{{ event.name|safe }}</a>
-        {% else %}
-          {{ event.name|safe }}
-        {% endif %}
-      </h3>
-
-      <p class="p-summary">
-        {{ event.summary|safe }}
-
-        {% if event.type %}
-        <span class="p-category">{{ event.type }}</span>
-        {% endif %}
-      </p>
-
-      <p class="p-location">
-        {{ event.location|safe }}
-      </p>
-    </div>
+    {{ name(event.name, event.url, event.org) }}
+    {{ time(event.date, event.datetime) }}
+    {{ type(event.type, event.role) }}
+    {{ summary(event.summary, event.with, event.venue) }}
+    {{ notes(event.notes) }}
   </article>
+{% endmacro %}
+
+{% macro time(date, datetime) %}
+{% if date %}
+  <time class="dt-start" {% if datetime %}datetime="{{ datetime }}"{% endif %}>
+    {{ date }}
+  </time>
+{% endif %}
+{% endmacro %}
+
+{% macro name(title, url, org) %}
+<h3 class="p-name">
+  {% if org %}
+    <strong class="org">{{ link(org.name, org.url) }}:</strong>
+    <span class="title">{{ link(title, url, class='u-url') }}</span>
+  {% else %}
+    <strong class="title">{{ link(title, url, class='u-url') }}</strong>
+  {% endif %}
+</h3>
+{% endmacro %}
+
+{% macro type(category, role) %}
+{% if role %}
+  <strong class="role">
+    {{ role|safe }}
+  </strong>
+{% endif %}
+{% if category %}
+  <span class="p-category">
+    {{ category|safe }}
+  </span>
+{% endif %}
+{% endmacro %}
+
+{% macro summary(content, with, venue) %}
+{% if content or with %}
+  <p class="p-summary">
+    <span class="summary">{{ content|safe }}</span>
+    {{ collaborators(with) }}
+    {{ location(venue) }}
+  </p>
+{% endif %}
+{% endmacro %}
+
+{% macro collaborators(with) %}
+{% if with %}
+  with
+  <span class="with">
+    {% for org in with %}
+      {% set after='' if loop.last else ',' %}
+      {% if loop.last and loop.index > 1 %}and{% endif %}
+      {{ link(org.name, org.url) }}{{ after }}
+    {% endfor %}
+  </span>
+{% endif %}
+{% endmacro %}
+
+{% macro location(venue) %}
+{% if venue %}
+  at
+  <span class="p-location">
+    {{ link(venue.name, venue.url) }}{%- if venue.adr -%}, {{ venue.adr }}{% endif %}
+  </span>
+{% endif %}
+{% endmacro %}
+
+{% macro link(content, url, class=none) %}
+{%- if url -%}
+  <a href="{{ url }}" {% if class %}class="{{ class }}"{% endif %}>{{ content|safe }}</a>
+{%- else -%}
+  {{ content|safe }}
+{%- endif -%}
+{% endmacro %}
+
+{% macro notes(content) %}
+{% if content %}
+<ul class="notes">
+  {% for note in content %}
+    <li>{{ link(note.name, note.url) }}</li>
+  {% endfor %}
+</ul>
+{% endif %}
 {% endmacro %}

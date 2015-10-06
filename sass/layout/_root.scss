@@ -13,3 +13,7 @@ html {
 :root {
   font-size: calc(#{percentage(18/16)} + .25vw);
 }
+
+* {
+  background: transparent;
+}

@@ -1,0 +1,22 @@
+// Feature
+// =======
+
+.feature {
+  background: no-repeat scroll center;
+  background-size: cover;
+  padding-top: percentage(1/2);
+
+  .container {
+    border: 0;
+    margin: 0 auto;
+    padding: size('shim');
+
+    @include below('page') {
+      background: color('overlay');
+    }
+  }
+
+  + .module .container {
+    border-top: 0;
+  }
+}

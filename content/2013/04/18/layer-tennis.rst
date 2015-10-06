@@ -1,5 +1,21 @@
 public: yes
 tags: [design, exit strata, layer tennis, process]
+after:
+  - include: 'gallery/_gallery.html'
+gallery:
+  - body:
+    - image: 'tennis/volley1.jpg'
+    - image: 'tennis/volley2.jpg'
+    - image: 'tennis/volley3.jpg'
+      class: full
+    - image: 'tennis/volley4.jpg'
+    - image: 'tennis/volley5.jpg'
+    - image: 'tennis/volley6.jpg'
+      class: full
+    - image: 'tennis/volley7.jpg'
+    - image: 'tennis/volley8.jpg'
+    - image: 'tennis/volley9.jpg'
+    - image: 'tennis/volley10.jpg'
 summary: |
   |6|
 
@@ -63,23 +79,17 @@ the thankless task of posting it all online,
 since the rest of us were pre-occupied with
 writing & designing under pressure.
 
+The battle took place on Sunday afternoon.
+The full experience is still available
+on the `Exit Strata blog`_,
+but here are the volleys:
+
 .. _Layer tennis: http://layertennis.com/
 .. _Coudal Partners: http://www.coudal.com/
 .. _Aaron Liechty: http://aaronliechty.tumblr.com/
 .. _Jacob Liechty: http://jacobliechty.tumblr.com/
 .. _Sondra Eisenstat: http://sondraedesign.tumblr.com/
-
-In Brief
---------
-
-The battle took place on Sunday afternoon.
-The full experience is still available
-on the `Exit Strata blog`_,
-but here's a summary:
-
 .. _Exit Strata blog: http://www.exitstrata.com/layer-tennis-live-stream-print-vol-3-ole/
-
-|gallery|
 
 .. |10| raw:: html
 
@@ -91,43 +101,4 @@ but here's a summary:
 
   <figure>
     <img src="/static/pictures/tennis/volley8.jpg" alt="volley 8" />
-  </figure>
-
-.. |gallery| raw:: html
-
-  <figure class="gallery">
-    <img src="/static/pictures/tennis/volley1.jpg" alt="volley 1" />
-    <img src="/static/pictures/tennis/volley2.jpg" alt="volley 2" />
-  </figure>
-
-  <figure>
-    <img src="/static/pictures/tennis/volley3.jpg" alt="volley 3" />
-    <figcaption>
-      "This is Aaron on his A-game, and it’s formidable to watch."
-      — Jacob
-    </figcaption>
-  </figure>
-
-  <figure class="gallery">
-    <img src="/static/pictures/tennis/volley4.jpg" alt="volley 4" />
-    <img src="/static/pictures/tennis/volley5.jpg" alt="volley 5" />
-  </figure>
-
-  <figure>
-    <img src="/static/pictures/tennis/volley6.jpg" alt="volley 6" />
-    <figcaption>
-      "A naked display of creative aggression."
-      — Jacob
-    </figcaption>
-  </figure>
-
-  <figure class="gallery">
-    <img src="/static/pictures/tennis/volley7.jpg" alt="volley 7" />
-    <img src="/static/pictures/tennis/volley8.jpg" alt="volley 8" />
-    <img src="/static/pictures/tennis/volley9.jpg" alt="volley 9" />
-    <img src="/static/pictures/tennis/volley10.jpg" alt="volley 10" />
-    <figcaption>
-      "Pieces from the course of this long afternoon."
-      — Jacob
-    </figcaption>
   </figure>

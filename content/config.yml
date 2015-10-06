@@ -1,4 +1,5 @@
 ---
+
 # feature
 feature:
   - name: 'Riding SideSaddle*'
@@ -9,12 +10,23 @@ feature:
 
 # future
 future:
-  - name: 'SassConf 2015'
-    summary: 'TBA'
-    url: 'http://sassconf.com/'
+  - name: 'SideSaddle* Installation'
+    date: 'Oct-Nov, 2015'
+    datetime: '2015-10-11'
+    role: 'writer & artist'
+    type: 'gallery installation'
+    org:
+      name: 'Huckleberry Roasters'
+      url: 'http://huckleberryroasters.com/'
+
+  - name: 'Towards a Queer Web'
     date: 'Nov. 11-13, 2015'
     datetime: '2015-11-11'
-    type: 'moderated discussion'
+    role: 'moderator'
+    type: 'discussion'
+    org:
+      name: 'SassConf 2015'
+      url: 'http://sassconf.com/'
 
 
 # press
@@ -104,292 +116,337 @@ media:
 
 # past
 past:
-  - name: 'Clyfford Still Museum: ReTriplicate'
-    summary: 'with Buntport Theater, Hoarded Stuff, and Screw Tooth'
-    url: 'https://clyffordstillmuseum.org/'
+  - name: 'Road to SassConf'
+    url: 'https://www.youtube.com/watch?v=jkVgp-GfQXc'
+    date: 'Oct 1, 2015'
+    datetime: '2014-03-13'
+    type: 'podcast'
+    org:
+      name: 'SassBites'
+      url: 'https://www.youtube.com/user/sassbites'
+
+  - name: 'ReTriplicate'
+    url: 'https://clyffordstillmuseum.org/event/performance-retriplicate-2015-09-25/2015-09-24/'
     date: 'Sept. 24-26, 2015'
     datetime: '2015-09-24'
-    type: 'music/performance'
+    role: 'musician'
+    type: 'multimedia performance'
+    org:
+      name: 'Clyfford Still Museum'
+      url: 'https://clyffordstillmuseum.org/'
+    with:
+      - name: 'Buntport Theater'
+        url: 'http://buntport.com'
+      - name: 'Hoarded Stuff'
+        url: 'http://lauraannsamuelson.com/LAURA_ANN_SAMUELSON/about.html'
+      - name: 'Screw Tooth'
+        url: 'http://screwtooth.com'
 
   - name: 'The In-Between'
     url: 'http://www.julierada.com/#/the-in-between/'
     date: 'Sept. 6, 2015'
     datetime: '2015-09-06'
-    type: 'performance'
-    with:
-      - name: 'Vicious Trap'
-        url: 'http://vicioustrap.com'
+    type: 'site specific theatre'
+    role: 'writer & performer'
+    org:
+      name: 'Vicious Trap'
+      url: 'http://vicioustrap.com'
     venue:
-      - name: 'Rio Mesa Center'
-        adr: 'Utah'
+      name: 'Rio Mesa Center, Utah'
 
-  - name: 'Frontend Conference, Zurich'
-    summary: 'Sassy Toolkits'
-    url: 'http://frontendconf.ch'
+  - name: 'Sassy Toolkits'
+    url: 'http://oddbooksapp.com/book/sassy-toolkits'
     date: 'Aug. 27-28, 2015'
     datetime: '2015-08-28'
-    type: 'talk'
-    notes:
-      - name: 'Slides'
-        url: 'http://oddbooksapp.com/book/sassy-toolkits'
+    role: 'speaker'
+    type: 'conference'
+    org:
+      name: 'Frontend Conference, Zurich'
+      url: 'http://frontendconf.ch'
 
-  - name: 'The Holes They Leave [Midwest Tour]'
-    summary: 'Hybrid album/book-release tour'
+  - name: 'The Holes They Leave Tour'
     url: 'http://www.teacupgorilla.com/2015/08/01/tour/'
     date: 'Aug. 1-14, 2015'
     datetime: '2015-08-01'
-    type: 'music/poetry'
-    with:
-      - name: 'Teacup Gorilla'
-        url: 'http://teacupgorilla.com'
+    role: 'musician & poet'
+    type: 'hybrid album & book-release tour'
+    org:
+      name: 'Teacup Gorilla'
+      url: 'http://teacupgorilla.com'
 
   - name: 'Fucking Fabulous Fiction Festival'
     url: 'http://www.theorientaltheater.com/event/214770/fiction-fest'
     date: 'July 31, 2015'
     datetime: '2015-07-31'
-    type: 'music/poetry'
+    role: 'poet'
+    type: 'festival'
     with:
       - name: 'High Fiction'
         url: 'http://highfiction.com/'
       - name: 'BookBar'
         url: 'http://bookbardenver.com/'
     venue:
-      - name: 'Oriental Theater'
-        url: 'http://www.theorientaltheater.com/'
-        adr: 'Denver, CO'
+      name: 'Oriental Theater'
+      url: 'http://www.theorientaltheater.com/'
 
   - name: 'Underground Music Showcase'
-    summary: 'Colorado’s premier indie music festival'
     url: 'http://theums.com/artist/teacup-gorilla/'
     date: 'July 23-26, 2015'
     datetime: '2015-07-23'
-    type: 'music'
+    role: 'musician'
+    type: 'festival'
+    org:
+      name: 'Teacup Gorilla'
+      url: 'http://teacupgorilla.com'
 
   - name: 'The Holes They Leave'
     url: 'https://teacupgorilla.bandcamp.com/album/the-holes-they-leave'
     date: 'July 9, 2015'
     datetime: '2015-07-09'
+    role: 'musician'
     type: 'album'
+    org:
+      name: 'Teacup Gorilla'
+      url: 'http://teacupgorilla.com'
     notes:
-      - name: 'EP Release at Hi Dive with Bad Luck City'
+      - name: '<strong>Hi Dive</strong> EP Release with Bad Luck City'
         url: 'http://www.hi-dive.com/event/864133-teacup-gorilla-denver/'
 
-  - name: 'CSS Summit'
-    summary: 'Sass Map Magic'
-    url: 'http://environmentsforhumans.com/2015/css-summit/'
+  - name: 'Sass Map Magic'
+    url: 'http://oddbooksapp.com/book/sass-map-magic'
     date: 'July 8, 2015'
     datetime: '2015-07-07'
-    type: 'talk'
-    notes:
-      - name: 'Slides'
-        url: 'http://oddbooksapp.com/book/sass-map-magic'
+    role: 'speaker'
+    type: 'online conference'
+    org:
+      name: 'CSS Summit'
+      url: 'http://environmentsforhumans.com/2015/css-summit/'
 
-  - name: 'WordCamp Denver'
-    summary: 'Sassy Toolkits [the WordPress way]'
-    url: 'http://denver.wordcamp.org/2015/'
+  - name: 'Sassy Toolkits [the WordPress way]'
+    url: 'http://oddbooksapp.com/book/sassy-toolkits'
     date: 'June 13-14, 2015'
     datetime: '2015-06-13'
-    type: 'talk'
-    notes:
-      - name: 'Slides'
-        url: 'http://oddbooksapp.com/book/sassy-toolkits'
+    role: 'speaker'
+    type: 'conference'
+    org:
+      name: 'WordCamp Denver'
+      url: 'http://denver.wordcamp.org/2015/'
 
-  - name: 'Future Insights Live'
-    summary: 'Sass Map Magic'
-    url: 'https://futureinsightslive.com/las-vegas-2015/'
+  - name: 'Sass Map Magic'
+    url: 'http://oddbooksapp.com/book/sass-map-magic'
     date: 'June 1-4, 2015'
     datetime: '2015-06-01'
-    type: 'talk'
-    notes:
-      - name: 'Slides'
-        url: 'http://oddbooksapp.com/book/sass-map-magic'
+    role: 'speaker'
+    type: 'conference'
+    org:
+      name: 'Future Insights Live'
+      url: 'https://futureinsightslive.com/las-vegas-2015/'
 
   - name: 'Riding SideSaddle*'
     url: 'http://ridingsidesaddle.net'
     date: 'April 2, 2015'
     datetime: '2015-04-02'
+    role: 'author'
     type: 'hybrid novel'
-    with:
-      - name: 'SpringGun Press'
-        url: 'http://springgunpress.com'
+    org:
+      name: 'SpringGun Press'
+      url: 'http://springgunpress.com'
 
-  - name: 'BlendConf'
-    summary: 'The Magic of Sassy Maps'
-    url: 'http://2014.blendconf.com/'
+  - name: 'The Magic of Sassy Maps'
+    url: 'http://oddbooksapp.com/book/sass-map-magic'
     date: 'Sept. 11–13, 2014'
     datetime: '2014-09-11'
-    type: 'talk'
+    role: 'speaker'
+    type: 'conference'
+    org:
+      name: 'BlendConf'
+      url: 'http://2014.blendconf.com/'
     notes:
-      - name: 'Slides'
-        url: 'http://oddbooksapp.com/book/sass-map-magic'
+      - name: 'watch the video'
+        url: 'http://teamtreehouse.com/library/sass-map-magic'
 
   - name: 'PROPHETIA VETITUM MUNDI'
-    url: 'http://www.screwtooth.com'
+    url: '/2014/08/19/screwtooth/'
     date: 'Aug. 2-8, 2014'
     datetime: '2014-08-02'
+    role: 'visual artist'
     type: 'installation'
-    with:
-      - name: 'Screw Tooth'
-        url: 'http://www.screwtooth.com/'
+    org:
+      name: 'Screw Tooth'
+      url: 'http://www.screwtooth.com/'
 
-  - name: 'Hold the Light: 2014 ELO Conference'
-    summary: 'The Post-Obsolete Book'
-    url: 'http://conference.eliterature.org/archive/2014'
+  - name: 'The Post-Obsolete Book'
+    url: '/2014/08/04/post-obsolete/'
     date: 'June 19, 2014'
     datetime: '2014-06-19'
-    type: 'installation/performance'
-    venue:
-      - name: 'University of Wisconsin-Milwaukee'
-        adr: 'Milwaukee, WI'
+    role: 'poet & performer'
+    type: 'conference/installation'
+    org:
+      name: '2014 ELO Conference'
+      url: 'http://conference.eliterature.org/archive/2014'
 
   - name: 'Bouldering Poets: Two Year Anniversary'
-    summary: 'with Alan Mudd, Teacup Gorilla, and Chris Shugrue'
     url: 'http://boulderingpoets.wordpress.com/2014/04/07/may-17-2014-two-year-anniversary/'
     date: 'May 17, 2014'
     datetime: '2014-05-17'
-    type: 'poetry/music'
+    role: 'poet & musician'
+    type: 'reading'
+    with:
+      - name: 'Alan Mudd'
+      - name: 'Teacup Gorilla'
+        url: 'http://teacupgorilla.com'
+      - name: 'Chris Shugrue'
 
-  - name: 'Bmore Sass'
-    summary: 'DISusy: your layout, our math'
-    url: 'http://bmore-sass.com/'
+  - name: 'DISusy: your layout, our math'
+    url: 'http://www.ericsuzanne.com/pres/susy2/index.html'
     date: 'April 24, 2014'
     datetime: '2014-04-24'
-    type: 'talk'
-    notes:
-      - name: 'Slides'
-        url: 'http://www.ericsuzanne.com/pres/susy2/index.html'
+    role: 'speaker'
+    type: 'meetup'
+    org:
+      name: 'Bmore Sass'
+      url: 'http://bmore-sass.com/'
 
-  - name: 'CampSass'
-    summary: 'Show Your Work & Share Your Toys'
-    url: 'http://campsass.com/'
+  - name: 'Show Your Work & Share Your Toys'
+    url: 'http://www.ericsuzanne.com/pres/show-yr-work/index.html'
     date: 'April 19, 2014'
     datetime: '2014-04-19'
-    type: 'talk'
-    notes:
-      - name: 'Slides'
-        url: 'http://www.ericsuzanne.com/pres/show-yr-work/index.html'
+    role: 'speaker'
+    type: 'conference'
+    org:
+      name: 'CampSass'
+      url: 'http://campsass.com/'
 
-  - name: 'The Mixin'
-    summary: 'DISusy: your layout, our math'
-    url: 'https://themixin.eventbrite.com/'
+  - name: 'DISusy: your layout, our math'
+    url: 'http://www.ericsuzanne.com/pres/susy2/index.html'
     date: 'April 16, 2014'
     datetime: '2014-04-16'
-    type: 'talk'
-    notes:
-      - name: 'Slides'
-        url: 'http://www.ericsuzanne.com/pres/susy2/index.html'
+    role: 'speaker'
+    type: 'meetup'
+    org:
+      name: 'The Mixin'
+      url: 'https://themixin.eventbrite.com/'
 
-  - name: 'SassBites'
-    summary: 'Susy Grids 2.0'
+  - name: 'Susy Grids 2.0'
     url: 'bit.ly/SassBites29'
     date: 'March 13, 2014'
     datetime: '2014-03-13'
     type: 'podcast'
+    org:
+      name: 'SassBites'
+      url: 'https://www.youtube.com/user/sassbites'
 
-  - name: 'NYC Sass & Compass Meetup'
-    summary: 'Organizing Sass Partials'
-    url: 'http://www.meetup.com/nyc-sass/events/146898452/'
+  - name: 'Organizing Sass Partials'
+    url: 'http://www.ericsuzanne.com/pres/sass-partials/index.html'
     date: 'Nov. 2013'
     datetime: '2013-11-01'
-    type: 'talk'
-    notes:
-      - name: 'Slides'
-        url: 'http://www.ericsuzanne.com/pres/sass-partials/index.html'
+    role: 'speaker'
+    type: 'meetup'
+    org:
+      name: 'NYC Sass & Compass Meetup'
+      url: 'http://www.meetup.com/nyc-sass/events/146898452/'
 
   - name: 'Bad Shadow Affair'
     url: 'http://badshadowaffair.blogspot.com/2013/11/november-16th-douglas-cook-meyer.html'
     date: 'Nov. 2013'
     datetime: '2013-10-01'
-    type: 'music/poetry'
+    role: 'poet & musician'
+    type: 'reading'
     with:
       - name: 'Teacup Gorilla'
         url: 'http://teacupgorilla.com'
       - name: 'Marcia Douglas'
       - name: 'Matt Cook'
 
-  - name: 'SassConf'
-    summary: 'Show Your Work & Share Your Toys'
-    url: 'https://vimeo.com/channels/sassconf2013/86306775'
+  - name: 'Show Your Work & Share Your Toys'
+    url: 'http://www.ericsuzanne.com/pres/show-yr-work/index.html'
     date: 'Oct. 2013'
     datetime: '2013-10-01'
-    type: 'talk'
+    role: 'speaker'
+    type: 'conference'
+    org:
+      name: 'SassConf'
     notes:
-      - name: 'Slides'
-        url: 'http://www.ericsuzanne.com/pres/show-yr-work/index.html'
+      - name: 'watch the video'
+        url: 'https://vimeo.com/channels/sassconf2013/86306775'
 
-  - name: 'Brakhage Center Media Arts Lunchtime Series'
-    summary: 'Art is for People'
-    url: 'http://brakhagecenter.com/?p=932'
+  - name: 'Art is for People'
+    url: '/art-is-for-people/'
     date: 'Oct. 2013'
     datetime: '2013-10-01'
-    type: 'talk'
-    notes:
-      - name: 'Slides'
-        url: '/art-is-for-people/'
+    role: 'speaker'
+    type: 'lunchtime series'
+    org:
+      name: 'Brakhage Center Media Arts'
+      url: 'http://brakhagecenter.com/?p=932'
 
   - name: 'The Operating System PRINT! vol. 3'
     url: 'http://www.theoperatingsystem.org/layer-tennis-live-stream-print-vol-3-ole/'
     date: 'Nov. 2013'
     datetime: '2013-10-01'
     type: 'literary journal'
-    role: 'designer/contributor'
+    role: 'designer & poet'
 
   - name: 'Digital Art'
     date: 'Sept. 2013'
     datetime: '2013-09-01'
-    type: 'guest lecture'
+    role: 'guest lecture'
+    type: 'university'
     with:
-      - name: 'Erin Costello [professor]'
+      - name: 'professor Erin Costello'
     venue:
-      - name: 'Colorado University'
-        url: 'Boulder, CO'
+      name: 'Colorado University'
 
-  - name: '<span class="amp">&</span>Now Festival'
-    summary: 'Making a Small Press Work'
+  - name: 'Making a Small Press Work'
     date: 'Sept. 2013'
     datetime: '2013-09-01'
-    type: 'panel moderator'
-    venue:
-      - name: 'Colorado University'
-        url: 'Boulder, CO'
+    role: 'moderator'
+    type: 'panel'
+    org:
+      name: '<span class="amp">&</span>Now Festival'
 
-  - name: 'Media Archeology Lab | <span class="amp">&</span>Now Festival'
-    summary: 'The Post-Obsolete Book'
+  - name: 'Artist in Residence'
     url: 'http://mediaarchaeologylab.com/eric-meyer-2/'
     date: 'Sept. 2013'
     datetime: '2013-09-01'
-    type: 'residency/performance'
+    type: 'residency & performance'
+    org:
+      name: 'Media Archeology Lab'
+      url: 'http://mediaarchaeologylab.com'
     venue:
-      - name: 'Colorado University'
-        url: 'Boulder, CO'
+      name: '<span class="amp">&</span>Now Festival'
 
-  - name: 'SpringGun Journal, Issue 8'
-    summary: 'The Post-Obsolete Book'
-    url: 'http://www.springgunpress.com/issue-8-2013/'
+  - name: 'The Post-Obsolete Book'
+    url: 'http://www.springgunpress.com/issue-8-2013/eric-meyer/'
     date: 'Sept. 2013'
     datetime: '2013-09-01'
+    role: 'poet & developer'
     type: 'digital poetry'
+    org:
+      name: 'SpringGun Journal, Issue 8'
+      url: 'http://www.springgunpress.com/issue-8-2013/'
 
   - name: 'Intro to Digital Media for Humanities'
     date: 'Aug. 2013'
     datetime: '2013-08-01'
-    type: 'guest lecture'
+    role: 'guest lecture'
+    type: 'university'
     with:
-      - name: 'Lori Emerson [professor]'
+      - name: 'professor Lori Emerson'
     venue:
-      - name: 'Colorado University'
-        url: 'Boulder, CO'
+      name: 'Colorado University'
 
   - name: 'Boulder Writer’s Workshop'
     url: 'http://www.boulderwritersworkshop.org/2013/04/17/post-obsolete-a-bww-salon/'
     date: 'April 2013'
     type: 'literary salon'
-    role: 'host/performer'
+    role: 'host & performer'
 
   - name: 'Bouldering Poets'
     url: 'https://boulderingpoets.wordpress.com/2013/04/01/march-photos/'
     date: 'March 2013'
-    type: 'poetry/music'
+    role: 'poet & musician'
+    type: 'reading'
     with:
       - name: 'Teacup Gorilla'
         url: 'http://teacupgorilla.com'
@@ -397,250 +454,264 @@ past:
       - name: 'Georgia Van Gunten'
 
   - name: 'Electronic Literature & the Nonhuman'
-    summary: 'The Post-Obsolete Book'
     url: 'http://eliterature.org/electronic-literature-the-nonhuman/'
     date: 'Sept. 2012'
-    type: 'performance'
-    with:
-      - 'Electronic Literature Organization'
-      - 'The Society for Literature Science and the Arts'
+    role: 'poet & performer'
+    type: 'conference'
+    org:
+      name: 'The Society for Literature Science and the Arts'
 
   - name: 'Leon Presents a Reading Series #6'
     url: 'https://www.facebook.com/events/415657695136519/permalink/417120971656858/'
     date: 'July 2012'
-    type: 'performance/poetry/music'
+    role: 'poet/performer & musician'
+    type: 'reading'
     with:
       - name: 'Teacup Gorilla'
         url: 'http://teacupgorilla.com'
       - name: 'Kelly Dulaney'
 
-  - name: 'HTML5 Denver Users Group'
-    summary: 'What if CSS Made Sense?'
+  - name: 'What if CSS Made Sense?'
     url: 'http://www.meetup.com/HTML5-Denver-Users-Group/events/56361842/'
     date: 'April 2012'
-    type: 'talk'
+    role: 'speaker'
+    type: 'meetup'
+    org:
+      name: 'HTML5 Denver Users Group'
+      url: 'http://www.meetup.com/HTML5-Denver-Users-Group/'
 
   - name: 'Bloody Morbid Humor at Buntport'
-    summary: 'Theater Review for Illiterate Magazine'
     url: 'http://www.illiteratemagazine.com/blog/view/404'
     date: 'June 2010'
+    role: 'reviewer'
     type: 'article'
+    org:
+      name: 'Illiterate Magazine'
+      url: 'http://www.illiteratemagazine.com'
 
   - name: 'The LIDA Project: Mouse in a Jar'
-    summary: 'Theater Review for Illiterate Magazine'
     url: 'http://www.illiteratemagazine.com/blog/view/387'
     date: 'May 2010'
+    role: 'reviewer'
     type: 'article'
+    org:
+      name: 'Illiterate Magazine'
+      url: 'http://www.illiteratemagazine.com'
 
   - name: 'Missa Populi'
-    venue: 'The Packing House Center for the Arts'
     date: 'March 2010'
     type: 'theatre'
-    role: 'writer/director'
+    role: 'writer & director'
     with:
-      - name: 'Vicious Trap'
-        url: 'http://vicioustrap.com'
       - name: 'Teacup Gorilla'
         url: 'http://teacupgorilla.com'
+    org:
+      name: 'Vicious Trap'
+      url: 'http://vicioustrap.com'
+    venue:
+      name: 'The Packing House Center for the Arts'
 
   - name: 'Roller Skating With My Cousin'
     url: 'http://lida.org/?p=48'
     date: 'Jan. 2010'
     type: 'theatre'
     role: 'ensemble member'
-    with:
-      - name: 'The LIDA Project'
-        url: 'http://lida.org'
+    org:
+      name: 'The LIDA Project'
+      url: 'http://lida.org'
 
   - name: 'A Murder One Less'
-    venue: 'The Boulder International Fringe Festival'
     date: 'Aug. 2009'
     type: 'theatre'
     role: 'lighting design'
-    with:
-      - name: 'Vicious Trap'
-        url: 'http://vicioustrap.com'
+    venue:
+      name: 'The Boulder International Fringe Festival'
+    org:
+      name: 'Vicious Trap'
+      url: 'http://vicioustrap.com'
 
   - name: 'Rain /of Terror'
     url: 'http://lida.org/?p=312'
     date: 'Feb. 2009'
     role: 'lighting design'
-    with:
-      - name: 'The LIDA Project'
-        url: 'http://lida.org'
+    org:
+      name: 'The LIDA Project'
+      url: 'http://lida.org'
     notes:
-      - name: 'Denver Post Ovation Award Nomination: best lighting design'
+      - name: '<strong>Denver Post Ovation Award</strong>: [nomination] Best Lighting Design'
         url: 'http://www.denverpost.com/theater/ci_13971871'
 
   - name: 'Kingdom Come'
     url: 'http://www.cdbaby.com/cd/dirtcircledogs'
     date: '2009'
+    role: 'musician'
     type: 'album'
-    with:
-      - name: 'Dirt Circle Dogs'
+    org:
+      name: 'Dirt Circle Dogs'
     notes:
-      - name: 'Onion AV Club Review'
+      - name: '<strong>Onion AV Club</strong> Review'
         url: '/misc/dcd-onion-review/'
 
   - name: 'Untitled #39'
-    summary: 'pre-show act for The Dresden Dolls'
     date: '2008'
-    type: 'performance'
+    role: 'co-creator & performer'
+    type: 'site specific theatre'
     with:
-      - name: 'The LIDA Project'
-        url: 'http://lida.org'
+      - name: 'Dresden Dolls'
+        url: 'http://www.dresdendolls.com/'
+    org:
+      name: 'The LIDA Project'
+      url: 'http://lida.org'
 
   - name: 'The Resistible Rise of Arturo Ui'
     date: '2008'
     role: 'technical director'
     type: 'theatre'
-    with:
-      - name: 'Countdown to Zero'
-        url: 'http://countdowntozero.org/'
+    org:
+      name: 'Countdown to Zero'
+      url: 'http://countdowntozero.org/'
 
   - name: 'Dar al-Harb'
     date: '2008'
     role: 'assistant media designer'
     type: 'theatre'
-    with:
-      - name: 'Theatreworks'
-        url: 'http://www.theatreworkscs.org/'
+    org:
+      name: 'Theatreworks'
+      url: 'http://www.theatreworkscs.org/'
 
   - name: 'The Anonymous Mr. W.'
     date: '2008'
     role: 'assistant director'
     type: 'theatre'
-    with:
-      - name: 'The LIDA Project'
-        url: 'http://lida.org'
+    org:
+      name: 'The LIDA Project'
+      url: 'http://lida.org'
 
   - name: 'My Name Is Rachel Corrie'
     date: '2007'
     role: 'tour manager & technical director'
     type: 'theatre'
-    with:
-      - name: 'Countdown to Zero'
-        url: 'http://countdowntozero.org/'
+    org:
+      name: 'Countdown to Zero'
+      url: 'http://countdowntozero.org/'
 
   - name: 'Bigger Guns III'
     date: '2007'
-    role: 'writer/director'
+    role: 'co-creator & director'
     type: 'theatre'
-    with:
-      - name: 'New World Arts'
-        url: 'http://newworldarts.org/history'
+    org:
+      name: 'New World Arts'
+      url: 'http://newworldarts.org/history'
 
   - name: 'Fear/Falling'
     date: '2006'
     role: 'director'
     type: 'theatre'
-    with:
-      - name: 'New World Arts'
-        url: 'http://newworldarts.org/history'
+    org:
+      name: 'New World Arts'
+      url: 'http://newworldarts.org/history'
 
   - name: 'Danny and the Deep Blue Sea'
     date: '2006'
     role: 'director'
     type: 'theatre'
-    with:
-      - name: 'New World Arts'
-        url: 'http://newworldarts.org/history'
+    org:
+      name: 'New World Arts'
+      url: 'http://newworldarts.org/history'
     notes:
-      - name: 'South Bend Tribune Review'
+      - name: '<strong>South Bend Tribune</strong>: Review'
         url: 'http://articles.southbendtribune.com/2006-09-17/news/26981141_1_danny-and-roberta-dance-characters'
 
   - name: 'Hello and Goodbye'
     date: '2006'
     role: 'director'
     type: 'theatre'
-    with:
-      - name: 'New World Arts'
-        url: 'http://newworldarts.org/history'
+    org:
+      name: 'New World Arts'
+      url: 'http://newworldarts.org/history'
     notes:
-      - name: 'South Bend Tribune Review'
+      - name: '<strong>South Bend Tribune</strong>: Review'
         url: 'http://articles.southbendtribune.com/2006-01-29/news/26962892_1_hester-darkness-athol-fugard'
 
   - name: 'Sadomasochism'
     date: '2005'
-    role: 'writer/director'
+    role: 'writer & director'
     type: 'theatre'
-    with:
-      - name: 'New World Arts'
-        url: 'http://newworldarts.org/history'
+    org:
+      name: 'New World Arts'
+      url: 'http://newworldarts.org/history'
 
   - name: 'In a Time of War'
     date: '2004'
-    role: 'playwright'
+    role: 'writer'
     type: 'theatre'
-    with:
-      - name: 'New World Arts'
-        url: 'http://newworldarts.org/history'
-      - name: 'Goshen College'
-        url: 'http://goshen.edu'
+    org:
+      name: 'New World Arts'
+      url: 'http://newworldarts.org/history'
     notes:
-      - name: 'International Peace Play Contest: Runner Up'
+      - name: '<strong>International Peace Play Contest</strong>: Runner Up'
         url: 'http://www.goshen.edu/theater/peace-play/'
 
   - name: 'Every Other Day'
     date: '2004'
-    role: 'playwright'
+    role: 'writer'
     type: 'theatre/chapbook'
-    with:
-      - name: 'New World Arts'
-        url: 'http://newworldarts.org/history'
-      - name: 'Pinchpenny Press'
+    org:
+      name: 'New World Arts'
+      url: 'http://newworldarts.org/history'
     notes:
-      - name: 'Kennedy Center ACTF Finalist: best one-act play'
+      - name: '<strong>Kennedy Center ACTF</strong>: [finalist] Best One-Act Play'
+      - name: '<strong>Pinchpenny Press</strong>: Chapbook'
 
   - name: 'Criminal Hearts'
     date: '2004'
     role: 'director'
     type: 'theatre'
-    with:
-      - name: 'New World Arts'
-        url: 'http://newworldarts.org/history'
+    org:
+      name: 'New World Arts'
+      url: 'http://newworldarts.org/history'
 
   - name: 'Daffodil MF'
     date: '2003'
-    role: 'playwright'
+    role: 'writer'
     type: 'theatre/film'
-    with:
-      - name: 'New World Arts'
-        url: 'http://newworldarts.org/history'
+    org:
+      name: 'New World Arts'
+      url: 'http://newworldarts.org/history'
     notes:
-      - name: 'shortfilmfest03: audience choice award'
-      - name: 'Kennedy Center ACTF Finalist: best 10-minute play'
+      - name: '<strong>shortfilmfest03</strong>: Audience Choice Award'
+      - name: '<strong>Kennedy Center ACTF</strong>: [finalist] Best 10-Minute Play'
 
   - name: 'A Lie of the Mind'
     date: '2002'
     role: 'lighting design'
     type: 'theatre'
-    with:
-      - name: 'New World Arts'
-        url: 'http://newworldarts.org/history'
+    org:
+      name: 'New World Arts'
+      url: 'http://newworldarts.org/history'
 
   - name: 'The House of Yes'
     date: '2001'
-    role: 'lighting design/assistant director'
+    role: 'lighting design & assistant director'
     type: 'theatre'
-    with:
-      - name: 'New World Arts'
-        url: 'http://newworldarts.org/history'
+    org:
+      name: 'New World Arts'
+      url: 'http://newworldarts.org/history'
 
   - name: 'Danny and the Deep Blue Sea'
     date: '2001'
     role: 'lighting design'
     type: 'theatre'
-    with:
-      - name: 'New World Arts'
-        url: 'http://newworldarts.org/history'
+    org:
+      name: 'New World Arts'
+      url: 'http://newworldarts.org/history'
 
   - name: 'Another Round'
     date: '2001'
     role: 'assistant director'
     type: 'theatre'
-    with:
-      - name: 'Pittsburgh City Theatre 4x5 Festival'
+    org:
+      name: 'Pittsburgh City Theatre 4x5 Festival'
 
 
 # Associations
@@ -713,7 +784,7 @@ education:
 # navigation
 nav:
   - title: 'what'
-    url: '/what/'
+    url: '/'
   - title: 'why'
     url: '/why/'
   - title: 'who'

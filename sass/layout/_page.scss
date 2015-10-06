@@ -17,3 +17,15 @@
   max-width: size('page');
   padding: 0 size('shim');
 }
+
+.page-header {
+  padding-top: size('spacer');
+}
+
+.rst-body {
+  padding-bottom: size('spacer');
+
+  &:first-child {
+    padding-top: size('spacer');
+  }
+}

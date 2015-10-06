@@ -3,10 +3,12 @@
 
 .post {
   @extend %spacer;
-  margin-bottom: size('spacer');
+  padding-top: size('spacer');
 
-  &:last-of-type:after {
-    display: none;
+  &:last-of-type {
+    @include after('') {
+      display: none;
+    }
   }
 }
 
@@ -52,8 +54,4 @@
 
 .section {
   clear: both;
-}
-
-.section-title {
-  text-transform: capitalize;
 }
