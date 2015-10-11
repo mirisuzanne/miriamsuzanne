@@ -3,17 +3,24 @@
 
 .feature {
   background: no-repeat scroll center;
+  background-clip: padding-box;
   background-size: cover;
+  border: 2px dotted color('border');
+  border-width: 2px 0;
   padding-top: percentage(1/2);
+  padding-bottom: size('gutter');
 
   .container {
+    background: color('overlay');
     border: 0;
+    border-radius: size('corners');
     margin: 0 auto;
     padding: size('shim');
+  }
 
-    @include below('page') {
-      background: color('overlay');
-    }
+  .feature-summary {
+    font-style: italic;
+    margin: 0;
   }
 
   + .module .container {

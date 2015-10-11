@@ -602,15 +602,21 @@ html {
 
 .feature {
   background: no-repeat scroll center;
+  background-clip: padding-box;
   background-size: cover;
-  padding-top: 50%; }
+  border: 2px dotted #d9006c;
+  border-width: 2px 0;
+  padding-top: 50%;
+  padding-bottom: 1.45455rem; }
   .feature .container {
+    background: rgba(255, 255, 255, 0.9);
     border: 0;
+    border-radius: 0.13636rem;
     margin: 0 auto;
     padding: 0.72727rem; }
-    @media (max-width: 41.25em) {
-      .feature .container {
-        background: rgba(255, 255, 255, 0.9); } }
+  .feature .feature-summary {
+    font-style: italic;
+    margin: 0; }
   .feature + .module .container {
     border-top: 0; }
 

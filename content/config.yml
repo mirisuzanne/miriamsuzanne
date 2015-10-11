@@ -2,10 +2,10 @@
 
 # feature
 feature:
-  - name: 'Riding SideSaddle*'
-    summary: 'a hybrid novel'
-    url: 'http://ridingsidesaddle.net'
-    image: 'sidesaddle-box.jpg'
+  - name: 'Riding SideSaddle* Installation'
+    summary: 'at Huckleberry Roasters Larimer Cafe'
+    url: '/2015/10/10/huckleberry/'
+    image: 'huck.jpg'
 
 
 # future

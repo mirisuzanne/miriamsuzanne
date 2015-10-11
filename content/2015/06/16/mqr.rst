@@ -1,8 +1,8 @@
 public: yes
 
 
-Michigan Quarterly Interview
-============================
+Michigan Quarterly: Interview
+=============================
 
 |sidesaddle|
 
