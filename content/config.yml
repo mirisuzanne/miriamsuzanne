@@ -833,7 +833,7 @@ author: 'Eric M Suzanne'
 
 # settings
 active_modules: [pygments, tags, blog, typogrify]
-canonical_url: http://ericsuzanne.com/
+canonical_url: http://miriamsuzanne.com/
 output_folder: ../output
 template_path: ../templates
 modules:
