@@ -6,7 +6,7 @@ location: who
 Bio
 ===
 
-**Eric M Suzanne**
+**Eric Miriam Suzanne**
 is an author, performer, musician, designer,
 and web developer.
 She is the author of

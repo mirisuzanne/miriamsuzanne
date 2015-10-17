@@ -298,7 +298,7 @@ past:
       - name: 'Chris Shugrue'
 
   - name: 'DISusy: your layout, our math'
-    url: 'http://www.ericsuzanne.com/pres/susy2/index.html'
+    url: 'http://www.miriamsuzanne.com/pres/susy2/index.html'
     date: 'April 24, 2014'
     datetime: '2014-04-24'
     role: 'speaker'
@@ -308,7 +308,7 @@ past:
       url: 'http://bmore-sass.com/'
 
   - name: 'Show Your Work & Share Your Toys'
-    url: 'http://www.ericsuzanne.com/pres/show-yr-work/index.html'
+    url: 'http://www.miriamsuzanne.com/pres/show-yr-work/index.html'
     date: 'April 19, 2014'
     datetime: '2014-04-19'
     role: 'speaker'
@@ -318,7 +318,7 @@ past:
       url: 'http://campsass.com/'
 
   - name: 'DISusy: your layout, our math'
-    url: 'http://www.ericsuzanne.com/pres/susy2/index.html'
+    url: 'http://www.miriamsuzanne.com/pres/susy2/index.html'
     date: 'April 16, 2014'
     datetime: '2014-04-16'
     role: 'speaker'
@@ -337,7 +337,7 @@ past:
       url: 'https://www.youtube.com/user/sassbites'
 
   - name: 'Organizing Sass Partials'
-    url: 'http://www.ericsuzanne.com/pres/sass-partials/index.html'
+    url: 'http://www.miriamsuzanne.com/pres/sass-partials/index.html'
     date: 'Nov. 2013'
     datetime: '2013-11-01'
     role: 'speaker'
@@ -359,7 +359,7 @@ past:
       - name: 'Matt Cook'
 
   - name: 'Show Your Work & Share Your Toys'
-    url: 'http://www.ericsuzanne.com/pres/show-yr-work/index.html'
+    url: 'http://www.miriamsuzanne.com/pres/show-yr-work/index.html'
     date: 'Oct. 2013'
     datetime: '2013-10-01'
     role: 'speaker'
@@ -797,7 +797,7 @@ nav:
 social:
   - title: email
     icon: mail
-    url: 'mailto:eric(at)ericsuzanne.com'
+    url: 'mailto:eric(at)miriamsuzanne.com'
   - title: feed
     url: 'http://feeds.feedburner.com/ericandmeyer/'
   - title: twitter
@@ -828,7 +828,7 @@ colophon:
 
 # site
 location: what
-author: 'Eric M Suzanne'
+author: 'E. Miriam Suzanne'
 
 
 # settings
