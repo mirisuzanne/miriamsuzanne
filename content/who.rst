@@ -17,7 +17,7 @@ and a number of open-source frameworks including
 Formerly
 Artistic Director of `New World Arts`_ &
 Technical Director of `The LIDA Project`_ —
-Eric creates web software with `OddBird`_,
+Miriam creates web software with `OddBird`_,
 soundscapes with `Teacup Gorilla`_,
 words with [WriteyWrite],
 and performances with `Vicious Trap`_
