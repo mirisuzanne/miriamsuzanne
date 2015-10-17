@@ -44,5 +44,5 @@ or the `Denver Poets' Theatre`_.
 .. |head| raw:: html
 
   <figure class="headshot">
-    <img src="https://www.dropbox.com/s/vo68rb5irzimv65/head.jpg?dl=1" alt="" />
+    <img src="/static/pictures/headshot.jpg" alt="headshot" />
   </figure>
