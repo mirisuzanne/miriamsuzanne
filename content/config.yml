@@ -31,9 +31,31 @@ future:
 
 # press
 press:
+  - quote: "I was just digging everything, and didn't want the night to be over."
+    credit: 'Sam O’Daniel'
+    source: 'Your Older Brother'
+    subject:
+      name: 'Riding SideSaddle* Book Release'
+    url: 'http://www.yourolderbrother.com/2015/07/riding-sidesaddle-with-teacup-gorilla.html'
+    date: 'July 7, 2015'
+    datetime: '2015-07-21'
+
+  - quote: 'The Holes They Leave occupies a middle place that immediately brings solace to the weary ear.'
+    credit: 'Darren Thornberry'
+    source: 'Stubborn Sounds'
+    subject:
+      name: 'The Holes They Leave'
+      url: 'http://teacupgorilla.bandcamp.com/album/the-holes-they-leave'
+    url: 'https://stubbornsounds.wordpress.com/2015/07/07/teacup-gorilla-the-holes-they-leave-in-review/'
+    date: 'July 7, 2015'
+    datetime: '2015-07-07'
+
   - quote: 'One of the most ambitious projects that has come across our desk recently.'
     credit: 'Tim Wenger'
     source: 'Colorado Music Buzz'
+    subject:
+      name: 'Riding SideSaddle*'
+      url: 'http://ridingsidesaddle.com'
     url: 'http://www.colomusicbuzz.com/eric-suzanne-drops-non-linear-novel-in-conjunction-with-teacup-gorilla/'
     date: 'April 1, 2015'
     datetime: '2015-04-01'
@@ -41,6 +63,9 @@ press:
   - quote: 'If you’re interested in reading Sass poetry, be sure to look at Susy’s source code!'
     credit: 'Hugo Giraudel'
     source: 'SitePoint'
+    subject:
+      name: 'Susy'
+      url: 'http://susy.oddbird.net'
     url: 'http://www.sitepoint.com/my-favorite-sass-tools/'
     date: 'April 22, 2014'
     datetime: '2014-04-22'
@@ -48,6 +73,9 @@ press:
   - quote: 'This virtuoso creation by a talented young poet, writer, artist, typographer, programmer, and musician is a taste of things to come as new generations of digital media and code literate creators come of age.'
     credit: 'Leonardo Flores'
     source: 'I ♥ E-Poetry'
+    subject:
+      name: 'Into The Green Green Mud'
+      url: 'http://greengreenmud.com'
     url: 'http://iloveepoetry.com/?p=2571'
     date: 'May 2, 2013'
     datetime: '2013-05-02'
@@ -55,6 +83,9 @@ press:
   - quote: 'I was impressed by the purest form of outrageous creation.'
     credit: 'Judy Rose'
     source: 'Boulder Writer’s Workshop'
+    subject:
+      name: 'The Post-Obsolete Book'
+      url: '/post-obsolete/'
     url: 'http://www.boulderwritersworkshop.org/2013/04/17/post-obsolete-a-bww-salon/'
     date: 'April 17, 2013'
     datetime: '2013-04-17'
@@ -62,6 +93,9 @@ press:
   - quote: 'The album closes with “Static,” a haunting meeting of strings and electronic fuzz with vocalist/drummer Sondra Eisenstat’s lush vocals and spoken word. Eisenstat sings that there is “No voice on the radio,” and perhaps, for now, that’s true. Kingdom, though, is certainly worth a private listen at home.'
     credit: 'Cat Carroll'
     source: 'Onion AV Club'
+    subject:
+      name: 'Kingdom Come'
+      url: 'http://www.cdbaby.com/cd/dirtcircledogs'
     url: 'http://www.avclub.com/'
     date: 'Aug. 14, 2009'
     datetime: '2009-08-14'
@@ -69,6 +103,8 @@ press:
   - quote: 'Rarely does one encounter a production undertaken with such a tremendous amount of care and consideration.'
     credit: 'Jack Walton'
     source: 'South Bend Tribune'
+    subject:
+      name: 'Hello and Goodbye'
     url: 'http://articles.southbendtribune.com/2006-01-29/news/26962892_1_hester-darkness-athol-fugard'
     date: 'Jan. 29, 2006'
     datetime: '2006-01-29'
@@ -471,6 +507,14 @@ past:
         url: 'http://teacupgorilla.com'
       - name: 'Kelly Dulaney'
 
+  - name: 'Naropa Summer Writing Program'
+    date: 'June 2012'
+    role: 'student'
+    with:
+      - name: 'E. Tracy Grinnell'
+      - name: 'Michelle Ellsworth'
+      - name: 'Caroline Bergvall'
+
   - name: 'What if CSS Made Sense?'
     url: 'http://www.meetup.com/HTML5-Denver-Users-Group/events/56361842/'
     date: 'April 2012'
@@ -479,6 +523,17 @@ past:
     org:
       name: 'HTML5 Denver Users Group'
       url: 'http://www.meetup.com/HTML5-Denver-Users-Group/'
+
+  - name: 'Boulder Writers’ Workshop'
+    url: 'http://boulderwritersworkshop.org'
+    date: '2011-2013'
+    role: 'professional member'
+    type: 'literary salon'
+
+  - name: 'Raven Jane'
+    date: '2010-2012'
+    role: 'bass player'
+    type: 'blues rock'
 
   - name: 'Bloody Morbid Humor at Buntport'
     url: 'http://www.illiteratemagazine.com/blog/view/404'
@@ -587,6 +642,18 @@ past:
       name: 'The LIDA Project'
       url: 'http://lida.org'
 
+  - name: 'The LIDA Project'
+    url: 'http://lida.org'
+    date: '2008-2010'
+    role: 'technical director'
+    type: 'theatre'
+
+  - name: 'Countdown to Zero'
+    url: 'http://countdowntozero.org'
+    date: '2008-2010'
+    role: 'technical director'
+    type: 'theatre'
+
   - name: 'My Name Is Rachel Corrie'
     date: '2007'
     role: 'tour manager & technical director'
@@ -594,6 +661,12 @@ past:
     org:
       name: 'Countdown to Zero'
       url: 'http://countdowntozero.org/'
+
+  - name: 'Dirt Circle Dogs'
+    url: 'http://www.cdbaby.com/cd/dirtcircledogs'
+    date: '2007-2010'
+    role: 'bass & guitar'
+    type: 'indie-rock'
 
   - name: 'Bigger Guns III'
     date: '2007'
@@ -682,6 +755,13 @@ past:
       - name: '<strong>shortfilmfest03</strong>: Audience Choice Award'
       - name: '<strong>Kennedy Center ACTF</strong>: [finalist] Best 10-Minute Play'
 
+  - name: 'Antony & Cleopatra'
+    date: '2003'
+    role: 'stage management intern'
+    org:
+      name: 'Oregon Shakespeare Festival'
+      url: 'https://www.osfashland.org/'
+
   - name: 'A Lie of the Mind'
     date: '2002'
     role: 'lighting design'
@@ -689,6 +769,18 @@ past:
     org:
       name: 'New World Arts'
       url: 'http://newworldarts.org/history'
+
+  - name: 'New World Arts'
+    url: 'http://newworldarts.org'
+    date: '2001-2007'
+    role: 'artistic & technical director'
+    type: 'theatre'
+
+  - name: 'Goshen College'
+    date: '2001-2006'
+    summary: 'theater, writing, and visual art'
+    role: 'student'
+    type: 'education'
 
   - name: 'The House of Yes'
     date: '2001'
@@ -719,66 +811,26 @@ orgs:
   - name: 'OddBird LLC'
     url: 'http://oddbird.net'
     date: '2008-present'
-    role: 'founding partner/designer/front-end developer'
+    role: 'founding partner'
+    type: 'web development'
 
   - name: 'Teacup Gorilla'
     url: 'http://teacupgorilla.com'
     date: '2010-present'
-    role: 'lyrics/bass/vocals/guitar'
+    role: 'bass & vocals'
+    type: 'dark indie-rock soundscapes'
 
   - name: 'Vicious Trap'
     url: 'http://vicioustrap.com'
     date: '2009-present'
-    role: 'founder/co-sucker'
+    role: 'co-sucker'
+    type: 'theater & performance'
 
   - name: 'Denver Poets’ Theatre'
     url: 'http://www.denverpoetstheatre.com/'
     date: '2013-present'
     role: 'ensemble member'
-
-  - name: 'Boulder Writers’ Workshop'
-    url: 'http://boulderwritersworkshop.org'
-    date: '2011-2013'
-    role: 'professional member'
-
-  - name: 'Raven Jane'
-    date: '2010-2012'
-    role: 'bass'
-
-  - name: 'The LIDA Project'
-    url: 'http://lida.org'
-    date: '2008-2010'
-    role: 'technical director/company member'
-
-  - name: 'Countdown to Zero'
-    url: 'http://countdowntozero.org'
-    date: '2008-2010'
-    role: 'technical director/company member'
-
-  - name: 'Dirt Circle Dogs'
-    url: 'http://www.cdbaby.com/cd/dirtcircledogs'
-    date: '2007-2010'
-    role: 'bass/guitar'
-
-  - name: 'New World Arts'
-    url: 'http://newworldarts.org'
-    date: '2001-2007'
-    role: 'technical director [01-03]/artistic director [03-07]'
-
-
-# Education
-education:
-  - name: 'Naropa Summer Writing Program'
-    summary: 'Classes with E. Tracy Grinnell, Michelle Ellsworth, and Caroline Bergvall'
-    date: '2012'
-
-  - name: 'Oregon Shakespeare Festival'
-    summary: 'Stage Management <span class="amp">&</span> Lighting Internship'
-    date: '2003'
-
-  - name: 'Goshen College'
-    summary: 'Studied writing, theatre, and visual art'
-    date: '2001-2006'
+    type: 'theatre'
 
 
 # navigation

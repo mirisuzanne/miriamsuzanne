@@ -1,0 +1,22 @@
+{% import "modules/utility.macros.j2" as utility %}
+
+{% if config.orgs %}
+<section class="orgs module">
+<div class="container">
+  <h2 class="section-title">Co-Belligerents</h2>
+
+  {% for org in config.orgs %}
+  <div class="org h-card">
+    <h3 class="p-name">
+      {{ utility.link(org.name, org.url, 'u-url') }}
+    </h3>
+    <div class="summary">
+      <span class="dt-start">{{ org.date }}</span>
+      <strong class="role">{{ org.role }}</strong>
+      <span class="p-category">{{ org.type }}</span>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+</section>
+{% endif %}

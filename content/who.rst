@@ -1,6 +1,10 @@
 public: yes
 hide_title: yes
 location: who
+after:
+  - include: 'modules/_orgs.html.j2'
+  - include: 'modules/_calendar.html.j2'
+    time: past
 
 
 Bio

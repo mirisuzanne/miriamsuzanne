@@ -1,3 +1,5 @@
+{% import "modules/utility.macros.j2" as utility %}
+
 {% macro show(event) %}
   <article class="h-event">
     {{ name(event.name, event.url, event.org) }}
@@ -19,10 +21,10 @@
 {% macro name(title, url, org) %}
 <h3 class="p-name">
   {% if org %}
-    <strong class="org">{{ link(org.name, org.url) }}:</strong>
-    <span class="title">{{ link(title, url, class='u-url') }}</span>
+    <strong class="org">{{ utility.link(org.name, org.url) }}:</strong>
+    <span class="title">{{ utility.link(title, url, class='u-url') }}</span>
   {% else %}
-    <strong class="title">{{ link(title, url, class='u-url') }}</strong>
+    <strong class="title">{{ utility.link(title, url, class='u-url') }}</strong>
   {% endif %}
 </h3>
 {% endmacro %}
@@ -57,7 +59,7 @@
     {% for org in with %}
       {% set after='' if loop.last else ',' %}
       {% if loop.last and loop.index > 1 %}and{% endif %}
-      {{ link(org.name, org.url) }}{{ after }}
+      {{ utility.link(org.name, org.url) }}{{ after }}
     {% endfor %}
   </span>
 {% endif %}
@@ -67,24 +69,16 @@
 {% if venue %}
   at
   <span class="p-location">
-    {{ link(venue.name, venue.url) }}{%- if venue.adr -%}, {{ venue.adr }}{% endif %}
+    {{ utility.link(venue.name, venue.url) }}{%- if venue.adr -%}, {{ venue.adr }}{% endif %}
   </span>
 {% endif %}
-{% endmacro %}
-
-{% macro link(content, url, class=none) %}
-{%- if url -%}
-  <a href="{{ url }}" {% if class %}class="{{ class }}"{% endif %}>{{ content|safe }}</a>
-{%- else -%}
-  {{ content|safe }}
-{%- endif -%}
 {% endmacro %}
 
 {% macro notes(content) %}
 {% if content %}
 <ul class="notes">
   {% for note in content %}
-    <li>{{ link(note.name, note.url) }}</li>
+    <li>{{ utility.link(note.name, note.url) }}</li>
   {% endfor %}
 </ul>
 {% endif %}

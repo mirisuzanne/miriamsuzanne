@@ -1,17 +1,31 @@
+{% import "modules/utility.macros.j2" as utility %}
+
 {% if config.press %}
 <section class="press module">
 <div class="container">
-  <h3 class="section-title">Other News</h3>
+  <h2 class="section-title">Press</h2>
 
   {% for item in config.press %}
-    <blockquote class="clipping">
-      <p class="quote">{{ item.quote|safe }}</p>
-      <p class="citation">
-        {{ item.credit }},
-        <a href="{{ item.url }}">{{ item.source }}</a>
-        <time datetime="{{ item.datetime }}" class="pubdate">[{{ item.date }}]</time>
-      </p>
-    </blockquote>
+    <div class="clipping">
+      <h3 class="clipping-title">
+        <strong class="source">
+          {{ utility.link(item.source, item.url) }}:
+        </strong>
+        <span class="subject">
+          {{ utility.link(item.subject.name, item.subject.url) }}
+        </span>
+      </h3>
+
+      <blockquote class="quote">
+        {{ item.quote|safe }}
+
+        <span class="citation">
+          {{ item.credit }}
+          <time datetime="{{ item.datetime }}" class="pubdate">[{{ item.date }}]</time>
+        </span>
+      </blockquote>
+
+    </div>
   {% endfor %}
 </div>
 </section>
