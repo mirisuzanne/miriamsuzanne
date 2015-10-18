@@ -797,17 +797,17 @@ nav:
 social:
   - title: email
     icon: mail
-    url: 'mailto:eric(at)miriamsuzanne.com'
+    url: 'mailto:miriam(at)miriamsuzanne.com'
   - title: feed
     url: 'http://feeds.feedburner.com/ericandmeyer/'
   - title: twitter
-    url: 'http://twitter.com/ericmsuzanne/'
+    url: 'http://twitter.com/mirisuzanne/'
   - title: facebook
     url: 'http://facebook.com/ericmsuzanne/'
   - title: dribbble
-    url: 'http://dribbble.com/players/ericsuzanne/'
+    url: 'https://dribbble.com/miriamsuzanne'
   - title: vimeo
-    url: 'http://vimeo.com/ericsuzanne'
+    url: 'http://vimeo.com/miriamsuzanne'
   - title: github
     url: 'http://www.github.com/ericam/'
   - title: stack overflow
