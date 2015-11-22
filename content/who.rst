@@ -10,7 +10,7 @@ after:
 Bio
 ===
 
-**Eric Miriam Suzanne**
+**Miriam Eric Suzanne**
 is an author, performer, musician, designer,
 and web developer.
 She is the author of

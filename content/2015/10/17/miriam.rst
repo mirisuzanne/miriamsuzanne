@@ -1,10 +1,10 @@
 public: yes
 summary: |
-  *Eric M Suzanne* has become *E Miriam Suzanne*!
+  *Eric M Suzanne* has become *Miriam Eric Suzanne*!
 
 
-E Miriam Suzanne
-================
+Miriam Eric Suzanne
+===================
 
 It’s the third Saturday in October,
 which everyone knows is
@@ -18,7 +18,7 @@ but it’s important to some of us (me).
 To commemorate the moment,
 I’ve expanded that previously un-defined “M”
 that’s been hanging out in the middle of my name —
-now “E. Miriam Suzanne” —
+now “Miriam Eric Suzanne” —
 with “Miriam” as the colloquial,
 and moved my site to `miriamsuzanne.com`_.
 

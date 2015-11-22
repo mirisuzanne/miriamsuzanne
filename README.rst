@@ -1,7 +1,7 @@
-GreenMud / E Miriam Suzanne
+GreenMud / Miriam Eric Suzanne
 ===========================
 
-The official website for E. Miriam Suzanne —
+The official website for Miriam Eric Suzanne —
 formerly the Compass/Sass/Susy "Eric A Meyer" or "Eric M Suzanne",
 but never the CSS Complete Guide/Reset "Eric A Meyer".
 
