@@ -6,7 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "accoutrement-color": "^2.0.0-rc.1",
-    "accoutrement-fonts": "^2.0.0-alpha.3",
+    "accoutrement-fonts": "^2.0.0-alpha.4",
     "accoutrement-layout": "^1.1.0",
     "accoutrement-pseudo": "^1.0.2",
     "accoutrement-queries": "^1.1.0",
