@@ -1,7 +1,7 @@
 {
-  "name": "ericsuzanne",
+  "name": "miriamsuzanne",
   "version": "1.0.0",
-  "description": "an open-source novel",
+  "description": "my website",
   "main": "index.html",
   "dependencies": {},
   "devDependencies": {
@@ -25,7 +25,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/ericam/ericsuzanne.git"
+    "url": "https://github.com/mirisuzanne/miriamsuzanne.git"
   },
   "ignore": [
     "**/.*",
@@ -47,7 +47,7 @@
   "author": "Miriam Eric Suzanne",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ericam/ericsuzanne/issues"
+    "url": "https://github.com/mirisuzanne/miriamsuzanne/issues"
   },
-  "homepage": "https://github.com/ericam/ericsuzanne"
+  "homepage": "https://github.com/mirisuzanne/miriamsuzanne"
 }

@@ -10,23 +10,17 @@ feature:
 
 # future
 future:
-  - name: 'SideSaddle* Installation'
-    date: 'Oct-Nov, 2015'
-    datetime: '2015-10-11'
-    role: 'writer & artist'
-    type: 'gallery installation'
+  - name: '[Untitled] SideSaddle* Adaptation'
+    date: 'March, 2016'
+    datetime: '2016-03-03'
+    role: 'author & musician'
+    type: 'theater'
     org:
-      name: 'Huckleberry Roasters'
-      url: 'http://huckleberryroasters.com/'
-
-  - name: 'Towards a Queer Web'
-    date: 'Nov. 11-13, 2015'
-    datetime: '2015-11-11'
-    role: 'moderator'
-    type: 'discussion'
-    org:
-      name: 'SassConf 2015'
-      url: 'http://sassconf.com/'
+      name: 'Buntport Theater'
+      url: 'http://buntport.com/'
+    with:
+      - name: 'Teacup Gorilla'
+        url: 'http://teacupgorilla.com'
 
 
 # press
@@ -152,6 +146,25 @@ media:
 
 # past
 past:
+  - name: 'SideSaddle* Installation'
+    date: 'Oct-Nov, 2015'
+    datetime: '2015-10-11'
+    role: 'writer & artist'
+    type: 'gallery installation'
+    org:
+      name: 'Huckleberry Roasters'
+      url: 'http://huckleberryroasters.com/'
+
+  - name: 'User UnFriendly [Notes Towards a Queer Web]'
+    url: 'http://oddbooksapp.com/book/user-unfriendly'
+    date: 'Nov. 11-13, 2015'
+    datetime: '2015-11-11'
+    role: 'moderator'
+    type: 'discussion'
+    org:
+      name: 'SassConf 2015'
+      url: 'http://sassconf.com/'
+
   - name: 'Road to SassConf'
     url: 'https://www.youtube.com/watch?v=jkVgp-GfQXc'
     date: 'Oct 1, 2015'
@@ -861,7 +874,7 @@ social:
   - title: vimeo
     url: 'http://vimeo.com/miriamsuzanne'
   - title: github
-    url: 'http://www.github.com/ericam/'
+    url: 'http://github.com/mirisuzanne/'
   - title: stack overflow
     url: 'http://stackoverflow.com/users/1930386/'
 

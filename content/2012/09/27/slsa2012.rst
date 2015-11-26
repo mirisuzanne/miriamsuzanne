@@ -6,7 +6,7 @@ summary: |
   `SLSA 2012 <http://www.litsciarts.org/slsa12/>`_.
   The `ELO <http://eliterature.org/electronic-literature-the-nonhuman/>`_
   is hosting a jurried elit event,
-  and accepted my `submission <http://ericam.github.com/post-obsolete>`_.
+  and accepted my `submission <http://www.post-obsolete.com>`_.
 
 
 Electronic Literature and the Nonhuman
@@ -69,8 +69,8 @@ Maybe they're humans too! Who can say?
 .. _Milwaukee: http://goo.gl/maps/MZW3g
 .. _SLSA 2012: http://www.litsciarts.org/slsa12/
 .. _ELO: http://eliterature.org/electronic-literature-the-nonhuman/
-.. _submission: http://ericam.github.com/post-obsolete
-.. _available online: http://ericam.github.com/post-obsolete
+.. _submission: http://www.post-obsolete.com
+.. _available online: http://www.post-obsolete.com
 .. _Michelle Ellsworth: http://michelleellsworth.com/
 .. _The Widow's Bane: http://www.myspace.com/widowsbane
 .. _Mark Marino: http://markcmarino.com

@@ -45,7 +45,7 @@ Thanks for keeping the obsolete book alive!
   </figure>
 
 .. _Michelle Ellsworth: http://www.michelleellsworth.com/
-.. _The Obsolete Book in a Post-Obsolete World as Represented by an Obsolete Book About Dance: http://miriamsuzanne.com/post-obsolete/
+.. _The Obsolete Book in a Post-Obsolete World as Represented by an Obsolete Book About Dance: http://www.post-obsolete.com/
 .. _Electronic Literature Organization: http://eliterature.org/
 .. _Illya Szilak: http://www.huffingtonpost.com/illya-szilak/
 .. _The Huffington Post: http://www.huffingtonpost.com/illya-szilak/disperse-the-light-an-int_b_5603196.html

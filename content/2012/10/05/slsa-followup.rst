@@ -47,7 +47,7 @@ as a driver for the next day.
 .. _whirlwind: http://www.chickpeasandhulahoops.com/blog/?page_id=1009#post-1009
 .. |obsolete| raw:: html
 
-  <a href="/post-obsolete/">
+  <a href="http://www.post-obsolete.com/">
     <em>
       The Obsolete Book in a Post-Obsolete World,
       as Represented by a Post-Obsolete Book About Dance</em></a>
@@ -122,4 +122,4 @@ with handout in hand!
 
 .. _video: http://youtu.be/FnHsQRUQ1x8?t=1h11m11s
 .. _Mark Marino: http://markcmarino.com/
-.. _follow along on the website: /post-obsolete/
+.. _follow along on the website: http://www.post-obsolete.com/

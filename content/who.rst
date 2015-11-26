@@ -38,11 +38,11 @@ or the `Denver Poets' Theatre`_.
 
 .. _New World Arts: http://newworldarts.org/
 .. _The LIDA Project: http://lida.org/
-.. _The Post-Obsolete Book: /post-obsolete/
-.. _open-source contributor: http://github.com/ericam
+.. _The Post-Obsolete Book: http://www.post-obsolete.com
+.. _open-source contributor: http://github.com/mirisuzanne
 .. _Compass: http://compass-style.org/
 .. _Susy: http://susy.oddbird.net/
-.. _True: /true/
+.. _True: http://oddbird.net/true
 
 
 .. |head| raw:: html
