@@ -18,7 +18,7 @@ a {
 // Ampersand
 // ---------
 
-.amp { @extend %amp; }
+.amp { @include font-family('amp'); }
 
 
 // Images
@@ -84,8 +84,10 @@ blockquote {
   margin-bottom: size('gutter');
 }
 
-p:empty {
-  display: none;
+p {
+  &:empty {
+    display: none;
+  }
 }
 
 ul {
@@ -154,7 +156,7 @@ figure {
 }
 
 figcaption {
-  @extend %boilerplate;
+  @include font-family('boilerplate');
   @include font-size('small');
   background: color('callout');
   counter-increment: fig;
@@ -162,11 +164,11 @@ figcaption {
   padding: size('shim');
 
   &:before {
-    @extend %body;
+    @include font-family('body');
     color: color('title');
     content: 'fig.' counter(fig);
     font-style: italic;
-    margin-right: .4em;
+    margin-right: 0.4em;
   }
 }
 
@@ -177,12 +179,12 @@ figcaption {
 tt,
 code,
 pre {
-  @extend %mono;
+  @include font-family('code');
   @include font-size('small');
 }
 
 pre {
   @include pullquote;
-  margin-top: size('gutter');
   margin-bottom: size('gutter');
+  margin-top: size('gutter');
 }

@@ -41,7 +41,7 @@
 $nav: who what why blog;
 
 [role='navigation'] {
-  @extend %boilerplate;
+  @include font-family('boilerplate');
   @include font-size('small');
   padding: size('half-shim') size('shim');
 
@@ -52,7 +52,7 @@ $nav: who what why blog;
 
       @include before('+') {
         display: inline-block;
-        width: .5em;
+        width: 0.5em;
       }
     }
 

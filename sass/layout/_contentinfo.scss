@@ -1,9 +1,9 @@
 // Contentinfo
 // ===========
 
-[data-region="contentinfo"] {
-  @extend %boilerplate;
-  @include font-size('smaller', .75);
+[data-region='contentinfo'] {
+  @include font-family('boilerplate');
+  @include font-size('smaller', 0.75);
   border-top: 2px dotted color('border');
   clear: both;
   color: color('gray');

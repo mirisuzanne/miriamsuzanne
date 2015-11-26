@@ -3,8 +3,8 @@
 
 %spacer {
   @include after('— & —') {
-    @extend %amp;
-    color: color('primary' ('rgba': .5));
+    @include font-family('amp');
+    color: color('primary' ('rgba': 0.5));
     display: block;
     margin-top: size('spacer');
     text-align: center;

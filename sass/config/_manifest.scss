@@ -1,13 +1,13 @@
 // Manifest
 // ========
 
-@import 'license.config';
-@import 'colors.config';
-@import 'scale.config';
-@import 'fonts.config';
-@import 'type.config';
-@import 'breakpoints.config';
-@import 'reset.config';
+@import 'license';
+@import 'colors';
+@import 'scale';
+@import 'fonts';
+@import 'type';
+@import 'breakpoints';
+@import 'reset';
 
 @import '../../node_modules/accoutrement-layout/sass/layout';
 @import '../../node_modules/accoutrement-pseudo/sass/pseudo-elements';

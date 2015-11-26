@@ -32,6 +32,8 @@
   display: inline;
 }
 
-.interview .citation {
-  display: inline-block;
+.interview {
+  .citation {
+    display: inline-block;
+  }
 }

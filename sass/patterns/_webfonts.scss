@@ -1,6 +1,4 @@
 // Web Fonts
 // =========
 
-@import '../../node_modules/accoutrement-strings/sass/strings';
-
-@include fonts;
+@include import-webfonts;

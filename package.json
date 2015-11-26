@@ -5,22 +5,20 @@
   "main": "index.html",
   "dependencies": {},
   "devDependencies": {
-    "accoutrement-color": "^1.0.3",
-    "accoutrement-fonts": "^1.0.4",
+    "accoutrement-color": "^2.0.0-rc.1",
+    "accoutrement-fonts": "^2.0.0-alpha.3",
     "accoutrement-layout": "^1.1.0",
-    "accoutrement-maps": "^1.0.1",
     "accoutrement-pseudo": "^1.0.2",
     "accoutrement-queries": "^1.1.0",
-    "accoutrement-reset": "^1.0.2",
     "accoutrement-scale": "^1.1.0",
-    "accoutrement-strings": "^1.0.1",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.1",
     "gulp-sass": "^2.0.4",
+    "gulp-sass-lint": "^1.1.0",
     "gulp-scsslint": "0.0.5",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-util": "^3.0.6",
-    "sanitize.css": "^2.0.0"
+    "sanitize.css": "^3.0.0"
   },
   "scripts": {},
   "repository": {

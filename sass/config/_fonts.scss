@@ -1,0 +1,39 @@
+// Fonts
+// =====
+
+
+@import '../../node_modules/accoutrement-fonts/sass/fonts';
+
+
+$font-formats: 'woff' 'ttf';
+
+
+$fonts: (
+  'amp': (
+    'name': 'BaskervilleAmp',
+    'stack': ('Baskerville', 'Palatino', 'Cambria', 'Georgia', 'serif'),
+    'regular': 'Baskerville-amp',
+  ),
+
+  'body': (
+    'name': 'CenturyOldStyle',
+    'stack': ('Baskerville', 'Palatino', 'Cambria', 'Georgia', 'serif'),
+    'regular': 'CenturyOldStyle-regular',
+    'italic': 'CenturyOldStyle-italic',
+    'bold': 'CenturyOldStyle-bold',
+  ),
+
+  'boilerplate': (
+    'name': 'FranklinGothicCond',
+    'stack': ('Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'),
+    'regular': 'FranklinGothicCd-regular',
+    'italic': 'FranklinGothicCd-iralic',
+    'bold': 'FranklinGothicCd-bold',
+    'bold' 'italic': 'FranklinGothicCd-bolditalic',
+  ),
+
+  'code': (
+    'name': 'Consolas',
+    'stack': ('Menlo', 'Monaco', 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', 'monospace', 'serif')
+  ),
+);

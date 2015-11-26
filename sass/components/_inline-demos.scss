@@ -1,10 +1,8 @@
-// scss-lint:disable ColorKeyword
-
-
 // 12.07.20 - Sass Striped Background
-// ----------------------------------
+// ==================================
 
-$mycolors: red orange yellow green blue indigo violet;
+$mycolors: #f00 #ffa500 #ff0 #008000 #00f #4b0082 #ee82ee;
+
 
 // Returns a striped gradient for use anywhere gradients are accepted.
 // - $position: the starting position or angle of the gradient.

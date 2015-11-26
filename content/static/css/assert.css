@@ -21,11 +21,6 @@
  *
  *
  */
-::-moz-selection {
-  color: #fff; }
-::selection {
-  color: #fff; }
-
 body {
   padding: 1.45455rem; }
 

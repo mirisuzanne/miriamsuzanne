@@ -11,9 +11,9 @@
 }
 
 .p-name {
-  margin-bottom: 0;
-  font-weight: normal;
   font-style: italic;
+  font-weight: normal;
+  margin-bottom: 0;
 
   .org & {
     font-style: normal;
@@ -21,28 +21,28 @@
   }
 
   strong {
-    font-weight: bold;
     font-style: normal;
+    font-weight: bold;
   }
 }
 
 .p-summary,
 .p-location {
   @include font-size('small');
-  margin-bottom: 0;
   font-style: italic;
+  margin-bottom: 0;
 }
 
 .p-category,
 .role {
-  @extend %boilerplate;
+  @include font-family('boilerplate');
   @include before(' » ');
   @include font-size('smaller');
   text-transform: uppercase;
 }
 
 .notes {
-  @extend %boilerplate;
+  @include font-family('boilerplate');
   @include font-size('small');
   margin: 0 0 0 size('gutter');
 }

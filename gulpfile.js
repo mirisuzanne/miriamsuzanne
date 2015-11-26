@@ -6,7 +6,7 @@ var gulp = require('gulp');
 var gutil = require('gulp-util');
 var spawn = require('child_process').spawn;
 var sass = require('gulp-sass');
-var scsslint = require('gulp-scsslint');
+var sasslint = require('gulp-sass-lint');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 
@@ -43,7 +43,7 @@ gulp.task('default', ['watch', 'runserver']);
 
 gulp.task('watch', function () {
   // lint and compile scss
-  gulp.watch(paths.SASS, ['scsslint', 'sass']);
+  gulp.watch(paths.SASS, ['sasslint', 'sass']);
 });
 
 gulp.task('sass', function () {
@@ -58,11 +58,26 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(paths.CSS_DIR));
 });
 
-gulp.task('scsslint', function () {
-  return gulp.src(paths.SASS)
-    .pipe(scsslint('.scss-lint.yml'))
-    .pipe(scsslint.reporter())
-    .pipe(scsslint.reporter('fail'));
+var sasslintTask = function (src, failOnError, log) {
+  if (log) {
+    gutil.log('Running', '\'' + chalk.cyan('sasslint ' + src) + '\'...');
+  }
+  var stream = gulp.src(src)
+    .pipe(sasslint())
+    .pipe(sasslint.format())
+    .pipe(sasslint.failOnError());
+  if (!failOnError) {
+    stream.on('error', onError);
+  }
+  return stream;
+};
+
+gulp.task('sasslint', function () {
+  return sasslintTask(paths.SASS, true);
+});
+
+gulp.task('sasslint-nofail', function () {
+  return sasslintTask(paths.SASS);
 });
 
 gulp.task('runserver', function (cb) {

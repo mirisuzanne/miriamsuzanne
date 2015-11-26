@@ -7,9 +7,9 @@
 $colors: (
   'white': #fff,
   'gray': hsl(0, 0%, 50%),
-  'blue': hsl(195, 100%, 50%),
+  'blue': hsl(195, 100%, 43%),
   'red': hsl(0, 100%, 50%),
-  'pink': hsl(330, 100%, 50%),
+  'pink': hsl(330, 100%, 45%),
 
   'background': 'white',
   'gradient': 'gray' ('tint': 80%),
@@ -22,7 +22,7 @@ $colors: (
 
   'action': 'primary',
   'focus': 'accent',
-  'overlay': 'background' ('rgba': .9),
+  'overlay': 'background' ('rgba': 0.9),
 
   'title': 'action' ('shade': 15%),
   'border': 'title',
