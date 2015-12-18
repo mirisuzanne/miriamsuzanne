@@ -6,6 +6,6 @@
   {% for item in config.colophon %}
     {% set after='' if loop.last else ',' %}
     {% if loop.last %}and{% endif %}
-    <a href="item.url">{{ item.name }}</a>{{ after }}
+    <a href="{{ item.url }}">{{ item.name }}</a>{{ after }}
   {% endfor %}
 </div>
