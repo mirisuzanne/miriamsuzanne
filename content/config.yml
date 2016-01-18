@@ -2,15 +2,17 @@
 
 # feature
 feature:
-  - name: 'Riding SideSaddle* Installation'
-    summary: 'at Huckleberry Roasters Larimer Cafe'
-    url: '/2015/10/10/huckleberry/'
-    image: 'huck.jpg'
+  - name: '10 Myths on the Proper* Application of Beauty Products'
+    summary: 'Stage adaptation of <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a> with <a href="http://buntport.com">Buntport Theater</a> and <a href="http://teacupgorilla.com">Teacup Gorilla</a> — March, 2016'
+    url: 'http://buntport.com/'
+    image: 'sidesaddle.jpg'
 
 
 # future
 future:
-  - name: '[Untitled] SideSaddle* Adaptation'
+  - name: '10 Myths on the Proper* Application of Beauty Products'
+    summary: 'Stage adaptation of <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a>'
+    url: 'http://buntport.com/'
     date: 'March, 2016'
     datetime: '2016-03-03'
     role: 'author & musician'
@@ -19,8 +21,19 @@ future:
       name: 'Buntport Theater'
       url: 'http://buntport.com/'
     with:
+      - name: 'Buntport Theater'
+        url: 'http://buntport.com/'
       - name: 'Teacup Gorilla'
         url: 'http://teacupgorilla.com'
+
+  - name: 'Code Patterns for Pattern-Making'
+    date: 'March 31 - April 1, 2016'
+    datetime: '2016-03-31'
+    role: 'speaker'
+    type: 'conference'
+    org:
+      name: 'Clarity Conference'
+      url: 'http://clarityconf.com/'
 
 
 # press

@@ -57,7 +57,7 @@
   with
   <span class="with">
     {% for org in with %}
-      {% set after='' if loop.last else ',' %}
+      {% set after='' if (loop.last or loop.length == 2) else ',' %}
       {% if loop.last and loop.index > 1 %}and{% endif %}
       {{ utility.link(org.name, org.url) }}{{ after }}
     {% endfor %}

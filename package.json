@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "my website",
   "main": "index.html",
-  "dependencies": {},
-  "devDependencies": {
-    "accoutrement-color": "^2.0.0-rc.1",
-    "accoutrement-fonts": "^2.0.0-alpha.4",
-    "accoutrement-layout": "^1.1.0",
+  "dependencies": {
+    "accoutrement-color": "^2.0.0-rc.3",
+    "accoutrement-fonts": "^2.0.0-rc.1",
+    "accoutrement-init": "^1.0.0-rc.5",
+    "accoutrement-layout": "^2.0.0-rc.1",
     "accoutrement-pseudo": "^1.0.2",
     "accoutrement-queries": "^1.1.0",
     "accoutrement-scale": "^1.1.0",
@@ -17,8 +17,7 @@
     "gulp-sass-lint": "^1.1.0",
     "gulp-scsslint": "0.0.5",
     "gulp-sourcemaps": "^1.5.2",
-    "gulp-util": "^3.0.6",
-    "sanitize.css": "^3.0.0"
+    "gulp-util": "^3.0.6"
   },
   "scripts": {},
   "repository": {

@@ -4,7 +4,7 @@
   <h2 class="feature-title">
     <a href="{{ feature.url }}">{{ feature.name }}</a>
   </h2>
-  <p class="feature-summary">{{ feature.summary }}</p>
+  <p class="feature-summary">{{ feature.summary|safe }}</p>
 </div>
 </section>
 {% endfor %}
