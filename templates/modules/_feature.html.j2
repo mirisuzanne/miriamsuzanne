@@ -1,5 +1,5 @@
 {% for feature in config.feature %}
-<section class="feature module" style="background-image: url('/static/pictures/{{ feature.image }}')">
+<section class="feature module" style="background-image: url('/static/pictures/{{ feature.image }}'); {{ feature.style or '' }}">
 <div class="container">
   <h2 class="feature-title">
     <a href="{{ feature.url }}">{{ feature.name }}</a>
