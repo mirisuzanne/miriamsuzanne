@@ -11,5 +11,6 @@ html {
 }
 
 :root {
-  font-size: calc(#{percentage(18/16)} + 0.25vw);
+  @include font-family('body');
+  font-size: calc(#{percentage(18 / 16)} + 0.25vw);
 }

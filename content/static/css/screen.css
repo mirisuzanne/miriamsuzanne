@@ -372,6 +372,7 @@ html {
   background: linear-gradient(to top left, #e6e6e6, #fff 75%); }
 
 :root {
+  font-family: "CenturyOldStyle", "Baskerville", "Palatino", "Cambria", "Georgia", "serif";
   font-size: calc(112.5% + 0.25vw); }
 
 [data-region='banner'] {
@@ -569,14 +570,17 @@ html {
   background-size: cover;
   border: 2px dotted #c30062;
   border-width: 2px 0;
+  overflow: hidden;
   padding-top: 50%; }
   .feature .container {
     background: rgba(255, 255, 255, 0.9);
     border: 0;
     border-radius: 0.13636rem;
+    box-shadow: 0 0 0.72727rem rgba(64, 64, 64, 0.75);
     margin: 0 auto;
     max-width: 100%;
-    padding: 1.45455rem; }
+    padding: 1.45455rem;
+    text-align: center; }
   .feature .feature-summary {
     font-style: italic;
     margin: 0; }
