@@ -3,7 +3,7 @@
 # feature
 feature:
   - name: '10 Myths on the Proper* Application of Beauty Products'
-    summary: 'Stage adaptation of <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a> with <a href="http://buntport.com">Buntport Theater</a> and <a href="http://teacupgorilla.com">Teacup Gorilla</a> — March, 2016'
+    summary: 'Stage adaptation/supplement to <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a> with <a href="http://buntport.com">Buntport Theater</a> and <a href="http://teacupgorilla.com">Teacup Gorilla</a> — March, 2016'
     url: 'http://buntport.com/'
     image: '10-myths-art.jpg'
     style: 'background-position: top left;'
@@ -12,7 +12,7 @@ feature:
 # future
 future:
   - name: '10 Myths on the Proper* Application of Beauty Products'
-    summary: 'Stage adaptation of <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a>'
+    summary: 'Stage adaptation/supplement to <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a>'
     url: 'http://buntport.com/'
     date: 'March, 2016'
     datetime: '2016-03-03'
@@ -22,8 +22,6 @@ future:
       name: 'Buntport Theater'
       url: 'http://buntport.com/'
     with:
-      - name: 'Buntport Theater'
-        url: 'http://buntport.com/'
       - name: 'Teacup Gorilla'
         url: 'http://teacupgorilla.com'
 
