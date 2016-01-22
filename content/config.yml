@@ -4,7 +4,7 @@
 feature:
   - name: '10 Myths on the Proper* Application of Beauty Products'
     summary: 'Stage adaptation/supplement to <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a> with <a href="http://buntport.com">Buntport Theater</a> and <a href="http://teacupgorilla.com">Teacup Gorilla</a> — March, 2016'
-    url: 'http://buntport.com/'
+    url: 'http://buntport.com/archive/archive.htm'
     image: '10-myths-art.jpg'
     style: 'background-position: top left;'
 
@@ -13,7 +13,7 @@ feature:
 future:
   - name: '10 Myths on the Proper* Application of Beauty Products'
     summary: 'Stage adaptation/supplement to <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a>'
-    url: 'http://buntport.com/'
+    url: 'http://buntport.com/archive/archive.htm'
     date: 'March, 2016'
     datetime: '2016-03-03'
     role: 'author & musician'
