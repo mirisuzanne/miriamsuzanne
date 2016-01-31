@@ -2,16 +2,16 @@
 
 # feature
 feature:
-  - name: '10 Myths on the Proper* Application of Beauty Products'
+  - name: '10 Myths on the Proper Application of Beauty Products'
     summary: 'Stage adaptation/supplement to <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a> with <a href="http://buntport.com">Buntport Theater</a> and <a href="http://teacupgorilla.com">Teacup Gorilla</a> — March, 2016'
     url: 'http://buntport.com/archive/archive.htm'
-    image: '10-myths-art.jpg'
+    image: '10-myths.png'
     style: 'background-position: top left;'
 
 
 # future
 future:
-  - name: '10 Myths on the Proper* Application of Beauty Products'
+  - name: '10 Myths on the Proper Application of Beauty Products'
     summary: 'Stage adaptation/supplement to <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a>'
     url: 'http://buntport.com/archive/archive.htm'
     date: 'March, 2016'
