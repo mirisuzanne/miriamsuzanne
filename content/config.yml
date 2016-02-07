@@ -11,6 +11,21 @@ feature:
 
 # future
 future:
+  - name: 'Seventh Circle Music Collective'
+    url: 'https://www.facebook.com/events/1661588870774671/'
+    date: 'February 10, 2016'
+    datetime: '2016-02-10'
+    role: 'musician'
+    type: 'all-ages show'
+    org:
+      name: 'Teacup Gorilla'
+      url: 'http://teacupgorilla.com'
+    with:
+      - name: 'NORTH BY NORTH'
+        url: 'www.northbynorth.bandcamp.com'
+      - name: 'The Truth & Spectacle'
+        url: 'http://thetruthandspectacle.com/'
+
   - name: '10 Myths on the Proper Application of Beauty Products'
     summary: 'Stage adaptation/supplement to <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a>'
     url: 'http://buntport.com/archive/archive.htm'
@@ -33,6 +48,17 @@ future:
     org:
       name: 'Clarity Conference'
       url: 'http://clarityconf.com/'
+
+  - name: 'Jump Start Sass'
+    date: 'TBA'
+    role: 'co-author'
+    type: 'book'
+    org:
+      name: 'SitePoint'
+      url: 'http://www.sitepoint.com/'
+    with:
+      - name: 'Hugo Giraudel'
+        url: 'http://hugogiraudel.com/'
 
 
 # press
