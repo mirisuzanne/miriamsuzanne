@@ -3,7 +3,7 @@
 # feature
 feature:
   - name: '10 Myths on the Proper Application of Beauty Products'
-    summary: 'Stage adaptation/supplement to <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a> with <a href="http://buntport.com">Buntport Theater</a> and <a href="http://teacupgorilla.com">Teacup Gorilla</a> — March, 2016'
+    summary: 'Stage adaptation of <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a> with <a href="http://buntport.com">Buntport Theater</a> and <a href="http://teacupgorilla.com">Teacup Gorilla</a> — March, 2016'
     url: 'http://buntport.com/archive/archive.htm'
     image: '10-myths.png'
     style: 'background-position: top left;'
@@ -12,7 +12,7 @@ feature:
 # future
 future:
   - name: '10 Myths on the Proper Application of Beauty Products'
-    summary: 'Stage adaptation/supplement to <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a>'
+    summary: 'Stage adaptation of <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a>'
     url: 'http://buntport.com/archive/archive.htm'
     date: 'March, 2016'
     datetime: '2016-03-03'
@@ -24,6 +24,21 @@ future:
     with:
       - name: 'Teacup Gorilla'
         url: 'http://teacupgorilla.com'
+    notes:
+      - name: '<strong>Out Front</strong> Review'
+        url: 'http://www.outfrontonline.com/culture/buntport-theater-presents-10-myths-proper-application-beauty-products/'
+      - name: '<strong>Denver Post</strong> Review'
+        url: 'http://www.denverpost.com/theater/ci_29605936/buntports-dark-comedy-10-myths-an-oddly-satisfying'
+      - name: '<strong>Huffington Post</strong> Review'
+        url: 'http://www.huffingtonpost.com/tracy-shaffer/buntport-theatres-new-sho_b_9386846.html'
+      - name: '<strong>Colorado Drama</strong> Review'
+        url: 'http://coloradodrama.com/10_myths.html'
+      # - name: '<strong>5280</strong> Preview'
+      #   url: 'http://www.5280.com/digital/2016/03/hinging-myth'
+      # - name: '<strong>Met Media</strong> Preview'
+      #   url: 'http://mymetmedia.com/the-metropolitan/features/long-time-friends-provide-one-kind-shows/'
+      # - name: '<strong>Westword</strong> Preview'
+      #   url: 'http://www.westword.com/event/10-myths-on-the-proper-application-of-beauty-products-7582171'
 
   - name: 'Jump Start Sass'
     date: 'TBA'
@@ -45,86 +60,125 @@ future:
       name: 'Clarity Conference'
       url: 'http://clarityconf.com/'
 
+  - name: 'The In-Between'
+    url: 'http://www.julierada.com/#/the-in-between/'
+    date: 'May 21, 2016'
+    datetime: '2015-05-21'
+    type: 'site specific theatre'
+    role: 'writer & performer'
+    org:
+      name: 'Vicious Trap'
+      url: 'http://vicioustrap.com'
+    venue:
+      name: 'Rio Mesa Center, Utah'
+
 
 # press
 press:
-  - quote: "I was just digging everything, and didn't want the night to be over."
-    credit: 'Sam O’Daniel'
-    source: 'Your Older Brother'
-    subject:
-      name: 'Riding SideSaddle* Book Release'
-    url: 'http://www.yourolderbrother.com/2015/07/riding-sidesaddle-with-teacup-gorilla.html'
-    date: 'July 7, 2015'
-    datetime: '2015-07-21'
+  - subject: '10 Myths on the Proper Application of Beauty Products'
+    url: 'http://buntport.com/archive/archive.htm'
+    reviews:
 
-  - quote: 'The Holes They Leave occupies a middle place that immediately brings solace to the weary ear.'
-    credit: 'Darren Thornberry'
-    source: 'Stubborn Sounds'
-    subject:
-      name: 'The Holes They Leave'
-      url: 'http://teacupgorilla.bandcamp.com/album/the-holes-they-leave'
-    url: 'https://stubbornsounds.wordpress.com/2015/07/07/teacup-gorilla-the-holes-they-leave-in-review/'
-    date: 'July 7, 2015'
-    datetime: '2015-07-07'
+      - quote: 'Definitely a production worth writing about, talking about, and going to see.'
+        credit: 'Berlin Sylvestre'
+        source: 'Out Front'
+        url: 'http://www.outfrontonline.com/culture/buntport-theater-presents-10-myths-proper-application-beauty-products/'
+        date: 'March 7, 2016'
+        datetime: '2016-03-07'
 
-  - quote: 'One of the most ambitious projects that has come across our desk recently.'
-    credit: 'Tim Wenger'
-    source: 'Colorado Music Buzz'
-    subject:
-      name: 'Riding SideSaddle*'
-      url: 'http://ridingsidesaddle.com'
-    url: 'http://www.colomusicbuzz.com/eric-suzanne-drops-non-linear-novel-in-conjunction-with-teacup-gorilla/'
-    date: 'April 1, 2015'
-    datetime: '2015-04-01'
+      - quote: 'An oddly satisfying dark comedy, a meditation on bodies, humanity, love and loss.'
+        credit: 'Joanne Ostrow'
+        source: 'The Denver Post'
+        url: 'http://www.denverpost.com/theater/ci_29605936/buntports-dark-comedy-10-myths-an-oddly-satisfying'
+        date: 'March 7, 2016'
+        datetime: '2016-03-07'
 
-  - quote: 'If you’re interested in reading Sass poetry, be sure to look at Susy’s source code!'
-    credit: 'Hugo Giraudel'
-    source: 'SitePoint'
-    subject:
-      name: 'Susy'
-      url: 'http://susy.oddbird.net'
-    url: 'http://www.sitepoint.com/my-favorite-sass-tools/'
-    date: 'April 22, 2014'
-    datetime: '2014-04-22'
+      - quote: "The soul of the piece lies in the gender-blending love and acceptance that flows like water through these relationships."
+        credit: 'Tracy Shaffer'
+        source: 'Huffington Post'
+        url: 'http://www.huffingtonpost.com/tracy-shaffer/buntport-theatres-new-sho_b_9386846.html'
+        date: 'March 7, 2016'
+        datetime: '2016-03-07'
 
-  - quote: 'This virtuoso creation by a talented young poet, writer, artist, typographer, programmer, and musician is a taste of things to come as new generations of digital media and code literate creators come of age.'
-    credit: 'Leonardo Flores'
-    source: 'I ♥ E-Poetry'
-    subject:
-      name: 'Into The Green Green Mud'
-      url: 'http://greengreenmud.com'
-    url: 'http://iloveepoetry.com/?p=2571'
-    date: 'May 2, 2013'
-    datetime: '2013-05-02'
+  - subject: 'Teacup Gorilla'
+    url: 'http://teacupgorilla.com'
+    reviews:
 
-  - quote: 'I was impressed by the purest form of outrageous creation.'
-    credit: 'Judy Rose'
-    source: 'Boulder Writer’s Workshop'
-    subject:
-      name: 'The Post-Obsolete Book'
-      url: '/post-obsolete/'
-    url: 'http://www.boulderwritersworkshop.org/2013/04/17/post-obsolete-a-bww-salon/'
-    date: 'April 17, 2013'
-    datetime: '2013-04-17'
+      - quote: "I was just digging everything, and didn't want the night to be over."
+        credit: 'Sam O’Daniel'
+        source: 'Your Older Brother'
+        url: 'http://www.yourolderbrother.com/2015/07/riding-sidesaddle-with-teacup-gorilla.html'
+        date: 'July 7, 2015'
+        datetime: '2015-07-21'
 
-  - quote: 'The album closes with “Static,” a haunting meeting of strings and electronic fuzz with vocalist/drummer Sondra Eisenstat’s lush vocals and spoken word. Eisenstat sings that there is “No voice on the radio,” and perhaps, for now, that’s true. Kingdom, though, is certainly worth a private listen at home.'
-    credit: 'Cat Carroll'
-    source: 'Onion AV Club'
-    subject:
-      name: 'Kingdom Come'
-      url: 'http://www.cdbaby.com/cd/dirtcircledogs'
-    url: 'http://www.avclub.com/'
-    date: 'Aug. 14, 2009'
-    datetime: '2009-08-14'
+      - quote: 'The Holes They Leave occupies a middle place that immediately brings solace to the weary ear.'
+        credit: 'Darren Thornberry'
+        source: 'Stubborn Sounds'
+        url: 'https://stubbornsounds.wordpress.com/2015/07/07/teacup-gorilla-the-holes-they-leave-in-review/'
+        date: 'July 7, 2015'
+        datetime: '2015-07-07'
 
-  - quote: 'Rarely does one encounter a production undertaken with such a tremendous amount of care and consideration.'
-    credit: 'Jack Walton'
-    source: 'South Bend Tribune'
-    subject:
-      name: 'Hello and Goodbye'
-    url: 'http://articles.southbendtribune.com/2006-01-29/news/26962892_1_hester-darkness-athol-fugard'
-    date: 'Jan. 29, 2006'
-    datetime: '2006-01-29'
+      - quote: 'One of the most ambitious projects that has come across our desk recently.'
+        credit: 'Tim Wenger'
+        source: 'Colorado Music Buzz'
+        url: 'http://www.colomusicbuzz.com/eric-suzanne-drops-non-linear-novel-in-conjunction-with-teacup-gorilla/'
+        date: 'April 1, 2015'
+        datetime: '2015-04-01'
+
+  - subject: 'Susy'
+    url: 'http://susy.oddbird.net'
+    reviews:
+
+      - quote: 'If you’re interested in reading Sass poetry, be sure to look at Susy’s source code!'
+        credit: 'Hugo Giraudel'
+        source: 'SitePoint'
+        url: 'http://www.sitepoint.com/my-favorite-sass-tools/'
+        date: 'April 22, 2014'
+        datetime: '2014-04-22'
+
+  - subject: 'Into The Green Green Mud'
+    url: 'http://greengreenmud.com'
+    reviews:
+
+      - quote: 'This virtuoso creation by a talented young poet, writer, artist, typographer, programmer, and musician is a taste of things to come as new generations of digital media and code literate creators come of age.'
+        credit: 'Leonardo Flores'
+        source: 'I ♥ E-Poetry'
+        url: 'http://iloveepoetry.com/?p=2571'
+        date: 'May 2, 2013'
+        datetime: '2013-05-02'
+
+  - subject: 'The Post-Obsolete Book'
+    url: '/post-obsolete/'
+    reviews:
+
+      - quote: 'I was impressed by the purest form of outrageous creation.'
+        credit: 'Judy Rose'
+        source: 'Boulder Writer’s Workshop'
+        url: 'http://www.boulderwritersworkshop.org/2013/04/17/post-obsolete-a-bww-salon/'
+        date: 'April 17, 2013'
+        datetime: '2013-04-17'
+
+  - subject: 'Dirt Circle Dogs'
+    url: 'http://www.cdbaby.com/cd/dirtcircledogs'
+    reviews:
+
+      - quote: 'Eisenstat sings that there is “No voice on the radio,” and perhaps, for now, that’s true. Kingdom, though, is certainly worth a private listen at home.'
+        credit: 'Cat Carroll'
+        source: 'Onion AV Club'
+        url: 'http://www.avclub.com/'
+        date: 'Aug. 14, 2009'
+        datetime: '2009-08-14'
+
+  - subject: 'Hello and Goodbye'
+    url: 'http://newworldarts.org/history'
+    reviews:
+
+      - quote: 'Rarely does one encounter a production undertaken with such a tremendous amount of care and consideration.'
+        credit: 'Jack Walton'
+        source: 'South Bend Tribune'
+        url: 'http://articles.southbendtribune.com/2006-01-29/news/26962892_1_hester-darkness-athol-fugard'
+        date: 'Jan. 29, 2006'
+        datetime: '2006-01-29'
 
 
 # interviews
@@ -158,6 +212,7 @@ interviews:
     datetime: '2012-08-31'
 
 
+# media
 media:
   - body:
       - video: '<iframe src="https://player.vimeo.com/video/125217583?color=ef3939&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'

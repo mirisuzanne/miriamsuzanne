@@ -19,7 +19,7 @@ featuring `Teacup Gorilla`_,
 `Jen Korte`_, and `Open to the Hound`_
 at `Syntax Physic Opera`_ 554 S Broadway, Denver CO.
 
-.. _Riding SideSaddle*: http://ridingsidesaddle.net/
+.. _Riding SideSaddle*: http://ridingsidesaddle.com/
 .. _Jacob Liechty: http://jacobliechty.tumblr.com/
 .. _Sondra Eby: http://sondraedesign.tumblr.com/
 .. _Aaron Liechty: http://aaronliechty.tumblr.com/

@@ -520,7 +520,15 @@ html {
     content: "]"; }
 
 .h-event {
-  margin-bottom: 0.72727rem; }
+  margin-bottom: 1.45455rem; }
+  .h-event .org {
+    font-size: 0.81818rem;
+    line-height: 1.45455rem; }
+    .h-event .org:before {
+      content: " » ";
+      font-family: "FranklinGothicCond", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+      font-size: 0.68182rem;
+      line-height: 0.72727rem; }
 
 .dt-start {
   font-size: 0.81818rem;
@@ -528,13 +536,12 @@ html {
   font-style: italic; }
 
 .p-name {
+  font-size: 1.45455rem;
+  line-height: 1.45455rem;
   font-style: italic;
   font-weight: normal;
   margin-bottom: 0; }
   .org .p-name {
-    font-style: normal;
-    font-weight: bold; }
-  .p-name strong {
     font-style: normal;
     font-weight: bold; }
 
@@ -592,31 +599,30 @@ html {
   height: 5.81818rem;
   margin-bottom: 1.45455rem; }
 
-.clipping blockquote {
+.clipping {
   border: 0;
-  margin: 0;
+  margin: 0 0 1.45455rem;
   padding: 0; }
+  .clipping .quote {
+    font-size: 1.45455rem;
+    line-height: 2.18182rem; }
 
-.clipping .citation {
+.topic-title {
+  font-size: 0.81818rem;
+  line-height: 1.45455rem; }
+
+.citation {
   display: inline-block; }
 
-.clipping,
 .interview {
   margin-bottom: 1.45455rem; }
 
-.clipping-title,
 .interview-title {
+  display: inline;
   margin-bottom: 0; }
-  .clipping-title .subject,
   .interview-title .subject {
     font-style: italic;
     font-weight: normal; }
-
-.interview-title {
-  display: inline; }
-
-.interview .citation {
-  display: inline-block; }
 
 .post {
   padding-top: 3rem; }

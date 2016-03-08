@@ -2,9 +2,10 @@
 
 {% macro show(event) %}
   <article class="h-event">
-    {{ name(event.name, event.url, event.org) }}
+    {{ name(event.name, event.url) }}
     {{ time(event.date, event.datetime) }}
-    {{ type(event.type, event.role) }}
+    {{ organization(event.org) }}
+    {{ meta(event.type, event.role) }}
     {{ summary(event.summary, event.with, event.venue) }}
     {{ notes(event.notes) }}
   </article>
@@ -18,18 +19,21 @@
 {% endif %}
 {% endmacro %}
 
-{% macro name(title, url, org) %}
+{% macro name(title, url) %}
 <h3 class="p-name">
-  {% if org %}
-    <strong class="org">{{ utility.link(org.name, org.url) }}:</strong>
-    <span class="title">{{ utility.link(title, url, class='u-url') }}</span>
-  {% else %}
-    <strong class="title">{{ utility.link(title, url, class='u-url') }}</strong>
-  {% endif %}
+  {{ utility.link(title, url, class='u-url') }}
 </h3>
 {% endmacro %}
 
-{% macro type(category, role) %}
+{% macro organization(org) %}
+{% if org %}
+  <strong class="org">
+    {{ utility.link(org.name, org.url) }}
+  </strong>
+{% endif %}
+{% endmacro %}
+
+{% macro meta(category, role) %}
 {% if role %}
   <strong class="role">
     {{ role|safe }}

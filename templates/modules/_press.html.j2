@@ -6,24 +6,26 @@
   <h2 class="section-title">Press</h2>
 
   {% for item in config.press %}
-    <div class="clipping">
-      <h3 class="clipping-title">
-        <strong class="source">
-          {{ utility.link(item.source, item.url) }}:
-        </strong>
-        <span class="subject">
-          {{ utility.link(item.subject.name, item.subject.url) }}
-        </span>
+    <div class="press-topic">
+      <h3 class="topic-title">
+        {{ utility.link(item.subject, item.url) }}
       </h3>
 
-      <blockquote class="quote">
-        {{ item.quote|safe }}
+      {% for review in item.reviews %}
+        <blockquote class="clipping">
+          <span class="quote">{{ review.quote|safe }}</span>
 
-        <span class="citation">
-          {{ item.credit }}
-          <time datetime="{{ item.datetime }}" class="pubdate">[{{ item.date }}]</time>
-        </span>
-      </blockquote>
+          <span class="citation">
+            {{ review.credit }},
+
+            <strong class="source">
+              {{ utility.link(review.source, review.url) }}
+            </strong>
+
+            <time datetime="{{ review.datetime }}" class="pubdate">[{{ review.date }}]</time>
+          </span>
+        </blockquote>
+      {% endfor %}
 
     </div>
   {% endfor %}

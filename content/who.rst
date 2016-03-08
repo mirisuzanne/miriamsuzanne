@@ -14,10 +14,14 @@ Bio
 is an author, performer, musician, designer,
 and web developer.
 She is the author of
-`Riding SideSaddle*`_ (a novel on note cards),
-`The Post-Obsolete Book`_ (a performable website),
-and a number of open-source frameworks including
-`Susy`_ and `True`_.
+`Riding SideSaddle*`_ and
+`The Post-Obsolete Book`_,
+co-author of `Buntport Theater`_’s
+`10 Myths on the Proper Application of Beauty Products`_
+and `SitePoint`_’s Jump Start Sass,
+and creator of `Accoutrement`_, `Susy`_, and `True`_
+open-source toolkits.
+
 Formerly
 Artistic Director of `New World Arts`_ &
 Technical Director of `The LIDA Project`_ —
@@ -29,18 +33,21 @@ or the `Denver Poets' Theatre`_.
 
 |head|
 
-.. _Riding SideSaddle*: http://ridingsidesaddle.net
+.. _Riding SideSaddle*: http://ridingsidesaddle.com
 .. _OddBird: http://oddbird.net/
 .. _Teacup Gorilla: http://teacupgorilla.com/
 .. _Vicious Trap: http://vicioustrap.com/
 .. _Denver Poets' Theatre: http://www.denverpoetstheatre.com/
 .. _SassHack Denver: http://www.meetup.com/Sass-Hack-Denver/
 
+.. _Buntport Theater: http://buntport.com
+.. _10 Myths on the Proper Application of Beauty Products: /2016/03/04/10-myths/
+.. _SitePoint: http://sitepoint.com
 .. _New World Arts: http://newworldarts.org/
 .. _The LIDA Project: http://lida.org/
 .. _The Post-Obsolete Book: http://www.post-obsolete.com
 .. _open-source contributor: http://github.com/mirisuzanne
-.. _Compass: http://compass-style.org/
+.. _Accoutrement: http://oddbird.net/accoutrement/
 .. _Susy: http://susy.oddbird.net/
 .. _True: http://oddbird.net/true
 

@@ -2,7 +2,16 @@
 // --------
 
 .h-event {
-  margin-bottom: size('shim');
+  margin-bottom: size('gutter');
+
+  .org {
+    @include font-size('small');
+
+    @include before(' » ') {
+      @include font-family('boilerplate');
+      @include font-size('smaller');
+    }
+  }
 }
 
 .dt-start {
@@ -11,16 +20,12 @@
 }
 
 .p-name {
+  @include font-size('h2');
   font-style: italic;
   font-weight: normal;
   margin-bottom: 0;
 
   .org & {
-    font-style: normal;
-    font-weight: bold;
-  }
-
-  strong {
     font-style: normal;
     font-weight: bold;
   }

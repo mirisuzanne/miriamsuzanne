@@ -5,7 +5,7 @@
 {% if events %}
 <section class="module" data-calendar="{{ module.time }}">
 <div class="container">
-  <h3 class="section-title">the {{ module.time }}</h3>
+  <h2 class="section-title">the {{ module.time }}</h2>
 
   {% for event in events %}
     {{ calendar.show(event) }}
