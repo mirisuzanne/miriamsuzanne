@@ -25,6 +25,8 @@ future:
       - name: 'Teacup Gorilla'
         url: 'http://teacupgorilla.com'
     notes:
+      - name: '<strong>Westword</strong> Review'
+        url: 'http://www.westword.com/arts/review-10-myths-on-the-proper-application-of-beauty-products-is-a-beaut-of-a-show-7678439'
       - name: '<strong>Out Front</strong> Review'
         url: 'http://www.outfrontonline.com/culture/buntport-theater-presents-10-myths-proper-application-beauty-products/'
       - name: '<strong>Denver Post</strong> Review'
