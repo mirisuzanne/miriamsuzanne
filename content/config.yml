@@ -3,7 +3,7 @@
 # feature
 feature:
   - name: '10 Myths on the Proper Application of Beauty Products'
-    summary: 'Stage adaptation of <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a> with <a href="http://buntport.com">Buntport Theater</a> and <a href="http://teacupgorilla.com">Teacup Gorilla</a> — March, 2016'
+    summary: 'Stage <a href="https://oddbooksapp.com/book/10-myths">adaptation</a> of <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a> with <a href="http://buntport.com">Buntport Theater</a> and <a href="http://teacupgorilla.com">Teacup Gorilla</a> — March, 2016'
     url: 'http://buntport.com/archive/archive.htm'
     image: '10-myths.png'
     style: 'background-position: top left;'
@@ -12,7 +12,7 @@ feature:
 # future
 future:
   - name: '10 Myths on the Proper Application of Beauty Products'
-    summary: 'Stage adaptation of <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a>'
+    summary: 'Stage <a href="https://oddbooksapp.com/book/10-myths">adaptation</a> of <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a>'
     url: 'http://buntport.com/archive/archive.htm'
     date: 'March, 2016'
     datetime: '2016-03-03'
@@ -25,12 +25,14 @@ future:
       - name: 'Teacup Gorilla'
         url: 'http://teacupgorilla.com'
     notes:
+      - name: '<strong>Denver Post</strong> Review'
+        url: 'http://www.denverpost.com/theater/ci_29605936/buntports-dark-comedy-10-myths-an-oddly-satisfying'
       - name: '<strong>Westword</strong> Review'
         url: 'http://www.westword.com/arts/review-10-myths-on-the-proper-application-of-beauty-products-is-a-beaut-of-a-show-7678439'
       - name: '<strong>Out Front</strong> Review'
         url: 'http://www.outfrontonline.com/culture/buntport-theater-presents-10-myths-proper-application-beauty-products/'
-      - name: '<strong>Denver Post</strong> Review'
-        url: 'http://www.denverpost.com/theater/ci_29605936/buntports-dark-comedy-10-myths-an-oddly-satisfying'
+      - name: '<strong>North Denver Tribune</strong> Review'
+        url: 'http://www.northdenvertribune.com/2016/03/buntports-10-myths-a-mashup-of-myth-gender-loss-and-music/'
       - name: '<strong>Huffington Post</strong> Review'
         url: 'http://www.huffingtonpost.com/tracy-shaffer/buntport-theatres-new-sho_b_9386846.html'
       - name: '<strong>Colorado Drama</strong> Review'
@@ -87,6 +89,13 @@ press:
         url: 'http://www.outfrontonline.com/culture/buntport-theater-presents-10-myths-proper-application-beauty-products/'
         date: 'March 7, 2016'
         datetime: '2016-03-07'
+
+      - quote: 'The play makes us think about the dizzying variety of possible physical variations to human genitalia and their spiritual and psychological consequences; the usual categories of "male" and "female" are just too simplistic.'
+        credit: 'Juliet Wittman'
+        source: 'Westword'
+        url: 'http://www.westword.com/arts/review-10-myths-on-the-proper-application-of-beauty-products-is-a-beaut-of-a-show-7678439'
+        date: 'March 9, 2016'
+        datetime: '2016-09-07'
 
       - quote: 'An oddly satisfying dark comedy, a meditation on bodies, humanity, love and loss.'
         credit: 'Joanne Ostrow'
