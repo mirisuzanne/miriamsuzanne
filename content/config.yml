@@ -44,6 +44,19 @@ future:
       # - name: '<strong>Westword</strong> Preview'
       #   url: 'http://www.westword.com/event/10-myths-on-the-proper-application-of-beauty-products-7582171'
 
+  - name: 'The Card Table'
+    summary: 'Public salon reading of <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a>'
+    url: 'https://www.facebook.com/events/1707657942806347/'
+    date: 'March 19, 2016'
+    datetime: '2016-03-19'
+    role: 'author'
+    type: 'salon'
+    with:
+      - name: 'Tracy Shaffer'
+        url: 'http://tracyshaffer.com/the-card-table/'
+      - name: 'Buntport Theater'
+        url: 'http://buntport.com/'
+
   - name: 'Jump Start Sass'
     date: 'TBA'
     role: 'co-author'
