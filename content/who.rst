@@ -18,8 +18,8 @@ She is the author of
 `The Post-Obsolete Book`_,
 co-author of `Buntport Theater`_’s
 `10 Myths on the Proper Application of Beauty Products`_
-and `SitePoint`_’s Jump Start Sass,
-and creator of `Accoutrement`_, `Susy`_, and `True`_
+and `SitePoint`_’s `Jump Start Sass`_,
+and creator of the `Accoutrement`_, `Susy`_, and `True`_
 open-source toolkits.
 
 Formerly
@@ -41,8 +41,9 @@ or the `Denver Poets' Theatre`_.
 .. _SassHack Denver: http://www.meetup.com/Sass-Hack-Denver/
 
 .. _Buntport Theater: http://buntport.com
-.. _10 Myths on the Proper Application of Beauty Products: /2016/03/04/10-myths/
+.. _10 Myths on the Proper Application of Beauty Products: https://www.oddbooksapp.com/book/10-myths
 .. _SitePoint: http://sitepoint.com
+.. _Jump Start Sass: https://www.sitepoint.com/premium/books/jump-start-sass
 .. _New World Arts: http://newworldarts.org/
 .. _The LIDA Project: http://lida.org/
 .. _The Post-Obsolete Book: http://www.post-obsolete.com

@@ -2,72 +2,14 @@
 
 # feature
 feature:
-  - name: '10 Myths on the Proper Application of Beauty Products'
-    summary: 'Stage <a href="https://oddbooksapp.com/book/10-myths">adaptation</a> of <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a> with <a href="http://buntport.com">Buntport Theater</a> and <a href="http://teacupgorilla.com">Teacup Gorilla</a> — March, 2016'
-    url: 'http://buntport.com/archive/archive.htm'
-    image: '10-myths.png'
-    style: 'background-position: top left;'
+  - name: 'Riding SideSaddle*'
+    summary: 'A novel of mythology, memory, and bodies that resist order or categorization published on 250 interchangeable note cards.'
+    url: 'http://ridingsidesaddle.com'
+    image: 'huck.jpg'
 
 
 # future
 future:
-  - name: '10 Myths on the Proper Application of Beauty Products'
-    summary: 'Stage <a href="https://oddbooksapp.com/book/10-myths">adaptation</a> of <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a>'
-    url: 'http://buntport.com/archive/archive.htm'
-    date: 'March, 2016'
-    datetime: '2016-03-03'
-    role: 'author & musician'
-    type: 'theater'
-    org:
-      name: 'Buntport Theater'
-      url: 'http://buntport.com/'
-    with:
-      - name: 'Teacup Gorilla'
-        url: 'http://teacupgorilla.com'
-    notes:
-      - name: '<strong>Denver Post</strong> Review'
-        url: 'http://www.denverpost.com/theater/ci_29605936/buntports-dark-comedy-10-myths-an-oddly-satisfying'
-      - name: '<strong>Westword</strong> Review'
-        url: 'http://www.westword.com/arts/review-10-myths-on-the-proper-application-of-beauty-products-is-a-beaut-of-a-show-7678439'
-      - name: '<strong>Out Front</strong> Review'
-        url: 'http://www.outfrontonline.com/culture/buntport-theater-presents-10-myths-proper-application-beauty-products/'
-      - name: '<strong>North Denver Tribune</strong> Review'
-        url: 'http://www.northdenvertribune.com/2016/03/buntports-10-myths-a-mashup-of-myth-gender-loss-and-music/'
-      - name: '<strong>Huffington Post</strong> Review'
-        url: 'http://www.huffingtonpost.com/tracy-shaffer/buntport-theatres-new-sho_b_9386846.html'
-      - name: '<strong>Colorado Drama</strong> Review'
-        url: 'http://coloradodrama.com/10_myths.html'
-      # - name: '<strong>5280</strong> Preview'
-      #   url: 'http://www.5280.com/digital/2016/03/hinging-myth'
-      # - name: '<strong>Met Media</strong> Preview'
-      #   url: 'http://mymetmedia.com/the-metropolitan/features/long-time-friends-provide-one-kind-shows/'
-      # - name: '<strong>Westword</strong> Preview'
-      #   url: 'http://www.westword.com/event/10-myths-on-the-proper-application-of-beauty-products-7582171'
-
-  - name: 'The Card Table'
-    summary: 'Public salon reading of <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a>'
-    url: 'https://www.facebook.com/events/1707657942806347/'
-    date: 'March 19, 2016'
-    datetime: '2016-03-19'
-    role: 'author'
-    type: 'salon'
-    with:
-      - name: 'Tracy Shaffer'
-        url: 'http://tracyshaffer.com/the-card-table/'
-      - name: 'Buntport Theater'
-        url: 'http://buntport.com/'
-
-  - name: 'Jump Start Sass'
-    date: 'TBA'
-    role: 'co-author'
-    type: 'book'
-    org:
-      name: 'SitePoint'
-      url: 'http://www.sitepoint.com/'
-    with:
-      - name: 'Hugo Giraudel'
-        url: 'http://hugogiraudel.com/'
-
   - name: 'Code Patterns for Pattern-Making'
     date: 'March 31 - April 1, 2016'
     datetime: '2016-03-31'
@@ -93,8 +35,15 @@ future:
 # press
 press:
   - subject: '10 Myths on the Proper Application of Beauty Products'
-    url: 'http://buntport.com/archive/archive.htm'
+    url: 'https://www.oddbooksapp.com/book/10-myths'
     reviews:
+
+      - quote: 'The play makes us think about the dizzying variety of possible physical variations to human genitalia and their spiritual and psychological consequences; the usual categories of "male" and "female" are just too simplistic.'
+        credit: 'Juliet Wittman'
+        source: 'Westword'
+        url: 'http://www.westword.com/arts/review-10-myths-on-the-proper-application-of-beauty-products-is-a-beaut-of-a-show-7678439'
+        date: 'March 9, 2016'
+        datetime: '2016-09-09'
 
       - quote: 'Definitely a production worth writing about, talking about, and going to see.'
         credit: 'Berlin Sylvestre'
@@ -102,13 +51,6 @@ press:
         url: 'http://www.outfrontonline.com/culture/buntport-theater-presents-10-myths-proper-application-beauty-products/'
         date: 'March 7, 2016'
         datetime: '2016-03-07'
-
-      - quote: 'The play makes us think about the dizzying variety of possible physical variations to human genitalia and their spiritual and psychological consequences; the usual categories of "male" and "female" are just too simplistic.'
-        credit: 'Juliet Wittman'
-        source: 'Westword'
-        url: 'http://www.westword.com/arts/review-10-myths-on-the-proper-application-of-beauty-products-is-a-beaut-of-a-show-7678439'
-        date: 'March 9, 2016'
-        datetime: '2016-09-07'
 
       - quote: 'An oddly satisfying dark comedy, a meditation on bodies, humanity, love and loss.'
         credit: 'Joanne Ostrow'
@@ -123,6 +65,17 @@ press:
         url: 'http://www.huffingtonpost.com/tracy-shaffer/buntport-theatres-new-sho_b_9386846.html'
         date: 'March 7, 2016'
         datetime: '2016-03-07'
+
+  - subject: 'Jump Start Sass'
+    url: 'https://www.sitepoint.com/premium/books/jump-start-sass'
+    reviews:
+
+      - quote: 'This is hands down the best book on Sass if you want to learn the most important parts of the Sass language that will help you architect a good application.'
+        credit: 'Kaelig Deloumeau-Prigent'
+        source: 'SitePoint'
+        url: 'https://www.sitepoint.com/premium/books/jump-start-sass#reviews'
+        date: 'March 23, 2016'
+        datetime: '2016-03-23'
 
   - subject: 'Teacup Gorilla'
     url: 'http://teacupgorilla.com'
@@ -248,6 +201,64 @@ media:
 
 # past
 past:
+  - name: '10 Myths on the Proper Application of Beauty Products'
+    summary: 'Stage <a href="https://oddbooksapp.com/book/10-myths">adaptation</a> of <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a>'
+    url: 'http://buntport.com/archive/archive.htm'
+    date: 'March, 2016'
+    datetime: '2016-03-03'
+    role: 'author & musician'
+    type: 'theater'
+    org:
+      name: 'Buntport Theater'
+      url: 'http://buntport.com/'
+    with:
+      - name: 'Teacup Gorilla'
+        url: 'http://teacupgorilla.com'
+    notes:
+      - name: '<strong>Denver Post</strong> Review'
+        url: 'http://www.denverpost.com/theater/ci_29605936/buntports-dark-comedy-10-myths-an-oddly-satisfying'
+      - name: '<strong>Westword</strong> Review'
+        url: 'http://www.westword.com/arts/review-10-myths-on-the-proper-application-of-beauty-products-is-a-beaut-of-a-show-7678439'
+      - name: '<strong>Out Front</strong> Review'
+        url: 'http://www.outfrontonline.com/culture/buntport-theater-presents-10-myths-proper-application-beauty-products/'
+      - name: '<strong>North Denver Tribune</strong> Review'
+        url: 'http://www.northdenvertribune.com/2016/03/buntports-10-myths-a-mashup-of-myth-gender-loss-and-music/'
+      - name: '<strong>Huffington Post</strong> Review'
+        url: 'http://www.huffingtonpost.com/tracy-shaffer/buntport-theatres-new-sho_b_9386846.html'
+      - name: '<strong>Colorado Drama</strong> Review'
+        url: 'http://coloradodrama.com/10_myths.html'
+      - name: '<strong>5280</strong> Preview'
+        url: 'http://www.5280.com/digital/2016/03/hinging-myth'
+      - name: '<strong>Met Media</strong> Preview'
+        url: 'http://mymetmedia.com/the-metropolitan/features/long-time-friends-provide-one-kind-shows/'
+      - name: '<strong>Westword</strong> Preview'
+        url: 'http://www.westword.com/event/10-myths-on-the-proper-application-of-beauty-products-7582171'
+
+  - name: 'Jump Start Sass'
+    url: 'https://www.sitepoint.com/premium/books/jump-start-sass'
+    date: 'March 22, 2016'
+    role: 'co-author'
+    type: 'book'
+    org:
+      name: 'SitePoint'
+      url: 'http://www.sitepoint.com/'
+    with:
+      - name: 'Hugo Giraudel'
+        url: 'http://hugogiraudel.com/'
+
+  - name: 'The Card Table'
+    summary: 'Public salon reading of <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a>'
+    url: 'https://www.facebook.com/events/1707657942806347/'
+    date: 'March 19, 2016'
+    datetime: '2016-03-19'
+    role: 'author'
+    type: 'salon'
+    with:
+      - name: 'Tracy Shaffer'
+        url: 'http://tracyshaffer.com/the-card-table/'
+      - name: 'Buntport Theater'
+        url: 'http://buntport.com/'
+
   - name: 'Seventh Circle Music Collective'
     url: 'https://www.facebook.com/events/1661588870774671/'
     date: 'February 10, 2016'
