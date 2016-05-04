@@ -1,75 +1,257 @@
 ---
 
-# feature
-feature:
-  - name: 'Riding SideSaddle*'
-    summary: 'A novel of mythology, memory, and bodies that resist order or categorization published on 250 interchangeable note cards.'
-    url: 'http://ridingsidesaddle.com'
-    image: 'huck.jpg'
+# coming soon...
+# --------------
 
-
-# future
 future:
-  - name: 'Code Patterns for Pattern-Making'
-    date: 'March 31 - April 1, 2016'
-    datetime: '2016-03-31'
-    role: 'speaker'
-    type: 'conference'
-    org:
-      name: 'Clarity Conference'
-      url: 'http://clarityconf.com/'
-
   - name: 'The In-Between'
     url: 'http://www.julierada.com/#/the-in-between/'
     date: 'May 21, 2016'
     datetime: '2015-05-21'
-    type: 'site specific theatre'
+    summary: 'Site-specific performance in the Utah desert'
     role: 'writer & performer'
     org:
       name: 'Vicious Trap'
       url: 'http://vicioustrap.com'
     venue:
       name: 'Rio Mesa Center, Utah'
+      url: 'http://riomesa.utah.edu/'
 
 
-# press
-press:
-  - subject: '10 Myths on the Proper Application of Beauty Products'
-    url: 'https://www.oddbooksapp.com/book/10-myths'
-    reviews:
+# Intro
+# -----
 
+intro:
+  - long: 'From art and performance to open-source software,
+          I love exploring this queer world
+          through multi-media collaboration —
+          dance-stumbling towards beauty together,
+          and sharing the results with everyone around.'
+    short: 'I made some queer things (with other people),
+            and put them on this website (just for you).'
+
+
+# contact
+# -------
+
+contact:
+  - intro: 'Start a conversation,
+            invite me to speak or perform,
+            or just say hello —'
+    link: "I'd love to hear from you!"
+    url: '/contact/'
+
+
+# features
+# --------
+
+features:
+  - title: 'Riding SideSaddle*'
+    with:
+      - name: 'SpringGun Press'
+        url: 'http://springgunpress.com'
+    press:
+      - quote: 'It’s a new and wonderful adventure each time,
+                a story of outcasts, their caretaker,
+                and the friendship and love they find with each other.'
+        credit: 'Ryo Yamaguchi'
+        source: 'Michigan Quarterly Review'
+        url: 'http://www.michiganquarterlyreview.com/'
+    actions:
+      - text: 'buy the novel'
+        url: 'http://www.springgunpress.com/riding-sidesaddle-eric-suzanne/'
+      - text: 'explore online'
+        url: '/ridingsidesaddle/'
+
+  - title: 'Jump Start Sass'
+    with:
+      - name: 'Hugo Giraudel'
+        url: 'http://hugogiraudel.com/'
+      - name: 'SitePoint'
+        url: 'http://www.sitepoint.com/'
+    press:
+      - quote: 'Miriam and Hugo have become some of the most notable
+                creators of Sass plugins and best practices.'
+        credit: 'Chris Eppstein'
+        source: 'Sass Core Developer'
+        url: 'http://sass-lang.com/'
+    actions:
+      - text: 'buy the book'
+        url: 'http://www.amazon.com/Jump-Start-Sass-Hugo-Giraudel/dp/0994182678'
+      - text: 'invite me speak'
+        url: '/contact/'
+
+  - title: 'The Holes They Leave'
+    with:
+      - name: 'Teacup Gorilla'
+        url: 'http://teacupgorilla.com'
+    media:
+      - music: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1383025660/size=large/bgcol=ffffff/linkcol=de270f/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://teacupgorilla.bandcamp.com/album/the-holes-they-leave">The Holes They Leave by Teacup Gorilla</a></iframe>'
+    actions:
+      - text: 'buy the album'
+        url: 'http://teacupgorilla.bandcamp.com/album/the-holes-they-leave?action=buy'
+      - text: 'see us live'
+        url: 'http://teacupgorilla.com'
+
+  - title: 'Susy'
+    with:
+      - name: 'OddBird'
+        url: 'http://oddbird.net'
+    press:
+      - quote: 'I like the idea of grids-on-demand, rather than a strict framework.'
+        credit: 'Chris Coyier'
+        source: 'CSS Tricks'
+        url: 'http://css-tricks.com/build-web-layouts-easily-susy/'
+    actions:
+      - text: 'start using grids'
+        url: 'http://susy.oddbird.net'
+      - text: 'view the code'
+        url: 'https://github.com/oddbird/susy'
+
+  - title: 'The Post-Obsolete Book'
+    press:
+      - quote: 'I was impressed by the purest form of outrageous creation.'
+        credit: 'Judy Rose'
+        source: 'Boulder Writer’s Workshop'
+        url: 'http://www.boulderwritersworkshop.org/2013/04/17/post-obsolete-a-bww-salon/'
+    actions:
+      - text: 'press this button'
+        url: '/post-obsolete/'
+      - text: 'not this one'
+        url: '/2014/08/04/post-obsolete/'
+
+  - title: 'True'
+    with:
+      - name: 'OddBird'
+        url: 'http://oddbird.net'
+    press:
+      - quote: 'OMG I just love this tool way too much.'
+        credit: 'Hugo Giraudel'
+        source: 'Sass Developer'
+        url: 'http://hugogiraudel.com/'
+    actions:
+      - text: 'start unit testing'
+        url: 'http://oddbird.net/true'
+      - text: 'view the code'
+        url: 'https://github.com/oddbird/true'
+
+
+# Feature Orgs
+# ------------
+
+feature_orgs:
+  - title: 'OddBird'
+    summary: 'We design and build custom web applications.
+              From our work for clients like Mozilla and ORCAS,
+              to our open-source contributions —
+              we have a long history of happy users.'
+    actions:
+      - text: 'explore our work'
+        url: 'http://oddbird.net/work/'
+
+  - title: 'Teacup Gorilla'
+    summary: 'We’re known for our
+              dark indie-rock soundscapes and
+              evocative cross-media collaborations —
+              working with writers, video-artists,
+              dancers, and theater companies.'
+    actions:
+      - text: 'explore our music'
+        url: 'http://teacupgorilla.com'
+
+
+# History
+# -------
+
+past:
+  ### 2016 -------------------------------------
+
+  - name: 'Code Patterns for Pattern-Making'
+    date: 'March 31 - April 1, 2016'
+    datetime: '2016-03-31'
+    type: 'talk'
+    summary: 'Going beyond style guides,
+              to explore of the code patterns
+              that make our UI patterns possible.'
+    org:
+      name: 'Clarity Conference'
+      url: 'http://clarityconf.com/'
+    press:
+      - source: 'Chris Coyier: Clarity 2016 Wrapup'
+        url: 'http://codepen.io/chriscoyier/post/clarity-2016-wrapup'
+      - source: 'Brad Frost: Clarity Notes'
+        url: 'http://bradfrost.com/blog/post/clarity-conf-code-patterns-for-pattern-making/'
+    notes:
+      - name: 'view the slides'
+        url: 'https://oddbooksapp.com/book/pattern-making'
+      - name: 'watch the video (requires SitePoint membership)'
+        url: 'https://www.sitepoint.com/premium/courses/clarity-conference-2016-2925/lesson/4/step/1'
+
+  - name: '10 Myths on the Proper Application of Beauty Products'
+    summary: 'A stage
+              <a href="https://oddbooksapp.com/book/10-myths">adaptation</a>
+              of <a href="/ridingsidesaddle/">Riding SideSaddle*</a>'
+    url: 'http://buntport.com/archive/archive.htm'
+    date: 'March, 2016'
+    datetime: '2016-03-03'
+    role: 'author & musician'
+    type: 'performance'
+    org:
+      name: 'Buntport Theater'
+      url: 'http://buntport.com/'
+    with:
+      - name: 'Teacup Gorilla'
+        url: 'http://teacupgorilla.com'
+    press:
       - quote: 'The play makes us think about the dizzying variety of possible physical variations to human genitalia and their spiritual and psychological consequences; the usual categories of "male" and "female" are just too simplistic.'
         credit: 'Juliet Wittman'
         source: 'Westword'
         url: 'http://www.westword.com/arts/review-10-myths-on-the-proper-application-of-beauty-products-is-a-beaut-of-a-show-7678439'
         date: 'March 9, 2016'
         datetime: '2016-09-09'
-
       - quote: 'Definitely a production worth writing about, talking about, and going to see.'
         credit: 'Berlin Sylvestre'
         source: 'Out Front'
         url: 'http://www.outfrontonline.com/culture/buntport-theater-presents-10-myths-proper-application-beauty-products/'
         date: 'March 7, 2016'
         datetime: '2016-03-07'
-
       - quote: 'An oddly satisfying dark comedy, a meditation on bodies, humanity, love and loss.'
         credit: 'Joanne Ostrow'
         source: 'The Denver Post'
         url: 'http://www.denverpost.com/theater/ci_29605936/buntports-dark-comedy-10-myths-an-oddly-satisfying'
         date: 'March 7, 2016'
         datetime: '2016-03-07'
-
       - quote: "The soul of the piece lies in the gender-blending love and acceptance that flows like water through these relationships."
         credit: 'Tracy Shaffer'
         source: 'Huffington Post'
         url: 'http://www.huffingtonpost.com/tracy-shaffer/buntport-theatres-new-sho_b_9386846.html'
         date: 'March 7, 2016'
         datetime: '2016-03-07'
+      # - source: 'North Denver Tribune'
+      #   url: 'http://www.northdenvertribune.com/2016/03/buntports-10-myths-a-mashup-of-myth-gender-loss-and-music/'
+      # - source: 'Colorado Drama'
+      #   url: 'http://coloradodrama.com/10_myths.html'
+      - source: '5280 (Preview)'
+        url: 'http://www.5280.com/digital/2016/03/hinging-myth'
+      # - source: 'Met Media (Preview)'
+      #   url: 'http://mymetmedia.com/the-metropolitan/features/long-time-friends-provide-one-kind-shows/'
+      # - source: 'Westword (Preview)'
+      #   url: 'http://www.westword.com/event/10-myths-on-the-proper-application-of-beauty-products-7582171'
 
-  - subject: 'Jump Start Sass'
+  - name: 'Jump Start Sass'
     url: 'https://www.sitepoint.com/premium/books/jump-start-sass'
-    reviews:
-
+    date: 'March 22, 2016'
+    role: 'co-author'
+    type: 'publication'
+    summary: 'Sass bridges the gap between what CSS can offer and what we as web developers need in our daily routine. Get up to speed with Sass in a weekend.'
+    buy: 'http://www.amazon.com/Jump-Start-Sass-Hugo-Giraudel/dp/0994182678'
+    org:
+      name: 'SitePoint'
+      url: 'http://www.sitepoint.com/'
+    with:
+      - name: 'Hugo Giraudel'
+        url: 'http://hugogiraudel.com/'
+    press:
       - quote: 'This is hands down the best book on Sass if you want to learn the most important parts of the Sass language that will help you architect a good application.'
         credit: 'Kaelig Deloumeau-Prigent'
         source: 'SitePoint'
@@ -77,208 +259,26 @@ press:
         date: 'March 23, 2016'
         datetime: '2016-03-23'
 
-  - subject: 'Teacup Gorilla'
-    url: 'http://teacupgorilla.com'
-    reviews:
-
-      - quote: "I was just digging everything, and didn't want the night to be over."
-        credit: 'Sam O’Daniel'
-        source: 'Your Older Brother'
-        url: 'http://www.yourolderbrother.com/2015/07/riding-sidesaddle-with-teacup-gorilla.html'
-        date: 'July 7, 2015'
-        datetime: '2015-07-21'
-
-      - quote: 'The Holes They Leave occupies a middle place that immediately brings solace to the weary ear.'
-        credit: 'Darren Thornberry'
-        source: 'Stubborn Sounds'
-        url: 'https://stubbornsounds.wordpress.com/2015/07/07/teacup-gorilla-the-holes-they-leave-in-review/'
-        date: 'July 7, 2015'
-        datetime: '2015-07-07'
-
-      - quote: 'One of the most ambitious projects that has come across our desk recently.'
-        credit: 'Tim Wenger'
-        source: 'Colorado Music Buzz'
-        url: 'http://www.colomusicbuzz.com/eric-suzanne-drops-non-linear-novel-in-conjunction-with-teacup-gorilla/'
-        date: 'April 1, 2015'
-        datetime: '2015-04-01'
-
-  - subject: 'Susy'
-    url: 'http://susy.oddbird.net'
-    reviews:
-
-      - quote: 'If you’re interested in reading Sass poetry, be sure to look at Susy’s source code!'
-        credit: 'Hugo Giraudel'
-        source: 'SitePoint'
-        url: 'http://www.sitepoint.com/my-favorite-sass-tools/'
-        date: 'April 22, 2014'
-        datetime: '2014-04-22'
-
-  - subject: 'Into The Green Green Mud'
-    url: 'http://greengreenmud.com'
-    reviews:
-
-      - quote: 'This virtuoso creation by a talented young poet, writer, artist, typographer, programmer, and musician is a taste of things to come as new generations of digital media and code literate creators come of age.'
-        credit: 'Leonardo Flores'
-        source: 'I ♥ E-Poetry'
-        url: 'http://iloveepoetry.com/?p=2571'
-        date: 'May 2, 2013'
-        datetime: '2013-05-02'
-
-  - subject: 'The Post-Obsolete Book'
-    url: '/post-obsolete/'
-    reviews:
-
-      - quote: 'I was impressed by the purest form of outrageous creation.'
-        credit: 'Judy Rose'
-        source: 'Boulder Writer’s Workshop'
-        url: 'http://www.boulderwritersworkshop.org/2013/04/17/post-obsolete-a-bww-salon/'
-        date: 'April 17, 2013'
-        datetime: '2013-04-17'
-
-  - subject: 'Dirt Circle Dogs'
-    url: 'http://www.cdbaby.com/cd/dirtcircledogs'
-    reviews:
-
-      - quote: 'Eisenstat sings that there is “No voice on the radio,” and perhaps, for now, that’s true. Kingdom, though, is certainly worth a private listen at home.'
-        credit: 'Cat Carroll'
-        source: 'Onion AV Club'
-        url: 'http://www.avclub.com/'
-        date: 'Aug. 14, 2009'
-        datetime: '2009-08-14'
-
-  - subject: 'Hello and Goodbye'
-    url: 'http://newworldarts.org/history'
-    reviews:
-
-      - quote: 'Rarely does one encounter a production undertaken with such a tremendous amount of care and consideration.'
-        credit: 'Jack Walton'
-        source: 'South Bend Tribune'
-        url: 'http://articles.southbendtribune.com/2006-01-29/news/26962892_1_hester-darkness-athol-fugard'
-        date: 'Jan. 29, 2006'
-        datetime: '2006-01-29'
-
-
-# interviews
-interviews:
-  - title: 'On Riding SideSaddle*'
-    credit: 'Ryo Yamaguchi'
-    source: 'Michigan Quarterly Review'
-    url: 'http://www.michiganquarterlyreview.com/2015/06/on-riding-sidesaddle-an-interview-with-eric-suzanne/'
-    date: 'June 1, 2015'
-    datetime: '2015-06-01'
-
-  - title: 'Eric Suzanne Drops Non-Linear Novel...'
-    credit: 'Tim Wenger'
-    source: 'Colorado Music Buzz'
-    url: 'http://www.colomusicbuzz.com/eric-suzanne-drops-non-linear-novel-in-conjunction-with-teacup-gorilla/'
-    date: 'April 1, 2015'
-    datetime: '2015-04-01'
-
-  - title: 'Ideas, Process, Obsolescence, and the Iterative'
-    credit: 'Mél Hogan'
-    source: 'Media Archeology Lab'
-    url: 'http://mediaarchaeologylab.com/eric-meyer-ideas-process-obsolescence-iterative-interview-mel-hogan/'
-    date: 'Nov. 15, 2013'
-    datetime: '2013-11-15'
-
-  - title: 'Collaboration, Queer Art, and the Multi-Media Novel'
-    credit: 'Richard Wall'
-    source: 'Boulder Writers Workshop'
-    url: 'http://www.boulderwritersworkshop.org/2012/08/31/eric-meyer-discusses-collaboration-queer-art-and-his-multi-media-novel'
-    date: 'Aug. 31, 2012'
-    datetime: '2012-08-31'
-
-
-# media
-media:
-  - body:
-      - video: '<iframe src="https://player.vimeo.com/video/125217583?color=ef3939&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
-        class: 'full'
-      - music: '<iframe style="border: 0; width: 100%; height: 310px;" src="https://bandcamp.com/EmbeddedPlayer/album=1383025660/size=large/bgcol=ffffff/linkcol=ef3939/artwork=small/transparent=true/" seamless><a href="http://teacupgorilla.bandcamp.com/album/the-holes-they-leave">The Holes They Leave by Teacup Gorilla</a></iframe>'
-        class: 'full'
-    slug: 'teacupgorilla'
-
-
-# past
-past:
-  - name: '10 Myths on the Proper Application of Beauty Products'
-    summary: 'Stage <a href="https://oddbooksapp.com/book/10-myths">adaptation</a> of <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a>'
-    url: 'http://buntport.com/archive/archive.htm'
-    date: 'March, 2016'
-    datetime: '2016-03-03'
-    role: 'author & musician'
-    type: 'theater'
-    org:
-      name: 'Buntport Theater'
-      url: 'http://buntport.com/'
-    with:
-      - name: 'Teacup Gorilla'
-        url: 'http://teacupgorilla.com'
-    notes:
-      - name: '<strong>Denver Post</strong> Review'
-        url: 'http://www.denverpost.com/theater/ci_29605936/buntports-dark-comedy-10-myths-an-oddly-satisfying'
-      - name: '<strong>Westword</strong> Review'
-        url: 'http://www.westword.com/arts/review-10-myths-on-the-proper-application-of-beauty-products-is-a-beaut-of-a-show-7678439'
-      - name: '<strong>Out Front</strong> Review'
-        url: 'http://www.outfrontonline.com/culture/buntport-theater-presents-10-myths-proper-application-beauty-products/'
-      - name: '<strong>North Denver Tribune</strong> Review'
-        url: 'http://www.northdenvertribune.com/2016/03/buntports-10-myths-a-mashup-of-myth-gender-loss-and-music/'
-      - name: '<strong>Huffington Post</strong> Review'
-        url: 'http://www.huffingtonpost.com/tracy-shaffer/buntport-theatres-new-sho_b_9386846.html'
-      - name: '<strong>Colorado Drama</strong> Review'
-        url: 'http://coloradodrama.com/10_myths.html'
-      - name: '<strong>5280</strong> Preview'
-        url: 'http://www.5280.com/digital/2016/03/hinging-myth'
-      - name: '<strong>Met Media</strong> Preview'
-        url: 'http://mymetmedia.com/the-metropolitan/features/long-time-friends-provide-one-kind-shows/'
-      - name: '<strong>Westword</strong> Preview'
-        url: 'http://www.westword.com/event/10-myths-on-the-proper-application-of-beauty-products-7582171'
-
-  - name: 'Jump Start Sass'
-    url: 'https://www.sitepoint.com/premium/books/jump-start-sass'
-    date: 'March 22, 2016'
-    role: 'co-author'
-    type: 'book'
-    org:
-      name: 'SitePoint'
-      url: 'http://www.sitepoint.com/'
-    with:
-      - name: 'Hugo Giraudel'
-        url: 'http://hugogiraudel.com/'
-
   - name: 'The Card Table'
     summary: 'Public salon reading of <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a>'
     url: 'https://www.facebook.com/events/1707657942806347/'
     date: 'March 19, 2016'
     datetime: '2016-03-19'
-    role: 'author'
-    type: 'salon'
+    type: 'other'
     with:
       - name: 'Tracy Shaffer'
         url: 'http://tracyshaffer.com/the-card-table/'
       - name: 'Buntport Theater'
         url: 'http://buntport.com/'
 
-  - name: 'Seventh Circle Music Collective'
-    url: 'https://www.facebook.com/events/1661588870774671/'
-    date: 'February 10, 2016'
-    datetime: '2016-02-10'
-    role: 'musician'
-    type: 'all-ages show'
-    org:
-      name: 'Teacup Gorilla'
-      url: 'http://teacupgorilla.com'
-    with:
-      - name: 'NORTH BY NORTH'
-        url: 'www.northbynorth.bandcamp.com'
-      - name: 'The Truth & Spectacle'
-        url: 'http://thetruthandspectacle.com/'
 
-  - name: 'SideSaddle* Installation'
+  ### 2015 -------------------------------------
+
+  - name: 'SideSaddle* Gallery Installation'
     date: 'Oct-Nov, 2015'
     datetime: '2015-10-11'
-    role: 'writer & artist'
-    type: 'gallery installation'
+    role: 'artist'
+    type: 'installation'
     org:
       name: 'Huckleberry Roasters'
       url: 'http://huckleberryroasters.com/'
@@ -287,11 +287,13 @@ past:
     url: 'http://oddbooksapp.com/book/user-unfriendly'
     date: 'Nov. 11-13, 2015'
     datetime: '2015-11-11'
-    role: 'moderator'
-    type: 'discussion'
+    type: 'talk'
     org:
       name: 'SassConf 2015'
       url: 'http://sassconf.com/'
+    notes:
+      - name: 'view the slides'
+        url: 'https://oddbooksapp.com/book/user-unfriendly'
 
   - name: 'Road to SassConf'
     url: 'https://www.youtube.com/watch?v=jkVgp-GfQXc'
@@ -301,13 +303,17 @@ past:
     org:
       name: 'SassBites'
       url: 'https://www.youtube.com/user/sassbites'
+    with:
+      - name: 'Micah GodBolt'
+      - name: 'Miriam Nadler'
 
   - name: 'ReTriplicate'
-    url: 'https://clyffordstillmuseum.org/event/performance-retriplicate-2015-09-25/2015-09-24/'
+    url: 'https://clyffordstillmuseum.org/retriplicate-reflects-on-clyfford-stills-replicates-and-the-artistic-process/'
     date: 'Sept. 24-26, 2015'
     datetime: '2015-09-24'
+    summary: 'Multimedia reflections on the Repeat/Recreate installation'
     role: 'musician'
-    type: 'multimedia performance'
+    type: 'performance'
     org:
       name: 'Clyfford Still Museum'
       url: 'https://clyffordstillmuseum.org/'
@@ -318,35 +324,55 @@ past:
         url: 'http://lauraannsamuelson.com/LAURA_ANN_SAMUELSON/about.html'
       - name: 'Screw Tooth'
         url: 'http://screwtooth.com'
+    press:
+      - credit: 'Eden Lane'
+        source: '9 News'
+        url: 'http://legacy.9news.com/story/life/2015/09/22/museum-and-theater-team-up-for-unique-collaboration/72653748/'
+        date: 'Sept. 22, 2015'
+        datetime: '2015-09-22'
 
   - name: 'The In-Between'
     url: 'http://www.julierada.com/#/the-in-between/'
     date: 'Sept. 6, 2015'
     datetime: '2015-09-06'
-    type: 'site specific theatre'
-    role: 'writer & performer'
+    role: 'co-writer & performer'
+    type: 'performance'
+    summary: 'Site-specific performance in the Utah desert'
     org:
       name: 'Vicious Trap'
       url: 'http://vicioustrap.com'
     venue:
       name: 'Rio Mesa Center, Utah'
+      url: 'http://riomesa.utah.edu/'
 
   - name: 'Sassy Toolkits'
     url: 'http://oddbooksapp.com/book/sassy-toolkits'
-    date: 'Aug. 27-28, 2015'
-    datetime: '2015-08-28'
-    role: 'speaker'
-    type: 'conference'
+    date: 'June-Aug. 2015'
+    type: 'talk'
+    summary: 'How to build and share your own open-source Sass toolkits'
     org:
-      name: 'Frontend Conference, Zurich'
-      url: 'http://frontendconf.ch'
+    instances:
+      - name: 'Frontend Conference, Zurich'
+        url: 'http://frontendconf.ch'
+        date: 'Aug. 27-28, 2015'
+        datetime: '2015-08-28'
+      - name: 'WordCamp Denver'
+        url: 'http://denver.wordcamp.org/2015/'
+        date: 'June 13-14, 2015'
+        datetime: '2015-06-13'
+    notes:
+      - name: 'view the slides'
+        url: 'http://oddbooksapp.com/book/sassy-toolkits'
+      - name: 'Frontend Conference video'
+        url: 'https://www.youtube.com/watch?v=9w0pgUTYy5k'
 
-  - name: 'The Holes They Leave Tour'
+  - name: 'The Holes They Leave (tour)'
     url: 'http://www.teacupgorilla.com/2015/08/01/tour/'
     date: 'Aug. 1-14, 2015'
     datetime: '2015-08-01'
-    role: 'musician & poet'
-    type: 'hybrid album & book-release tour'
+    role: 'author & musician'
+    type: 'performance'
+    summary: 'Hybrid album (The Holes They Leave) & book-release (Riding SideSaddle*) tour'
     org:
       name: 'Teacup Gorilla'
       url: 'http://teacupgorilla.com'
@@ -355,8 +381,8 @@ past:
     url: 'http://www.theorientaltheater.com/event/214770/fiction-fest'
     date: 'July 31, 2015'
     datetime: '2015-07-31'
-    role: 'poet'
-    type: 'festival'
+    role: 'performer'
+    type: 'performance'
     with:
       - name: 'High Fiction'
         url: 'http://highfiction.com/'
@@ -371,154 +397,263 @@ past:
     date: 'July 23-26, 2015'
     datetime: '2015-07-23'
     role: 'musician'
-    type: 'festival'
+    type: 'performance'
+    summary: 'Denver’s premier music festival'
     org:
       name: 'Teacup Gorilla'
       url: 'http://teacupgorilla.com'
 
   - name: 'The Holes They Leave'
     url: 'https://teacupgorilla.bandcamp.com/album/the-holes-they-leave'
+    buy: 'http://teacupgorilla.bandcamp.com/album/the-holes-they-leave?action=buy'
     date: 'July 9, 2015'
     datetime: '2015-07-09'
     role: 'musician'
     type: 'album'
+    summary: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1383025660/size=large/bgcol=ffffff/linkcol=de270f/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://teacupgorilla.bandcamp.com/album/the-holes-they-leave">The Holes They Leave by Teacup Gorilla</a></iframe>'
     org:
       name: 'Teacup Gorilla'
       url: 'http://teacupgorilla.com'
     notes:
       - name: '<strong>Hi Dive</strong> EP Release with Bad Luck City'
         url: 'http://www.hi-dive.com/event/864133-teacup-gorilla-denver/'
+    press:
+      - quote: 'The Holes They Leave occupies a middle place that immediately brings solace to the weary ear.'
+        credit: 'Darren Thornberry'
+        source: 'Stubborn Sounds'
+        url: 'https://stubbornsounds.wordpress.com/2015/07/07/teacup-gorilla-the-holes-they-leave-in-review/'
+        date: 'July 7, 2015'
+        datetime: '2015-07-07'
 
-  - name: 'Sass Map Magic'
-    url: 'http://oddbooksapp.com/book/sass-map-magic'
-    date: 'July 8, 2015'
-    datetime: '2015-07-07'
-    role: 'speaker'
-    type: 'online conference'
-    org:
-      name: 'CSS Summit'
-      url: 'http://environmentsforhumans.com/2015/css-summit/'
-
-  - name: 'Sassy Toolkits [the WordPress way]'
-    url: 'http://oddbooksapp.com/book/sassy-toolkits'
-    date: 'June 13-14, 2015'
-    datetime: '2015-06-13'
-    role: 'speaker'
-    type: 'conference'
-    org:
-      name: 'WordCamp Denver'
-      url: 'http://denver.wordcamp.org/2015/'
-
-  - name: 'Sass Map Magic'
-    url: 'http://oddbooksapp.com/book/sass-map-magic'
-    date: 'June 1-4, 2015'
+  - name: 'On Riding SideSaddle*'
+    url: 'http://www.michiganquarterlyreview.com/2015/06/on-riding-sidesaddle-an-interview-with-eric-suzanne/'
+    date: 'June 1, 2015'
     datetime: '2015-06-01'
-    role: 'speaker'
-    type: 'conference'
+    type: 'interview'
+    press:
+      - quote: 'It’s a new, and wonderful, adventure each time, a story of outcasts, their caretaker, and the friendship and love they find with each other.'
+        credit: 'Ryo Yamaguchi'
+        source: 'Michigan Quarterly Review'
+        url: 'http://www.michiganquarterlyreview.com/'
+
+  - name: 'Sass Map Magic'
+    url: 'http://oddbooksapp.com/book/sass-map-magic'
+    dates: ['2014', '2015']
+    type: 'talk'
+    summary: 'A sometimes-practical look at using Sass maps in any web project'
+    instances:
+      - name: 'CSS Summit'
+        url: 'http://environmentsforhumans.com/2015/css-summit/'
+        date: 'July 8, 2015'
+        datetime: '2015-07-07'
+      - name: 'Future Insights Live'
+        url: 'https://futureinsightslive.com/las-vegas-2015/'
+        date: 'June 1-4, 2015'
+        datetime: '2015-06-01'
+      - name: 'SassConf [Unconference Day]'
+        url: 'http://sassconf.com'
+        date: 'Oct. 2-4, 2014'
+        datetime: '2014-10-02'
+      - name: 'BlendConf'
+        url: 'http://2014.blendconf.com/'
+        date: 'Sept. 11–13, 2014'
+        datetime: '2014-09-11'
+    notes:
+      - name: 'view the slides'
+        url: 'http://oddbooksapp.com/book/sass-map-magic'
+      - name: 'CSS Summit video'
+        url: '@@@'
+      - name: 'FI Live video'
+        url: '@@@'
+      - name: 'BlendConf video'
+        url: 'http://teamtreehouse.com/library/sass-map-magic'
+
+  - name: 'Riding SideSaddle* Book Release'
+    date: 'April 2, 2015'
+    datetime: '2015-04-02'
+    role: 'author & musician'
+    type: 'performance'
     org:
-      name: 'Future Insights Live'
-      url: 'https://futureinsightslive.com/las-vegas-2015/'
+      name: 'Teacup Gorilla'
+      url: 'http://teacupgorilla.com'
+    venue:
+      name: 'Syntax Physic Opera'
+      url: 'http://physicopera.com/'
+    press:
+      - quote: "I was just digging everything, and didn't want the night to be over."
+        credit: 'Sam O’Daniel'
+        source: 'Your Older Brother'
+        url: 'http://www.yourolderbrother.com/2015/07/riding-sidesaddle-with-teacup-gorilla.html'
+        date: 'July 7, 2015'
+        datetime: '2015-07-21'
+      - quote: 'Expect performances that blend mediums, styles and disciplines.'
+        credit: 'Luke Leavitt'
+        source: 'Westword'
+        url: 'http://www.westword.com/arts/music-art-and-words-are-in-the-cards-at-the-riding-sidesaddle-book-launch-6626798'
+        date: 'Apr. 2, 2015'
+        datetime: '2015-04-02'
 
   - name: 'Riding SideSaddle*'
-    url: 'http://ridingsidesaddle.net'
+    url: '/ridingsidesaddle/'
+    buy: 'http://www.springgunpress.com/riding-sidesaddle-eric-suzanne/'
     date: 'April 2, 2015'
     datetime: '2015-04-02'
     role: 'author'
-    type: 'hybrid novel'
+    type: 'publication'
+    summary: 'A Hybrid novel, and fragmented memory of our lives together — navigating fluid genders, relationships, and bodies that resist order, category, or completion.'
     org:
       name: 'SpringGun Press'
       url: 'http://springgunpress.com'
-
-  - name: 'The Magic of Sassy Maps'
-    url: 'http://oddbooksapp.com/book/sass-map-magic'
-    date: 'Sept. 11–13, 2014'
-    datetime: '2014-09-11'
-    role: 'speaker'
-    type: 'conference'
-    org:
-      name: 'BlendConf'
-      url: 'http://2014.blendconf.com/'
+    press:
+      - quote: 'The characters, ideas, story are exposed, raw, alive — merging masculine and feminine into some kind of mystical marriage.'
+        credit: 'Erin Rollman & Brian Colonna'
+        source: 'Buntport Theater'
+      - quote: 'It’s a new, and wonderful, adventure each time, a story of outcasts, their caretaker, and the friendship and love they find with each other.'
+        credit: 'Ryo Yamaguchi'
+        source: 'Michigan Quarterly Review'
+        url: 'http://www.michiganquarterlyreview.com/2015/06/on-riding-sidesaddle-an-interview-with-eric-suzanne/'
+        date: 'June 1, 2015'
+        datetime: '2015-06-01'
     notes:
-      - name: 'watch the video'
-        url: 'http://teamtreehouse.com/library/sass-map-magic'
+      - name: 'Interview with Colorado Music Buzz'
+        url: 'http://www.colomusicbuzz.com/eric-suzanne-drops-non-linear-novel-in-conjunction-with-teacup-gorilla/'
+
+  - name: 'Eric Suzanne Drops Non-Linear Novel...'
+    url: 'http://www.colomusicbuzz.com/eric-suzanne-drops-non-linear-novel-in-conjunction-with-teacup-gorilla/'
+    date: 'April 1, 2015'
+    datetime: '2015-04-01'
+    type: 'interview'
+    press:
+        quote: 'One of the most ambitious projects that has come across our desk recently.'
+        credit: 'Tim Wenger'
+        source: 'Colorado Music Buzz'
+        url: 'http://www.colomusicbuzz.com'
+
+
+  ### 2014 -------------------------------------
 
   - name: 'PROPHETIA VETITUM MUNDI'
     url: '/2014/08/19/screwtooth/'
     date: 'Aug. 2-8, 2014'
     datetime: '2014-08-02'
-    role: 'visual artist'
+    role: 'artist'
     type: 'installation'
+    summary: 'Collaborative gallery installation based on an obscure 80s sci-fi film'
     org:
       name: 'Screw Tooth'
       url: 'http://www.screwtooth.com/'
 
   - name: 'The Post-Obsolete Book'
-    url: '/2014/08/04/post-obsolete/'
-    date: 'June 19, 2014'
-    datetime: '2014-06-19'
+    url: '/post-obsolete/'
     role: 'poet & performer'
-    type: 'conference/installation'
-    org:
-      name: '2014 ELO Conference'
-      url: 'http://conference.eliterature.org/archive/2014'
+    type: ['performance', 'installation', 'publication']
+    summary: 'Electronic literature conference — performance and gallery installation'
+    instances:
+      - name: 'ELO Conference (installation and performance)'
+        url: 'http://conference.eliterature.org/archive/2014'
+        date: 'June 19, 2014'
+        datetime: '2014-06-19'
+      - name: 'Brakhage Center Media Arts'
+        url: 'http://brakhagecenter.com/?p=932'
+        date: 'Oct. 2013'
+        datetime: '2013-10-01'
+      - name: 'Media Archeology Lab'
+        url: 'http://mediaarchaeologylab.com/eric-meyer-2/'
+        date: 'Sept. 2013'
+        datetime: '2013-09-01'
+      - name: 'Boulder Writer’s Workshop'
+        url: 'http://www.boulderwritersworkshop.org/2013/04/17/post-obsolete-a-bww-salon/'
+        date: 'April 2013'
+        datetime: '2013-04-17'
+      - name: '"Electronic Literature & the Nonhuman" at the SLSA Conference 2012'
+        url: 'http://eliterature.org/electronic-literature-the-nonhuman/'
+        date: 'Sept. 2012'
+        datetime: '2012-09-12'
+      - name: 'Leon Presents a Reading Series #6'
+        url: 'https://www.facebook.com/events/415657695136519/permalink/417120971656858/'
+        date: 'July 2012'
+        datetime: '2012-07-01'
+      - name: 'Naropa Summer Writing Program'
+        date: 'June 2012'
+        datetime: '2012-06-01'
+    press:
+      - quote: 'I was impressed by the purest form of outrageous creation.'
+        credit: 'Judy Rose'
+        source: 'Boulder Writer’s Workshop'
+        url: 'http://www.boulderwritersworkshop.org/2013/04/17/post-obsolete-a-bww-salon/'
+        date: 'April 17, 2013'
+        datetime: '2013-04-17'
+    notes:
+      - name: 'photos and video'
+        url: '/2014/08/04/post-obsolete/'
 
   - name: 'Bouldering Poets: Two Year Anniversary'
-    url: 'http://boulderingpoets.wordpress.com/2014/04/07/may-17-2014-two-year-anniversary/'
-    date: 'May 17, 2014'
-    datetime: '2014-05-17'
-    role: 'poet & musician'
-    type: 'reading'
+    type: 'performance'
+    summary: 'Poetry reading and music'
+    org:
+      name: 'Bouldering Poets'
+      url: 'http://boulderingpoets.wordpress.com/2014/04/07/may-17-2014-two-year-anniversary/'
     with:
-      - name: 'Alan Mudd'
       - name: 'Teacup Gorilla'
         url: 'http://teacupgorilla.com'
+      - name: 'Alan Mudd'
       - name: 'Chris Shugrue'
 
   - name: 'DISusy: your layout, our math'
-    url: 'http://www.miriamsuzanne.com/pres/susy2/index.html'
-    date: 'April 24, 2014'
-    datetime: '2014-04-24'
-    role: 'speaker'
-    type: 'meetup'
-    org:
-      name: 'Bmore Sass'
-      url: 'http://bmore-sass.com/'
+    url: '/pres/susy2/'
+    type: 'talk'
+    summary: 'Introduction to the Susy layout toolkit, and the philosophy behind it'
+    instances:
+      - name: 'Bmore Sass'
+        url: 'http://bmore-sass.com/'
+        date: 'April 24, 2014'
+        datetime: '2014-04-24'
+      - name: 'The Mixin'
+        url: 'https://themixin.eventbrite.com/'
+        date: 'April 16, 2014'
+        datetime: '2014-04-16'
+    notes:
+      - name: 'view the slides'
+        url: '/pres/susy2/'
 
   - name: 'Show Your Work & Share Your Toys'
-    url: 'http://www.miriamsuzanne.com/pres/show-yr-work/index.html'
-    date: 'April 19, 2014'
-    datetime: '2014-04-19'
-    role: 'speaker'
-    type: 'conference'
-    org:
-      name: 'CampSass'
-      url: 'http://campsass.com/'
-
-  - name: 'DISusy: your layout, our math'
-    url: 'http://www.miriamsuzanne.com/pres/susy2/index.html'
-    date: 'April 16, 2014'
-    datetime: '2014-04-16'
-    role: 'speaker'
-    type: 'meetup'
-    org:
-      name: 'The Mixin'
-      url: 'https://themixin.eventbrite.com/'
+    url: '/pres/show-yr-work/'
+    dates: ['2013', '2014']
+    type: 'talk'
+    summary: 'How to build and share your own open-source Sass toolkits'
+    instances:
+      - name: 'CampSass'
+        url: 'http://campsass.com/'
+        date: 'April 19, 2014'
+        datetime: '2014-04-19'
+      - name: 'SassConf'
+        url: 'http://sassconf.com/'
+        date: 'Oct. 2013'
+        datetime: '2013-10-01'
+    notes:
+      - name: 'view the slides'
+        url: '/pres/show-yr-work/'
+      - name: 'SassConf video'
+        url: 'https://vimeo.com/channels/sassconf2013/86306775'
 
   - name: 'Susy Grids 2.0'
     url: 'bit.ly/SassBites29'
     date: 'March 13, 2014'
     datetime: '2014-03-13'
     type: 'podcast'
+    summary: 'Introduction to the Susy layout toolkit, and the philosophy behind it'
     org:
       name: 'SassBites'
       url: 'https://www.youtube.com/user/sassbites'
 
+
+  ### 2013 -------------------------------------
+
   - name: 'Organizing Sass Partials'
-    url: 'http://www.miriamsuzanne.com/pres/sass-partials/index.html'
+    url: '/pres/sass-partials/index.html'
     date: 'Nov. 2013'
     datetime: '2013-11-01'
-    role: 'speaker'
-    type: 'meetup'
+    type: 'talk'
     org:
       name: 'NYC Sass & Compass Meetup'
       url: 'http://www.meetup.com/nyc-sass/events/146898452/'
@@ -528,41 +663,81 @@ past:
     date: 'Nov. 2013'
     datetime: '2013-10-01'
     role: 'poet & musician'
-    type: 'reading'
-    with:
+    type: 'performance'
+    summary: 'Poetry reading and music'
+    org:
       - name: 'Teacup Gorilla'
         url: 'http://teacupgorilla.com'
+    with:
       - name: 'Marcia Douglas'
       - name: 'Matt Cook'
 
-  - name: 'Show Your Work & Share Your Toys'
-    url: 'http://www.miriamsuzanne.com/pres/show-yr-work/index.html'
-    date: 'Oct. 2013'
-    datetime: '2013-10-01'
-    role: 'speaker'
-    type: 'conference'
+  - name: 'System Reboot Celebration'
+    date: 'Oct. 17, 2013'
+    datetime: '2013-10-17'
+    type: 'performance'
+    summary: 'Poetry reading'
     org:
-      name: 'SassConf'
+      name: 'The Operating System'
+      url: 'http://theoperatingsystem.org/'
+
+  - name: 'Fuck The Muse'
+    dates: ['2012', '2013']
+    type: 'publication'
+    summary: 'A series of articles on creative process'
+    org:
+      name: 'The Operating System'
+      url: 'http://theoperatingsystem.org/'
     notes:
-      - name: 'watch the video'
-        url: 'https://vimeo.com/channels/sassconf2013/86306775'
+      - name: 'Introduction'
+        url: 'http://www.theoperatingsystem.org/word-tech-ericmeyer-field-notes/'
+      - name: "Lesson 1: Fuck the Muse"
+        url: 'http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-creativity-mini-series-lesson-1/'
+      - name: 'Lesson 2: Ordinary Tools of Thought'
+        url: 'http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-lesson-2-ordinary-tools-of-thought/'
+      - name: 'Lesson 3: Creative Modes and Cycles'
+        url: 'http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-lesson-3-creative-modes-and-cycles/'
+      - name: 'Lesson 4: Starting from a Seed'
+        url: 'http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-lesson-4-starting-from-a-seed/'
+      - name: 'Lesson 5: Get Curious'
+        url: 'http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-lesson-4-starting-from-a-seed/'
+      - name: 'Lesson 6: Explosive Growth'
+        url: 'http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-lesson-6-explosive-growth/'
+      - name: 'Lesson 7: (Re)Thinking on Your Feet'
+        url: 'http://www.theoperatingsystem.org/coco-process-course-eric-meyers-fuck-the-muse-lesson-7-rethinking-on-your-feet/'
 
   - name: 'Art is for People'
     url: '/art-is-for-people/'
     date: 'Oct. 2013'
     datetime: '2013-10-01'
-    role: 'speaker'
-    type: 'lunchtime series'
+    type: 'talk'
+    summary: 'Musings on artistic process'
     org:
       name: 'Brakhage Center Media Arts'
       url: 'http://brakhagecenter.com/?p=932'
 
-  - name: 'The Operating System PRINT! vol. 3'
-    url: 'http://www.theoperatingsystem.org/layer-tennis-live-stream-print-vol-3-ole/'
+  - name: 'Ideas, Process, Obsolescence, and the Iterative'
+    url: 'http://mediaarchaeologylab.com/eric-meyer-ideas-process-obsolescence-iterative-interview-mel-hogan/'
+    date: 'Nov. 15, 2013'
+    datetime: '2013-11-15'
+    type: 'interview'
+    press:
+      - credit: 'Mél Hogan'
+        source: 'Media Archeology Lab'
+        url: 'http://mediaarchaeologylab.com/'
+
+  - name: 'PRINT! vol. 3'
+    url: 'https://squareup.com/store/the-operating-system/item/the-operating-system-print-vol'
     date: 'Nov. 2013'
     datetime: '2013-10-01'
-    type: 'literary journal'
     role: 'designer & poet'
+    type: 'publication'
+    org:
+      name: 'The Operating System'
+      url: 'http://theoperatingsystem.org/'
+    notes:
+      - name: 'Layer-tennis design process'
+        url: 'http://www.theoperatingsystem.org/layer-tennis-live-stream-print-vol-3-ole/'
 
   - name: 'Digital Art'
     date: 'Sept. 2013'
@@ -571,14 +746,14 @@ past:
     type: 'university'
     with:
       - name: 'professor Erin Costello'
-    venue:
+    org:
       name: 'Colorado University'
 
   - name: 'Making a Small Press Work'
     date: 'Sept. 2013'
     datetime: '2013-09-01'
-    role: 'moderator'
-    type: 'panel'
+    role: 'panel moderator'
+    type: 'talk'
     org:
       name: '<span class="amp">&</span>Now Festival'
 
@@ -592,13 +767,17 @@ past:
       url: 'http://mediaarchaeologylab.com'
     venue:
       name: '<span class="amp">&</span>Now Festival'
+    notes:
+      - name: 'Ideas, Process, Obsolescence, and the Iterative [interview]'
+        url: 'http://mediaarchaeologylab.com/eric-meyer-ideas-process-obsolescence-iterative-interview-mel-hogan/'
 
-  - name: 'The Post-Obsolete Book'
+  - name: 'The Post-Obsolete Book (springgun)'
     url: 'http://www.springgunpress.com/issue-8-2013/eric-meyer/'
     date: 'Sept. 2013'
     datetime: '2013-09-01'
     role: 'poet & developer'
-    type: 'digital poetry'
+    type: 'publication'
+    summary: 'A multimedia memorial, and a reflection on the obsolescence of obsolescence, documented on the cloud, and open-sourced as a defense against post-post-obsolescence. The book is dead. Long live the book.'
     org:
       name: 'SpringGun Journal, Issue 8'
       url: 'http://www.springgunpress.com/issue-8-2013/'
@@ -606,136 +785,160 @@ past:
   - name: 'Intro to Digital Media for Humanities'
     date: 'Aug. 2013'
     datetime: '2013-08-01'
-    role: 'guest lecture'
-    type: 'university'
+    type: 'lecture'
+    org:
+      name: 'Colorado University'
     with:
       - name: 'professor Lori Emerson'
-    venue:
-      name: 'Colorado University'
-
-  - name: 'Boulder Writer’s Workshop'
-    url: 'http://www.boulderwritersworkshop.org/2013/04/17/post-obsolete-a-bww-salon/'
-    date: 'April 2013'
-    type: 'literary salon'
-    role: 'host & performer'
 
   - name: 'Bouldering Poets'
     url: 'https://boulderingpoets.wordpress.com/2013/04/01/march-photos/'
     date: 'March 2013'
     role: 'poet & musician'
-    type: 'reading'
+    type: 'performance'
+    summary: 'Poetry reading and music'
+    org:
+      name: 'Teacup Gorilla'
+      url: 'http://teacupgorilla.com'
     with:
-      - name: 'Teacup Gorilla'
-        url: 'http://teacupgorilla.com'
       - name: 'Ellen Orleans'
       - name: 'Georgia Van Gunten'
 
-  - name: 'Electronic Literature & the Nonhuman'
-    url: 'http://eliterature.org/electronic-literature-the-nonhuman/'
-    date: 'Sept. 2012'
-    role: 'poet & performer'
-    type: 'conference'
-    org:
-      name: 'The Society for Literature Science and the Arts'
+
+  ### 2012 -------------------------------------
+
+  - title: 'Collaboration, Queer Art, and the Multi-Media Novel'
+    url: 'http://www.boulderwritersworkshop.org/2012/08/31/eric-meyer-discusses-collaboration-queer-art-and-his-multi-media-novel'
+    date: 'Aug. 31, 2012'
+    datetime: '2012-08-31'
+    type: 'interview'
+    press:
+      - quote: 'A Denver multimedia artist, writer, and web designer whose views on writing and creativity are as refreshing as [her] writing and creations.'
+        credit: 'Richard Wall'
+        source: 'Boulder Writers Workshop'
+        url: 'http://www.boulderwritersworkshop.org/'
 
   - name: 'Leon Presents a Reading Series #6'
     url: 'https://www.facebook.com/events/415657695136519/permalink/417120971656858/'
     date: 'July 2012'
-    role: 'poet/performer & musician'
-    type: 'reading'
+    role: 'poet & musician'
+    type: 'performance'
+    summary: 'Performed The Post-Obsolete Book, as well as Teacup Gorilla’s Whiskey From Strangers'
     with:
       - name: 'Teacup Gorilla'
         url: 'http://teacupgorilla.com'
       - name: 'Kelly Dulaney'
 
-  - name: 'Naropa Summer Writing Program'
-    date: 'June 2012'
-    role: 'student'
-    with:
-      - name: 'E. Tracy Grinnell'
-      - name: 'Michelle Ellsworth'
-      - name: 'Caroline Bergvall'
-
-  - name: 'What if CSS Made Sense?'
+  - name: 'Meaningful CSS (or: What if CSS Made Sense?)'
     url: 'http://www.meetup.com/HTML5-Denver-Users-Group/events/56361842/'
     date: 'April 2012'
-    role: 'speaker'
-    type: 'meetup'
+    type: 'talk'
     org:
       name: 'HTML5 Denver Users Group'
       url: 'http://www.meetup.com/HTML5-Denver-Users-Group/'
+    notes:
+      - name: 'view the slides'
+        url: 'https://speakerdeck.com/eriiicam/meaningful-css'
 
-  - name: 'Boulder Writers’ Workshop'
-    url: 'http://boulderwritersworkshop.org'
-    date: '2011-2013'
-    role: 'professional member'
-    type: 'literary salon'
-
-  - name: 'Raven Jane'
-    date: '2010-2012'
-    role: 'bass player'
-    type: 'blues rock'
-
-  - name: 'Bloody Morbid Humor at Buntport'
-    url: 'http://www.illiteratemagazine.com/blog/view/404'
-    date: 'June 2010'
-    role: 'reviewer'
-    type: 'article'
-    org:
-      name: 'Illiterate Magazine'
-      url: 'http://www.illiteratemagazine.com'
-
-  - name: 'The LIDA Project: Mouse in a Jar'
-    url: 'http://www.illiteratemagazine.com/blog/view/387'
-    date: 'May 2010'
-    role: 'reviewer'
-    type: 'article'
-    org:
-      name: 'Illiterate Magazine'
-      url: 'http://www.illiteratemagazine.com'
-
-  - name: 'Missa Populi'
-    date: 'March 2010'
-    type: 'theatre'
-    role: 'writer & director'
+  - name: 'Into The Green Green Mud'
+    url: 'http://www.greengreenmud.com/'
+    date: 'Jan. 2012'
+    datetime: '2012-01-01'
+    role: 'author, artist, developer'
+    type: 'publication'
+    summary: 'A multimedia novel, under construction...'
     with:
       - name: 'Teacup Gorilla'
         url: 'http://teacupgorilla.com'
+      - name: 'OddBird'
+        url: 'http://oddbird.com'
+    press:
+      - quote: 'This virtuoso creation by a talented young poet, writer, artist, typographer, programmer, and musician is a taste of things to come as new generations of digital media and code literate creators come of age.'
+        credit: 'Leonardo Flores'
+        source: 'I ♥ E-Poetry'
+        url: 'http://iloveepoetry.com/?p=2571'
+        date: 'May 2, 2013'
+        datetime: '2013-05-02'
+
+
+  ### 2011 -------------------------------------
+
+  # silence is golden...
+
+
+  ### 2010 -------------------------------------
+
+  - name: 'Bloody Morbid Humor at Buntport'
+    # url: 'http://www.illiteratemagazine.com/blog/view/404'
+    date: 'June 2010'
+    datetime: '2010-06-01'
+    role: 'reviewer'
+    type: 'publication'
+    org:
+      name: 'Illiterate Magazine'
+      # url: 'http://www.illiteratemagazine.com'
+
+  - name: 'The LIDA Project: Mouse in a Jar'
+    # url: 'http://www.illiteratemagazine.com/blog/view/387'
+    date: 'May 2010'
+    datetime: '2010-06-01'
+    role: 'reviewer'
+    type: 'publication'
+    org:
+      name: 'Illiterate Magazine'
+      # url: 'http://www.illiteratemagazine.com'
+
+  - name: 'Missa Populi'
+    date: 'March 2010'
+    datetime: '2010-03-01'
+    type: 'performance'
+    role: 'writer & director'
+    venue:
+      name: 'The Packing House Center for the Arts'
     org:
       name: 'Vicious Trap'
       url: 'http://vicioustrap.com'
-    venue:
-      name: 'The Packing House Center for the Arts'
+    with:
+      - name: 'Teacup Gorilla'
+        url: 'http://teacupgorilla.com'
 
   - name: 'Roller Skating With My Cousin'
     url: 'http://lida.org/?p=48'
     date: 'Jan. 2010'
-    type: 'theatre'
+    datetime: '2010-01-01'
+    type: 'performance'
     role: 'ensemble member'
     org:
       name: 'The LIDA Project'
       url: 'http://lida.org'
 
+
+  ### 2009 -------------------------------------
+
   - name: 'A Murder One Less'
     date: 'Aug. 2009'
-    type: 'theatre'
+    datetime: '2009-08-01'
     role: 'lighting design'
+    type: 'performance'
     venue:
-      name: 'The Boulder International Fringe Festival'
+      name: 'Boulder International Fringe Festival'
+      url: 'http://www.boulderfringe.com/'
     org:
       name: 'Vicious Trap'
       url: 'http://vicioustrap.com'
 
-  - name: 'Rain /of Terror'
-    url: 'http://lida.org/?p=312'
-    date: 'Feb. 2009'
-    role: 'lighting design'
-    org:
-      name: 'The LIDA Project'
-      url: 'http://lida.org'
-    notes:
-      - name: '<strong>Denver Post Ovation Award</strong>: [nomination] Best Lighting Design'
-        url: 'http://www.denverpost.com/theater/ci_13971871'
+  - name: 'Susy'
+    url: 'http://susy.oddbird.net'
+    date: 'July 13, 2009'
+    summary: 'In a world of agile development and super-tablet-multi-magic-laptop-phones, the best layouts can’t be contained in a single framework or technique. Build your own damn system.'
+    type: 'open-source'
+    press:
+      - quote: 'If you’re interested in reading Sass poetry, be sure to look at Susy’s source code!'
+        credit: 'Hugo Giraudel'
+        source: 'SitePoint'
+        url: 'http://www.sitepoint.com/my-favorite-sass-tools/'
+        date: 'April 22, 2014'
+        datetime: '2014-04-22'
 
   - name: 'Kingdom Come'
     url: 'http://www.cdbaby.com/cd/dirtcircledogs'
@@ -744,157 +947,203 @@ past:
     type: 'album'
     org:
       name: 'Dirt Circle Dogs'
-    notes:
-      - name: '<strong>Onion AV Club</strong> Review'
+      url: 'http://dirtcircledogs.com'
+    press:
+      - quote: 'Eisenstat sings that there is “No voice on the radio,” and perhaps, for now, that’s true. Kingdom, though, is certainly worth a private listen at home.'
+        credit: 'Cat Carroll'
+        source: 'Onion AV Club'
         url: '/misc/dcd-onion-review/'
+        date: 'Aug. 14, 2009'
+        datetime: '2009-08-14'
+
+  - name: 'Rain /of Terror'
+    url: 'http://lida.org/?p=312'
+    date: 'Feb. 2009'
+    datetime: '2009-02-01'
+    role: 'lighting design'
+    type: 'performance'
+    org:
+      name: 'The LIDA Project'
+      url: 'http://lida.org'
+    notes:
+      - name: '<b>Denver Post Ovation Award</b>: [nomination] Best Lighting Design'
+        url: 'http://www.denverpost.com/theater/ci_13971871'
+    press: '@@@'
+
+
+  ### 2008 -------------------------------------
 
   - name: 'Untitled #39'
     date: '2008'
     role: 'co-creator & performer'
-    type: 'site specific theatre'
-    with:
-      - name: 'Dresden Dolls'
-        url: 'http://www.dresdendolls.com/'
+    type: 'performance'
+    summary: 'Site-specific performance devised for the Dresden Dolls lobby pre-show'
     org:
       name: 'The LIDA Project'
       url: 'http://lida.org'
+    with:
+      - name: 'Dresden Dolls'
+        url: 'http://www.dresdendolls.com/'
 
   - name: 'The Resistible Rise of Arturo Ui'
     date: '2008'
     role: 'technical director'
-    type: 'theatre'
+    type: 'performance'
     org:
       name: 'Countdown to Zero'
       url: 'http://countdowntozero.org/'
+    press: '@@@'
 
   - name: 'Dar al-Harb'
     date: '2008'
     role: 'assistant media designer'
-    type: 'theatre'
+    type: 'performance'
     org:
       name: 'Theatreworks'
       url: 'http://www.theatreworkscs.org/'
+    press: '@@@'
 
   - name: 'The Anonymous Mr. W.'
     date: '2008'
     role: 'assistant director'
-    type: 'theatre'
+    type: 'performance'
     org:
       name: 'The LIDA Project'
       url: 'http://lida.org'
+    press: '@@@'
 
-  - name: 'The LIDA Project'
-    url: 'http://lida.org'
-    date: '2008-2010'
-    role: 'technical director'
-    type: 'theatre'
 
-  - name: 'Countdown to Zero'
-    url: 'http://countdowntozero.org'
-    date: '2008-2010'
-    role: 'technical director'
-    type: 'theatre'
+  ### 2007 -------------------------------------
 
   - name: 'My Name Is Rachel Corrie'
     date: '2007'
     role: 'tour manager & technical director'
-    type: 'theatre'
+    type: 'performance'
     org:
       name: 'Countdown to Zero'
       url: 'http://countdowntozero.org/'
-
-  - name: 'Dirt Circle Dogs'
-    url: 'http://www.cdbaby.com/cd/dirtcircledogs'
-    date: '2007-2010'
-    role: 'bass & guitar'
-    type: 'indie-rock'
+    press: '@@@'
 
   - name: 'Bigger Guns III'
-    date: '2007'
+    date: 'Apr. 2007'
     role: 'co-creator & director'
-    type: 'theatre'
+    type: 'performance'
     org:
       name: 'New World Arts'
       url: 'http://newworldarts.org/history'
+    press:
+      - title: 'Lights, No Cameras, Plenty of Action'
+        credit: 'Jeremy D. Bonfiglio'
+        source: 'South Bend Tribune'
+        url: "http://articles.southbendtribune.com/2007-04-20/news/26771959_1_kung-fu-michelle-milne-lab-work"
+        date: 'Apr. 20, 2007'
+        datetime: '2007-04-20'
+
+
+  ### 2006 -------------------------------------
 
   - name: 'Fear/Falling'
     date: '2006'
     role: 'director'
-    type: 'theatre'
+    type: 'performance'
     org:
       name: 'New World Arts'
       url: 'http://newworldarts.org/history'
+    press: '@@@'
 
   - name: 'Danny and the Deep Blue Sea'
     date: '2006'
     role: 'director'
-    type: 'theatre'
+    type: 'performance'
     org:
       name: 'New World Arts'
       url: 'http://newworldarts.org/history'
-    notes:
-      - name: '<strong>South Bend Tribune</strong>: Review'
+    press:
+      - title: 'Actors, Dance Acts Give Depth to ‘Deep Blue Sea’'
+        credit: 'Andrew S. Hughes'
+        source: 'South Bend Tribune'
         url: 'http://articles.southbendtribune.com/2006-09-17/news/26981141_1_danny-and-roberta-dance-characters'
+        date: 'Sept. 17, 2006'
+        datetime: '2006-09-17'
 
   - name: 'Hello and Goodbye'
     date: '2006'
     role: 'director'
-    type: 'theatre'
+    type: 'performance'
     org:
       name: 'New World Arts'
       url: 'http://newworldarts.org/history'
-    notes:
-      - name: '<strong>South Bend Tribune</strong>: Review'
+    press:
+      - quote: 'Rarely does one encounter a production undertaken with such a tremendous amount of care and consideration.'
+        credit: 'Jack Walton'
+        source: 'South Bend Tribune'
         url: 'http://articles.southbendtribune.com/2006-01-29/news/26962892_1_hester-darkness-athol-fugard'
+        date: 'Jan. 29, 2006'
+        datetime: '2006-01-29'
+
+
+  ### 2005 -------------------------------------
 
   - name: 'Sadomasochism'
     date: '2005'
     role: 'writer & director'
-    type: 'theatre'
+    type: 'performance'
     org:
       name: 'New World Arts'
       url: 'http://newworldarts.org/history'
+
+
+  ### 2004 -------------------------------------
 
   - name: 'In a Time of War'
     date: '2004'
-    role: 'writer'
-    type: 'theatre'
+    role: 'playwright'
+    type: 'performance'
     org:
       name: 'New World Arts'
       url: 'http://newworldarts.org/history'
     notes:
-      - name: '<strong>International Peace Play Contest</strong>: Runner Up'
-        url: 'http://www.goshen.edu/theater/peace-play/'
+      - name: '<b>International Peace Play Contest</b>: Runner Up'
 
   - name: 'Every Other Day'
     date: '2004'
-    role: 'writer'
-    type: 'theatre/chapbook'
+    role: 'playwright'
+    type: 'performance'
+    summary: 'Directed by Michael Natoli'
     org:
       name: 'New World Arts'
       url: 'http://newworldarts.org/history'
+
+  - name: 'Every Other Day (chapbook)'
+    date: '2004'
+    role: 'playwright'
+    type: 'publication'
+    summary: 'Chapbook script published by Pinchpenny Press'
+    org:
+      name: 'Pinchpenny Press'
     notes:
-      - name: '<strong>Kennedy Center ACTF</strong>: [finalist] Best One-Act Play'
-      - name: '<strong>Pinchpenny Press</strong>: Chapbook'
+      - name: '<b>Kennedy Center ACTF</b>: [finalist] Best One-Act Play'
 
   - name: 'Criminal Hearts'
     date: '2004'
     role: 'director'
-    type: 'theatre'
+    type: 'performance'
     org:
       name: 'New World Arts'
       url: 'http://newworldarts.org/history'
 
+
+  ### 2003 -------------------------------------
+
   - name: 'Daffodil MF'
     date: '2003'
-    role: 'writer'
-    type: 'theatre/film'
+    role: 'playwright'
+    type: 'film'
     org:
-      name: 'New World Arts'
-      url: 'http://newworldarts.org/history'
+      name: 'Shoup House Productions'
     notes:
-      - name: '<strong>shortfilmfest03</strong>: Audience Choice Award'
-      - name: '<strong>Kennedy Center ACTF</strong>: [finalist] Best 10-Minute Play'
+      - name: '<b>shortfilmfest03</b>: Audience Choice Award'
+      - name: '<b>Kennedy Center ACTF</b>: [finalist] Best 10-Minute Play'
 
   - name: 'Antony & Cleopatra'
     date: '2003'
@@ -903,30 +1152,24 @@ past:
       name: 'Oregon Shakespeare Festival'
       url: 'https://www.osfashland.org/'
 
+
+  ### 2002 -------------------------------------
+
   - name: 'A Lie of the Mind'
     date: '2002'
     role: 'lighting design'
-    type: 'theatre'
+    type: 'performance'
     org:
       name: 'New World Arts'
       url: 'http://newworldarts.org/history'
 
-  - name: 'New World Arts'
-    url: 'http://newworldarts.org'
-    date: '2001-2007'
-    role: 'artistic & technical director'
-    type: 'theatre'
 
-  - name: 'Goshen College'
-    date: '2001-2006'
-    summary: 'theater, writing, and visual art'
-    role: 'student'
-    type: 'education'
+  ### 2001 -------------------------------------
 
   - name: 'The House of Yes'
     date: '2001'
     role: 'lighting design & assistant director'
-    type: 'theatre'
+    type: 'performance'
     org:
       name: 'New World Arts'
       url: 'http://newworldarts.org/history'
@@ -934,7 +1177,7 @@ past:
   - name: 'Danny and the Deep Blue Sea'
     date: '2001'
     role: 'lighting design'
-    type: 'theatre'
+    type: 'performance'
     org:
       name: 'New World Arts'
       url: 'http://newworldarts.org/history'
@@ -942,86 +1185,124 @@ past:
   - name: 'Another Round'
     date: '2001'
     role: 'assistant director'
-    type: 'theatre'
+    type: 'performance'
     org:
       name: 'Pittsburgh City Theatre 4x5 Festival'
+      url: 'http://citytheatrecompany.org/'
 
 
 # Associations
 orgs:
   - name: 'OddBird LLC'
     url: 'http://oddbird.net'
-    date: '2008-present'
+    dates: ['2008']
     role: 'founding partner'
     type: 'web development'
 
   - name: 'Teacup Gorilla'
     url: 'http://teacupgorilla.com'
-    date: '2010-present'
+    dates: ['2010']
     role: 'bass & vocals'
     type: 'dark indie-rock soundscapes'
 
   - name: 'Vicious Trap'
     url: 'http://vicioustrap.com'
-    date: '2009-present'
+    dates: ['2009']
     role: 'co-sucker'
     type: 'theatre & performance'
 
   - name: 'Denver Poets’ Theatre'
     url: 'http://www.denverpoetstheatre.com/'
-    date: '2013-present'
+    dates: ['2013']
     role: 'ensemble member'
     type: 'theatre'
+
+  - name: 'Boulder Writers’ Workshop'
+    url: 'http://boulderwritersworkshop.org'
+    dates: ['2011', '2013']
+    role: 'professional member'
+    type: 'literary salon'
+
+  - name: 'Raven Jane'
+    dates: ['2010', '2012']
+    role: 'bass player'
+    type: 'blues rock'
+
+  - name: 'The LIDA Project'
+    url: 'http://lida.org'
+    dates: ['2008', '2010']
+    role: 'technical director'
+    type: 'theatre'
+
+  - name: 'Countdown to Zero'
+    url: 'http://countdowntozero.org'
+    dates: ['2008', '2010']
+    role: 'technical director'
+    type: 'theatre'
+
+  - name: 'Dirt Circle Dogs'
+    url: 'http://www.cdbaby.com/cd/dirtcircledogs'
+    dates: ['2007', '2010']
+    role: 'bass & guitar'
+    type: 'indie-rock'
+
+  - name: 'New World Arts'
+    url: 'http://newworldarts.org'
+    dates: ['2001', '2007']
+    role: 'artistic & technical director'
+    type: 'theatre'
+
+
+# education
+education:
+  - name: 'Naropa Summer Writing Program'
+    dates: '2012'
+    summary: 'Studied writing and performance with E. Tracy Grinnell, Michelle Ellsworth, and Caroline Bergvall'
+
+  - name: 'Oregon Shakespeare Festival'
+    dates: '2003'
+    summary: 'Stage management intern for Antony and Cleopatra, directed by Penny Metropolis'
+
+  - name: 'Goshen College'
+    dates: '2001-2006'
+    summary: 'Studied theater, writing, and visual art'
 
 
 # navigation
 nav:
-  - title: 'what'
-    url: '/'
-  - title: 'why'
-    url: '/why/'
-  - title: 'who'
-    url: '/who/'
   - title: 'blog'
     url: '/blog/'
+  - title: 'about'
+    url: '/who/'
+  - title: 'contact'
+    url: '/contact/'
 
 
 # social
 social:
-  - title: email
-    icon: mail
-    url: 'mailto:miriam(at)miriamsuzanne.com'
-  - title: feed
+  - title: 'email'
+    icon: 'mail'
+    url: 'mailto:miriam@miriamsuzanne.com'
+  - title: 'feed'
     url: 'http://feeds.feedburner.com/ericandmeyer/'
-  - title: twitter
+  - title: 'twitter'
     url: 'http://twitter.com/mirisuzanne/'
-  - title: facebook
+  - title: 'facebook'
     url: 'http://facebook.com/ericmsuzanne/'
-  - title: dribbble
+  - title: 'dribbble'
     url: 'https://dribbble.com/miriamsuzanne'
-  - title: vimeo
+  - title: 'vimeo'
     url: 'http://vimeo.com/miriamsuzanne'
-  - title: github
+  - title: 'github'
     url: 'http://github.com/mirisuzanne/'
-  - title: stack overflow
+  - title: 'stack overflow'
     url: 'http://stackoverflow.com/users/1930386/'
 
 
-# colophon
-colophon:
-  - name: rstblog
-    url: 'https://github.com/mitsuhiko/rstblog/'
-  - name: Python
-    url: 'http://www.python.org'
-  - name: Jinja2
-    url: 'http://jinja.pocoo.org/docs/dev/'
-  - name: Sass
-    url: 'http://sass-lang.com/'
-
-
 # site
-location: what
-author: 'Miriam Eric Suzanne'
+location: 'home'
+author: 'Miriam Suzanne'
+copyright: '2016'
 
 
 # settings

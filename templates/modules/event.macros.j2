@@ -1,14 +1,54 @@
 {% import "modules/utility.macros.j2" as utility %}
 
+
+
+{# Full Event #}
+{# ---------- #}
+
 {% macro show(event) %}
   <article class="h-event">
-    {{ name(event.name, event.url) }}
-    {{ time(event.date, event.datetime) }}
-    {{ organization(event.org) }}
-    {{ meta(event.type, event.role) }}
-    {{ summary(event.summary, event.with, event.venue) }}
-    {{ notes(event.notes) }}
+    {{ head(event) }}
+    {{ meta(event) }}
+    {{ details(event) }}
   </article>
+{% endmacro %}
+
+
+
+{# Event Blocks #}
+{# ------------ #}
+
+{% macro head(event) %}
+<header class="event-header">
+  {{ time(event.date, event.datetime) }}
+  {{ name(event.name, event.url) }}
+</header>
+{% endmacro %}
+
+{% macro meta(event) %}
+<div class="event-meta">
+  {{ organization(event.org) }}
+  {{ role(event.role) }}
+  {{ location(event.venue) }}
+</div>
+{% endmacro %}
+
+{% macro details(event) %}
+<div class="event-details">
+  {{ summary(event.summary, event.with) }}
+  {{ notes(event.notes) }}
+</div>
+{% endmacro %}
+
+
+
+{# Event Elements #}
+{# -------------- #}
+
+{% macro name(title, url) %}
+<h3 class="p-name">
+  {{ utility.link(title, url, class='u-url') }}
+</h3>
 {% endmacro %}
 
 {% macro time(date, datetime) %}
@@ -19,10 +59,14 @@
 {% endif %}
 {% endmacro %}
 
-{% macro name(title, url) %}
-<h3 class="p-name">
-  {{ utility.link(title, url, class='u-url') }}
-</h3>
+
+{% macro location(venue) %}
+{% if venue %}
+  at
+  <span class="p-location">
+    {{ utility.link(venue.name, venue.url) }}{%- if venue.adr -%}, {{ venue.adr }}{% endif %}
+  </span>
+{% endif %}
 {% endmacro %}
 
 {% macro organization(org) %}
@@ -33,26 +77,21 @@
 {% endif %}
 {% endmacro %}
 
-{% macro meta(category, role) %}
-{% if role %}
-  <strong class="role">
-    {{ role|safe }}
-  </strong>
-{% endif %}
-{% if category %}
-  <span class="p-category">
-    {{ category|safe }}
+{% macro role(title) %}
+{% if title %}
+  <span class="role">
+    {{ title }}
   </span>
 {% endif %}
 {% endmacro %}
 
-{% macro summary(content, with, venue) %}
+
+{% macro summary(content, with) %}
 {% if content or with %}
-  <p class="p-summary">
+  <div class="p-summary">
     <span class="summary">{{ content|safe }}</span>
     {{ collaborators(with) }}
-    {{ location(venue) }}
-  </p>
+  </div>
 {% endif %}
 {% endmacro %}
 
@@ -65,15 +104,6 @@
       {% if loop.last and loop.index > 1 %}and{% endif %}
       {{ utility.link(org.name, org.url) }}{{ after }}
     {% endfor %}
-  </span>
-{% endif %}
-{% endmacro %}
-
-{% macro location(venue) %}
-{% if venue %}
-  at
-  <span class="p-location">
-    {{ utility.link(venue.name, venue.url) }}{%- if venue.adr -%}, {{ venue.adr }}{% endif %}
   </span>
 {% endif %}
 {% endmacro %}

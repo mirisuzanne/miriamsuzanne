@@ -3,9 +3,11 @@
 {% set events = config.past if module.time == 'past' else config.future %}
 
 {% if events %}
-<section class="module" data-calendar="{{ module.time }}">
+<section data-module="calendar">
 <div class="container">
-  <h2 class="section-title">the {{ module.time }}</h2>
+  <h2 class="section-title">
+    {{ module.title or ['the', module.time]|join(' ') }}
+  </h2>
 
   {% for event in events %}
     {{ calendar.show(event) }}

@@ -6,17 +6,9 @@
 
   <!-- Info -->
   <title>{% block fulltitle %}{% block title %}Home{% endblock %} | {{ config.author }}{% endblock %}</title>
-  <meta name="description" content="{% block description %}{{ config.author }} is an artist & experience designer, working across a broad range of genre and media — live performance, web software, music, writing, design, etc.{% endblock description %}" />
+  <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}" />
   <link href="/feed.atom" rel="alternate" title="Feed" type="application/atom+xml">
   <meta name="robots" content="index, follow" />
-
-  <!-- Microformat Profiles -->
-  <!-- hCard, hCalendar, rel-license, rel-tag, XOXO, XFN, VoteLinks -->
-  <link rel="profile" href="http://microformats.org/profile/specs/" />
-
-  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
-  <meta http-equiv="cleartype" content="on">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
 
   <!-- favicon.ico -->
   <link rel="shortcut icon" href="/static/images/favicons/favicon.ico" />
@@ -28,6 +20,10 @@
   {% block styles %}
   <link rel="stylesheet" href="/static/css/screen.css" />
   {% endblock %}
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
   <!-- Google -->
   <script>
@@ -45,16 +41,10 @@
 </head>
 
 <body data-location="{% block location %}{{ config.location }}{% endblock %}">
+  {% block layout %}{% endblock %}
 
-{% block layout %}{% endblock %}
-
-<!-- JavaScript @@@ compress -->
-<script src="/static/js/jquery-1.7.2.js"></script>
-<script src="/static/js/defuscator.js"></script>
-<script src="/static/js/viewport.js"></script>
-<script src="/static/js/local.js"></script>
-
-{% block extrajs %}{% endblock %}
-
+  <!-- JavaScript -->
+  <script src="/static/js/local.js"></script>
+  {% block extrajs %}{% endblock %}
 </body>
 </html>

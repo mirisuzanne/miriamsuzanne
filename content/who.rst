@@ -5,6 +5,7 @@ after:
   - include: 'modules/_orgs.html.j2'
   - include: 'modules/_calendar.html.j2'
     time: past
+    title: 'a vitae of sorts'
 
 
 Bio
@@ -31,8 +32,6 @@ words with [WriteyWrite],
 and performances with `Vicious Trap`_
 or the `Denver Poets' Theatre`_.
 
-|head|
-
 .. _Riding SideSaddle*: http://ridingsidesaddle.com
 .. _OddBird: http://oddbird.net/
 .. _Teacup Gorilla: http://teacupgorilla.com/
@@ -51,10 +50,3 @@ or the `Denver Poets' Theatre`_.
 .. _Accoutrement: http://oddbird.net/accoutrement/
 .. _Susy: http://susy.oddbird.net/
 .. _True: http://oddbird.net/true
-
-
-.. |head| raw:: html
-
-  <figure class="headshot">
-    <img src="/static/pictures/headshot.jpg" alt="headshot" />
-  </figure>

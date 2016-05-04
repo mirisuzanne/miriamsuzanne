@@ -2,7 +2,173 @@
 // ======
 
 @import 'config/manifest';
-@import '../node_modules/accoutrement-init/sass/init';
-@import 'patterns/manifest';
-@import 'layout/manifest';
-@import 'components/manifest';
+@import '../node_modules/accoutrement-layout/sass/layout';
+
+
+// Root
+// ----
+
+@include import-webfonts;
+
+:root {
+  @include contrasted('background');
+  @include font-family('body');
+  font-size: calc(100% + 0.5vw);
+  line-height: 1.5em;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 35rem;
+  padding: 1rem;
+}
+
+[data-module] {
+  border-top: 2px dotted;
+  padding: 2rem 0;
+}
+
+.h-event {
+  margin: 2rem 0;
+
+  .p-name {
+    margin: 0;
+  }
+}
+
+.feature-actions {
+  margin: 1rem 0;
+}
+
+
+// Type
+// ----
+
+a {
+  &:link,
+  &:visited {
+    color: color('action');
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+pre,
+code {
+  @include font-family('code');
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    @include contrasted('action');
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+  }
+}
+
+.is-hidden {
+  @include is-hidden;
+}
+
+
+// Intro
+// -----
+
+.intro {
+  padding: 2rem 0;
+  position: relative;
+}
+
+[data-intro='💅'] {
+  display: none;
+}
+
+[id='intro-toggle'] {
+  @include is-hidden;
+
+  &:not(:checked) {
+    ~ [for='intro-toggle'] {
+      @include before('too much ');
+    }
+  }
+
+  &:checked {
+    ~ [data-intro='💅'] {
+      display: block;
+    }
+
+    ~ [data-intro='💩'] {
+      display: none;
+    }
+
+    ~ [for='intro-toggle'] {
+      @include before('give me ');
+    }
+  }
+}
+
+[data-module='orgs-feature'] {
+  display: flex;
+  font-size: smaller;
+
+  blockquote {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.feature-org {
+  flex: 1 1 50%;
+
+  & + & {
+    margin-left: 1rem;
+  }
+}
+
+
+// Media
+// -----
+
+.video {
+  height: 0;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.video-wrap {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+
+// Footer
+// ------
+
+[data-region='contentinfo'] {
+  @include font-family('boilerplate');
+  border-top: 2px dotted;
+  font-size: smaller;
+  margin-top: 4rem;
+  padding-top: 0.5rem;
+  text-align: center;
+}

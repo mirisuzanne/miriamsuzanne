@@ -5,21 +5,7 @@
 
   <div class="gallery-body">
     {% for item in gallery.body -%}
-    {%- if item.image -%}
-    <div class="image gallery-item{% if item.class %} {{ item.class }}{% endif %}">
-      <img src="/static/pictures/{{ item.image }}" {% if item.alt %} alt="{{ item.alt }}"{% endif %} />
-    </div>
-    {%- elif item.video -%}
-    <div class="video gallery-item{% if item.class %} {{ item.class }}{% endif %}">
-      <div class="video-wrap">
-        {{ item.video|safe }}
-      </div>
-    </div>
-    {%- elif item.music -%}
-    <div class="music gallery-item{% if item.class %} {{ item.class }}{% endif %}">
-      {{ item.music|safe }}
-    </div>
-    {%- endif -%}
+      {{ object(item) }}
     {%- endfor %}
   </div>
 
@@ -30,4 +16,23 @@
   {% endif %}
 </div>
 </figure>
+{% endmacro %}
+
+
+{% macro object(item) %}
+{%- if item.image -%}
+<div class="image gallery-item{% if item.class %} {{ item.class }}{% endif %}">
+  <img src="/static/pictures/{{ item.image }}" {% if item.alt %} alt="{{ item.alt }}"{% endif %} />
+</div>
+{%- elif item.video -%}
+<div class="video gallery-item{% if item.class %} {{ item.class }}{% endif %}">
+  <div class="video-wrap">
+    {{ item.video|safe }}
+  </div>
+</div>
+{%- elif item.music -%}
+<div class="music gallery-item{% if item.class %} {{ item.class }}{% endif %}">
+  {{ item.music|safe }}
+</div>
+{%- endif -%}
 {% endmacro %}

@@ -1,39 +1,68 @@
-// Fonts
-// =====
+// Fonts Config
+// ============
 
+@import '../../node_modules/accoutrement-type/sass/type';
 
-@import '../../node_modules/accoutrement-fonts/sass/fonts';
+$body-font: (
+  'name': 'BaskervilleFS',
+  'stack': (Baskerville, Palatino, Cambria, Georgia, serif),
+  'regular': 'serif/baskerville-regular-webfont',
+  'italic': 'serif/baskerville-italic-webfont',
+  'bold': 'serif/baskerville-bold-webfont',
+  'bold' 'italic': 'serif/baskerville-bolditalic-webfont',
+);
 
+$boiler-font: (
+  'name': 'SourceSansPro',
+  'stack': ('Helvetica Neue', Helvetica, Arial, sans-serif),
+  'regular': 'sans/sourcesanspro-regular-webfont',
+  'italic': 'sans/sourcesanspro-italic-webfont',
+  'bold': 'sans/sourcesanspro-bold-webfont',
+  'bold' 'italic': 'sans/sourcesanspro-bolditalic-webfont',
+);
 
-$font-formats: 'woff' 'ttf';
+$code-font: (
+  'name': 'SourceCodePro',
+  'stack': (Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace),
+  'regular': 'code/sourcecodepro-regular-webfont',
+  'bold': 'code/sourcecodepro-bold-webfont',
+);
 
+$jj-font: (
+  'name': 'GreenMudJJ',
+  'stack': ('BaskervilleFS', Baskerville, Palatino, Cambria, Georgia, serif),
+  'regular': 'jj/greenmudjj-regular-webfont',
+  'bold': 'jj/greenmudjj-bold-webfont',
+  'italic': 'jj/greenmudjj-italic-webfont',
+);
+
+$susy-font: (
+  'name': 'GreenMudSusy',
+  'stack': ('SourceSansPro', 'Helvetica Neue', Helvetica, Arial, sans-serif),
+  'regular': 'susy/greenmudsusy-regular-webfont',
+  'bold': 'susy/greenmudsusy-bold-webfont',
+);
+
+$susycaps-font: (
+  'name': 'GreenMudSusyCaps',
+  'stack': ('SourceSansPro', 'Helvetica Neue', Helvetica, Arial, sans-serif),
+  'regular': 'susy/greenmudsusy-smallcaps-webfont',
+  'bold': 'susy/greenmudsusy-smallcapsbold-webfont',
+);
+
+$narrator-font: (
+  'name': 'GreenMudNarrator',
+  'stack': ('BaskervilleFS', Baskerville, Palatino, Cambria, Georgia, serif),
+  'regular': 'narrator/greenmudnarrator-regular-webfont',
+  'bold': 'narrator/greenmudnarrator-bold-webfont',
+);
 
 $fonts: (
-  'amp': (
-    'name': 'BaskervilleAmp',
-    'stack': ('Baskerville', 'Palatino', 'Cambria', 'Georgia', 'serif'),
-    'regular': 'Baskerville-amp',
-  ),
-
-  'body': (
-    'name': 'CenturyOldStyle',
-    'stack': ('Baskerville', 'Palatino', 'Cambria', 'Georgia', 'serif'),
-    'regular': 'CenturyOldStyle-regular',
-    'italic': 'CenturyOldStyle-italic',
-    'bold': 'CenturyOldStyle-bold',
-  ),
-
-  'boilerplate': (
-    'name': 'FranklinGothicCond',
-    'stack': ('Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'),
-    'regular': 'FranklinGothicCd-regular',
-    'italic': 'FranklinGothicCd-iralic',
-    'bold': 'FranklinGothicCd-bold',
-    'bold' 'italic': 'FranklinGothicCd-bolditalic',
-  ),
-
-  'code': (
-    'name': 'Consolas',
-    'stack': ('Menlo', 'Monaco', 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', 'monospace', 'serif')
-  ),
+  'body': $body-font,
+  'boilerplate': $boiler-font,
+  'code': $code-font,
+  'jj': $jj-font,
+  'susy': $susy-font,
+  'susycaps': $susy-font,
+  'narrator': $narrator-font,
 );

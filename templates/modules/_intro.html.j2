@@ -1,0 +1,12 @@
+{% set intro = config.intro[0] %}
+
+<div class="intro">
+  <input type="checkbox" id="intro-toggle">
+  <p data-intro="💩">
+    {{ intro.long|safe }}
+  </p>
+  <p data-intro="💅">
+    {{ intro.short|safe }}
+  </p>
+  <label for="intro-toggle" class="btn">argle-bargle</label>
+</div>

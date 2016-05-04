@@ -1,11 +1,6 @@
-// Manifest
-// ========
+// Config Manifest
+// ===============
 
-@import '../../node_modules/accoutrement-layout/sass/layout';
-
-@import 'license';
-@import 'colors';
-@import 'scale';
+@import 'color';
 @import 'fonts';
-@import 'type';
-@import 'breakpoints';
+@import 'license';

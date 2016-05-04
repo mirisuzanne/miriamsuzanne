@@ -7,12 +7,10 @@
 </div>
 
 <main data-region="main">
-  {% block body %}{% endblock body %}
+  {% block body %}{% endblock %}
 </main>
 
 <footer data-region="contentinfo">
-  {% include "layout/_social.html.j2" %}
-  {% include "layout/_colophon.html.j2" %}
   {% include "layout/_copyright.html.j2" %}
 </footer>
 {% endblock %}
