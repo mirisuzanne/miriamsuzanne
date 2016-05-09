@@ -148,14 +148,15 @@ body {
   max-width: 35rem;
   padding: 1rem; }
 
+.brand {
+  margin-bottom: 0; }
+
+[data-region='nav'] {
+  padding: 1rem 0; }
+
 [data-module] {
   border-top: 2px dotted;
   padding: 2rem 0; }
-
-.h-event {
-  margin: 2rem 0; }
-  .h-event .p-name {
-    margin: 0; }
 
 .feature-actions {
   margin: 1rem 0; }
@@ -174,6 +175,15 @@ label,
 button {
   cursor: pointer; }
 
+[type='submit'],
+button {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  padding: 0; }
+
 .btn, .btn:link, .btn:visited {
   background-color: #c30062;
   color: #fff;
@@ -190,8 +200,11 @@ button {
   position: absolute;
   width: 1px; }
 
-.intro {
-  padding: 2rem 0;
+[data-form-field],
+.form-label {
+  display: block; }
+
+[data-module='intro'] {
   position: relative; }
 
 [data-intro='💅'] {
@@ -212,13 +225,15 @@ button {
   [id='intro-toggle']:checked ~ [data-intro='💩'] {
     display: none; }
   [id='intro-toggle']:checked ~ [for='intro-toggle']:before {
-    content: "give me "; }
+    content: "give me back my "; }
 
 [data-module='orgs-feature'] {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   font-size: smaller; }
+  @media (min-width: 30em) {
+    [data-module='orgs-feature'] {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
   [data-module='orgs-feature'] blockquote {
     margin: 0;
     padding: 0; }
@@ -227,8 +242,58 @@ button {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%; }
-  .feature-org + .feature-org {
-    margin-left: 1rem; }
+  @media (min-width: 30em) {
+    .feature-org + .feature-org {
+      margin-left: 1rem; } }
+
+[data-module='calendar'] {
+  position: relative; }
+
+.h-event {
+  margin: 2rem 0; }
+  .h-event .p-name {
+    margin: 0; }
+  [data-has-filters] .h-event {
+    display: none; }
+
+.filter-label {
+  display: inline-block;
+  font-size: smaller;
+  padding: 0.25rem; }
+  .filter-label:before {
+    content: "✖ "; }
+
+.filter-value {
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(1px 1px 1px 1px);
+  clip-path: inset(1px 1px 1px 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px; }
+  .filter-value:checked + .filter-label:before {
+    content: "✔ "; }
+
+[id='filter-all']:checked ~ [data-tags] {
+  display: block; }
+
+[id='filter-performance']:checked ~ [data-tags~='performance'] {
+  display: block; }
+
+[id='filter-speaking']:checked ~ [data-tags~='speaking'] {
+  display: block; }
+
+[id='filter-art']:checked ~ [data-tags~='art'] {
+  display: block; }
+
+[id='filter-publication']:checked ~ [data-tags~='publication'] {
+  display: block; }
+
+[id='filter-album']:checked ~ [data-tags~='album'] {
+  display: block; }
+
+[id='filter-film']:checked ~ [data-tags~='film'] {
+  display: block; }
 
 .video {
   height: 0;
@@ -249,7 +314,6 @@ button {
   font-family: "SourceSansPro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-top: 2px dotted;
   font-size: smaller;
-  margin-top: 4rem;
   padding-top: 0.5rem;
   text-align: center; }
 

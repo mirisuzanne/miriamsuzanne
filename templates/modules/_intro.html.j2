@@ -1,7 +1,10 @@
 {% set intro = config.intro[0] %}
 
-<div class="intro">
+<section data-module="intro">
   <input type="checkbox" id="intro-toggle">
+  <h2 class="intro-tagline">
+    {{ intro.tagline|safe }}
+  </h2>
   <p data-intro="💩">
     {{ intro.long|safe }}
   </p>
@@ -9,4 +12,5 @@
     {{ intro.short|safe }}
   </p>
   <label for="intro-toggle" class="btn">argle-bargle</label>
-</div>
+  <a href="/why/">read my manifesto</a>
+</section>

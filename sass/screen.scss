@@ -23,17 +23,17 @@ body {
   padding: 1rem;
 }
 
+.brand {
+  margin-bottom: 0;
+}
+
+[data-region='nav'] {
+  padding: 1rem 0;
+}
+
 [data-module] {
   border-top: 2px dotted;
   padding: 2rem 0;
-}
-
-.h-event {
-  margin: 2rem 0;
-
-  .p-name {
-    margin: 0;
-  }
 }
 
 .feature-actions {
@@ -67,6 +67,16 @@ button {
   cursor: pointer;
 }
 
+[type='submit'],
+button {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 .btn {
   &,
   &:link,
@@ -83,11 +93,19 @@ button {
 }
 
 
+// Forms
+// -----
+
+[data-form-field],
+.form-label {
+  display: block;
+}
+
+
 // Intro
 // -----
 
-.intro {
-  padding: 2rem 0;
+[data-module='intro'] {
   position: relative;
 }
 
@@ -114,14 +132,17 @@ button {
     }
 
     ~ [for='intro-toggle'] {
-      @include before('give me ');
+      @include before('give me back my ');
     }
   }
 }
 
 [data-module='orgs-feature'] {
-  display: flex;
   font-size: smaller;
+
+  @include above(30em) {
+    display: flex;
+  }
 
   blockquote {
     margin: 0;
@@ -132,8 +153,74 @@ button {
 .feature-org {
   flex: 1 1 50%;
 
-  & + & {
-    margin-left: 1rem;
+  @include above(30em) {
+    & + & {
+      margin-left: 1rem;
+    }
+  }
+}
+
+
+// Calendar
+// --------
+
+$event-types: (
+  'performance',
+  'speaking',
+  'art',
+  'publication',
+  'album',
+  'film',
+);
+
+[data-module='calendar'] {
+  position: relative;
+}
+
+.h-event {
+  margin: 2rem 0;
+
+  .p-name {
+    margin: 0;
+  }
+
+  [data-has-filters] & {
+    display: none;
+  }
+}
+
+.filter-label {
+  @include before('✖ ');
+  display: inline-block;
+  font-size: smaller;
+  padding: 0.25rem;
+}
+
+.filter-value {
+  @include is-hidden;
+
+  &:checked {
+    + .filter-label {
+      @include before('✔ ');
+    }
+  }
+}
+
+[id='filter-all'] {
+  &:checked {
+    ~ [data-tags] {
+      display: block;
+    }
+  }
+}
+
+@each $type in $event-types {
+  [id='filter-#{$type}'] {
+    &:checked {
+      ~ [data-tags~='#{$type}'] {
+        display: block;
+      }
+    }
   }
 }
 
@@ -168,7 +255,6 @@ button {
   @include font-family('boilerplate');
   border-top: 2px dotted;
   font-size: smaller;
-  margin-top: 4rem;
   padding-top: 0.5rem;
   text-align: center;
 }

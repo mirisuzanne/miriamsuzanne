@@ -1,9 +1,0 @@
-{% import "modules/utility.macros.j2" as utility %}
-
-{% set contact = config.contact[0] %}
-<section data-module="contact">
-  <p>
-    {{ module.intro or contact.intro }}
-    {{ utility.link(module.link or contact.link, module.url or contact.url) }}
-  </p>
-</section>

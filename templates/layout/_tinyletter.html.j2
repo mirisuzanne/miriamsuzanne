@@ -1,0 +1,14 @@
+<section data-module="subscribe">
+  <form action="https://tinyletter.com/miriamsuzanne" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/miriamsuzanne', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+    <input type="hidden" value="1" name="embed"/>
+
+    <label for="tlemail">
+      <span class="form-label">
+        {{ config.subscribe|safe }}
+      </span>
+      <input type="text" name="email" id="tlemail" />
+    </label>
+
+    <input type="submit" value="Subscribe" class="btn" />
+  </form>
+</section>

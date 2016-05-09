@@ -10,6 +10,16 @@
   {% block body %}{% endblock %}
 </main>
 
+{% if not config.hide_contact %}
+  <aside data-region="contact">
+    {% include 'layout/_contact.html.j2' %}
+  </aside>
+{% endif %}
+
+<aside data-region="newsletter">
+  {% include "layout/_tinyletter.html.j2" %}
+</aside>
+
 <footer data-region="contentinfo">
   {% include "layout/_copyright.html.j2" %}
 </footer>

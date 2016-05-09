@@ -1,34 +1,16 @@
 {% import "modules/utility.macros.j2" as utility %}
+{% import "modules/event.macros.j2" as events %}
 
-{% if config.press %}
-<section class="press module">
-<div class="container">
-  <h2 class="section-title">Press</h2>
+<section data-module="press">
+  <h2 class="section-title">Press Coverage</h2>
 
-  {% for item in config.press %}
-    <div class="press-topic">
-      <h3 class="topic-title">
-        {{ utility.link(item.subject, item.url) }}
-      </h3>
-
-      {% for review in item.reviews %}
-        <blockquote class="clipping">
-          <span class="quote">{{ review.quote|safe }}</span>
-
-          <span class="citation">
-            {{ review.credit }},
-
-            <strong class="source">
-              {{ utility.link(review.source, review.url) }}
-            </strong>
-
-            <time datetime="{{ review.datetime }}" class="pubdate">[{{ review.date }}]</time>
-          </span>
-        </blockquote>
-      {% endfor %}
-
-    </div>
+  {% for event in (config.future + config.past)|selectattr('press') %}
+    {% if event.press|map(attribute='quote')|join('') != '' %}
+      <article class="h-event press-topic">
+        {{ events.name(event.name, event.url) }}
+        {{ events.body(event, show_location=false) }}
+        {{ events.press(event.press, show_noquote=false) }}
+      </article>
+    {% endif %}
   {% endfor %}
-</div>
 </section>
-{% endif %}

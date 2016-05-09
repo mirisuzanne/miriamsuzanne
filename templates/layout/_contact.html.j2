@@ -1,0 +1,19 @@
+{% import "modules/utility.macros.j2" as utility %}
+
+{% set contact = config.contact[0] %}
+<section data-module="contact">
+  <h2>{{ contact.title|safe }}</h2>
+  <p>
+    {{ contact.body|safe }}
+  </p>
+
+  <div class="contact-actions">
+    {% for action in contact.actions %}
+      {{ utility.link(
+        content=action.text,
+        url=action.url,
+        class='btn' if loop.first else none
+      ) }}
+    {% endfor %}
+  </div>
+</section>

@@ -3,15 +3,21 @@
 {% set events = config.past if module.time == 'past' else config.future %}
 
 {% if events %}
-<section data-module="calendar">
-<div class="container">
-  <h2 class="section-title">
-    {{ module.title or ['the', module.time]|join(' ') }}
-  </h2>
+  <section data-module="calendar" data-has-filters="true">
+    <h2 class="section-title">
+      {{ module.title or ['the', module.time]|join(' ') }}
+    </h2>
 
-  {% for event in events %}
-    {{ calendar.show(event) }}
-  {% endfor %}
-</div>
-</section>
+    <input type="radio" name="filters" id="filter-all" class="filter-value" checked />
+    <label for="filter-all" class="filter-label">show all</label>
+    {# @@@ It would be better to generate these automatically... #}
+    {% for type, name in config.event_tags %}
+      <input type="radio" name="filters" id="filter-{{ type }}" class="filter-value" />
+      <label for="filter-{{ type }}" class="filter-label">{{ name }}</label>
+    {% endfor %}
+
+    {% for event in events %}
+      {{ calendar.show(event) }}
+    {% endfor %}
+  </section>
 {% endif %}

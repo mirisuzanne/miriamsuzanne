@@ -6,9 +6,9 @@
 {# ---------- #}
 
 {% macro show(event) %}
-  <article class="h-event">
+  <article class='h-event' {{ utility.attr_if('data-tags', event.type|join(' ')) }}>
     {{ head(event) }}
-    {{ meta(event) }}
+    {{ body(event) }}
     {{ details(event) }}
   </article>
 {% endmacro %}
@@ -20,24 +20,26 @@
 
 {% macro head(event) %}
 <header class="event-header">
-  {{ time(event.date, event.datetime) }}
+  {{ utility.time(event.datetime) }}
   {{ name(event.name, event.url) }}
+  {{ summary(event.summary) }}
 </header>
 {% endmacro %}
 
-{% macro meta(event) %}
-<div class="event-meta">
-  {{ organization(event.org) }}
+{% macro body(event, show_location=true) %}
+<div class="p-summary">
   {{ role(event.role) }}
-  {{ location(event.venue) }}
+  {{ organization(event.org, 'for') }}
+  {{ with(event.with, 'with') }}
+  {% if show_location %}
+    {{ location(event.venue, 'at') }}
+  {% endif %}
 </div>
 {% endmacro %}
 
 {% macro details(event) %}
-<div class="event-details">
-  {{ summary(event.summary, event.with) }}
   {{ notes(event.notes) }}
-</div>
+  {{ press(event.press) }}
 {% endmacro %}
 
 
@@ -51,60 +53,122 @@
 </h3>
 {% endmacro %}
 
-{% macro time(date, datetime) %}
-{% if date %}
-  <time class="dt-start" {% if datetime %}datetime="{{ datetime }}"{% endif %}>
-    {{ date }}
-  </time>
+{% macro location(venue, before=none) %}
+{% if venue and venue|length() == 1 %}
+  {{ before }}
+  {% for instance in venue %}
+    <span class="p-location">
+      {{ utility.link(instance.name, instance.url) }}{%- if instance.adr -%}, {{ instance.adr }}{% endif %}
+    </span>
+  {% endfor %}
+{% elif venue %}
+  {{ before }}...
+  <ul class="instances">
+    {% for instance in venue %}
+      <li class="p-location">
+        {{ utility.link(instance.name, instance.url) }}
+        {%- if instance.adr %}, {{ instance.adr }}{% endif %}
+        {% if instance.video %}
+          ({{ utility.link('video', instance.video) }})
+        {% endif %}
+        —{{ utility.time(instance.datetime) }}
+      </li>
+    {% endfor %}
+  </ul>
 {% endif %}
 {% endmacro %}
 
-
-{% macro location(venue) %}
-{% if venue %}
-  at
-  <span class="p-location">
-    {{ utility.link(venue.name, venue.url) }}{%- if venue.adr -%}, {{ venue.adr }}{% endif %}
-  </span>
-{% endif %}
-{% endmacro %}
-
-{% macro organization(org) %}
+{% macro organization(org, before=none) %}
 {% if org %}
-  <strong class="org">
+  {{ before }}
+  <span class="org">
+    {% if org.contact %}
+      {{ org.contact }},
+    {% endif %}
     {{ utility.link(org.name, org.url) }}
-  </strong>
+  </span>
 {% endif %}
 {% endmacro %}
 
 {% macro role(title) %}
 {% if title %}
   <span class="role">
-    {{ title }}
+    {{ title|safe }}
   </span>
 {% endif %}
 {% endmacro %}
 
 
-{% macro summary(content, with) %}
-{% if content or with %}
-  <div class="p-summary">
-    <span class="summary">{{ content|safe }}</span>
-    {{ collaborators(with) }}
-  </div>
+{% macro summary(content) %}
+{% if content %}
+  <span class="description">{{ content|safe }}</span>
 {% endif %}
 {% endmacro %}
 
-{% macro collaborators(with) %}
-{% if with %}
-  with
+{% macro with(collaborators, before=none) %}
+{% if collaborators %}
+  {{ before }}
   <span class="with">
-    {% for org in with %}
+    {% for who in collaborators %}
       {% set after='' if (loop.last or loop.length == 2) else ',' %}
       {% if loop.last and loop.index > 1 %}and{% endif %}
-      {{ utility.link(org.name, org.url) }}{{ after }}
+      {{ utility.link(who.name, who.url) }}{{ after }}
     {% endfor %}
   </span>
+{% endif %}
+{% endmacro %}
+
+{% macro citation(clipping) %}
+  <span class="citation">
+    {{ clipping.credit }},
+
+    <span class="source">
+      {{ utility.link(clipping.source or clipping.name, clipping.url) }}
+    </span>
+
+    {% if clipping.source and clipping.name %}
+      <i class="title">“{{ clipping.name }}”</i>
+    {% endif %}
+
+    {% if clipping.datetime %}
+      {{ utility.time(clipping.datetime, {'pubdate': true}) }}
+    {% endif %}
+  </span>
+{% endmacro %}
+
+{% macro press(articles, show_noquote=true) %}
+{% set has_quote = articles|selectattr('quote') %}
+{% set no_quote = articles|rejectattr('quote') %}
+
+{% for clipping in has_quote %}
+  {% if clipping.quote %}
+    <blockquote class="clipping">
+      <p class="quote">{{ clipping.quote|safe }}</p>
+      —{{ citation(clipping) }}
+    </blockquote>
+  {% endif %}
+{% endfor %}
+
+{% if no_quote and show_noquote %}
+<ul class="press-list">
+  {% for item in no_quote %}
+    <li class="press-link">
+      <span class="source">
+        {{ utility.link(item.source or item.name, item.url) }}
+      </span>
+
+      {% if item.source and item.name %}
+        <i class="title">“{{ item.name }}”</i>
+      {% endif %}
+
+      — {{ item.credit }}
+
+      {% if item.datetime %}
+        {{ utility.time(item.datetime, {'pubdate': true}) }}
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
 {% endif %}
 {% endmacro %}
 

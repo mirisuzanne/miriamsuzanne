@@ -22,7 +22,7 @@
   <h3>{{ org.title }}</h3>
 
   <p>
-    {{ org.summary }}
+    {{ org.summary|safe }}
   </p>
 
   {% for review in org.press %}

@@ -6,7 +6,6 @@ after:
     type: feature
     hide_title: yes
   - include: 'modules/_features.html.j2'
-  - include: 'modules/_contact.html.j2'
   - include: 'modules/_calendar.html.j2'
     time: future
     title: coming soon

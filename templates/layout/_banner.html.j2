@@ -1,3 +1,10 @@
-<h1 role="banner">
-  <a href="/" rel="home" class="brand">{{ config.author|safe }}</a>
-</h1>
+{% import 'modules/utility.macros.j2' as utility %}
+
+<header data-region="banner">
+  <h1 class="brand">
+    <a href="/" rel="home" class="brand">{{ config.author }}</a>
+  </h1>
+
+  {% set subtitle = config.subtitle[0] %}
+  {{ utility.link(subtitle.text, subtitle.url, 'subtitle') }}
+</header>

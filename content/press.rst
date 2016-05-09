@@ -1,6 +1,5 @@
 public: yes
 hide_title: yes
-bodyclasses: press
 before:
   - include: 'modules/_interviews.html.j2'
   - include: 'modules/_press.html.j2'
