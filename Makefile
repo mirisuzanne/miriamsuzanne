@@ -1,6 +1,6 @@
 clean:
 	find content -name *~ -delete
-	rm -rf output/*
+	rm -rf gh-pages/*
 
 build: clean
 	python run.py build content/

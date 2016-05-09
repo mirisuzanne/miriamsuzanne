@@ -20,12 +20,6 @@ Run ``npm install`` to install
 all the required npm packages
 for linting and compiling Sass.
 
-The ``output/`` directory is a git submodule
-(it is the repo "github.com/mirisuzanne/mirisuzanne.github.com",
-which is also the deployment on Github Pages).
-Run ``git submodule init; git submodule update``
-to get the submodule in place.
-
 The site templates are in ``templates/``,
 and static files are in ``static/``.
 
@@ -35,14 +29,14 @@ or ``gulp`` to watch and compile Sass files as well —
 then visit ``http://localhost:5000`` in your browser.
 
 To regenerate the site as static HTML files
-under the ``output/`` directory,
+under the ``gh-pages/`` directory,
 run ``make build``.
 
 
 Deployment
 ----------
 
-Change into the ``output`` directory
+Change into the ``gh-pages`` directory
 and commit the changes.
 
 If you're ready to deploy them, ``git push``.

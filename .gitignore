@@ -10,3 +10,4 @@ htmlcov/
 djangodb.sqlite
 node_modules
 bower_components
+gh-pages/
