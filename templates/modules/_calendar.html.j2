@@ -10,10 +10,9 @@
 
     <input type="radio" name="filters" id="filter-all" class="filter-value" checked />
     <label for="filter-all" class="filter-label">show all</label>
-    {# @@@ It would be better to generate these automatically... #}
-    {% for type, name in config.event_tags %}
+    {% for type in events|map(attribute='type')|unique_chain %}
       <input type="radio" name="filters" id="filter-{{ type }}" class="filter-value" />
-      <label for="filter-{{ type }}" class="filter-label">{{ name }}</label>
+      <label for="filter-{{ type }}" class="filter-label">{{ type }}</label>
     {% endfor %}
 
     {% for event in events %}
