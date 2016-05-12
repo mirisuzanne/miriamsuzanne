@@ -1228,12 +1228,12 @@ nav:
 
 # tags
 event_tags:
-  - ['performance', 'performance']
-  - ['speaking', 'speaking']
-  - ['art', 'art']
-  - ['publication', 'publications']
-  - ['album', 'albums']
-  - ['film', 'films']
+  - performance: 'performance'
+    speaking: 'speaking'
+    art: 'art'
+    publication: 'publications'
+    album: 'albums'
+    film: 'films'
 
 
 # Intro & Contact

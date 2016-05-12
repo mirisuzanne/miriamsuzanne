@@ -12,7 +12,7 @@
     <label for="filter-all" class="filter-label">show all</label>
     {% for type in events|map(attribute='type')|unique_chain %}
       <input type="radio" name="filters" id="filter-{{ type }}" class="filter-value" />
-      <label for="filter-{{ type }}" class="filter-label">{{ type }}</label>
+      <label for="filter-{{ type }}" class="filter-label">{{ config.event_tags[0].get(type, type) }}</label>
     {% endfor %}
 
     {% for event in events %}
