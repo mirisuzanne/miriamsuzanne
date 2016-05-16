@@ -1,12 +1,8 @@
 public: yes
 hide_title: yes
-before:
-  - include: 'modules/_calendar.html.j2'
-    time: future
 after:
-  - include: 'modules/_calendar.html.j2'
-    time: past
+  - include: 'modules/_event-gallery.html.j2'
 
 
-Projects
-========
+Gallery
+=======

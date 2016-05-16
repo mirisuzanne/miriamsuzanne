@@ -1,0 +1,11 @@
+// Root Layout
+// ===========
+
+@include import-webfonts;
+
+:root {
+  @include contrasted('background');
+  @include font-family('body');
+  font-size: calc(110% + 0.5vw);
+  line-height: map-get($ratios, 'mia');
+}

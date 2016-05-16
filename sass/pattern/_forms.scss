@@ -1,0 +1,12 @@
+// Form Pattern
+// ============
+
+.form-label {
+  display: block;
+}
+
+[data-input='text'] {
+  border: 1px solid;
+  display: inline-block;
+  padding: 0 size('half-shim');
+}

@@ -1,26 +1,19 @@
 {% extends "base.html" %}
 
 {% block layout %}
-<div data-region="banner">
-  {% include "layout/_banner.html.j2" %}
+  {% include "layout/_face.svg" %}
+
   {% include "layout/_nav.html.j2" %}
-</div>
+  {% include "layout/_banner.html.j2" %}
 
-<main data-region="main">
-  {% block body %}{% endblock %}
-</main>
+  <main data-region="main">
+    {% block body %}{% endblock %}
+  </main>
 
-{% if not config.hide_contact %}
-  <aside data-region="contact">
+  {% if not config.hide_contact %}
     {% include 'layout/_contact.html.j2' %}
-  </aside>
-{% endif %}
+  {% endif %}
 
-<aside data-region="newsletter">
   {% include "layout/_tinyletter.html.j2" %}
-</aside>
-
-<footer data-region="contentinfo">
-  {% include "layout/_copyright.html.j2" %}
-</footer>
+  {% include "layout/_contentinfo.html.j2" %}
 {% endblock %}

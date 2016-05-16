@@ -1,4 +1,4 @@
-{% import "modules/utility.macros.j2" as utility %}
+{% import "utility.macros.j2" as utility %}
 
 
 
@@ -6,7 +6,7 @@
 {# ---------- #}
 
 {% macro show(event) %}
-  <article class='h-event' {{ utility.attr_if('data-tags', event.type|join(' ')) }}>
+  <article class='h-event' {{ utility.attr_if('data-filters', event.type|join(' ')) }}>
     {{ head(event) }}
     {{ body(event) }}
     {{ details(event) }}
@@ -59,6 +59,9 @@
   {% for instance in venue %}
     <span class="p-location">
       {{ utility.link(instance.name, instance.url) }}{%- if instance.adr -%}, {{ instance.adr }}{% endif %}
+      {% if instance.video %}
+        ({{ utility.link('video', instance.video) }})
+      {% endif %}
     </span>
   {% endfor %}
 {% elif venue %}
@@ -149,7 +152,7 @@
   {% endif %}
 {% endfor %}
 
-{% if no_quote and show_noquote %}
+{% if no_quote.items and show_noquote %}
 <ul class="press-list">
   {% for item in no_quote %}
     <li class="press-link">

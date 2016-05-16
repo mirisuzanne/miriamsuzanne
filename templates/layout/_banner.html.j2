@@ -1,10 +1,16 @@
-{% import 'modules/utility.macros.j2' as utility %}
+{% import 'utility.macros.j2' as utility %}
 
 <header data-region="banner">
-  <h1 class="brand">
-    <a href="/" rel="home" class="brand">{{ config.author }}</a>
-  </h1>
+  <a href="/" class="logo">
+    <svg><use xlink:href="#face" /></svg>
+  </a>
 
-  {% set subtitle = config.subtitle[0] %}
-  {{ utility.link(subtitle.text, subtitle.url, 'subtitle') }}
+  <div class="brand">
+    <h1 class="title">
+      <a href="/" rel="home">{{ config.author }}</a>
+    </h1>
+
+    {% set subtitle = config.subtitle[0] %}
+    {{ utility.link(subtitle.text, subtitle.url, 'subtitle') }}
+  </div>
 </header>

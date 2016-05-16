@@ -1,4 +1,166 @@
 @charset "UTF-8";
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+main {
+  display: block; }
+
+details {
+  display: block; }
+
+pre {
+  overflow: auto; }
+
+progress {
+  display: inline-block; }
+
+summary {
+  display: block; }
+
+template {
+  display: none; }
+
+*,
+::before,
+::after {
+  border-style: solid;
+  border-width: 0;
+  box-sizing: border-box; }
+
+* {
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+audio :not([controls]) {
+  display: none; }
+
+[aria-busy='true'] {
+  cursor: progress; }
+
+[aria-controls] {
+  cursor: pointer; }
+
+[aria-disabled] {
+  cursor: default; }
+
+[hidden] {
+  display: none; }
+
+button {
+  overflow: visible; }
+
+input {
+  border-radius: 0;
+  line-height: normal; }
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  cursor: pointer; }
+  button::-moz-focus-inner,
+  [type='button']::-moz-focus-inner,
+  [type='reset']::-moz-focus-inner,
+  [type='submit']::-moz-focus-inner {
+    border: 0 none !important;
+    padding: 0 !important; }
+
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box;
+  padding: 0; }
+
+[type='number'] {
+  width: auto; }
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield; }
+
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit; }
+
+textarea {
+  overflow: auto;
+  resize: vertical; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  max-width: 100%;
+  vertical-align: middle; }
+
+a {
+  background-color: transparent; }
+  a:active, a:hover {
+    outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace;
+  font-size: inherit; }
+
+dfn {
+  font-style: italic; }
+
+nav ol,
+nav ul {
+  list-style: none; }
+
+small {
+  font-size: 0.75em; }
+
+sub,
+sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
 /*!
  * Web Fonts from fontspring.com
  *
@@ -22,6 +184,140 @@
  *
  *
  */
+.is-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(1px 1px 1px 1px);
+  clip-path: inset(1px 1px 1px 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px; }
+
+a, a:link, a:visited,
+.link,
+.link:link,
+.link:visited {
+  color: #c30062;
+  text-decoration: none; }
+
+a:hover, a:focus, a:active,
+.link:hover,
+.link:focus,
+.link:active {
+  text-decoration: underline; }
+
+.btn, .btn:link, .btn:visited {
+  background-color: #c30062;
+  color: #fff;
+  display: inline-block;
+  font-style: italic;
+  padding: 0 0.7rem;
+  text-decoration: none;
+  text-transform: lowercase; }
+
+pre,
+code {
+  font-family: "SourceCodePro", Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace; }
+
+label,
+button {
+  cursor: pointer; }
+
+.form-label {
+  display: block; }
+
+[data-input='text'] {
+  border: 1px solid;
+  display: inline-block;
+  padding: 0 0.35rem; }
+
+img {
+  max-width: 100%; }
+
+svg {
+  height: 100%;
+  width: 100%; }
+
+.video {
+  height: 0;
+  margin-bottom: 1rem;
+  position: relative; }
+
+.video-wrap {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0; }
+  .video-wrap iframe {
+    height: 100%;
+    width: 100%; }
+
+[data-has-filters] {
+  position: relative; }
+
+.filter-label {
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  color: #c30062;
+  display: inline-block;
+  font-style: italic;
+  margin-right: 0.35rem; }
+
+.filter-value {
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(1px 1px 1px 1px);
+  clip-path: inset(1px 1px 1px 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px; }
+  .filter-value:checked + .filter-label {
+    color: inherit; }
+    .filter-value:checked + .filter-label:before, .filter-value:checked + .filter-label:after {
+      content: "["; }
+    .filter-value:checked + .filter-label:after {
+      content: "]"; }
+
+[data-erasure] strong {
+  font-weight: normal; }
+
+[for='erasure'], [for='erasure']:link, [for='erasure']:visited {
+  color: #c30062;
+  text-decoration: none; }
+
+[for='erasure']:hover, [for='erasure']:focus, [for='erasure']:active {
+  text-decoration: underline; }
+
+[id='erasure'] {
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(1px 1px 1px 1px);
+  clip-path: inset(1px 1px 1px 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px; }
+  [id='erasure']:checked ~ [data-erasure] {
+    color: transparent; }
+    [id='erasure']:checked ~ [data-erasure] strong {
+      color: #111; }
+    [id='erasure']:checked ~ [data-erasure] [for='erasure'],
+    [id='erasure']:checked ~ [data-erasure] strong {
+      background: rgba(255, 255, 255, 0.9);
+      position: relative; }
+      [id='erasure']:checked ~ [data-erasure] [for='erasure']:before,
+      [id='erasure']:checked ~ [data-erasure] strong:before {
+        content: "]";
+        position: absolute;
+        -webkit-transform: translateX(-0.6em);
+        transform: translateX(-0.6em); }
+      [id='erasure']:checked ~ [data-erasure] [for='erasure']:after,
+      [id='erasure']:checked ~ [data-erasure] strong:after {
+        content: "[";
+        position: absolute;
+        -webkit-transform: translateX(0.2em);
+        transform: translateX(0.2em); }
+
 @font-face {
   font-family: "BaskervilleFS";
   font-style: normal;
@@ -113,16 +409,16 @@
   src: url("../fonts/susy/greenmudsusy-bold-webfont.woff") format("woff"), url("../fonts/susy/greenmudsusy-bold-webfont.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "GreenMudSusy";
+  font-family: "GreenMudSusyCaps";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/susy/greenmudsusy-regular-webfont.woff") format("woff"), url("../fonts/susy/greenmudsusy-regular-webfont.ttf") format("truetype"); }
+  src: url("../fonts/susy/greenmudsusy-smallcaps-webfont.woff") format("woff"), url("../fonts/susy/greenmudsusy-smallcaps-webfont.ttf") format("truetype"); }
 
 @font-face {
-  font-family: "GreenMudSusy";
+  font-family: "GreenMudSusyCaps";
   font-style: normal;
   font-weight: bold;
-  src: url("../fonts/susy/greenmudsusy-bold-webfont.woff") format("woff"), url("../fonts/susy/greenmudsusy-bold-webfont.ttf") format("truetype"); }
+  src: url("../fonts/susy/greenmudsusy-smallcapsbold-webfont.woff") format("woff"), url("../fonts/susy/greenmudsusy-smallcapsbold-webfont.ttf") format("truetype"); }
 
 @font-face {
   font-family: "GreenMudNarrator";
@@ -140,69 +436,174 @@
   background-color: #fff;
   color: #111;
   font-family: "BaskervilleFS", Baskerville, Palatino, Cambria, Georgia, serif;
-  font-size: calc(100% + 0.5vw);
-  line-height: 1.5em; }
+  font-size: calc(110% + 0.5vw);
+  line-height: 1.4; }
 
-body {
+[data-region='banner'] {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 auto;
   max-width: 35rem;
-  padding: 1rem; }
+  padding: 0.7rem 0.7rem 0; }
+  [data-region='banner'] a:link, [data-region='banner'] a:visited {
+    color: inherit; }
 
-.brand {
-  margin-bottom: 0; }
+.logo {
+  height: 4.2rem;
+  width: 4.2rem;
+  overflow: hidden;
+  text-align: center;
+  transition: all 300ms; }
+  @media (min-width: 54.25em) {
+    .logo {
+      margin-left: -4.2rem; } }
+
+.subtitle:link, .subtitle:visited {
+  font-style: italic;
+  text-transform: lowercase; }
 
 [data-region='nav'] {
-  padding: 1rem 0; }
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  font-style: italic;
+  margin: 0 auto;
+  max-width: 35rem;
+  padding: 0.35rem 0.35rem 0;
+  text-transform: lowercase; }
 
-[data-module] {
-  border-top: 2px dotted;
-  padding: 2rem 0; }
-
-.feature-actions {
-  margin: 1rem 0; }
-
-a:link, a:visited {
-  color: #c30062; }
-
-a:hover, a:focus, a:active {
-  text-decoration: none; }
-
-pre,
-code {
-  font-family: "SourceCodePro", Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace; }
-
-label,
-button {
-  cursor: pointer; }
-
-[type='submit'],
-button {
-  background: transparent;
-  border: 0;
-  color: inherit;
-  font: inherit;
-  margin: 0;
-  padding: 0; }
-
-.btn, .btn:link, .btn:visited {
-  background-color: #c30062;
-  color: #fff;
+[data-nav]:link, [data-nav]:visited {
   display: inline-block;
-  padding: 0.5rem 1rem;
-  text-decoration: none; }
+  padding: 0 0.35rem; }
 
-.is-hidden {
-  clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(1px 1px 1px 1px);
-  clip-path: inset(1px 1px 1px 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px; }
+[data-location='home'] [data-nav='home']:link, [data-location='home'] [data-nav='home']:visited {
+  color: inherit; }
+  [data-location='home'] [data-nav='home']:link:before, [data-location='home'] [data-nav='home']:link:after, [data-location='home'] [data-nav='home']:visited:before, [data-location='home'] [data-nav='home']:visited:after {
+    content: "["; }
+  [data-location='home'] [data-nav='home']:link:after, [data-location='home'] [data-nav='home']:visited:after {
+    content: "]"; }
 
-[data-form-field],
-.form-label {
-  display: block; }
+[data-location='blog'] [data-nav='blog']:link, [data-location='blog'] [data-nav='blog']:visited {
+  color: inherit; }
+  [data-location='blog'] [data-nav='blog']:link:before, [data-location='blog'] [data-nav='blog']:link:after, [data-location='blog'] [data-nav='blog']:visited:before, [data-location='blog'] [data-nav='blog']:visited:after {
+    content: "["; }
+  [data-location='blog'] [data-nav='blog']:link:after, [data-location='blog'] [data-nav='blog']:visited:after {
+    content: "]"; }
+
+[data-location='press'] [data-nav='press']:link, [data-location='press'] [data-nav='press']:visited {
+  color: inherit; }
+  [data-location='press'] [data-nav='press']:link:before, [data-location='press'] [data-nav='press']:link:after, [data-location='press'] [data-nav='press']:visited:before, [data-location='press'] [data-nav='press']:visited:after {
+    content: "["; }
+  [data-location='press'] [data-nav='press']:link:after, [data-location='press'] [data-nav='press']:visited:after {
+    content: "]"; }
+
+[data-location='about'] [data-nav='about']:link, [data-location='about'] [data-nav='about']:visited {
+  color: inherit; }
+  [data-location='about'] [data-nav='about']:link:before, [data-location='about'] [data-nav='about']:link:after, [data-location='about'] [data-nav='about']:visited:before, [data-location='about'] [data-nav='about']:visited:after {
+    content: "["; }
+  [data-location='about'] [data-nav='about']:link:after, [data-location='about'] [data-nav='about']:visited:after {
+    content: "]"; }
+
+[data-location='contact'] [data-nav='contact']:link, [data-location='contact'] [data-nav='contact']:visited {
+  color: inherit; }
+  [data-location='contact'] [data-nav='contact']:link:before, [data-location='contact'] [data-nav='contact']:link:after, [data-location='contact'] [data-nav='contact']:visited:before, [data-location='contact'] [data-nav='contact']:visited:after {
+    content: "["; }
+  [data-location='contact'] [data-nav='contact']:link:after, [data-location='contact'] [data-nav='contact']:visited:after {
+    content: "]"; }
+
+[data-region='main'] {
+  margin-bottom: 1.4rem;
+  padding-bottom: 1.4rem; }
+
+.container {
+  margin: 0 auto;
+  max-width: 35rem;
+  padding: 0.7rem; }
+
+[data-region='contact'] {
+  margin: 0 auto;
+  max-width: 35rem; }
+
+.contact-inner {
+  border: 2px solid #c30062;
+  border-radius: 0.7rem;
+  margin: 0.7rem;
+  padding: 1.4rem;
+  position: relative; }
+  .contact-inner:before {
+    content: "";
+    border: 0.7rem solid transparent;
+    border-top-color: #c30062;
+    border-width: 0.7rem 0.7rem 0;
+    left: 2.1rem;
+    position: absolute;
+    top: 100%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+
+.contact-summary,
+.contact-actions {
+  font-style: italic; }
+
+.contact-summary {
+  margin-bottom: 0.7rem; }
+
+.contact-actions a:link, .contact-actions a:visited {
+  font-style: normal; }
+
+[data-region='tinyletter'] {
+  margin: 0 auto;
+  max-width: 35rem;
+  padding: 0 0.7rem; }
+
+.tiny-inner {
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-style: italic; }
+  .tiny-inner:before {
+    content: " ";
+    height: 4.2rem;
+    width: 4.2rem;
+    background: url("../images/mia4.jpg");
+    background-size: cover;
+    border: 1px dotted #fff;
+    border-radius: 100%;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin-right: 0.7rem; }
+
+[data-form='tinyletter'] {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto; }
+
+[data-formfield='subscribe'] {
+  display: inline-block;
+  margin-bottom: 0.35rem; }
+
+[data-region='contentinfo'] {
+  margin: 1.4rem auto;
+  max-width: 35rem;
+  padding: 1.4rem 0.35rem;
+  text-align: center; }
+
+.copyright {
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  font-style: italic;
+  text-transform: lowercase; }
+  .copyright i {
+    font-style: normal; }
 
 [data-module='intro'] {
   position: relative; }
@@ -227,94 +628,28 @@ button {
   [id='intro-toggle']:checked ~ [for='intro-toggle']:before {
     content: "give me back my "; }
 
-[data-module='orgs-feature'] {
-  font-size: smaller; }
-  @media (min-width: 30em) {
-    [data-module='orgs-feature'] {
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex; } }
-  [data-module='orgs-feature'] blockquote {
-    margin: 0;
-    padding: 0; }
+[data-filter='performance']:checked ~ [data-filters]:not([data-filters~='performance']) {
+  display: none; }
 
-.feature-org {
-  -webkit-flex: 1 1 50%;
-  -ms-flex: 1 1 50%;
-  flex: 1 1 50%; }
-  @media (min-width: 30em) {
-    .feature-org + .feature-org {
-      margin-left: 1rem; } }
+[data-filter='speaking']:checked ~ [data-filters]:not([data-filters~='speaking']) {
+  display: none; }
 
-[data-module='calendar'] {
-  position: relative; }
+[data-filter='art']:checked ~ [data-filters]:not([data-filters~='art']) {
+  display: none; }
+
+[data-filter='publication']:checked ~ [data-filters]:not([data-filters~='publication']) {
+  display: none; }
+
+[data-filter='album']:checked ~ [data-filters]:not([data-filters~='album']) {
+  display: none; }
+
+[data-filter='film']:checked ~ [data-filters]:not([data-filters~='film']) {
+  display: none; }
+
+[data-filter='software']:checked ~ [data-filters]:not([data-filters~='software']) {
+  display: none; }
 
 .h-event {
-  margin: 2rem 0; }
-  .h-event .p-name {
-    margin: 0; }
-  [data-has-filters] .h-event {
-    display: none; }
-
-.filter-label {
-  display: inline-block;
-  font-size: smaller;
-  padding: 0.25rem; }
-  .filter-label:before {
-    content: "✖ "; }
-
-.filter-value {
-  clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(1px 1px 1px 1px);
-  clip-path: inset(1px 1px 1px 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px; }
-  .filter-value:checked + .filter-label:before {
-    content: "✔ "; }
-
-[id='filter-all']:checked ~ [data-tags] {
-  display: block; }
-
-[id='filter-performance']:checked ~ [data-tags~='performance'] {
-  display: block; }
-
-[id='filter-speaking']:checked ~ [data-tags~='speaking'] {
-  display: block; }
-
-[id='filter-art']:checked ~ [data-tags~='art'] {
-  display: block; }
-
-[id='filter-publication']:checked ~ [data-tags~='publication'] {
-  display: block; }
-
-[id='filter-album']:checked ~ [data-tags~='album'] {
-  display: block; }
-
-[id='filter-film']:checked ~ [data-tags~='film'] {
-  display: block; }
-
-.video {
-  height: 0;
-  margin-bottom: 1rem;
-  position: relative; }
-
-.video-wrap {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0; }
-  .video-wrap iframe {
-    height: 100%;
-    width: 100%; }
-
-[data-region='contentinfo'] {
-  font-family: "SourceSansPro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border-top: 2px dotted;
-  font-size: smaller;
-  padding-top: 0.5rem;
-  text-align: center; }
+  margin: 1.4rem 0; }
 
 /*# sourceMappingURL=screen.css.map */

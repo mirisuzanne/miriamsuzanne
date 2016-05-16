@@ -1,0 +1,25 @@
+// Scale Config
+// ============
+
+@import '../../node_modules/accoutrement-scale/sass/scale';
+
+$ratios: (
+  'mia': 1.4,
+);
+
+$sizes: (
+  'root': 20px,
+  'rhythm': 'root' ('mia': 1),
+
+  'small': 'root' ('mia': -0.5),
+  'large': 'root' ('mia': 1),
+
+  'gutter': 'rhythm',
+  'shim': 'gutter' ('linear': 0.5),
+  'half-shim': 'gutter' ('linear': 0.25),
+
+  'corners': 6px,
+  'page': 35rem,
+
+  'logo': 'rhythm' ('linear': 3),
+);

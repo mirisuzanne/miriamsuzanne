@@ -1,7 +1,8 @@
+{% import "utility.macros.j2" as utility %}
 {% import "blog/macros.j2" as blog %}
 
 {%- if not config.hide_title %}
-<header class="page-header">
+<header class="rst-header container">
   {{ rst.html_title }}
   {{ blog.byline(ctx) }}
 </header>
@@ -12,10 +13,12 @@
 {%- endfor -%}
 
 {% if rst.fragment %}
-  <div class="rst-body">
-  <div class="container">
+  {% if config.erasure %}
+    <input type="checkbox" id="erasure" />
+  {% endif %}
+
+  <div class="rst-body container" {{ utility.attr_if('data-erasure', config.erasure) }}>
     {{ rst.fragment }}
-  </div>
   </div>
 {% endif %}
 

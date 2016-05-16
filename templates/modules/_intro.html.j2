@@ -1,16 +1,22 @@
+{% import "modules/macros.j2" as mod %}
+
 {% set intro = config.intro[0] %}
 
-<section data-module="intro">
-  <input type="checkbox" id="intro-toggle">
-  <h2 class="intro-tagline">
-    {{ intro.tagline|safe }}
-  </h2>
+{% call mod.section(
+  title=intro.tagline,
+  slug='intro'
+) %}
+  <input type="checkbox" id="intro-toggle"/>
+
   <p data-intro="💩">
     {{ intro.long|safe }}
   </p>
+
   <p data-intro="💅">
     {{ intro.short|safe }}
   </p>
-  <label for="intro-toggle" class="btn">argle-bargle</label>
-  <a href="/why/">read my manifesto</a>
-</section>
+
+  <a href="/why/" class="btn">read the manifesto</a>
+  <label for="intro-toggle" class="link">argle-bargle</label>
+
+{% endcall %}

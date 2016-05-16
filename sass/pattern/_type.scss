@@ -1,0 +1,14 @@
+// Type
+// ----
+
+
+pre,
+code {
+  @include font-family('code');
+}
+
+
+label,
+button {
+  cursor: pointer;
+}

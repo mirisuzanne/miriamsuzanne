@@ -82,7 +82,7 @@ features:
       - text: 'buy the novel'
         url: 'http://www.springgunpress.com/riding-sidesaddle-eric-suzanne/'
       - text: 'explore online'
-        url: '/ridingsidesaddle/'
+        url: 'http://ridingsidesaddle.com/'
 
   - title: 'Jump Start Sass'
     with:
@@ -162,24 +162,12 @@ features:
 
 feature_orgs:
   - title: 'OddBird'
-    summary: 'Custom web applications
-              for clients like
-              <a href="http://mozilla.org">Mozilla</a> or
-              <a href="http://orcasinc.com">ORCAS</a>,
-              and <a href="http://github.com/oddbird">open-source tools</a>
-              for developers.'
-    actions:
-      - text: 'explore our work'
-        url: 'http://oddbird.net/work/'
+    type: 'software'
+    url: 'http://oddbird.net/'
 
   - title: 'Teacup Gorilla'
-    summary: 'Dark indie-rock soundscapes,
-              evocative poetry,
-              and collaborations with artists
-              of every medium.'
-    actions:
-      - text: 'explore our music'
-        url: 'http://teacupgorilla.com'
+    type: 'music <i>&</i> poetry'
+    url: 'http://teacupgorilla.com'
 
 
 # History
@@ -198,6 +186,7 @@ past:
     venue:
       - name: 'Clarity Conference'
         url: 'http://clarityconf.com/'
+        video: 'https://www.sitepoint.com/premium/courses/clarity-conference-2016-2925/lesson/4/step/1'
     press:
       - name: 'Clarity 2016 Wrapup'
         url: 'http://codepen.io/chriscoyier/post/clarity-2016-wrapup'
@@ -207,15 +196,13 @@ past:
         url: 'http://bradfrost.com/blog/post/clarity-conf-code-patterns-for-pattern-making/'
         credit: 'Brad Frost'
         datetime: ['2016', '04', '02']
-    media:
-      - video: 'https://www.sitepoint.com/premium/courses/clarity-conference-2016-2925/lesson/4/step/1'
 
 
   - name: '10 Myths on the Proper Application of Beauty Products'
     url: 'http://buntport.com/archive/10myths.htm'
     datetime: ['2016', '03', null]
     type: ['performance']
-    summary: 'a stage adaptation of <a href="/ridingsidesaddle/">Riding SideSaddle*</a>'
+    summary: 'a stage adaptation of <a href="http://ridingsidesaddle.com/">Riding SideSaddle*</a>'
     role: 'co-creator/musician'
     with:
       - name: 'Buntport Theater'
@@ -266,6 +253,8 @@ past:
         url: 'http://www.westword.com/event/10-myths-on-the-proper-application-of-beauty-products-7582171'
         credit: 'Luke Leavitt'
         datetime: ['2016', '03', null]
+    gallery:
+      - image: '10-myths.png'
 
 
   - name: 'Jump Start Sass'
@@ -288,6 +277,8 @@ past:
         source: 'SitePoint'
         url: 'https://www.sitepoint.com/premium/books/jump-start-sass#reviews'
         datetime: ['2016', '03', '23']
+    gallery:
+      - image: 'projects/jssass.png'
 
 
   - name: 'The Card Table'
@@ -340,6 +331,8 @@ past:
         source: '9 News'
         url: 'http://legacy.9news.com/story/life/2015/09/22/museum-and-theater-team-up-for-unique-collaboration/72653748/'
         datetime: ['2015', '09', '22']
+    gallery:
+      - image: 'projects/clyffordstill.jpg'
 
 
   - name: 'The In-Between'
@@ -365,12 +358,10 @@ past:
       - name: 'Frontend Conference Zurich'
         url: 'http://frontendconf.ch'
         datetime: ['2015', '08', '28']
+        video: 'https://www.youtube.com/watch?v=9w0pgUTYy5k'
       - name: 'WordCamp Denver'
         url: 'http://denver.wordcamp.org/2015/'
         datetime: ['2015', '06', '13']
-    media:
-      - video: 'https://www.youtube.com/watch?v=9w0pgUTYy5k'
-        caption: 'Frontend Conference'
 
 
   - name: 'The Holes They Leave (tour)'
@@ -450,7 +441,7 @@ past:
 
 
   - name: 'Riding SideSaddle*'
-    url: '/ridingsidesaddle/'
+    url: 'http://ridingsidesaddle.com/'
     buy: 'http://www.springgunpress.com/riding-sidesaddle-eric-suzanne/'
     datetime: ['2015', '04', '02']
     role: 'author/artist'
@@ -821,8 +812,11 @@ past:
   - name: 'Susy'
     url: 'http://susy.oddbird.net'
     datetime: ['2009', '07', '13']
-    summary: 'In a world of agile development and super-tablet-multi-magic-laptop-phones, the best layouts can’t be contained in a single framework or technique. Build your own damn system.'
+    summary: 'power tools for web layout.'
     type: ['software']
+    with:
+      - name: 'OddBird'
+        url: 'http://oddbird.net/'
     press:
       - quote: 'If you’re interested in reading Sass poetry, be sure to look at Susy’s source code!'
         credit: 'Hugo Giraudel'
@@ -1212,14 +1206,14 @@ education:
 
 # navigation
 nav:
-  - title: 'projects'
+  - title: 'home'
     url: '/'
-  - title: 'gallery'
-    url: '/gallery/'
+  # - title: 'gallery'
+  #   url: '/what/'
   - title: 'press'
     url: '/press/'
-  - title: 'blog'
-    url: '/blog/'
+  # - title: 'blog'
+  #   url: '/blog/'
   - title: 'about'
     url: '/who/'
   - title: 'contact'
@@ -1228,45 +1222,36 @@ nav:
 
 # tags
 event_tags:
-  - performance: 'performance'
-    speaking: 'speaking'
-    art: 'art'
-    publication: 'publications'
+  - publication: 'writing'
     album: 'albums'
-    film: 'films'
+    film: 'film'
 
 
 # Intro & Contact
 # ---------------
 
 intro:
-  - tagline: 'Art <i>&</i> Code for a Queer World'
+  - tagline: 'Art <i>&</i> Code for Humans'
     long: 'I work across many mediums,
-          but always want to focus on the real people involved.
-          I love exploring the queerness of the world
-          through multi-media collaborations and human interactions —
-          dance-stumbling towards beauty together,
-          and sharing the results with everyone around.'
+          but always with a focus on the people involved —
+          collaborating,
+          sharing freely,
+          and dance-stumbling towards beauty together.'
     short: 'I made some things, and put them on a website.'
 
 contact:
-  - title: 'Start a conversation:'
-    body: 'Share your thoughts,
-          propose a collaboration,
-          tell me about your explorations of art <i>&</i> code,
-          or your queer vision for the world,
-          invite me to speak,
-          or just argle some bargle.
+  - title: 'Share your thoughts, and start a conversation.'
+    body: 'Talk to me about art, code, and collaboration;
+          invite me to speak;
+          or just argle some bargle —
           I want to hear from you!'
-    actions:
-      - text: 'drop a suggestion in the box'
-        url: '/contact/'
-      - text: 'tweet at @mirisuzanne'
-        url: 'http://twitter.com/mirisuzanne'
+    actions: 'You can contact me any time
+              on <a href="/contact/">my contact form</a>
+              or through <a href="http://twitter.com/mirisuzanne">@mirisuzanne</a>.'
 
-subscribe: 'Subscribe to the
-            <a href="https://tinyletter.com/miriamsuzanne">Mia Culpa</a>
-            newsletter:'
+tinyletter:
+  - text: 'Subscribe to my newsletter'
+    url: 'https://tinyletter.com/miriamsuzanne'
 
 
 # social
@@ -1291,12 +1276,17 @@ social:
 
 
 # site
-location: 'home'
 author: 'Miriam Suzanne'
+location: 'home'
+
 subtitle:
   - text: 'Art <i>&</i> Code'
-    url: '/why/'
-copyright: '2016'
+    url: '/'
+
+copyright:
+  - name: 'Miriam Eric Suzanne'
+    year: '2016'
+    url: '/who/'
 
 
 # settings

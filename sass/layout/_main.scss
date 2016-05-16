@@ -1,0 +1,13 @@
+// Main Layout
+// ===========
+
+[data-region='main'] {
+  margin-bottom: size('gutter');
+  padding-bottom: size('gutter');
+}
+
+.container {
+  margin: 0 auto;
+  max-width: size('page');
+  padding: size('shim');
+}

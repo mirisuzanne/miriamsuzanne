@@ -1,14 +1,25 @@
-<section data-module="subscribe">
-  <form action="https://tinyletter.com/miriamsuzanne" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/miriamsuzanne', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+{% import 'utility.macros.j2' as utility %}
+
+{% set tiny = config.tinyletter[0] %}
+
+<section data-region="tinyletter">
+<div class="tiny-inner">
+
+  <form data-form="tinyletter" action="https://tinyletter.com/miriamsuzanne" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/miriamsuzanne', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
     <input type="hidden" value="1" name="embed"/>
 
-    <label for="tlemail">
-      <span class="form-label">
-        {{ config.subscribe|safe }}
-      </span>
-      <input type="text" name="email" id="tlemail" />
+    <h2 class="tiny-title">
+      {{ utility.link(tiny.text, tiny.url) }}
+    </h2>
+
+    <label for="tlemail" data-formfield="subscribe">
+      <span class="form-label is-hidden">Email</span>
+      <input type="text" name="email" id="tlemail" placeholder="you@example.com" data-input='text' />
     </label>
 
-    <input type="submit" value="Subscribe" class="btn" />
+    <button type="submit" class="btn">
+      subscribe
+    </button>
   </form>
+</div>
 </section>

@@ -1,0 +1,42 @@
+// Contact
+// =======
+
+[data-region='contact'] {
+  margin: 0 auto;
+  max-width: size('page');
+}
+
+.contact-inner {
+  border: 2px solid color('action');
+  border-radius: size('shim');
+  margin: size('shim');
+  padding: size('gutter');
+  position: relative;
+
+  @include before('') {
+    border: size('shim') solid transparent;
+    border-top-color: color('action');
+    border-width: size('shim') size('shim') 0;
+    left: size('logo') / 2;
+    position: absolute;
+    top: 100%;
+    transform: translateX(-50%);
+  }
+}
+
+.contact-summary,
+.contact-actions {
+  font-style: italic;
+}
+
+.contact-summary {
+  margin-bottom: size('shim');
+}
+
+.contact-actions {
+  a {
+    #{$link} {
+      font-style: normal;
+    }
+  }
+}

@@ -1,7 +1,10 @@
-{% import "modules/utility.macros.j2" as utility %}
+{% import "utility.macros.j2" as utility %}
+{% import "modules/macros.j2" as mod %}
+
 
 {% set type = 'feature' if (module.type == 'feature') else 'list' %}
 {% set orgs = config.feature_orgs if (type == 'feature') else config.orgs %}
+
 
 {% macro list(org) %}
 <div class="org h-card">
@@ -19,48 +22,28 @@
 
 {% macro feature(org) %}
 <div class="feature-org">
-  <h3>{{ org.title }}</h3>
-
-  <p>
-    {{ org.summary|safe }}
-  </p>
-
-  {% for review in org.press %}
-    <blockquote class="feature-quote">
-      <p>{{ review.quote }}</p>
-      <cite>
-        —{{ review.credit }},
-        {{ utility.link(review.source, review.url) }}
-      </cite>
-    </blockquote>
-  {% endfor %}
-
-  <div class="feature-actions">
-    {% for action in org.actions %}
-      {{ utility.link(
-        content=action.text,
-        url=action.url,
-        class='btn' if loop.first else none
-      ) }}
-    {% endfor %}
-  </div>
-
+  <a href="{{ org.url }}">
+    {{ org.type|safe }}
+    with
+    <strong>{{ org.title|safe }}</strong>
+  </a>
 </div>
 {% endmacro %}
 
 
 {% if orgs %}
-<section data-module="orgs-{{ type }}">
-  <h2 class="section-title {% if module.hide_title %}is-hidden{% endif %}">
-    {{ module.title or 'Co-Belligerents'}}
-  </h2>
+  {% call mod.section(
+    title=module.title or 'Co-Belligerents',
+    slug=['orgs', type]|join('-')
+  ) %}
 
-  {% for org in orgs %}
-    {% if type == 'feature' %}
-      {{ feature(org) }}
-    {% else %}
-      {{ list(org) }}
-    {% endif %}
-  {% endfor %}
-</section>
+    {% for org in orgs %}
+      {% if type == 'feature' %}
+        {{ feature(org) }}
+      {% else %}
+        {{ list(org) }}
+      {% endif %}
+    {% endfor %}
+
+  {% endcall %}
 {% endif %}

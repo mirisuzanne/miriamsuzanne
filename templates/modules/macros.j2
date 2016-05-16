@@ -1,0 +1,39 @@
+{% import "utility.macros.j2" as utility %}
+
+{% macro section(title, slug, has_filters=false) %}
+  <section data-module="{{ slug }}" {{ utility.attr_if('data-has-filters', has_filters) }}>
+  <div class="container">
+    <h2 class="module-title">{{ title|safe }}</h2>
+    <div class="module-content">
+      {{ caller() }}
+    </div>
+  </div>
+  </section>
+{% endmacro %}
+
+
+{% macro filters(list, uuid, lookup={}) %}
+  {% set group = ['filters', uuid]|join('--') %}
+
+  {{ filter(
+    value='all',
+    group=group,
+    name='show all',
+    checked=true
+  ) }}
+
+  {% for type in list %}
+    {{ filter(
+      value=type,
+      group=group,
+      name=lookup.get(type, type)
+    ) }}
+  {% endfor %}
+{% endmacro %}
+
+
+{% macro filter(value, group, name=false, checked=false) %}
+  {% set id = [group, value]|join('-') %}
+  <input type="radio" name="{{ group }}" id="{{ id }}" class="filter-value" data-filter='{{ value }}' {{ utility.attr_if('checked', checked) }} />
+  <label for="{{ id }}" class="filter-label">{{ name or value }}</label>
+{% endmacro %}

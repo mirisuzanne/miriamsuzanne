@@ -1,0 +1,34 @@
+// Banner Layout
+// =============
+
+[data-region='banner'] {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  max-width: size('page');
+  padding: size('shim') size('shim') 0;
+
+  a {
+    #{$link} {
+      color: inherit;
+    }
+  }
+}
+
+.logo {
+  @include square('logo');
+  overflow: hidden;
+  text-align: center;
+  transition: all 300ms;
+
+  @include above(size('page') + size('logo' ('linear': 2))) {
+    margin-left: negative('logo');
+  }
+}
+
+.subtitle {
+  #{$link} {
+    font-style: italic;
+    text-transform: lowercase;
+  }
+}

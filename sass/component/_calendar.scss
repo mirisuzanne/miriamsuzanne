@@ -1,0 +1,18 @@
+// Calendars
+// =========
+
+$event-types: (
+  'performance',
+  'speaking',
+  'art',
+  'publication',
+  'album',
+  'film',
+  'software',
+);
+
+@include apply-filters($event-types);
+
+.h-event {
+  margin: size('gutter') 0;
+}

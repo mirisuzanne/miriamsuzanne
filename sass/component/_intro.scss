@@ -1,0 +1,35 @@
+// Intro
+// =====
+
+[data-module='intro'] {
+  position: relative;
+}
+
+[data-intro='💅'] {
+  display: none;
+}
+
+[id='intro-toggle'] {
+  @include is-hidden;
+
+  &:not(:checked) {
+    ~ [for='intro-toggle'] {
+      @include before('too much ');
+    }
+  }
+
+  &:checked {
+    ~ [data-intro='💅'] {
+      display: block;
+    }
+
+    ~ [data-intro='💩'] {
+      display: none;
+    }
+
+    ~ [for='intro-toggle'] {
+      @include before('give me back my ');
+    }
+  }
+}
+

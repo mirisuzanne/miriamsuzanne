@@ -1,9 +1,9 @@
 public: yes
 hide_title: yes
-location: who
+location: 'about'
 after:
   - include: 'modules/_calendar.html.j2'
-    time: past
+    time: 'past'
     title: 'a vitae of sorts'
   - include: 'modules/_orgs.html.j2'
 

@@ -1,0 +1,34 @@
+// TinyLetter
+// ==========
+
+[data-region='tinyletter'] {
+  margin: 0 auto;
+  max-width: size('page');
+  padding: 0 size('shim');
+}
+
+.tiny-inner {
+  @include font-size('small');
+  align-items: center;
+  display: flex;
+  font-style: italic;
+
+  @include before(' ') {
+    @include square('logo');
+    background: url('../images/mia4.jpg');
+    background-size: cover;
+    border: 1px dotted color('background');
+    border-radius: 100%;
+    flex: 0 0 auto;
+    margin-right: size('shim');
+  }
+}
+
+[data-form='tinyletter'] {
+  flex: 1 1 auto;
+}
+
+[data-formfield='subscribe'] {
+  display: inline-block;
+  margin-bottom: size('half-shim');
+}

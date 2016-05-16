@@ -1,4 +1,5 @@
 public: yes
+location: 'contact'
 hide_contact: True
 
 

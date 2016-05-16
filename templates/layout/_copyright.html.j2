@@ -1,3 +1,8 @@
-<div class="copyright vcard">copyright &copy; {{ config.copyright }}
-  <a href="{{ config.canonical_url }}" class="fn url">{{ config.author }}</a>
-</div>
+{% set copy = config.copyright[0] %}
+
+<p class="copyright">
+  <span>
+    copyright <i>&copy;{{ copy.year }}</i>
+  </span>
+  <a href="{{ copy.url }}">{{ copy.name }}</a>
+</p>
