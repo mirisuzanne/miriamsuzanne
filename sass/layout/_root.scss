@@ -9,3 +9,9 @@
   font-size: calc(110% + 0.5vw);
   line-height: map-get($ratios, 'mia');
 }
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}

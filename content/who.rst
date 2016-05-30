@@ -23,8 +23,9 @@ Miriam is the author of
 co-author of
 `Jump Start Sass`_ (a tech book) and
 `10 Myths on the Proper Application of Beauty Products`_ (a play),
-and creator for the `Accoutrement`_, `Susy`_, and `True`_
-Sass toolkits for developers.
+and creator for the open-source
+`Accoutrement`_, `Susy`_, and `True`_
+Sass toolkits.
 
 .. _Riding SideSaddle*: http://ridingsidesaddle.com
 .. _OddBird: http://oddbird.net/

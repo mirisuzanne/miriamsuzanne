@@ -1,0 +1,152 @@
+// Feature Styles
+// ==============
+
+[data-module~='feature'] {
+  padding: size('gutter') size('shim');
+
+  .module-content {
+    @include above(35em) {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &[data-module~='even'] {
+    .module-content {
+      @include above(35em) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}
+
+.feature-image {
+  display: block;
+  flex: 0 0 55vw;
+  max-width: 20rem;
+  padding: size('shim');
+  perspective: 300;
+  position: relative;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: all 150ms;
+  z-index: 1;
+
+  #{$focus} {
+    text-decoration: none;
+  }
+
+  @include between(35em, 55em) {
+    [data-module~='odd'] & {
+      margin-left: -20vw;
+    }
+
+    [data-module~='even'] & {
+      margin-right: -20vw;
+    }
+  }
+
+  img {
+    height: 40vh;
+    width: auto;
+
+    @include above(35em) {
+      height: auto;
+      width: 100%;
+    }
+
+    [data-module~='pattern-making'] & {
+      border-radius: 100%;
+      box-shadow: 0 0 size('shim') contrast('background');
+      overflow: hidden;
+    }
+  }
+
+  .feature-code {
+    @include font-size('small');
+    background: color('accent' ('tint': 90%, 'rgba': 0.9));
+    border-left: size('half-shim') solid color('accent');
+    color: color('text' ('rgba': 0.75));
+    overflow: hidden;
+    padding: size('half-shim');
+    position: relative;
+    text-align: left;
+    text-shadow: -2px 0 0 color('background');
+    transform: rotateY(10deg) translateX(#{size('gutter')});
+    transition: all 150ms;
+
+    @include after(' ') {
+      @include stretch;
+      background-image: linear-gradient(to right, color('background' ('rgba': 0)), color('background') 90%);
+    }
+  }
+}
+
+.feature-content {
+  box-sizing: content-box;
+  max-width: size('block');
+  padding: size('shim');
+  width: 100%;
+
+  @include above(35em) {
+    border: 2px dotted color('border');
+    border-width: 2px 0;
+
+    [data-module~='odd'] & {
+      margin-left: -10vw;
+      padding-left: 10vw;
+    }
+
+    [data-module~='even'] & {
+      margin-right: -10vw;
+      padding-right: 10vw;
+    }
+  }
+
+  .gallery-item {
+    margin: size('gutter') 0;
+  }
+}
+
+.feature-title {
+  @include h1;
+  line-height: 1;
+}
+
+.feature-with {
+  @include font-size('small');
+  font-style: italic;
+  margin-bottom: size('gutter');
+
+  [href] {
+    font-style: normal;
+  }
+}
+
+.feature-quote {
+  margin: size('gutter') 0;
+
+  p {
+    @include wrap-content;
+    display: inline;
+    text-indent: -0.4em;
+  }
+
+  cite {
+    @include font-family('boilerplate');
+    @include font-size('small');
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: lowercase;
+  }
+}
+
+.feature-actions {
+  margin: size('gutter') 0 size('shim');
+
+  .btn {
+    margin-right: size('shim');
+    padding: size('shim') size('gutter');
+  }
+}

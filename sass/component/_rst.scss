@@ -1,0 +1,18 @@
+// RST
+// ===
+
+.title {
+  @include font-size('large');
+  @include page;
+  font-style: italic;
+}
+
+.rst-body {
+  @include page;
+
+  p,
+  ul,
+  ol {
+    margin: size('shim') 0;
+  }
+}

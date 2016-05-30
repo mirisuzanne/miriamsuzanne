@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
 {% block layout %}
-  {% include "layout/_face.svg" %}
-
-  {% include "layout/_nav.html.j2" %}
-  {% include "layout/_banner.html.j2" %}
+  <header data-region="banner">
+    {% include "layout/_banner.html.j2" %}
+    {% include "layout/_nav.html.j2" %}
+  </header>
 
   <main data-region="main">
     {% block body %}{% endblock %}

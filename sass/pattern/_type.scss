@@ -2,6 +2,12 @@
 // ----
 
 
+@mixin h1 {
+  font-size: calc(1rem + 1.5vw);
+  font-style: italic;
+}
+
+
 pre,
 code {
   @include font-family('code');

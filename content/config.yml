@@ -4,63 +4,35 @@
 # --------------
 
 future:
-  - name: 'Pattern-Making in Sass'
-    url: 'http://www.meetup.com/DublinCSS/events/230011902/'
-    datetime: ['2016', '05', '19']
-    type: ['speaking']
-    role: 'speaking'
-    summary: 'an overview of Sass pattern-making,
-              as seen in SitePoint’s
-              <a href="https://www.sitepoint.com/premium/books/jump-start-sass">Jump Start Sass</a>'
-    venue:
-      - name: 'DublinCSS'
-        url: 'http://www.meetup.com/DublinCSS/'
-
-  - name: 'The In-Between'
-    url: 'http://www.julierada.com/#/the-in-between/'
-    datetime: ['2016', '05', '21']
-    summary: 'a site-specific performance in the Utah desert'
-    role: 'writer/performer'
-    type: ['performance']
-    venue:
-      - name: 'Rio Mesa Center, Utah'
-        url: 'http://riomesa.utah.edu/'
-    with:
-      - name: 'Vicious Trap'
-        url: 'http://vicioustrap.com'
-
-  - name: 'Teacup Gorilla...'
+  - name: 'Lion’s Lair'
+    datetime: ['2016', '07', '22']
     url: 'http://teacupgorilla.com'
-    type: ['performance']
-    role: 'live music!'
-    venue:
-      - name: 'MoonConf'
-        url: 'http://moonconf.org/'
-        datetime: ['2016', '05', '26']
-      - name: 'Seventh Circle Music Collective'
-        url: 'https://www.facebook.com/SeventhCircleMusicCollective/'
-        datetime: ['2016', '05', '29']
-      - name: 'Lion’s Lair'
-        url: 'http://lionslairlounge.squarespace.com/'
-        datetime: ['2016', '07', '22']
-      - name: 'Syntax Physic Opera'
-        url: 'http://physicopera.com'
-        datetime: ['2016', '08', '11']
+    type: 'live music'
 
-  # - name: 'Code Patterns for Pattern Making'
-  #   url: 'https://oddbooksapp.com/book/pattern-making'
-  #   type: ['speaking']
-  #   role: 'speaking'
-  #   venue:
-  #     - name: 'CSS Summit'
-  #       url: 'http://environmentsforhumans.com/'
-  #       datetime: ['2016', '07', '26']
-  #     - name: 'CascadiaFest'
-  #       url: 'http://2016.cascadiafest.org/'
-  #       datetime: ['2016', '08', '03']
+  - name: 'Underground Music Showcase'
+    datetime: ['2016', '07', '28']
+    url: 'http://teacupgorilla.com'
+    type: 'live music'
+
+  - name: 'Syntax Physic Opera'
+    datetime: ['2016', '08', '11']
+    url: 'http://teacupgorilla.com'
+    type: 'live music'
+
+  - name: 'CSS Summit'
+    url: 'http://environmentsforhumans.com/2016/css-summit/'
+    datetime: ['2016', '07', '26']
+    type: 'upcoming talks'
+
+  - name: 'CascadiaFest'
+    url: 'http://2016.cascadiafest.org/'
+    datetime: ['2016', '08', '03']
+    type: 'upcoming talks'
+
   #     - name: 'Develop Denver'
   #       url: 'https://developdenver.org/'
   #       datetime: ['2016', '08', '05']
+  #       type: 'upcoming talks'
 
 
 # features
@@ -68,41 +40,60 @@ future:
 
 features:
   - title: 'Riding SideSaddle*'
+    slug: 'sidesaddle'
+    url: 'http://ridingsidesaddle.com'
+    image: 'dance.png'
     with:
       - name: 'SpringGun Press'
         url: 'http://springgunpress.com'
     press:
       - quote: 'It’s a new and wonderful adventure each time,
                 a story of outcasts, their caretaker,
-                and the friendship and love they find with each other.'
+                and the friendship and love they find with each&nbsp;other.'
         credit: 'Ryo Yamaguchi'
         source: 'Michigan Quarterly Review'
         url: 'http://www.michiganquarterlyreview.com/'
     actions:
       - text: 'buy the novel'
         url: 'http://www.springgunpress.com/riding-sidesaddle-eric-suzanne/'
-      - text: 'explore online'
-        url: 'http://ridingsidesaddle.com/'
+      - text: 'view the gallery'
+        url: 'http://squareup.com/store/miriamsuzanne/'
 
-  - title: 'Jump Start Sass'
+  - title: 'Code Patterns for Pattern Making'
+    slug: 'pattern-making'
+    url: 'https://oddbooksapp.com/book/pattern-making'
+    code: "$brand-colors: (\n
+             'white': #fff,\n
+             'black': #111,\n
+             'blue': hsl(195, 100%, 43%),\n
+             'pink': hsl(330, 100%, 45%),\n
+           );\n
+           \n
+           $theme-colors: (\n
+             'background': 'white',\n
+             'text': 'black',\n
+             'action': 'pink' ('shade': 15%),\n
+             'accent': 'blue' ('shade': 15%),\n
+             'border': 'action',\n
+           );"
     with:
-      - name: 'Hugo Giraudel'
-        url: 'http://hugogiraudel.com/'
-      - name: 'SitePoint'
-        url: 'http://www.sitepoint.com/'
+      - name: 'OddBird'
+        url: 'http://oddbird.net'
     press:
-      - quote: 'Miriam and Hugo have become some of the most notable
-                creators of Sass plugins and best practices.'
-        credit: 'Chris Eppstein'
-        source: 'Sass Core Developer'
-        url: 'http://sass-lang.com/'
+      - quote: 'I was fascinated by the idea that a (web) style guide deliverable could take different&nbsp;forms.'
+        credit: 'Chris Coyier'
+        source: 'CodePen'
+        url: 'http://codepen.io/chriscoyier/post/clarity-2016-wrapup'
     actions:
-      - text: 'buy the book'
-        url: 'https://www.sitepoint.com/premium/books/jump-start-sass'
       - text: 'invite me speak'
         url: '/contact/'
+      - text: 'find me at a conference'
+        url: '/#calendar-future'
 
   - title: 'The Holes They Leave'
+    slug: 'holes-they-leave'
+    url: 'http://teacupgorilla.bandcamp.com/album/the-holes-they-leave?action=buy'
+    image: 'album.png'
     with:
       - name: 'Teacup Gorilla'
         url: 'http://teacupgorilla.com'
@@ -114,47 +105,63 @@ features:
       - text: 'see us live'
         url: 'http://teacupgorilla.com'
 
-  - title: 'True'
+  - title: 'Jump Start Sass'
+    slug: 'jssass'
+    url: 'https://www.sitepoint.com/premium/books/jump-start-sass'
+    image: 'jssass.png'
     with:
-      - name: 'OddBird'
-        url: 'http://oddbird.net'
+      - name: 'Hugo Giraudel'
+        url: 'http://hugogiraudel.com/'
+      - name: 'SitePoint'
+        url: 'http://www.sitepoint.com/'
     press:
-      - quote: 'OMG I just love this tool way too much.'
+      - quote: 'Miriam and Hugo have become some of the most notable
+                creators of Sass plugins and best&nbsp;practices.'
+        credit: 'Chris Eppstein'
+        source: 'Sass Core Developer'
+        url: 'http://sass-lang.com/'
+    actions:
+      - text: 'buy the book'
+        url: 'https://www.sitepoint.com/premium/books/jump-start-sass'
+      - text: 'invite me speak'
+        url: '/contact/'
+
+
+sub_features:
+  - title: 'True: Sass Unit Tests'
+    url: 'http://oddbird.net/true'
+    press:
+      - quote: 'OMG I just love this tool way too&nbsp;much.'
         credit: 'Hugo Giraudel'
         source: 'Sass Developer'
         url: 'http://hugogiraudel.com/'
     actions:
-      - text: 'start unit testing'
+      - text: 'start testing'
         url: 'http://oddbird.net/true'
-      - text: 'view the code'
-        url: 'https://github.com/oddbird/true'
 
   - title: 'The Post-Obsolete Book'
+    url: 'http://post-obsolete.com'
     press:
-      - quote: 'I was impressed by the purest form of outrageous creation.'
+      - quote: 'I was impressed by the purest form of outrageous&nbsp;creation.'
         credit: 'Judy Rose'
         source: 'Boulder Writer’s Workshop'
         url: 'http://www.boulderwritersworkshop.org/2013/04/17/post-obsolete-a-bww-salon/'
     actions:
       - text: 'press this button'
-        url: '/post-obsolete/'
+        url: 'http://post-obsolete.com'
       - text: 'not this one'
         url: '/2014/08/04/post-obsolete/'
 
   - title: 'Susy'
-    with:
-      - name: 'OddBird'
-        url: 'http://oddbird.net'
+    url: 'http://susy.oddbird.net'
     press:
-      - quote: 'I like the idea of grids-on-demand, rather than a strict framework.'
+      - quote: 'I like the idea of grids-on-demand, rather than a strict&nbsp;framework.'
         credit: 'Chris Coyier'
         source: 'CSS Tricks'
         url: 'http://css-tricks.com/build-web-layouts-easily-susy/'
     actions:
-      - text: 'start using grids'
+      - text: 'demand a grid'
         url: 'http://susy.oddbird.net'
-      - text: 'view the code'
-        url: 'https://github.com/oddbird/susy'
 
 
 # Feature Orgs
@@ -175,6 +182,19 @@ feature_orgs:
 
 past:
   ### 2016 -------------------------------------
+
+
+  - name: 'Pattern-Making in Sass'
+    url: 'http://oddbooksapp.com/book/sass-patterns'
+    datetime: ['2016', '05', '19']
+    type: ['speaking']
+    role: 'speaking'
+    summary: 'an overview of Sass pattern-making,
+              as seen in SitePoint’s
+              <a href="https://www.sitepoint.com/premium/books/jump-start-sass">Jump Start Sass</a>'
+    venue:
+      - name: 'DublinCSS'
+        url: 'http://www.meetup.com/DublinCSS/events/230011902/'
 
 
   - name: 'Code Patterns for Pattern-Making'
@@ -337,7 +357,6 @@ past:
 
   - name: 'The In-Between'
     url: 'http://www.julierada.com/#/the-in-between/'
-    datetime: ['2015', '09', '06']
     summary: 'a site-specific performance in the Utah desert'
     type: ['performance']
     role: 'co-writer/performer'
@@ -347,6 +366,10 @@ past:
     venue:
       - name: 'University of Utah, Rio Mesa Center'
         url: 'http://riomesa.utah.edu/'
+        datetime: ['2015', '09', '06']
+      - name: 'Rio Mesa Center'
+        url: 'http://riomesa.utah.edu/'
+        datetime: ['2016', '05', '21']
 
 
   - name: 'Sassy Toolkits'
@@ -1206,7 +1229,8 @@ education:
 
 # navigation
 nav:
-  - title: 'home'
+  - title: 'work'
+    slug: 'home'
     url: '/'
   # - title: 'gallery'
   #   url: '/what/'
@@ -1231,23 +1255,20 @@ event_tags:
 # ---------------
 
 intro:
-  - tagline: 'Art <i>&</i> Code for Humans'
-    long: 'I work across many mediums,
-          but always with a focus on the people involved —
-          collaborating,
-          sharing freely,
-          and dance-stumbling towards beauty together.'
-    short: 'I made some things, and put them on a website.'
+  - tagline: 'Hello, lovely —'
+    text: 'I’m <a href="/who/">Miriam</a>,
+          a web developer <i>&</i> artist,
+          following my curiosity across media,
+          collaborating <i>&</i> sharing freely, always
+          <a href="/why/">focused on the human&nbsp;experience</a>.'
 
 contact:
-  - title: 'Share your thoughts, and start a conversation.'
+  - title: 'Start a conversation —'
     body: 'Talk to me about art, code, and collaboration;
-          invite me to speak;
-          or just argle some bargle —
-          I want to hear from you!'
-    actions: 'You can contact me any time
-              on <a href="/contact/">my contact form</a>
-              or through <a href="http://twitter.com/mirisuzanne">@mirisuzanne</a>.'
+          or invite me to speak at your conference...'
+    actions: 'Reach me through my
+              <a href="/contact/">contact form</a>
+              or online&nbsp;<a href="http://twitter.com/mirisuzanne">@mirisuzanne</a>.'
 
 tinyletter:
   - text: 'Subscribe to my newsletter'

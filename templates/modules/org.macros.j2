@@ -1,0 +1,25 @@
+{% import "utility.macros.j2" as utility %}
+
+
+{% macro list(org) %}
+<div class="org h-card">
+  <h3 class="p-name">
+    {{ utility.link(org.name, org.url, 'u-url') }}
+  </h3>
+  <div class="summary">
+    <span class="dt-start">{{ org.date }}</span>
+    <strong class="role">{{ org.role }}</strong>
+    <span class="p-category">{{ org.type }}</span>
+  </div>
+</div>
+{% endmacro %}
+
+
+{% macro feature(org) %}
+<div class="feature-org h-card">
+  <a href="{{ org.url }}" class="u-url">
+    <span class="p-category">{{ org.type|safe }}</span>
+    <strong class="p-name">{{ org.title|safe }}</strong>
+  </a>
+</div>
+{% endmacro %}

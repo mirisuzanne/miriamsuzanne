@@ -3,20 +3,23 @@
 
 
 {% set events = config.past if module.time == 'past' else config.future %}
+{% set has_filters = true if (module.time == 'past' or module.has_filters) else false %}
 
 
 {% if events %}
   {% call mod.section(
     title=module.title or ['the', module.time]|join(' '),
-    slug='calendar',
-    has_filters=true
+    slug=['calendar', module.time]|join('-'),
+    has_filters=has_filters
   ) %}
 
-    {{ mod.filters(
-      list=events|map(attribute='type')|unique_chain,
-      uuid=module.time,
-      lookup=config.event_tags[0]
-    ) }}
+    {% if has_filters %}
+      {{ mod.filters(
+        list=events|map(attribute='type')|unique_chain,
+        uuid=module.time,
+        lookup=config.event_tags[0]
+      ) }}
+    {% endif %}
 
     {% for event in events %}
       {{ calendar.show(event) }}

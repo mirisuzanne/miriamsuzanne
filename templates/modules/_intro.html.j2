@@ -1,22 +1,15 @@
-{% import "modules/macros.j2" as mod %}
-
+{% include 'layout/_face.svg' %}
 {% set intro = config.intro[0] %}
 
-{% call mod.section(
-  title=intro.tagline,
-  slug='intro'
-) %}
-  <input type="checkbox" id="intro-toggle"/>
 
-  <p data-intro="💩">
-    {{ intro.long|safe }}
-  </p>
+<section data-module='intro'>
+  <svg class="intro-image" data-svg="face"><use xlink:href="#face" /></svg>
 
-  <p data-intro="💅">
-    {{ intro.short|safe }}
-  </p>
+  <div class="intro-body">
+    <h2 class="intro-title">{{ intro.tagline }}</h2>
+    <p class="intro-text">
+      {{ intro.text|safe }}
+    </p>
+  </div>
 
-  <a href="/why/" class="btn">read the manifesto</a>
-  <label for="intro-toggle" class="link">argle-bargle</label>
-
-{% endcall %}
+</section>

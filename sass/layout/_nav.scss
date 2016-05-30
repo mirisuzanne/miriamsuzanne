@@ -12,9 +12,6 @@ $locations: (
 [data-region='nav'] {
   @include font-size('small');
   font-style: italic;
-  margin: 0 auto;
-  max-width: size('page');
-  padding: size('half-shim') size('half-shim') 0;
   text-transform: lowercase;
 }
 

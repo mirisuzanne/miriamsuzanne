@@ -5,42 +5,60 @@
 
 {% for feature in config.features %}
   {% call mod.section(
-    title=utility.link(feature.title, feature.url),
-    slug='feature'
+    title=none,
+    slug=['feature', feature.slug, loop.cycle('odd', 'even')]|join(' ')
   ) %}
 
-    {% if feature.with %}
-      <span class="feature-with">
-        with
-        {% for bae in feature.with %}
-          {% if loop.last and not loop.first %}and{% endif %}
-          {{ utility.link(bae.name, bae.url) }}{% if not loop.last %},{% endif %}
-        {% endfor %}
-      </span>
+    {% if feature.image %}
+      <a href="{{ feature.url }}" class="feature-image">
+        <img src="/static/pictures/features/{{ feature.image }}" />
+      </a>
     {% endif %}
 
-    {% for review in feature.press %}
-      <blockquote class="feature-quote">
-        <p>{{ review.quote }}</p>
-        <cite>
-          —{{ review.credit }},
-          {{ utility.link(review.source, review.url) }}
-        </cite>
-      </blockquote>
-    {% endfor %}
+    {% if feature.code %}
+      <a href="{{ feature.url }}" class="feature-image">
+        <pre class="feature-code">{{ feature.code|safe }}</pre>
+      </a>
+    {% endif %}
 
-    {% for sample in feature.media %}
-      {{ media.object(sample) }}
-    {% endfor %}
+    <div class="feature-content">
+      <h2 class="feature-title">
+        {{ utility.link(feature.title, feature.url) }}
+      </h2>
 
-    <div class="feature-actions">
-      {% for action in feature.actions %}
-        {{ utility.link(
-          content=action.text,
-          url=action.url,
-          class='btn' if loop.first else none
-        ) }}
+      {% if feature.with %}
+        <span class="feature-with">
+          with
+          {% for bae in feature.with %}
+            {% if loop.last and not loop.first %}and{% endif %}
+            {{ utility.link(bae.name, bae.url) }}{% if (feature.with|length > 2) and (not loop.last) %},{% endif %}
+          {% endfor %}
+        </span>
+      {% endif %}
+
+      {% for review in feature.press %}
+        <blockquote class="feature-quote">
+          <p>{{ review.quote|safe }}</p>
+          <cite>
+            —{{ review.credit }},
+            {{ utility.link(review.source, review.url) }}
+          </cite>
+        </blockquote>
       {% endfor %}
+
+      {% for sample in feature.media %}
+        {{ media.object(sample) }}
+      {% endfor %}
+
+      <div class="feature-actions">
+        {% for action in feature.actions %}
+          {{ utility.link(
+            content=action.text,
+            url=action.url,
+            class='btn' if loop.first else none
+          ) }}
+        {% endfor %}
+      </div>
     </div>
 
   {% endcall %}

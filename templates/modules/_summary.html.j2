@@ -1,0 +1,58 @@
+{% import "utility.macros.j2" as utility %}
+{% import "modules/macros.j2" as mod %}
+{% import "modules/event.macros.j2" as calendar %}
+
+
+{% macro summary_item(name, url, datetime) %}
+  <li class="calendar-group-item">
+    {{ utility.time(datetime, style='short') }}
+    {{ calendar.name(name, url) }}
+  </li>
+{% endmacro %}
+
+
+{% macro summary_group(name) %}
+  <div class="calendar-group">
+    <h2 class="calendar-group-title">
+      {{ name }}
+    </h2>
+    <ul>
+      {{ caller() }}
+    </ul>
+  </div>
+{% endmacro %}
+
+
+{% call mod.section(
+  title=null,
+  slug='calendar-summary'
+) %}
+
+  {% set posts = get_recent_blog_entries(module.post_count or 5) %}
+  {% set events = config.future %}
+
+
+  {% if posts %}
+    {% call summary_group('recent posts') %}
+      {% for post in posts %}
+        {{ summary_item(
+          name=post.title,
+          url=link_to('page', slug=post.slug),
+          datetime=[post.pub_date.strftime('%Y'), post.pub_date.strftime('%m'), post.pub_date.strftime('%d')]
+        ) }}
+      {% endfor %}
+    {% endcall %}
+  {% endif %}
+
+
+  {% if events %}
+    {% for group in events|groupby('type') %}
+      {% call summary_group(group.grouper) %}
+        {% for event in group.list %}
+          {{ summary_item(event.name, event.url, event.datetime) }}
+        {% endfor %}
+      {% endcall %}
+    {% endfor %}
+  {% endif %}
+
+{% endcall %}

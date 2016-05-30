@@ -20,6 +20,7 @@
     border: 1px dotted color('background');
     border-radius: 100%;
     flex: 0 0 auto;
+    margin-left: negative('shim');
     margin-right: size('shim');
   }
 }

@@ -1,34 +1,9 @@
-{% import "utility.macros.j2" as utility %}
 {% import "modules/macros.j2" as mod %}
+{% import "modules/org.macros.j2" as organization %}
 
 
 {% set type = 'feature' if (module.type == 'feature') else 'list' %}
 {% set orgs = config.feature_orgs if (type == 'feature') else config.orgs %}
-
-
-{% macro list(org) %}
-<div class="org h-card">
-  <h3 class="p-name">
-    {{ utility.link(org.name, org.url, 'u-url') }}
-  </h3>
-  <div class="summary">
-    <span class="dt-start">{{ org.date }}</span>
-    <strong class="role">{{ org.role }}</strong>
-    <span class="p-category">{{ org.type }}</span>
-  </div>
-</div>
-{% endmacro %}
-
-
-{% macro feature(org) %}
-<div class="feature-org">
-  <a href="{{ org.url }}">
-    {{ org.type|safe }}
-    with
-    <strong>{{ org.title|safe }}</strong>
-  </a>
-</div>
-{% endmacro %}
 
 
 {% if orgs %}
@@ -39,9 +14,9 @@
 
     {% for org in orgs %}
       {% if type == 'feature' %}
-        {{ feature(org) }}
+        {{ organization.feature(org) }}
       {% else %}
-        {{ list(org) }}
+        {{ organization.list(org) }}
       {% endif %}
     {% endfor %}
 

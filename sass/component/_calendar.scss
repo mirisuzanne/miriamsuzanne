@@ -16,3 +16,58 @@ $event-types: (
 .h-event {
   margin: size('gutter') 0;
 }
+
+
+// Summary
+// -------
+
+[data-module='calendar-summary'] {
+  @include font-size('small');
+
+  .container {
+    @include page('wide');
+  }
+
+  .module-content {
+    margin: size('gutter') 0;
+
+    @include above(40em) {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  .dt-start {
+    font-style: italic;
+
+    @include after(' » ') {
+      font-style: normal;
+    }
+  }
+
+  .p-name {
+    display: inline;
+  }
+}
+
+.calendar-group {
+  padding: size('shim') 0;
+
+  @include above(40em) {
+    flex: 0 1 auto;
+    max-width: 30vw;
+  }
+}
+
+.calendar-group-title {
+  padding: 0 size('half-shim');
+  text-transform: uppercase;
+}
+
+.calendar-group-item {
+  list-style: none;
+  overflow: hidden;
+  padding: 0 size('half-shim');
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,13 +1,24 @@
 // Main Layout
 // ===========
 
+@mixin page(
+  $size: 'page'
+) {
+  margin: 0 auto;
+  max-width: size($size);
+  padding: 0 size('shim');
+}
+
 [data-region='main'] {
   margin-bottom: size('gutter');
   padding-bottom: size('gutter');
 }
 
-.container {
-  margin: 0 auto;
-  max-width: size('page');
-  padding: size('shim');
+[data-module] {
+  padding: 10vh 0;
+}
+
+.module-title {
+  @include font-size('large');
+  font-style: italic;
 }

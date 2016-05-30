@@ -28,7 +28,7 @@
 
 
 {# Date & Time #}
-{% macro time(datetime, attrs={'class':'dt-start'}) %}
+{% macro time(datetime, style='long', attrs={'class':'dt-start'}) %}
   {% set months = {
     '01': 'January',
     '02': 'February',
@@ -50,10 +50,16 @@
     {% set day = datetime[2] %}
     {% set iso = [year, month or '01', day or '01']|join('-') %}
 
+    {% set month_display = months[month]|truncate(3, True, '') if style == 'short' else months[month] %}
+
     <time {{ show_attrs(attrs) }} {{ attr_if('datetime', iso) }}>
-      {{ months[month] or '' }}
-      {% if day %}{{ day }},{% endif %}
-      {{ year }}
+      {{ month_display or '' }}
+      {% if style == 'short' and day %}
+        {{ day }}
+      {% else %}
+        {% if day %}{{ day }},{% endif %}
+        {{ year }}
+      {% endif %}
     </time>
   {% endif %}
 {% endmacro %}

@@ -11,7 +11,7 @@ $sizes: (
   'root': 20px,
   'rhythm': 'root' ('mia': 1),
 
-  'small': 'root' ('mia': -0.5),
+  'small': 'root' ('mia': -0.75),
   'large': 'root' ('mia': 1),
 
   'gutter': 'rhythm',
@@ -19,7 +19,9 @@ $sizes: (
   'half-shim': 'gutter' ('linear': 0.25),
 
   'corners': 6px,
-  'page': 35rem,
+  'block': 26rem,
+  'page': 32rem,
+  'wide': 'block' ('linear': 3),
 
   'logo': 'rhythm' ('linear': 3),
 );

@@ -10,22 +10,22 @@
   border: 2px solid color('action');
   border-radius: size('shim');
   margin: size('shim');
-  padding: size('gutter');
+  padding: size('half-shim') size('shim') size('shim');
   position: relative;
 
   @include before('') {
     border: size('shim') solid transparent;
     border-top-color: color('action');
-    border-width: size('shim') size('shim') 0;
-    left: size('logo') / 2;
+    border-width: size('half-shim') size('shim') 0;
+    left: size('gutter');
     position: absolute;
     top: 100%;
     transform: translateX(-50%);
   }
 }
 
-.contact-summary,
-.contact-actions {
+.contact-title {
+  @include font-size('large');
   font-style: italic;
 }
 
@@ -34,6 +34,8 @@
 }
 
 .contact-actions {
+  font-style: italic;
+
   a {
     #{$link} {
       font-style: normal;
