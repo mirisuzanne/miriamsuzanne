@@ -2,12 +2,12 @@
 
 {% macro section(title, slug, has_filters=false) %}
   <section data-module="{{ slug }}" {{ utility.attr_if('data-has-filters', has_filters) }}>
-  <div class="container">
+  <div data-container="{{ slug }}">
     {% if title %}
-      <h2 class="module-title">{{ title|safe }}</h2>
+      <h2 data-title="{{ slug }}">{{ title|safe }}</h2>
     {% endif %}
 
-    <div class="module-content">
+    <div data-body="{{ slug }}">
       {{ caller() }}
     </div>
   </div>

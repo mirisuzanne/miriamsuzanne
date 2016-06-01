@@ -16,9 +16,13 @@ $brand-colors: (
 $theme-colors: (
   'background': 'white',
   'text': 'black',
+  'overlay': 'background' ('rgba': 0.9),
 
   'action': 'pink' ('shade': 15%),
   'accent': 'blue' ('shade': 15%),
+
+  'dark-background': 'accent' ('shade': 70%),
+  'light-action': 'pink' ('tint': 30%),
 
   'border': 'action',
 

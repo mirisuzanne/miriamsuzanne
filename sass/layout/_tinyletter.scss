@@ -2,34 +2,57 @@
 // ==========
 
 [data-region='tinyletter'] {
-  margin: 0 auto;
-  max-width: size('page');
+  align-items: center;
+  display: flex;
+  max-width: 100%;
   padding: 0 size('shim');
+  width: size('page');
+
+  @include above(30em) {
+    @include before(' ') {
+      @include square('logo');
+      background: url('../images/mia4.jpg');
+      background-size: cover;
+      border: 1px dotted color('background');
+      border-radius: 100%;
+      flex: 0 0 auto;
+      margin-left: negative('shim');
+    }
+  }
 }
 
 .tiny-inner {
   @include font-size('small');
-  align-items: center;
-  display: flex;
-  font-style: italic;
-
-  @include before(' ') {
-    @include square('logo');
-    background: url('../images/mia4.jpg');
-    background-size: cover;
-    border: 1px dotted color('background');
-    border-radius: 100%;
-    flex: 0 0 auto;
-    margin-left: negative('shim');
-    margin-right: size('shim');
-  }
-}
-
-[data-form='tinyletter'] {
   flex: 1 1 auto;
 }
 
+.tiny-title {
+  font-style: italic;
+  padding: 0 size('shim');
+}
+
+[data-form='tinyletter'] {
+  display: flex;
+  flex-direction: column;
+  padding: 0 size('shim');
+
+  @include above(30em) {
+    flex-direction: row;
+  }
+}
+
 [data-formfield='subscribe'] {
-  display: inline-block;
-  margin-bottom: size('half-shim');
+  align-items: stretch;
+  display: flex;
+  flex: 1 1 auto;
+  padding-bottom: size('shim');
+
+  @include above(30em) {
+    padding-bottom: 0;
+    padding-right: size('shim');
+  }
+
+  [data-input] {
+    flex: 1 0 auto;
+  }
 }

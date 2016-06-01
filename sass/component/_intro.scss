@@ -2,7 +2,7 @@
 // =====
 
 
-[data-module='intro'] {
+[data-body='intro'] {
   padding: size('gutter') size('shim');
   transition: all 300ms;
 
@@ -45,4 +45,8 @@
 
 .intro-title {
   @include h1;
+}
+
+.intro-action {
+  margin-top: size('gutter');
 }

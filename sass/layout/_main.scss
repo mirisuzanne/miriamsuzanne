@@ -15,7 +15,16 @@
 }
 
 [data-module] {
-  padding: 10vh 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 30vmin;
+  padding: 15vmin 0;
+}
+
+[data-container] {
+  flex: 1 1 auto;
+  max-width: 100%;
 }
 
 .module-title {

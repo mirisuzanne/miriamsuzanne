@@ -5,10 +5,20 @@
 $link: '&:link, &:visited';
 $focus: '&:hover, &:focus, &:active';
 
-@mixin link {
+@function action-color(
+  $background: 'background'
+) {
+  @return contrast($background, 'action', 'light-action');
+}
+
+@mixin link(
+  $background: 'background'
+) {
+  $color: action-color($background);
+
   &,
   #{$link} {
-    color: color('action');
+    color: $color;
     text-decoration: none;
   }
 

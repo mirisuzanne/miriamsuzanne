@@ -1,8 +1,16 @@
+{% import "utility.macros.j2" as utility %}
+{% import "modules/macros.j2" as mod %}
+
+
 {% include 'layout/_face.svg' %}
 {% set intro = config.intro[0] %}
 
 
-<section data-module='intro'>
+{% call mod.section(
+  title=none,
+  slug='intro'
+) %}
+
   <svg class="intro-image" data-svg="face"><use xlink:href="#face" /></svg>
 
   <div class="intro-body">
@@ -10,6 +18,11 @@
     <p class="intro-text">
       {{ intro.text|safe }}
     </p>
+    {{ utility.link(
+      intro.action.text,
+      intro.action.url,
+      class='intro-action btn'
+    ) }}
   </div>
 
-</section>
+{% endcall %}

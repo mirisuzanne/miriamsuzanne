@@ -6,7 +6,7 @@
 {% for feature in config.features %}
   {% call mod.section(
     title=none,
-    slug=['feature', feature.slug, loop.cycle('odd', 'even')]|join(' ')
+    slug=['feature', loop.cycle('odd', 'even')]|join(' ')
   ) %}
 
     {% if feature.image %}
@@ -55,7 +55,7 @@
           {{ utility.link(
             content=action.text,
             url=action.url,
-            class='btn' if loop.first else none
+            class='btn' if loop.first else 'secondary'
           ) }}
         {% endfor %}
       </div>

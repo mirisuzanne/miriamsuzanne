@@ -184,3 +184,27 @@
 </ul>
 {% endif %}
 {% endmacro %}
+
+
+{# Event Summary #}
+{% macro summary_item(title, url, datetime) %}
+  <li class="calendar-group-item">
+    {{ utility.time(datetime, style='short') }}
+    {{ name(title, url) }}
+  </li>
+{% endmacro %}
+
+{% macro summary_group(type) %}
+  <div class="calendar-group">
+    <h2 class="calendar-group-title">
+      {{ type.title }}
+    </h2>
+    <ul class="calendar-group-list">
+      {{ caller() }}
+    </ul>
+    <a href="{{ type.url }}" class="calendar-group-action">
+      {{ type.action }}
+    </a>
+  </div>
+{% endmacro %}
+

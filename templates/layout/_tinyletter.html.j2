@@ -4,13 +4,12 @@
 
 <section data-region="tinyletter">
 <div class="tiny-inner">
-
-  <form data-form="tinyletter" action="https://tinyletter.com/miriamsuzanne" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/miriamsuzanne', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-    <input type="hidden" value="1" name="embed"/>
-
     <h2 class="tiny-title">
       {{ utility.link(tiny.text, tiny.url) }}
     </h2>
+
+  <form data-form="tinyletter" action="https://tinyletter.com/miriamsuzanne" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/miriamsuzanne', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+    <input type="hidden" value="1" name="embed"/>
 
     <label for="tlemail" data-formfield="subscribe">
       <span class="form-label is-hidden">Email</span>

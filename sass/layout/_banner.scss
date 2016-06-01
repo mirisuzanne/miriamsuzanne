@@ -3,7 +3,7 @@
 
 [data-region='banner'] {
   margin: 0 auto size('gutter');
-  max-width: size('page');
+  max-width: size('wide');
   padding: size('shim') size('shim') 0;
 
   @include above(33em) {

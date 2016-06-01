@@ -4,11 +4,29 @@
 .btn {
   &,
   #{$link} {
+    @include after(' »');
+    @include font-size('small');
+    border: 2px solid;
+    border-radius: size(3px);
+    color: color('action');
+    display: inline-block;
+    letter-spacing: 1px;
+    padding: size('half-shim') size('gutter');
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  #{$focus} {
     @include contrasted('action');
+  }
+}
+
+.secondary {
+  &,
+  #{$link} {
+    @include after(' »');
+    @include font-size('small');
     display: inline-block;
     font-style: italic;
-    padding: 0 size('shim');
-    text-decoration: none;
-    text-transform: lowercase;
   }
 }

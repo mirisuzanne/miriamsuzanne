@@ -10,10 +10,12 @@
     {% block body %}{% endblock %}
   </main>
 
-  {% if not config.hide_contact %}
-    {% include 'layout/_contact.html.j2' %}
-  {% endif %}
+  <div class="fatfooter">
+    {% if not config.hide_contact %}
+      {% include 'layout/_contact.html.j2' %}
+    {% endif %}
 
-  {% include "layout/_tinyletter.html.j2" %}
-  {% include "layout/_contentinfo.html.j2" %}
+    {% include "layout/_tinyletter.html.j2" %}
+    {% include "layout/_contentinfo.html.j2" %}
+  </div>
 {% endblock %}

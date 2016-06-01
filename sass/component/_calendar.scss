@@ -23,39 +23,26 @@ $event-types: (
 
 [data-module='calendar-summary'] {
   @include font-size('small');
+}
 
-  .container {
-    @include page('wide');
-  }
+[data-body='calendar-summary'] {
+  margin: 0 auto;
+  max-width: 100%;
+  width: size('wide');
 
-  .module-content {
-    margin: size('gutter') 0;
-
-    @include above(40em) {
-      display: flex;
-      justify-content: space-around;
-    }
-  }
-
-  .dt-start {
-    font-style: italic;
-
-    @include after(' » ') {
-      font-style: normal;
-    }
-  }
-
-  .p-name {
-    display: inline;
+  @include above(40em) {
+    align-items: stretch;
+    display: flex;
+    justify-content: space-around;
   }
 }
 
 .calendar-group {
-  padding: size('shim') 0;
+  padding: size('shim');
 
   @include above(40em) {
     flex: 0 1 auto;
-    max-width: 30vw;
+    max-width: 33vw;
   }
 }
 
@@ -70,4 +57,23 @@ $event-types: (
   padding: 0 size('half-shim');
   text-overflow: ellipsis;
   white-space: nowrap;
+
+  .dt-start {
+    font-style: italic;
+
+    @include after(' » ') {
+      font-style: normal;
+    }
+  }
+
+  .p-name {
+    display: inline;
+  }
+}
+
+.calendar-group-action {
+  @include after(' »');
+  display: inline-block;
+  font-style: italic;
+  padding: size('half-shim');
 }

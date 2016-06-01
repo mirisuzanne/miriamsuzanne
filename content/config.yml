@@ -7,32 +7,46 @@ future:
   - name: 'Lion’s Lair'
     datetime: ['2016', '07', '22']
     url: 'http://teacupgorilla.com'
-    type: 'live music'
+    type: 'performance'
 
   - name: 'Underground Music Showcase'
     datetime: ['2016', '07', '28']
     url: 'http://teacupgorilla.com'
-    type: 'live music'
+    type: 'performance'
 
   - name: 'Syntax Physic Opera'
     datetime: ['2016', '08', '11']
     url: 'http://teacupgorilla.com'
-    type: 'live music'
+    type: 'performance'
 
   - name: 'CSS Summit'
     url: 'http://environmentsforhumans.com/2016/css-summit/'
     datetime: ['2016', '07', '26']
-    type: 'upcoming talks'
+    type: 'speaking'
 
   - name: 'CascadiaFest'
     url: 'http://2016.cascadiafest.org/'
     datetime: ['2016', '08', '03']
-    type: 'upcoming talks'
+    type: 'speaking'
 
   #     - name: 'Develop Denver'
   #       url: 'https://developdenver.org/'
   #       datetime: ['2016', '08', '05']
-  #       type: 'upcoming talks'
+  #       type: 'speaking'
+
+summary_types:
+  - speaking:
+      title: 'conference talks'
+      action: 'invite me to speak'
+      url: '/contact/'
+    performance:
+      title: 'live music'
+      action: 'more music'
+      url: 'http://teacupgorilla.com/'
+    blog:
+      title: 'articles'
+      action: 'browse the blog'
+      url: '/blog/'
 
 
 # features
@@ -126,21 +140,9 @@ features:
       - text: 'invite me speak'
         url: '/contact/'
 
-
-sub_features:
-  - title: 'True: Sass Unit Tests'
-    url: 'http://oddbird.net/true'
-    press:
-      - quote: 'OMG I just love this tool way too&nbsp;much.'
-        credit: 'Hugo Giraudel'
-        source: 'Sass Developer'
-        url: 'http://hugogiraudel.com/'
-    actions:
-      - text: 'start testing'
-        url: 'http://oddbird.net/true'
-
   - title: 'The Post-Obsolete Book'
     url: 'http://post-obsolete.com'
+    image: 'no-book.png'
     press:
       - quote: 'I was impressed by the purest form of outrageous&nbsp;creation.'
         credit: 'Judy Rose'
@@ -152,16 +154,36 @@ sub_features:
       - text: 'not this one'
         url: '/2014/08/04/post-obsolete/'
 
-  - title: 'Susy'
+  # - title: 'True: Sass Unit Tests'
+  #   url: 'http://oddbird.net/true'
+  #   with:
+  #     - name: 'OddBird'
+  #       url: 'http://oddbird.net'
+  #   press:
+  #     - quote: 'OMG I just love this tool way too&nbsp;much.'
+  #       credit: 'Hugo Giraudel'
+  #       source: 'Sass Developer'
+  #       url: 'http://hugogiraudel.com/'
+  #   actions:
+  #     - text: 'start testing'
+  #       url: 'http://oddbird.net/true'
+
+  - title: 'Susy: Layout Toolkit'
     url: 'http://susy.oddbird.net'
+    image: 'susy.png'
+    with:
+      - name: 'OddBird'
+        url: 'http://oddbird.net'
     press:
       - quote: 'I like the idea of grids-on-demand, rather than a strict&nbsp;framework.'
         credit: 'Chris Coyier'
         source: 'CSS Tricks'
         url: 'http://css-tricks.com/build-web-layouts-easily-susy/'
     actions:
-      - text: 'demand a grid'
+      - text: 'explore grids'
         url: 'http://susy.oddbird.net'
+      - text: 'more by oddbird'
+        url: 'http://oddbird.net'
 
 
 # Feature Orgs
@@ -1258,9 +1280,12 @@ intro:
   - tagline: 'Hello, lovely —'
     text: 'I’m <a href="/who/">Miriam</a>,
           a web developer <i>&</i> artist,
-          following my curiosity across media,
-          collaborating <i>&</i> sharing freely, always
-          <a href="/why/">focused on the human&nbsp;experience</a>.'
+          following my curiosity across media:
+          exploring, building, and sharing
+          <a href="/why/">collaborative experiences</a>.'
+    action:
+      text: 'start a conversation'
+      url: '/contact/'
 
 contact:
   - title: 'Start a conversation —'

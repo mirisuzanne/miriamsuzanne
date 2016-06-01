@@ -1,29 +1,26 @@
 // Feature Styles
 // ==============
 
-[data-module~='feature'] {
-  padding: size('gutter') size('shim');
+[data-container~='feature'] {
+  padding: 0 size('shim');
+}
 
-  .module-content {
-    @include above(35em) {
-      align-items: center;
-      display: flex;
-      justify-content: center;
-    }
-  }
+[data-body~='feature'] {
+  @include above(35em) {
+    align-items: center;
+    display: flex;
+    justify-content: center;
 
-  &[data-module~='even'] {
-    .module-content {
-      @include above(35em) {
-        flex-direction: row-reverse;
-      }
+    &[data-body~='even'] {
+      flex-direction: row-reverse;
     }
   }
 }
 
 .feature-image {
-  display: block;
+  display: none;
   flex: 0 0 55vw;
+  margin: 0 auto;
   max-width: 20rem;
   padding: size('shim');
   perspective: 300;
@@ -47,9 +44,12 @@
     }
   }
 
+  @include above(35em) {
+    display: block;
+    margin: 0;
+  }
+
   img {
-    height: 40vh;
-    width: auto;
 
     @include above(35em) {
       height: auto;
@@ -85,13 +85,14 @@
 
 .feature-content {
   box-sizing: content-box;
-  max-width: size('block');
-  padding: size('shim');
-  width: 100%;
+  max-width: 100%;
+  padding: size('shim') 0;
+  width: size('block');
 
   @include above(35em) {
     border: 2px dotted color('border');
     border-width: 2px 0;
+    padding: 2vmin;
 
     [data-module~='odd'] & {
       margin-left: -10vw;

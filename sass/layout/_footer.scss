@@ -2,15 +2,14 @@
 // =============
 
 [data-region='contentinfo'] {
-  margin: 0 auto size('gutter');
-  max-width: size('page');
+  margin-top: size('gutter');
   padding: size('gutter') size('shim');
+  text-align: center;
 }
 
 .copyright {
   @include font-size('small');
   font-style: italic;
-  padding-left: size('logo');
   text-transform: lowercase;
 
   i {
