@@ -11,12 +11,11 @@
   @include above(30em) {
     @include before(' ') {
       @include square('logo');
-      background: url('../images/mia4.jpg');
+      background: url('../images/mia-11.jpg');
       background-size: cover;
       border: 1px dotted color('background');
-      border-radius: 100%;
+      border-radius: 6px;
       flex: 0 0 auto;
-      margin-left: negative('shim');
     }
   }
 }
@@ -41,10 +40,11 @@
   }
 }
 
-[data-formfield='subscribe'] {
+[data-form-field='tlemail'] {
   align-items: stretch;
   display: flex;
   flex: 1 1 auto;
+  margin: 0;
   padding-bottom: size('shim');
 
   @include above(30em) {
@@ -52,7 +52,7 @@
     padding-right: size('shim');
   }
 
-  [data-input] {
+  [data-input-type='default'] {
     flex: 1 0 auto;
   }
 }

@@ -2,11 +2,16 @@
 // ===========
 
 @mixin page(
-  $size: 'page'
+  $size: 'page',
+  $pad: true
 ) {
   margin: 0 auto;
   max-width: size($size);
-  padding: 0 size('shim');
+
+  @if $pad {
+    padding-left: size('shim');
+    padding-right: size('shim');
+  }
 }
 
 [data-region='main'] {
@@ -15,19 +20,10 @@
 }
 
 [data-module] {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  min-height: 30vmin;
-  padding: 15vmin 0;
-}
+  padding: size('gutter') 0;
+  transition: padding 150ms;
 
-[data-container] {
-  flex: 1 1 auto;
-  max-width: 100%;
-}
-
-.module-title {
-  @include font-size('large');
-  font-style: italic;
+  @include above('block') {
+    padding: 10vmin 0;
+  }
 }

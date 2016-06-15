@@ -1,17 +1,9 @@
 {% import "utility.macros.j2" as utility %}
 
-{% macro section(title, slug, has_filters=false) %}
-  <section data-module="{{ slug }}" {{ utility.attr_if('data-has-filters', has_filters) }}>
-  <div data-container="{{ slug }}">
-    {% if title %}
-      <h2 data-title="{{ slug }}">{{ title|safe }}</h2>
-    {% endif %}
-
-    <div data-body="{{ slug }}">
-      {{ caller() }}
-    </div>
-  </div>
-  </section>
+{% macro section(slug, has_filters=false) %}
+<section data-module="{{ slug }}" {{ utility.attr_if('data-has-filters', has_filters) }}>
+  {{ caller() }}
+</section>
 {% endmacro %}
 
 

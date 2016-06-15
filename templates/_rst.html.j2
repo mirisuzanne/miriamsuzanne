@@ -17,9 +17,9 @@
     <input type="checkbox" id="erasure" />
   {% endif %}
 
-  <div class="rst-body container" {{ utility.attr_if('data-erasure', config.erasure) }}>
+  <section data-module="{{ config.page or 'rst' }}" class="rst-body" {{ utility.attr_if('data-erasure', config.erasure) }}>
     {{ rst.fragment }}
-  </div>
+  </section>
 {% endif %}
 
 {%- for module in config.after -%}

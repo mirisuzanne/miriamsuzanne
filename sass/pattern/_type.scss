@@ -7,6 +7,27 @@
   font-style: italic;
 }
 
+@mixin h2 {
+  font-size: calc(1rem + 0.75vw);
+}
+
+@mixin h3 {
+  font-size: calc(1rem + 0.5vw);
+}
+
+
+h1,
+.section-title {
+  @include h1;
+}
+
+h2 {
+  @include h2;
+}
+
+h3 {
+  @include h3;
+}
 
 pre,
 code {
@@ -17,4 +38,28 @@ code {
 label,
 button {
   cursor: pointer;
+}
+
+
+blockquote {
+  margin: size('gutter') 0;
+  text-indent: -0.4em;
+
+  p {
+    @include wrap-content;
+    display: inline;
+
+    @include above('page') {
+      @include h3;
+      background: linear-gradient(to top, color('callout') 50%, transparent 50%) no-repeat scroll;
+    }
+  }
+
+  cite {
+    @include font-family('boilerplate');
+    @include font-size('small');
+    display: inline-block;
+    font-style: normal;
+    text-indent: 0;
+  }
 }

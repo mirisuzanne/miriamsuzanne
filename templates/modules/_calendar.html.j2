@@ -8,10 +8,12 @@
 
 {% if events %}
   {% call mod.section(
-    title=module.title or ['the', module.time]|join(' '),
     slug=['calendar', module.time]|join('-'),
     has_filters=has_filters
   ) %}
+    <h2 class="section-title">
+      {{ module.title or ['the', module.time]|join(' ') }}
+    </h2>
 
     {% if has_filters %}
       {{ mod.filters(

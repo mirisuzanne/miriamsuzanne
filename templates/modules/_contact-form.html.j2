@@ -1,0 +1,36 @@
+{% import 'form.macros.j2' as form %}
+
+<section data-module="contact-form">
+
+  <form data-form="contact" action="https://formspree.io/{{ config.email }}" method="POST">
+    <input type="hidden" name="_next" value="{{ [config.canonical_url, module.next]|join('') }}" />
+    <input type="text" name="_gotcha" style="display:none" />
+
+    {{ form.input(
+      text='Name',
+      id='contact-name',
+      required=true
+    ) }}
+
+    {{ form.input(
+      text='Email Address',
+      id='contact-email',
+      name='_replyto',
+      type='email',
+      required=true
+    ) }}
+
+    {{ form.textarea(
+      text='Message',
+      id='contact-message',
+      required=true
+    ) }}
+
+    <div class="form-actions">
+      <button type="submit" class="btn">
+        {{ module.submit or 'submit' }}
+      </button>
+    </div>
+  </form>
+
+</section>

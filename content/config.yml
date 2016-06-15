@@ -4,6 +4,11 @@
 # --------------
 
 future:
+  - name: 'Lost Lake Lounge'
+    datetime: ['2016', '06', '30']
+    url: 'http://lost-lake.com/event_details.cfm?blogid=968'
+    type: 'performance'
+
   - name: 'Lion’s Lair'
     datetime: ['2016', '07', '22']
     url: 'http://teacupgorilla.com'
@@ -11,11 +16,6 @@ future:
 
   - name: 'Underground Music Showcase'
     datetime: ['2016', '07', '28']
-    url: 'http://teacupgorilla.com'
-    type: 'performance'
-
-  - name: 'Syntax Physic Opera'
-    datetime: ['2016', '08', '11']
     url: 'http://teacupgorilla.com'
     type: 'performance'
 
@@ -33,6 +33,22 @@ future:
   #       url: 'https://developdenver.org/'
   #       datetime: ['2016', '08', '05']
   #       type: 'speaking'
+
+  - name: 'A Night of Grand Guignol'
+    datetime: ['2016', '08', '18']
+    url: 'https://www.eventbrite.com/e/a-night-of-grand-guignol-tickets-18803019337'
+    type: 'performance'
+
+  - name: 'Larimer Lounge BBQ'
+    datetime: ['2016', '08', '28']
+    url: 'http://larimerlounge.com/'
+    type: 'performance'
+
+  - name: 'Syntax Physic Opera'
+    datetime: ['2016', '09', '08']
+    url: 'http://teacupgorilla.com'
+    type: 'performance'
+
 
 summary_types:
   - speaking:
@@ -70,10 +86,10 @@ features:
     actions:
       - text: 'buy the novel'
         url: 'http://www.springgunpress.com/riding-sidesaddle-eric-suzanne/'
-      - text: 'view the gallery'
+      - text: 'art from the novel'
         url: 'http://squareup.com/store/miriamsuzanne/'
 
-  - title: 'Code Patterns for Pattern Making'
+  - title: 'Code Patterns for Pattern-Making'
     slug: 'pattern-making'
     url: 'https://oddbooksapp.com/book/pattern-making'
     code: "$brand-colors: (\n
@@ -99,10 +115,10 @@ features:
         source: 'CodePen'
         url: 'http://codepen.io/chriscoyier/post/clarity-2016-wrapup'
     actions:
+      - text: 'hire OddBird'
+        url: 'http://oddbird.net/'
       - text: 'invite me speak'
         url: '/contact/'
-      - text: 'find me at a conference'
-        url: '/#calendar-future'
 
   - title: 'The Holes They Leave'
     slug: 'holes-they-leave'
@@ -116,7 +132,7 @@ features:
     actions:
       - text: 'buy the album'
         url: 'http://teacupgorilla.bandcamp.com/album/the-holes-they-leave?action=buy'
-      - text: 'see us live'
+      - text: 'more Teacup Gorilla'
         url: 'http://teacupgorilla.com'
 
   - title: 'Jump Start Sass'
@@ -135,10 +151,10 @@ features:
         source: 'Sass Core Developer'
         url: 'http://sass-lang.com/'
     actions:
+      - text: 'hire OddBird'
+        url: 'http://oddbird.net/'
       - text: 'buy the book'
         url: 'https://www.sitepoint.com/premium/books/jump-start-sass'
-      - text: 'invite me speak'
-        url: '/contact/'
 
   - title: 'The Post-Obsolete Book'
     url: 'http://post-obsolete.com'
@@ -154,6 +170,23 @@ features:
       - text: 'not this one'
         url: '/2014/08/04/post-obsolete/'
 
+  - title: 'Susy: Layout Toolkit'
+    url: 'http://susy.oddbird.net'
+    image: 'susy.png'
+    with:
+      - name: 'OddBird'
+        url: 'http://oddbird.net'
+    press:
+      - quote: 'I like the idea of grids-on-demand, rather than a strict&nbsp;framework.'
+        credit: 'Chris Coyier'
+        source: 'CSS Tricks'
+        url: 'http://css-tricks.com/build-web-layouts-easily-susy/'
+    actions:
+      - text: 'learn about Susy'
+        url: 'http://susy.oddbird.net'
+      - text: 'hire OddBird'
+        url: 'http://oddbird.net/'
+
   # - title: 'True: Sass Unit Tests'
   #   url: 'http://oddbird.net/true'
   #   with:
@@ -167,23 +200,8 @@ features:
   #   actions:
   #     - text: 'start testing'
   #       url: 'http://oddbird.net/true'
-
-  - title: 'Susy: Layout Toolkit'
-    url: 'http://susy.oddbird.net'
-    image: 'susy.png'
-    with:
-      - name: 'OddBird'
-        url: 'http://oddbird.net'
-    press:
-      - quote: 'I like the idea of grids-on-demand, rather than a strict&nbsp;framework.'
-        credit: 'Chris Coyier'
-        source: 'CSS Tricks'
-        url: 'http://css-tricks.com/build-web-layouts-easily-susy/'
-    actions:
-      - text: 'explore grids'
-        url: 'http://susy.oddbird.net'
-      - text: 'more by oddbird'
-        url: 'http://oddbird.net'
+  #     - text: 'hire OddBird'
+  #       url: 'http://oddbird.net/'
 
 
 # Feature Orgs
@@ -314,6 +332,11 @@ past:
       - name: 'buy the book'
         url: 'http://www.amazon.com/Jump-Start-Sass-Hugo-Giraudel/dp/0994182678'
     press:
+      - quote: 'Miriam and Hugo have become some of the most notable
+                creators of Sass plugins and best&nbsp;practices.'
+        credit: 'Chris Eppstein'
+        source: 'Sass Core Developer'
+        url: 'http://sass-lang.com/'
       - quote: 'This is hands down the best book on Sass if you want to learn the most important parts of the Sass language that will help you architect a good application.'
         credit: 'Kaelig Deloumeau-Prigent'
         source: 'SitePoint'
@@ -1131,13 +1154,13 @@ interviews:
       name: 'Michigan Quarterly Review'
       url: 'http://www.michiganquarterlyreview.com/'
 
-  - name: 'Road to SassConf'
-    url: 'https://www.youtube.com/watch?v=jkVgp-GfQXc'
-    datetime: ['2015', '10', '01']
-    org:
-      contact: 'Micah GodBolt'
-      name: 'SassBites Podcast'
-      url: 'https://www.youtube.com/user/sassbites'
+  # - name: 'Road to SassConf'
+  #   url: 'https://www.youtube.com/watch?v=jkVgp-GfQXc'
+  #   datetime: ['2015', '10', '01']
+  #   org:
+  #     contact: 'Micah GodBolt'
+  #     name: 'SassBites Podcast'
+  #     url: 'https://www.youtube.com/user/sassbites'
 
   - name: '[Miriam] Suzanne Drops Non-Linear Novel...'
     url: 'http://www.colomusicbuzz.com/eric-suzanne-drops-non-linear-novel-in-conjunction-with-teacup-gorilla/'
@@ -1147,13 +1170,13 @@ interviews:
       name: 'Colorado Music Buzz'
       url: 'http://www.colomusicbuzz.com'
 
-  - name: 'Susy Grids 2.0'
-    url: 'http://bit.ly/SassBites29'
-    datetime: ['2014', '03', '13']
-    org:
-      contact: 'Micah GodBolt'
-      name: 'SassBites Podcast'
-      url: 'https://www.youtube.com/user/sassbites'
+  # - name: 'Susy Grids 2.0'
+  #   url: 'http://bit.ly/SassBites29'
+  #   datetime: ['2014', '03', '13']
+  #   org:
+  #     contact: 'Micah GodBolt'
+  #     name: 'SassBites Podcast'
+  #     url: 'https://www.youtube.com/user/sassbites'
 
   - name: 'Ideas, Process, Obsolescence, and the Iterative'
     url: 'http://mediaarchaeologylab.com/blog/eric-meyer-ideas-process-obsolescence-iterative-interview-mel-hogan/'
@@ -1289,8 +1312,9 @@ intro:
 
 contact:
   - title: 'Start a conversation —'
-    body: 'Talk to me about art, code, and collaboration;
-          or invite me to speak at your conference...'
+    body: 'Talk to me about art, code, or collaboration;
+          hire me to speak;
+          or just say hello!'
     actions: 'Reach me through my
               <a href="/contact/">contact form</a>
               or online&nbsp;<a href="http://twitter.com/mirisuzanne">@mirisuzanne</a>.'
@@ -1323,6 +1347,7 @@ social:
 
 # site
 author: 'Miriam Suzanne'
+email: 'miriam@miriamsuzanne.com'
 location: 'home'
 
 subtitle:

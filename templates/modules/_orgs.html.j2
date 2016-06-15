@@ -8,9 +8,12 @@
 
 {% if orgs %}
   {% call mod.section(
-    title=module.title or 'Co-Belligerents',
     slug=['orgs', type]|join('-')
   ) %}
+
+    <h2 class="section-title">
+      {{ module.title or 'Co-Belligerents' }}
+    </h2>
 
     {% for org in orgs %}
       {% if type == 'feature' %}

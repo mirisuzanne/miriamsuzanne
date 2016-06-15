@@ -4,7 +4,7 @@
 .btn {
   &,
   #{$link} {
-    @include after(' »');
+    @include after('»');
     @include font-size('small');
     border: 2px solid;
     border-radius: size(3px);
@@ -24,7 +24,7 @@
 .secondary {
   &,
   #{$link} {
-    @include after(' »');
+    @include after('\00a0»');
     @include font-size('small');
     display: inline-block;
     font-style: italic;

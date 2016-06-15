@@ -1,3 +1,4 @@
+{% import 'form.macros.j2' as form %}
 {% import 'utility.macros.j2' as utility %}
 
 {% set tiny = config.tinyletter[0] %}
@@ -11,13 +12,18 @@
   <form data-form="tinyletter" action="https://tinyletter.com/miriamsuzanne" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/miriamsuzanne', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
     <input type="hidden" value="1" name="embed"/>
 
-    <label for="tlemail" data-formfield="subscribe">
-      <span class="form-label is-hidden">Email</span>
-      <input type="text" name="email" id="tlemail" placeholder="you@example.com" data-input='text' />
-    </label>
+    {{ form.input(
+      text='Email',
+      id='tlemail',
+      name='email',
+      type='email',
+      placeholder='you@example.com',
+      required=true,
+      hide_label=true
+    ) }}
 
     <button type="submit" class="btn">
-      subscribe
+      Subscribe
     </button>
   </form>
 </div>

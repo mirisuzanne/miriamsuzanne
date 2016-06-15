@@ -1,18 +1,23 @@
 // RST
 // ===
 
-.title {
-  @include font-size('large');
-  @include page;
-  font-style: italic;
-}
 
-.rst-body {
-  @include page;
+[data-module='rst'] {
+  margin: 0 auto;
+  max-width: size('page');
+  padding-left: size('shim');
+  padding-right: size('shim');
 
   p,
   ul,
   ol {
     margin: size('shim') 0;
   }
+}
+
+
+.title {
+  @include font-size('large');
+  @include page;
+  font-style: italic;
 }

@@ -1,2 +1,7 @@
 // Contact
 // =======
+
+[data-module='contact-form'] {
+  @include page;
+  padding-top: 0;
+}
