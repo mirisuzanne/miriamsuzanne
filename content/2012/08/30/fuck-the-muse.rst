@@ -1,5 +1,5 @@
 public: yes
-tags: [writing, events]
+tags: [writing, art, process]
 summary: |
   The `Boulder Writer's Workshop <http://www.boulderwritersworkshop.org/>`_
   has invited me to teach a class

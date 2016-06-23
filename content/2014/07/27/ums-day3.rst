@@ -1,76 +1,40 @@
 public: yes
+feature:
+  - image: 'ums/14-26/magic-cyclops.jpg'
 after:
   - include: 'gallery/_gallery.html'
-gallery:
-  - body:
-    - image: 'ums/14-26/magic-cyclops.jpg'
-      class: full
-    - image: 'ums/14-26/bellejar.jpg'
-    - image: 'ums/14-26/dirty-femmes.jpg'
-    - image: 'ums/14-26/joy-subtraction.jpg'
-    - image: 'ums/14-26/echo-beds.jpg'
-    - image: 'ums/14-26/abandin-pictures.jpg'
-      class: full
-    - image: 'ums/14-26/abandin-2.jpg'
-    - image: 'ums/14-26/natalie-tate.jpg'
-    - image: 'ums/14-26/shady-elders.jpg'
-      class: full
-    - image: 'ums/14-26/ross.jpg'
-    - image: 'ums/14-26/casey-james.jpg'
-    - image: 'ums/14-26/jen-korte.jpg'
-      class: full
-    - image: 'ums/14-26/tvgirl.jpg'
-    - image: 'ums/14-26/raven-writing.jpg'
-    caption: |
-      <a href="http://themagiccyclops.com/">Magic Cyclops</a>,
-      <a href="http://thebellejarmusic.wordpress.com/">Belle Jar</a>,
-      <a href="http://www.thedirtyfemmes.com/">Dirty Femmes</a>,
-      <a href="http://www.joysubtraction.com/">Joy Subtraction</a>,
-      <a href="http://echobeds.tumblr.com/">Echo Beds</a>
-      (I was too late, but they gave me a button),
-      <a href="http://abandinpictures.com/">A Band In Pictures</a>,
-      <a href="http://natalietatemusic.com/">Natalie Tate</a>,
-      <a href="http://www.holyunderground.com/artists/shadyelders/">Shady Elders</a>,
-      Ross (with a garnish),
-      <a href="http://caseyjamesprestwood.com/">Casey James Prestwood</a>,
-      <a href="http://www.jkandtheloss.com/">Jen Korte & The Loss</a>,
-      <a href="http://tvgirl.bandcamp.com/">TV Girl</a> (it was too dark for a photo),
-      <a href="http://tratwd.com/wp/">The Raven & The Writing Desk</a>.
-summary: |
-  |feature|
-
-  **In which:**
-  `Magic Cyclops`_,
-  `Belle Jar`_,
-  `Dirty Femmes`_,
-  `Joy Subtraction`_,
-  `Echo Beds`_,
-  `A Band In Pictures`_,
-  `Natalie Tate`_,
-  `Shady Elders`_,
-  `Casey James Prestwood`_,
-  `Jen Korte & The Loss`_,
-  `TV Girl`_,
-  and `The Raven & The Writing Desk`_.
-
-  .. _Magic Cyclops: http://themagiccyclops.com/
-  .. _Belle Jar: http://thebellejarmusic.wordpress.com/
-  .. _Dirty Femmes: http://www.thedirtyfemmes.com/
-  .. _Joy Subtraction: http://www.joysubtraction.com/
-  .. _Echo Beds: http://echobeds.tumblr.com/
-  .. _A Band In Pictures: http://abandinpictures.com/
-  .. _Natalie Tate: http://natalietatemusic.com/
-  .. _Shady Elders: http://www.holyunderground.com/artists/shadyelders/
-  .. _Casey James Prestwood: http://caseyjamesprestwood.com/
-  .. _Jen Korte & The Loss: http://www.jkandtheloss.com/
-  .. _TV Girl: http://tvgirl.bandcamp.com/
-  .. _The Raven & The Writing Desk: http://tratwd.com/wp/
-
-  .. |feature| raw:: html
-
-    <figure>
-      <img src="/static/pictures/ums/14-26/magic-cyclops.jpg" alt="" />
-    </figure>
+    body:
+      - image: 'ums/14-26/magic-cyclops.jpg'
+        url: 'http://themagiccyclops.com/'
+        size: full
+      - image: 'ums/14-26/bellejar.jpg'
+        url: http://thebellejarmusic.wordpress.com/
+      - image: 'ums/14-26/dirty-femmes.jpg'
+        url: http://www.thedirtyfemmes.com/
+      - image: 'ums/14-26/joy-subtraction.jpg'
+        url: http://www.joysubtraction.com/
+      - image: 'ums/14-26/echo-beds.jpg'
+        url: http://echobeds.tumblr.com/
+      - image: 'ums/14-26/abandin-pictures.jpg'
+        url: http://abandinpictures.com/
+        size: full
+      - image: 'ums/14-26/abandin-2.jpg'
+        url: http://abandinpictures.com/
+      - image: 'ums/14-26/natalie-tate.jpg'
+        url: http://natalietatemusic.com/
+      - image: 'ums/14-26/shady-elders.jpg'
+        url: http://www.holyunderground.com/artists/shadyelders/
+        size: full
+      - image: 'ums/14-26/ross.jpg'
+      - image: 'ums/14-26/casey-james.jpg'
+        url: http://caseyjamesprestwood.com/
+      - image: 'ums/14-26/jen-korte.jpg'
+        url: http://www.jkandtheloss.com/
+        size: full
+      - image: 'ums/14-26/tvgirl.jpg'
+        url: http://tvgirl.bandcamp.com/
+      - image: 'ums/14-26/raven-writing.jpg'
+        url: http://tratwd.com/wp/
 
 
 UMS Day 3
@@ -80,9 +44,14 @@ UMS Day 3
 
 I have no time to write this
 before I dive back into the fray.
-Magic Cyclops is always magic,
-and we love Jen Korte in all her incarnations.
-We played with Abandin Pictures
+`Magic Cyclops`_ is always magic,
+and we love `Jen Korte`_ in all her `incarnations`_.
+We played with `Abandin Pictures`_
 back when they were just getting started,
 and it was great to see them rocking the Hi Dive.
 If you haven't heard them yet, it's time.
+
+.. _Magic Cyclops: http://themagiccyclops.com/
+.. _Jen Korte: http://www.jkandtheloss.com/
+.. incarnations: http://www.thedirtyfemmes.com/
+.. _A Band In Pictures: http://abandinpictures.com/

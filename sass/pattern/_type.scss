@@ -9,6 +9,7 @@
 
 @mixin h2 {
   font-size: calc(1rem + 0.75vw);
+  font-style: italic;
 }
 
 @mixin h3 {

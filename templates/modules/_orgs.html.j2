@@ -1,27 +1,23 @@
-{% import "modules/macros.j2" as mod %}
-{% import "modules/org.macros.j2" as organization %}
-
-
-{% set type = 'feature' if (module.type == 'feature') else 'list' %}
-{% set orgs = config.feature_orgs if (type == 'feature') else config.orgs %}
-
-
-{% if orgs %}
-  {% call mod.section(
-    slug=['orgs', type]|join('-')
-  ) %}
+{% if config.orgs %}
+  <section data-module="orgs">
 
     <h2 class="section-title">
       {{ module.title or 'Co-Belligerents' }}
     </h2>
 
-    {% for org in orgs %}
-      {% if type == 'feature' %}
-        {{ organization.feature(org) }}
-      {% else %}
-        {{ organization.list(org) }}
-      {% endif %}
+    {% for org in config.orgs %}
+      <div class="org h-card">
+        <h3 class="p-name">
+          {{ utility.link_if(org.name, org.url, 'u-url') }}
+        </h3>
+
+        <div class="summary">
+          <span class="dt-start">{{ org.date }}</span>
+          <strong class="role">{{ org.role }}</strong>
+          <span class="p-category">{{ org.type }}</span>
+        </div>
+      </div>
     {% endfor %}
 
-  {% endcall %}
+  </section>
 {% endif %}

@@ -1,5 +1,5 @@
 public: yes
-tags: [susy, code, sass, compass]
+tags: [susy, code, sass]
 
 
 ================

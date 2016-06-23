@@ -1,15 +1,11 @@
 {% import "utility.macros.j2" as utility %}
-{% import "modules/macros.j2" as mod %}
 {% import "gallery/macros.html.j2" as media %}
 
 
 {% for feature in config.features %}
-  {% call mod.section(
-    slug='feature'
-  ) %}
-
+  <section data-module="feature">
     <h2 class="section-title">
-      {{ utility.link(feature.title, feature.url) }}
+      {{ utility.link_if(feature.title, feature.url) }}
     </h2>
 
     {% if feature.with %}
@@ -17,7 +13,7 @@
         with
         {% for bae in feature.with %}
           {% if loop.last and not loop.first %}and{% endif %}
-          {{ utility.link(bae.name, bae.url) }}{% if (feature.with|length > 2) and (not loop.last) %},{% endif %}
+          {{ utility.link_if(bae.name, bae.url) }}{% if (feature.with|length > 2) and (not loop.last) %},{% endif %}
         {% endfor %}
       </div>
     {% endif %}
@@ -27,7 +23,7 @@
         <p>{{ review.quote|safe }}</p>
         <cite>
           —{{ review.credit }},
-          {{ utility.link(review.source, review.url) }}
+          {{ utility.link_if(review.source, review.url) }}
         </cite>
       </blockquote>
     {% endfor %}
@@ -38,13 +34,12 @@
 
     <div class="feature-actions">
       {% for action in feature.actions %}
-        {{ utility.link(
+        {{ utility.link_if(
           content=action.text,
           url=action.url,
           class='btn' if loop.first else 'secondary'
         ) }}
       {% endfor %}
     </div>
-
-  {% endcall %}
+  </section>
 {% endfor %}

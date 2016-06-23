@@ -620,7 +620,7 @@ past:
         url: 'http://teacupgorilla.com'
 
 
-  - name: 'DISusy: your layout, our math'
+  - name: 'Your Own Damn [Susy] System'
     url: '/pres/susy2/'
     type: ['speaking']
     role: 'speaking'
@@ -1277,12 +1277,10 @@ nav:
   - title: 'work'
     slug: 'home'
     url: '/'
-  # - title: 'gallery'
-  #   url: '/what/'
   - title: 'press'
     url: '/press/'
-  # - title: 'blog'
-  #   url: '/blog/'
+  - title: 'blog'
+    url: '/blog/'
   - title: 'about'
     url: '/who/'
   - title: 'contact'

@@ -1,5 +1,5 @@
 public: yes
-tags: [greenmud, illustration, crowdfunding]
+tags: [greenmud, art, writing]
 summary: |
   Last month I posted my first
   `GreenMud reward portrait </2012/10/18/saying-thanks/>`_

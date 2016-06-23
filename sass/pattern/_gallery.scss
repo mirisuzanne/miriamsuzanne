@@ -1,6 +1,24 @@
 // Gallery Pattern
 // ===============
 
-.gallery-item {
-  margin: size('shim') 0;
+[data-gallery] {
+  margin-bottom: 1rem;
+}
+
+[data-gallery='video'] {
+  height: 0;
+  position: relative;
+}
+
+.video-wrap {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
 }

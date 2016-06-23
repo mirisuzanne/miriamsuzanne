@@ -1,67 +1,41 @@
 public: yes
+feature:
+  - image: 'ums/14-27/brokenspirits.jpg'
 after:
   - include: 'gallery/_gallery.html'
-gallery:
-  - body:
-    - image: 'ums/14-27/brokenspirits.jpg'
-      class: full
-    - image: 'ums/14-27/broken.jpg'
-    - image: 'ums/14-27/land.jpg'
-    - image: 'ums/14-27/landlines.jpg'
-      class: full
-    - image: 'ums/14-27/porlolo.jpg'
-    - image: 'ums/14-27/porlolo2.jpg'
-    - image: 'ums/14-27/daneric.jpg'
-    - image: 'ums/14-27/dansondra.jpg'
-    - image: 'ums/14-27/kittycrimes.jpg'
-      class: full
-    - image: 'ums/14-27/kitty.jpg'
-    - image: 'ums/14-27/emeraldsiam.jpg'
-    - image: 'ums/14-27/inthewhale.jpg'
-    - image: 'ums/14-27/robinkim.jpg'
-    - image: 'ums/14-27/goragora.jpg'
-      class: full
-    - image: 'ums/14-27/gora.jpg'
-    - image: 'ums/14-27/blondredhead.jpg'
-    caption: |
-      <a href="http://deadeyesbrokenspirits.bandcamp.com/">Broken Spirits</a>,
-      <a href="http://hellolandlines.com/">Land Lines</a>,
-      <a href="http://porlolo.wordpress.com/">Porlolo</a>,
-      Teacup Gorilla,
-      <a href="http://www.soundcloud.com/kittycrimes">Kitty Crimes</a>,
-      <a href="https://www.facebook.com/EmeraldSiam/">Emerald Siam</a>,
-      <a href="http://www.inthewhalesucks.com/">In the Whale</a>,
-      Robin & Kim,
-      <a href="http://goragora.org/">Gora Gora Orkestar</a>,
-      and <a href="http://blonde-redhead.com/">Blonde Redhead</a>.
-summary: |
-  |feature|
-
-  **In which:**
-  `Broken Spirits`_,
-  `Land Lines`_,
-  `Porlolo`_,
-  `Kitty Crimes`_,
-  `Emerald Siam`_,
-  `In the Whale`_,
-  `Gora Gora Orkestar`_,
-  and
-  `Blonde Redhead`_.
-
-  .. _Broken Spirits: http://deadeyesbrokenspirits.bandcamp.com/
-  .. _Land Lines: http://hellolandlines.com/
-  .. _Porlolo: http://porlolo.wordpress.com/
-  .. _Kitty Crimes: http://www.soundcloud.com/kittycrimes
-  .. _Emerald Siam: https://www.facebook.com/EmeraldSiam/
-  .. _In the Whale: http://www.inthewhalesucks.com/
-  .. _Gora Gora Orkestar: http://goragora.org/
-  .. _Blonde Redhead: http://blonde-redhead.com/
-
-  .. |feature| raw:: html
-
-    <figure>
-      <img src="/static/pictures/ums/14-27/brokenspirits.jpg" alt="" />
-    </figure>
+    body:
+      - image: 'ums/14-27/brokenspirits.jpg'
+        url: http://deadeyesbrokenspirits.bandcamp.com/
+        size: full
+      - image: 'ums/14-27/broken.jpg'
+        url: http://deadeyesbrokenspirits.bandcamp.com/
+      - image: 'ums/14-27/land.jpg'
+        url: http://hellolandlines.com/
+      - image: 'ums/14-27/landlines.jpg'
+        url: http://hellolandlines.com/
+        size: full
+      - image: 'ums/14-27/porlolo.jpg'
+        url: http://porlolo.wordpress.com/
+      - image: 'ums/14-27/porlolo2.jpg'
+        url: http://porlolo.wordpress.com/
+      - image: 'ums/14-27/daneric.jpg'
+      - image: 'ums/14-27/dansondra.jpg'
+      - image: 'ums/14-27/kittycrimes.jpg'
+        url: http://www.soundcloud.com/kittycrimes
+        size: full
+      - image: 'ums/14-27/kitty.jpg'
+        url: http://www.soundcloud.com/kittycrimes
+      - image: 'ums/14-27/emeraldsiam.jpg'
+        url: https://www.facebook.com/EmeraldSiam/
+      - image: 'ums/14-27/inthewhale.jpg'
+        url: http://www.inthewhalesucks.com/
+      - image: 'ums/14-27/robinkim.jpg'
+      - image: 'ums/14-27/goragora.jpg'
+        url: http://goragora.org/
+        size: full
+      - image: 'ums/14-27/gora.jpg'
+      - image: 'ums/14-27/blondredhead.jpg'
+        url: http://blonde-redhead.com/
 
 
 UMS Day 4: The End

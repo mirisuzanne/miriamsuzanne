@@ -5,6 +5,7 @@
   margin: 0 auto size('gutter');
   max-width: size('wide');
   padding: size('shim') size('shim') 0;
+  text-align: center;
 
   @include above(33em) {
     align-items: center;
@@ -15,6 +16,7 @@
 
 .brand {
   font-size: inherit;
+  font-style: normal;
   font-weight: normal;
 }
 

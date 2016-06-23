@@ -20,12 +20,10 @@
     left: size('gutter');
     position: absolute;
     top: 100%;
-    transform: translateX(-50%);
   }
 }
 
 .contact-title {
-  @include font-size('large');
   font-style: italic;
 }
 

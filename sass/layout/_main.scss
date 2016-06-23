@@ -5,7 +5,7 @@
   $size: 'page',
   $pad: true
 ) {
-  margin: 0 auto;
+  margin: size('gutter') * 2 auto;
   max-width: size($size);
 
   @if $pad {
@@ -14,16 +14,13 @@
   }
 }
 
+
 [data-region='main'] {
   margin-bottom: size('gutter');
   padding-bottom: size('gutter');
 }
 
-[data-module] {
-  padding: size('gutter') 0;
-  transition: padding 150ms;
 
-  @include above('block') {
-    padding: 10vmin 0;
-  }
+[data-module] {
+  @include page;
 }

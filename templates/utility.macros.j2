@@ -16,7 +16,7 @@
 
 
 {# Links #}
-{% macro link(content, url=none, class=none) %}
+{% macro link_if(content, url=none, class=none) %}
   {%- if url -%}
     <a href="{{ url }}" {{ attr_if('class', class) }}>{{ content|safe }}</a>
   {%- elif class -%}

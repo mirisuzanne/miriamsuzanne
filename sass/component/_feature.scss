@@ -1,10 +1,6 @@
 // Feature Styles
 // ==============
 
-[data-module='feature'] {
-  @include page;
-}
-
 .feature-with {
   @include font-size('small');
   font-style: italic;

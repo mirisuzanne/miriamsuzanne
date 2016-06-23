@@ -1,5 +1,5 @@
 public: yes
-tags: [art, poetry, theatre, minifesto]
+tags: [art, writing, minifesto]
 summary: |
   Theatres are concerned about the lack of audience.
   Poets are concerned about their lack of audience.

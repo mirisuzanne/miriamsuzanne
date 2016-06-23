@@ -1,42 +1,22 @@
 public: yes
-tags: [design, exit strata, layer tennis, process]
+tags: [design, writing, art, process]
+feature:
+  - image: 'tennis/volley6.jpg'
 after:
   - include: 'gallery/_gallery.html'
-gallery:
-  - body:
-    - image: 'tennis/volley1.jpg'
-    - image: 'tennis/volley2.jpg'
-    - image: 'tennis/volley3.jpg'
-      class: full
-    - image: 'tennis/volley4.jpg'
-    - image: 'tennis/volley5.jpg'
-    - image: 'tennis/volley6.jpg'
-      class: full
-    - image: 'tennis/volley7.jpg'
-    - image: 'tennis/volley8.jpg'
-    - image: 'tennis/volley9.jpg'
-    - image: 'tennis/volley10.jpg'
-summary: |
-  |6|
-
-  `Exit Strata`_ asked me to design the cover of their next issue,
-  `PRINT!`_ VOL 3.
-  I invited `Aaron Liechty`_, `Jacob Liechty`_, and `Sondra Eisenstat`_
-  to join me in a game of `layer tennis`_
-  that would feed into the final design.
-
-  .. _Exit Strata: http://www.exitstrata.com/
-  .. _PRINT!: http://www.exitstrata.com/category/print-2/
-  .. _Aaron Liechty: http://aaronliechty.tumblr.com/
-  .. _Jacob Liechty: http://jacobliechty.tumblr.com/
-  .. _Sondra Eisenstat: http://sondraedesign.tumblr.com/
-  .. _layer tennis: http://layertennis.com/
-
-  .. |6| raw:: html
-
-    <figure>
-      <img src="/static/pictures/tennis/volley6.jpg" alt="volley 6" />
-    </figure>
+    body:
+      - image: 'tennis/volley1.jpg'
+      - image: 'tennis/volley2.jpg'
+      - image: 'tennis/volley3.jpg'
+        size: full
+      - image: 'tennis/volley4.jpg'
+      - image: 'tennis/volley5.jpg'
+      - image: 'tennis/volley6.jpg'
+        size: full
+      - image: 'tennis/volley7.jpg'
+      - image: 'tennis/volley8.jpg'
+      - image: 'tennis/volley9.jpg'
+      - image: 'tennis/volley10.jpg'
 
 
 Stratified Design
@@ -94,11 +74,11 @@ but here are the volleys:
 .. |10| raw:: html
 
   <figure>
-    <img src="/static/pictures/tennis/volley10.jpg" alt="volley 10" />
+    <img src="/static/pictures/tennis/volley10.jpg" alt="" />
   </figure>
 
 .. |8| raw:: html
 
   <figure>
-    <img src="/static/pictures/tennis/volley8.jpg" alt="volley 8" />
+    <img src="/static/pictures/tennis/volley8.jpg" alt="" />
   </figure>

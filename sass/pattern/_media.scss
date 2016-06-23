@@ -14,26 +14,3 @@ svg {
   height: 100%;
   width: 100%;
 }
-
-
-// Video
-// -----
-
-.video {
-  height: 0;
-  margin-bottom: 1rem;
-  position: relative;
-}
-
-.video-wrap {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-
-  iframe {
-    height: 100%;
-    width: 100%;
-  }
-}

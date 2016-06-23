@@ -1,27 +1,24 @@
 {% import "utility.macros.j2" as utility %}
-{% import "modules/macros.j2" as mod %}
-
 
 {% include 'layout/_face.svg' %}
 {% set intro = config.intro[0] %}
 
+{% if intro %}
+  <section data-module="intro">
+    <svg class="intro-image" data-svg="face"><use xlink:href="#face" /></svg>
 
-{% call mod.section(
-  slug='intro'
-) %}
+    <div class="intro-body">
+      <h2 class="intro-title">{{ intro.tagline }}</h2>
 
-  <svg class="intro-image" data-svg="face"><use xlink:href="#face" /></svg>
+      <p class="intro-text">
+        {{ intro.text|safe }}
+      </p>
 
-  <div class="intro-body">
-    <h2 class="intro-title">{{ intro.tagline }}</h2>
-    <p class="intro-text">
-      {{ intro.text|safe }}
-    </p>
-    {{ utility.link(
-      intro.action.text,
-      intro.action.url,
-      class='intro-action btn'
-    ) }}
-  </div>
-
-{% endcall %}
+      {{ utility.link_if(
+        intro.action.text,
+        intro.action.url,
+        class='intro-action btn'
+      ) }}
+    </div>
+  </section>
+{% endif %}

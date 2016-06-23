@@ -2,8 +2,8 @@ public: yes
 hide_title: yes
 location: 'press'
 before:
-  - include: 'modules/_interviews.html.j2'
-  - include: 'modules/_press.html.j2'
+  - include: 'events/_interviews.html.j2'
+  - include: 'events/_press.html.j2'
 
 
 Press

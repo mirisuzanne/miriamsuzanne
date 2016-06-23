@@ -1,40 +1,32 @@
 {% macro list(post) %}
-<article class="post">
-<div class="container">
-  <header class="post-header">
-    {% if post.title %}
-      <h1 class="title">
-        <a href="{{ link_to('page', slug=post.slug) }}">
-          {{ post.title }}
-        </a>
-      </h1>
-    {% endif %}
-
-    {{ byline(post) }}
-  </header>
-
-  <div class="post-body">
-    {% if post.summary %}
-      {{ post.render_summary() }}
-      <a href="{{ link_to('page', slug=post.slug) }}" class="more-link">
-        read more »
+<article data-module="blog-post">
+  {% if post.title %}
+    <h2>
+      <a href="{{ link_to('page', slug=post.slug) }}">
+        {{ post.title }}
       </a>
-    {% else %}
-      {{ post.render_contents() }}
-    {% endif %}
-  </div>
-</div>
+    </h2>
+  {% endif %}
+
+  {{ pubdate(post) }}
+
+  {% if post.summary %}
+    {{ post.render_summary() }}
+    <a href="{{ link_to('page', slug=post.slug) }}" class="more-link">
+      read more »
+    </a>
+  {% else %}
+    {{ post.render_contents() }}
+  {% endif %}
 </article>
 {% endmacro %}
 
-{% macro byline(post) %}
+{% macro pubdate(post) %}
 {% if post.pub_date %}
-<div class="byline">
   {% if post.pub_date %}
   <time datetime="{{ post.pub_date.isoformat() }}" pubdate="pubdate">
     {{ post.pub_date.strftime("%B %d, %Y") }}
   </time>
   {% endif %}
-</div>
 {% endif %}
 {% endmacro %}

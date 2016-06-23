@@ -26,6 +26,7 @@
 }
 
 .tiny-title {
+  @include font-size('root');
   font-style: italic;
   padding: 0 size('shim');
 }

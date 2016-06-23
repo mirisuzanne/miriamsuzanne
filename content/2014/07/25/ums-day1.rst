@@ -1,43 +1,19 @@
 public: yes
+feature:
+  - image: 'ums/14-24/elin-palmer.jpg'
 after:
   - include: 'gallery/_gallery.html'
-gallery:
-  - body:
-    - image: 'ums/14-24/elin-palmer.jpg'
-      class: full
-    - image: 'ums/14-24/rossonian.jpg'
-    - image: 'ums/14-24/safe-boating.jpg'
-    - image: 'ums/14-24/pan-astral.jpg'
-      class: full
-    caption: |
-      <a href="http://elinpalmer.com/">Elin Palmer</a>,
-      <a href="http://www.rossonianmusic.com/">Rossonian</a>,
-      <a href="http://safeboatingisnoaccident.com/">Safe Boating is No Accident</a>,
-      and <a href="http://www.panastral.com/">Pan Astral</a>
-  - body:
-    - image: 'ums/14-24/kenny.jpg'
-      class: full
-    caption: |
-      Kenny wants pizza. Stevie want's out of the shot. Sorry Stevie.
-summary: |
-  |feature|
-
-  **In which:**
-  `Elin Palmer`_,
-  `Rossonian`_,
-  `Safe Boating is No Accident`_,
-  and `Pan Astral`_.
-
-  .. _Elin Palmer: http://elinpalmer.com/
-  .. _Rossonian: http://www.rossonianmusic.com/
-  .. _Safe Boating is No Accident: http://safeboatingisnoaccident.com/
-  .. _Pan Astral: http://www.panastral.com/
-
-  .. |feature| raw:: html
-
-    <figure>
-      <img src="/static/pictures/ums/14-24/elin-palmer.jpg" alt="" />
-    </figure>
+    body:
+      - image: 'ums/14-24/elin-palmer.jpg'
+        url: 'http://elinpalmer.com/'
+        size: full
+      - image: 'ums/14-24/rossonian.jpg'
+        url: 'http://www.rossonianmusic.com/'
+      - image: 'ums/14-24/safe-boating.jpg'
+        url: 'http://safeboatingisnoaccident.com/'
+      - image: 'ums/14-24/pan-astral.jpg'
+        url: 'http://www.panastral.com/'
+        size: full
 
 
 UMS Day 1

@@ -1,5 +1,5 @@
 public: yes
-tags: [writing, elit, events, performance]
+tags: [writing, art, performance]
 summary: |
   After submitting on a whim,
   I was `invited to perform </2012/09/27/slsa2012/>`_
