@@ -33,6 +33,15 @@ after:
       - image: 'ums/14-25/truth.jpg'
         url: 'http://thetruthandspectacle.com/'
         size: full
+summary: |
+  In which:
+  Accordion Crimes,
+  Raven Jane,
+  The Truth & Spectacle,
+  Ian Cooke,
+  Dragondeer,
+  Dave Devine Relay,
+  and more.
 
 
 UMS Day 2

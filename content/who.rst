@@ -1,10 +1,22 @@
 public: yes
 hide_title: yes
 location: 'about'
+before:
+  - include: 'gallery/_gallery.html'
+    body:
+      - image: 'headshots/mia-8.jpg'
 after:
-  - include: 'events/_calendar.html.j2'
-    title: 'a vitae of sorts'
   - include: 'modules/_orgs.html.j2'
+  - include: 'gallery/_gallery.html'
+    caption: 'headshots...'
+    body:
+      - image: 'headshots/mia-2.jpg'
+      - image: 'headshots/mia-3.jpg'
+      - image: 'headshots/mia-6.jpg'
+      - image: 'headshots/mia-11.jpg'
+      - image: 'headshots/mia-12.jpg'
+      - image: 'headshots/mia-16.jpg'
+      - image: 'headshots/mia-20.jpg'
 
 
 Bio
@@ -25,6 +37,14 @@ co-author of
 and creator for the open-source
 `Accoutrement`_, `Susy`_, and `True`_
 Sass toolkits.
+
+*Miriam has also been published under the names
+"Eric A Meyer" and "Eric M Suzanne" —
+but you should call her Miriam,
+or Mia,
+or maybe Princess DieHard,
+or something like that.*
+
 
 .. _Riding SideSaddle*: http://ridingsidesaddle.com
 .. _OddBird: http://oddbird.net/

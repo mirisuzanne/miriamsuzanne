@@ -5,14 +5,14 @@ before:
   - include: 'gallery/_gallery.html'
     caption: '"Say ‘ooooooooo’ while you dance"'
     body:
-      - video: <iframe src="//www.youtube.com/embed/yt37eIen7JU" frameborder="0" allowfullscreen=""></iframe>
+      - video: '<iframe src="//www.youtube.com/embed/yt37eIen7JU" frameborder="0" allowfullscreen=""></iframe>'
         size: full
 after:
   - include: 'gallery/_gallery.html'
     body:
       - image: 'elo14/dancesex.jpg'
         size: full
-      - video: <iframe src="//player.vimeo.com/video/86628115?title=0&amp;byline=0&amp;portrait=0&amp;color=ff0080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      - video: '<iframe src="//player.vimeo.com/video/86628115?title=0&amp;byline=0&amp;portrait=0&amp;color=ff0080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
       - image: 'elo14/dance.jpg'
 
 

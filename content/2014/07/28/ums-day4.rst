@@ -36,6 +36,15 @@ after:
       - image: 'ums/14-27/gora.jpg'
       - image: 'ums/14-27/blondredhead.jpg'
         url: http://blonde-redhead.com/
+summary: |
+  In which:
+  Broken Spirits,
+  Land Lines,
+  Kitty Crimes,
+  Porlolo,
+  Gora Gora Orkestar,
+  Emerald Siam,
+  and more.
 
 
 UMS Day 4: The End

@@ -14,6 +14,12 @@ after:
       - image: 'ums/14-24/pan-astral.jpg'
         url: 'http://www.panastral.com/'
         size: full
+summary: |
+  In which:
+  Elin Palmer,
+  Safe Boating is no Accident,
+  Pan Astral,
+  and more.
 
 
 UMS Day 1

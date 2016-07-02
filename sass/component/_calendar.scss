@@ -16,3 +16,33 @@ $event-types: (
 .h-event {
   margin: size('gutter') * 2 0;
 }
+
+
+// Summary
+// -------
+
+[data-module='summary'] {
+  @include above('page') {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+  }
+}
+
+.calendar-group {
+  margin: size('gutter') 0;
+
+  @include above('page') {
+    @include font-size('small');
+    flex: 0 1 auto;
+    margin: size('gutter');
+    max-width: 25vw;
+  }
+}
+
+.calendar-group-action {
+  @include after('»');
+  display: inline-block;
+  font-style: italic;
+  margin: size('half-shim') 0;
+}

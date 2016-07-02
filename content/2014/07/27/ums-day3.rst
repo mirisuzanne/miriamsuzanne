@@ -36,6 +36,13 @@ after:
       - image: 'ums/14-26/raven-writing.jpg'
         url: http://tratwd.com/wp/
 
+summary: |
+  In which:
+  Magic Cyclops,
+  Jen Korte,
+  Abandin Pictures,
+  and more.
+
 
 UMS Day 3
 =========
@@ -53,5 +60,5 @@ If you haven't heard them yet, it's time.
 
 .. _Magic Cyclops: http://themagiccyclops.com/
 .. _Jen Korte: http://www.jkandtheloss.com/
-.. incarnations: http://www.thedirtyfemmes.com/
-.. _A Band In Pictures: http://abandinpictures.com/
+.. _incarnations: http://www.thedirtyfemmes.com/
+.. _Abandin Pictures: http://abandinpictures.com/

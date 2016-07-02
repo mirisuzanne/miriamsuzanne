@@ -6,9 +6,5 @@ after:
     next: 'thanks/'
 
 
-Start a conversation
-====================
-
-I want to hear from you.
-Leave me a message below,
-and I'll get back to you as soon as I'm able!
+Start a conversation...
+=======================

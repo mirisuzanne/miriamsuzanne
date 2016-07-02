@@ -383,6 +383,7 @@ svg {
 
 [data-gallery='video'] {
   height: 0;
+  padding-top: 56.25%;
   position: relative; }
 
 .video-wrap {
@@ -812,6 +813,35 @@ body {
 
 .h-event {
   margin: 2.8rem 0; }
+
+@media (min-width: 40em) {
+  [data-module='summary'] {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    max-width: 100%; } }
+
+.calendar-group {
+  margin: 1.4rem 0; }
+  @media (min-width: 40em) {
+    .calendar-group {
+      font-size: 0.8rem;
+      line-height: 1.4rem;
+      -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      margin: 1.4rem;
+      max-width: 25vw; } }
+
+.calendar-group-action {
+  display: inline-block;
+  font-style: italic;
+  margin: 0.35rem 0; }
+  .calendar-group-action:after {
+    content: "»"; }
 
 [data-module='contact-form'] {
   padding-top: 0; }

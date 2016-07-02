@@ -10,11 +10,13 @@
   {% if posts %}
     {% call calendar.summary_group(types.blog) %}
       {% for post in posts %}
-        {{ calendar.summary_item(
-          title=post.title,
-          url=link_to('page', slug=post.slug),
-          datetime=[post.pub_date.strftime('%Y'), post.pub_date.strftime('%m'), post.pub_date.strftime('%d')]
-        ) }}
+        {% if post.config.public %}
+          {{ calendar.summary_item(
+            title=post.title,
+            url=link_to('page', slug=post.slug),
+            datetime=[post.pub_date.strftime('%Y'), post.pub_date.strftime('%m'), post.pub_date.strftime('%d')]
+          ) }}
+        {% endif %}
       {% endfor %}
     {% endcall %}
   {% endif %}

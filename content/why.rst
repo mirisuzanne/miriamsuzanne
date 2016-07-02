@@ -10,11 +10,10 @@ People are **queer**.
 People are edge cases.
 We fall between meanings,
 and explore outside them.
-I’m not interested in the objects —
+I’m not interested in making objects —
 only the experiences they manifest for real people.
 
 That, to me, is beautiful.
-A life that can never be said or solved.
 All of us stumbling
 through this wreckage **and rubble together**,
 finding beauty in the world
@@ -38,7 +37,6 @@ and fighting and playing together.
 Accidents, contradictions, and broken expectations.
 Grasping at stability and form,
 but always **coming up short**.
-
 
 .. |the non-sense| raw:: html
 

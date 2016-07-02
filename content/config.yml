@@ -4,11 +4,6 @@
 # --------------
 
 future:
-  - name: 'Lost Lake Lounge'
-    datetime: ['2016', '06', '30']
-    url: 'http://lost-lake.com/event_details.cfm?blogid=968'
-    type: 'performance'
-
   - name: 'Lion’s Lair'
     datetime: ['2016', '07', '22']
     url: 'http://teacupgorilla.com'
@@ -28,11 +23,6 @@ future:
     url: 'http://2016.cascadiafest.org/'
     datetime: ['2016', '08', '03']
     type: 'speaking'
-
-  #     - name: 'Develop Denver'
-  #       url: 'https://developdenver.org/'
-  #       datetime: ['2016', '08', '05']
-  #       type: 'speaking'
 
   - name: 'A Night of Grand Guignol'
     datetime: ['2016', '08', '18']
@@ -56,11 +46,11 @@ summary_types:
       action: 'invite me to speak'
       url: '/contact/'
     performance:
-      title: 'live music'
+      title: 'teacup gorilla'
       action: 'more music'
       url: 'http://teacupgorilla.com/'
     blog:
-      title: 'articles'
+      title: 'recent articles'
       action: 'browse the blog'
       url: '/blog/'
 
@@ -1274,9 +1264,11 @@ education:
 
 # navigation
 nav:
-  - title: 'work'
+  - title: 'current'
     slug: 'home'
     url: '/'
+  - title: 'past'
+    url: '/what/'
   - title: 'press'
     url: '/press/'
   - title: 'blog'
@@ -1350,7 +1342,7 @@ location: 'home'
 
 subtitle:
   - text: 'Art <i>&</i> Code'
-    url: '/'
+    url: '/why/'
 
 copyright:
   - name: 'Miriam Eric Suzanne'
