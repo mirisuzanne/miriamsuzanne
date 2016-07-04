@@ -26,3 +26,32 @@
   @include font-size('small');
   margin-bottom: size('gutter');
 }
+
+[data-module='pagination'] {
+  font-style: italic;
+  text-align: center;
+}
+
+.prev {
+  @include before('«');
+}
+
+.next {
+  @include after('»');
+}
+
+.current,
+.total {
+  display: inline-block;
+  font-style: normal;
+  padding: 0 size('shim');
+  vertical-align: middle;
+}
+
+.current {
+  @include font-size('root' ('mia': 5));
+}
+
+.total {
+  @include font-size('root' ('mia': 4));
+}

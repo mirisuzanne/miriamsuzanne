@@ -615,8 +615,7 @@ body {
     content: "]"; }
 
 [data-region='main'] {
-  margin-bottom: 1.4rem;
-  padding-bottom: 1.4rem; }
+  margin-bottom: 1.4rem; }
 
 [data-module] {
   margin: 2.8rem auto;
@@ -796,6 +795,31 @@ body {
   font-size: 0.8rem;
   line-height: 1.4rem;
   margin-bottom: 1.4rem; }
+
+[data-module='pagination'] {
+  font-style: italic;
+  text-align: center; }
+
+.prev:before {
+  content: "«"; }
+
+.next:after {
+  content: "»"; }
+
+.current,
+.total {
+  display: inline-block;
+  font-style: normal;
+  padding: 0 0.7rem;
+  vertical-align: middle; }
+
+.current {
+  font-size: 5.4rem;
+  line-height: 5.6rem; }
+
+.total {
+  font-size: 3.85rem;
+  line-height: 4.2rem; }
 
 [data-filter='performance']:checked ~ [data-filters]:not([data-filters~='performance']) {
   display: none; }

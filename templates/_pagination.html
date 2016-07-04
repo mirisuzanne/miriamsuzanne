@@ -1,6 +1,6 @@
 {% import "utility.macros.j2" as utility %}
 
-<nav class="pagination">
+<nav data-module="pagination">
   {{ utility.link_if('newer', link_to(pagination.url_key, page=pagination.page - 1), 'prev') }}
 
   <span class="location">
