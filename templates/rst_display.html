@@ -1,8 +1,34 @@
 {% extends "layout.html" %}
-{% block title %}{{ rst.title }}{% endblock %}
+{% import "utility.macros.j2" as utility %}
+{% import "blog/macros.j2" as blog %}
 
+{% block title %}{{ rst.title }}{% endblock %}
 {% block location %}{% if ctx.pub_date %}blog{% else %}{{ super() }}{% endif %}{% endblock %}
 
 {% block body %}
-  {% include "_rst.html.j2" %}
+
+  {%- if not config.hide_title %}
+  <header data-module="page-header" class="rst-header">
+    <h1>{{ rst.title }}</h1>
+    {{ blog.pubdate(ctx) }}
+  </header>
+  {%- endif %}
+
+  {%- for module in config.before -%}
+    {% include module.include %}
+  {%- endfor -%}
+
+  {% if rst.fragment %}
+    {% if config.erasure %}
+      <input type="checkbox" id="erasure" />
+    {% endif %}
+
+    <section data-module="{{ config.page or 'rst' }}" {{ utility.attr_if('data-erasure', config.erasure) }}>
+      {{ rst.fragment }}
+    </section>
+  {% endif %}
+
+  {%- for module in config.after -%}
+    {% include module.include %}
+  {%- endfor -%}
 {% endblock %}

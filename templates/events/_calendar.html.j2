@@ -1,0 +1,20 @@
+{% import "events/macros.j2" as calendar %}
+
+
+{% if config.past %}
+  <section data-module="calendar">
+    <h2>
+      {{ module.title or ['the', module.time]|join(' ') }}
+    </h2>
+
+    {{ calendar.filters(
+      list=config.past|map(attribute='type')|unique_chain,
+      uuid=module.time,
+      lookup=config.event_tags[0]
+    ) }}
+
+    {% for event in config.past %}
+      {{ calendar.show(event) }}
+    {% endfor %}
+  </section>
+{% endif %}

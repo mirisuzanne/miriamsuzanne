@@ -1,0 +1,33 @@
+{% import "utility.macros.j2" as utility %}
+{% import "events/macros.j2" as calendar %}
+
+
+<section data-module="summary">
+  {% set posts = get_recent_blog_entries(module.post_count or 5) %}
+  {% set events = config.future %}
+  {% set types = config.summary_types[0] %}
+
+  {% if posts %}
+    {% call calendar.summary_group(types.blog) %}
+      {% for post in posts %}
+        {% if post.config.public %}
+          {{ calendar.summary_item(
+            title=post.title,
+            url=link_to('page', slug=post.slug),
+            datetime=[post.pub_date.strftime('%Y'), post.pub_date.strftime('%m'), post.pub_date.strftime('%d')]
+          ) }}
+        {% endif %}
+      {% endfor %}
+    {% endcall %}
+  {% endif %}
+
+  {% if events %}
+    {% for group in events|groupby('type') %}
+      {% call calendar.summary_group(types[group.grouper]) %}
+        {% for event in group.list %}
+          {{ calendar.summary_item(event.name, event.url, event.datetime) }}
+        {% endfor %}
+      {% endcall %}
+    {% endfor %}
+  {% endif %}
+</section>

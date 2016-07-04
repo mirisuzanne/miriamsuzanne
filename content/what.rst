@@ -1,12 +1,10 @@
 public: yes
 hide_title: yes
-before:
-  - include: 'modules/_calendar.html.j2'
-    time: future
+location: 'past'
 after:
-  - include: 'modules/_calendar.html.j2'
-    time: past
+  - include: 'events/_calendar.html.j2'
+    title: 'a vitae of sorts'
 
 
-Projects
-========
+Past Work
+=========

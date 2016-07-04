@@ -1,5 +1,5 @@
 public: yes
-tags: [books]
+tags: [writing, art]
 
 
 Birthday Books

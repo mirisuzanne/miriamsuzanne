@@ -1,0 +1,11 @@
+{% import "events/macros.j2" as calendar %}
+
+{% if config.interviews %}
+<section data-module="interviews">
+  <h2>Interviews</h2>
+
+  {% for interview in config.interviews %}
+    {{ calendar.show(interview) }}
+  {% endfor %}
+</section>
+{% endif %}

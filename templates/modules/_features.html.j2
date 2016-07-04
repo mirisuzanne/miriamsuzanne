@@ -1,0 +1,51 @@
+{% import "utility.macros.j2" as utility %}
+{% import "gallery/macros.html.j2" as media %}
+
+
+{% for feature in config.features %}
+  <section data-module="feature">
+    {% if feature.image %}
+      <img src="/static/pictures/features/{{ feature.image }}" class="feature-image" alt="" />
+    {% endif %}
+
+    <div class="feature-content">
+      <h2 class="section-title">
+        {{ utility.link_if(feature.title, feature.url) }}
+      </h2>
+
+      {% if feature.with %}
+        <div class="feature-with">
+          with
+          {% for bae in feature.with %}
+            {% if loop.last and not loop.first %}and{% endif %}
+            {{ utility.link_if(bae.name, bae.url) }}{% if (feature.with|length > 2) and (not loop.last) %},{% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% for review in feature.press %}
+        <blockquote class="feature-quote">
+          <p>{{ review.quote|safe }}</p>
+          <cite>
+            —{{ review.credit }},
+            {{ utility.link_if(review.source, review.url) }}
+          </cite>
+        </blockquote>
+      {% endfor %}
+
+      {% for sample in feature.media %}
+        {{ media.object(sample) }}
+      {% endfor %}
+
+      <div class="feature-actions">
+        {% for action in feature.actions %}
+          {{ utility.link_if(
+            content=action.text,
+            url=action.url,
+            class='btn' if loop.first else 'secondary'
+          ) }}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endfor %}

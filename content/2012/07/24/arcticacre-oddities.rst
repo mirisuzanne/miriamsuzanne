@@ -1,5 +1,5 @@
 public: yes
-tags: [poetry, games, elit, artists]
+tags: [writing, art]
 
 
 Oddities and Curious Lands

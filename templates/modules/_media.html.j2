@@ -1,7 +1,0 @@
-{% import "gallery/macros.html.j2" as media %}
-
-{% if config.media %}
-{% for gallery in config.media %}
-  {{ media.figure(gallery) }}
-{% endfor %}
-{% endif %}

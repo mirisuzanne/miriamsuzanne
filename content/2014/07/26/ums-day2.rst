@@ -1,70 +1,47 @@
 public: yes
+feature:
+  - image: 'ums/14-25/raven-jane.jpg'
 after:
   - include: 'gallery/_gallery.html'
-gallery:
-  - body:
-    - image: 'ums/14-25/raven-jane.jpg'
-      class: full
-    - image: 'ums/14-25/raven-rachel.jpg'
-    - image: 'ums/14-25/raven-dan.jpg'
-    - image: 'ums/14-25/stag.jpg'
-    - image: 'ums/14-25/ian.jpg'
-    - image: 'ums/14-25/dave-devine.jpg'
-      class: full
-    - image: 'ums/14-25/us.jpg'
-    - image: 'ums/14-25/planning.jpg'
-    - image: 'ums/14-25/dragondeer.jpg'
-      class: full
-    - image: 'ums/14-25/mako.jpg'
-    - image: 'ums/14-25/saturn.jpg'
-    - image: 'ums/14-25/icecream.jpg'
-    - image: 'ums/14-25/accordion-crimes.jpg'
-    - image: 'ums/14-25/truth.jpg'
-      class: full
-    caption: |
-      <a href="http://www.ravenjane.com/">Raven Jane</a>
-      (with Daniel on Guitar),
-      <a href="http://stag.bandcamp.com/">StaG</a>,
-      <a href="http://www.iancookemusic.com/">Ian Cooke</a>,
-      <a href="http://davedevine.com/relay">Dave Devine Relay</a>,
-      a band selfie (and some planning),
-      <a href="http://dragondeer.com/">Dragondeer</a>,
-      <a href="http://mako1972.weebly.com/">Mako1972</a>,
-      <a href="http://saturncowboysmusic.com/">Saturn Cowboys</a>,
-      ice cream!,
-      <a href="http://accordion-crimes.blogspot.com/">Accordion Crimes</a>,
-      and <a href="http://thetruthandspectacle.com/">The Truth & Spectacle</a>
-      (with Daniel on drums).
+    body:
+      - image: 'ums/14-25/raven-jane.jpg'
+        url: 'http://www.ravenjane.com/'
+        size: full
+      - image: 'ums/14-25/raven-rachel.jpg'
+        url: 'http://www.ravenjane.com/'
+      - image: 'ums/14-25/raven-dan.jpg'
+        url: 'http://www.ravenjane.com/'
+      - image: 'ums/14-25/stag.jpg'
+        url: 'http://stag.bandcamp.com/'
+      - image: 'ums/14-25/ian.jpg'
+        url: 'http://www.iancookemusic.com/'
+      - image: 'ums/14-25/dave-devine.jpg'
+        url: 'http://davedevine.com/relay'
+        size: full
+      - image: 'ums/14-25/us.jpg'
+      - image: 'ums/14-25/planning.jpg'
+      - image: 'ums/14-25/dragondeer.jpg'
+        url: 'http://dragondeer.com/'
+        size: full
+      - image: 'ums/14-25/mako.jpg'
+        url: 'http://mako1972.weebly.com/'
+      - image: 'ums/14-25/saturn.jpg'
+        url: 'http://saturncowboysmusic.com/'
+      - image: 'ums/14-25/icecream.jpg'
+      - image: 'ums/14-25/accordion-crimes.jpg'
+        url: 'http://accordion-crimes.blogspot.com/'
+      - image: 'ums/14-25/truth.jpg'
+        url: 'http://thetruthandspectacle.com/'
+        size: full
 summary: |
-  |feature|
-
-  **In which:**
-  `Raven Jane`_,
-  `StaG`_,
-  `Ian Cooke`_,
-  `Dave Devine Relay`_,
-  `Dragondeer`_,
-  `Mako1972`_,
-  `Saturn Cowboys`_,
-  `Accordion Crimes`_,
-  some ice cream,
-  and `The Truth & Spectacle`_.
-
-  .. _Raven Jane: http://www.ravenjane.com/
-  .. _StaG: http://stag.bandcamp.com/
-  .. _Ian Cooke: http://www.iancookemusic.com/
-  .. _Dave Devine Relay: http://davedevine.com/relay
-  .. _Dragondeer: http://dragondeer.com/
-  .. _Mako1972: http://mako1972.weebly.com/
-  .. _Saturn Cowboys: http://saturncowboysmusic.com/
-  .. _Accordion Crimes: http://accordion-crimes.blogspot.com/
-  .. _The Truth & Spectacle: http://thetruthandspectacle.com/
-
-  .. |feature| raw:: html
-
-    <figure>
-      <img src="/static/pictures/ums/14-25/raven-jane.jpg" alt="" />
-    </figure>
+  In which:
+  Accordion Crimes,
+  Raven Jane,
+  The Truth & Spectacle,
+  Ian Cooke,
+  Dragondeer,
+  Dave Devine Relay,
+  and more.
 
 
 UMS Day 2

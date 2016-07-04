@@ -1,24 +1,23 @@
 public: yes
+feature:
+  - image: 'elo14/dancesex.jpg'
+before:
+  - include: 'gallery/_gallery.html'
+    caption: '"Say ‘ooooooooo’ while you dance"'
+    body:
+      - video: '<iframe src="//www.youtube.com/embed/yt37eIen7JU" frameborder="0" allowfullscreen=""></iframe>'
+        size: full
 after:
   - include: 'gallery/_gallery.html'
-gallery:
-  - body:
-    - image: 'elo14/dancesex.jpg'
-      class: full
-    - video: <iframe src="//player.vimeo.com/video/86628115?title=0&amp;byline=0&amp;portrait=0&amp;color=ff0080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    - image: 'elo14/dance.jpg'
-    caption: |
-      "Say 'ooooooooo' while you dance" —
-      Post-Obsolete performances at
-      <a href="http://eliterature.org/">ELO14</a>,
-      the <a href="http://brakhagecenter.com/">Brakhage Center</a>,
-      and the <a href="http://mediaarchaeologylab.com/">Media Archelology Lab</a>.
+    body:
+      - image: 'elo14/dancesex.jpg'
+        size: full
+      - video: '<iframe src="//player.vimeo.com/video/86628115?title=0&amp;byline=0&amp;portrait=0&amp;color=ff0080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+      - image: 'elo14/dance.jpg'
 
 
 The Post-Obsolete Book (again)
 ==============================
-
-|elo14|
 
 `The Obsolete Book in a Post-Obsolete World as Represented by an Obsolete Book About Dance`_
 is a reflection on the obsolescence of obsolescence,
@@ -32,17 +31,6 @@ and `Kathi Inman Berens`_ (the gallery curator) posted
 the video above on YouTube.
 
 Thanks for keeping the obsolete book alive!
-
-
-.. |elo14| raw:: html
-
-  <figure class="gallery">
-    <div class="gallery-body">
-    <div class="video gallery-item full">
-      <iframe src="//www.youtube.com/embed/yt37eIen7JU" frameborder="0" allowfullscreen=""></iframe>
-    </div>
-    </div>
-  </figure>
 
 .. _Michelle Ellsworth: http://www.michelleellsworth.com/
 .. _The Obsolete Book in a Post-Obsolete World as Represented by an Obsolete Book About Dance: http://www.post-obsolete.com/

@@ -1,0 +1,24 @@
+{% import "utility.macros.j2" as utility %}
+
+{% include 'layout/_face.svg' %}
+{% set intro = config.intro[0] %}
+
+{% if intro %}
+  <section data-module="intro">
+    <svg class="intro-image" data-svg="face"><use xlink:href="#face" /></svg>
+
+    <div class="intro-body">
+      <h2 class="intro-title">{{ intro.tagline }}</h2>
+
+      <p class="intro-text">
+        {{ intro.text|safe }}
+      </p>
+
+      {{ utility.link_if(
+        intro.action.text,
+        intro.action.url,
+        class='intro-action btn'
+      ) }}
+    </div>
+  </section>
+{% endif %}

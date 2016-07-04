@@ -1,0 +1,54 @@
+// Intro
+// =====
+
+
+[data-module='intro'] {
+  margin: 0;
+  max-width: 100%;
+  padding: size('gutter') size('shim');
+  transition: all 300ms;
+
+  @include above(30em) {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-right: -15vmin;
+  }
+}
+
+
+// Image
+// -----
+
+.intro-image {
+  @include square(55vmin);
+  display: block;
+  flex: 0 0 auto;
+  margin: 0 auto size('shim');
+
+  @include above(30em) {
+    margin: 0;
+    margin-left: -8vmin;
+  }
+}
+
+
+// Body
+// ----
+
+.intro-body {
+  max-width: size('block');
+
+  @include above(30em) {
+    padding: size('shim');
+  }
+}
+
+.intro-title {
+  @include h1;
+}
+
+.intro-action {
+  margin-top: size('gutter');
+}

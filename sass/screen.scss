@@ -1,8 +1,10 @@
 // Screen
 // ======
 
-@import 'config/manifest';
+
 @import '../node_modules/accoutrement-init/sass/init';
-@import 'patterns/manifest';
+@import '../node_modules/accoutrement-layout/sass/layout';
+@import 'config/manifest';
+@import 'pattern/manifest';
 @import 'layout/manifest';
-@import 'components/manifest';
+@import 'component/manifest';

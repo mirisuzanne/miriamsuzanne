@@ -1,0 +1,36 @@
+// Nav Layout
+// ==========
+
+$locations: (
+  'home',
+  'past',
+  'blog',
+  'press',
+  'about',
+  'contact',
+);
+
+[data-region='nav'] {
+  @include font-size('small');
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+[data-nav] {
+  #{$link} {
+    display: inline-block;
+    padding: 0 size('half-shim');
+  }
+}
+
+@each $loc in $locations {
+  [data-location='#{$loc}'] {
+    [data-nav='#{$loc}'] {
+      #{$link} {
+        color: inherit;
+
+        @include wrap-content('[' ']');
+      }
+    }
+  }
+}

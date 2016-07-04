@@ -1,0 +1,26 @@
+// Main Layout
+// ===========
+
+@mixin page(
+  $size: 'page',
+  $pad: true
+) {
+  margin: size('gutter') * 2 auto;
+  max-width: size($size);
+
+  @if $pad {
+    padding-left: size('shim');
+    padding-right: size('shim');
+  }
+}
+
+
+[data-region='main'] {
+  margin-bottom: size('gutter');
+  padding-bottom: size('gutter');
+}
+
+
+[data-module] {
+  @include page;
+}

@@ -1,5 +1,5 @@
 public: yes
-tags: [fonts, greenmud, elit, writing]
+tags: [greenmud, writing, design]
 styles: pages/susy-fonts.css
 summary: |
   The first drafts

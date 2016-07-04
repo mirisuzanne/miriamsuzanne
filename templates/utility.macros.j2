@@ -1,0 +1,65 @@
+{# Utility Macros #}
+
+
+{# Attributes #}
+{% macro attr_if(attr, value=none) %}
+  {%- if value == true -%}
+    {{ attr }}
+  {%- elif value -%}
+    {{ attr }}="{{ value }}"
+  {%- endif -%}
+{% endmacro %}
+
+{% macro show_attrs(attrs) %}
+  {%- for attr, value in attrs.items() %}{{ attr_if(attr, value) }}{% endfor -%}
+{% endmacro %}
+
+
+{# Links #}
+{% macro link_if(content, url=none, class=none) %}
+  {%- if url -%}
+    <a href="{{ url }}" {{ attr_if('class', class) }}>{{ content|safe }}</a>
+  {%- elif class -%}
+    <span class="{{ class }}">{{ content|safe }}</span>
+  {%- else -%}
+    {{ content|safe }}
+  {%- endif -%}
+{% endmacro %}
+
+
+{# Date & Time #}
+{% macro time(datetime, style='long', attrs={'class':'dt-start'}) %}
+  {% set months = {
+    '01': 'January',
+    '02': 'February',
+    '03': 'March',
+    '04': 'April',
+    '05': 'May',
+    '06': 'June',
+    '07': 'July',
+    '08': 'August',
+    '09': 'September',
+    '10': 'October',
+    '11': 'November',
+    '12': 'December',
+  } %}
+
+  {% if datetime %}
+    {% set year = datetime[0] %}
+    {% set month = datetime[1] %}
+    {% set day = datetime[2] %}
+    {% set iso = [year, month or '01', day or '01']|join('-') %}
+
+    {% set month_display = months[month]|truncate(3, True, '') if style == 'short' else months[month] %}
+
+    <time {{ show_attrs(attrs) }} {{ attr_if('datetime', iso) }}>
+      {{ month_display or '' }}
+      {% if style == 'short' and day %}
+        {{ day }}
+      {% else %}
+        {% if day %}{{ day }},{% endif %}
+        {{ year }}
+      {% endif %}
+    </time>
+  {% endif %}
+{% endmacro %}

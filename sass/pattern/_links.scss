@@ -1,0 +1,33 @@
+// Link Patterns
+// =============
+
+
+$link: '&:link, &:visited';
+$focus: '&:hover, &:focus, &:active';
+
+@function action-color(
+  $background: 'background'
+) {
+  @return contrast($background, 'action', 'light-action');
+}
+
+@mixin link(
+  $background: 'background'
+) {
+  $color: action-color($background);
+
+  &,
+  #{$link} {
+    color: $color;
+    text-decoration: none;
+  }
+
+  #{$focus} {
+    text-decoration: underline;
+  }
+}
+
+a,
+.link {
+  @include link;
+}

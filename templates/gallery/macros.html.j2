@@ -1,33 +1,34 @@
-{% macro figure(gallery) %}
-<figure class="gallery module" {% if gallery.slug %}id="{{ gallery.slug }}"{% endif %}>
-<div class="container">
-  {% include "gallery/_caption.html" %}
+{% import "utility.macros.j2" as utility %}
 
-  <div class="gallery-body">
+
+{% macro figure(gallery) %}
+  <figure data-module="gallery">
+    {% if gallery.caption %}
+      <figcaption>
+        {{ gallery.caption|safe }}
+      </figcaption>
+    {% endif %}
+
     {% for item in gallery.body -%}
-    {%- if item.image -%}
-    <div class="image gallery-item{% if item.class %} {{ item.class }}{% endif %}">
-      <img src="/static/pictures/{{ item.image }}" {% if item.alt %} alt="{{ item.alt }}"{% endif %} />
-    </div>
-    {%- elif item.video -%}
-    <div class="video gallery-item{% if item.class %} {{ item.class }}{% endif %}">
+      {{ object(item) }}
+    {%- endfor %}
+  </figure>
+{% endmacro %}
+
+
+{% macro object(item) %}
+  {% set item_type = 'video' if item.video else 'image' %}
+  {% set item_type = 'music' if item.music else item_type %}
+
+  <div data-gallery="{{ item_type }}" {{ utility.attr_if('data-size', item.size) }}>
+    {% if item_type == 'image' %}
+      <img src="/static/pictures/{{ item.image }}" {{ utility.attr_if('alt', item.alt) }}/>
+    {% elif item_type == 'video' %}
       <div class="video-wrap">
         {{ item.video|safe }}
       </div>
-    </div>
-    {%- elif item.music -%}
-    <div class="music gallery-item{% if item.class %} {{ item.class }}{% endif %}">
+    {% elif item_type == 'music' %}
       {{ item.music|safe }}
-    </div>
-    {%- endif -%}
-    {%- endfor %}
+    {% endif %}
   </div>
-
-  {% if gallery.citation %}
-  <cite class="gallery-citation">
-    {{ gallery.citation|safe }}
-  </cite>
-  {% endif %}
-</div>
-</figure>
 {% endmacro %}

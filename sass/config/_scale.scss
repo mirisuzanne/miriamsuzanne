@@ -1,36 +1,27 @@
-// Scale
-// =====
+// Scale Config
+// ============
 
 @import '../../node_modules/accoutrement-scale/sass/scale';
 
-
-$base-size: 22px;
-$ratio: 'minor-third';
+$ratios: (
+  'mia': 1.4,
+);
 
 $sizes: (
-  'normal': $base-size,
-  'rhythm': 2,
+  'root': 20px,
+  'rhythm': 'root' ('mia': 1),
 
-  'h1': 3,
-  'h2': 2,
-  'h3': 1,
-
-  'small': -1,
-  'smaller': -2,
-
-  'page-count': 6,
-  'page-active': 10,
+  'small': 'root' ('mia': -0.75),
+  'large': 'root' ('mia': 1),
 
   'gutter': 'rhythm',
-  'spacer': 6,
-  'page': 30rem,
+  'shim': 'gutter' ('linear': 0.5),
+  'half-shim': 'gutter' ('linear': 0.25),
 
-  'corners': 3px,
+  'corners': 6px,
+  'block': 24rem,
+  'page': 32rem,
+  'wide': 'block' ('linear': 2),
+
+  'logo': 'rhythm' ('linear': 3),
 );
-
-$meta-sizes: (
-  'shim': size('gutter')/2,
-  'half-shim': size('gutter')/4,
-);
-
-$sizes: map-merge($sizes, $meta-sizes);

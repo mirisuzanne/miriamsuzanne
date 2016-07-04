@@ -1,0 +1,18 @@
+// Footer Layout
+// =============
+
+[data-region='contentinfo'] {
+  margin-top: size('gutter');
+  padding: size('gutter') size('shim');
+  text-align: center;
+}
+
+.copyright {
+  @include font-size('small');
+  font-style: italic;
+  text-transform: lowercase;
+
+  i {
+    font-style: normal;
+  }
+}

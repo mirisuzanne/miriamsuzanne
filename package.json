@@ -4,20 +4,19 @@
   "description": "my website",
   "main": "index.html",
   "dependencies": {
-    "accoutrement-color": "^2.0.0-rc.3",
-    "accoutrement-fonts": "^2.0.0-rc.1",
-    "accoutrement-init": "^1.0.0-rc.5",
-    "accoutrement-layout": "^2.0.0-rc.1",
-    "accoutrement-pseudo": "^1.0.2",
-    "accoutrement-queries": "^1.1.0",
-    "accoutrement-scale": "^1.1.0",
+    "accoutrement-color": "^2.0.1",
+    "accoutrement-init": "^1.1.0",
+    "accoutrement-layout": "^2.0.0",
+    "accoutrement-scale": "^2.0.0",
+    "accoutrement-type": "^2.0.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.1",
     "gulp-sass": "^2.0.4",
     "gulp-sass-lint": "^1.1.0",
     "gulp-scsslint": "0.0.5",
     "gulp-sourcemaps": "^1.5.2",
-    "gulp-util": "^3.0.6"
+    "gulp-util": "^3.0.6",
+    "mathsass": "^0.9.5"
   },
   "scripts": {},
   "repository": {
@@ -26,10 +25,7 @@
   },
   "ignore": [
     "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "node_modules"
   ],
   "keywords": [
     "queer",

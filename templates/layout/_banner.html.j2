@@ -1,3 +1,8 @@
-<h1 role="banner">
-  <a href="/" rel="home" class="brand">{{ config.author|safe }}</a>
+{% import 'utility.macros.j2' as utility %}
+
+{% set subtitle = config.subtitle[0] %}
+
+<h1 class="brand">
+  <a class="brand-title" href="/" rel="home">{{ config.author }}</a> |
+  {{ utility.link_if(subtitle.text, subtitle.url, 'brand-subtitle') }}
 </h1>

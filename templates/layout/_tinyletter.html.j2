@@ -1,0 +1,30 @@
+{% import 'form.macros.j2' as form %}
+{% import 'utility.macros.j2' as utility %}
+
+{% set tiny = config.tinyletter[0] %}
+
+<section data-region="tinyletter">
+<div class="tiny-inner">
+  <h2 class="tiny-title">
+    {{ utility.link_if(tiny.text, tiny.url) }}
+  </h2>
+
+  <form data-form="tinyletter" action="https://tinyletter.com/miriamsuzanne" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/miriamsuzanne', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+    <input type="hidden" value="1" name="embed"/>
+
+    {{ form.input(
+      text='Email',
+      id='tlemail',
+      name='email',
+      type='email',
+      placeholder='you@example.com',
+      required=true,
+      hide_label=true
+    ) }}
+
+    <button type="submit" class="btn">
+      Subscribe
+    </button>
+  </form>
+</div>
+</section>

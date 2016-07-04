@@ -1,0 +1,28 @@
+// Blog
+// ====
+
+[data-module='blog-post'] {
+
+  .title {
+    margin: 0;
+    padding: 0;
+  }
+
+  p,
+  ol,
+  ul,
+  figure {
+    display: block;
+    margin: size('shim') 0;
+  }
+
+  blockquote {
+    @include wrap-content;
+    font-style: italic;
+  }
+}
+
+.byline {
+  @include font-size('small');
+  margin-bottom: size('gutter');
+}

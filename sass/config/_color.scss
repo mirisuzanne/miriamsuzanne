@@ -1,0 +1,35 @@
+// Color Config
+// ============
+
+@import '../../node_modules/mathsass/dist/math';
+@import '../../node_modules/accoutrement-color/sass/color';
+
+$brand-colors: (
+  'white': #fff,
+  'black': #111,
+
+  'blue': hsl(195, 100%, 43%),
+  'red': hsl(0, 100%, 50%),
+  'pink': hsl(330, 100%, 45%),
+);
+
+$theme-colors: (
+  'background': 'white',
+  'text': 'black',
+  'overlay': 'background' ('rgba': 0.9),
+
+  'action': 'pink' ('shade': 15%),
+  'accent': 'blue' ('shade': 15%),
+
+  'dark-background': 'accent' ('shade': 70%),
+  'light-action': 'pink' ('tint': 30%),
+
+  'border': 'action',
+  'callout': 'accent' ('tint': 90%),
+
+  'contrast-light': 'white',
+  'contrast-dark': 'black',
+);
+
+$colors: map-merge($brand-colors, $theme-colors);
+

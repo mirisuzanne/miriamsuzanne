@@ -1,5 +1,5 @@
 public: yes
-tags: [susy, demo, rwd]
+tags: [susy, demo, sass, code]
 summary: |
   The off-canvas design pattern
   for creating responsive websites

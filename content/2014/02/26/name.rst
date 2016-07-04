@@ -1,4 +1,4 @@
-public: yes
+public: no
 
 
 Middle Meyer

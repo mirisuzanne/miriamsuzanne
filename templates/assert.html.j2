@@ -4,13 +4,14 @@
 <link rel="stylesheet" href="/static/css/assert.css" />
 {% endblock %}
 
-{% block template %}
+{% block layout %}
 <main>
   {{ rst.fragment }}
 </main>
 {% endblock %}
 
 {% block extrajs %}
+<script src="/static/js/jquery-1.7.2.js"></script>
 <script>
   var saySomething = function(what, where, when) {
     var also = [
@@ -22,8 +23,7 @@
     setInterval(function() {
       var straw = Math.floor(Math.random() * what.length);
 
-      $(where).append('<p>' + what[straw] + '</p>')
-      $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+      $(where).prepend('<p>' + what[straw] + '</p>')
     }, when);
   };
 

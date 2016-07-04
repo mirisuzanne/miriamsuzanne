@@ -1,7 +1,0 @@
-{% macro link(content, url=none, class=none) %}
-{%- if url -%}
-  <a href="{{ url }}" {% if class %}class="{{ class }}"{% endif %}>{{ content|safe }}</a>
-{%- else -%}
-  {{ content|safe }}
-{%- endif -%}
-{% endmacro %}

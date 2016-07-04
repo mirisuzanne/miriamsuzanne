@@ -1,18 +1,21 @@
 {% extends "base.html" %}
 
 {% block layout %}
-<div data-region="banner">
-  {% include "layout/_banner.html.j2" %}
-  {% include "layout/_nav.html.j2" %}
-</div>
+  <header data-region="banner">
+    {% include "layout/_banner.html.j2" %}
+    {% include "layout/_nav.html.j2" %}
+  </header>
 
-<main data-region="main">
-  {% block body %}{% endblock body %}
-</main>
+  <main data-region="main">
+    {% block body %}{% endblock %}
+  </main>
 
-<footer data-region="contentinfo">
-  {% include "layout/_social.html.j2" %}
-  {% include "layout/_colophon.html.j2" %}
-  {% include "layout/_copyright.html.j2" %}
-</footer>
+  <div class="fatfooter">
+    {% if not config.hide_contact %}
+      {% include 'layout/_contact.html.j2' %}
+    {% endif %}
+
+    {% include "layout/_tinyletter.html.j2" %}
+    {% include "layout/_contentinfo.html.j2" %}
+  </div>
 {% endblock %}

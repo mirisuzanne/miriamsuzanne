@@ -1,5 +1,5 @@
 public: yes
-tags: [writing, elit, events, performance]
+tags: [writing, art, performance]
 summary: |
   I'll be in `Milwaukee <http://goo.gl/maps/MZW3g>`_ this weekend
   for a brief appearance at

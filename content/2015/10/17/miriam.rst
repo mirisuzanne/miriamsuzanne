@@ -1,10 +1,10 @@
-public: yes
+public: no
 summary: |
-  *Eric M Suzanne* has become *Miriam Eric Suzanne*!
+  *Eric M Suzanne* has become *Miriam Eric Suzanne*...
 
 
-Miriam Eric Suzanne
-===================
+Miriam E* Suzanne
+=================
 
 It’s the third Saturday in October,
 which everyone knows is

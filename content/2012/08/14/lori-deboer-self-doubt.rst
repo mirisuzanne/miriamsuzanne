@@ -1,5 +1,5 @@
 public: yes
-tags: [writing, process, creativity, advice]
+tags: [writing, art]
 
 
 Lori DeBoer on Self Doubt

@@ -1,0 +1,17 @@
+{% import "utility.macros.j2" as utility %}
+
+{% set contact = config.contact[0] %}
+
+<section data-region="contact">
+<div class="contact-inner">
+  <h2 class="contact-title">{{ contact.title|safe }}</h2>
+
+  <p class="contact-summary">
+    {{ contact.body|safe }}
+  </p>
+
+  <p class="contact-actions">
+    {{ contact.actions|safe }}
+  </p>
+</div>
+</section>
