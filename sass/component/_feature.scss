@@ -1,6 +1,32 @@
 // Feature Styles
 // ==============
 
+[data-module='feature'] {
+  @include above('page') {
+    align-items: center;
+    display: flex;
+    margin: 20vmin auto;
+    max-width: 50rem;
+  }
+}
+
+.feature-image {
+  margin: 0 auto size('shim');
+  width: 50%;
+
+  @include above('page') {
+    flex: 0 1 auto;
+    margin: 0 size('gutter');
+    max-width: 30%;
+  }
+}
+
+.feature-content {
+  @include above('page') {
+    flex: 1 1 auto;
+  }
+}
+
 .feature-with {
   @include font-size('small');
   font-style: italic;

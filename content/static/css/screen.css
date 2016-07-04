@@ -579,6 +579,13 @@ body {
   [data-location='home'] [data-nav='home']:link:after, [data-location='home'] [data-nav='home']:visited:after {
     content: "]"; }
 
+[data-location='past'] [data-nav='past']:link, [data-location='past'] [data-nav='past']:visited {
+  color: inherit; }
+  [data-location='past'] [data-nav='past']:link:before, [data-location='past'] [data-nav='past']:link:after, [data-location='past'] [data-nav='past']:visited:before, [data-location='past'] [data-nav='past']:visited:after {
+    content: "["; }
+  [data-location='past'] [data-nav='past']:link:after, [data-location='past'] [data-nav='past']:visited:after {
+    content: "]"; }
+
 [data-location='blog'] [data-nav='blog']:link, [data-location='blog'] [data-nav='blog']:visited {
   color: inherit; }
   [data-location='blog'] [data-nav='blog']:link:before, [data-location='blog'] [data-nav='blog']:link:after, [data-location='blog'] [data-nav='blog']:visited:before, [data-location='blog'] [data-nav='blog']:visited:after {
@@ -836,6 +843,11 @@ body {
       margin: 1.4rem;
       max-width: 25vw; } }
 
+.calendar-group-item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
 .calendar-group-action {
   display: inline-block;
   font-style: italic;
@@ -845,6 +857,34 @@ body {
 
 [data-module='contact-form'] {
   padding-top: 0; }
+
+@media (min-width: 40em) {
+  [data-module='feature'] {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20vmin auto;
+    max-width: 50rem; } }
+
+.feature-image {
+  margin: 0 auto 0.7rem;
+  width: 50%; }
+  @media (min-width: 40em) {
+    .feature-image {
+      -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      margin: 0 1.4rem;
+      max-width: 30%; } }
+
+@media (min-width: 40em) {
+  .feature-content {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto; } }
 
 .feature-with {
   font-size: 0.8rem;

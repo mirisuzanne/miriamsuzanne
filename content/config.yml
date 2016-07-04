@@ -82,33 +82,22 @@ features:
   - title: 'Code Patterns for Pattern-Making'
     slug: 'pattern-making'
     url: 'https://oddbooksapp.com/book/pattern-making'
-    code: "$brand-colors: (\n
-             'white': #fff,\n
-             'black': #111,\n
-             'blue': hsl(195, 100%, 43%),\n
-             'pink': hsl(330, 100%, 45%),\n
-           );\n
-           \n
-           $theme-colors: (\n
-             'background': 'white',\n
-             'text': 'black',\n
-             'action': 'pink' ('shade': 15%),\n
-             'accent': 'blue' ('shade': 15%),\n
-             'border': 'action',\n
-           );"
+    image: 'clarity.png'
     with:
       - name: 'OddBird'
         url: 'http://oddbird.net'
+      - name: 'Clarity Conference'
+        url: 'http://clarityconf.com'
     press:
       - quote: 'I was fascinated by the idea that a (web) style guide deliverable could take different&nbsp;forms.'
         credit: 'Chris Coyier'
         source: 'CodePen'
         url: 'http://codepen.io/chriscoyier/post/clarity-2016-wrapup'
     actions:
-      - text: 'hire OddBird'
-        url: 'http://oddbird.net/'
       - text: 'invite me speak'
         url: '/contact/'
+      - text: 'hire OddBird'
+        url: 'http://oddbird.net/'
 
   - title: 'The Holes They Leave'
     slug: 'holes-they-leave'
@@ -194,19 +183,6 @@ features:
   #       url: 'http://oddbird.net/'
 
 
-# Feature Orgs
-# ------------
-
-feature_orgs:
-  - title: 'OddBird'
-    type: 'software'
-    url: 'http://oddbird.net/'
-
-  - title: 'Teacup Gorilla'
-    type: 'music <i>&</i> poetry'
-    url: 'http://teacupgorilla.com'
-
-
 # History
 # -------
 
@@ -225,6 +201,7 @@ past:
     venue:
       - name: 'DublinCSS'
         url: 'http://www.meetup.com/DublinCSS/events/230011902/'
+        video: 'https://vimeo.com/173221942'
 
 
   - name: 'Code Patterns for Pattern-Making'
@@ -335,18 +312,6 @@ past:
     gallery:
       - image: 'projects/jssass.png'
 
-
-  - name: 'The Card Table'
-    url: 'https://www.facebook.com/events/1707657942806347/'
-    datetime: ['2016', '03', '19']
-    type: ['performance']
-    summary: 'a public salon reading of <a href="http://ridingsidesaddle.com">Riding SideSaddle*</a>'
-    venue:
-      - name: 'Buntport Theater'
-        url: 'http://buntport.com/'
-    with:
-      - name: 'Tracy Shaffer'
-        url: 'http://tracyshaffer.com/the-card-table/'
 
 
   ### 2015 -------------------------------------
@@ -500,15 +465,14 @@ past:
 
   - name: 'Riding SideSaddle*'
     url: 'http://ridingsidesaddle.com/'
-    buy: 'http://www.springgunpress.com/riding-sidesaddle-eric-suzanne/'
     datetime: ['2015', '04', '02']
     role: 'author/artist'
     type: ['publication', 'art']
     summary: 'a hybrid novel and art installation'
-    with:
-      - name: 'SpringGun Press'
-        url: 'http://springgunpress.com'
     venue:
+      - name: 'The Card Table'
+        url: 'http://tracyshaffer.com/the-card-table/'
+        datetime: ['2016', '03', '19']
       - name: 'Buntport Theater [stage adaptation]'
         url: 'http://buntport.com/archive/10myths.htm'
         datetime: ['2016', '03', null]
@@ -517,6 +481,9 @@ past:
         datetime: ['2015', '10', null]
       - name: 'Syntax Physic Opera [book release]'
         url: 'http://physicopera.com/'
+        datetime: ['2015', '04', '02']
+      - name: 'SpringGun Press'
+        url: 'http://www.springgunpress.com/riding-sidesaddle-eric-suzanne/'
         datetime: ['2015', '04', '02']
     press:
       - quote: 'The characters, ideas, story are exposed, raw, alive — merging masculine and feminine into some kind of mystical marriage.'
@@ -734,6 +701,16 @@ past:
       - name: 'Lori Emerson'
     venue:
       - name: 'Colorado University'
+
+
+  - name: 'True: Sass Unit Tests'
+    url: 'http://oddbird.net/true'
+    datetime: ['2013', '06', '06']
+    type: ['software']
+    role: 'creator'
+    with:
+      - name: 'OddBird'
+        url: 'http://oddbird.net'
 
 
   - name: 'Bouldering Poets'

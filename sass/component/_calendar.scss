@@ -40,6 +40,12 @@ $event-types: (
   }
 }
 
+.calendar-group-item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .calendar-group-action {
   @include after('»');
   display: inline-block;
