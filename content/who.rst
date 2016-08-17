@@ -4,19 +4,16 @@ location: 'about'
 before:
   - include: 'gallery/_gallery.html'
     body:
-      - image: 'headshots/mia-8.jpg'
+      - image: 'headshots/mia-16.jpg'
 after:
   - include: 'modules/_orgs.html.j2'
   - include: 'gallery/_gallery.html'
     caption: 'headshots...'
     body:
-      - image: 'headshots/mia-2.jpg'
-      - image: 'headshots/mia-3.jpg'
       - image: 'headshots/mia-6.jpg'
+      - image: 'headshots/mia-8.jpg'
       - image: 'headshots/mia-11.jpg'
       - image: 'headshots/mia-12.jpg'
-      - image: 'headshots/mia-16.jpg'
-      - image: 'headshots/mia-20.jpg'
 
 
 Bio

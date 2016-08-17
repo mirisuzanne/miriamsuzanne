@@ -1,4 +1,9 @@
 public: yes
+erasure: yes
+before:
+  - include: 'gallery/_gallery.html'
+    body:
+      - image: 'mia-wtf.jpg'
 summary: |
   There are some questions that come up again and again
   if you are trans.
@@ -23,7 +28,7 @@ I'm lucky to have a supportive community around me,
 so I thought I'd write down a few answers
 to help ease your stress about
 *getting it right*,
-and ease my stress about
+and **ease my stress about**
 answering the same questions over and over.
 
 *These answers are very much my own.
@@ -31,21 +36,39 @@ I am not attempting to speak for anyone else.
 If you don't know how to relate to another trans person,
 you should ask them!*
 
+If you are intereseted in queer art
+**more than queer** answers,
+check out my novel: `Riding SideSaddle*`_.
+It's totally about transition,
+**and totally** not-at-all about transition.
+People besides my family seem to **enjoy it**,
+so I'm just passing along their recommendation or whatever.
+Is that awkward?
+
+.. _`Riding SideSaddle*`: http://ridingsidesaddle.com/
+
 
 I heard you shouldn't ask trans people questions
 ------------------------------------------------
 
-You should relate to trans people
-the same way you relate to other people.
+You should relate to **trans people**
+the same way you relate to other people**:**
 If we're really close and talk about everything,
 you can ask me anything!
 If we're not, you can't.
 
 You know how to filter what's appropriate,
-the same as you do every day
+the same as **you do** every day
 in millions of different situations.
-If you have questions that are appropriate,
+If **you** have questions that are appropriate,
 I'd love to talk!
+
+Some questions are better in person,
+and I always like haning out on `twitter`_,
+but I also have a `nifty contact form`_ if you need it.
+
+.. _twitter: http://twitter.com/mirisuzanne
+.. _nifty contact form: /contact/
 
 
 What should I call you?
@@ -55,7 +78,6 @@ Miriam.
 
 Or *Mia*,
 if you're into brevity.
-Sometimes I am.
 
 
 What pronouns should I use?
@@ -65,51 +87,51 @@ She, her, and hers.
 
 Or *they*,
 if you're into ambiguity.
-Sometimes I am.
 
 
 How do I refer to you in the past?
 ----------------------------------
 
 See above.
-My name is Miriam,
+**My name is Miriam**,
 and I use she/her pronouns.
-That name and those pronouns can be used for any time period,
+That name and those pronouns can be used for any time **period**,
 because they refer to me,
 not my age or presentation-at-the-time.
 
 If you went by "Johnny" as a child,
 but now you go by "John",
 I don't need to adjust your name to the exact time period
-I'm talking about —
+**I'm talking about** —
 I can just use your name.
-Remember when John was a kid?
+Remember when **John** was a kid?
 
 Unless my dead name is specifically relevant to the conversation
 (it usually isn't),
 there is no need to use it or mention it.
-Even if you are quoting someone in the past,
+Even if you are quoting someone **in the past,**
 it won't ruin the story to use my current name —
 it will just make things more clear.
-Who are you talking about? Miriam.
+**Who are you talking about?**
+Miriam.
 Oh, I know her.
 She's right here.
 
-You are probably paraphrasing already,
+**You are probably** paraphrasing already,
 because your memory isn't that good.
 What's one more editorial adjustment going to hurt?
 
-If my dead name is relevant,
+If my **dead** name is relevant,
 just make sure you aren't outing me.
 You might not notice,
 but even when they are well-meaning
 people treat me differently once I've been outed.
 If they're not well meaning,
-I could be in real danger.
+I could be **in real danger**.
 
 I'm very public,
 and usually happy to be out,
-but not in every situation,
+but not **in every situation**,
 and not when I'm outed by someone else.
 
 
@@ -117,7 +139,7 @@ But I have fond/terrible memories of E—
 ---------------------------------------
 
 Those are memories of me,
-and my name is Miriam.
+and **my name is Miriam**.
 I was not a different person then.
 I haven't transtioned lives,
 I've only transitioned what you call me.
@@ -132,7 +154,7 @@ What if I get your name or pronoun wrong?
 
 If you slip up,
 you may feel nervous or upset with yourself.
-I'm not thinking about you —
+**I'm** not **thinking about you** —
 I'm feeling guilty, sad,
 and worried about `what's going to happen next`_.
 
@@ -149,8 +171,8 @@ Pronouns can be hard if you've never had to think about them before.
 Most people use them without even noticing.
 The best way to start getting pronouns right for people,
 is to make pronouns intentional.
-It takes some practice,
-but you can start noticing every single pronoun you use.
+It takes some **practice**,
+but you can **start noticing** every single pronoun you use.
 Once you are paying attention,
 it's much easier to adjust
 from one situation to the next.
@@ -163,30 +185,34 @@ Should I update my old blog post or website that mentions you?
 
 Probably.
 I'd love for you to update my name anywhere you can.
-I'm not scouring the interwebs to find every instance,
+**I'm** not **scouring the interwebs** to find every instance,
 but I might ask you to update my name if I see it.
-Not because I need to erase any mention of my past,
+Not because |I need to erase| any mention of my past,
 but because it's confusing to refer to a person by a name they don't use.
+
+.. |I need to erase| raw:: html
+
+  <label for="erasure">I need to erase</label>
 
 
 What about this old photo I have?
 ---------------------------------
 
 If you have a headshot of me before I started transtion,
-please replace it with a recent headshot.
+please replace it with **a recent headshot**.
 You can find several `on the about page`_.
 
 If you have a photo of us together,
-or me in some specific context
+**or** me in some specific context
 (like speaking at a conference),
 don't worry about it.
 
 I don't love old pictures of me,
 but who does?
 That was me,
-and I'm not interested in
+and **I'm not interested in**
 losing all references to my past.
-It's a trade-off I'm willing to live with.
+It's **a trade-off** I'm willing to live with.
 
 Many trans people will want to remove all old photos,
 and they have *very good reasons for it*.
@@ -196,43 +222,6 @@ don't assume my answer is true for them — ask!
 .. _on the about page: /who/
 
 
-What trans terms can I use?
----------------------------
-
-I call myself trans, transgender, or a trans woman.
-I'm also gender-queer, non-binary, and a bunch of other good words.
-I'm also transsexual,
-but that one feels to me like a medical term —
-similar to using "females" when you mean women.
-You can probably just call me a woman.
-
-If you are interested in the
-specific meanings and political debates
-around trans terminology,
-I recommend starting with
-`Julia Serano`_’s extensive writing on the topic.
-
-Some people also like to differentiate
-between "sex" and "gender" —
-as though one is biology and the other is identity.
-Don't do that.
-Biology and identity are deeply intertwined,
-and neither of them is binary.
-There is only gender,
-and it is always a rough approximation
-of a million different factors,
-`both social and biological`_.
-
-Sex is something else entirely,
-and I recommend it,
-if you're into that sort of thing.
-Stay safe, kids.
-
-.. _some have held onto it:
-.. _Julia Serano: http://www.juliaserano.com/terminology.html
-.. _both social and biological: http://juliaserano.blogspot.com/2013/11/what-is-gender-artifactualism.html
-
-
 Can I be a helpful friend/ally?
 -------------------------------
 
@@ -240,20 +229,72 @@ You can!
 
 - If you hear someone misgender or deadname me in person,
   use my correct name and pronouns as soon as you can.
-  It will help them remember without making a fuss,
+  **It will help** them remember without making a fuss,
   and it will help me relax.
 - Again, if I'm around, try not to make a big fuss.
   You can pull them aside later if you have to.
-- If you see an old site/post that needs updating,
+- If you see **an old** site/post that needs updating,
   feel free to contact the author and point them here.
-- If we're in a group with people I'm not out to,
+- If we're in a group with **people I'm not out to**,
   or you aren't sure,
   don't out me.
 
 If you've known me for a long time,
-you might have a hard time updating your perception of me.
+you might **have a hard time** updating your perception of me.
 You might think other people see the same thing you do.
 They don't.
 Most people I meet
 never question my gender.
 Learn to think like those people.
+
+
+What trans terms should I use, and where can I learn more?
+----------------------------------------------------------
+
+If you are interested in the
+specific meanings and political debates
+around trans terminology,
+I recommend starting with
+`Julia Serano`_’s extensive writing on the topic.
+**I recommend everything** Julia has written,
+starting with her first book: `Whipping Girl`_.
+You can also read
+`Jennifer Boylan`_,
+`Kate Bornstein`_,
+and `Janet Mock`_,
+to list a few.
+Books and articles by cis people,
+**about transgender people**,
+should be avoided or taken with salt.
+
+I call myself trans, transgender, or a trans woman.
+I'm **also gender-queer**, non-binary, and a bunch of other good words.
+I'm also transsexual,
+but that one feels to me like a medical term —
+similar to using "females" when you mean women.
+**You can probably just call me a woman.**
+
+**Some people like** to differentiate
+between "sex" and "gender" —
+as though one is biology and the other is identity.
+Don't do that.
+Biology and identity are deeply intertwined,
+and neither of them is binary.
+There is only gender,
+and it is always **a rough approximation of**
+a million different factors,
+`both social and biological`_.
+
+**Sex is** something else entirely,
+and I recommend it,
+if you're into that sort of thing.
+
+Stay **safe, kids**.
+
+.. _Julia Serano: http://www.juliaserano.com/terminology.html
+.. _both social and biological: http://juliaserano.blogspot.com/2013/11/what-is-gender-artifactualism.html
+.. _Whipping Girl: https://www.amazon.com/dp/1580056229/ref=pd_lpo_sbs_dp_ss_1/151-5666770-2045969
+.. _Jennifer Boylan: http://www.jenniferboylan.net/
+.. _Kate Bornstein: http://katebornstein.com/
+.. _Janet Mock: http://janetmock.com/
+

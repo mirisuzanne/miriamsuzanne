@@ -356,27 +356,29 @@ svg {
   height: 1px;
   overflow: hidden;
   position: absolute;
-  width: 1px; }
-  [id='erasure']:checked ~ [data-erasure] {
+  width: 1px;
+  position: fixed; }
+  [id='erasure']:checked ~ [data-erasure],
+  [id='erasure']:checked ~ [data-erasure] [href] {
     color: transparent; }
-    [id='erasure']:checked ~ [data-erasure] strong {
-      color: #111; }
-    [id='erasure']:checked ~ [data-erasure] [for='erasure'],
-    [id='erasure']:checked ~ [data-erasure] strong {
-      background: rgba(255, 255, 255, 0.9);
-      position: relative; }
-      [id='erasure']:checked ~ [data-erasure] [for='erasure']:before,
-      [id='erasure']:checked ~ [data-erasure] strong:before {
-        content: "]";
-        position: absolute;
-        -webkit-transform: translateX(-0.6em);
-        transform: translateX(-0.6em); }
-      [id='erasure']:checked ~ [data-erasure] [for='erasure']:after,
-      [id='erasure']:checked ~ [data-erasure] strong:after {
-        content: "[";
-        position: absolute;
-        -webkit-transform: translateX(0.2em);
-        transform: translateX(0.2em); }
+  [id='erasure']:checked ~ [data-erasure] strong {
+    color: #111; }
+  [id='erasure']:checked ~ [data-erasure] [for='erasure'],
+  [id='erasure']:checked ~ [data-erasure] strong {
+    background: rgba(255, 255, 255, 0.9);
+    position: relative; }
+    [id='erasure']:checked ~ [data-erasure] [for='erasure']:before,
+    [id='erasure']:checked ~ [data-erasure] strong:before {
+      content: "]";
+      position: absolute;
+      -webkit-transform: translateX(-0.6em);
+      transform: translateX(-0.6em); }
+    [id='erasure']:checked ~ [data-erasure] [for='erasure']:after,
+    [id='erasure']:checked ~ [data-erasure] strong:after {
+      content: "[";
+      position: absolute;
+      -webkit-transform: translateX(0.2em);
+      transform: translateX(0.2em); }
 
 [data-gallery] {
   margin-bottom: 1rem; }
