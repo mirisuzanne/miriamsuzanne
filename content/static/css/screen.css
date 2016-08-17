@@ -793,6 +793,15 @@ body {
   [data-module='blog-post'] blockquote:after {
     content: "”"; }
 
+.post-image {
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1.4rem; }
+
 .byline {
   font-size: 0.8rem;
   line-height: 1.4rem;

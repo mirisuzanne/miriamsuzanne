@@ -1,31 +1,30 @@
 public: yes
 erasure: yes
-before:
-  - include: 'gallery/_gallery.html'
-    body:
-      - image: 'mia-wtf.jpg'
+url: '2016/08/17/trans/'
+image:
+  - src: 'mia-wtf.jpg'
 summary: |
   There are some questions that come up again and again
   if you are trans.
-  Some of those questions are terrible,
+  A few of those questions are terrible,
   but most of them are well-intentioned.
   I'm lucky to have a supportive community around me,
-  so I thought I'd write down a few answers
+  so I thought I'd write down my most common answers
   to help ease your stress about
   *getting it right*,
   and ease my stress about
   answering the same questions over and over.
 
 
-Frequently Asked (Trans) Questions
-==================================
+Miriam: A How-To Guide
+======================
 
 There are some questions that come up again and again
 if you are trans.
-Some of those questions are terrible,
+A few of those questions are terrible,
 but most of them are well-intentioned.
 I'm lucky to have a supportive community around me,
-so I thought I'd write down a few answers
+so I thought I'd write down my most common answers
 to help ease your stress about
 *getting it right*,
 and **ease my stress about**
@@ -34,7 +33,7 @@ answering the same questions over and over.
 *These answers are very much my own.
 I am not attempting to speak for anyone else.
 If you don't know how to relate to another trans person,
-you should ask them!*
+you should talk to them!*
 
 If you are intereseted in queer art
 **more than queer** answers,
@@ -52,22 +51,24 @@ I heard you shouldn't ask trans people questions
 ------------------------------------------------
 
 You should relate to **trans people**
-the same way you relate to other people**:**
+the same way you relate to other people.
+Some questions are appropriate,
+and some aren't.
+You alread know how to filter what's appropriate:
+**you do** it every day,
+in millions of different situations.
+My transness doesn't change the calculation at all.
 If we're really close and talk about everything,
 you can ask me anything!
 If we're not, you can't.
 
-You know how to filter what's appropriate,
-the same as **you do** every day
-in millions of different situations.
-If **you** have questions that are appropriate,
+If **you** do have appropriate questions,
 I'd love to talk!
-
 Some questions are better in person,
-and I always like haning out on `twitter`_,
-but I also have a `nifty contact form`_ if you need it.
+but I'm always hanging out on `Twitter`_ as well,
+and I have a `nifty contact form`_ if you need it.
 
-.. _twitter: http://twitter.com/mirisuzanne
+.. _Twitter: http://twitter.com/mirisuzanne
 .. _nifty contact form: /contact/
 
 
@@ -101,10 +102,12 @@ not my age or presentation-at-the-time.
 
 If you went by "Johnny" as a child,
 but now you go by "John",
-I don't need to adjust your name to the exact time period
+and maybe you used your middle name for a few years in High School,
+I don't need to adjust for the exact time period
 **I'm talking about** —
 I can just use your name.
-Remember when **John** was a kid?
+Your name is **John.**
+*Remember when John was a kid?*
 
 Unless my dead name is specifically relevant to the conversation
 (it usually isn't),
@@ -114,8 +117,8 @@ it won't ruin the story to use my current name —
 it will just make things more clear.
 **Who are you talking about?**
 Miriam.
-Oh, I know her.
-She's right here.
+*Oh, I know her.
+She's right here.*
 
 **You are probably** paraphrasing already,
 because your memory isn't that good.
@@ -124,7 +127,7 @@ What's one more editorial adjustment going to hurt?
 If my **dead** name is relevant,
 just make sure you aren't outing me.
 You might not notice,
-but even when they are well-meaning
+but even when they are well-meaning,
 people treat me differently once I've been outed.
 If they're not well meaning,
 I could be **in real danger**.
@@ -160,19 +163,25 @@ and worried about `what's going to happen next`_.
 
 - Best case scenario,
   you correct yourself and move on.
-- Hopefully you'll slip the correct pronoun
-  into the conversation ASAP.
+- Hopefully you'll slip the correct name/pronoun
+  into the conversation asap.
 - You can apologize later,
   but I'd rather you just get it right the next time.
+  The sooner the better.
 - Please don't make a big fuss about it,
   especially in a group setting.
 
-Pronouns can be hard if you've never had to think about them before.
+Pronouns can be hard
+if you've never had to think about them before.
 Most people use them without even noticing.
-The best way to start getting pronouns right for people,
-is to make pronouns intentional.
-It takes some **practice**,
-but you can **start noticing** every single pronoun you use.
+Pronouns are instinct,
+and if you're not paying attention to them,
+you'll get them wrong without even realizing it.
+
+So it's time for everyone to start practicing.
+Make an effort to notice *every pronoun you ever use*,
+It takes some **work**,
+but it's worth the effort.
 Once you are paying attention,
 it's much easier to adjust
 from one situation to the next.
@@ -200,13 +209,12 @@ What about this old photo I have?
 
 If you have a headshot of me before I started transtion,
 please replace it with **a recent headshot**.
-You can find several `on the about page`_.
+You can find several `on my about page`_.
 
 If you have a photo of us together,
 **or** me in some specific context
 (like speaking at a conference),
-don't worry about it.
-
+it's up to you.
 I don't love old pictures of me,
 but who does?
 That was me,
@@ -219,7 +227,7 @@ and they have *very good reasons for it*.
 If someone else you know transitions,
 don't assume my answer is true for them — ask!
 
-.. _on the about page: /who/
+.. _on my about page: /who/
 
 
 Can I be a helpful friend/ally?
@@ -257,33 +265,33 @@ around trans terminology,
 I recommend starting with
 `Julia Serano`_’s extensive writing on the topic.
 **I recommend everything** Julia has written,
-starting with her first book: `Whipping Girl`_.
+especially her first book: `Whipping Girl`_.
 You can also read
 `Jennifer Boylan`_,
 `Kate Bornstein`_,
 and `Janet Mock`_,
-to list a few.
+to list a few popular ones.
 Books and articles by cis people,
 **about transgender people**,
-should be avoided or taken with salt.
+should be taken with salt or avoided entirely.
 
 I call myself trans, transgender, or a trans woman.
 I'm **also gender-queer**, non-binary, and a bunch of other good words.
-I'm also transsexual,
-but that one feels to me like a medical term —
+I'm transsexual,
+but that one feels like a medical term —
 similar to using "females" when you mean women.
 **You can probably just call me a woman.**
 
 **Some people like** to differentiate
 between "sex" and "gender" —
 as though one is biology and the other is identity.
-Don't do that.
+Don't bother.
 Biology and identity are deeply intertwined,
 and neither of them is binary.
 There is only gender,
 and it is always **a rough approximation of**
-a million different factors,
-`both social and biological`_.
+a million different factors:
+`social, biological, and experienced`_.
 
 **Sex is** something else entirely,
 and I recommend it,
@@ -292,7 +300,7 @@ if you're into that sort of thing.
 Stay **safe, kids**.
 
 .. _Julia Serano: http://www.juliaserano.com/terminology.html
-.. _both social and biological: http://juliaserano.blogspot.com/2013/11/what-is-gender-artifactualism.html
+.. _`social, biological, and experienced`: http://juliaserano.blogspot.com/2013/11/what-is-gender-artifactualism.html
 .. _Whipping Girl: https://www.amazon.com/dp/1580056229/ref=pd_lpo_sbs_dp_ss_1/151-5666770-2045969
 .. _Jennifer Boylan: http://www.jenniferboylan.net/
 .. _Kate Bornstein: http://katebornstein.com/

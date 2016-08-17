@@ -3,16 +3,24 @@
 {% import "blog/macros.j2" as blog %}
 
 {% block title %}{{ rst.title }}{% endblock %}
+{% block og_title %}{{ rst.title }}{% endblock %}
+{% block og_url %}{{ config.canonical_url }}{{ config.url }}{% endblock %}
+{% block og_description %}{{ config.summary or super() }}{% endblock %}
 {% block location %}{% if ctx.pub_date %}blog{% else %}{{ super() }}{% endif %}{% endblock %}
 
 {% block body %}
 
-  {%- if not config.hide_title %}
+  {%- if not config.hide_title -%}
   <header data-module="page-header" class="rst-header">
     <h1>{{ rst.title }}</h1>
     {{ blog.pubdate(ctx) }}
   </header>
-  {%- endif %}
+  {%- endif -%}
+
+  {%- if config.image -%}
+    {% set image = config.image[0] %}
+    <div class="post-image" style="background-image: url(/static/pictures/{{ image.src }})"; {{ image.styles or '' }}></div>
+  {%- endif -%}
 
   {%- for module in config.before -%}
     {% include module.include %}

@@ -10,6 +10,11 @@
 
   {{ pubdate(post) }}
 
+  {%- if post.config.image -%}
+    {% set image = post.config.image[0] %}
+    <div class="post-image" style="background-image: url(/static/pictures/{{ image.src }})"; {{ image.styles or '' }}></div>
+  {%- endif -%}
+
   {% if post.summary %}
     {{ post.render_summary() }}
     <a href="{{ link_to('page', slug=post.slug) }}" class="more-link">

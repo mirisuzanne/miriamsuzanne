@@ -22,6 +22,13 @@
   }
 }
 
+.post-image {
+  @include fluid-ratio('widescreen');
+  background-position: center;
+  background-size: cover;
+  margin-bottom: size('gutter');
+}
+
 .byline {
   @include font-size('small');
   margin-bottom: size('gutter');
