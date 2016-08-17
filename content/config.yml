@@ -4,28 +4,15 @@
 # --------------
 
 future:
-  - name: 'Lion’s Lair'
-    datetime: ['2016', '07', '22']
-    url: 'http://teacupgorilla.com'
-    type: 'performance'
-
-  - name: 'Underground Music Showcase'
-    datetime: ['2016', '07', '28']
-    url: 'http://teacupgorilla.com'
-    type: 'performance'
-
-  - name: 'CSS Summit'
-    url: 'http://environmentsforhumans.com/2016/css-summit/'
-    datetime: ['2016', '07', '26']
-    type: 'speaking'
-
-  - name: 'CascadiaFest'
-    url: 'http://2016.cascadiafest.org/'
-    datetime: ['2016', '08', '03']
+  - name: 'SitePoint Live Q&A'
+    url: 'https://www.sitepoint.com/community/t/live-q-a-miriam-suzanne-on-susy-and-the-need-for-toolkits-on-18th-aug-2pm-pst/232664'
+    datetime: ['2016', '08', '18']
     type: 'speaking'
 
   - name: 'A Night of Grand Guignol'
-    datetime: ['2016', '08', '18']
+    datetime:
+      start: ['2016', '08', '18']
+      end: ['2016', '08', '27']
     url: 'https://www.eventbrite.com/e/a-night-of-grand-guignol-tickets-18803019337'
     type: 'performance'
 
@@ -36,6 +23,16 @@ future:
 
   - name: 'Syntax Physic Opera'
     datetime: ['2016', '09', '08']
+    url: 'http://teacupgorilla.com'
+    type: 'performance'
+
+  - name: 'CSS Conf 2016'
+    datetime: ['2016', '09', '26']
+    url: 'https://2016.cssconf.com/'
+    type: 'speaking'
+
+  - name: 'Globe Music Hall'
+    datetime: ['2016', '10', '08']
     url: 'http://teacupgorilla.com'
     type: 'performance'
 
@@ -211,9 +208,16 @@ past:
     summary: 'a look at the code patterns that live behind a pattern library or style guide'
     role: 'speaker'
     venue:
+      - name: 'CascadiaFest'
+        url: 'http://2016.cascadiafest.org/'
+        datetime: ['2016', '08', '03']
+      - name: 'CSS Summit'
+        url: 'http://environmentsforhumans.com/2016/css-summit/'
+        datetime: ['2016', '07', '26']
       - name: 'Clarity Conference'
         url: 'http://clarityconf.com/'
         video: 'https://www.sitepoint.com/premium/courses/clarity-conference-2016-2925/lesson/4/step/1'
+        datetime: ['2016', '04', '01']
     press:
       - name: 'Clarity 2016 Wrapup'
         url: 'http://codepen.io/chriscoyier/post/clarity-2016-wrapup'
