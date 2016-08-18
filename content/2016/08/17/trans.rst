@@ -35,26 +35,25 @@ I am not attempting to speak for anyone else.
 If you don't know how to relate to another trans person,
 you should talk to them!*
 
-If you are intereseted in queer art
+If you are interested in queer art
 **more than queer** answers,
 check out my novel: `Riding SideSaddle*`_.
 It's totally about transition,
 **and totally** not-at-all about transition.
-People besides my family seem to **enjoy it**,
-so I'm just passing along their recommendation or whatever.
-Is that awkward?
+It's about **bodies** and identities that won't stay put.
+I think you might **enjoy it**.
 
 .. _`Riding SideSaddle*`: http://ridingsidesaddle.com/
 
 
-I heard you shouldn't ask trans people questions
-------------------------------------------------
+I heard you shouldn't ask trans people questions...
+---------------------------------------------------
 
 You should relate to **trans people**
 the same way you relate to other people.
 Some questions are appropriate,
 and some aren't.
-You alread know how to filter what's appropriate:
+You already know how to filter what's appropriate:
 **you do** it every day,
 in millions of different situations.
 My transness doesn't change the calculation at all.
@@ -127,8 +126,8 @@ What's one more editorial adjustment going to hurt?
 If my **dead** name is relevant,
 just make sure you aren't outing me.
 You might not notice,
-but even when they are well-meaning,
-people treat me differently once I've been outed.
+but even when people are well-meaning,
+they treat me differently once I've been outed.*
 If they're not well meaning,
 I could be **in real danger**.
 
@@ -136,6 +135,12 @@ I'm very public,
 and usually happy to be out,
 but not **in every situation**,
 and not when I'm outed by someone else.
+
+\*
+*See Julia Serano's concept of "ungendering" trans people —
+seaking out any physical/habitual traits
+that might "prove" their "real" gender.
+I can't find a good link...*
 
 
 But I have fond/terrible memories of E—
@@ -179,7 +184,7 @@ and if you're not paying attention to them,
 you'll get them wrong without even realizing it.
 
 So it's time for everyone to start practicing.
-Make an effort to notice *every pronoun you ever use*,
+Make an effort to notice *every pronoun you ever use*.
 It takes some **work**,
 but it's worth the effort.
 Once you are paying attention,
@@ -213,18 +218,18 @@ You can find several `on my about page`_.
 
 If you have a photo of us together,
 **or** me in some specific context
-(like speaking at a conference),
-it's up to you.
+(like at a conference),
+leave it up.
 I don't love old pictures of me,
 but who does?
 That was me,
 and **I'm not interested in**
-losing all references to my past.
-It's **a trade-off** I'm willing to live with.
+losing all proof of my existence before 2015.
+It's **a trade-off** I'm happy to live with.
 
 Many trans people will want to remove all old photos,
 and they have *very good reasons for it*.
-If someone else you know transitions,
+If you know someone else transitioning,
 don't assume my answer is true for them — ask!
 
 .. _on my about page: /who/
@@ -253,7 +258,14 @@ You might think other people see the same thing you do.
 They don't.
 Most people I meet
 never question my gender.
-Learn to think like those people.
+Learn to see me like those people.
+
+You should also feel free to share this post,
+or point people to it,
+if you find it helpful.
+I posted it on the internet for anyone to read.
+I'm not the final word on anything trans,
+but I'm glad to be part of the conversation.
 
 
 What trans terms should I use, and where can I learn more?
