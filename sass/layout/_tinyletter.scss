@@ -7,16 +7,17 @@
   max-width: 100%;
   padding: 0 size('shim');
   width: size('page');
+}
+
+.tiny-image {
+  border: 1px dotted color('background');
+  border-radius: 6px;
+  display: none;
+  flex: 0 0 size('logo');
+  width: size('logo');
 
   @include above(30em) {
-    @include before(' ') {
-      @include square('logo');
-      background: url('../images/mia-11.jpg');
-      background-size: cover;
-      border: 1px dotted color('background');
-      border-radius: 6px;
-      flex: 0 0 auto;
-    }
+    display: block;
   }
 }
 

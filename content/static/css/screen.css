@@ -516,7 +516,7 @@ svg {
   background-color: #fff;
   color: #111;
   font-family: "BaskervilleFS", Baskerville, Palatino, Cambria, Georgia, serif;
-  font-size: calc(110% + 0.5vw);
+  font-size: calc(1.1em + 0.5vw);
   line-height: 1.4; }
 
 html,
@@ -701,18 +701,18 @@ body {
   max-width: 100%;
   padding: 0 0.7rem;
   width: 32rem; }
+
+.tiny-image {
+  border: 1px dotted #fff;
+  border-radius: 6px;
+  display: none;
+  -webkit-flex: 0 0 4.2rem;
+  -ms-flex: 0 0 4.2rem;
+  flex: 0 0 4.2rem;
+  width: 4.2rem; }
   @media (min-width: 30em) {
-    [data-region='tinyletter']:before {
-      content: " ";
-      height: 4.2rem;
-      width: 4.2rem;
-      background: url("../images/mia-11.jpg");
-      background-size: cover;
-      border: 1px dotted #fff;
-      border-radius: 6px;
-      -webkit-flex: 0 0 auto;
-      -ms-flex: 0 0 auto;
-      flex: 0 0 auto; } }
+    .tiny-image {
+      display: block; } }
 
 .tiny-inner {
   font-size: 0.8rem;
@@ -917,9 +917,9 @@ body {
 
 @media (min-width: 40em) {
   .feature-content {
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto; } }
+    -webkit-flex: 1 10 auto;
+    -ms-flex: 1 10 auto;
+    flex: 1 10 auto; } }
 
 .feature-with {
   font-size: 0.8rem;
