@@ -1,5 +1,6 @@
 public: yes
 tags: [writing, art, performance]
+slug: 'slsa-followup'
 summary: |
   After submitting on a whim,
   I was `invited to perform </2012/09/27/slsa2012/>`_

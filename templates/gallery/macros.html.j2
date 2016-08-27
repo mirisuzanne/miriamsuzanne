@@ -22,7 +22,13 @@
 
   <div data-gallery="{{ item_type }}" {{ utility.attr_if('data-size', item.size) }}>
     {% if item_type == 'image' %}
-      <img src="/static/pictures/{{ item.image }}" {{ utility.attr_if('alt', item.alt) }}/>
+      {% if item.link %}
+        <a href="{{ item.link }}">
+          <img src="/static/pictures/{{ item.image }}" {{ utility.attr_if('alt', item.alt) }}/>
+        </a>
+      {% else %}
+        <img src="/static/pictures/{{ item.image }}" {{ utility.attr_if('alt', item.alt) }}/>
+      {% endif %}
     {% elif item_type == 'video' %}
       <div class="video-wrap">
         {{ item.video|safe }}

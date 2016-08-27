@@ -3,7 +3,7 @@ tags: [minifesto, fuck the muse, art, writing, process]
 summary: |
   |ftm|:
   I was planning to spend this month teaching
-  `a class <http://eric.andmeyer.com/2012/08/30/fuck-the-muse>`_ for the
+  `a class </2012/08/30/fuck-the-muse>`_ for the
   `Boulder Writers' Workshop <http://www.boulderwritersworkshop.org/>`_.
   That garnered some interest,
   but didn't pan out in the end.
@@ -42,7 +42,7 @@ I can't teach you how to be inspired,
 but I can teach you how to hunt down inspiration,
 kill it, and tan the hide.
 
-.. _a class: http://eric.andmeyer.com/2012/08/30/fuck-the-muse
+.. _a class: /2012/08/30/fuck-the-muse
 .. _Boulder Writers' Workshop: http://www.boulderwritersworkshop.org/
 .. _mini-series: http://www.imdb.com/title/tt0088727/
 

@@ -12,7 +12,7 @@
 
   <!-- Open Graph -->
   {% set image = config.image[0].src if config.image else 'headshots/mia-16.jpg' %}
-  <meta property="og:url" content="{% block og_url %}{{ config.canonical_url }}{% endblock %}" />
+  <meta property="og:url" content="{{ config.canonical_url }}{% block og_url %}{% endblock %}" />
   <meta property="og:title" content="{% block og_title %}{{ config.author }}{% endblock %}" />
   <meta property="og:description" content="{% block og_description %}Your one-stop site for everything Miriam — from art and music, to code and conference talks.{% endblock %}" />
   <meta property="og:image" content="{{ config.canonical_url }}static/pictures/{% block og_image %}{{ image }}{% endblock %}" />

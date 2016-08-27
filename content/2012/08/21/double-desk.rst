@@ -1,5 +1,7 @@
 public: yes
 tags: [tools]
+image:
+  - src: '2012/double-desk.jpg'
 summary: |
   I always build my own desks.
   You can make a desk in minutes
@@ -17,19 +19,6 @@ so I decided to do something about it:
 
 .. _getting fat: http://www.huffingtonpost.co.uk/2011/12/05/sitting-down-makes-your-bottom-bigger-say-experts_n_1129377.html
 .. _slowly decomposing: http://opinionator.blogs.nytimes.com/2010/02/23/stand-up-while-you-read-this/
-
-|fig1|
-
-.. |fig1| raw:: html
-
-  <figure id="desk-1">
-    <img src="/static/pictures/double-desk.jpg" alt="My double-decker desk." />
-    <figcaption>
-      Hey, if the internet calls you fat, it's time to do something drastic
-      like add a door and two crates.
-      Standing is the hip new thing, doors are cheap, and extra shelves are awesome.
-    </figcaption>
-  </figure>
 
 I always build my own desks.
 You can make a desk in minutes
@@ -51,7 +40,7 @@ and use that hole to organize your cables.
 .. |fig2| raw:: html
 
   <figure id="desk-2">
-    <img src="/static/pictures/desk-cables.jpg" alt="Use the doorknob holes to organize cords." />
+    <img src="/static/pictures/2012/desk-cables.jpg" alt="Use the doorknob holes to organize cords." />
     <figcaption>
       Or leave the doorknob in, and lock your desk before leaving the office.
     </figcaption>

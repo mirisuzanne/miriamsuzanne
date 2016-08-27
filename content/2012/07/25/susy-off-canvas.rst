@@ -1,5 +1,6 @@
 public: yes
 tags: [susy, demo, sass, code]
+slug: 'susy-off-canvas'
 summary: |
   The off-canvas design pattern
   for creating responsive websites

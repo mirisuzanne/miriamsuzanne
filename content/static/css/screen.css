@@ -253,10 +253,11 @@ button {
   cursor: pointer; }
 
 blockquote {
-  margin: 1.4rem 0;
-  text-indent: -0.4em; }
+  font-style: italic;
+  margin: 1.4rem 0; }
   blockquote p {
-    display: inline; }
+    display: inline;
+    text-indent: -0.4em; }
     blockquote p:before, blockquote p:after {
       content: "“"; }
     blockquote p:after {
@@ -786,12 +787,8 @@ body {
   display: block;
   margin: 0.7rem 0; }
 
-[data-module='blog-post'] blockquote {
-  font-style: italic; }
-  [data-module='blog-post'] blockquote:before, [data-module='blog-post'] blockquote:after {
-    content: "“"; }
-  [data-module='blog-post'] blockquote:after {
-    content: "”"; }
+[data-module='blog-post'] blockquote p {
+  display: inline; }
 
 .post-image {
   height: 0;

@@ -17,8 +17,9 @@
   }
 
   blockquote {
-    @include wrap-content;
-    font-style: italic;
+    p {
+      display: inline;
+    }
   }
 }
 

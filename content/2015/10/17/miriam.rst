@@ -1,6 +1,14 @@
-public: no
+public: yes
+slug: 'miriam'
 summary: |
-  *Eric M Suzanne* has become *Miriam Eric Suzanne*...
+  It’s the third Saturday in October,
+  which everyone knows is
+  “Announce Your New Name/Gender —
+  If You Were Once Called Eric A Meyer,
+  But Not The One Who Wrote The CSS Reset,
+  The Other One, You Know — Day”.
+  It’s a long title for a little-celebrated holiday,
+  but it’s important to some of us (me).
 
 
 Miriam E* Suzanne

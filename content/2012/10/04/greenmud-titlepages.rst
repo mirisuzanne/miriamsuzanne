@@ -1,5 +1,6 @@
 public: yes
 tags: [greenmud, writing, art]
+slug: 'greenmud-titlepages'
 summary: |
   Six months ago we completed
   a `RocketHub campaign <http://www.rockethub.com/projects/6066-into-the-green-green-mud-multimedia-novel>`_

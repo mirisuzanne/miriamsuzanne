@@ -1,7 +1,10 @@
 {% import "utility.macros.j2" as utility %}
 
 <nav data-module="pagination">
-  {{ utility.link_if('newer', link_to(pagination.url_key, page=pagination.page - 1), 'prev') }}
+  {% set prev_link = link_to(pagination.url_key, page=pagination.page - 1) if pagination.has_prev else none %}
+  {% set next_link = link_to(pagination.url_key, page=pagination.page + 1) if pagination.has_next else none %}
+
+  {{ utility.link_if('newer', prev_link, 'prev') }}
 
   <span class="location">
     <strong class="current">{{ pagination.page }}</strong>
@@ -9,5 +12,5 @@
     <b class="total">{{ pagination.pages }}</b>
   </span>
 
-  {{ utility.link_if('older', link_to(pagination.url_key, page=pagination.page + 1), 'next') }}
+  {{ utility.link_if('older', next_link, 'next') }}
 </nav>

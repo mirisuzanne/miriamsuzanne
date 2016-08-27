@@ -1,4 +1,5 @@
-public: yes
+public: no
+slug: 'moving-off-tumblr'
 
 
 Moving off Tumblr

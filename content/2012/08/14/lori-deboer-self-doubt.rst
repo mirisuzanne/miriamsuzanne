@@ -1,5 +1,12 @@
 public: yes
 tags: [writing, art]
+slug: 'lori-deboer-self-doubt'
+summary: |
+  From Lori Deboer:
+
+    What has changed in my years of writing
+    is that I’ve come to regard the state of self-doubt as normal.
+    The trick to dispel doubts? Write anyway.
 
 
 Lori DeBoer on Self Doubt
@@ -9,7 +16,6 @@ Lori DeBoer on Self Doubt
 
   What has changed in my years of writing
   is that I’ve come to regard the state of self-doubt as normal.
-
   The trick to dispel doubts? Write anyway.
 
 Or, as `Megan Sumner`_ said last night

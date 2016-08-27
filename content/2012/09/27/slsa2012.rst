@@ -1,5 +1,6 @@
 public: yes
 tags: [writing, art, performance]
+slug: 'slsa2012'
 summary: |
   I'll be in `Milwaukee <http://goo.gl/maps/MZW3g>`_ this weekend
   for a brief appearance at
@@ -29,6 +30,7 @@ and accepted my `submission`_:
 
 Thank you, ELO/SLSA jury.
 
+
 The Obsolete Book in a Post-Obsolete World
 ------------------------------------------
 
@@ -47,12 +49,13 @@ and one post-obsolete book.
 Mortimer Leech of Widow's Bane
 was gracious about my theft:
 
-  Follow your bliss, Eric.
+  Follow your bliss, Mia.
   Take no prisoners.
   We're already dead.
   What the fuck do we want with money?
 
 Thank you Mr. Leech.
+
 
 Electronic Literature |&| the Nonhuman
 --------------------------------------

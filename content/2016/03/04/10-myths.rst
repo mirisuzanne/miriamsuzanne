@@ -1,12 +1,23 @@
 public: yes
+slug: '10-myths'
+image:
+  - src: '2016/10-myths.png'
+summary: |
+  I'm excited to be part of `Buntport Theater`_’s
+  40th original full-length production —
+  based on my novel, `Riding SideSaddle*`_,
+  and featuring a live score by `Teacup Gorilla`_.
+  It's been a wild month pulling it all together!
+
+  .. _Buntport Theater: http://buntport.com
+  .. _Riding SideSaddle*: http://ridingsidesaddle.com
+  .. _Teacup Gorilla: http://teacupgorilla.com
 
 
 10 Myths at Buntport
 ====================
 
-|myths|
-
-I'm very excited to be part of `Buntport Theater`_’s
+I'm excited to be part of `Buntport Theater`_’s
 40th original full-length production —
 based on my novel, `Riding SideSaddle*`_,
 and featuring a live score by `Teacup Gorilla`_.
@@ -32,11 +43,3 @@ then `reserve your tickets before they're gone`_!
 .. _Huffington Post: http://www.huffingtonpost.com/tracy-shaffer/buntport-theatres-new-sho_b_9386846.html
 .. _Colorado Drama: http://coloradodrama.com/10_myths.html
 .. _reserve your tickets before they're gone: http://buntport.com/archive/archive.htm
-
-.. |myths| raw:: html
-
-  <figure>
-    <a href="http://buntport.com/archive/archive.htm">
-      <img src="/static/pictures/10-myths.png" alt="" />
-    </a>
-  </figure>

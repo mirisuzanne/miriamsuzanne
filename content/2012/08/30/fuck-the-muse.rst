@@ -1,5 +1,6 @@
 public: yes
 tags: [writing, art, process]
+slug: 'fuck-the-muse'
 summary: |
   The `Boulder Writer's Workshop <http://www.boulderwritersworkshop.org/>`_
   has invited me to teach a class

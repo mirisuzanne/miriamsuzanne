@@ -1,5 +1,6 @@
 public: yes
 tags: [sass, demo, code]
+slug: 'sass-striped-background'
 summary: |
   In response to a request on twitter,
   I wrote a simple function

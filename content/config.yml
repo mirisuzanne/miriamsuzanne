@@ -4,18 +4,6 @@
 # --------------
 
 future:
-  - name: 'SitePoint Live Q&A'
-    url: 'https://www.sitepoint.com/community/t/live-q-a-miriam-suzanne-on-susy-and-the-need-for-toolkits-on-18th-aug-2pm-pst/232664'
-    datetime: ['2016', '08', '18']
-    type: 'speaking'
-
-  - name: 'A Night of Grand Guignol'
-    datetime:
-      start: ['2016', '08', '18']
-      end: ['2016', '08', '27']
-    url: 'https://www.eventbrite.com/e/a-night-of-grand-guignol-tickets-18803019337'
-    type: 'performance'
-
   - name: 'Larimer Lounge BBQ'
     datetime: ['2016', '08', '28']
     url: 'http://larimerlounge.com/'
@@ -185,6 +173,20 @@ features:
 
 past:
   ### 2016 -------------------------------------
+
+  - name: 'A Night of Grand Guignol'
+    datetime:
+      start: ['2016', '08', '18']
+      end: ['2016', '08', '27']
+    summary: 'A night of classic horror theater, underscored with live music.'
+    with:
+      - name: 'Pandemic Collective'
+        url: 'http://www.pandemiccollective.org/'
+      - name: 'Teacup Gorilla'
+        url: 'http://teacupgorilla.com'
+    url: 'http://www.pandemiccollective.org/2015---2016-season.html'
+    type: ['performance']
+    role: 'musician'
 
 
   - name: 'Pattern-Making in Sass'
@@ -1117,6 +1119,13 @@ past:
 
 # Interviews
 interviews:
+  - name: 'SitePoint Live Q&A on Susy and Web Toolkits'
+    url: 'https://www.sitepoint.com/how-to-choose-the-right-css-toolkits-and-frameworks/'
+    datetime: ['2016', '08', '18']
+    org:
+      name: 'SitePoint'
+      url: 'https://www.sitepoint.com/community/t/live-q-a-miriam-suzanne-on-susy-and-the-need-for-toolkits-on-18th-aug-2pm-pst/232664'
+
   - name: 'On Riding SideSaddle*'
     url: 'http://www.michiganquarterlyreview.com/2015/06/on-riding-sidesaddle-an-interview-with-eric-suzanne/'
     datetime: ['2015', '06', '01']

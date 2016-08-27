@@ -1,8 +1,8 @@
 public: yes
 erasure: yes
-url: '2016/08/17/trans/'
+slug: 'trans'
 image:
-  - src: 'mia-wtf.jpg'
+  - src: '2016/mia-wtf.jpg'
 summary: |
   There are some questions that come up again and again
   if you are trans.

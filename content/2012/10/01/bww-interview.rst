@@ -1,5 +1,6 @@
 public: yes
 tags: [writing, queer, art, process, interview]
+slug: 'bww-interview'
 summary: |
   The `Boulder Writers' Workshop <http://www.boulderwritersworkshop.org/>`_
   ran this `interview with me <http://www.boulderwritersworkshop.org/2012/08/31/eric-meyer-discusses-collaboration-queer-art-and-his-multi-media-novel/>`_

@@ -43,12 +43,13 @@ button {
 
 
 blockquote {
+  font-style: italic;
   margin: size('gutter') 0;
-  text-indent: -0.4em;
 
   p {
     @include wrap-content;
     display: inline;
+    text-indent: -0.4em;
 
     @include above('page') {
       @include h3;

@@ -1,5 +1,6 @@
 public: yes
 tags: [art, writing, minifesto]
+slug: 'poetry-doesnt-matter'
 summary: |
   Theatres are concerned about the lack of audience.
   Poets are concerned about their lack of audience.
@@ -71,10 +72,7 @@ Finding an Audience is Your Job
 
   Like subsidized farming that grows food no one wants,
   a poetry industry has been created
-  to serve the interests of the producers and not the consumers.
-
-  ...
-
+  to serve the interests of the producers and not the consumers...
   Poets must recapture the attention of the broader intellectual community
   by writing for nonspecialist publications.
   They must also avoid the jargon of contemporary academic criticism
