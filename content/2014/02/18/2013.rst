@@ -27,7 +27,7 @@ the future of `Into The Green Green Mud`_.
 2014 looks like more of the same.
 Bring it on.
 
-.. _Media Archelology Lab: http://mediaarchaeologylab.com/eric-meyer/
+.. _Media Archelology Lab: http://mediaarchaeologylab.com/past-artist-in-residence/miriam-suzanne-2/
 .. _The Brakhage Center: http://brakhagecenter.com/?cat=32
 .. _SassConf: http://sassconf.com/
 .. _Susy: http://susy.oddbird.net/

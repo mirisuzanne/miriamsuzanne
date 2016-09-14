@@ -695,7 +695,7 @@ past:
       - name: 'Ideas, Process, Obsolescence, and the Iterative'
         credit: 'Mél Hogan'
         source: 'Media Archeology Blog'
-        url: 'http://mediaarchaeologylab.com/blog/eric-meyer-ideas-process-obsolescence-iterative-interview-mel-hogan/'
+        url: 'http://mediaarchaeologylab.com/blog/miriam-suzanne-ideas-process-obsolescence-iterative-interview-mel-hogan/'
         datetime: ['2015', '11', '15']
 
 
@@ -1159,7 +1159,7 @@ interviews:
   #     url: 'https://www.youtube.com/user/sassbites'
 
   - name: 'Ideas, Process, Obsolescence, and the Iterative'
-    url: 'http://mediaarchaeologylab.com/blog/eric-meyer-ideas-process-obsolescence-iterative-interview-mel-hogan/'
+    url: 'http://mediaarchaeologylab.com/blog/miriam-suzanne-ideas-process-obsolescence-iterative-interview-mel-hogan/'
     datetime: ['2013', '11', '15']
     org:
       contact: 'Mél Hogan'
