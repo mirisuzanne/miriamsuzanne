@@ -4,16 +4,6 @@
 # --------------
 
 future:
-  - name: 'Larimer Lounge BBQ'
-    datetime: ['2016', '08', '28']
-    url: 'http://larimerlounge.com/'
-    type: 'performance'
-
-  - name: 'Syntax Physic Opera'
-    datetime: ['2016', '09', '08']
-    url: 'http://teacupgorilla.com'
-    type: 'performance'
-
   - name: 'CSS Conf 2016'
     datetime: ['2016', '09', '26']
     url: 'https://2016.cssconf.com/'
@@ -23,6 +13,11 @@ future:
     datetime: ['2016', '10', '08']
     url: 'http://teacupgorilla.com'
     type: 'performance'
+
+  - name: 'CSSDay.io'
+    datetime: ['2016', '12', '03']
+    url: 'http://cssday.io/'
+    type: 'speaking'
 
 
 summary_types:
@@ -42,6 +37,8 @@ summary_types:
 
 # features
 # --------
+
+feature_video: '<iframe src="https://player.vimeo.com/video/182858323?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
 
 features:
   - title: 'Riding SideSaddle*'

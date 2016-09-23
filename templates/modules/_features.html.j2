@@ -2,6 +2,12 @@
 {% import "gallery/macros.html.j2" as media %}
 
 
+{% if config.feature_video %}
+  <section data-gallery="video">
+    <div class="video-wrap">{{ config.feature_video|safe }}</div>
+  </section>
+{% endif %}
+
 {% for feature in config.features %}
   <section data-module="feature">
     {% if feature.image %}
