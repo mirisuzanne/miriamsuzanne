@@ -4,14 +4,9 @@
 # --------------
 
 future:
-  - name: 'CSS Conf 2016'
-    datetime: ['2016', '09', '26']
-    url: 'https://2016.cssconf.com/'
-    type: 'speaking'
-
-  - name: 'Globe Music Hall'
-    datetime: ['2016', '10', '08']
-    url: 'http://teacupgorilla.com'
+  - name: 'FACEMAN’s 100 Year Storm'
+    datetime: ['2016', '11', '18']
+    url: 'http://www.theorientaltheater.com/event/260005/facemans-100-year-storm-'
     type: 'performance'
 
   - name: 'CSSDay.io'
@@ -170,6 +165,32 @@ features:
 
 past:
   ### 2016 -------------------------------------
+
+  - name: 'Sass Map Magic'
+    url: 'http://oddbooksapp.com/book/sass-map-magic'
+    type: ['speaking']
+    summary: 'a sometimes-practical deep-dive into Sass maps'
+    role: 'speaker'
+    venue:
+      - name: 'CSS Conf 2016'
+        url: 'https://2016.cssconf.com/'
+        datetime: ['2016', '09', '26']
+        video: 'https://youtu.be/MdwtoFt2LOI'
+      - name: 'CSS Summit'
+        url: 'http://environmentsforhumans.com/2015/css-summit/'
+        datetime: ['2015', '07', '07']
+        # video: 'http://environmentsforhumans.us1.list-manage.com/track/click?u=821d86bca4348be84e3ae78d9&id=93e3a6cf07&e=16d1cb2f4f'
+      - name: 'Future Insights Live'
+        datetime: ['2015', '06', '02']
+        # video: 'http://www.futureinsights.com/fi-live-2015-videos-all/sass-map-magic.html'
+      - name: 'SassConf [Unconference Day]'
+        url: 'http://sassconf.com'
+        datetime: ['2014', '10', '02']
+      - name: 'BlendConf'
+        url: 'http://2014.blendconf.com/'
+        datetime: ['2014', '09', '11']
+        video: 'http://teamtreehouse.com/library/sass-map-magic'
+
 
   - name: 'A Night of Grand Guignol'
     datetime:
@@ -442,28 +463,6 @@ past:
         source: 'Stubborn Sounds'
         url: 'https://stubbornsounds.wordpress.com/2015/07/07/teacup-gorilla-the-holes-they-leave-in-review/'
         datetime: ['2015', '07', '07']
-
-
-  - name: 'Sass Map Magic'
-    url: 'http://oddbooksapp.com/book/sass-map-magic'
-    type: ['speaking']
-    summary: 'a sometimes-practical deep-dive into Sass maps'
-    role: 'speaker'
-    venue:
-      - name: 'CSS Summit'
-        url: 'http://environmentsforhumans.com/2015/css-summit/'
-        datetime: ['2015', '07', '07']
-        # video: 'http://environmentsforhumans.us1.list-manage.com/track/click?u=821d86bca4348be84e3ae78d9&id=93e3a6cf07&e=16d1cb2f4f'
-      - name: 'Future Insights Live'
-        datetime: ['2015', '06', '02']
-        # video: 'http://www.futureinsights.com/fi-live-2015-videos-all/sass-map-magic.html'
-      - name: 'SassConf [Unconference Day]'
-        url: 'http://sassconf.com'
-        datetime: ['2014', '10', '02']
-      - name: 'BlendConf'
-        url: 'http://2014.blendconf.com/'
-        datetime: ['2014', '09', '11']
-        video: 'http://teamtreehouse.com/library/sass-map-magic'
 
 
   - name: 'Riding SideSaddle*'
