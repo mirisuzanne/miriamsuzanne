@@ -4,21 +4,31 @@
 # --------------
 
 future:
-  - name: 'FACEMAN’s 100 Year Storm'
-    datetime: ['2016', '11', '18']
-    url: 'http://www.theorientaltheater.com/event/260005/facemans-100-year-storm-'
+  - name: 'Empowerment Benefit Show'
+    datetime: ['2016', '12', '17']
+    url: 'https://www.facebook.com/events/566264573571495/'
     type: 'performance'
 
-  - name: 'CSSDay.io'
-    datetime: ['2016', '12', '03']
-    url: 'http://cssday.io/'
-    type: 'speaking'
+  - name: 'in your ear (reading)'
+    datetime: ['2017', '01', '15']
+    url: 'http://www.dcpoetry.com/iye'
+    type: 'tour'
+
+  - name: 'Fredrick MD (reading)'
+    datetime: ['2017', '01', '19']
+    url: 'http://ridingsidesaddle.com'
+    type: 'tour'
+
+  - name: 'UVA Scholars’ Lab (speaking)'
+    datetime: ['2017', '01', '23']
+    url: 'http://scholarslab.org/'
+    type: 'tour'
 
 
 summary_types:
-  - speaking:
-      title: 'conference talks'
-      action: 'invite me to speak'
+  - tour:
+      title: 'resistence tour'
+      action: 'invite me to read/speak'
       url: '/contact/'
     performance:
       title: 'teacup gorilla'
@@ -166,6 +176,58 @@ features:
 past:
   ### 2016 -------------------------------------
 
+  - name: 'Code Patterns for Pattern-Making'
+    url: 'https://oddbooksapp.com/book/pattern-making'
+    type: ['speaking']
+    summary: 'a look at the code patterns that live behind a pattern library or style guide'
+    role: 'speaker'
+    venue:
+      - name: 'CSSDay.io'
+        datetime: ['2016', '12', '03']
+        url: 'http://cssday.io/'
+        slides: 'https://www.oddbooksapp.com/book/pattern-making'
+      - name: 'CascadiaFest'
+        url: 'http://2016.cascadiafest.org/'
+        datetime: ['2016', '08', '03']
+        video: 'https://youtu.be/cVZreFHgLFw'
+      - name: 'CSS Summit'
+        url: 'http://environmentsforhumans.com/2016/css-summit/'
+        datetime: ['2016', '07', '26']
+      - name: 'Clarity Conference'
+        url: 'http://clarityconf.com/'
+        video: 'https://www.sitepoint.com/premium/courses/clarity-conference-2016-2925/lesson/4/step/1'
+        datetime: ['2016', '04', '01']
+    press:
+      - name: 'Clarity 2016 Wrapup'
+        url: 'http://codepen.io/chriscoyier/post/clarity-2016-wrapup'
+        credit: 'Chris Coyier'
+        datetime: ['2016', '04', '12']
+      - name: 'Clarity Notes'
+        url: 'http://bradfrost.com/blog/post/clarity-conf-code-patterns-for-pattern-making/'
+        credit: 'Brad Frost'
+        datetime: ['2016', '04', '02']
+
+
+  - name: 'Loops in CSS Preprocessors'
+    datetime: ['2016', '12', '02']
+    url: 'https://css-tricks.com/loops-css-preprocessors/'
+    type: ['publication']
+    role: 'author'
+    with:
+      - name: 'CSS Tricks'
+        url: 'https://css-tricks.com/'
+
+
+  - name: 'FACEMAN’s 100 Year Storm'
+    datetime: ['2016', '11', '18']
+    url: 'http://www.theorientaltheater.com/event/260005/facemans-100-year-storm-'
+    type: ['performance']
+    role: 'musician'
+    with:
+      - name: 'Teacup Gorilla'
+        url: 'http://teacupgorilla.com'
+
+
   - name: 'Sass Map Magic'
     url: 'http://oddbooksapp.com/book/sass-map-magic'
     type: ['speaking']
@@ -175,6 +237,7 @@ past:
       - name: 'CSS Conf 2016'
         url: 'https://2016.cssconf.com/'
         datetime: ['2016', '09', '26']
+        slides: 'https://oddbooksapp.com/book/sass-map-magic'
         video: 'https://youtu.be/MdwtoFt2LOI'
       - name: 'CSS Summit'
         url: 'http://environmentsforhumans.com/2015/css-summit/'
@@ -207,11 +270,20 @@ past:
     role: 'musician'
 
 
+  - name: 'Underground Music Showcase'
+    url: 'http://theums.com/'
+    datetime: ['2016', '07', '25']
+    type: ['performance']
+    with:
+      - name: 'Teacup Gorilla'
+        url: 'http://teacupgorilla.com'
+
+
   - name: 'Pattern-Making in Sass'
     url: 'http://oddbooksapp.com/book/sass-patterns'
     datetime: ['2016', '05', '19']
     type: ['speaking']
-    role: 'speaking'
+    role: 'speaker'
     summary: 'an overview of Sass pattern-making,
               as seen in SitePoint’s
               <a href="https://www.sitepoint.com/premium/books/jump-start-sass">Jump Start Sass</a>'
@@ -219,34 +291,6 @@ past:
       - name: 'DublinCSS'
         url: 'http://www.meetup.com/DublinCSS/events/230011902/'
         video: 'https://vimeo.com/173221942'
-
-
-  - name: 'Code Patterns for Pattern-Making'
-    url: 'https://oddbooksapp.com/book/pattern-making'
-    datetime: ['2016', '03', '31']
-    type: ['speaking']
-    summary: 'a look at the code patterns that live behind a pattern library or style guide'
-    role: 'speaker'
-    venue:
-      - name: 'CascadiaFest'
-        url: 'http://2016.cascadiafest.org/'
-        datetime: ['2016', '08', '03']
-      - name: 'CSS Summit'
-        url: 'http://environmentsforhumans.com/2016/css-summit/'
-        datetime: ['2016', '07', '26']
-      - name: 'Clarity Conference'
-        url: 'http://clarityconf.com/'
-        video: 'https://www.sitepoint.com/premium/courses/clarity-conference-2016-2925/lesson/4/step/1'
-        datetime: ['2016', '04', '01']
-    press:
-      - name: 'Clarity 2016 Wrapup'
-        url: 'http://codepen.io/chriscoyier/post/clarity-2016-wrapup'
-        credit: 'Chris Coyier'
-        datetime: ['2016', '04', '12']
-      - name: 'Clarity Notes'
-        url: 'http://bradfrost.com/blog/post/clarity-conf-code-patterns-for-pattern-making/'
-        credit: 'Brad Frost'
-        datetime: ['2016', '04', '02']
 
 
   - name: '10 Myths on the Proper Application of Beauty Products'
@@ -268,7 +312,7 @@ past:
         credit: 'Juliet Wittman'
         source: 'Westword'
         url: 'http://www.westword.com/arts/review-10-myths-on-the-proper-application-of-beauty-products-is-a-beaut-of-a-show-7678439'
-        datetime: ['2016', '09', '09']
+        datetime: ['2016', '03', '09']
       - quote: 'Definitely a production worth writing about, talking about, and going to see.'
         credit: 'Berlin Sylvestre'
         source: 'Out Front'
@@ -1115,6 +1159,14 @@ past:
 
 # Interviews
 interviews:
+  - name: 'CSS Tricks: An Interview with Miriam Suzanne'
+    url: 'https://css-tricks.com/interview-miriam-suzanne/'
+    datetime: ['2016', '10', '15']
+    org:
+      contact: 'Chris Coyier'
+      name: 'CSS Tricks'
+      url: 'https://css-tricks.com/'
+
   - name: 'SitePoint Live Q&A on Susy and Web Toolkits'
     url: 'https://www.sitepoint.com/how-to-choose-the-right-css-toolkits-and-frameworks/'
     datetime: ['2016', '08', '18']
