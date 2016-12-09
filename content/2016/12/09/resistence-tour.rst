@@ -59,7 +59,7 @@ please `let me know`_!
 .. _`Riding SideSaddle*`: http://ridingsidesaddle.com/
 .. _`post-obsolete book`: /post-obsolete/
 .. _`in your ear`: http://www.dcpoetry.com/iye
-.. _DC Arts Center`: http://www.dcartscenter.org
+.. _`DC Arts Center`: http://www.dcartscenter.org
 .. _`UVA Scholars' Lab`: http://scholarslab.org/
 .. _`let me know`: /contact/
 .. _`I'm all ears`: /contact/
