@@ -2,6 +2,13 @@ public: yes
 slug: 'resistence-tour'
 image:
   - src: '2016/resistence.jpg'
+summary: |
+  It's been a month
+  since our country pseudo-elected
+  a bigoted blow-hard for president.
+  I'm heading to DC to protest his inauguration in January,
+  visit friends,
+  and go on a mixed-media resistance tour...
 
 
 Resistance Tour, 2017
