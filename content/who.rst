@@ -20,20 +20,19 @@ Bio
 ===
 
 **Miriam Eric Suzanne**
-is an author, performer, musician, designer,
-web developer, speaker, and consultant —
-a co-founder of `OddBird`_,
-member of `Teacup Gorilla`_,
-and avid `open-source contributor`_.
-Miriam is the author of
-`Riding SideSaddle*`_ (a hybrid novel) and
-`The Post-Obsolete Book`_ (a performance website),
+is an author, performer, musician, designer, and web developer —
+working with `OddBird`_,
+`Teacup Gorilla`_,
+and `CSS Tricks`_.
+She's the author of
+`Riding SideSaddle*`_ and
+`The Post-Obsolete Book`_,
 co-author of
-`Jump Start Sass`_ (a tech book) and
-`10 Myths on the Proper Application of Beauty Products`_ (a play),
-and creator for the open-source
-`Accoutrement`_, `Susy`_, and `True`_
-Sass toolkits.
+`Jump Start Sass`_ and
+`10 Myths on the Proper Application of Beauty Products`_,
+and creator of the
+`Susy`_ and `True`_
+`open-source`_ toolkits.
 
 *Miriam has also been published under the names
 "Eric A Meyer" and "Eric M Suzanne" —
@@ -46,8 +45,8 @@ or something like that.*
 .. _Riding SideSaddle*: http://ridingsidesaddle.com
 .. _OddBird: http://oddbird.net/
 .. _Teacup Gorilla: http://teacupgorilla.com/
-.. _open-source contributor: http://github.com/mirisuzanne/
-
+.. _open-source: http://github.com/mirisuzanne/
+.. _CSS Tricks: https://css-tricks.com/
 .. _10 Myths on the Proper Application of Beauty Products: https://www.oddbooksapp.com/book/10-myths
 .. _Jump Start Sass: https://www.sitepoint.com/premium/books/jump-start-sass
 .. _The Post-Obsolete Book: http://www.post-obsolete.com

@@ -4,7 +4,7 @@ image:
   - src: '2016/resistence.jpg'
 
 
-Resistence Tour, 2017
+Resistance Tour, 2017
 =====================
 
 It's been a month
@@ -12,7 +12,7 @@ since our country pseudo-elected
 a bigoted blow-hard for president.
 I'm heading to DC to protest his inauguration in January,
 visit friends,
-and go on a mixed-media resistence tour:
+and go on a mixed-media resistance tour:
 
 - reading from my queer-as-fuck novel `Riding SideSaddle*`_
 - speaking about code, UX, and empathy in tech
@@ -22,7 +22,7 @@ and go on a mixed-media resistence tour:
 If I'm able to cover my costs,
 any profits will go to
 `one of these rad organizations`_
-commited to empowering
+committed to empowering
 women, people of color, immigrants, queers, Muslims, and disabled people —
 or fighting climate change.
 If you have a specific organization to recommend,
@@ -34,7 +34,7 @@ The schedule so far...
 
 - *Jan 15* in **Washington, DC** |br|
   reading at `in your ear`_
-  (3pm @ DC Arts Center)
+  (3pm @ `DC Arts Center`_)
 - *Jan 19* in **Fredrick, MD** |br|
   house reading and conversation
   (details TBA)
@@ -59,6 +59,7 @@ please `let me know`_!
 .. _`Riding SideSaddle*`: http://ridingsidesaddle.com/
 .. _`post-obsolete book`: /post-obsolete/
 .. _`in your ear`: http://www.dcpoetry.com/iye
+.. _DC Arts Center`: http://www.dcartscenter.org
 .. _`UVA Scholars' Lab`: http://scholarslab.org/
 .. _`let me know`: /contact/
 .. _`I'm all ears`: /contact/

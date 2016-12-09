@@ -11,25 +11,25 @@ future:
 
   - name: 'in your ear (reading)'
     datetime: ['2017', '01', '15']
-    url: 'http://www.dcpoetry.com/iye'
+    url: '/2016/12/09/resistence-tour/'
     type: 'tour'
 
   - name: 'Fredrick MD (reading)'
     datetime: ['2017', '01', '19']
-    url: 'http://ridingsidesaddle.com'
+    url: '/2016/12/09/resistence-tour/'
     type: 'tour'
 
   - name: 'UVA Scholars’ Lab (speaking)'
     datetime: ['2017', '01', '23']
-    url: 'http://scholarslab.org/'
+    url: '/2016/12/09/resistence-tour/'
     type: 'tour'
 
 
 summary_types:
   - tour:
-      title: 'resistence tour'
-      action: 'invite me to read/speak'
-      url: '/contact/'
+      title: 'resistance tour'
+      action: 'find out more'
+      url: '/2016/12/09/resistence-tour/'
     performance:
       title: 'teacup gorilla'
       action: 'more music'
