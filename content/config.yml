@@ -4,10 +4,11 @@
 # --------------
 
 future:
-  - name: 'Empowerment Benefit Show'
-    datetime: ['2016', '12', '17']
-    url: 'https://www.facebook.com/events/566264573571495/'
-    type: 'performance'
+
+  - name: 'Baltimore (reading)'
+    datetime: ['2017', '01', '15']
+    url: '/2016/12/09/resistence-tour/'
+    type: 'tour'
 
   - name: 'in your ear (reading)'
     datetime: ['2017', '01', '15']

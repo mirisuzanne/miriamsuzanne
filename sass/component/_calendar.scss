@@ -36,7 +36,6 @@ $event-types: (
     @include font-size('small');
     flex: 0 1 auto;
     margin: size('gutter');
-    max-width: 25vw;
   }
 }
 
