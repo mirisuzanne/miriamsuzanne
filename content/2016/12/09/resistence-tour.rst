@@ -23,11 +23,11 @@ and perform some mixed-media resistance:
 
 - reading from my queer-as-fuck novel `Riding SideSaddle*`_,
   while being a loud and vocal trans woman.
-- speaking about code, UX, and empathy in tech
-  especially given the current state of things.
+- speaking about empathy and resistence
+  in art and software.
 - chatting about queer identities,
-  hate, politics, intersectionality, and resistance.
-- hugging people liberally.
+  hate, politics, and intersectionality.
+- hugging people.
 
 I'm not changing the world here,
 there's more to do.
