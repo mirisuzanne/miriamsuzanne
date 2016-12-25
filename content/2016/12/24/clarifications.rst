@@ -188,11 +188,12 @@ or through legal channels.
 Some take hormones and/or hormone-blockers,
 a few get "top" **surgeries**
 to augment or remove breast tissue,
-**and even fewer** opt for more genital surgery,
+**and even fewer** opt for genital surgery,
 tracheal shaves,
 and cosmetic interventions.
 
-After transition,
+"After" transition
+which has no solid start or finish,
 we **are the same** person that we were before.
 With or without surgery,
 our genders are just as real.
@@ -245,7 +246,7 @@ The language of passing is borrowed from racial politics
 (people of color passing as white)
 and later gay/lesbian politics
 (femme lesbians **or butch gays** passing as straight),
-where "passing" means you're marginalized identity is not seen.
+where "passing" means your marginalized identity is not seen.
 
 Passing is a complicated privilege — 
 making it possible for marginalized people
@@ -265,9 +266,9 @@ who are said to be "passing" when we are identified *correctly*,
 in our appropriate genders.
 This plays into the popular notion that
 our gender is a costume we put on,
-"passing" **is the entire point of transition,**
-and the only way to be trans.
-People regularly try to "help out"
+and "passing" **is the entire point of transition —**
+the only way to be trans.
+People regularly try to help out
 by giving us unsolicited advice
 on our looks, voices, or movements —
 assuming that's what we mean by *transition*.
@@ -277,16 +278,15 @@ There's a **history** to that idea,
 when hormone replacement therapy
 started to become a medically-accepted treatment.
 Doctors established themselves as gender gatekeepers,
-determining who could transition,
-and who couldn't —
+determining who could transition medically —
 in part by **enforcing strict** binary stereotypes.
 Until recently,
 medical transition was only available
-if doctors thought you could "pass"
+if doctors thought you could "pass" well,
 and you promised to live **straight and stealth**
 after transition.
 The goal of "passing" was forced on us,
-and made it difficult for **trans communities** to form.
+and made **trans communities** invisible.
 
 It might be more accurate to say
 that I "pass" as cis-gender at times,
@@ -309,9 +309,10 @@ Trans "Visibility"
 In the last few years,
 everyone is talking about trans visibility.
 Chaz Bono danced with the stars,
-suddenly **Lavern Cox** was everywhere,
-and then Caitlin Jenner made transition
-a reality TV experience.
+suddenly **Lavern Cox** is everywhere,
+Caitlin Jenner made transition
+a reality TV experience,
+and now *you're reading mt blog*.
 
 New media comes out every year
 highlighting trans characters —
@@ -328,7 +329,7 @@ After transition they are either
 **beautiful** straight women who get the boy
 (making them finally "real" women),
 or pathetic creatures
-who need more "help" passing
+who *need more help passing*
 to be "successfully" trans.
 
 Even the **true stories**
@@ -363,7 +364,7 @@ moving **faster than** our cultural gains.
 Trans women
 (and especially women of color)
 were already being killed at unprecedented rates —
-and those numbers have been going up.
+and those numbers are higher than ever.
 We've been using bathrooms
 since the invention of the toilet,
 but suddenly states
@@ -382,7 +383,7 @@ this over-simplified binary trans identity
 that doesn't really reflect my experience.
 I want to be a proud gender-bending **dyke**,
 but that's often used as **proof** that I'm
-*still a man*,
+*really a man*,
 not `trans enough`_,
 or in need of **gender-assimilating** guidance.
 
@@ -437,13 +438,14 @@ in the ways we see fit:
 monogamous or polyamorous;
 straight or bi, pan or gay;
 sex workers, **sluts,** and prudes;
-trans-binary, **gender-fluid, **butch and femme;**
+trans-binary, **gender-fluid, butch and femme;**
 black, brown, immigrant, Muslim, and interracial;
 asexual, intersex, **closeted, and queer.**
 
-We can't keep adding groups
-one-at-a-time
+We can't keep accepting identities
+one-at-a-time,
 based on our ability to assimilate —
-we have to **rebuild these systems** with new assumptions.
+we have to **rebuild these systems**
+with new, more fluid and queer assumptions.
 
 .. _born this way: https://www.newscientist.com/article/mg22730310-100-sexuality-is-fluid-its-time-to-get-past-born-this-way/
