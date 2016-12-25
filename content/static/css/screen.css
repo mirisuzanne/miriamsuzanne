@@ -778,6 +778,9 @@ body {
   background-position: center;
   background-size: cover;
   margin-bottom: 1.4rem; }
+  [data-module='blog-post'] .post-image {
+    margin: 0 -1.4rem 1.4rem;
+    width: auto; }
 
 .byline {
   font-size: 0.8rem;

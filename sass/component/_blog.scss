@@ -28,6 +28,11 @@
   background-position: center;
   background-size: cover;
   margin-bottom: size('gutter');
+
+  [data-module='blog-post'] & {
+    margin: 0 negative('gutter') size('gutter');
+    width: auto;
+  }
 }
 
 .byline {
