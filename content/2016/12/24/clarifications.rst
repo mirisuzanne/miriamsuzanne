@@ -273,7 +273,7 @@ on our looks, voices, or movements —
 assuming that's what we mean by *transition*.
 
 There's a **history** to that idea,
-enforced by the medical community since the 60's
+`enforced by the medical community`_ since the 60's
 when hormone replacement therapy
 started to become a medically-accepted treatment.
 Doctors established themselves as gender gatekeepers,
@@ -299,6 +299,8 @@ It's hard to constantly have your gender
 or made the center of conversation.
 Still, "passing"
 is not a goal we otherwise share.
+
+.. _enforced by the medical community: http://www.pqmonthly.com/gatekeeping-the-dark-history-of-trans-health-care/22368
 
 
 Trans "Visibility"
