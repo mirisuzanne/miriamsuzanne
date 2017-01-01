@@ -62,7 +62,7 @@ and without distinction.
    I also identify as an author,
    a web developer,
    bi/pansexual,
-   gender queer,
+   genderqueer,
    and polyamorous.
    **None of this is unique to the trans experience.**
 
@@ -76,9 +76,9 @@ and without distinction.
    but more like the sensation of being
    angry **because you are hungry** —
    a feeling that can be **difficult to pin down**.
-   For some of us it is simply male or female,
+   For some it is simply *male* or *female*,
    and becomes obvious early on —
-   but for many it is more complex,
+   but for most of us it is more complex,
    and takes years to dig through **the rubble
    of** assumptions, fears, and prejudices
    around **our bodies**.
@@ -136,7 +136,8 @@ what we call "biological" **sex**.
 When we're in public
 no one knows what genitals or gonads
 exist *between our legs*,
-but they feel comfortable assigning our **sex** anyway.
+but they feel comfortable assigning our **sex** anyway —
+based on the assumptions *between their own ears*.
 Social gendering relies mainly
 on "secondary **sex** characteristics"
 (especially masculine-associated facial hair etc)
@@ -193,7 +194,7 @@ tracheal shaves,
 and cosmetic interventions.
 
 "After" transition
-which has no solid start or finish,
+(which has no real start or finish)
 we **are the same** person that we were before.
 With or without surgery,
 our genders are just as real.
@@ -205,7 +206,7 @@ is more personal and complex
 than simple **assimilation** into cis society.
 
 In October 2015,
-I decided to start my transition —
+I decided to start a more intentional transition —
 first socially, and then medically.
 I don't believe in a "true" self
 that was hidden before,
@@ -312,7 +313,7 @@ Chaz Bono danced with the stars,
 suddenly **Lavern Cox** is everywhere,
 Caitlin Jenner made transition
 a reality TV experience,
-and now *you're reading mt blog*.
+and now *you're reading my blog*.
 
 New media comes out every year
 highlighting trans characters —
@@ -337,14 +338,16 @@ are limited to rich and beautiful women
 who fit easily into our existing binary categories:
 men and women,
 *just like you*.
-
+Those stories are important,
+but they aren't the whole picture.
 That's not `how we all do trans`_.
+
 Where are the `gender outlaws`_,
 the fluid identities,
 **the femme boys and butch women**
 who have always faced the brunt of harassment?
-Where are the trans people who are complex and proud,
-and happy to mix up our `notions of gender`_?
+Where are the trans people who are complex and confused,
+or happy to mix up our `notions of gender`_?
 When we **argue for** bathroom rights
 based only on **our ability** to conform,
 we're throwing **our own community** under the bus.
@@ -430,10 +433,10 @@ I want to **fight for something** more fluid and open,
 that helps the whole world be more **queer.**
 
 I am a **woman,**
-and I am not just a **woman.**
+and I am not just like all cis **women.**
 I will continue to fight both sides of that argument,
 until all my friends
-have the **right to live our genders and sexualities**
+have the **right to live all our identities**
 in the ways we see fit:
 monogamous or polyamorous;
 straight or bi, pan or gay;
@@ -444,8 +447,10 @@ asexual, intersex, **closeted, and queer.**
 
 We can't keep accepting identities
 one-at-a-time,
-based on our ability to assimilate —
-we have to **rebuild these systems**
-with new, more fluid and queer assumptions.
+based on their ability to assimilate
+with established (straight white cis) norms.
+We have to **rebuild these systems**
+with new,
+more fluid and queer assumptions.
 
 .. _born this way: https://www.newscientist.com/article/mg22730310-100-sexuality-is-fluid-its-time-to-get-past-born-this-way/
