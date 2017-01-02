@@ -8,7 +8,7 @@
     </h2>
   {% endif %}
 
-  {{ pubdate(post) }}
+  {{ byline(post) }}
 
   {%- if post.config.image -%}
     {% set image = post.config.image[0] %}
@@ -26,12 +26,31 @@
 </article>
 {% endmacro %}
 
-{% macro pubdate(post) %}
-{% if post.pub_date %}
-  {% if post.pub_date %}
-  <time datetime="{{ post.pub_date.isoformat() }}" pubdate="pubdate">
-    {{ post.pub_date.strftime("%B %d, %Y") }}
-  </time>
+{% macro byline(post) %}
+<div class="byline">
+  {{ pubdate(post.pub_date) }}
+  {# tags(post.tags) #}
+</div>
+{% endmacro %}
+
+{% macro pubdate(pub_date) %}
+  {% if pub_date %}
+    {% if pub_date %}
+    <time datetime="{{ pub_date.isoformat() }}" pubdate="pubdate">
+      {{ pub_date.strftime("%B %d, %Y") }}
+    </time>
+    {% endif %}
   {% endif %}
-{% endif %}
+{% endmacro %}
+
+{% macro tags(taglist) %}
+  {% if taglist %}
+    in
+    <span class="tags">
+      {% for tag in taglist|sort(case_sensitive=true) %}
+        {%- if not loop.first %}, {% endif -%}
+        <a href="{{ link_to('tag', tag=tag) }}" rel="tag">{{ tag }}</a>
+      {%- endfor %}
+    </span>
+  {% endif %}
 {% endmacro %}

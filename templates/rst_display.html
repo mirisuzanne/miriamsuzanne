@@ -13,13 +13,19 @@
   {%- if not config.hide_title -%}
   <header data-module="page-header" class="rst-header">
     <h1>{{ rst.title }}</h1>
-    {{ blog.pubdate(ctx) }}
+    {{ blog.byline(ctx) }}
   </header>
   {%- endif -%}
 
   {%- if config.image -%}
     {% set image = config.image[0] %}
-    <div class="post-image" style="background-image: url(/static/pictures/{{ image.src }})"; {{ image.styles or '' }}></div>
+    <div class="post-image" style="background-image: url(/static/pictures/{{ image.src }})"; {{ image.styles or '' }}>
+      {% if image.caption %}
+        <div class="hero-caption">
+          <p>{{ image.caption }}</p>
+        </div>
+      {% endif %}
+    </div>
   {%- endif -%}
 
   {%- for module in config.before -%}

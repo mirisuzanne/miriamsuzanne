@@ -782,10 +782,26 @@ body {
     margin: 0 -1.4rem 1.4rem;
     width: auto; }
 
-.byline {
+.hero-caption {
   font-size: 0.8rem;
   line-height: 1.4rem;
-  margin-bottom: 1.4rem; }
+  background: rgba(255, 255, 255, 0.9);
+  bottom: 1px;
+  font-style: italic;
+  position: absolute;
+  width: 100%; }
+  .hero-caption p {
+    margin: 0 auto;
+    max-width: 32rem;
+    padding: 0 0.7rem; }
+
+.byline {
+  font-family: "SourceSansPro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  text-transform: uppercase; }
+  .byline [pubdate] {
+    font-weight: bold; }
 
 [data-module='pagination'] {
   font-style: italic;
@@ -955,6 +971,10 @@ body {
   [data-module='rst'] ul,
   [data-module='rst'] ol {
     margin: 0.7rem 0; }
+  @media (max-width: 40em) {
+    [data-module='rst'] ol,
+    [data-module='rst'] ul {
+      padding-left: 1em; } }
 
 .title {
   font-size: 1.4rem;

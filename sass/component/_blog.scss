@@ -2,7 +2,6 @@
 // ====
 
 [data-module='blog-post'] {
-
   .title {
     margin: 0;
     padding: 0;
@@ -35,9 +34,29 @@
   }
 }
 
-.byline {
+.hero-caption {
   @include font-size('small');
-  margin-bottom: size('gutter');
+  background: color('overlay');
+  bottom: 1px;
+  font-style: italic;
+  position: absolute;
+  width: 100%;
+
+  p {
+    margin: 0 auto;
+    max-width: size('page');
+    padding: 0 size('shim');
+  }
+}
+
+.byline {
+  @include font-family('boilerplate');
+  @include font-size('small');
+  text-transform: uppercase;
+
+  [pubdate] {
+    font-weight: bold;
+  }
 }
 
 [data-module='pagination'] {

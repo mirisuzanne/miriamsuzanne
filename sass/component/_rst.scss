@@ -13,6 +13,13 @@
   ol {
     margin: size('shim') 0;
   }
+
+  @include below('page') {
+    ol,
+    ul {
+      padding-left: 1em;
+    }
+  }
 }
 
 
