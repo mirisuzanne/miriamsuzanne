@@ -26,13 +26,24 @@ for real people around me.
 but 2017 is going to take work,
 and I'm tired.
 
-Over the last few months,
+I've had a good year
+in many ways,
+and so has `the world generally`_.
+Transition has been `scary`_,
+and `confusing`_,
+but also wonderful and rewarding.
+
+.. _the world generally: https://www.washingtonpost.com/opinions/why-2016-was-actually-one-of-the-best-years-on-record/2016/12/30/bc12701e-ce0a-11e6-a87f-b917067331bb_story.html?utm_term=.27a8e97254b7
+.. _scary: /2016/08/17/trans
+.. _confusing: /2016/12/24/clarifications
+
+But over the last few months,
 I've watched my friends
 (and the Internet)
 cycle through denial, anger, depression,
-and a million other emotions —
+and a million other painful emotions —
 often turning on each other
-out of fear and misunderstanding.
+out of fear or misunderstanding.
 I've been through a similar cycle of my own — 
 constantly distracted,
 making phone calls,
