@@ -182,7 +182,7 @@ and human identities.
 Not to be stopped by wishy-washy complacency,
 but to fight for *all the people*,
 no matter how messy that gets.
-We need movements for intersectional empowerment
+We need movements for intersectional empowerment,
 when it would be easier to throw our fringes
 under the bus.
 We need to challenge all our assumptions
@@ -261,16 +261,17 @@ on privilege and oppression
 is not our responsibility as minorities,
 but may be our primary responsibility
 as activists.
+
+.. _kyriarchy: https://en.wikipedia.org/wiki/Kyriarchy
+.. _facts: http://www.vox.com/policy-and-politics/2016/11/16/13426448/trump-psychology-fact-checking-lies
+.. _never bring about: http://www.vox.com/identities/2016/11/15/13595508/racism-trump-research-study
+
 We can acknowledge that
 general education is essential in the abstract,
 but degrees and certifications are often
 an excuse for new hierarchies,
 moral requirements,
 money, power, and exclusion.
-
-.. _kyriarchy: https://en.wikipedia.org/wiki/Kyriarchy
-.. _facts: http://www.vox.com/policy-and-politics/2016/11/16/13426448/trump-psychology-fact-checking-lies
-.. _never bring about: http://www.vox.com/identities/2016/11/15/13595508/racism-trump-research-study
 
 Our bubbles separate us,
 but also keep us safe.
