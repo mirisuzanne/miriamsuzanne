@@ -14,6 +14,10 @@
     margin: size('shim') 0;
   }
 
+  li {
+    margin: size('half-shim') 0;
+  }
+
   @include below('page') {
     ol,
     ul {

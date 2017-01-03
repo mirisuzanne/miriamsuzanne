@@ -767,6 +767,9 @@ body {
   display: block;
   margin: 0.7rem 0; }
 
+[data-module='blog-post'] li {
+  margin: 0.35rem 0; }
+
 [data-module='blog-post'] blockquote p {
   display: inline; }
 
@@ -971,6 +974,8 @@ body {
   [data-module='rst'] ul,
   [data-module='rst'] ol {
     margin: 0.7rem 0; }
+  [data-module='rst'] li {
+    margin: 0.35rem 0; }
   @media (max-width: 40em) {
     [data-module='rst'] ol,
     [data-module='rst'] ul {
