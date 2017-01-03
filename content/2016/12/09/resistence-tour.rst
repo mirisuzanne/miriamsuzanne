@@ -65,7 +65,7 @@ The schedule so far...
   unless you want to `schedule something`_?
 
 - **1/12** in **New York, NY** |br|
-  enjoying the `Gotham Sass`_ meetup
+  speaking at `Gotham Sass`_
 
 - **1/13** in **New York, NY** |br|
   house reading with `The Operating System`_
