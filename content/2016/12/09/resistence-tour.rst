@@ -30,7 +30,10 @@ and perform some mixed-media resistance:
 - hugging people.
 
 I'm not changing the world here,
-`there's more to do`_.
+`there's more to do`_,
+but it feels like a nice way to get started,
+find my energy,
+and find my people.
 
 .. _`Riding SideSaddle*`: http://ridingsidesaddle.com/
 .. _`there's more to do`: /2017/01/01/2017/
