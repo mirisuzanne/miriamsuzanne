@@ -67,9 +67,9 @@ The schedule so far...
 - **1/12** in **New York, NY** |br|
   speaking at `Gotham Sass`_
 
-- **1/13** in **New York, NY** |br|
+- **1/13** in **Brooklyn, NY** |br|
   house reading with `The Operating System`_
-  (details TBA)
+  (7:30pm @ 141 Spencer St #203)
 
 - **1/14** in **Philadelphia, PA** |br|
   enjoying the `Chapterhouse`_ reading
@@ -84,8 +84,8 @@ The schedule so far...
   unless you want to `schedule something`_?
 
 - **1/19** in **Fredrick, MD** |br|
-  house reading with Aaron Angello
-  (details TBA)
+  Small Rain #2 house reading with Aaron Angello
+  (7pm @ 415 Biggs Avenue, First Floor)
 
 - **1/20-21** in **Washington, DC** |br|
   `protest`_ against `bigotry in government`_

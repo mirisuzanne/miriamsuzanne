@@ -5,22 +5,27 @@
 
 future:
 
-  - name: 'Baltimore (reading)'
-    datetime: ['2017', '01', '15']
-    url: '/2016/12/09/resistence-tour/'
+  - name: 'Gotham Sass, NY (speaking)'
+    datetime: ['2017', '01', '12']
+    url: 'https://www.meetup.com/gothamsass/events/235946893/'
     type: 'tour'
 
-  - name: 'in your ear (reading)'
-    datetime: ['2017', '01', '15']
-    url: '/2016/12/09/resistence-tour/'
+  - name: 'The Operating System (reading)'
+    datetime: ['2017', '01', '14']
+    url: 'https://www.facebook.com/events/306828783046470/'
     type: 'tour'
 
-  - name: 'Fredrick MD (reading)'
+  - name: 'in your ear, DC (reading)'
+    datetime: ['2017', '01', '15']
+    url: 'https://www.facebook.com/events/641655696042941/'
+    type: 'tour'
+
+  - name: 'Small Rain #2, MD (reading)'
     datetime: ['2017', '01', '19']
     url: '/2016/12/09/resistence-tour/'
     type: 'tour'
 
-  - name: 'UVA Scholars’ Lab (speaking)'
+  - name: 'UVA Scholars’ Lab, VA (speaking)'
     datetime: ['2017', '01', '23']
     url: '/2016/12/09/resistence-tour/'
     type: 'tour'
