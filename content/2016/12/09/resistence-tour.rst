@@ -64,7 +64,7 @@ The schedule so far...
 - *12 Jan* in **New York, NY** |br|
   enjoying `Gotham Sass`_
 
-- *13 Jan* in **Philladelphia, PA** |br|
+- *13 Jan* in **Philadelphia, PA** |br|
   passing through,
   unless you want to `schedule something`_?
 
