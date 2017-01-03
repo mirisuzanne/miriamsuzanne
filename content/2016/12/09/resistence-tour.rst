@@ -64,9 +64,9 @@ The schedule so far...
 - **1/12** in **New York, NY** |br|
   enjoying the `Gotham Sass`_ meetup
 
-- **1/13** in **Philadelphia, PA** |br|
-  hangin' out,
-  unless you want to `schedule something`_?
+- **1/13** in **New York, NY** |br|
+  house reading with `The Operating System`_
+  (details TBA)
 
 - **1/14** in **Philadelphia, PA** |br|
   enjoying the `Chapterhouse`_ reading
@@ -92,6 +92,7 @@ The schedule so far...
   (details TBA)
 
 .. _`Gotham Sass`: https://www.meetup.com/gothamsass/events/235946893/
+.. _`The Operating System`: http://www.theoperatingsystem.org/
 .. _`Chapterhouse`: http://www.housework-at-chapterhouse.com/readings.html
 .. _`Valerie Hsiung`: https://flowersintheirmouths.com/
 .. _`in your ear`: https://www.facebook.com/events/641655696042941/
