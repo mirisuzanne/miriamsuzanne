@@ -95,7 +95,7 @@ The schedule so far...
   (details TBA)
 
 .. _`Gotham Sass`: https://www.meetup.com/gothamsass/events/235946893/
-.. _`The Operating System`: http://www.theoperatingsystem.org/
+.. _`The Operating System`: https://www.facebook.com/events/306828783046470/
 .. _`Chapterhouse`: http://www.housework-at-chapterhouse.com/readings.html
 .. _`Valerie Hsiung`: https://flowersintheirmouths.com/
 .. _`in your ear`: https://www.facebook.com/events/641655696042941/
