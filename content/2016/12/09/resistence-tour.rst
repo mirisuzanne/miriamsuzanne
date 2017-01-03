@@ -24,7 +24,7 @@ and perform some mixed-media resistance:
 - reading from my queer-as-fuck novel `Riding SideSaddle*`_,
   while being a loud and vocal trans woman.
 - speaking about empathy
-  in art and software.
+  in art and code and software.
 - chatting about queer identities,
   hate, politics, and intersectionality.
 - hugging people.
@@ -57,39 +57,47 @@ Let me know if you're interested in getting together!
 The schedule so far...
 ----------------------
 
-- *10-11 Jan* in **New York, NY** |br|
+- **1/10-11** in **New York, NY** |br|
   hangin' out,
   unless you want to `schedule something`_?
 
-- *12 Jan* in **New York, NY** |br|
-  enjoying `Gotham Sass`_
+- **1/12** in **New York, NY** |br|
+  enjoying the `Gotham Sass`_ meetup
 
-- *13 Jan* in **Philadelphia, PA** |br|
-  passing through,
+- **1/13** in **Philadelphia, PA** |br|
+  hangin' out,
   unless you want to `schedule something`_?
 
-- *15 Jan* in **Washington, DC** |br|
-  reading at `in your ear`_
+- **1/14** in **Philadelphia, PA** |br|
+  enjoying the `Chapterhouse`_ reading
+  by CAConrad and Brian Teare​
+
+- **1/15** in **Washington, DC** |br|
+  reading at `in your ear`_ with `Valerie Hsiung`_
   (3pm @ `DC Arts Center`_)
 
-- *16-17 Jan* in **Baltimore, MD** |br|
+- **1/16-17** in **Baltimore, MD** |br|
   hangin' out,
   unless you want to `schedule something`_?
 
-- *19 Jan* in **Fredrick, MD** |br|
-  house reading and conversation
+- **1/19** in **Fredrick, MD** |br|
+  house reading with Aaron Angello
   (details TBA)
 
-- *20-21 Jan* in **Washington, DC** |br|
-  protest against bigotry in government
+- **1/20-21** in **Washington, DC** |br|
+  `protest`_ against `bigotry in government`_
 
-- *23 Jan* in **Charlottesville, VA** |br|
+- **1/23** in **Charlottesville, VA** |br|
   speaking at `UVA Scholars' Lab`_
   (details TBA)
 
 .. _`Gotham Sass`: https://www.meetup.com/gothamsass/events/235946893/
-.. _`in your ear`: http://www.dcpoetry.com/iye
+.. _`Chapterhouse`: http://www.housework-at-chapterhouse.com/readings.html
+.. _`Valerie Hsiung`: https://flowersintheirmouths.com/
+.. _`in your ear`: https://www.facebook.com/events/641655696042941/
 .. _`DC Arts Center`: http://www.dcartscenter.org
+.. _`protest`: https://www.womensmarch.com/
+.. _`bigotry in government`: /2017/01/01/2017/
 .. _`UVA Scholars' Lab`: http://scholarslab.org/
 .. _`schedule something`: /contact/
 
