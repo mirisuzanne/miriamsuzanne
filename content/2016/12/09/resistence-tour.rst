@@ -60,10 +60,6 @@ Let me know if you're interested in getting together!
 The schedule so far...
 ----------------------
 
-- **1/10-11** in **New York, NY** |br|
-  hangin' out,
-  unless you want to `schedule something`_?
-
 - **1/12** in **New York, NY** |br|
   speaking at `Gotham Sass`_
 
@@ -72,14 +68,15 @@ The schedule so far...
   (7:30pm @ 141 Spencer St #203)
 
 - **1/14** in **Philadelphia, PA** |br|
-  enjoying the `Chapterhouse`_ reading
-  by CAConrad and Brian Teare​
+  maybe listening to
+  CAConrad and Brian Teare​
+  read at `Chapterhouse`_?
 
 - **1/15** in **Washington, DC** |br|
   reading at `in your ear`_ with `Valerie Hsiung`_
   (3pm @ `DC Arts Center`_)
 
-- **1/16-17** in **Baltimore, MD** |br|
+- **1/17** in **Baltimore, MD** |br|
   hangin' out,
   unless you want to `schedule something`_?
 
@@ -87,7 +84,7 @@ The schedule so far...
   Small Rain #2 house reading with Aaron Angello
   (7pm @ 415 Biggs Avenue, First Floor)
 
-- **1/20-21** in **Washington, DC** |br|
+- **1/21** in **Washington, DC** |br|
   `protest`_ against `bigotry in government`_
 
 - **1/23** in **Charlottesville, VA** |br|
@@ -104,6 +101,14 @@ The schedule so far...
 .. _`bigotry in government`: /2017/01/01/2017/
 .. _`UVA Scholars' Lab`: http://scholarslab.org/
 .. _`schedule something`: /contact/
+
+
+|map|
+
+.. |map| raw:: html
+
+  <iframe src="https://www.google.com/maps/d/embed?mid=1G8gfEcW3AmckOB5eelZnG2k5ZLE" height="480" style="width: 100%;"></iframe>
+
 
 Any profits will go to
 `one of these rad organizations`_
