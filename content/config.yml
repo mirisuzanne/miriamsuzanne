@@ -11,7 +11,7 @@ future:
     type: 'tour'
 
   - name: 'The Operating System (reading)'
-    datetime: ['2017', '01', '14']
+    datetime: ['2017', '01', '13']
     url: 'https://www.facebook.com/events/306828783046470/'
     type: 'tour'
 
