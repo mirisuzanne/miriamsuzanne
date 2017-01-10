@@ -39,57 +39,44 @@ and find my people.
 .. _`there's more to do`: /2017/01/01/2017/
 
 
-I'll come to you!
------------------
-
-I'm still looking for people and places
-to read, meetup, and chat —
-from Virginia up to New York City.
-I have a few events lined up,
-but I'm also happy to sit in a living room,
-and enjoy the company of anyone there.
-Let me know if you're interested in getting together!
-
-|contact|
-
-.. |contact| raw:: html
-
-  <a href="/contact/" class="btn">Let me know </a>
-
-
 The schedule so far...
 ----------------------
 
-- **1/12** in **New York, NY** |br|
-  speaking at `Gotham Sass`_
+- **1/12** in **New York, NY** (talk) |br|
+  "Code Patterns for Pattern Making" at `Gotham Sass`_ |br|
+  7pm @ 127 West 26th Street, 2nd floor (Signpost)
 
-- **1/13** in **Brooklyn, NY** |br|
-  house reading with `The Operating System`_
-  (7:30pm @ 141 Spencer St #203)
+- **1/13** in **Brooklyn, NY** (reading) |br|
+  `The Operating System`_ |br|
+  7:30pm @ 141 Spencer St #203
 
-- **1/14** in **Philadelphia, PA** |br|
-  maybe listening to
-  CAConrad and Brian Teare​
-  read at `Chapterhouse`_?
+- **1/14** in **Philadelphia, PA** (passing through) |br|
+  Maybe listening to CAConrad and Brian Teare​
+  read at `Chapterhouse`_...?
 
-- **1/15** in **Washington, DC** |br|
-  reading at `in your ear`_ with `Valerie Hsiung`_
-  (3pm @ `DC Arts Center`_)
+- **1/15** in **Washington, DC** (reading) |br|
+  `in your ear`_ with `Valerie Hsiung`_ |br|
+  3pm @ `DC Arts Center`_
 
-- **1/17** in **Baltimore, MD** |br|
-  hangin' out,
-  unless you want to `schedule something`_?
+- **1/17** in **Baltimore, MD** (hangin') |br|
+  Hit me up, yeah?
 
-- **1/19** in **Fredrick, MD** |br|
-  Small Rain #2 house reading with Aaron Angello
-  (7pm @ 415 Biggs Avenue, First Floor)
+- **1/18** in **Silver Spring, MD** (reading) |br|
+  At a house, somewhere.
 
-- **1/21** in **Washington, DC** |br|
-  `protest`_ against `bigotry in government`_
+- **1/19** in **Fredrick, MD** (reading) |br|
+  Small Rain #2 with Aaron Angello |br|
+  7pm @ 415 Biggs Avenue, First Floor
 
-- **1/23** in **Charlottesville, VA** |br|
-  speaking at `UVA Scholars' Lab`_
-  (details TBA)
+- **1/20** in **Washington, DC** (avoidance) |br|
+  Don't get out of bed. Don't turn on a TV.
+
+- **1/21** in **Washington, DC** (protest) |br|
+  `Protest`_ against `bigotry in government`_.
+
+- **1/23** in **Charlottesville, VA** (talk) |br|
+  "A Practical Guide to Losing Control" at `UVA Scholars' Lab`_ |br|
+  Details TBA
 
 .. _`Gotham Sass`: https://www.meetup.com/gothamsass/events/235946893/
 .. _`The Operating System`: https://www.facebook.com/events/306828783046470/
@@ -97,10 +84,9 @@ The schedule so far...
 .. _`Valerie Hsiung`: https://flowersintheirmouths.com/
 .. _`in your ear`: https://www.facebook.com/events/641655696042941/
 .. _`DC Arts Center`: http://www.dcartscenter.org
-.. _`protest`: https://www.womensmarch.com/
+.. _`Protest`: https://www.womensmarch.com/
 .. _`bigotry in government`: /2017/01/01/2017/
 .. _`UVA Scholars' Lab`: http://scholarslab.org/
-.. _`schedule something`: /contact/
 
 
 |map|
