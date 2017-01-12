@@ -50,13 +50,13 @@ The schedule so far...
   `The Operating System`_ |br|
   7:30pm @ 141 Spencer St #203
 
-- **1/14** in **Philadelphia, PA** (passing through) |br|
-  Maybe listening to CAConrad and Brian Teare​
-  read at `Chapterhouse`_...?
-
 - **1/15** in **Washington, DC** (reading) |br|
   `in your ear`_ with `Valerie Hsiung`_ |br|
   3pm @ `DC Arts Center`_
+
+- **1/16** in **Philadelphia, PA** (reading) |br|
+  `Wooden Shoe Books`_ details TBA |br|
+  7pm @ 704 South Street
 
 - **1/17** in **Baltimore, MD** (hangin') |br|
   Hit me up, yeah?
@@ -80,7 +80,7 @@ The schedule so far...
 
 .. _`Gotham Sass`: https://www.meetup.com/gothamsass/events/235946893/
 .. _`The Operating System`: https://www.facebook.com/events/306828783046470/
-.. _`Chapterhouse`: http://www.housework-at-chapterhouse.com/readings.html
+.. _`Wooden Shoe Books`: http://woodenshoebooks.com/home.html
 .. _`Valerie Hsiung`: https://flowersintheirmouths.com/
 .. _`in your ear`: https://www.facebook.com/events/641655696042941/
 .. _`DC Arts Center`: http://www.dcartscenter.org

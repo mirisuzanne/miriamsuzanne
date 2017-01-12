@@ -10,7 +10,7 @@ future:
     url: 'https://www.meetup.com/gothamsass/events/235946893/'
     type: 'tour'
 
-  - name: 'The Operating System (reading)'
+  - name: 'The Operating System, NY (reading)'
     datetime: ['2017', '01', '13']
     url: 'https://www.facebook.com/events/306828783046470/'
     type: 'tour'
@@ -18,6 +18,11 @@ future:
   - name: 'in your ear, DC (reading)'
     datetime: ['2017', '01', '15']
     url: 'https://www.facebook.com/events/641655696042941/'
+    type: 'tour'
+
+  - name: 'Wooden Shoe Books, PA (reading)'
+    datetime: ['2017', '01', '16']
+    url: '/2016/12/09/resistence-tour/'
     type: 'tour'
 
   - name: 'Small Rain #2, MD (reading)'
