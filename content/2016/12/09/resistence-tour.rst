@@ -78,6 +78,10 @@ The schedule so far...
   "A Practical Guide to Losing Control" at `UVA Scholars' Lab`_ |br|
   Details TBA
 
+- **1/23** in **Charlottesville, VA** (reading) |br|
+  `Open Grounds`_ |br|
+  Details TBA
+
 .. _`Gotham Sass`: https://www.meetup.com/gothamsass/events/235946893/
 .. _`The Operating System`: https://www.facebook.com/events/306828783046470/
 .. _`Wooden Shoe Books`: http://woodenshoebooks.com/home.html
@@ -87,6 +91,7 @@ The schedule so far...
 .. _`Protest`: https://www.womensmarch.com/
 .. _`bigotry in government`: /2017/01/01/2017/
 .. _`UVA Scholars' Lab`: http://scholarslab.org/
+.. _Open Grounds: http://opengrounds.virginia.edu/
 
 
 |map|

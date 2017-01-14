@@ -5,43 +5,57 @@
 
 future:
 
-  - name: 'Gotham Sass, NY (speaking)'
+  - name: 'Gotham Sass, NY'
     datetime: ['2017', '01', '12']
     url: 'https://www.meetup.com/gothamsass/events/235946893/'
-    type: 'tour'
+    type: 'talk'
 
-  - name: 'The Operating System, NY (reading)'
+  - name: 'The Operating System, NY'
     datetime: ['2017', '01', '13']
     url: 'https://www.facebook.com/events/306828783046470/'
-    type: 'tour'
+    type: 'reading'
 
-  - name: 'in your ear, DC (reading)'
+  - name: 'in your ear, DC'
     datetime: ['2017', '01', '15']
     url: 'https://www.facebook.com/events/641655696042941/'
-    type: 'tour'
+    type: 'reading'
 
-  - name: 'Wooden Shoe Books, PA (reading)'
+  - name: 'Wooden Shoe Books, PA'
     datetime: ['2017', '01', '16']
     url: '/2016/12/09/resistence-tour/'
-    type: 'tour'
+    type: 'reading'
 
-  - name: 'Small Rain #2, MD (reading)'
+  - name: 'Silver Spring, MD'
+    datetime: ['2017', '01', '18']
+    url: '/2016/12/09/resistence-tour/'
+    type: 'reading'
+
+  - name: 'Small Rain #2, MD'
     datetime: ['2017', '01', '19']
     url: '/2016/12/09/resistence-tour/'
-    type: 'tour'
+    type: 'reading'
 
-  - name: 'UVA Scholars’ Lab, VA (speaking)'
+  - name: 'UVA Scholars’ Lab, VA'
     datetime: ['2017', '01', '23']
     url: '/2016/12/09/resistence-tour/'
-    type: 'tour'
+    type: 'talk'
+
+  - name: 'Open Grounds, VA'
+    datetime: ['2017', '01', '23']
+    url: 'http://opengrounds.virginia.edu/'
+    type: 'reading'
 
 
 summary_types:
-  - tour:
-      title: 'resistance tour'
+  - reading:
+      title: 'resistance readings'
       action: 'find out more'
       url: '/2016/12/09/resistence-tour/'
-    performance:
+    talk:
+      title: 'resistance talks'
+      action: 'find out more'
+      url: '/2016/12/09/resistence-tour/'
+    music:
       title: 'teacup gorilla'
       action: 'more music'
       url: 'http://teacupgorilla.com/'
