@@ -4,57 +4,25 @@
 # --------------
 
 future:
+  - name: 'Electric LoveGods @ Lost Lake'
+    datetime: ['2017', '03', '05']
+    url: 'https://www.facebook.com/events/1844150019135038/'
+    type: 'music'
 
-  - name: 'Gotham Sass, NY'
-    datetime: ['2017', '01', '12']
-    url: 'https://www.meetup.com/gothamsass/events/235946893/'
-    type: 'talk'
-
-  - name: 'The Operating System, NY'
-    datetime: ['2017', '01', '13']
-    url: 'https://www.facebook.com/events/306828783046470/'
-    type: 'reading'
-
-  - name: 'in your ear, DC'
-    datetime: ['2017', '01', '15']
-    url: 'https://www.facebook.com/events/641655696042941/'
-    type: 'reading'
-
-  - name: 'Wooden Shoe Books, PA'
-    datetime: ['2017', '01', '16']
-    url: '/2016/12/09/resistence-tour/'
-    type: 'reading'
-
-  - name: 'Silver Spring, MD'
-    datetime: ['2017', '01', '18']
-    url: '/2016/12/09/resistence-tour/'
-    type: 'reading'
-
-  - name: 'Small Rain #2, MD'
-    datetime: ['2017', '01', '19']
-    url: '/2016/12/09/resistence-tour/'
-    type: 'reading'
-
-  - name: 'UVA Scholars’ Lab, VA'
-    datetime: ['2017', '01', '23']
-    url: '/2016/12/09/resistence-tour/'
-    type: 'talk'
-
-  - name: 'Open Grounds, VA'
-    datetime: ['2017', '01', '23']
-    url: 'http://opengrounds.virginia.edu/'
+  - name: 'A Leon Affair'
+    datetime: ['2017', '03', '18']
     type: 'reading'
 
 
 summary_types:
   - reading:
-      title: 'resistance readings'
-      action: 'find out more'
-      url: '/2016/12/09/resistence-tour/'
+      title: 'readings'
+      action: 'buy the novel'
+      url: 'http://ridingsidesaddle.com'
     talk:
-      title: 'resistance talks'
-      action: 'find out more'
-      url: '/2016/12/09/resistence-tour/'
+      title: 'code talks'
+      action: 'invite me to speak'
+      url: '/contact/'
     music:
       title: 'teacup gorilla'
       action: 'more music'
@@ -199,6 +167,59 @@ features:
 # -------
 
 past:
+  ### 2017 -------------------------------------
+
+  - name: 'A Practical Guide to Losing Control'
+    url: 'http://cal.lib.virginia.edu/event/3088981'
+    type: ['speaking']
+    datetime: ['2017', '01', '23']
+    summary: 'a talk about letting go in art and software'
+    role: 'speaker'
+    venue:
+      - name: 'UVA Scholars’ Lab'
+
+  - name: 'Some Kind of Resistance'
+    url: '/2016/12/09/resistence-tour/'
+    type: ['speaking', 'performance']
+    summary: 'a reading/speaking inauguration-protest tour'
+    role: 'speaker & poet'
+    venue:
+      - name: 'Gotham Sass, NY'
+        datetime: ['2017', '01', '12']
+        url: 'https://www.meetup.com/gothamsass/events/235946893/'
+      - name: 'The Operating System, NY'
+        datetime: ['2017', '01', '13']
+        url: 'https://www.facebook.com/events/306828783046470/'
+      - name: 'in your ear, DC'
+        datetime: ['2017', '01', '15']
+        url: 'https://www.facebook.com/events/641655696042941/'
+      - name: 'Wooden Shoe Books, PA'
+        datetime: ['2017', '01', '16']
+        url: 'http://woodenshoebooks.com/'
+      - name: 'Silver Spring, MD'
+        datetime: ['2017', '01', '18']
+      - name: 'Small Rain #2, MD'
+        datetime: ['2017', '01', '19']
+      - name: 'Women’s March on Washington, DC'
+        datetime: ['2017', '01', '21']
+      - name: 'UVA Scholars’ Lab, VA'
+        datetime: ['2017', '01', '23']
+        url: 'http://cal.lib.virginia.edu/event/3088981'
+      - name: 'Open Grounds, VA'
+        datetime: ['2017', '01', '23']
+        url: 'http://opengrounds.virginia.edu/'
+
+  - name: 'Denver Quarterly'
+    url: 'http://www.du.edu/denverquarterly/'
+    datetime: ['2017', '01', '10']
+    type: ['publication']
+    summary: 'side-by-side excerpts from Riding SideSaddle and 10 Myths...'
+    role: 'author'
+    with:
+      - name: 'Buntport Theater'
+        url: 'http://buntport.com'
+
+
   ### 2016 -------------------------------------
 
   - name: 'Code Patterns for Pattern-Making'
@@ -1184,7 +1205,14 @@ past:
 
 # Interviews
 interviews:
-  - name: 'CSS Tricks: An Interview with Miriam Suzanne'
+  - name: 'Transitions'
+    url: 'https://vimeo.com/198228746'
+    datetime: ['2017', '01', '19']
+    org:
+      name: 'America Heard'
+      url: 'https://americaheard.com/'
+
+  - name: 'An Interview with Miriam Suzanne'
     url: 'https://css-tricks.com/interview-miriam-suzanne/'
     datetime: ['2016', '10', '15']
     org:

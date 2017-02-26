@@ -47,17 +47,20 @@ blockquote {
   margin: size('gutter') 0;
 
   p {
-    @include wrap-content;
-    display: inline;
-    text-indent: -0.4em;
+    &:not(.attribution) {
+      @include wrap-content;
+      display: inline;
+      text-indent: -0.4em;
 
-    @include above('page') {
-      @include h3;
-      background: linear-gradient(to top, color('callout') 50%, transparent 50%) no-repeat scroll;
+      @include above('page') {
+        @include h3;
+        background: linear-gradient(to top, color('callout') 50%, transparent 50%) no-repeat scroll;
+      }
     }
   }
 
-  cite {
+  cite,
+  .attribution {
     @include font-family('boilerplate');
     @include font-size('small');
     display: inline-block;

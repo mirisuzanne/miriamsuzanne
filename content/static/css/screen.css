@@ -255,24 +255,68 @@ button {
 blockquote {
   font-style: italic;
   margin: 1.4rem 0; }
-  blockquote p {
+  blockquote p:not(.attribution) {
     display: inline;
     text-indent: -0.4em; }
-    blockquote p:before, blockquote p:after {
+    blockquote p:not(.attribution):before, blockquote p:not(.attribution):after {
       content: "“"; }
-    blockquote p:after {
+    blockquote p:not(.attribution):after {
       content: "”"; }
     @media (min-width: 40em) {
-      blockquote p {
+      blockquote p:not(.attribution) {
         font-size: calc(1rem + 0.5vw);
         background: linear-gradient(to top, #e6f4f8 50%, transparent 50%) no-repeat scroll; } }
-  blockquote cite {
+  blockquote cite,
+  blockquote .attribution {
     font-family: "SourceSansPro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.8rem;
     line-height: 1.4rem;
     display: inline-block;
     font-style: normal;
     text-indent: 0; }
+
+.hero {
+  max-height: 85vh;
+  overflow: hidden;
+  position: relative; }
+  .hero:after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-shadow: 0 0 0.7rem #111 inset;
+    pointer-events: none; }
+  .hero + [data-module='page-header'] {
+    background-image: linear-gradient(40deg, #fff 85%, transparent 85%);
+    margin-bottom: 1.4rem;
+    margin-top: -2.8rem;
+    padding-right: 10%;
+    padding-top: 0.7rem;
+    position: relative;
+    z-index: 1; }
+    .hero + [data-module='page-header']:before {
+      content: "";
+      background: #fff;
+      bottom: 0;
+      display: block;
+      position: absolute;
+      right: 100%;
+      top: 0;
+      width: calc((100vw - 32rem) / 2); }
+
+.hero-image {
+  width: 100%; }
+
+.hero-caption {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  background: rgba(255, 255, 255, 0.9);
+  font-style: italic;
+  padding: 0.35rem 0.7rem;
+  position: absolute;
+  top: 1px; }
 
 ::-webkit-input-placeholder {
   font-style: italic; }
@@ -781,22 +825,6 @@ body {
   background-position: center;
   background-size: cover;
   margin-bottom: 1.4rem; }
-  [data-module='blog-post'] .post-image {
-    margin: 0 -1.4rem 1.4rem;
-    width: auto; }
-
-.hero-caption {
-  font-size: 0.8rem;
-  line-height: 1.4rem;
-  background: rgba(255, 255, 255, 0.9);
-  bottom: 1px;
-  font-style: italic;
-  position: absolute;
-  width: 100%; }
-  .hero-caption p {
-    margin: 0 auto;
-    max-width: 32rem;
-    padding: 0 0.7rem; }
 
 .byline {
   font-family: "SourceSansPro", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -854,6 +882,9 @@ body {
 
 .h-event {
   margin: 2.8rem 0; }
+
+.description {
+  font-style: italic; }
 
 @media (min-width: 40em) {
   [data-module='summary'] {
@@ -940,13 +971,32 @@ body {
       justify-content: center;
       margin-right: -15vmin; } }
 
+@keyframes draw-logo {
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes fill-logo {
+  from {
+    fill-opacity: 0; }
+  to {
+    fill-opacity: 1; } }
+
+@keyframes fade-logo-outline {
+  to {
+    stroke-width: 0; } }
+
 .intro-image {
   height: 55vmin;
   width: 55vmin;
+  animation: draw-logo 4s 1 ease-out both, fill-logo 4s 3s 1 ease-in-out both, fade-logo-outline 3s 3s 1 ease-in-out both;
   display: block;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  margin: 0 auto 0.7rem; }
+  margin: 0 auto 0.7rem;
+  stroke: #c30062;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  stroke-width: 1; }
   @media (min-width: 30em) {
     .intro-image {
       margin: 0;

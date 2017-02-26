@@ -2,7 +2,9 @@
 {% import "events/macros.j2" as events %}
 
 <section data-module="press">
-  <h1>Press Coverage</h1>
+  {% if not module.hide_title %}
+    <h1>Press Coverage</h1>
+  {% endif %}
 
   {% for event in (config.future + config.past)|selectattr('press') %}
     {% if event.press|map(attribute='quote')|join('') != '' %}

@@ -31,26 +31,6 @@
   background-position: center;
   background-size: cover;
   margin-bottom: size('gutter');
-
-  [data-module='blog-post'] & {
-    margin: 0 negative('gutter') size('gutter');
-    width: auto;
-  }
-}
-
-.hero-caption {
-  @include font-size('small');
-  background: color('overlay');
-  bottom: 1px;
-  font-style: italic;
-  position: absolute;
-  width: 100%;
-
-  p {
-    margin: 0 auto;
-    max-width: size('page');
-    padding: 0 size('shim');
-  }
 }
 
 .byline {

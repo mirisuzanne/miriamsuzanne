@@ -1,5 +1,6 @@
 public: yes
 slug: 'wieleba'
+tags: ['elsewhere']
 image:
   - src: '2016/wieleba.png'
 summary: |
