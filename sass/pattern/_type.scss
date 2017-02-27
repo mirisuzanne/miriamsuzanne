@@ -68,3 +68,14 @@ blockquote {
     text-indent: 0;
   }
 }
+
+hr {
+  @include before('❦ & & & ❦') {
+    color: color('border');
+    display: block;
+    font-style: italic;
+    margin: size('gutter') auto;
+    text-align: center;
+  }
+}
+

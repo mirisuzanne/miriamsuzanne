@@ -1,6 +1,6 @@
 public: yes
 slug: 'clarifications'
-tags: ['trans', 'politics']
+tags: ['gender', 'politics', 'trans']
 erasure: yes
 image:
   - src: '2016/clarifications.jpg'

@@ -275,6 +275,14 @@ blockquote {
     font-style: normal;
     text-indent: 0; }
 
+hr:before {
+  content: "❦ & & & ❦";
+  color: #c30062;
+  display: block;
+  font-style: italic;
+  margin: 1.4rem auto;
+  text-align: center; }
+
 .hero {
   max-height: 85vh;
   overflow: hidden;

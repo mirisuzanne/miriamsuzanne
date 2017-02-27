@@ -1,6 +1,6 @@
 public: yes
 slug: 'america-heard'
-tags: ['interview']
+tags: ['interview', 'gender', 'politics', 'trans']
 image:
   - src: '2017/america-heard.jpg'
 summary: |

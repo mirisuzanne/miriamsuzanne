@@ -1,5 +1,6 @@
 public: yes
 erasure: yes
+tags: ['gender', 'personal', 'trans']
 slug: 'trans'
 image:
   - src: '2016/mia-wtf.jpg'
