@@ -98,7 +98,7 @@ Trans and Genderqueer Writers Conference.
 Rose asks me, *what pronouns do you use at home*?
 That's not the question she meant to ask,
 and not the question I wish I was answering.
-Neither of us corrects our mistake.
+Neither of us correct our mistake.
 
 Erin asks me point-blank,
 but I don't know the answer.
@@ -137,7 +137,7 @@ until it goes away.
 
 ---------
 
-I call myself trans for the first time
+I first call myself trans
 while speaking to 60-some relatives at a family reunion.
 Sometimes I do things the hard way.
 Everyone is supportive,
@@ -146,7 +146,7 @@ and it feels like nothing will ever change.
 
 Grandma asks if I'm planning to transition medically,
 and I say no.
-I was wrong.
+I'm wrong.
 
 ---------
 
@@ -171,9 +171,9 @@ and not at all.
 I lose two shoe sizes,
 and twenty-two pounds.
 I can't lift my bass amp,
-and rarely get turned on,
+and rarely get turned on —
 but when I do it's electric.
-The world is several degrees colder —
+The world is several degrees colder,
 to make up for global warming, I suppose.
 Emotions live in my body, taking root.
 I'm all nerve endings,
@@ -246,7 +246,6 @@ changes in body fat,
 and thinning body hair.
 Don't expect changes in voice
 or facial hair.
-
 The form is full of typos,
 but I sign it anyway.
 Later that day,
@@ -300,7 +299,6 @@ it can be hard to shake off.
 I'm terrified that all I want is
 the mythical teenage sleepover,
 and I'm too late for that.
-
 The Internet is all tweens and early teens,
 afraid they are too old for hormones.
 I read all the wrong things,
@@ -315,8 +313,8 @@ I told myself a beard would allow me to be more queer.
 I used my beard as a beard,
 in the way gay boys and lesbians team up
 to throw you off the scent.
-I told myself, if you don't try
-you can't fail.
+I told myself
+*if you don't try you can't fail*.
 If I have a beard,
 no one will think I'm trans.
 I was right.
@@ -405,7 +403,7 @@ I don't know how many trans people I know.
 After transition, many fade from view.
 Cis-assumption helps us blend in,
 for our own safety.
-Other's haven't come out yet.
+Others haven't come out yet.
 
 Visibility is dangerous,
 but without it we're monsters under the bed.
@@ -422,15 +420,15 @@ I can be seen and not seen,
 gendered and misgendered.
 Ungendered, and undressed.
 
-I start using the women's restroom,
+I start using the women's restroom
 when others start seeing a woman —
 not 100%,
 but enough to feel un/safe.
+
 Suddenly the men's room feels impossible.
 I'm terrified,
 but I'm waiting for the FF2 from Boulder,
 and can't hold it any longer.
-
 It's been a year now,
 without incident.
 
@@ -447,8 +445,8 @@ only ever hear the half story
 intentionally directed their way.
 As though we're not all taught
 to hate women equally.
-As though I can't see past your mistake
-in gendering me male,
+As though I can't see past the mistake
+when I'm assigned male,
 and build my own feminine shame
 outside your view.
 As though I could survive 33 years
@@ -457,7 +455,7 @@ without learning to cower.
 ---------
 
 A friend asks if I like to dress femme
-in the bedroom
+in the bedroom,
 or roleplay with crossed genders.
 I don't think my pain is that sexy.
 
@@ -523,7 +521,7 @@ Living as a boy,
 pink became a symbol of something
 I could never fully articulate.
 Pink was a personal rebellion —
-pain played off as politics.
+pain played-off as politics.
 
 But pink is only subversive for men.
 In the end,
@@ -542,20 +540,22 @@ If you are wondering,
 the answer is almost certainly
 *yes love,
 and you are beautiful*.
-
 No two stories are the same,
 but what we have in common
 is that pain,
 and that wondering.
+You aren't stuck forever.
+You have options.
 
 ---------
 
-In my dreams, I'm transgender.
-In the mirror, I'm uncertain.
-In public, I'm a woman.
+- In my dreams, I'm transgender.
+- In the mirror, I'm uncertain.
+- In public, I'm a woman.
 
-Being trans isn't about knowing your gender,
-or even seeing it.
+Being trans isn't about knowing
+anything for certain,
+or even seeing it when others do.
 I transitioned on faith —
 my intuition jumping out ahead of my identity.
 I'm still surprised when I look in the mirror,
@@ -600,21 +600,22 @@ and woke up in a panic.
 I change my last name to Suzanne
 to avoid identity confusion in my career.
 I pick Suzanne from a list of family names
-my parents kindly send me.
+my parents kindly send over.
 I'm half-aware at the time
 that I should be changing my given name instead.
 I move un-specified "M" to the middle,
 with a sense that I might need it later.
 
-Given different genital circumstances at birth,
-I would have been Miriam Suzanne Meyer,
+Given different genital circumstances,
+I would have been Miriam Suzanne Meyer at birth,
 or Mary Sue,
-or some variant.
+or another variant.
 After three years,
 I change my first name to Miriam,
-and move Eric to the middle,
+and move Eric to the middle —
 for a sense of gender-queering history
 that I can drop to an initial at any time.
+
 The man at TSA looks confused.
 *Is that supposed to say Erica?*
 
@@ -641,12 +642,14 @@ Knowing in my mind
 and knowing in my body
 are different things.
 Eventually I'm able to relax
-and just be myself.
+and be myself.
+It's a new feeling.
 
 ---------
 
-My ex said she wouldn't be happy
-until I was *dead, gay, or castrated*.
+An ex said
+she won't be happy
+until I'm *dead, gay, or castrated*.
 I'm going for the hat trick.
 
 ---------
@@ -666,7 +669,7 @@ now only blends me in.
 A few months on hormones,
 and flying becomes surreal.
 The woman checking ID says
-*I guess you'll want to get that changed,*
+*I guess you'll want to get that changed*
 as she hands back my license.
 Another woman beckons me through the scanner,
 and presses the pink button as I enter —
@@ -674,20 +677,19 @@ then pulls me aside
 when the machine highlights
 my gender-failing crotch.
 
-—*I'm sorry ma'am, you triggered an alarm.
+— *I'm sorry ma'am, you triggered an alarm.
 I mean, excuse me,
 we don't say alarm now,
-we say anomaly.*
-—*Yeah. I'm trans.*
--*I know, ma'am.
+we say anomaly.* |br|
+— *Yeah. I'm trans.* |br|
+— *I know, ma'am.
 Is it ok if I pat you down?*
 
 I buy PreCheck to avoid the scanners.
 Later I learn that a good tuck —
 or six more months blocking testosterone —
-is enough to pass that test.
+is enough to pass their gender test.
 Press that pink button all you want.
-
 I guess this is what it means to be a woman?
 
 ---------
@@ -701,15 +703,12 @@ for the right to exist.
 Transition is not a binary.
 We all exist on a spectrum,
 stretching out in many dimensions.
-
 My transition will never be complete,
 and my gender will never be simple or static.
 *Woman* is only one label among many.
 None are perfect on their own,
-but we live in the intersections.
-We contain multitudes.
-
----------
+but we all live at intersections.
+We all contain multitudes.
 
 I don't believe in authenticity,
 but I do believe in pain,
