@@ -470,6 +470,8 @@ I think I need to transition.
 I watch `a video of Kate Bornstein`_,
 and think
 *finally, yes*.
+Nothing she says,
+just her existance is enough.
 Natalie says
 *Women can be anything.
 Transition first, then explore*.
