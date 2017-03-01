@@ -351,7 +351,8 @@ I've been fortunate
 to have the partners I have.
 None of us knew
 if our relationships would survive this transition,
-but I don't know how I would have survived
+but both are queer as fuck,
+and I don't know how I would have survived
 without them.
 
 Thank you Rachel.
@@ -601,7 +602,7 @@ to avoid identity confusion in my career.
 I pick Suzanne from a list of family names
 my parents kindly send me.
 I'm half-aware at the time
-that I should be changing my first name instead.
+that I should be changing my given name instead.
 I move un-specified "M" to the middle,
 with a sense that I might need it later.
 
@@ -631,6 +632,16 @@ and I want to vomit.
 
 Hanson is on the radio.
 Why is Hanson on the radio?
+
+I know that
+woman is not an action,
+but a description —
+what I am, not what I do.
+Knowing in my mind
+and knowing in my body
+are different things.
+Eventually I'm able to relax
+and just be myself.
 
 ---------
 
