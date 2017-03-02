@@ -256,10 +256,10 @@ I take my first hormone pills.
 Everyone asks me if I'll keep dating women.
 *The better question*,
 I say,
-*will women will keep dating me*?
+*will women keep dating me*?
 I wonder which part of transition
 should change who I find attractive.
-The name change,
+The name and pronoun,
 or hormones,
 or a possible surgery down the road?
 This all sounds absurd.
@@ -267,9 +267,10 @@ I was bi before,
 I'm bi now,
 and I expect to be bi for a very long time.
 
-Others do find that transition
+Some do find that transition
 allows them more comfort
-in dating different genders than before.
+in dating or noticing
+different genders than before.
 Sometimes sexuality is just about
 feeling comfortable and paying attention.
 Nothing is set in stone.
