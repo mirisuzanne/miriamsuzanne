@@ -6,5 +6,5 @@ after:
   - include: 'modules/_features.html.j2'
 
 
-Home
-====
+Hello, Lovely
+=============

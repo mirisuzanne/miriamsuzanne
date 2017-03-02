@@ -141,7 +141,7 @@ I first call myself trans
 while speaking to 60-some relatives at a family reunion.
 Sometimes I do things the hard way.
 Everyone is supportive,
-but no one noticed their pronouns,
+but no one notices their pronouns,
 and it feels like nothing will ever change.
 
 Grandma asks if I'm planning to transition medically,
@@ -320,7 +320,7 @@ no one will think I'm trans.
 I was right.
 My own fear and self-hatred
 became my strongest defense.
-I told myself it's only a body.
+I told myself *it's only a body*.
 I told myself nothing fit right.
 
 ---------
