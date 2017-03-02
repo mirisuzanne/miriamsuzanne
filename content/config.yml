@@ -1444,7 +1444,7 @@ copyright:
 
 # settings
 active_modules: [pygments, tags, blog, typogrify, uniqify, urls, pages]
-canonical_url: http://miriamsuzanne.com/
+canonical_url: http://www.miriamsuzanne.com/
 output_folder: ../gh-pages
 template_path: ../templates
 modules:
