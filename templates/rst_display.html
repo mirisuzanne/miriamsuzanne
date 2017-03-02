@@ -4,6 +4,7 @@
 
 {% block title %}{{ rst.title }}{% endblock %}
 {% block location %}{% if ctx.pub_date %}blog{% else %}{{ super() }}{% endif %}{% endblock %}
+{% block description %}{{ ctx.render_summary()|striptags or super() }}{% endblock %}
 
 {% block og_url %}{{ get_full_canonical_url(ctx.builder, slug=ctx.slug) }}{% endblock %}
 {% block og_description %}{{ ctx.render_summary()|striptags or super() }}{% endblock %}

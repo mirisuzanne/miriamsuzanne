@@ -26,8 +26,8 @@
   <meta property="og:type" content="{% block og_type %}website{% endblock %}" />
   <meta property="og:image" content="{{ image }}" />
   <meta property="og:url" content="{% block og_url %}{{ config.canonical_url }}{% endblock og_url %}" />
-  <meta property="og:description" content="{% block og_description %}The art and code and writing of Miriam Suzanne.{% endblock %}" />
-  <meta name="twitter:card" content="{% block twitter_type %}summary_large_image{% endblock %}">
+  <meta property="og:description" content="{% block og_description %}{{ config.description }}{% endblock %}" />
+  <meta name="twitter:card" content="{% block twitter_type %}summary{% endblock %}">
   <meta name="twitter:site" content="@mirisuzanne">
   <meta name="twitter:creator" content="@mirisuzanne">
   {% block extra_og %}{% endblock %}
