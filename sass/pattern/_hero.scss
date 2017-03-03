@@ -39,10 +39,11 @@
 
 .hero-caption {
   @include font-size('small');
-  background: color('overlay');
+  background-image: linear-gradient(40deg, color('background') 80%, transparent 80%);
+  bottom: size('gutter') * 2;
   font-style: italic;
-  padding: size('half-shim') size('shim');
+  padding: size('half-shim') size('gutter') * 2 0 size('shim');
   position: absolute;
-  top: 1px;
+  z-index: 2;
 }
 

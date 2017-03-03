@@ -9,7 +9,7 @@
   <main data-region="main">
     {% block body %}{% endblock %}
 
-    {% if not config.location == 'home' %}
+    {% if config.location != 'home' %}
       {% include "modules/_novel.html.j2" %}
     {% endif %}
   </main>

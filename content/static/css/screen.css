@@ -320,11 +320,12 @@ hr:before {
 .hero-caption {
   font-size: 0.8rem;
   line-height: 1.4rem;
-  background: rgba(255, 255, 255, 0.9);
+  background-image: linear-gradient(40deg, #fff 80%, transparent 80%);
+  bottom: 2.8rem;
   font-style: italic;
-  padding: 0.35rem 0.7rem;
+  padding: 0.35rem 2.8rem 0 0.7rem;
   position: absolute;
-  top: 1px; }
+  z-index: 2; }
 
 ::-webkit-input-placeholder {
   font-style: italic; }

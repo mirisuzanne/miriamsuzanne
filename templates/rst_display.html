@@ -3,7 +3,6 @@
 {% import "blog/macros.j2" as blog %}
 
 {% block title %}{{ rst.title }}{% endblock %}
-{% block location %}{% if ctx.pub_date %}blog{% else %}{{ super() }}{% endif %}{% endblock %}
 {% block description %}{{ ctx.render_summary()|striptags or super() }}{% endblock %}
 
 {% block og_url %}{{ get_full_canonical_url(ctx.builder, slug=ctx.slug) }}{% endblock %}
@@ -31,7 +30,7 @@
       <img src="/static/pictures/{{ image.src }}" alt="" class="hero-image" />
       {% if image.caption %}
         <figcaption class="hero-caption">
-          <p></p>
+          {{ image.caption }}
         </figcaption>
       {% endif %}
     </figure>
