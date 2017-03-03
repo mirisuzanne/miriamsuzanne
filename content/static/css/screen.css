@@ -1086,6 +1086,8 @@ body {
     color: #353535; }
   [data-module='sidesaddle'] span {
     background: #fff; }
+  [data-module='sidesaddle'] [href]:hover span, [data-module='sidesaddle'] [href]:focus span, [data-module='sidesaddle'] [href]:active span {
+    background: transparent; }
   [data-module='sidesaddle'] p,
   [data-module='sidesaddle'] .btn {
     margin-bottom: 0.7rem; }

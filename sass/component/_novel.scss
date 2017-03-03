@@ -26,6 +26,14 @@
     background: color('background');
   }
 
+  [href] {
+    #{$focus} {
+      span {
+        background: transparent;
+      }
+    }
+  }
+
   p,
   .btn {
     margin-bottom: size('shim');

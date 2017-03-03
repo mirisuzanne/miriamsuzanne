@@ -9,7 +9,9 @@
   <main data-region="main">
     {% block body %}{% endblock %}
 
-    {% include "modules/_novel.html.j2" %}
+    {% if not config.location == 'home' %}
+      {% include "modules/_novel.html.j2" %}
+    {% endif %}
   </main>
 
   <div class="fatfooter">
