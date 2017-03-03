@@ -1066,4 +1066,28 @@ body {
 .press-topic {
   margin-bottom: 2.8rem; }
 
+[data-module='sidesaddle'] {
+  border-top: 1px solid;
+  margin: 1.4rem 0 -1.4rem;
+  max-width: 100%;
+  padding: 1.4rem 0; }
+  @media (min-width: 40em) {
+    [data-module='sidesaddle'] {
+      background: url("../images/cover.jpg") no-repeat scroll right;
+      background-size: cover;
+      padding: 25vh 0; } }
+  [data-module='sidesaddle'] .container {
+    margin: 2.8rem auto;
+    max-width: 32rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    margin: 0 auto; }
+  [data-module='sidesaddle'] p {
+    color: #353535; }
+  [data-module='sidesaddle'] span {
+    background: #fff; }
+  [data-module='sidesaddle'] p,
+  [data-module='sidesaddle'] .btn {
+    margin-bottom: 0.7rem; }
+
 /*# sourceMappingURL=screen.css.map */

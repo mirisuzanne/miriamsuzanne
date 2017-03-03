@@ -1,0 +1,33 @@
+// Novel Module
+// ============
+
+[data-module='sidesaddle'] {
+  border-top: 1px solid;
+  margin: size('gutter') 0 negative('gutter');
+  max-width: 100%;
+  padding: size('gutter') 0;
+
+  @include above('page') {
+    background: url('../images/cover.jpg') no-repeat scroll right;
+    background-size: cover;
+    padding: 25vh 0;
+  }
+
+  .container {
+    @include page;
+    margin: 0 auto;
+  }
+
+  p {
+    color: color('text' ('tint': 15%));
+  }
+
+  span {
+    background: color('background');
+  }
+
+  p,
+  .btn {
+    margin-bottom: size('shim');
+  }
+}
