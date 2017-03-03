@@ -101,7 +101,7 @@ She says **I'm genderqueer,**
 so I attend the
 Trans and Genderqueer Poetry Symposium.
 
-Rose asks me, *what pronouns do you use at home*?
+Rose asks *what pronouns do people use for you*?
 That's **not the question** she meant to ask,
 and not the question I wish I was answering.
 Neither of us correct our mistake.
@@ -117,7 +117,7 @@ I think maybe **changing my name**
 will help,
 but it doesn't much.
 
-I tell Natalie how I'm feeling.
+I tell N— how I'm feeling.
 *That's because you're not on hormones yet*.
 I believe her,
 **but there's a** waiting **list.**
@@ -484,8 +484,8 @@ I watch `a video of Kate Bornstein`_,
 and think
 *finally, yes*.
 **Nothing she says**,
-just her existance is enough.
-Natalie says
+just her existence is enough.
+N— says
 *Women can be anything.
 Transition first, then explore*.
 
@@ -580,8 +580,8 @@ or just to normalize it over **time.**
 
 ---------
 
-— Ma'am, that account says 'Eric Meyer' |br|
-— That's my old… boyfriend? Can I change it?
+— *Ma'am, that account says 'Eric Meyer'* |br|
+— *That's my old… boyfriend? Can I change it?*
 
 ---------
 
@@ -620,7 +620,7 @@ I pick Suzanne from a list of family names
 my parents kindly send over.
 **I'm half-aware** at the time
 **that** I should be changing my given name instead.
-I move un-specified "M" to the middle,
+I move unspecified "M" to the middle,
 with a sense that I might need it later.
 
 Given different genital circumstances,
