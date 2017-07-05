@@ -152,7 +152,7 @@ Will I ever date again?
 What if I'm a pathetic joke everywhere I go?
 Is everyone laughing behind my back?
 If I wear a dress today,
-will people will gender me right,
+will people gender me right,
 or maybe androgyny is safer?
 If I'm too femme,
 someone will call me a caricature of ‘real’ women.
