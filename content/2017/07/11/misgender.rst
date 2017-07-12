@@ -1,4 +1,4 @@
-public: no
+public: yes
 tags: ['gender', 'personal', 'trans']
 slug: 'misgender'
 image:
@@ -30,8 +30,7 @@ so they won’t see me crying.
 Gender is strange and elusive.
 Sometime we attach it to genitals,
 and sometimes we attach it to boats.
-In Spanish,
-I even know how to misgender my table.
+In Spanish, I can misgender my table.
 Every day we gender each other, even strangers –
 at a glance, on instinct, with very little to go on.
 

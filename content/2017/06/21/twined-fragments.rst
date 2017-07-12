@@ -43,25 +43,12 @@ We want those questions,
 and hope you will extend the conversation
 in the comments below the article.
 
-Chapter 1 (`Mothers, Fathers, Husbands, Wives`_) is available now,
-and Chapter 2 is coming soon…
+- Chapter 1: `Mothers, Fathers, Husbands, Wives`_
+- Chapter 2: `Shifting Nouns`_
+- Chapter 3 is coming soon…
 
 .. _Mothers, Fathers, Husbands, Wives: https://medium.com/twined-fragments/twined-fragments-chapter-1-mothers-fathers-husbands-wives-9b25ea3aca3a
-
-    In the oral history of my family,
-    it’s my brother who claims he’ll be a mommy someday,
-    nursing his doll.
-    Mom corrects him — *you can be a daddy*.
-    He lays down the doll.
-    Cis doesn’t mean simple,
-    he tells me now,
-    a father of two.
-    I keep my dolls much later in life,
-    an unexpected aunt.
-
-    --`Chapter 1`_
-
-.. _Chapter 1: https://medium.com/twined-fragments/twined-fragments-chapter-1-mothers-fathers-husbands-wives-9b25ea3aca3a
+.. _Shifting Nouns: https://medium.com/twined-fragments/twined-fragments-chapter-2-shifting-nouns-47c42d3d8199
 
 .. raw:: html
 
