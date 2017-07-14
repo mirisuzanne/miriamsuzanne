@@ -7,8 +7,7 @@ summary: |
   Gender is strange and elusive.
   Sometime we attach it to genitals,
   and sometimes we attach it to boats.
-  In Spanish,
-  I even know how to misgender my table.
+  In Spanish, I can misgender my table.
   Every day we gender each other, even strangers –
   at a glance, on instinct, with very little to go on.
 
@@ -72,7 +71,7 @@ added to the experience.
 I do not mean to imply
 that the goal of transition is to be properly gendered,
 but *wouldn’t it be nice*?
-When people assume I’m a cisgender woman
+When people assume I’m cisgender,
 life is simpler and safer –
 if lacking the nuance of queer diversity.
 Even condescending and sexist phrases can feel refreshing –
@@ -84,6 +83,7 @@ Strangers on the phone,
 old friends on occasion,
 or someone just discovering that I’m trans;
 but mostly family.
+The people who have known me since birth.
 And when it happens,
 someone is always there to say:
 well, *it’s hard*.
@@ -124,16 +124,15 @@ Everyone seems on edge,
 unsure what happens next.
 One person is feeling bad for their mistake,
 aware that they’ve hurt me,
-and everyone else can relate.
-*There, but for the grace of all our gods…*
+and everyone can relate.
+*There, but for the grace of various gods…*
 All eyes are on me.
 I’m not thinking about the semantic slip
 or the person behind it,
 I’m trying desperately
 to hold my fear and self-loathing at bay.
 
-I never wanted to be trans,
-and I’ve learned to hate it.
+I never wanted to be trans.
 When I look in the mirror,
 it’s all I see.
 Then I have to leave the house –
@@ -144,7 +143,19 @@ I’m a national threat.
 I get my own special TSA patdown
 and papers-please potty regulations.
 
-Can I even go outside?
+I'm not fragile,
+in need of pity or condolence.
+I have a good life,
+and great support from friends and family.
+I'm not depressed,
+and I don't mean to imply some
+constant unbearable pain.
+But, as with any marginalized group,
+the othering and double-standards
+wear on us,
+and become ingrained.
+
+Can I go outside?
 Can I use a bathroom?
 Who might attack me?
 Will I ever date again?
@@ -162,17 +173,15 @@ If the misgendering were intentional,
 I could brush it off more easily
 (though I would fear physical violence).
 Being an asshole reflects poorly on the offender,
-and I’m ok with that.
+not on me.
 But when it’s an accident,
 it feels personal,
 like it’s my fault.
 I brought this on myself.
 I’m asking too much of the people around me.
 I look too trans, or speak too deep.
-Maybe I’m a failure.
-Maybe it’s all a facade
-and people are only humoring me.
-Now the ruse is up.
+Maybe people are only humoring me,
+and the ruse is up.
 Now everyone feels bad
 because of something I did.
 My trans pain is upsetting these people I love,
@@ -183,9 +192,8 @@ or my deadname, or my years as a ‘boy’.
 I know I am.
 
 When I’m misgendered
-I slip into survival mode.
-There’s no time to take care of myself
-when everyone else is anxious, alert, and watching me.
+there’s no time to take care of myself.
+Everyone else is anxious, alert, and watching me.
 If I fall apart now, I look fragile.
 If I get upset, I’ll make it worse –
 *‘another’ angry trans woman*.
@@ -199,16 +207,25 @@ or lose sleep over me.
 I don’t want to be reminded that
 *it’s hard* not to hurt me.
 
-What I hear is that it’s hard to be around me,
-because of what I am –
-I’m too easy to offend.
-But being misgendered is different from being offended.
-I’m not mad,
+But being misgendered is different from being offended –
+not intellectual but emotional.
+I don't need an apology,
+or more attention drawn to the mistake.
+In that moment,
+I’m not mad –
 I’m sad and lonely,
 discouraged and afraid.
 I feel bulky, masculine, and in the way.
 My mind is racing,
 and I need a way out.
+
+When we misgender people,
+it's easy to focus on the shame of our own mistake –
+how bad we feel for causing pain,
+or how hard it can be to correct our gendered instincts.
+We jump to long-winded apologies and explanations,
+that only serve to take focus away
+from the simple opportunity we have to help.
 
 ------
 
