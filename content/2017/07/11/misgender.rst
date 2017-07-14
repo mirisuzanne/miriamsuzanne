@@ -133,8 +133,8 @@ I’m trying desperately
 to hold my fear and self-loathing at bay.
 
 I never wanted to be trans.
-When I look in the mirror,
-it’s all I see.
+When I look in the mirror sometimes,
+it’s all I can see.
 Then I have to leave the house –
 go out in public,
 where my existence is so offensive
