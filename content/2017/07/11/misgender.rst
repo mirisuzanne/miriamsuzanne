@@ -41,35 +41,33 @@ Things get more subtle when we talk about groups (*hey guys*),
 or the way servers
 (should I say *waiters* or *waitresses*?)
 are trained to serve women first and bring men the check.
-The list goes on,
-and I notice every instance as though it's life or death.
-In some cases, it could be.
 No matter how we see ourselves,
 our existence is constantly gendered
 (and misgendered)
 by the people around us.
+I notice every instance.
 
 I’ve been misgendered most of my life,
 usually by accident.
-Unless a classmate wanted to insult me,
-by gendering me correctly – ironic as it is.
+As a child,
+I was only gendered correctly with insults.
 Looking back,
 *“long haired african girl”*
-seems a bit on-the-nose for an insult,
-and very problematic.
+seems a bit on-the-nose.
 I had long hair,
 was born in Lesotho,
 and now I discover I’m a woman.
 Three for three!
+How is that insulting?
 
 Now that I’m mid-transition,
-this gendering
+the gendering
 (and misgendering)
 has taken on a new flavor –
 a sense of personal success or failure
 added to the experience.
-I do not mean to imply
-that the goal of transition is to be properly gendered,
+I don’t mean to imply
+that the goal of transition is always to be properly gendered,
 but *wouldn’t it be nice*?
 When people assume I’m cisgender,
 life is simpler and safer –
@@ -94,11 +92,11 @@ or even a deadname in my worst moments.
 It’s an accident, of course,
 and I feel terrible about it –
 most of us do.
-While intentional misgendering is violent verbal abuse,
-accidental misgendering is much more complex.
+Intentional misgendering is violent verbal abuse,
+but accidental misgendering is more complex.
 And more painful.
 
-Gendered instincts are taught from a young age –
+Gendering is instinct, learned at a young age –
 deeply ingrained, subconscious, and instantaneous.
 We use names and pronouns without thinking,
 and get them wrong without noticing our mistake.
@@ -134,7 +132,7 @@ to hold my fear and self-loathing at bay.
 
 I never wanted to be trans.
 When I look in the mirror sometimes,
-it’s all I can see.
+it’s all I see.
 Then I have to leave the house –
 go out in public,
 where my existence is so offensive
@@ -144,16 +142,14 @@ I get my own special TSA patdown
 and papers-please potty regulations.
 
 I'm not fragile,
-in need of pity or condolence.
+and I don’t want pity or condolences.
 I have a good life,
-and great support from friends and family.
+with supportive friends and family.
 I'm not depressed,
-and I don't mean to imply some
-constant unbearable pain.
-But, as with any marginalized group,
-the othering and double-standards
-wear on us,
-and become ingrained.
+and I’m not in
+constant or unbearable pain.
+But the othering and double-standards wear me down.
+The shame becomes ingrained and internalized.
 
 Can I go outside?
 Can I use a bathroom?
@@ -161,20 +157,12 @@ Who might attack me?
 Will I ever date again?
 What if I'm a pathetic joke everywhere I go?
 Is everyone laughing behind my back?
-If I wear a dress today,
-will people gender me right,
-or maybe androgyny is safer?
-If I'm too femme,
-someone will call me a caricature of ‘real’ women.
-If I'm too butch, it’s proof that I'm a man after all.
-Everything can be used against me.
 
 If the misgendering were intentional,
-I could brush it off more easily
-(though I would fear physical violence).
+I could brush it off more easily.
 Being an asshole reflects poorly on the offender,
 not on me.
-But when it’s an accident,
+But when it’s an accident
 it feels personal,
 like it’s my fault.
 I brought this on myself.
@@ -191,12 +179,12 @@ I imagine people are thinking about my genitals,
 or my deadname, or my years as a ‘boy’.
 I know I am.
 
-When I’m misgendered
-there’s no time to take care of myself.
-Everyone else is anxious, alert, and watching me.
-If I fall apart now, I look fragile.
-If I get upset, I’ll make it worse –
-*‘another’ angry trans woman*.
+There’s no time to take care of myself.
+Everyone is anxious, alert, and watching me.
+If I fall apart, I look fragile.
+If I get upset, I’ll make it worse.
+Simply pointing to the mistake can make people defensive,
+and I’m seen as the aggressor.
 If I brush it off,
 people think it doesn’t bother me –
 *not like the others, thank god*.
@@ -204,15 +192,14 @@ I don’t want a confrontation.
 I don’t want anyone to be sorry,
 or feel terrible,
 or lose sleep over me.
-I don’t want to be reminded that
+I don’t want a conversation,
+and I don’t want a reminder that
 *it’s hard* not to hurt me.
 
-But being misgendered is different from being offended –
-not intellectual but emotional.
-I don't need an apology,
-or more attention drawn to the mistake.
+Being misgendered is not like being offended –
+not intellectual, but emotional.
 In that moment,
-I’m not mad –
+I’m not mad or insulted –
 I’m sad and lonely,
 discouraged and afraid.
 I feel bulky, masculine, and in the way.
@@ -220,12 +207,13 @@ My mind is racing,
 and I need a way out.
 
 When we misgender people,
-it's easy to focus on the shame of our own mistake –
-how bad we feel for causing pain,
-or how hard it can be to correct our gendered instincts.
-We jump to long-winded apologies and explanations,
-that only serve to take focus away
-from the simple opportunity we have to help.
+we tend to focus on the shame of our mistake,
+and how bad we feel for causing pain –
+or how hard it is to change our gendered instincts.
+We jump to long-winded apologies and explanations
+that only take us away
+from the opportunity
+to make things better…
 
 ------
 
@@ -233,9 +221,10 @@ Back in Moab with my family,
 I post a note to Facebook
 knowing my trans friends,
 at least, will send me support –
-and they do.
-My brother sees the post on his phone.
-In the kitchen later,
+and they do (along with others).
+My brother also senses the problem,
+and he's ready when I come downstairs.
+In the kitchen,
 he slides up beside me
 and says the one thing that actually helps:
 
