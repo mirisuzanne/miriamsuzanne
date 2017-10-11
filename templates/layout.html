@@ -1,25 +1,57 @@
 {% extends "base.html" %}
 
 {% block layout %}
-  <header data-region="banner">
-    {% include "layout/_banner.html.j2" %}
-    {% include "layout/_nav.html.j2" %}
+  <figure data-layout="hero">
+    {% block hero %}
+      {% include 'layout/_face.svg' %}
+    {% endblock %}
+  </figure>
+
+  <aside data-layout="fancy">
+    {%- for index in range(500) -%}
+      <span data-fancy="{{ index }}"></span>
+    {%- endfor -%}
+  </aside>
+
+  <header data-layout="header">
+    <h1 class="page-title">
+      {% block page_title %}
+        {{ config.author }}
+      {% endblock %}
+    </h1>
+
+    <h2 class="page-tagline">
+      {% block page_tagline %}
+        {% if config.location in ['home', 'about'] %}
+          <a href="/why/">art &amp; code</a>
+        {% else %}
+          <a href="/" rel="home">{{ config.author }}</a>
+        {% endif %}
+      {% endblock %}
+    </h2>
   </header>
 
-  <main data-region="main">
-    {% block body %}{% endblock %}
+  <nav data-layout="nav">
+  <div class="nav-inner">
+    {% for item in config.nav %}
+      <a href="{{ item.url }}" data-nav="{{ item.slug or item.title }}">
+        {{ item.title }}
+      </a>
+    {% endfor %}
+  </div>
+  </nav>
 
-    {% if config.location != 'home' %}
-      {% include "modules/_novel.html.j2" %}
-    {% endif %}
+  <main data-layout="main">
+    {% block body %}{% endblock %}
   </main>
 
-  <div class="fatfooter">
-    {% if not config.hide_contact %}
-      {% include 'layout/_contact.html.j2' %}
-    {% endif %}
+  <footer data-layout="footer">
+    {% set copy = config.copyright[0] %}
 
-    {% include "layout/_tinyletter.html.j2" %}
-    {% include "layout/_contentinfo.html.j2" %}
-  </div>
+    &copy; {{ copy.year }}
+    <a href="{{ copy.url }}">{{ copy.name }}</a> »
+    <a href="http://oddbird.net">OddBird</a> |
+    <a href="http://teacupgorilla.com">Teacup Gorilla</a> |
+    <a href="http://grapefruitlab.com">Grapefruit Lab</a>
+  </footer>
 {% endblock %}

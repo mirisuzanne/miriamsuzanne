@@ -1,0 +1,30 @@
+// Site Header
+// ===========
+
+[data-layout='header'] {
+  background: color('overlay');
+  margin-left: negative('shim');
+  padding: size('shim');
+  position: relative;
+}
+
+
+.page-title {
+  color: color('action-hover');
+  font-size: size('h1');
+  line-height: 1;
+}
+
+
+.page-tagline {
+  font-size: size('h2');
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1;
+
+  a {
+    &:only-child {
+      color: inherit;
+    }
+  }
+}

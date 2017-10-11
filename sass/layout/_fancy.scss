@@ -1,0 +1,71 @@
+// Fancy Layout
+// ============
+
+
+$fancy-grid: repeat(25, minmax(0, 1fr));
+$fancy-h: hue(color('action'));
+$fancy-s: saturation(color('action'));
+$fancy-l: lightness(color('action'));
+
+
+@keyframes hue-shift {
+  25% {
+    background-color: hsl($fancy-h + (360 / 4), $fancy-s, $fancy-l);
+  }
+
+  50% {
+    background-color: hsl($fancy-h + (360 / 3), $fancy-s, $fancy-l);
+  }
+
+  75% {
+    background-color: hsl($fancy-h + (360 / 2), $fancy-s, $fancy-l);
+  }
+
+  100% {
+    background-color: hsl($fancy-h + 360, $fancy-s, $fancy-l);
+  }
+}
+
+
+@keyframes blip {
+  62%,
+  68% {
+    opacity: 0;
+  }
+
+  65% {
+    opacity: 0.25;
+  }
+}
+
+
+[data-layout='fancy'] {
+  direction: rtl;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: $fancy-grid;
+  grid-template-rows: $fancy-grid;
+  overflow: hidden;
+}
+
+
+[data-fancy] {
+  animation: hue-shift 50s infinite both, blip 90s infinite both ease;
+  background-color: color('action');
+  background-image: linear-gradient(to bottom right, color('overlay'), color('overlay' ('rgba': 0)));
+  opacity: 0;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+
+@for $i from 0 to 500 {
+  $off: floor($i / 23) + 1s;
+  $delay: 0 - $i * $off;
+
+  [data-fancy='#{$i}'] {
+    animation-delay: $delay;
+  }
+}

@@ -1,68 +1,55 @@
 // Fonts Config
 // ============
 
-@import '../../node_modules/accoutrement-type/sass/type';
 
+// Body Font
+// ---------
+/// Freight Text Pro is the primary font of the OddBird brand.
+/// @group fonts
+/// @preview font-specimen; key: body; show: regular, italic, bold, bold italic
+/// @link http://oddbird.net/accoutrement-type/docs/
+///   Accoutrement Type
 $body-font: (
-  'name': 'BaskervilleFS',
+  'name': 'freight-text-pro',
   'stack': (Baskerville, Palatino, Cambria, Georgia, serif),
-  'regular': 'serif/baskerville-regular-webfont',
-  'italic': 'serif/baskerville-italic-webfont',
-  'bold': 'serif/baskerville-bold-webfont',
-  'bold' 'italic': 'serif/baskerville-bolditalic-webfont',
+  'source': 'https://typekit.com/fonts/freight-text',
 );
 
-$boiler-font: (
-  'name': 'SourceSansPro',
+@include add-font('body', $body-font);
+@include herman-add('font', 'body', $body-font);
+
+
+// Alt Font
+// --------
+/// Freight Sans Pro provides a sans-serif alternative,
+/// still in the same family as our primary font.
+/// @group fonts
+/// @preview font-specimen; key: alt; show: regular, italic, bold, bold italic
+/// @link http://oddbird.net/accoutrement-type/docs/
+///   Accoutrement Type
+$alt-font: (
+  'name': 'freight-sans-pro',
   'stack': ('Helvetica Neue', Helvetica, Arial, sans-serif),
-  'regular': 'sans/sourcesanspro-regular-webfont',
-  'italic': 'sans/sourcesanspro-italic-webfont',
-  'bold': 'sans/sourcesanspro-bold-webfont',
-  'bold' 'italic': 'sans/sourcesanspro-bolditalic-webfont',
+  'source': 'https://typekit.com/fonts/freight-sans',
 );
 
+@include add-font('alt', $alt-font);
+@include herman-add('font', 'alt', $alt-font);
+
+
+// Code Font
+// ---------
+/// Source Code Pro provides a nice-looking monospace option
+/// for code samples across the site.
+/// @group fonts
+/// @preview font-specimen; key: code; show: regular, italic, bold, bold italic
+/// @link http://oddbird.net/accoutrement-type/docs/
+///   Accoutrement Type
 $code-font: (
   'name': 'SourceCodePro',
-  'stack': (Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace),
-  'regular': 'code/sourcecodepro-regular-webfont',
-  'bold': 'code/sourcecodepro-bold-webfont',
+  'stack': (Consolas, Menlo, Monaco, 'Courier New', monospace),
+  'source': 'https://typekit.com/fonts/source-code-pro',
 );
 
-$jj-font: (
-  'name': 'GreenMudJJ',
-  'stack': ('BaskervilleFS', Baskerville, Palatino, Cambria, Georgia, serif),
-  'regular': 'jj/greenmudjj-regular-webfont',
-  'bold': 'jj/greenmudjj-bold-webfont',
-  'italic': 'jj/greenmudjj-italic-webfont',
-);
-
-$susy-font: (
-  'name': 'GreenMudSusy',
-  'stack': ('SourceSansPro', 'Helvetica Neue', Helvetica, Arial, sans-serif),
-  'regular': 'susy/greenmudsusy-regular-webfont',
-  'bold': 'susy/greenmudsusy-bold-webfont',
-);
-
-$susycaps-font: (
-  'name': 'GreenMudSusyCaps',
-  'stack': ('SourceSansPro', 'Helvetica Neue', Helvetica, Arial, sans-serif),
-  'regular': 'susy/greenmudsusy-smallcaps-webfont',
-  'bold': 'susy/greenmudsusy-smallcapsbold-webfont',
-);
-
-$narrator-font: (
-  'name': 'GreenMudNarrator',
-  'stack': ('BaskervilleFS', Baskerville, Palatino, Cambria, Georgia, serif),
-  'regular': 'narrator/greenmudnarrator-regular-webfont',
-  'bold': 'narrator/greenmudnarrator-bold-webfont',
-);
-
-$fonts: (
-  'body': $body-font,
-  'boilerplate': $boiler-font,
-  'code': $code-font,
-  'jj': $jj-font,
-  'susy': $susy-font,
-  'susycaps': $susycaps-font,
-  'narrator': $narrator-font,
-);
+@include add-font('code', $code-font);
+@include herman-add('font', 'code', $code-font);

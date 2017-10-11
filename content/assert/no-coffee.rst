@@ -1,5 +1,5 @@
 public: yes
-template: assert.html.j2
+.. template: assert.html.j2
 assert:
   - "There’s no coffee."
   - "There’s not any coffee."

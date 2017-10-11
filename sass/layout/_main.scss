@@ -1,25 +1,12 @@
 // Main Layout
 // ===========
 
-@mixin page(
-  $size: 'page',
-  $pad: true
-) {
-  margin: size('gutter') * 2 auto;
-  max-width: size($size);
+[data-layout='main'] {
+  display: grid;
+  grid-template-columns: $columns;
+  padding: size('gutter') 0;
 
-  @if $pad {
-    padding-left: size('shim');
-    padding-right: size('shim');
+  > * {
+    grid-column: 3 / span 1;
   }
-}
-
-
-[data-region='main'] {
-  margin-bottom: size('gutter');
-}
-
-
-[data-module] {
-  @include page;
 }

@@ -1,0 +1,56 @@
+// Hero Layout
+// ===========
+
+[data-layout='hero'] {
+  align-items: stretch;
+  display: flex;
+  pointer-events: none;
+
+  svg,
+  img {
+    height: 100%;
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+
+// Animating My Face
+// -----------------
+
+@keyframes draw-logo {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+@keyframes fill-logo {
+  from {
+    fill-opacity: 0;
+  }
+
+  to {
+    fill-opacity: 1;
+  }
+}
+
+
+@keyframes fade-logo-outline {
+  to {
+    stroke-width: 0;
+  }
+}
+
+
+.face {
+  margin: size('shim');
+
+  [data-location='home'] & {
+    animation: draw-logo 5s 1 ease-out both, fill-logo 4s 3s 1 ease-in-out both, fade-logo-outline 3s 3s 1 ease-in-out both;
+    stroke: color('action');
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+    stroke-width: 1;
+  }
+}

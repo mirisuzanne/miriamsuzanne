@@ -1,11 +1,10 @@
 // Layout Manifest
 // ===============
 
-@import 'root';
-@import 'banner';
+@import 'global';
+@import 'hero';
+@import 'header';
 @import 'nav';
 @import 'main';
-@import 'fatfooter';
-@import 'contact';
-@import 'tinyletter';
 @import 'footer';
+@import 'fancy';

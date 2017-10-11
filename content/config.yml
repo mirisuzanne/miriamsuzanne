@@ -1355,14 +1355,13 @@ education:
 
 # navigation
 nav:
-  - title: 'current'
-    slug: 'home'
+  - title: 'home'
     url: '/'
-  - title: 'past'
+  - title: 'projects'
+    slug: 'what'
     url: '/what/'
-  - title: 'press'
-    url: '/press/'
-  - title: 'blog'
+  - title: 'articles'
+    slug: 'blog'
     url: '/blog/'
   - title: 'about'
     url: '/who/'
@@ -1438,7 +1437,7 @@ subtitle:
 
 copyright:
   - name: 'Miriam Eric Suzanne'
-    year: '2016'
+    year: '2017'
     url: '/who/'
 
 

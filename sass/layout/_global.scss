@@ -1,0 +1,54 @@
+// Global Layout
+// =============
+
+body {
+  display: grid;
+  grid-template-areas:
+  'header header header header header'
+  'nav    nav    nav    nav    nav'
+  'main   main   main   main   main'
+  '...... ...... footer ...... ......';
+  grid-template-columns: $columns;
+  grid-template-rows: size('hero') repeat(3, auto);
+  max-width: 100vw;
+}
+
+
+[data-layout='fancy'] {
+  grid-area: header;
+}
+
+
+[data-layout='hero'] {
+  grid-column: 1 / -2;
+  grid-row: 1 / span 1;
+  justify-self: start;
+  position: relative;
+  z-index: 1;
+}
+
+
+[data-layout='header'] {
+  align-self: end;
+  grid-column: 3 / -1;
+  grid-row: 1 / span 1;
+  position: relative;
+  z-index: 1;
+}
+
+
+[data-layout='nav'] {
+  grid-area: nav;
+  position: relative;
+  z-index: 1;
+}
+
+
+[data-layout='main'] {
+  grid-area: main;
+}
+
+
+[data-layout='footer'] {
+  grid-area: footer;
+}

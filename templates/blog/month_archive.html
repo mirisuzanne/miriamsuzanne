@@ -1,15 +1,15 @@
 {% extends "blog/archives.html" %}
 {% import "blog/macros.j2" as blog %}
 
-{% block title %}{{ entry.month_name}}, {{ entry.year }} | {{ super() }}{% endblock %}
 
-{% block list_intro %}
-  <h1 data-module="archive-header" class="rst-header">
-    Posts from {{ entry.month_name }}, {{ entry.year }}
-  </h1>
-{% endblock list_intro %}
+{% set title = [entry.month_name, entry.year]|join(', ') %}
+{% block title %}{{ title }} | {{ super() }}{% endblock %}
+{% block page_tagline %}
+  {{ title }}
+{% endblock %}
 
-{% block archive %}
+
+{% block body %}
   {% for entry in entry.entries %}
     {{ blog.list(entry) }}
   {% endfor %}

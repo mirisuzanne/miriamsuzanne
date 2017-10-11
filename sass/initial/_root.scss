@@ -1,0 +1,42 @@
+// Root
+// ====
+
+
+:root {
+  @include font-family('body');
+  color: color('text');
+  font-size: size('root');
+  font-size: size('responsive'); // sass-lint:disable-line no-duplicate-properties
+}
+
+
+body {
+  line-height: ratio('text-ratio');
+}
+
+
+a {
+  &:link,
+  &:visited {
+    color: color('action');
+    text-decoration: none;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: color('action-hover');
+    text-decoration: underline;
+  }
+}
+
+
+svg {
+  fill: currentColor;
+}
+
+
+p,
+blockquote {
+  margin-bottom: size('shim');
+}

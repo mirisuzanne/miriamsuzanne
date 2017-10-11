@@ -1,10 +1,12 @@
 {% extends "blog/archives.html" %}
 {% import "blog/macros.j2" as blog %}
 
-{% block title %}Blog{% endblock %}
-{% block list_intro %}{% endblock list_intro %}
 
-{% block archive %}
+{% block title %}Articles{% endblock %}
+{% block page_title %}Articles{% endblock %}
+
+
+{% block body %}
   {%- for post in pagination.get_slice() %}
     {{ blog.list(post) }}
   {%- endfor %}
@@ -12,4 +14,4 @@
   {% if show_pagination and pagination.pages > 1 %}
     {{ pagination }}
   {% endif %}
-{% endblock archive %}
+{% endblock %}

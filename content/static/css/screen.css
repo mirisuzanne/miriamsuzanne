@@ -1,7 +1,7 @@
-@charset "UTF-8";
 html {
   -ms-overflow-style: -ms-autohiding-scrollbar;
   -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%; }
 
@@ -28,6 +28,7 @@ template {
 ::after {
   border-style: solid;
   border-width: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 * {
@@ -79,6 +80,7 @@ button,
 
 [type='checkbox'],
 [type='radio'] {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0; }
 
@@ -161,828 +163,93 @@ sup {
 sub {
   bottom: -0.25em; }
 
-/*!
- * Web Fonts from fontspring.com
- *
- * All OpenType features and all extended glyphs have been removed.
- * Fully installable fonts can be purchased at http://www.fontspring.com
- *
- * The fonts included in this stylesheet are subject to the End User License you purchased
- * from Fontspring. The fonts are protected under domestic and international trademark and
- * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
- * distributing this font software.
- *
- * (c) 2010-2015 Fontspring
- *
- *
- *
- *
- * The fonts included are copyrighted by the vendor listed below.
- *
- * Vendor:      FontSite Inc.
- * License URL: http://www.fontspring.com/licenses/fontsite/webfont
- *
- *
- */
-.is-hidden {
-  clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(1px 1px 1px 1px);
-  clip-path: inset(1px 1px 1px 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px; }
-
-a, a:link, a:visited,
-.link,
-.link:link,
-.link:visited {
-  color: #c30062;
-  text-decoration: none; }
-
-a:hover, a:focus, a:active,
-.link:hover,
-.link:focus,
-.link:active {
-  text-decoration: underline; }
-
-.btn, .btn:link, .btn:visited {
-  font-size: 0.8rem;
-  line-height: 1.4rem;
-  border: 2px solid;
-  border-radius: 0.15rem;
-  color: #c30062;
-  display: inline-block;
-  letter-spacing: 1px;
-  padding: 0.35rem 1.4rem;
-  text-decoration: none;
-  text-transform: uppercase; }
-  .btn:after, .btn:link:after, .btn:visited:after {
-    content: "»"; }
-
-.btn:hover, .btn:focus, .btn:active {
-  background-color: #c30062;
-  color: #fff; }
-
-.secondary, .secondary:link, .secondary:visited {
-  font-size: 0.8rem;
-  line-height: 1.4rem;
-  display: inline-block;
-  font-style: italic; }
-  .secondary:after, .secondary:link:after, .secondary:visited:after {
-    content: " »"; }
-
-h1,
-.section-title {
-  font-size: calc(1rem + 1.5vw);
-  font-style: italic; }
-
-h2 {
-  font-size: calc(1rem + 0.75vw);
-  font-style: italic; }
-
-h3 {
-  font-size: calc(1rem + 0.5vw); }
-
-pre,
-code {
-  font-family: "SourceCodePro", Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace; }
-
-label,
-button {
-  cursor: pointer; }
-
-blockquote {
-  font-style: italic;
-  margin: 1.4rem 0; }
-  blockquote p:not(.attribution) {
-    display: inline;
-    text-indent: -0.4em; }
-    blockquote p:not(.attribution):before, blockquote p:not(.attribution):after {
-      content: "“"; }
-    blockquote p:not(.attribution):after {
-      content: "”"; }
-    @media (min-width: 40em) {
-      blockquote p:not(.attribution) {
-        font-size: calc(1rem + 0.5vw);
-        background: linear-gradient(to top, #e6f4f8 50%, transparent 50%) no-repeat scroll; } }
-  blockquote cite,
-  blockquote .attribution {
-    font-family: "SourceSansPro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 0.8rem;
-    line-height: 1.4rem;
-    display: inline-block;
-    font-style: normal;
-    text-indent: 0; }
-
-hr:before {
-  content: "❦ & & & ❦";
-  color: #c30062;
-  display: block;
-  font-style: italic;
-  margin: 1.4rem auto;
-  text-align: center; }
-
-.hero {
-  max-height: 85vh;
-  overflow: hidden;
-  position: relative; }
-  .hero:after {
-    content: "";
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    box-shadow: 0 0 0.7rem #111 inset;
-    pointer-events: none; }
-  .hero + [data-module='page-header'] {
-    background-image: linear-gradient(40deg, #fff 85%, transparent 85%);
-    margin-bottom: 1.4rem;
-    margin-top: -2.8rem;
-    padding-right: 10%;
-    padding-top: 0.7rem;
-    position: relative;
-    z-index: 1; }
-    .hero + [data-module='page-header']:before {
-      content: "";
-      background: #fff;
-      bottom: 0;
-      display: block;
-      position: absolute;
-      right: 100%;
-      top: 0;
-      width: calc((100vw - 32rem) / 2); }
-
-.hero-image {
-  width: 100%; }
-
-.hero-caption {
-  font-size: 0.8rem;
-  line-height: 1.4rem;
-  background-image: linear-gradient(40deg, #fff 80%, transparent 80%);
-  bottom: 2.8rem;
-  font-style: italic;
-  padding: 0.35rem 2.8rem 0 0.7rem;
-  position: absolute;
-  z-index: 2; }
-
-::-webkit-input-placeholder {
-  font-style: italic; }
-
-::-moz-placeholder {
-  font-style: italic; }
-
-:-ms-input-placeholder {
-  font-style: italic; }
-
-::placeholder {
-  font-style: italic; }
-
-[data-form-field] {
-  display: block;
-  margin-bottom: 0.5rem; }
-
-.form-label {
-  display: block; }
-
-[data-input-type='default'],
-[data-input-type='textarea'] {
-  border: 1px solid currentColor;
-  display: block;
-  padding: 0.25rem 0.5rem;
-  width: 100%; }
-
-[data-input-type='textarea'] {
-  min-height: 8rem; }
-
-.form-actions {
-  text-align: right; }
-
-img {
-  display: block;
-  max-width: 100%; }
-
-svg {
-  height: 100%;
-  width: 100%; }
-
-[data-has-filters] {
-  position: relative; }
-
-.filter-label {
-  font-size: 0.8rem;
-  line-height: 1.4rem;
-  color: #c30062;
-  display: inline-block;
-  font-style: italic;
-  margin-right: 0.35rem; }
-
-.filter-value {
-  clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(1px 1px 1px 1px);
-  clip-path: inset(1px 1px 1px 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px; }
-  .filter-value:checked + .filter-label {
-    color: inherit; }
-    .filter-value:checked + .filter-label:before, .filter-value:checked + .filter-label:after {
-      content: "["; }
-    .filter-value:checked + .filter-label:after {
-      content: "]"; }
-
-[data-erasure] strong {
-  font-weight: normal; }
-
-[for='erasure'], [for='erasure']:link, [for='erasure']:visited {
-  color: #c30062;
-  text-decoration: none; }
-
-[for='erasure']:hover, [for='erasure']:focus, [for='erasure']:active {
-  text-decoration: underline; }
-
-[id='erasure'] {
-  clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(1px 1px 1px 1px);
-  clip-path: inset(1px 1px 1px 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  position: fixed; }
-  [id='erasure']:checked ~ [data-erasure],
-  [id='erasure']:checked ~ [data-erasure] [href] {
-    color: transparent; }
-  [id='erasure']:checked ~ [data-erasure] strong {
-    color: #111; }
-  [id='erasure']:checked ~ [data-erasure] [for='erasure'],
-  [id='erasure']:checked ~ [data-erasure] strong {
-    background: rgba(255, 255, 255, 0.9);
-    position: relative; }
-    [id='erasure']:checked ~ [data-erasure] [for='erasure']:before,
-    [id='erasure']:checked ~ [data-erasure] strong:before {
-      content: "]";
-      position: absolute;
-      transform: translateX(-0.6em); }
-    [id='erasure']:checked ~ [data-erasure] [for='erasure']:after,
-    [id='erasure']:checked ~ [data-erasure] strong:after {
-      content: "[";
-      position: absolute;
-      transform: translateX(0.2em); }
-
-[data-gallery] {
-  margin-bottom: 1rem; }
-
-[data-gallery='video'] {
-  height: 0;
-  padding-top: 56.25%;
-  position: relative; }
-
-.video-wrap {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0; }
-  .video-wrap iframe {
-    height: 100%;
-    width: 100%; }
-
-@font-face {
-  font-family: "BaskervilleFS";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/serif/baskerville-regular-webfont.woff") format("woff"), url("../fonts/serif/baskerville-regular-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "BaskervilleFS";
-  font-style: italic;
-  font-weight: normal;
-  src: url("../fonts/serif/baskerville-italic-webfont.woff") format("woff"), url("../fonts/serif/baskerville-italic-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "BaskervilleFS";
-  font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/serif/baskerville-bold-webfont.woff") format("woff"), url("../fonts/serif/baskerville-bold-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "BaskervilleFS";
-  font-style: italic;
-  font-weight: bold;
-  src: url("../fonts/serif/baskerville-bolditalic-webfont.woff") format("woff"), url("../fonts/serif/baskerville-bolditalic-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "SourceSansPro";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/sans/sourcesanspro-regular-webfont.woff") format("woff"), url("../fonts/sans/sourcesanspro-regular-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "SourceSansPro";
-  font-style: italic;
-  font-weight: normal;
-  src: url("../fonts/sans/sourcesanspro-italic-webfont.woff") format("woff"), url("../fonts/sans/sourcesanspro-italic-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "SourceSansPro";
-  font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/sans/sourcesanspro-bold-webfont.woff") format("woff"), url("../fonts/sans/sourcesanspro-bold-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "SourceSansPro";
-  font-style: italic;
-  font-weight: bold;
-  src: url("../fonts/sans/sourcesanspro-bolditalic-webfont.woff") format("woff"), url("../fonts/sans/sourcesanspro-bolditalic-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "SourceCodePro";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/code/sourcecodepro-regular-webfont.woff") format("woff"), url("../fonts/code/sourcecodepro-regular-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "SourceCodePro";
-  font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/code/sourcecodepro-bold-webfont.woff") format("woff"), url("../fonts/code/sourcecodepro-bold-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "GreenMudJJ";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/jj/greenmudjj-regular-webfont.woff") format("woff"), url("../fonts/jj/greenmudjj-regular-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "GreenMudJJ";
-  font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/jj/greenmudjj-bold-webfont.woff") format("woff"), url("../fonts/jj/greenmudjj-bold-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "GreenMudJJ";
-  font-style: italic;
-  font-weight: normal;
-  src: url("../fonts/jj/greenmudjj-italic-webfont.woff") format("woff"), url("../fonts/jj/greenmudjj-italic-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "GreenMudSusy";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/susy/greenmudsusy-regular-webfont.woff") format("woff"), url("../fonts/susy/greenmudsusy-regular-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "GreenMudSusy";
-  font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/susy/greenmudsusy-bold-webfont.woff") format("woff"), url("../fonts/susy/greenmudsusy-bold-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "GreenMudSusyCaps";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/susy/greenmudsusy-smallcaps-webfont.woff") format("woff"), url("../fonts/susy/greenmudsusy-smallcaps-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "GreenMudSusyCaps";
-  font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/susy/greenmudsusy-smallcapsbold-webfont.woff") format("woff"), url("../fonts/susy/greenmudsusy-smallcapsbold-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "GreenMudNarrator";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/narrator/greenmudnarrator-regular-webfont.woff") format("woff"), url("../fonts/narrator/greenmudnarrator-regular-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "GreenMudNarrator";
-  font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/narrator/greenmudnarrator-bold-webfont.woff") format("woff"), url("../fonts/narrator/greenmudnarrator-bold-webfont.ttf") format("truetype"); }
-
 :root {
-  background-color: #fff;
-  color: #111;
-  font-family: "BaskervilleFS", Baskerville, Palatino, Cambria, Georgia, serif;
-  font-size: calc(1.1em + 0.5vw);
+  font-family: "freight-text-pro", Baskerville, Palatino, Cambria, Georgia, serif;
+  color: #173c48;
+  font-size: 24px;
+  font-size: calc(100% + 0.675vw); }
+
+body {
   line-height: 1.4; }
 
-html,
-body {
-  overflow-x: hidden;
-  width: 100%; }
+a:link, a:visited {
+  color: #e60073;
+  text-decoration: none; }
 
-[data-region='banner'] {
-  margin: 0 auto 1.4rem;
-  max-width: 48rem;
-  padding: 0.7rem 0.7rem 0;
-  text-align: center; }
-  @media (min-width: 33em) {
-    [data-region='banner'] {
-      -ms-flex-align: center;
-      align-items: center;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: justify;
-      justify-content: space-between; } }
+a:focus, a:hover, a:active {
+  color: #ac0056;
+  text-decoration: underline; }
 
-.brand {
-  font-size: inherit;
-  font-style: normal;
-  font-weight: normal; }
+svg {
+  fill: currentColor; }
 
-.brand-title:link, .brand-title:visited,
-.brand-subtitle:link,
-.brand-subtitle:visited {
-  color: inherit; }
-
-.brand-title:hover, .brand-title:focus, .brand-title:active,
-.brand-subtitle:hover,
-.brand-subtitle:focus,
-.brand-subtitle:active {
-  color: #c30062; }
-
-.brand-title {
-  font-weight: bold; }
-
-.brand-subtitle {
-  font-style: italic;
-  text-transform: lowercase; }
-
-[data-region='nav'] {
-  font-size: 0.8rem;
-  line-height: 1.4rem;
-  font-style: italic;
-  text-transform: lowercase; }
-
-[data-nav]:link, [data-nav]:visited {
-  display: inline-block;
-  padding: 0 0.35rem; }
-
-[data-location='home'] [data-nav='home']:link, [data-location='home'] [data-nav='home']:visited {
-  color: inherit; }
-  [data-location='home'] [data-nav='home']:link:before, [data-location='home'] [data-nav='home']:link:after, [data-location='home'] [data-nav='home']:visited:before, [data-location='home'] [data-nav='home']:visited:after {
-    content: "["; }
-  [data-location='home'] [data-nav='home']:link:after, [data-location='home'] [data-nav='home']:visited:after {
-    content: "]"; }
-
-[data-location='past'] [data-nav='past']:link, [data-location='past'] [data-nav='past']:visited {
-  color: inherit; }
-  [data-location='past'] [data-nav='past']:link:before, [data-location='past'] [data-nav='past']:link:after, [data-location='past'] [data-nav='past']:visited:before, [data-location='past'] [data-nav='past']:visited:after {
-    content: "["; }
-  [data-location='past'] [data-nav='past']:link:after, [data-location='past'] [data-nav='past']:visited:after {
-    content: "]"; }
-
-[data-location='blog'] [data-nav='blog']:link, [data-location='blog'] [data-nav='blog']:visited {
-  color: inherit; }
-  [data-location='blog'] [data-nav='blog']:link:before, [data-location='blog'] [data-nav='blog']:link:after, [data-location='blog'] [data-nav='blog']:visited:before, [data-location='blog'] [data-nav='blog']:visited:after {
-    content: "["; }
-  [data-location='blog'] [data-nav='blog']:link:after, [data-location='blog'] [data-nav='blog']:visited:after {
-    content: "]"; }
-
-[data-location='press'] [data-nav='press']:link, [data-location='press'] [data-nav='press']:visited {
-  color: inherit; }
-  [data-location='press'] [data-nav='press']:link:before, [data-location='press'] [data-nav='press']:link:after, [data-location='press'] [data-nav='press']:visited:before, [data-location='press'] [data-nav='press']:visited:after {
-    content: "["; }
-  [data-location='press'] [data-nav='press']:link:after, [data-location='press'] [data-nav='press']:visited:after {
-    content: "]"; }
-
-[data-location='about'] [data-nav='about']:link, [data-location='about'] [data-nav='about']:visited {
-  color: inherit; }
-  [data-location='about'] [data-nav='about']:link:before, [data-location='about'] [data-nav='about']:link:after, [data-location='about'] [data-nav='about']:visited:before, [data-location='about'] [data-nav='about']:visited:after {
-    content: "["; }
-  [data-location='about'] [data-nav='about']:link:after, [data-location='about'] [data-nav='about']:visited:after {
-    content: "]"; }
-
-[data-location='contact'] [data-nav='contact']:link, [data-location='contact'] [data-nav='contact']:visited {
-  color: inherit; }
-  [data-location='contact'] [data-nav='contact']:link:before, [data-location='contact'] [data-nav='contact']:link:after, [data-location='contact'] [data-nav='contact']:visited:before, [data-location='contact'] [data-nav='contact']:visited:after {
-    content: "["; }
-  [data-location='contact'] [data-nav='contact']:link:after, [data-location='contact'] [data-nav='contact']:visited:after {
-    content: "]"; }
-
-[data-region='main'] {
-  margin-bottom: 1.4rem; }
-
-[data-module] {
-  margin: 2.8rem auto;
-  max-width: 32rem;
-  padding-left: 0.7rem;
-  padding-right: 0.7rem; }
-
-.fatfooter {
-  background-color: #002a38;
-  color: #fff;
-  -ms-flex-align: center;
-  align-items: center;
-  background-image: linear-gradient(to top left, #111, #002a38);
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 80vh;
-  padding: 1.4rem 0; }
-  .fatfooter a, .fatfooter a:link, .fatfooter a:visited,
-  .fatfooter .link,
-  .fatfooter .link:link,
-  .fatfooter .link:visited {
-    color: #ed4d9d;
-    text-decoration: none; }
-  .fatfooter a:hover, .fatfooter a:focus, .fatfooter a:active,
-  .fatfooter .link:hover,
-  .fatfooter .link:focus,
-  .fatfooter .link:active {
-    text-decoration: underline; }
-  .fatfooter .btn, .fatfooter .btn:link, .fatfooter .btn:visited {
-    color: #ed4d9d; }
-  .fatfooter .btn:hover, .fatfooter .btn:focus, .fatfooter .btn:active {
-    background-color: #ed4d9d;
-    color: #111;
-    border-color: #ed4d9d; }
-
-[data-region='contact'] {
-  max-width: 100%;
-  width: 32rem; }
-
-.contact-inner {
-  border: 2px solid #c30062;
-  border-radius: 0.7rem;
-  margin: 0.7rem;
-  padding: 0.35rem 0.7rem 0.7rem;
-  position: relative; }
-  .contact-inner:before {
-    content: "";
-    border: 0.7rem solid transparent;
-    border-top-color: #c30062;
-    border-width: 0.35rem 0.7rem 0;
-    left: 1.4rem;
-    position: absolute;
-    top: 100%; }
-
-.contact-title {
-  font-style: italic; }
-
-.contact-summary {
+p,
+blockquote {
   margin-bottom: 0.7rem; }
 
-.contact-actions {
-  font-style: italic; }
-  .contact-actions a:link, .contact-actions a:visited {
-    font-style: normal; }
+body {
+  display: grid;
+  grid-template-areas: 'header header header header header' 'nav    nav    nav    nav    nav' 'main   main   main   main   main' '...... ...... footer ...... ......';
+  grid-template-columns: repeat(2, minmax(0, 1fr)) minmax(0, 28rem) repeat(2, minmax(0, 1fr));
+  grid-template-rows: calc(100vh - 2.8rem) repeat(3, auto);
+  max-width: 100vw; }
 
-[data-region='tinyletter'] {
-  -ms-flex-align: center;
-  align-items: center;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 100%;
-  padding: 0 0.7rem;
-  width: 32rem; }
+[data-layout='fancy'] {
+  grid-area: header; }
 
-.tiny-image {
-  border: 1px dotted #fff;
-  border-radius: 6px;
-  display: none;
-  -ms-flex: 0 0 4.2rem;
-  flex: 0 0 4.2rem;
-  width: 4.2rem; }
-  @media (min-width: 30em) {
-    .tiny-image {
-      display: block; } }
+[data-layout='hero'] {
+  grid-column: 1 / -2;
+  grid-row: 1 / span 1;
+  justify-self: start;
+  position: relative;
+  z-index: 1; }
 
-.tiny-inner {
-  font-size: 0.8rem;
-  line-height: 1.4rem;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto; }
+[data-layout='header'] {
+  -ms-flex-item-align: end;
+  align-self: end;
+  grid-column: 3 / -1;
+  grid-row: 1 / span 1;
+  position: relative;
+  z-index: 1; }
 
-.tiny-title {
-  font-size: 1rem;
-  line-height: 1.4rem;
-  font-style: italic;
-  padding: 0 0.7rem; }
+[data-layout='nav'] {
+  grid-area: nav;
+  position: relative;
+  z-index: 1; }
 
-[data-form='tinyletter'] {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 0 0.7rem; }
-  @media (min-width: 30em) {
-    [data-form='tinyletter'] {
-      -ms-flex-direction: row;
-      flex-direction: row; } }
+[data-layout='main'] {
+  grid-area: main; }
 
-[data-form-field='tlemail'] {
+[data-layout='footer'] {
+  grid-area: footer; }
+
+[data-layout='hero'] {
+  -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  margin: 0;
-  padding-bottom: 0.7rem; }
-  @media (min-width: 30em) {
-    [data-form-field='tlemail'] {
-      padding-bottom: 0;
-      padding-right: 0.7rem; } }
-  [data-form-field='tlemail'] [data-input-type='default'] {
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto; }
+  pointer-events: none; }
+  [data-layout='hero'] svg,
+  [data-layout='hero'] img {
+    height: 100%;
+    max-width: 100%;
+    width: auto; }
 
-[data-region='contentinfo'] {
-  margin-top: 1.4rem;
-  padding: 1.4rem 0.7rem;
-  text-align: center; }
-
-.copyright {
-  font-size: 0.8rem;
-  line-height: 1.4rem;
-  font-style: italic;
-  text-transform: lowercase; }
-  .copyright i {
-    font-style: normal; }
-
-[data-module='blog-post'] .title {
-  margin: 0;
-  padding: 0; }
-
-[data-module='blog-post'] p,
-[data-module='blog-post'] ol,
-[data-module='blog-post'] ul,
-[data-module='blog-post'] figure {
-  display: block;
-  margin: 0.7rem 0; }
-
-[data-module='blog-post'] li {
-  margin: 0.35rem 0; }
-
-[data-module='blog-post'] blockquote p {
-  display: inline; }
-
-.post-image {
-  height: 0;
-  padding-top: 56.25%;
-  position: relative;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  margin-bottom: 1.4rem; }
-
-.byline {
-  font-family: "SourceSansPro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.8rem;
-  line-height: 1.4rem;
-  text-transform: uppercase; }
-  .byline [pubdate] {
-    font-weight: bold; }
-
-[data-module='pagination'] {
-  font-style: italic;
-  text-align: center; }
-
-.prev:before {
-  content: "«"; }
-
-.next:after {
-  content: "»"; }
-
-.current,
-.total {
-  display: inline-block;
-  font-style: normal;
-  padding: 0 0.7rem;
-  vertical-align: middle; }
-
-.current {
-  font-size: 5.4rem;
-  line-height: 5.6rem; }
-
-.total {
-  font-size: 3.85rem;
-  line-height: 4.2rem; }
-
-[data-filter='performance']:checked ~ [data-filters]:not([data-filters~='performance']) {
-  display: none; }
-
-[data-filter='speaking']:checked ~ [data-filters]:not([data-filters~='speaking']) {
-  display: none; }
-
-[data-filter='art']:checked ~ [data-filters]:not([data-filters~='art']) {
-  display: none; }
-
-[data-filter='publication']:checked ~ [data-filters]:not([data-filters~='publication']) {
-  display: none; }
-
-[data-filter='album']:checked ~ [data-filters]:not([data-filters~='album']) {
-  display: none; }
-
-[data-filter='film']:checked ~ [data-filters]:not([data-filters~='film']) {
-  display: none; }
-
-[data-filter='software']:checked ~ [data-filters]:not([data-filters~='software']) {
-  display: none; }
-
-.h-event {
-  margin: 2.8rem 0; }
-
-.description {
-  font-style: italic; }
-
-@media (min-width: 40em) {
-  [data-module='summary'] {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    max-width: 100%; } }
-
-.calendar-group {
-  margin: 1.4rem 0; }
-  @media (min-width: 40em) {
-    .calendar-group {
-      font-size: 0.8rem;
-      line-height: 1.4rem;
-      -ms-flex: 0 1 auto;
-      flex: 0 1 auto;
-      margin: 1.4rem; } }
-
-.calendar-group-item {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
-
-.calendar-group-action {
-  display: inline-block;
-  font-style: italic;
-  margin: 0.35rem 0; }
-  .calendar-group-action:after {
-    content: "»"; }
-
-[data-module='contact-form'] {
-  padding-top: 0; }
-
-@media (min-width: 40em) {
-  [data-module='feature'] {
-    -ms-flex-align: center;
-    align-items: center;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 20vmin auto;
-    max-width: 50rem; } }
-
-.feature-image {
-  margin: 0 auto 0.7rem;
-  width: 50%; }
-  @media (min-width: 40em) {
-    .feature-image {
-      -ms-flex: 0 1 auto;
-      flex: 0 1 auto;
-      margin: 0 1.4rem;
-      max-width: 30%; } }
-
-@media (min-width: 40em) {
-  .feature-content {
-    -ms-flex: 1 10 auto;
-    flex: 1 10 auto; } }
-
-.feature-with {
-  font-size: 0.8rem;
-  line-height: 1.4rem;
-  font-style: italic;
-  margin-bottom: 0.7rem; }
-  .feature-with [href] {
-    font-style: normal; }
-
-.feature-actions .btn {
-  margin: 0 0.35rem 0.35rem 0; }
-
-[data-module='intro'] {
-  margin: 0;
-  max-width: 100%;
-  padding: 1.4rem 0.7rem;
-  transition: all 300ms; }
-  @media (min-width: 30em) {
-    [data-module='intro'] {
-      -ms-flex-align: center;
-      align-items: center;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: row-reverse;
-      flex-direction: row-reverse;
-      -ms-flex-pack: center;
-      justify-content: center;
-      margin-right: -15vmin; } }
+@-webkit-keyframes draw-logo {
+  to {
+    stroke-dashoffset: 0; } }
 
 @keyframes draw-logo {
   to {
     stroke-dashoffset: 0; } }
+
+@-webkit-keyframes fill-logo {
+  from {
+    fill-opacity: 0; }
+  to {
+    fill-opacity: 1; } }
 
 @keyframes fill-logo {
   from {
@@ -990,107 +257,2257 @@ body {
   to {
     fill-opacity: 1; } }
 
+@-webkit-keyframes fade-logo-outline {
+  to {
+    stroke-width: 0; } }
+
 @keyframes fade-logo-outline {
   to {
     stroke-width: 0; } }
 
-.intro-image {
-  height: 55vmin;
-  width: 55vmin;
-  animation: draw-logo 4s 1 ease-out both, fill-logo 4s 3s 1 ease-in-out both, fade-logo-outline 3s 3s 1 ease-in-out both;
-  display: block;
+.face {
+  margin: 0.7rem; }
+  [data-location='home'] .face {
+    -webkit-animation: draw-logo 5s 1 ease-out both, fill-logo 4s 3s 1 ease-in-out both, fade-logo-outline 3s 3s 1 ease-in-out both;
+    animation: draw-logo 5s 1 ease-out both, fill-logo 4s 3s 1 ease-in-out both, fade-logo-outline 3s 3s 1 ease-in-out both;
+    stroke: #e60073;
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+    stroke-width: 1; }
+
+[data-layout='header'] {
+  background: rgba(255, 255, 255, 0.96);
+  margin-left: -0.7rem;
+  padding: 0.7rem;
+  position: relative; }
+
+.page-title {
+  color: #ac0056;
+  font-size: calc(2em + 1.5vw);
+  line-height: 1; }
+
+.page-tagline {
+  font-size: calc(1em + 1vw);
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1; }
+  .page-tagline a:only-child {
+    color: inherit; }
+
+[data-layout='nav'] {
+  font-family: "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: rgba(255, 255, 255, 0.96);
+  display: grid;
+  font-size: 0.84515em;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) minmax(0, 28rem) repeat(2, minmax(0, 1fr));
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; }
+  [data-layout='nav']::before {
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -1px;
+    border-top: 1px dotted #e60073;
+    grid-column: 3 / -1;
+    margin-left: -0.7rem;
+    -webkit-transform: translateX(-1.4rem);
+    transform: translateX(-1.4rem); }
+  [data-layout='nav']::after {
+    content: "";
+    bottom: -1px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    border-bottom: 1px dotted #e60073;
+    grid-column: 3 / -1;
+    margin-left: -1.4rem; }
+
+.nav-inner {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  grid-column: 3 / span 1;
+  margin-left: -0.7rem;
+  max-width: 28rem; }
+
+[data-nav] {
+  -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  margin: 0 auto 0.7rem;
-  stroke: #c30062;
-  stroke-dasharray: 800;
-  stroke-dashoffset: 800;
-  stroke-width: 1; }
-  @media (min-width: 30em) {
-    .intro-image {
-      margin: 0;
-      margin-left: -8vmin; } }
+  font-weight: bold;
+  padding: 0.35rem 0.7rem; }
 
-.intro-body {
-  max-width: 24rem; }
-  @media (min-width: 30em) {
-    .intro-body {
-      padding: 0.7rem; } }
+[data-location='home'] [data-nav='home'] {
+  color: #173c48;
+  position: relative; }
+  [data-location='home'] [data-nav='home']::before, [data-location='home'] [data-nav='home']::after {
+    content: "";
+    bottom: -1px;
+    left: 50%;
+    position: absolute;
+    height: 0.35rem;
+    width: 0.35rem;
+    background: #fff;
+    border: 1px dotted transparent;
+    -webkit-transform: translate3d(-50%, 50%, 0) rotate(-135deg);
+    transform: translate3d(-50%, 50%, 0) rotate(-135deg);
+    z-index: 2; }
+  [data-location='home'] [data-nav='home']::after {
+    border-color: #e60073;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%); }
 
-.intro-title {
-  font-size: calc(1rem + 1.5vw);
-  font-style: italic; }
+[data-location='what'] [data-nav='what'] {
+  color: #173c48;
+  position: relative; }
+  [data-location='what'] [data-nav='what']::before, [data-location='what'] [data-nav='what']::after {
+    content: "";
+    bottom: -1px;
+    left: 50%;
+    position: absolute;
+    height: 0.35rem;
+    width: 0.35rem;
+    background: #fff;
+    border: 1px dotted transparent;
+    -webkit-transform: translate3d(-50%, 50%, 0) rotate(-135deg);
+    transform: translate3d(-50%, 50%, 0) rotate(-135deg);
+    z-index: 2; }
+  [data-location='what'] [data-nav='what']::after {
+    border-color: #e60073;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%); }
 
-.intro-action {
-  margin-top: 1.4rem; }
+[data-location='blog'] [data-nav='blog'] {
+  color: #173c48;
+  position: relative; }
+  [data-location='blog'] [data-nav='blog']::before, [data-location='blog'] [data-nav='blog']::after {
+    content: "";
+    bottom: -1px;
+    left: 50%;
+    position: absolute;
+    height: 0.35rem;
+    width: 0.35rem;
+    background: #fff;
+    border: 1px dotted transparent;
+    -webkit-transform: translate3d(-50%, 50%, 0) rotate(-135deg);
+    transform: translate3d(-50%, 50%, 0) rotate(-135deg);
+    z-index: 2; }
+  [data-location='blog'] [data-nav='blog']::after {
+    border-color: #e60073;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%); }
 
-[data-module='rst'] {
-  margin: 0 auto;
-  max-width: 32rem;
-  padding-left: 0.7rem;
-  padding-right: 0.7rem; }
-  [data-module='rst'] p,
-  [data-module='rst'] ul,
-  [data-module='rst'] ol {
-    margin: 0.7rem 0; }
-  [data-module='rst'] li {
-    margin: 0.35rem 0; }
-  @media (max-width: 40em) {
-    [data-module='rst'] ol,
-    [data-module='rst'] ul {
-      padding-left: 1em; } }
+[data-location='about'] [data-nav='about'] {
+  color: #173c48;
+  position: relative; }
+  [data-location='about'] [data-nav='about']::before, [data-location='about'] [data-nav='about']::after {
+    content: "";
+    bottom: -1px;
+    left: 50%;
+    position: absolute;
+    height: 0.35rem;
+    width: 0.35rem;
+    background: #fff;
+    border: 1px dotted transparent;
+    -webkit-transform: translate3d(-50%, 50%, 0) rotate(-135deg);
+    transform: translate3d(-50%, 50%, 0) rotate(-135deg);
+    z-index: 2; }
+  [data-location='about'] [data-nav='about']::after {
+    border-color: #e60073;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%); }
 
-.title {
-  font-size: 1.4rem;
-  line-height: 2.1rem;
-  margin: 2.8rem auto;
-  max-width: 32rem;
-  padding-left: 0.7rem;
-  padding-right: 0.7rem;
-  font-style: italic; }
+[data-location='contact'] [data-nav='contact'] {
+  color: #173c48;
+  position: relative; }
+  [data-location='contact'] [data-nav='contact']::before, [data-location='contact'] [data-nav='contact']::after {
+    content: "";
+    bottom: -1px;
+    left: 50%;
+    position: absolute;
+    height: 0.35rem;
+    width: 0.35rem;
+    background: #fff;
+    border: 1px dotted transparent;
+    -webkit-transform: translate3d(-50%, 50%, 0) rotate(-135deg);
+    transform: translate3d(-50%, 50%, 0) rotate(-135deg);
+    z-index: 2; }
+  [data-location='contact'] [data-nav='contact']::after {
+    border-color: #e60073;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%); }
 
-[data-module='interviews'],
-[data-module='press'] {
-  margin: 2.8rem auto;
-  max-width: 32rem;
-  padding-left: 0.7rem;
-  padding-right: 0.7rem; }
-  [data-module='interviews'] .p-summary,
-  [data-module='press'] .p-summary {
-    font-size: 0.8rem;
-    line-height: 1.4rem;
-    font-style: italic; }
-    [data-module='interviews'] .p-summary [href],
-    [data-module='press'] .p-summary [href] {
-      font-style: normal; }
-
-.press-topic {
-  margin-bottom: 2.8rem; }
-
-[data-module='sidesaddle'] {
-  border-top: 1px solid;
-  margin: 1.4rem 0 -1.4rem;
-  max-width: 100%;
+[data-layout='main'] {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) minmax(0, 28rem) repeat(2, minmax(0, 1fr));
   padding: 1.4rem 0; }
-  @media (min-width: 40em) {
-    [data-module='sidesaddle'] {
-      background: url("../images/cover.jpg") no-repeat scroll right;
-      background-size: cover;
-      padding: 25vh 0; } }
-  [data-module='sidesaddle'] .container {
-    margin: 2.8rem auto;
-    max-width: 32rem;
-    padding-left: 0.7rem;
-    padding-right: 0.7rem;
-    margin: 0 auto; }
-  [data-module='sidesaddle'] p {
-    color: #353535; }
-  [data-module='sidesaddle'] span {
-    background: #fff; }
-  [data-module='sidesaddle'] [href]:hover span, [data-module='sidesaddle'] [href]:focus span, [data-module='sidesaddle'] [href]:active span {
-    background: transparent; }
-  [data-module='sidesaddle'] p,
-  [data-module='sidesaddle'] .btn {
-    margin-bottom: 0.7rem; }
+  [data-layout='main'] > * {
+    grid-column: 3 / span 1; }
+
+[data-layout='footer'] {
+  font-family: "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-top: 1px dotted #e60073;
+  font-size: 0.84515em;
+  margin: 0 0 4.2rem -0.7rem;
+  padding: 0.7rem; }
+
+@-webkit-keyframes hue-shift {
+  25% {
+    background-color: #e6e600; }
+  50% {
+    background-color: #73e600; }
+  75% {
+    background-color: #00e673; }
+  100% {
+    background-color: #e60073; } }
+
+@keyframes hue-shift {
+  25% {
+    background-color: #e6e600; }
+  50% {
+    background-color: #73e600; }
+  75% {
+    background-color: #00e673; }
+  100% {
+    background-color: #e60073; } }
+
+@-webkit-keyframes blip {
+  62%,
+  68% {
+    opacity: 0; }
+  65% {
+    opacity: 0.25; } }
+
+@keyframes blip {
+  62%,
+  68% {
+    opacity: 0; }
+  65% {
+    opacity: 0.25; } }
+
+[data-layout='fancy'] {
+  direction: rtl;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(25, minmax(0, 1fr));
+  grid-template-rows: repeat(25, minmax(0, 1fr));
+  overflow: hidden; }
+
+[data-fancy] {
+  -webkit-animation: hue-shift 50s infinite both, blip 90s infinite both ease;
+  animation: hue-shift 50s infinite both, blip 90s infinite both ease;
+  background-color: #e60073;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.96)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0));
+  opacity: 0; }
+  [data-fancy]:hover {
+    opacity: 0.5; }
+
+[data-fancy='0'] {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s; }
+
+[data-fancy='1'] {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s; }
+
+[data-fancy='2'] {
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s; }
+
+[data-fancy='3'] {
+  -webkit-animation-delay: -3s;
+  animation-delay: -3s; }
+
+[data-fancy='4'] {
+  -webkit-animation-delay: -4s;
+  animation-delay: -4s; }
+
+[data-fancy='5'] {
+  -webkit-animation-delay: -5s;
+  animation-delay: -5s; }
+
+[data-fancy='6'] {
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s; }
+
+[data-fancy='7'] {
+  -webkit-animation-delay: -7s;
+  animation-delay: -7s; }
+
+[data-fancy='8'] {
+  -webkit-animation-delay: -8s;
+  animation-delay: -8s; }
+
+[data-fancy='9'] {
+  -webkit-animation-delay: -9s;
+  animation-delay: -9s; }
+
+[data-fancy='10'] {
+  -webkit-animation-delay: -10s;
+  animation-delay: -10s; }
+
+[data-fancy='11'] {
+  -webkit-animation-delay: -11s;
+  animation-delay: -11s; }
+
+[data-fancy='12'] {
+  -webkit-animation-delay: -12s;
+  animation-delay: -12s; }
+
+[data-fancy='13'] {
+  -webkit-animation-delay: -13s;
+  animation-delay: -13s; }
+
+[data-fancy='14'] {
+  -webkit-animation-delay: -14s;
+  animation-delay: -14s; }
+
+[data-fancy='15'] {
+  -webkit-animation-delay: -15s;
+  animation-delay: -15s; }
+
+[data-fancy='16'] {
+  -webkit-animation-delay: -16s;
+  animation-delay: -16s; }
+
+[data-fancy='17'] {
+  -webkit-animation-delay: -17s;
+  animation-delay: -17s; }
+
+[data-fancy='18'] {
+  -webkit-animation-delay: -18s;
+  animation-delay: -18s; }
+
+[data-fancy='19'] {
+  -webkit-animation-delay: -19s;
+  animation-delay: -19s; }
+
+[data-fancy='20'] {
+  -webkit-animation-delay: -20s;
+  animation-delay: -20s; }
+
+[data-fancy='21'] {
+  -webkit-animation-delay: -21s;
+  animation-delay: -21s; }
+
+[data-fancy='22'] {
+  -webkit-animation-delay: -22s;
+  animation-delay: -22s; }
+
+[data-fancy='23'] {
+  -webkit-animation-delay: -46s;
+  animation-delay: -46s; }
+
+[data-fancy='24'] {
+  -webkit-animation-delay: -48s;
+  animation-delay: -48s; }
+
+[data-fancy='25'] {
+  -webkit-animation-delay: -50s;
+  animation-delay: -50s; }
+
+[data-fancy='26'] {
+  -webkit-animation-delay: -52s;
+  animation-delay: -52s; }
+
+[data-fancy='27'] {
+  -webkit-animation-delay: -54s;
+  animation-delay: -54s; }
+
+[data-fancy='28'] {
+  -webkit-animation-delay: -56s;
+  animation-delay: -56s; }
+
+[data-fancy='29'] {
+  -webkit-animation-delay: -58s;
+  animation-delay: -58s; }
+
+[data-fancy='30'] {
+  -webkit-animation-delay: -60s;
+  animation-delay: -60s; }
+
+[data-fancy='31'] {
+  -webkit-animation-delay: -62s;
+  animation-delay: -62s; }
+
+[data-fancy='32'] {
+  -webkit-animation-delay: -64s;
+  animation-delay: -64s; }
+
+[data-fancy='33'] {
+  -webkit-animation-delay: -66s;
+  animation-delay: -66s; }
+
+[data-fancy='34'] {
+  -webkit-animation-delay: -68s;
+  animation-delay: -68s; }
+
+[data-fancy='35'] {
+  -webkit-animation-delay: -70s;
+  animation-delay: -70s; }
+
+[data-fancy='36'] {
+  -webkit-animation-delay: -72s;
+  animation-delay: -72s; }
+
+[data-fancy='37'] {
+  -webkit-animation-delay: -74s;
+  animation-delay: -74s; }
+
+[data-fancy='38'] {
+  -webkit-animation-delay: -76s;
+  animation-delay: -76s; }
+
+[data-fancy='39'] {
+  -webkit-animation-delay: -78s;
+  animation-delay: -78s; }
+
+[data-fancy='40'] {
+  -webkit-animation-delay: -80s;
+  animation-delay: -80s; }
+
+[data-fancy='41'] {
+  -webkit-animation-delay: -82s;
+  animation-delay: -82s; }
+
+[data-fancy='42'] {
+  -webkit-animation-delay: -84s;
+  animation-delay: -84s; }
+
+[data-fancy='43'] {
+  -webkit-animation-delay: -86s;
+  animation-delay: -86s; }
+
+[data-fancy='44'] {
+  -webkit-animation-delay: -88s;
+  animation-delay: -88s; }
+
+[data-fancy='45'] {
+  -webkit-animation-delay: -90s;
+  animation-delay: -90s; }
+
+[data-fancy='46'] {
+  -webkit-animation-delay: -138s;
+  animation-delay: -138s; }
+
+[data-fancy='47'] {
+  -webkit-animation-delay: -141s;
+  animation-delay: -141s; }
+
+[data-fancy='48'] {
+  -webkit-animation-delay: -144s;
+  animation-delay: -144s; }
+
+[data-fancy='49'] {
+  -webkit-animation-delay: -147s;
+  animation-delay: -147s; }
+
+[data-fancy='50'] {
+  -webkit-animation-delay: -150s;
+  animation-delay: -150s; }
+
+[data-fancy='51'] {
+  -webkit-animation-delay: -153s;
+  animation-delay: -153s; }
+
+[data-fancy='52'] {
+  -webkit-animation-delay: -156s;
+  animation-delay: -156s; }
+
+[data-fancy='53'] {
+  -webkit-animation-delay: -159s;
+  animation-delay: -159s; }
+
+[data-fancy='54'] {
+  -webkit-animation-delay: -162s;
+  animation-delay: -162s; }
+
+[data-fancy='55'] {
+  -webkit-animation-delay: -165s;
+  animation-delay: -165s; }
+
+[data-fancy='56'] {
+  -webkit-animation-delay: -168s;
+  animation-delay: -168s; }
+
+[data-fancy='57'] {
+  -webkit-animation-delay: -171s;
+  animation-delay: -171s; }
+
+[data-fancy='58'] {
+  -webkit-animation-delay: -174s;
+  animation-delay: -174s; }
+
+[data-fancy='59'] {
+  -webkit-animation-delay: -177s;
+  animation-delay: -177s; }
+
+[data-fancy='60'] {
+  -webkit-animation-delay: -180s;
+  animation-delay: -180s; }
+
+[data-fancy='61'] {
+  -webkit-animation-delay: -183s;
+  animation-delay: -183s; }
+
+[data-fancy='62'] {
+  -webkit-animation-delay: -186s;
+  animation-delay: -186s; }
+
+[data-fancy='63'] {
+  -webkit-animation-delay: -189s;
+  animation-delay: -189s; }
+
+[data-fancy='64'] {
+  -webkit-animation-delay: -192s;
+  animation-delay: -192s; }
+
+[data-fancy='65'] {
+  -webkit-animation-delay: -195s;
+  animation-delay: -195s; }
+
+[data-fancy='66'] {
+  -webkit-animation-delay: -198s;
+  animation-delay: -198s; }
+
+[data-fancy='67'] {
+  -webkit-animation-delay: -201s;
+  animation-delay: -201s; }
+
+[data-fancy='68'] {
+  -webkit-animation-delay: -204s;
+  animation-delay: -204s; }
+
+[data-fancy='69'] {
+  -webkit-animation-delay: -276s;
+  animation-delay: -276s; }
+
+[data-fancy='70'] {
+  -webkit-animation-delay: -280s;
+  animation-delay: -280s; }
+
+[data-fancy='71'] {
+  -webkit-animation-delay: -284s;
+  animation-delay: -284s; }
+
+[data-fancy='72'] {
+  -webkit-animation-delay: -288s;
+  animation-delay: -288s; }
+
+[data-fancy='73'] {
+  -webkit-animation-delay: -292s;
+  animation-delay: -292s; }
+
+[data-fancy='74'] {
+  -webkit-animation-delay: -296s;
+  animation-delay: -296s; }
+
+[data-fancy='75'] {
+  -webkit-animation-delay: -300s;
+  animation-delay: -300s; }
+
+[data-fancy='76'] {
+  -webkit-animation-delay: -304s;
+  animation-delay: -304s; }
+
+[data-fancy='77'] {
+  -webkit-animation-delay: -308s;
+  animation-delay: -308s; }
+
+[data-fancy='78'] {
+  -webkit-animation-delay: -312s;
+  animation-delay: -312s; }
+
+[data-fancy='79'] {
+  -webkit-animation-delay: -316s;
+  animation-delay: -316s; }
+
+[data-fancy='80'] {
+  -webkit-animation-delay: -320s;
+  animation-delay: -320s; }
+
+[data-fancy='81'] {
+  -webkit-animation-delay: -324s;
+  animation-delay: -324s; }
+
+[data-fancy='82'] {
+  -webkit-animation-delay: -328s;
+  animation-delay: -328s; }
+
+[data-fancy='83'] {
+  -webkit-animation-delay: -332s;
+  animation-delay: -332s; }
+
+[data-fancy='84'] {
+  -webkit-animation-delay: -336s;
+  animation-delay: -336s; }
+
+[data-fancy='85'] {
+  -webkit-animation-delay: -340s;
+  animation-delay: -340s; }
+
+[data-fancy='86'] {
+  -webkit-animation-delay: -344s;
+  animation-delay: -344s; }
+
+[data-fancy='87'] {
+  -webkit-animation-delay: -348s;
+  animation-delay: -348s; }
+
+[data-fancy='88'] {
+  -webkit-animation-delay: -352s;
+  animation-delay: -352s; }
+
+[data-fancy='89'] {
+  -webkit-animation-delay: -356s;
+  animation-delay: -356s; }
+
+[data-fancy='90'] {
+  -webkit-animation-delay: -360s;
+  animation-delay: -360s; }
+
+[data-fancy='91'] {
+  -webkit-animation-delay: -364s;
+  animation-delay: -364s; }
+
+[data-fancy='92'] {
+  -webkit-animation-delay: -460s;
+  animation-delay: -460s; }
+
+[data-fancy='93'] {
+  -webkit-animation-delay: -465s;
+  animation-delay: -465s; }
+
+[data-fancy='94'] {
+  -webkit-animation-delay: -470s;
+  animation-delay: -470s; }
+
+[data-fancy='95'] {
+  -webkit-animation-delay: -475s;
+  animation-delay: -475s; }
+
+[data-fancy='96'] {
+  -webkit-animation-delay: -480s;
+  animation-delay: -480s; }
+
+[data-fancy='97'] {
+  -webkit-animation-delay: -485s;
+  animation-delay: -485s; }
+
+[data-fancy='98'] {
+  -webkit-animation-delay: -490s;
+  animation-delay: -490s; }
+
+[data-fancy='99'] {
+  -webkit-animation-delay: -495s;
+  animation-delay: -495s; }
+
+[data-fancy='100'] {
+  -webkit-animation-delay: -500s;
+  animation-delay: -500s; }
+
+[data-fancy='101'] {
+  -webkit-animation-delay: -505s;
+  animation-delay: -505s; }
+
+[data-fancy='102'] {
+  -webkit-animation-delay: -510s;
+  animation-delay: -510s; }
+
+[data-fancy='103'] {
+  -webkit-animation-delay: -515s;
+  animation-delay: -515s; }
+
+[data-fancy='104'] {
+  -webkit-animation-delay: -520s;
+  animation-delay: -520s; }
+
+[data-fancy='105'] {
+  -webkit-animation-delay: -525s;
+  animation-delay: -525s; }
+
+[data-fancy='106'] {
+  -webkit-animation-delay: -530s;
+  animation-delay: -530s; }
+
+[data-fancy='107'] {
+  -webkit-animation-delay: -535s;
+  animation-delay: -535s; }
+
+[data-fancy='108'] {
+  -webkit-animation-delay: -540s;
+  animation-delay: -540s; }
+
+[data-fancy='109'] {
+  -webkit-animation-delay: -545s;
+  animation-delay: -545s; }
+
+[data-fancy='110'] {
+  -webkit-animation-delay: -550s;
+  animation-delay: -550s; }
+
+[data-fancy='111'] {
+  -webkit-animation-delay: -555s;
+  animation-delay: -555s; }
+
+[data-fancy='112'] {
+  -webkit-animation-delay: -560s;
+  animation-delay: -560s; }
+
+[data-fancy='113'] {
+  -webkit-animation-delay: -565s;
+  animation-delay: -565s; }
+
+[data-fancy='114'] {
+  -webkit-animation-delay: -570s;
+  animation-delay: -570s; }
+
+[data-fancy='115'] {
+  -webkit-animation-delay: -690s;
+  animation-delay: -690s; }
+
+[data-fancy='116'] {
+  -webkit-animation-delay: -696s;
+  animation-delay: -696s; }
+
+[data-fancy='117'] {
+  -webkit-animation-delay: -702s;
+  animation-delay: -702s; }
+
+[data-fancy='118'] {
+  -webkit-animation-delay: -708s;
+  animation-delay: -708s; }
+
+[data-fancy='119'] {
+  -webkit-animation-delay: -714s;
+  animation-delay: -714s; }
+
+[data-fancy='120'] {
+  -webkit-animation-delay: -720s;
+  animation-delay: -720s; }
+
+[data-fancy='121'] {
+  -webkit-animation-delay: -726s;
+  animation-delay: -726s; }
+
+[data-fancy='122'] {
+  -webkit-animation-delay: -732s;
+  animation-delay: -732s; }
+
+[data-fancy='123'] {
+  -webkit-animation-delay: -738s;
+  animation-delay: -738s; }
+
+[data-fancy='124'] {
+  -webkit-animation-delay: -744s;
+  animation-delay: -744s; }
+
+[data-fancy='125'] {
+  -webkit-animation-delay: -750s;
+  animation-delay: -750s; }
+
+[data-fancy='126'] {
+  -webkit-animation-delay: -756s;
+  animation-delay: -756s; }
+
+[data-fancy='127'] {
+  -webkit-animation-delay: -762s;
+  animation-delay: -762s; }
+
+[data-fancy='128'] {
+  -webkit-animation-delay: -768s;
+  animation-delay: -768s; }
+
+[data-fancy='129'] {
+  -webkit-animation-delay: -774s;
+  animation-delay: -774s; }
+
+[data-fancy='130'] {
+  -webkit-animation-delay: -780s;
+  animation-delay: -780s; }
+
+[data-fancy='131'] {
+  -webkit-animation-delay: -786s;
+  animation-delay: -786s; }
+
+[data-fancy='132'] {
+  -webkit-animation-delay: -792s;
+  animation-delay: -792s; }
+
+[data-fancy='133'] {
+  -webkit-animation-delay: -798s;
+  animation-delay: -798s; }
+
+[data-fancy='134'] {
+  -webkit-animation-delay: -804s;
+  animation-delay: -804s; }
+
+[data-fancy='135'] {
+  -webkit-animation-delay: -810s;
+  animation-delay: -810s; }
+
+[data-fancy='136'] {
+  -webkit-animation-delay: -816s;
+  animation-delay: -816s; }
+
+[data-fancy='137'] {
+  -webkit-animation-delay: -822s;
+  animation-delay: -822s; }
+
+[data-fancy='138'] {
+  -webkit-animation-delay: -966s;
+  animation-delay: -966s; }
+
+[data-fancy='139'] {
+  -webkit-animation-delay: -973s;
+  animation-delay: -973s; }
+
+[data-fancy='140'] {
+  -webkit-animation-delay: -980s;
+  animation-delay: -980s; }
+
+[data-fancy='141'] {
+  -webkit-animation-delay: -987s;
+  animation-delay: -987s; }
+
+[data-fancy='142'] {
+  -webkit-animation-delay: -994s;
+  animation-delay: -994s; }
+
+[data-fancy='143'] {
+  -webkit-animation-delay: -1001s;
+  animation-delay: -1001s; }
+
+[data-fancy='144'] {
+  -webkit-animation-delay: -1008s;
+  animation-delay: -1008s; }
+
+[data-fancy='145'] {
+  -webkit-animation-delay: -1015s;
+  animation-delay: -1015s; }
+
+[data-fancy='146'] {
+  -webkit-animation-delay: -1022s;
+  animation-delay: -1022s; }
+
+[data-fancy='147'] {
+  -webkit-animation-delay: -1029s;
+  animation-delay: -1029s; }
+
+[data-fancy='148'] {
+  -webkit-animation-delay: -1036s;
+  animation-delay: -1036s; }
+
+[data-fancy='149'] {
+  -webkit-animation-delay: -1043s;
+  animation-delay: -1043s; }
+
+[data-fancy='150'] {
+  -webkit-animation-delay: -1050s;
+  animation-delay: -1050s; }
+
+[data-fancy='151'] {
+  -webkit-animation-delay: -1057s;
+  animation-delay: -1057s; }
+
+[data-fancy='152'] {
+  -webkit-animation-delay: -1064s;
+  animation-delay: -1064s; }
+
+[data-fancy='153'] {
+  -webkit-animation-delay: -1071s;
+  animation-delay: -1071s; }
+
+[data-fancy='154'] {
+  -webkit-animation-delay: -1078s;
+  animation-delay: -1078s; }
+
+[data-fancy='155'] {
+  -webkit-animation-delay: -1085s;
+  animation-delay: -1085s; }
+
+[data-fancy='156'] {
+  -webkit-animation-delay: -1092s;
+  animation-delay: -1092s; }
+
+[data-fancy='157'] {
+  -webkit-animation-delay: -1099s;
+  animation-delay: -1099s; }
+
+[data-fancy='158'] {
+  -webkit-animation-delay: -1106s;
+  animation-delay: -1106s; }
+
+[data-fancy='159'] {
+  -webkit-animation-delay: -1113s;
+  animation-delay: -1113s; }
+
+[data-fancy='160'] {
+  -webkit-animation-delay: -1120s;
+  animation-delay: -1120s; }
+
+[data-fancy='161'] {
+  -webkit-animation-delay: -1288s;
+  animation-delay: -1288s; }
+
+[data-fancy='162'] {
+  -webkit-animation-delay: -1296s;
+  animation-delay: -1296s; }
+
+[data-fancy='163'] {
+  -webkit-animation-delay: -1304s;
+  animation-delay: -1304s; }
+
+[data-fancy='164'] {
+  -webkit-animation-delay: -1312s;
+  animation-delay: -1312s; }
+
+[data-fancy='165'] {
+  -webkit-animation-delay: -1320s;
+  animation-delay: -1320s; }
+
+[data-fancy='166'] {
+  -webkit-animation-delay: -1328s;
+  animation-delay: -1328s; }
+
+[data-fancy='167'] {
+  -webkit-animation-delay: -1336s;
+  animation-delay: -1336s; }
+
+[data-fancy='168'] {
+  -webkit-animation-delay: -1344s;
+  animation-delay: -1344s; }
+
+[data-fancy='169'] {
+  -webkit-animation-delay: -1352s;
+  animation-delay: -1352s; }
+
+[data-fancy='170'] {
+  -webkit-animation-delay: -1360s;
+  animation-delay: -1360s; }
+
+[data-fancy='171'] {
+  -webkit-animation-delay: -1368s;
+  animation-delay: -1368s; }
+
+[data-fancy='172'] {
+  -webkit-animation-delay: -1376s;
+  animation-delay: -1376s; }
+
+[data-fancy='173'] {
+  -webkit-animation-delay: -1384s;
+  animation-delay: -1384s; }
+
+[data-fancy='174'] {
+  -webkit-animation-delay: -1392s;
+  animation-delay: -1392s; }
+
+[data-fancy='175'] {
+  -webkit-animation-delay: -1400s;
+  animation-delay: -1400s; }
+
+[data-fancy='176'] {
+  -webkit-animation-delay: -1408s;
+  animation-delay: -1408s; }
+
+[data-fancy='177'] {
+  -webkit-animation-delay: -1416s;
+  animation-delay: -1416s; }
+
+[data-fancy='178'] {
+  -webkit-animation-delay: -1424s;
+  animation-delay: -1424s; }
+
+[data-fancy='179'] {
+  -webkit-animation-delay: -1432s;
+  animation-delay: -1432s; }
+
+[data-fancy='180'] {
+  -webkit-animation-delay: -1440s;
+  animation-delay: -1440s; }
+
+[data-fancy='181'] {
+  -webkit-animation-delay: -1448s;
+  animation-delay: -1448s; }
+
+[data-fancy='182'] {
+  -webkit-animation-delay: -1456s;
+  animation-delay: -1456s; }
+
+[data-fancy='183'] {
+  -webkit-animation-delay: -1464s;
+  animation-delay: -1464s; }
+
+[data-fancy='184'] {
+  -webkit-animation-delay: -1656s;
+  animation-delay: -1656s; }
+
+[data-fancy='185'] {
+  -webkit-animation-delay: -1665s;
+  animation-delay: -1665s; }
+
+[data-fancy='186'] {
+  -webkit-animation-delay: -1674s;
+  animation-delay: -1674s; }
+
+[data-fancy='187'] {
+  -webkit-animation-delay: -1683s;
+  animation-delay: -1683s; }
+
+[data-fancy='188'] {
+  -webkit-animation-delay: -1692s;
+  animation-delay: -1692s; }
+
+[data-fancy='189'] {
+  -webkit-animation-delay: -1701s;
+  animation-delay: -1701s; }
+
+[data-fancy='190'] {
+  -webkit-animation-delay: -1710s;
+  animation-delay: -1710s; }
+
+[data-fancy='191'] {
+  -webkit-animation-delay: -1719s;
+  animation-delay: -1719s; }
+
+[data-fancy='192'] {
+  -webkit-animation-delay: -1728s;
+  animation-delay: -1728s; }
+
+[data-fancy='193'] {
+  -webkit-animation-delay: -1737s;
+  animation-delay: -1737s; }
+
+[data-fancy='194'] {
+  -webkit-animation-delay: -1746s;
+  animation-delay: -1746s; }
+
+[data-fancy='195'] {
+  -webkit-animation-delay: -1755s;
+  animation-delay: -1755s; }
+
+[data-fancy='196'] {
+  -webkit-animation-delay: -1764s;
+  animation-delay: -1764s; }
+
+[data-fancy='197'] {
+  -webkit-animation-delay: -1773s;
+  animation-delay: -1773s; }
+
+[data-fancy='198'] {
+  -webkit-animation-delay: -1782s;
+  animation-delay: -1782s; }
+
+[data-fancy='199'] {
+  -webkit-animation-delay: -1791s;
+  animation-delay: -1791s; }
+
+[data-fancy='200'] {
+  -webkit-animation-delay: -1800s;
+  animation-delay: -1800s; }
+
+[data-fancy='201'] {
+  -webkit-animation-delay: -1809s;
+  animation-delay: -1809s; }
+
+[data-fancy='202'] {
+  -webkit-animation-delay: -1818s;
+  animation-delay: -1818s; }
+
+[data-fancy='203'] {
+  -webkit-animation-delay: -1827s;
+  animation-delay: -1827s; }
+
+[data-fancy='204'] {
+  -webkit-animation-delay: -1836s;
+  animation-delay: -1836s; }
+
+[data-fancy='205'] {
+  -webkit-animation-delay: -1845s;
+  animation-delay: -1845s; }
+
+[data-fancy='206'] {
+  -webkit-animation-delay: -1854s;
+  animation-delay: -1854s; }
+
+[data-fancy='207'] {
+  -webkit-animation-delay: -2070s;
+  animation-delay: -2070s; }
+
+[data-fancy='208'] {
+  -webkit-animation-delay: -2080s;
+  animation-delay: -2080s; }
+
+[data-fancy='209'] {
+  -webkit-animation-delay: -2090s;
+  animation-delay: -2090s; }
+
+[data-fancy='210'] {
+  -webkit-animation-delay: -2100s;
+  animation-delay: -2100s; }
+
+[data-fancy='211'] {
+  -webkit-animation-delay: -2110s;
+  animation-delay: -2110s; }
+
+[data-fancy='212'] {
+  -webkit-animation-delay: -2120s;
+  animation-delay: -2120s; }
+
+[data-fancy='213'] {
+  -webkit-animation-delay: -2130s;
+  animation-delay: -2130s; }
+
+[data-fancy='214'] {
+  -webkit-animation-delay: -2140s;
+  animation-delay: -2140s; }
+
+[data-fancy='215'] {
+  -webkit-animation-delay: -2150s;
+  animation-delay: -2150s; }
+
+[data-fancy='216'] {
+  -webkit-animation-delay: -2160s;
+  animation-delay: -2160s; }
+
+[data-fancy='217'] {
+  -webkit-animation-delay: -2170s;
+  animation-delay: -2170s; }
+
+[data-fancy='218'] {
+  -webkit-animation-delay: -2180s;
+  animation-delay: -2180s; }
+
+[data-fancy='219'] {
+  -webkit-animation-delay: -2190s;
+  animation-delay: -2190s; }
+
+[data-fancy='220'] {
+  -webkit-animation-delay: -2200s;
+  animation-delay: -2200s; }
+
+[data-fancy='221'] {
+  -webkit-animation-delay: -2210s;
+  animation-delay: -2210s; }
+
+[data-fancy='222'] {
+  -webkit-animation-delay: -2220s;
+  animation-delay: -2220s; }
+
+[data-fancy='223'] {
+  -webkit-animation-delay: -2230s;
+  animation-delay: -2230s; }
+
+[data-fancy='224'] {
+  -webkit-animation-delay: -2240s;
+  animation-delay: -2240s; }
+
+[data-fancy='225'] {
+  -webkit-animation-delay: -2250s;
+  animation-delay: -2250s; }
+
+[data-fancy='226'] {
+  -webkit-animation-delay: -2260s;
+  animation-delay: -2260s; }
+
+[data-fancy='227'] {
+  -webkit-animation-delay: -2270s;
+  animation-delay: -2270s; }
+
+[data-fancy='228'] {
+  -webkit-animation-delay: -2280s;
+  animation-delay: -2280s; }
+
+[data-fancy='229'] {
+  -webkit-animation-delay: -2290s;
+  animation-delay: -2290s; }
+
+[data-fancy='230'] {
+  -webkit-animation-delay: -2530s;
+  animation-delay: -2530s; }
+
+[data-fancy='231'] {
+  -webkit-animation-delay: -2541s;
+  animation-delay: -2541s; }
+
+[data-fancy='232'] {
+  -webkit-animation-delay: -2552s;
+  animation-delay: -2552s; }
+
+[data-fancy='233'] {
+  -webkit-animation-delay: -2563s;
+  animation-delay: -2563s; }
+
+[data-fancy='234'] {
+  -webkit-animation-delay: -2574s;
+  animation-delay: -2574s; }
+
+[data-fancy='235'] {
+  -webkit-animation-delay: -2585s;
+  animation-delay: -2585s; }
+
+[data-fancy='236'] {
+  -webkit-animation-delay: -2596s;
+  animation-delay: -2596s; }
+
+[data-fancy='237'] {
+  -webkit-animation-delay: -2607s;
+  animation-delay: -2607s; }
+
+[data-fancy='238'] {
+  -webkit-animation-delay: -2618s;
+  animation-delay: -2618s; }
+
+[data-fancy='239'] {
+  -webkit-animation-delay: -2629s;
+  animation-delay: -2629s; }
+
+[data-fancy='240'] {
+  -webkit-animation-delay: -2640s;
+  animation-delay: -2640s; }
+
+[data-fancy='241'] {
+  -webkit-animation-delay: -2651s;
+  animation-delay: -2651s; }
+
+[data-fancy='242'] {
+  -webkit-animation-delay: -2662s;
+  animation-delay: -2662s; }
+
+[data-fancy='243'] {
+  -webkit-animation-delay: -2673s;
+  animation-delay: -2673s; }
+
+[data-fancy='244'] {
+  -webkit-animation-delay: -2684s;
+  animation-delay: -2684s; }
+
+[data-fancy='245'] {
+  -webkit-animation-delay: -2695s;
+  animation-delay: -2695s; }
+
+[data-fancy='246'] {
+  -webkit-animation-delay: -2706s;
+  animation-delay: -2706s; }
+
+[data-fancy='247'] {
+  -webkit-animation-delay: -2717s;
+  animation-delay: -2717s; }
+
+[data-fancy='248'] {
+  -webkit-animation-delay: -2728s;
+  animation-delay: -2728s; }
+
+[data-fancy='249'] {
+  -webkit-animation-delay: -2739s;
+  animation-delay: -2739s; }
+
+[data-fancy='250'] {
+  -webkit-animation-delay: -2750s;
+  animation-delay: -2750s; }
+
+[data-fancy='251'] {
+  -webkit-animation-delay: -2761s;
+  animation-delay: -2761s; }
+
+[data-fancy='252'] {
+  -webkit-animation-delay: -2772s;
+  animation-delay: -2772s; }
+
+[data-fancy='253'] {
+  -webkit-animation-delay: -3036s;
+  animation-delay: -3036s; }
+
+[data-fancy='254'] {
+  -webkit-animation-delay: -3048s;
+  animation-delay: -3048s; }
+
+[data-fancy='255'] {
+  -webkit-animation-delay: -3060s;
+  animation-delay: -3060s; }
+
+[data-fancy='256'] {
+  -webkit-animation-delay: -3072s;
+  animation-delay: -3072s; }
+
+[data-fancy='257'] {
+  -webkit-animation-delay: -3084s;
+  animation-delay: -3084s; }
+
+[data-fancy='258'] {
+  -webkit-animation-delay: -3096s;
+  animation-delay: -3096s; }
+
+[data-fancy='259'] {
+  -webkit-animation-delay: -3108s;
+  animation-delay: -3108s; }
+
+[data-fancy='260'] {
+  -webkit-animation-delay: -3120s;
+  animation-delay: -3120s; }
+
+[data-fancy='261'] {
+  -webkit-animation-delay: -3132s;
+  animation-delay: -3132s; }
+
+[data-fancy='262'] {
+  -webkit-animation-delay: -3144s;
+  animation-delay: -3144s; }
+
+[data-fancy='263'] {
+  -webkit-animation-delay: -3156s;
+  animation-delay: -3156s; }
+
+[data-fancy='264'] {
+  -webkit-animation-delay: -3168s;
+  animation-delay: -3168s; }
+
+[data-fancy='265'] {
+  -webkit-animation-delay: -3180s;
+  animation-delay: -3180s; }
+
+[data-fancy='266'] {
+  -webkit-animation-delay: -3192s;
+  animation-delay: -3192s; }
+
+[data-fancy='267'] {
+  -webkit-animation-delay: -3204s;
+  animation-delay: -3204s; }
+
+[data-fancy='268'] {
+  -webkit-animation-delay: -3216s;
+  animation-delay: -3216s; }
+
+[data-fancy='269'] {
+  -webkit-animation-delay: -3228s;
+  animation-delay: -3228s; }
+
+[data-fancy='270'] {
+  -webkit-animation-delay: -3240s;
+  animation-delay: -3240s; }
+
+[data-fancy='271'] {
+  -webkit-animation-delay: -3252s;
+  animation-delay: -3252s; }
+
+[data-fancy='272'] {
+  -webkit-animation-delay: -3264s;
+  animation-delay: -3264s; }
+
+[data-fancy='273'] {
+  -webkit-animation-delay: -3276s;
+  animation-delay: -3276s; }
+
+[data-fancy='274'] {
+  -webkit-animation-delay: -3288s;
+  animation-delay: -3288s; }
+
+[data-fancy='275'] {
+  -webkit-animation-delay: -3300s;
+  animation-delay: -3300s; }
+
+[data-fancy='276'] {
+  -webkit-animation-delay: -3588s;
+  animation-delay: -3588s; }
+
+[data-fancy='277'] {
+  -webkit-animation-delay: -3601s;
+  animation-delay: -3601s; }
+
+[data-fancy='278'] {
+  -webkit-animation-delay: -3614s;
+  animation-delay: -3614s; }
+
+[data-fancy='279'] {
+  -webkit-animation-delay: -3627s;
+  animation-delay: -3627s; }
+
+[data-fancy='280'] {
+  -webkit-animation-delay: -3640s;
+  animation-delay: -3640s; }
+
+[data-fancy='281'] {
+  -webkit-animation-delay: -3653s;
+  animation-delay: -3653s; }
+
+[data-fancy='282'] {
+  -webkit-animation-delay: -3666s;
+  animation-delay: -3666s; }
+
+[data-fancy='283'] {
+  -webkit-animation-delay: -3679s;
+  animation-delay: -3679s; }
+
+[data-fancy='284'] {
+  -webkit-animation-delay: -3692s;
+  animation-delay: -3692s; }
+
+[data-fancy='285'] {
+  -webkit-animation-delay: -3705s;
+  animation-delay: -3705s; }
+
+[data-fancy='286'] {
+  -webkit-animation-delay: -3718s;
+  animation-delay: -3718s; }
+
+[data-fancy='287'] {
+  -webkit-animation-delay: -3731s;
+  animation-delay: -3731s; }
+
+[data-fancy='288'] {
+  -webkit-animation-delay: -3744s;
+  animation-delay: -3744s; }
+
+[data-fancy='289'] {
+  -webkit-animation-delay: -3757s;
+  animation-delay: -3757s; }
+
+[data-fancy='290'] {
+  -webkit-animation-delay: -3770s;
+  animation-delay: -3770s; }
+
+[data-fancy='291'] {
+  -webkit-animation-delay: -3783s;
+  animation-delay: -3783s; }
+
+[data-fancy='292'] {
+  -webkit-animation-delay: -3796s;
+  animation-delay: -3796s; }
+
+[data-fancy='293'] {
+  -webkit-animation-delay: -3809s;
+  animation-delay: -3809s; }
+
+[data-fancy='294'] {
+  -webkit-animation-delay: -3822s;
+  animation-delay: -3822s; }
+
+[data-fancy='295'] {
+  -webkit-animation-delay: -3835s;
+  animation-delay: -3835s; }
+
+[data-fancy='296'] {
+  -webkit-animation-delay: -3848s;
+  animation-delay: -3848s; }
+
+[data-fancy='297'] {
+  -webkit-animation-delay: -3861s;
+  animation-delay: -3861s; }
+
+[data-fancy='298'] {
+  -webkit-animation-delay: -3874s;
+  animation-delay: -3874s; }
+
+[data-fancy='299'] {
+  -webkit-animation-delay: -4186s;
+  animation-delay: -4186s; }
+
+[data-fancy='300'] {
+  -webkit-animation-delay: -4200s;
+  animation-delay: -4200s; }
+
+[data-fancy='301'] {
+  -webkit-animation-delay: -4214s;
+  animation-delay: -4214s; }
+
+[data-fancy='302'] {
+  -webkit-animation-delay: -4228s;
+  animation-delay: -4228s; }
+
+[data-fancy='303'] {
+  -webkit-animation-delay: -4242s;
+  animation-delay: -4242s; }
+
+[data-fancy='304'] {
+  -webkit-animation-delay: -4256s;
+  animation-delay: -4256s; }
+
+[data-fancy='305'] {
+  -webkit-animation-delay: -4270s;
+  animation-delay: -4270s; }
+
+[data-fancy='306'] {
+  -webkit-animation-delay: -4284s;
+  animation-delay: -4284s; }
+
+[data-fancy='307'] {
+  -webkit-animation-delay: -4298s;
+  animation-delay: -4298s; }
+
+[data-fancy='308'] {
+  -webkit-animation-delay: -4312s;
+  animation-delay: -4312s; }
+
+[data-fancy='309'] {
+  -webkit-animation-delay: -4326s;
+  animation-delay: -4326s; }
+
+[data-fancy='310'] {
+  -webkit-animation-delay: -4340s;
+  animation-delay: -4340s; }
+
+[data-fancy='311'] {
+  -webkit-animation-delay: -4354s;
+  animation-delay: -4354s; }
+
+[data-fancy='312'] {
+  -webkit-animation-delay: -4368s;
+  animation-delay: -4368s; }
+
+[data-fancy='313'] {
+  -webkit-animation-delay: -4382s;
+  animation-delay: -4382s; }
+
+[data-fancy='314'] {
+  -webkit-animation-delay: -4396s;
+  animation-delay: -4396s; }
+
+[data-fancy='315'] {
+  -webkit-animation-delay: -4410s;
+  animation-delay: -4410s; }
+
+[data-fancy='316'] {
+  -webkit-animation-delay: -4424s;
+  animation-delay: -4424s; }
+
+[data-fancy='317'] {
+  -webkit-animation-delay: -4438s;
+  animation-delay: -4438s; }
+
+[data-fancy='318'] {
+  -webkit-animation-delay: -4452s;
+  animation-delay: -4452s; }
+
+[data-fancy='319'] {
+  -webkit-animation-delay: -4466s;
+  animation-delay: -4466s; }
+
+[data-fancy='320'] {
+  -webkit-animation-delay: -4480s;
+  animation-delay: -4480s; }
+
+[data-fancy='321'] {
+  -webkit-animation-delay: -4494s;
+  animation-delay: -4494s; }
+
+[data-fancy='322'] {
+  -webkit-animation-delay: -4830s;
+  animation-delay: -4830s; }
+
+[data-fancy='323'] {
+  -webkit-animation-delay: -4845s;
+  animation-delay: -4845s; }
+
+[data-fancy='324'] {
+  -webkit-animation-delay: -4860s;
+  animation-delay: -4860s; }
+
+[data-fancy='325'] {
+  -webkit-animation-delay: -4875s;
+  animation-delay: -4875s; }
+
+[data-fancy='326'] {
+  -webkit-animation-delay: -4890s;
+  animation-delay: -4890s; }
+
+[data-fancy='327'] {
+  -webkit-animation-delay: -4905s;
+  animation-delay: -4905s; }
+
+[data-fancy='328'] {
+  -webkit-animation-delay: -4920s;
+  animation-delay: -4920s; }
+
+[data-fancy='329'] {
+  -webkit-animation-delay: -4935s;
+  animation-delay: -4935s; }
+
+[data-fancy='330'] {
+  -webkit-animation-delay: -4950s;
+  animation-delay: -4950s; }
+
+[data-fancy='331'] {
+  -webkit-animation-delay: -4965s;
+  animation-delay: -4965s; }
+
+[data-fancy='332'] {
+  -webkit-animation-delay: -4980s;
+  animation-delay: -4980s; }
+
+[data-fancy='333'] {
+  -webkit-animation-delay: -4995s;
+  animation-delay: -4995s; }
+
+[data-fancy='334'] {
+  -webkit-animation-delay: -5010s;
+  animation-delay: -5010s; }
+
+[data-fancy='335'] {
+  -webkit-animation-delay: -5025s;
+  animation-delay: -5025s; }
+
+[data-fancy='336'] {
+  -webkit-animation-delay: -5040s;
+  animation-delay: -5040s; }
+
+[data-fancy='337'] {
+  -webkit-animation-delay: -5055s;
+  animation-delay: -5055s; }
+
+[data-fancy='338'] {
+  -webkit-animation-delay: -5070s;
+  animation-delay: -5070s; }
+
+[data-fancy='339'] {
+  -webkit-animation-delay: -5085s;
+  animation-delay: -5085s; }
+
+[data-fancy='340'] {
+  -webkit-animation-delay: -5100s;
+  animation-delay: -5100s; }
+
+[data-fancy='341'] {
+  -webkit-animation-delay: -5115s;
+  animation-delay: -5115s; }
+
+[data-fancy='342'] {
+  -webkit-animation-delay: -5130s;
+  animation-delay: -5130s; }
+
+[data-fancy='343'] {
+  -webkit-animation-delay: -5145s;
+  animation-delay: -5145s; }
+
+[data-fancy='344'] {
+  -webkit-animation-delay: -5160s;
+  animation-delay: -5160s; }
+
+[data-fancy='345'] {
+  -webkit-animation-delay: -5520s;
+  animation-delay: -5520s; }
+
+[data-fancy='346'] {
+  -webkit-animation-delay: -5536s;
+  animation-delay: -5536s; }
+
+[data-fancy='347'] {
+  -webkit-animation-delay: -5552s;
+  animation-delay: -5552s; }
+
+[data-fancy='348'] {
+  -webkit-animation-delay: -5568s;
+  animation-delay: -5568s; }
+
+[data-fancy='349'] {
+  -webkit-animation-delay: -5584s;
+  animation-delay: -5584s; }
+
+[data-fancy='350'] {
+  -webkit-animation-delay: -5600s;
+  animation-delay: -5600s; }
+
+[data-fancy='351'] {
+  -webkit-animation-delay: -5616s;
+  animation-delay: -5616s; }
+
+[data-fancy='352'] {
+  -webkit-animation-delay: -5632s;
+  animation-delay: -5632s; }
+
+[data-fancy='353'] {
+  -webkit-animation-delay: -5648s;
+  animation-delay: -5648s; }
+
+[data-fancy='354'] {
+  -webkit-animation-delay: -5664s;
+  animation-delay: -5664s; }
+
+[data-fancy='355'] {
+  -webkit-animation-delay: -5680s;
+  animation-delay: -5680s; }
+
+[data-fancy='356'] {
+  -webkit-animation-delay: -5696s;
+  animation-delay: -5696s; }
+
+[data-fancy='357'] {
+  -webkit-animation-delay: -5712s;
+  animation-delay: -5712s; }
+
+[data-fancy='358'] {
+  -webkit-animation-delay: -5728s;
+  animation-delay: -5728s; }
+
+[data-fancy='359'] {
+  -webkit-animation-delay: -5744s;
+  animation-delay: -5744s; }
+
+[data-fancy='360'] {
+  -webkit-animation-delay: -5760s;
+  animation-delay: -5760s; }
+
+[data-fancy='361'] {
+  -webkit-animation-delay: -5776s;
+  animation-delay: -5776s; }
+
+[data-fancy='362'] {
+  -webkit-animation-delay: -5792s;
+  animation-delay: -5792s; }
+
+[data-fancy='363'] {
+  -webkit-animation-delay: -5808s;
+  animation-delay: -5808s; }
+
+[data-fancy='364'] {
+  -webkit-animation-delay: -5824s;
+  animation-delay: -5824s; }
+
+[data-fancy='365'] {
+  -webkit-animation-delay: -5840s;
+  animation-delay: -5840s; }
+
+[data-fancy='366'] {
+  -webkit-animation-delay: -5856s;
+  animation-delay: -5856s; }
+
+[data-fancy='367'] {
+  -webkit-animation-delay: -5872s;
+  animation-delay: -5872s; }
+
+[data-fancy='368'] {
+  -webkit-animation-delay: -6256s;
+  animation-delay: -6256s; }
+
+[data-fancy='369'] {
+  -webkit-animation-delay: -6273s;
+  animation-delay: -6273s; }
+
+[data-fancy='370'] {
+  -webkit-animation-delay: -6290s;
+  animation-delay: -6290s; }
+
+[data-fancy='371'] {
+  -webkit-animation-delay: -6307s;
+  animation-delay: -6307s; }
+
+[data-fancy='372'] {
+  -webkit-animation-delay: -6324s;
+  animation-delay: -6324s; }
+
+[data-fancy='373'] {
+  -webkit-animation-delay: -6341s;
+  animation-delay: -6341s; }
+
+[data-fancy='374'] {
+  -webkit-animation-delay: -6358s;
+  animation-delay: -6358s; }
+
+[data-fancy='375'] {
+  -webkit-animation-delay: -6375s;
+  animation-delay: -6375s; }
+
+[data-fancy='376'] {
+  -webkit-animation-delay: -6392s;
+  animation-delay: -6392s; }
+
+[data-fancy='377'] {
+  -webkit-animation-delay: -6409s;
+  animation-delay: -6409s; }
+
+[data-fancy='378'] {
+  -webkit-animation-delay: -6426s;
+  animation-delay: -6426s; }
+
+[data-fancy='379'] {
+  -webkit-animation-delay: -6443s;
+  animation-delay: -6443s; }
+
+[data-fancy='380'] {
+  -webkit-animation-delay: -6460s;
+  animation-delay: -6460s; }
+
+[data-fancy='381'] {
+  -webkit-animation-delay: -6477s;
+  animation-delay: -6477s; }
+
+[data-fancy='382'] {
+  -webkit-animation-delay: -6494s;
+  animation-delay: -6494s; }
+
+[data-fancy='383'] {
+  -webkit-animation-delay: -6511s;
+  animation-delay: -6511s; }
+
+[data-fancy='384'] {
+  -webkit-animation-delay: -6528s;
+  animation-delay: -6528s; }
+
+[data-fancy='385'] {
+  -webkit-animation-delay: -6545s;
+  animation-delay: -6545s; }
+
+[data-fancy='386'] {
+  -webkit-animation-delay: -6562s;
+  animation-delay: -6562s; }
+
+[data-fancy='387'] {
+  -webkit-animation-delay: -6579s;
+  animation-delay: -6579s; }
+
+[data-fancy='388'] {
+  -webkit-animation-delay: -6596s;
+  animation-delay: -6596s; }
+
+[data-fancy='389'] {
+  -webkit-animation-delay: -6613s;
+  animation-delay: -6613s; }
+
+[data-fancy='390'] {
+  -webkit-animation-delay: -6630s;
+  animation-delay: -6630s; }
+
+[data-fancy='391'] {
+  -webkit-animation-delay: -7038s;
+  animation-delay: -7038s; }
+
+[data-fancy='392'] {
+  -webkit-animation-delay: -7056s;
+  animation-delay: -7056s; }
+
+[data-fancy='393'] {
+  -webkit-animation-delay: -7074s;
+  animation-delay: -7074s; }
+
+[data-fancy='394'] {
+  -webkit-animation-delay: -7092s;
+  animation-delay: -7092s; }
+
+[data-fancy='395'] {
+  -webkit-animation-delay: -7110s;
+  animation-delay: -7110s; }
+
+[data-fancy='396'] {
+  -webkit-animation-delay: -7128s;
+  animation-delay: -7128s; }
+
+[data-fancy='397'] {
+  -webkit-animation-delay: -7146s;
+  animation-delay: -7146s; }
+
+[data-fancy='398'] {
+  -webkit-animation-delay: -7164s;
+  animation-delay: -7164s; }
+
+[data-fancy='399'] {
+  -webkit-animation-delay: -7182s;
+  animation-delay: -7182s; }
+
+[data-fancy='400'] {
+  -webkit-animation-delay: -7200s;
+  animation-delay: -7200s; }
+
+[data-fancy='401'] {
+  -webkit-animation-delay: -7218s;
+  animation-delay: -7218s; }
+
+[data-fancy='402'] {
+  -webkit-animation-delay: -7236s;
+  animation-delay: -7236s; }
+
+[data-fancy='403'] {
+  -webkit-animation-delay: -7254s;
+  animation-delay: -7254s; }
+
+[data-fancy='404'] {
+  -webkit-animation-delay: -7272s;
+  animation-delay: -7272s; }
+
+[data-fancy='405'] {
+  -webkit-animation-delay: -7290s;
+  animation-delay: -7290s; }
+
+[data-fancy='406'] {
+  -webkit-animation-delay: -7308s;
+  animation-delay: -7308s; }
+
+[data-fancy='407'] {
+  -webkit-animation-delay: -7326s;
+  animation-delay: -7326s; }
+
+[data-fancy='408'] {
+  -webkit-animation-delay: -7344s;
+  animation-delay: -7344s; }
+
+[data-fancy='409'] {
+  -webkit-animation-delay: -7362s;
+  animation-delay: -7362s; }
+
+[data-fancy='410'] {
+  -webkit-animation-delay: -7380s;
+  animation-delay: -7380s; }
+
+[data-fancy='411'] {
+  -webkit-animation-delay: -7398s;
+  animation-delay: -7398s; }
+
+[data-fancy='412'] {
+  -webkit-animation-delay: -7416s;
+  animation-delay: -7416s; }
+
+[data-fancy='413'] {
+  -webkit-animation-delay: -7434s;
+  animation-delay: -7434s; }
+
+[data-fancy='414'] {
+  -webkit-animation-delay: -7866s;
+  animation-delay: -7866s; }
+
+[data-fancy='415'] {
+  -webkit-animation-delay: -7885s;
+  animation-delay: -7885s; }
+
+[data-fancy='416'] {
+  -webkit-animation-delay: -7904s;
+  animation-delay: -7904s; }
+
+[data-fancy='417'] {
+  -webkit-animation-delay: -7923s;
+  animation-delay: -7923s; }
+
+[data-fancy='418'] {
+  -webkit-animation-delay: -7942s;
+  animation-delay: -7942s; }
+
+[data-fancy='419'] {
+  -webkit-animation-delay: -7961s;
+  animation-delay: -7961s; }
+
+[data-fancy='420'] {
+  -webkit-animation-delay: -7980s;
+  animation-delay: -7980s; }
+
+[data-fancy='421'] {
+  -webkit-animation-delay: -7999s;
+  animation-delay: -7999s; }
+
+[data-fancy='422'] {
+  -webkit-animation-delay: -8018s;
+  animation-delay: -8018s; }
+
+[data-fancy='423'] {
+  -webkit-animation-delay: -8037s;
+  animation-delay: -8037s; }
+
+[data-fancy='424'] {
+  -webkit-animation-delay: -8056s;
+  animation-delay: -8056s; }
+
+[data-fancy='425'] {
+  -webkit-animation-delay: -8075s;
+  animation-delay: -8075s; }
+
+[data-fancy='426'] {
+  -webkit-animation-delay: -8094s;
+  animation-delay: -8094s; }
+
+[data-fancy='427'] {
+  -webkit-animation-delay: -8113s;
+  animation-delay: -8113s; }
+
+[data-fancy='428'] {
+  -webkit-animation-delay: -8132s;
+  animation-delay: -8132s; }
+
+[data-fancy='429'] {
+  -webkit-animation-delay: -8151s;
+  animation-delay: -8151s; }
+
+[data-fancy='430'] {
+  -webkit-animation-delay: -8170s;
+  animation-delay: -8170s; }
+
+[data-fancy='431'] {
+  -webkit-animation-delay: -8189s;
+  animation-delay: -8189s; }
+
+[data-fancy='432'] {
+  -webkit-animation-delay: -8208s;
+  animation-delay: -8208s; }
+
+[data-fancy='433'] {
+  -webkit-animation-delay: -8227s;
+  animation-delay: -8227s; }
+
+[data-fancy='434'] {
+  -webkit-animation-delay: -8246s;
+  animation-delay: -8246s; }
+
+[data-fancy='435'] {
+  -webkit-animation-delay: -8265s;
+  animation-delay: -8265s; }
+
+[data-fancy='436'] {
+  -webkit-animation-delay: -8284s;
+  animation-delay: -8284s; }
+
+[data-fancy='437'] {
+  -webkit-animation-delay: -8740s;
+  animation-delay: -8740s; }
+
+[data-fancy='438'] {
+  -webkit-animation-delay: -8760s;
+  animation-delay: -8760s; }
+
+[data-fancy='439'] {
+  -webkit-animation-delay: -8780s;
+  animation-delay: -8780s; }
+
+[data-fancy='440'] {
+  -webkit-animation-delay: -8800s;
+  animation-delay: -8800s; }
+
+[data-fancy='441'] {
+  -webkit-animation-delay: -8820s;
+  animation-delay: -8820s; }
+
+[data-fancy='442'] {
+  -webkit-animation-delay: -8840s;
+  animation-delay: -8840s; }
+
+[data-fancy='443'] {
+  -webkit-animation-delay: -8860s;
+  animation-delay: -8860s; }
+
+[data-fancy='444'] {
+  -webkit-animation-delay: -8880s;
+  animation-delay: -8880s; }
+
+[data-fancy='445'] {
+  -webkit-animation-delay: -8900s;
+  animation-delay: -8900s; }
+
+[data-fancy='446'] {
+  -webkit-animation-delay: -8920s;
+  animation-delay: -8920s; }
+
+[data-fancy='447'] {
+  -webkit-animation-delay: -8940s;
+  animation-delay: -8940s; }
+
+[data-fancy='448'] {
+  -webkit-animation-delay: -8960s;
+  animation-delay: -8960s; }
+
+[data-fancy='449'] {
+  -webkit-animation-delay: -8980s;
+  animation-delay: -8980s; }
+
+[data-fancy='450'] {
+  -webkit-animation-delay: -9000s;
+  animation-delay: -9000s; }
+
+[data-fancy='451'] {
+  -webkit-animation-delay: -9020s;
+  animation-delay: -9020s; }
+
+[data-fancy='452'] {
+  -webkit-animation-delay: -9040s;
+  animation-delay: -9040s; }
+
+[data-fancy='453'] {
+  -webkit-animation-delay: -9060s;
+  animation-delay: -9060s; }
+
+[data-fancy='454'] {
+  -webkit-animation-delay: -9080s;
+  animation-delay: -9080s; }
+
+[data-fancy='455'] {
+  -webkit-animation-delay: -9100s;
+  animation-delay: -9100s; }
+
+[data-fancy='456'] {
+  -webkit-animation-delay: -9120s;
+  animation-delay: -9120s; }
+
+[data-fancy='457'] {
+  -webkit-animation-delay: -9140s;
+  animation-delay: -9140s; }
+
+[data-fancy='458'] {
+  -webkit-animation-delay: -9160s;
+  animation-delay: -9160s; }
+
+[data-fancy='459'] {
+  -webkit-animation-delay: -9180s;
+  animation-delay: -9180s; }
+
+[data-fancy='460'] {
+  -webkit-animation-delay: -9660s;
+  animation-delay: -9660s; }
+
+[data-fancy='461'] {
+  -webkit-animation-delay: -9681s;
+  animation-delay: -9681s; }
+
+[data-fancy='462'] {
+  -webkit-animation-delay: -9702s;
+  animation-delay: -9702s; }
+
+[data-fancy='463'] {
+  -webkit-animation-delay: -9723s;
+  animation-delay: -9723s; }
+
+[data-fancy='464'] {
+  -webkit-animation-delay: -9744s;
+  animation-delay: -9744s; }
+
+[data-fancy='465'] {
+  -webkit-animation-delay: -9765s;
+  animation-delay: -9765s; }
+
+[data-fancy='466'] {
+  -webkit-animation-delay: -9786s;
+  animation-delay: -9786s; }
+
+[data-fancy='467'] {
+  -webkit-animation-delay: -9807s;
+  animation-delay: -9807s; }
+
+[data-fancy='468'] {
+  -webkit-animation-delay: -9828s;
+  animation-delay: -9828s; }
+
+[data-fancy='469'] {
+  -webkit-animation-delay: -9849s;
+  animation-delay: -9849s; }
+
+[data-fancy='470'] {
+  -webkit-animation-delay: -9870s;
+  animation-delay: -9870s; }
+
+[data-fancy='471'] {
+  -webkit-animation-delay: -9891s;
+  animation-delay: -9891s; }
+
+[data-fancy='472'] {
+  -webkit-animation-delay: -9912s;
+  animation-delay: -9912s; }
+
+[data-fancy='473'] {
+  -webkit-animation-delay: -9933s;
+  animation-delay: -9933s; }
+
+[data-fancy='474'] {
+  -webkit-animation-delay: -9954s;
+  animation-delay: -9954s; }
+
+[data-fancy='475'] {
+  -webkit-animation-delay: -9975s;
+  animation-delay: -9975s; }
+
+[data-fancy='476'] {
+  -webkit-animation-delay: -9996s;
+  animation-delay: -9996s; }
+
+[data-fancy='477'] {
+  -webkit-animation-delay: -10017s;
+  animation-delay: -10017s; }
+
+[data-fancy='478'] {
+  -webkit-animation-delay: -10038s;
+  animation-delay: -10038s; }
+
+[data-fancy='479'] {
+  -webkit-animation-delay: -10059s;
+  animation-delay: -10059s; }
+
+[data-fancy='480'] {
+  -webkit-animation-delay: -10080s;
+  animation-delay: -10080s; }
+
+[data-fancy='481'] {
+  -webkit-animation-delay: -10101s;
+  animation-delay: -10101s; }
+
+[data-fancy='482'] {
+  -webkit-animation-delay: -10122s;
+  animation-delay: -10122s; }
+
+[data-fancy='483'] {
+  -webkit-animation-delay: -10626s;
+  animation-delay: -10626s; }
+
+[data-fancy='484'] {
+  -webkit-animation-delay: -10648s;
+  animation-delay: -10648s; }
+
+[data-fancy='485'] {
+  -webkit-animation-delay: -10670s;
+  animation-delay: -10670s; }
+
+[data-fancy='486'] {
+  -webkit-animation-delay: -10692s;
+  animation-delay: -10692s; }
+
+[data-fancy='487'] {
+  -webkit-animation-delay: -10714s;
+  animation-delay: -10714s; }
+
+[data-fancy='488'] {
+  -webkit-animation-delay: -10736s;
+  animation-delay: -10736s; }
+
+[data-fancy='489'] {
+  -webkit-animation-delay: -10758s;
+  animation-delay: -10758s; }
+
+[data-fancy='490'] {
+  -webkit-animation-delay: -10780s;
+  animation-delay: -10780s; }
+
+[data-fancy='491'] {
+  -webkit-animation-delay: -10802s;
+  animation-delay: -10802s; }
+
+[data-fancy='492'] {
+  -webkit-animation-delay: -10824s;
+  animation-delay: -10824s; }
+
+[data-fancy='493'] {
+  -webkit-animation-delay: -10846s;
+  animation-delay: -10846s; }
+
+[data-fancy='494'] {
+  -webkit-animation-delay: -10868s;
+  animation-delay: -10868s; }
+
+[data-fancy='495'] {
+  -webkit-animation-delay: -10890s;
+  animation-delay: -10890s; }
+
+[data-fancy='496'] {
+  -webkit-animation-delay: -10912s;
+  animation-delay: -10912s; }
+
+[data-fancy='497'] {
+  -webkit-animation-delay: -10934s;
+  animation-delay: -10934s; }
+
+[data-fancy='498'] {
+  -webkit-animation-delay: -10956s;
+  animation-delay: -10956s; }
+
+[data-fancy='499'] {
+  -webkit-animation-delay: -10978s;
+  animation-delay: -10978s; }
 
 /*# sourceMappingURL=screen.css.map */

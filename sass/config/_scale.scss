@@ -1,27 +1,65 @@
 // Scale Config
 // ============
 
-@import '../../node_modules/accoutrement-scale/sass/scale';
 
+// Ratios
+// ------
+/// @group scale
+/// @link http://oddbird.net/accoutrement-scale/docs/
+///   Accoutrement Scale
 $ratios: (
-  'mia': 1.4,
+  'text-ratio': 1.4,
 );
 
-$sizes: (
-  'root': 20px,
-  'rhythm': 'root' ('mia': 1),
 
-  'small': 'root' ('mia': -0.75),
-  'large': 'root' ('mia': 1),
+// Text Sizes
+// ----------
+/// @group scale
+/// @preview sizes;
+/// @link http://oddbird.net/accoutrement-scale/docs/
+///   Accoutrement Scale
+$text-sizes: (
+  'root': 24px,
+  'responsive': calc(100% + 0.675vw),
 
+  'h1': calc(2em + 1.5vw),
+  'h2': calc(1em + 1vw),
+
+  'boiler': 1em ('text-ratio': -0.5),
+);
+
+
+// Spacing Sizes
+// -------------
+/// @group scale
+/// @preview sizes; style: ruler
+/// @link http://oddbird.net/accoutrement-scale/docs/
+///   Accoutrement Scale
+$spacing-sizes: (
+  'rhythm': 'root' ('text-ratio': 1, 'convert-units': 'rem'),
   'gutter': 'rhythm',
-  'shim': 'gutter' ('linear': 0.5),
-  'half-shim': 'gutter' ('linear': 0.25),
-
-  'corners': 6px,
-  'block': 24rem,
-  'page': 32rem,
-  'wide': 'block' ('linear': 2),
-
-  'logo': 'rhythm' ('linear': 3),
+  'double-gutter': 'gutter' ('multiply': 2),
+  'spacer': 'gutter' ('multiply': 3),
+  'shim': 'gutter' ('multiply': 0.5),
+  'half-shim': 'shim' ('multiply': 0.5),
+  'quarter-shim': 'shim' ('multiply': 0.25),
 );
+
+
+// Page Sizes
+// ----------
+/// @group scale
+/// @preview sizes; style: output-only
+/// @link http://oddbird.net/accoutrement-scale/docs/
+///   Accoutrement Scale
+$page-sizes: (
+  'page': 28rem,
+  'hero': calc(%s - %s) (100vh, 'double-gutter'),
+);
+
+
+$sizes: map-merge($text-sizes, $spacing-sizes);
+$sizes: map-merge($sizes, $page-sizes);
+@include herman-add('sizes', 'text-sizes', $text-sizes, 'size');
+@include herman-add('sizes', 'spacing-sizes', $spacing-sizes, 'size');
+@include herman-add('sizes', 'page-sizes', $page-sizes, 'size');

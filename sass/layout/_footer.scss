@@ -1,18 +1,11 @@
 // Footer Layout
 // =============
 
-[data-region='contentinfo'] {
-  margin-top: size('gutter');
-  padding: size('gutter') size('shim');
-  text-align: center;
-}
 
-.copyright {
-  @include font-size('small');
-  font-style: italic;
-  text-transform: lowercase;
-
-  i {
-    font-style: normal;
-  }
+[data-layout='footer'] {
+  @include font-family('alt');
+  border-top: 1px dotted color('border');
+  font-size: size('boiler');
+  margin: 0 0 size('spacer') negative('shim');
+  padding: size('shim');
 }
