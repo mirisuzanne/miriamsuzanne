@@ -1,0 +1,20 @@
+// Buttons
+// =======
+
+[data-btn] {
+  &,
+  &:link,
+  &:visited {
+    @include contrasted('action');
+    border-radius: $corners;
+    display: inline-block;
+    padding: size('quarter-shim') size('gutter');
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: color('action-hover');
+    text-decoration: none;
+  }
+}

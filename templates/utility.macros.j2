@@ -27,16 +27,6 @@
 {% endmacro %}
 
 
-{%- macro url(post) -%}
-  {%- if post.pub_date -%}
-    {{ post.pub_date.strftime("%Y/%m/%d/") }}
-  {%- endif -%}
-  {%- if post.config.slug -%}
-    {{ post.config.slug }}/
-  {%- endif -%}
-{%- endmacro -%}
-
-
 {# Date & Time #}
 {% macro time(datetime, style='long', attrs={'class':'dt-start'}) %}
   {% if datetime %}
@@ -50,6 +40,7 @@
     {% endif %}
   {% endif %}
 {% endmacro %}
+
 
 {% macro display_time(datetime, style='long', attrs={'class':'dt-start'}) -%}
   {%- set months = {

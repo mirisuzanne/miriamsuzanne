@@ -2,7 +2,6 @@ public: yes
 hide_title: yes
 location: 'home'
 .. after:
-..   - include: 'modules/_intro.html.j2'
 ..   - include: 'modules/_summary.html.j2'
 ..   - include: 'modules/_features.html.j2'
 
@@ -10,11 +9,12 @@ location: 'home'
 Miriam Suzanne
 ==============
 
-Hello Lovely –
---------------
 
-I’m a web developer, consultant, and artist:
-following my curiosity across media –
-exploring, building, and sharing collaborative experiences.
+.. callmacro:: content.macros.j2#intro
+  :title: 'Hello Lovely –'
+  :action: 'start a conversation'
+  :url: '/contact/'
 
-start a conversation
+  I’m a web developer, consultant, and artist:
+  following my curiosity across media –
+  exploring, building, and sharing collaborative experiences.

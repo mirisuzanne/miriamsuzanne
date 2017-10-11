@@ -1,11 +1,11 @@
 public: yes
 location: 'about'
 image:
-  - src: 'headshots/mia-16.jpg'
+  - src: 'headshots/mia-smirk.jpg'
 
 
-Miriam Eric Suzanne
-===================
+Miriam Suzanne
+==============
 
 **Miriam**
 is an author, performer, musician, designer, and web developer —
@@ -24,12 +24,10 @@ and creator of the
 
 *Miriam has also been published under the names
 "Eric A Meyer" and "Eric M Suzanne" —
-but you should call her Miriam,
-or Mia,
-or maybe Princess DieHard,
-or something like that.*
+but you should call her Miriam
+(or Mia if you're into brevity).*
 
-`Download Headshots »`_
+`Headshots »`_
 
 
 .. _Riding SideSaddle*: http://ridingsidesaddle.com
@@ -43,4 +41,4 @@ or something like that.*
 .. _Accoutrement: http://oddbird.net/accoutrement/
 .. _Susy: http://susy.oddbird.net/
 .. _True: http://oddbird.net/true
-.. _`Download Headshots »`: https://www.dropbox.com/sh/loscfxexvij5vrq/AACiE-RRbf0xoIruMDBN53lca?dl=0
+.. _`Headshots »`: https://www.dropbox.com/sh/loscfxexvij5vrq/AACiE-RRbf0xoIruMDBN53lca?dl=0

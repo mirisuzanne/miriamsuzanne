@@ -1442,12 +1442,20 @@ copyright:
 
 
 # settings
-active_modules: [pygments, tags, blog, typogrify, uniqify, urls, pages]
+active_modules: [
+  jinja_macros,
+  typogrify,
+  denormalize_config,
+  tags,
+  blog,
+  pages,
+  wrap,
+  uniqify,
+  urls
+  ]
 canonical_url: http://www.miriamsuzanne.com/
 output_folder: ../gh-pages
 template_path: ../templates
 modules:
-  pygments:
-    style: borland
   blog:
     index_url: /blog/

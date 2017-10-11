@@ -277,20 +277,19 @@ body {
 
 [data-layout='header'] {
   background: rgba(255, 255, 255, 0.96);
+  line-height: 1.2;
   margin-left: -0.7rem;
   padding: 0.7rem;
   position: relative; }
 
 .page-title {
   color: #ac0056;
-  font-size: calc(2em + 1.5vw);
-  line-height: 1; }
+  font-size: calc(2em + 1.5vw); }
 
 .page-tagline {
   font-size: calc(1em + 1vw);
   font-style: italic;
-  font-weight: normal;
-  line-height: 1; }
+  font-weight: normal; }
   .page-tagline a:only-child {
     color: inherit; }
 
@@ -2509,5 +2508,16 @@ body {
 [data-fancy='499'] {
   -webkit-animation-delay: -10978s;
   animation-delay: -10978s; }
+
+[data-btn], [data-btn]:link, [data-btn]:visited {
+  background-color: #e60073;
+  color: #fff;
+  border-radius: 0 0.35rem;
+  display: inline-block;
+  padding: 0.175rem 1.4rem; }
+
+[data-btn]:focus, [data-btn]:hover, [data-btn]:active {
+  background-color: #ac0056;
+  text-decoration: none; }
 
 /*# sourceMappingURL=screen.css.map */

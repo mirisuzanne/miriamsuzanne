@@ -1,0 +1,24 @@
+
+
+{% macro btn(url, content=none) %}
+  {% set content = content if (content != none) else caller() %}
+
+  <a href="{{ url }}" data-btn {% for k in kwargs %} {{ k }}="{{ kwargs[k] }}"{% endfor %}>
+    {{ content|safe }}&nbsp;»
+  </a>
+{% endmacro %}
+
+
+{% macro intro(title, action=none, url=none) %}
+  <section data-module="site-intro">
+    <h2 data-intro="title">{{ title }}</h2>
+
+    <div data-intro="body">
+      <p>{{ caller() }}</p>
+
+      {% if action and url %}
+        {{ btn(url, action) }}
+      {% endif %}
+    </div>
+  </section>
+{% endmacro %}

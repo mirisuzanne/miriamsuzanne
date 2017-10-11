@@ -3,6 +3,7 @@
 
 [data-layout='header'] {
   background: color('overlay');
+  line-height: 1.2;
   margin-left: negative('shim');
   padding: size('shim');
   position: relative;
@@ -12,7 +13,6 @@
 .page-title {
   color: color('action-hover');
   font-size: size('h1');
-  line-height: 1;
 }
 
 
@@ -20,7 +20,6 @@
   font-size: size('h2');
   font-style: italic;
   font-weight: normal;
-  line-height: 1;
 
   a {
     &:only-child {
