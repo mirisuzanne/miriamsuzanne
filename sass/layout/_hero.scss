@@ -9,7 +9,7 @@
   svg,
   img {
     height: 100%;
-    max-width: 100%;
+    max-width: initial;
     width: auto;
   }
 }
@@ -44,7 +44,7 @@
 
 
 .face {
-  margin: size('shim');
+  padding: size('shim');
 
   [data-location='home'] & {
     animation: draw-logo 5s 1 ease-out both, fill-logo 4s 3s 1 ease-in-out both, fade-logo-outline 3s 3s 1 ease-in-out both;

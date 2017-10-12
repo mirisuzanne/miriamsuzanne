@@ -2,7 +2,6 @@
 // ============
 
 
-$fancy-grid: repeat(25, minmax(0, 1fr));
 $fancy-h: hue(color('action'));
 $fancy-s: saturation(color('action'));
 $fancy-l: lightness(color('action'));
@@ -40,11 +39,10 @@ $fancy-l: lightness(color('action'));
 
 
 [data-layout='fancy'] {
-  direction: rtl;
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: $fancy-grid;
-  grid-template-rows: $fancy-grid;
+  grid-template-columns: repeat(25, minmax(0, 1fr));
+  grid-template-rows: repeat(20, minmax(0, 1fr));
   overflow: hidden;
 }
 
@@ -56,7 +54,7 @@ $fancy-l: lightness(color('action'));
   opacity: 0;
 
   &:hover {
-    opacity: 0.5;
+    opacity: 1;
   }
 }
 

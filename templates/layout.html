@@ -1,35 +1,37 @@
 {% extends "base.html" %}
 
 {% block layout %}
-  <figure data-layout="hero">
-    {% block hero %}
-      {% include 'layout/_face.svg' %}
-    {% endblock %}
-  </figure>
-
-  <aside data-layout="fancy">
-    {%- for index in range(500) -%}
-      <span data-fancy="{{ index }}"></span>
-    {%- endfor -%}
-  </aside>
-
-  <header data-layout="header">
-    <h1 class="page-title">
-      {% block page_title %}
-        {{ config.author }}
+  <div data-layout="header">
+    <figure data-layout="hero">
+      {% block hero %}
+        {% include 'layout/_face.svg' %}
       {% endblock %}
-    </h1>
+    </figure>
 
-    <h2 class="page-tagline">
-      {% block page_tagline %}
-        {% if config.location in ['home', 'about'] %}
-          <a href="/why/">art &amp; code</a>
-        {% else %}
-          <a href="/" rel="home">{{ config.author }}</a>
-        {% endif %}
-      {% endblock %}
-    </h2>
-  </header>
+    <aside data-layout="fancy">
+      {%- for index in range(500) -%}
+        <span data-fancy="{{ index }}"></span>
+      {%- endfor -%}
+    </aside>
+
+    <header data-layout="title">
+      <h1 class="page-title">
+        {% block page_title %}
+          {{ config.author }}
+        {% endblock %}
+      </h1>
+
+      <h2 class="page-tagline">
+        {% block page_tagline %}
+          {% if config.location in ['home', 'about'] %}
+            <a href="/why/">art &amp; code</a>
+          {% else %}
+            <a href="/" rel="home">{{ config.author }}</a>
+          {% endif %}
+        {% endblock %}
+      </h2>
+    </header>
+  </div>
 
   <nav data-layout="nav">
   <div class="nav-inner">

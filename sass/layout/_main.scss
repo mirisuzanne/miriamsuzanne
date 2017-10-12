@@ -1,12 +1,17 @@
 // Main Layout
 // ===========
 
-[data-layout='main'] {
+
+[data-module] {
   display: grid;
   grid-template-columns: $columns;
   padding: size('gutter') 0;
 
   > * {
     grid-column: 3 / span 1;
+  }
+
+  & > & {
+    grid-column: 1 / -1;
   }
 }

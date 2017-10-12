@@ -1,12 +1,46 @@
 // Site Header
 // ===========
 
+
 [data-layout='header'] {
-  background: color('overlay');
-  line-height: 1.2;
-  margin-left: negative('shim');
-  padding: size('shim');
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: minmax(0, 1fr) auto;
+
+  @include before('') {
+    background: color('background');
+    clip-path: polygon(size('gutter') 0, 100% 0, 100% 100%, 0 100%, 0 size('gutter'));
+    grid-column: 3 / -1;
+    grid-row: -2 / -1;
+    margin-left: negative('shim');
+    position: relative;
+    z-index: 1;
+  }
+}
+
+
+[data-layout='fancy'] {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
   position: relative;
+  z-index: 1;
+}
+
+
+[data-layout='hero'] {
+  grid-column: 1 / -2;
+  grid-row: 1 / -1;
+  justify-self: start;
+}
+
+
+[data-layout='title'] {
+  grid-column: 3 / -1;
+  grid-row: -2 / -1;
+  line-height: 1.2;
+  padding: size('shim') 0;
+  position: relative;
+  z-index: 1;
 }
 
 
