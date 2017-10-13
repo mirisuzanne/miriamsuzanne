@@ -1,0 +1,76 @@
+{% import 'form.macros.j2' as form %}
+{% import 'icon.macros.j2' as icons %}
+
+{% macro show_form(
+  slug,
+  data
+) %}
+  {% set page = all_pages|filter_pages('slug', 'eq', slug)|get_page %}
+  {% set data = page.config[data][0] %}
+
+  {% set email = data['email'] %}
+  {% set next = ['http://mirisuzanne.com/', data['next']]|join %}
+  {% set submit = data['submit'] or 'submit' %}
+
+  <form
+    data-module="contact-form"
+    action="https://formspree.io/{{ email }}"
+    method="POST">
+
+    <input type="hidden" name="_next" value="{{ next }}" />
+    <input type="text" name="_gotcha" style="display:none" />
+
+    {{ form.input(
+      text='Name',
+      id='contact-name',
+    ) }}
+
+    {{ form.input(
+      text='Email',
+      id='contact-email',
+      name='_replyto',
+      type='email',
+    ) }}
+
+    {{ form.input(
+      text='Message',
+      id='contact-message',
+      type='textarea',
+    ) }}
+
+    <div data-actions>
+      <button type="submit" data-btn>
+        {{ submit }}
+      </button>
+    </div>
+  </form>
+{% endmacro %}
+
+
+{% macro social(
+  slug,
+  data
+) %}
+  {% set page = all_pages|filter_pages('slug', 'eq', slug)|get_page %}
+  {% set data = page.config[data][0] %}
+
+  {% set urls = {
+    'email': 'mailto:',
+    'twitter': 'https://twitter.com/',
+    'github': 'https://github.com/',
+    'codepen': 'https://codepen.io/',
+  } %}
+
+  <ul data-module="social">
+    {% for platform in data %}
+      {% set user = data[platform] %}
+      {% set url = [urls[platform] or platform, user]|join %}
+      {% set user = ['@', user]|join if (platform == 'twitter') else user %}
+      <li data-social="{{ platform }}">
+        {{ icons.get(platform) }}
+        <a href="{{ url }}">{{ user }}</a>
+        <span data-a11y>on {{ platform }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+{% endmacro %}

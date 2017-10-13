@@ -53,6 +53,7 @@ $pattern-colors: (
   'action-hover': 'brand-pink' ('shade': 25%),
 
   'page-title': 'action-hover',
+  'callout': 'brand-blue' ('tint': 90%),
 );
 
 @include add-colors($pattern-colors);

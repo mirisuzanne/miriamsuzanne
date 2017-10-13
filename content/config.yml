@@ -1376,29 +1376,6 @@ event_tags:
     film: 'film'
 
 
-# Intro & Contact
-# ---------------
-
-intro:
-  - tagline: 'Hello, lovely —'
-    text: 'I’m <a href="/who/">Miriam</a>,
-          a web developer <i>&</i> artist,
-          following my curiosity across media:
-          exploring, building, and sharing
-          <a href="/why/">collaborative experiences</a>.'
-    action:
-      text: 'start a conversation'
-      url: '/contact/'
-
-contact:
-  - title: 'Start a conversation —'
-    body: 'Talk to me about art, code, or collaboration;
-          hire me to speak;
-          or just say hello!'
-    actions: 'Reach me through my
-              <a href="/contact/">contact form</a>
-              or online&nbsp;<a href="http://twitter.com/mirisuzanne">@mirisuzanne</a>.'
-
 tinyletter:
   - text: 'Subscribe to my newsletter'
     url: 'https://tinyletter.com/miriamsuzanne'

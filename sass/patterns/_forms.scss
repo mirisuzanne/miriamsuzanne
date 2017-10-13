@@ -1,0 +1,46 @@
+// Forms
+// =====
+
+
+[data-field] {
+  display: block;
+  margin-bottom: size('shim');
+}
+
+
+[data-label] {
+  display: block;
+}
+
+
+[data-input='default'],
+[data-input='textarea'] {
+  background: color('callout');
+  border: 2px solid color('brand-blue');
+  border-radius: $corners;
+  font-size: size('boiler');
+  padding: size('half-shim');
+  transition: border-color 200ms ease;
+  width: 100%;
+
+  &:focus {
+    border-color: color('brand-blue');
+    outline: 0;
+  }
+
+  &:invalid {
+    border-color: color('brand-orange');
+  }
+}
+
+
+[data-input='textarea'] {
+  min-height: size('rhythm') * 6;
+}
+
+
+[data-actions] {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+}

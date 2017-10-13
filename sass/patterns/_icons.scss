@@ -1,0 +1,7 @@
+// Icons
+// =====
+
+[data-icon] {
+  @include square(1em);
+  display: inline-block;
+}
