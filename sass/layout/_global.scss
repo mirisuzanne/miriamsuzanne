@@ -9,7 +9,7 @@ body {
   'main   main   main   main   main'
   '...... ...... footer ...... ......';
   grid-template-columns: $columns;
-  grid-template-rows: size('hero') repeat(3, auto);
+  grid-template-rows: mmx('hero-min', 'hero') repeat(3, auto);
   max-width: 100vw;
 }
 

@@ -1,7 +1,9 @@
 public: yes
 location: 'contact'
 tagline: 'start a conversation...'
-hide_contact: True
+hide_contact: yes
+image:
+  - src: 'headshots/mia-smirk.jpg'
 form:
   - email: 'miriam@miriamsuzanne.com'
     next: 'thanks'
@@ -11,18 +13,21 @@ social:
     twitter: 'mirisuzanne'
     github: 'mirisuzanne'
     codepen: 'mirisuzanne'
+.. title: 'stack overflow'
+.. url: 'http://stackoverflow.com/users/1930386/'
+.. tinyletter: 'Subscribe to my newsletter'
+.. url: 'https://tinyletter.com/miriamsuzanne'
 
 
-Contact Me
-==========
+***********
+Contact Mia
+***********
 
-Talk to me about art, code, and collaboration;
-hire me to speak,
-or just say hello:
 
 .. callmacro:: contact.macros.j2#show_form
   :slug: 'contact'
   :data: 'form'
+
 
 .. callmacro:: contact.macros.j2#social
   :slug: 'contact'

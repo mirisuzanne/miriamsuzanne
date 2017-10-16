@@ -12,16 +12,14 @@
 
   {%- if post.config.image -%}
     {% set image = post.config.image[0] %}
-    <div class="post-image" style="background-image: url(/static/pictures/{{ image.src }})"; {{ image.styles or '' }}></div>
+    <img
+      src="/static/pictures/{{ image.src }}"
+      alt="{{ image.alt }}"
+      utility.attr_if('style', image.style) />
   {%- endif -%}
 
   {% if post.summary %}
     {{ post.render_summary() }}
-    <a href="{{ link_to('page', slug=post.slug) }}" class="more-link">
-      read more »
-    </a>
-  {% else %}
-    {{ post.render_contents() }}
   {% endif %}
 </article>
 {% endmacro %}

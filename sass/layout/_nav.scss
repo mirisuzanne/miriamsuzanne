@@ -13,13 +13,13 @@
 
   @include before('') {
     @include position(-1px 0 null 0);
-    border-top: 1px dotted color('border');
+    border-top: 1px $border-style color('border');
     grid-column: 1 / 5;
   }
 
   @include after('') {
     @include position(null 0 -1px 0);
-    border-bottom: 1px dotted color('border');
+    border-bottom: 1px $border-style color('border');
     grid-column: 2 / -1;
   }
 }
@@ -39,14 +39,15 @@
     @include position(-1px 0 null null);
     @include square('half-shim');
     background: color('background');
-    border: 1px dotted transparent;
+    border: 1px $border-style color('border');
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     transform: translate3d(50%, -50%, 0) rotate(45deg);
     z-index: 2;
   }
 
-  @include after(null) {
-    border-color: color('border');
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  @include before(null) {
+    border-color: color('background');
+    top: -2px;
   }
 }
 
@@ -69,14 +70,15 @@
         @include position(null null -1px 50%);
         @include square('half-shim');
         background: color('background');
-        border: 1px dotted transparent;
+        border: 1px $border-style color('border');
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
         transform: translate3d(-50%, 50%, 0) rotate(-135deg);
         z-index: 2;
       }
 
-      @include after(null) {
-        border-color: color('border');
-        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+      @include before(null) {
+        border-color: color('background');
+        bottom: -2px;
       }
     }
   }

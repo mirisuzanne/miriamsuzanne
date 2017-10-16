@@ -3,11 +3,11 @@
 
 {% macro label(
   text,
-  is_hidden=false
+  hidden=false
 ) %}
   <span
     data-label
-    utility.attr_if('hidden', is_hidden)
+    utility.attr_if('hidden', hidden)
   >
     {{ text }}
   </span>
@@ -15,27 +15,41 @@
 
 
 {% macro field(
-  id,
-  required=none
+  id
 ) %}
   <label
     for="{{ id }}"
     data-field="{{ id }}"
-    utility.attr_if('required', required)
+    {% for attr in kwargs %}
+      utility.attr_if(attr, kwargs[attr])
+    {% endfor %}
   >
     {{ caller() }}
   </label>
 {% endmacro %}
 
 
-{% macro input(
+{% macro input_field(
   text,
   id,
   name=none,
   type='text',
-  placeholder=none,
   required=true,
   hide_label=false
+) %}
+
+  {% call field(id) %}
+    {{ input(id, name, type, required, **kwargs) }}
+    {{ label(text, hide_label) }}
+  {% endcall %}
+{% endmacro %}
+
+
+{% macro input(
+  id,
+  name=none,
+  type='text',
+  required=false
 ) %}
   {% set input_types = [
     'text',
@@ -53,28 +67,28 @@
     'datetime-local',
     'color'
   ] %}
-  {% set type = 'default' if (type in input_types) else type %}
+  {% set data_type = 'default' if (type in input_types) else type %}
 
-  {% call field(id, required) %}
-    {{ label(text, hide_label) }}
-
-    {% if type == 'textarea' %}
-      <textarea
-        id="{{ id }}"
-        name="{{ name or id }}"
-        data-input="textarea"
-        {{ utility.attr_if('required', required) }}
-        {{ utility.attr_if('placeholder', placeholder) }}
-      ></textarea>
-    {% else %}
-      <input
-        type="{{ type }}"
-        id="{{ id }}"
-        name="{{ name or id }}"
-        data-input="{{ type }}"
-        {{ utility.attr_if('required', required) }}
-        {{ utility.attr_if('placeholder', placeholder) }}
-      />
-    {% endif %}
-  {% endcall %}
+  {% if type == 'textarea' %}
+    <textarea
+      id="{{ id }}"
+      name="{{ name or id }}"
+      data-input="textarea"
+      {{ utility.attr_if('required', required) }}
+      {% for attr in kwargs %}
+        utility.attr_if(attr, kwargs[attr])
+      {% endfor %}
+    ></textarea>
+  {% else %}
+    <input
+      type="{{ type }}"
+      id="{{ id }}"
+      name="{{ name or id }}"
+      data-input="{{ data_type }}"
+      {{ utility.attr_if('required', required) }}
+      {% for attr in kwargs %}
+        utility.attr_if(attr, kwargs[attr])
+      {% endfor %}
+    />
+  {% endif %}
 {% endmacro %}

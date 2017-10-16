@@ -47,10 +47,13 @@ $pattern-colors: (
   'text': 'contrast-dark',
   'background': 'contrast-light',
   'overlay': 'background' ('rgba': 0.96),
-  'border': 'brand-pink',
+  'border': 'brand-blue' ('tint': 65%),
 
   'action': 'brand-pink',
   'action-hover': 'brand-pink' ('shade': 25%),
+
+  'field-chill': 'brand-blue',
+  'field-attention': 'action',
 
   'page-title': 'action-hover',
   'callout': 'brand-blue' ('tint': 90%),

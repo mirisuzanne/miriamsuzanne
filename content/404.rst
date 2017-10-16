@@ -1,11 +1,8 @@
 public: yes
 
 
-Page not found.
-===============
+Oh Dear!
+========
 
-That's odd.
-You can always return home_
-and explore our site from there.
-
-.. _home: /
+You've fallen down behind the facade,
+and now you're lost inside my website!

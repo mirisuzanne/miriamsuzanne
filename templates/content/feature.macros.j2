@@ -1,0 +1,24 @@
+{% import 'utility.macros.j2' as utility %}
+
+{% macro grid(
+  pages
+) %}
+  {% for page in pages %}
+    {{ item(page, page.config.feature) }}
+  {% endfor %}
+{% endmacro %}
+
+
+{% macro item(
+  page,
+  size='small'
+) %}
+  {% set image = page.config.image[0].src if page.config.image else none %}
+  {% set image = '--img: url("/static/pictures/%s");' % image if image else none %}
+
+  <article
+    data-feature="{{ size }}"
+    {{ utility.attr_if('style', image) }} >
+    <h2>{{ page.title }}</h2>
+  </article>
+{% endmacro %}

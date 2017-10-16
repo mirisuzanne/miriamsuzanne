@@ -2,13 +2,18 @@
 // ============
 
 
+/// Sizes are contained in Sass maps,
+/// and accessed using OddBird’s Accoutrement.
+/// @link http://oddbird.net/accoutrement-scale/
+///   Accoutrement Scale
+
+
 // Ratios
 // ------
 /// @group scale
-/// @link http://oddbird.net/accoutrement-scale/docs/
-///   Accoutrement Scale
 $ratios: (
   'text-ratio': 1.4,
+  'widescreen': 'minor-seventh',
 );
 
 
@@ -16,8 +21,6 @@ $ratios: (
 // ----------
 /// @group scale
 /// @preview sizes;
-/// @link http://oddbird.net/accoutrement-scale/docs/
-///   Accoutrement Scale
 $text-sizes: (
   'root': 24px,
   'responsive': calc(100% + 0.675vw),
@@ -26,6 +29,7 @@ $text-sizes: (
   'h2': calc(1em + 1vw),
 
   'boiler': 1em ('text-ratio': -1),
+  'intro': 1em ('text-ratio': 0.125),
 );
 
 
@@ -33,16 +37,15 @@ $text-sizes: (
 // -------------
 /// @group scale
 /// @preview sizes; style: ruler
-/// @link http://oddbird.net/accoutrement-scale/docs/
-///   Accoutrement Scale
 $spacing-sizes: (
   'rhythm': 'root' ('text-ratio': 1, 'convert-units': 'rem'),
   'gutter': 'rhythm',
-  'double-gutter': 'gutter' ('multiply': 2),
-  'spacer': 'gutter' ('multiply': 3),
-  'shim': 'gutter' ('multiply': 0.5),
-  'half-shim': 'shim' ('multiply': 0.5),
-  'quarter-shim': 'shim' ('multiply': 0.25),
+  'double-gutter': 'gutter' ('times': 2),
+  'spacer': 'gutter' ('times': 3),
+  'shim': 'gutter' ('times': 0.5),
+  'shim-plus': 'shim' ('times': 1.5),
+  'half-shim': 'shim' ('times': 0.5),
+  'quarter-shim': 'shim' ('times': 0.25),
 );
 
 
@@ -50,16 +53,28 @@ $spacing-sizes: (
 // ----------
 /// @group scale
 /// @preview sizes; style: output-only
-/// @link http://oddbird.net/accoutrement-scale/docs/
-///   Accoutrement Scale
 $page-sizes: (
   'page': 28rem,
+  'hero-min': 'rhythm' ('times': 12),
   'hero': calc(%s - %s) (100vmin, 'double-gutter'),
+);
+
+
+// Pattern Sizes
+// -------------
+/// @group scale
+/// @preview sizes; style: output-only
+$pattern-sizes: (
+  'feature-x': 13rem,
+  'feature-y': 'feature-x' ('widescreen': -0.5),
+  'feature-break': 'feature-x' ('times': 1.75, 'convert-units': 'browser-ems'),
 );
 
 
 $sizes: map-merge($text-sizes, $spacing-sizes);
 $sizes: map-merge($sizes, $page-sizes);
+$sizes: map-merge($sizes, $pattern-sizes);
 @include herman-add('sizes', 'text-sizes', $text-sizes, 'size');
 @include herman-add('sizes', 'spacing-sizes', $spacing-sizes, 'size');
 @include herman-add('sizes', 'page-sizes', $page-sizes, 'size');
+@include herman-add('sizes', 'pattern-sizes', $pattern-sizes, 'size');

@@ -1,0 +1,14 @@
+{% import 'form.macros.j2' as form %}
+{% import 'utility.macros.j2' as utility %}
+
+
+{% macro btn(
+  url,
+  content=none
+) %}
+  {% set content = content if (content != none) else caller() %}
+
+  <a href="{{ url }}" data-btn {% for k in kwargs %} {{ k }}="{{ kwargs[k] }}"{% endfor %}>
+    {{ content|safe }}&nbsp;»
+  </a>
+{% endmacro %}

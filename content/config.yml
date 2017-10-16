@@ -1,5 +1,6 @@
 ---
 
+
 # coming soon...
 # --------------
 
@@ -1357,14 +1358,15 @@ education:
 nav:
   - title: 'home'
     url: '/'
-  - title: 'projects'
-    slug: 'what'
-    url: '/what/'
-  - title: 'articles'
-    slug: 'blog'
-    url: '/blog/'
-  - title: 'about'
-    url: '/who/'
+  - title: 'writing'
+    url: '/writing/'
+  - title: 'speaking'
+    url: '/speaking/'
+  - title: 'web consulting'
+    slug: 'code'
+    url: '/code/'
+  - title: 'art'
+    url: '/art/'
   - title: 'contact'
     url: '/contact/'
 
@@ -1376,41 +1378,10 @@ event_tags:
     film: 'film'
 
 
-tinyletter:
-  - text: 'Subscribe to my newsletter'
-    url: 'https://tinyletter.com/miriamsuzanne'
-
-
-# social
-social:
-  - title: 'email'
-    icon: 'mail'
-    url: 'mailto:miriam@miriamsuzanne.com'
-  - title: 'feed'
-    url: 'http://feeds.feedburner.com/ericandmeyer/'
-  - title: 'twitter'
-    url: 'http://twitter.com/mirisuzanne/'
-  - title: 'facebook'
-    url: 'http://facebook.com/ericmsuzanne/'
-  - title: 'dribbble'
-    url: 'https://dribbble.com/miriamsuzanne'
-  - title: 'vimeo'
-    url: 'http://vimeo.com/miriamsuzanne'
-  - title: 'github'
-    url: 'http://github.com/mirisuzanne/'
-  - title: 'stack overflow'
-    url: 'http://stackoverflow.com/users/1930386/'
-
-
 # site
 author: 'Miriam Suzanne'
 email: 'miriam@miriamsuzanne.com'
-location: 'blog'
 description: 'The art and code and writing of Miriam Suzanne.'
-
-subtitle:
-  - text: 'Art <i>&</i> Code'
-    url: '/why/'
 
 copyright:
   - name: 'Miriam Eric Suzanne'
@@ -1426,13 +1397,14 @@ active_modules: [
   tags,
   blog,
   pages,
+  rst,
   wrap,
   uniqify,
   urls
   ]
-canonical_url: http://www.miriamsuzanne.com/
-output_folder: ../gh-pages
-template_path: ../templates
+canonical_url: 'http://www.miriamsuzanne.com/'
+output_folder: '../gh-pages'
+template_path: '../templates'
 modules:
   blog:
-    index_url: /blog/
+    index_url: '/blog/'

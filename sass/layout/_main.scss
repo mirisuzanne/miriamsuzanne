@@ -2,16 +2,12 @@
 // ===========
 
 
-[data-module] {
+[data-layout='main'] {
   display: grid;
+  grid-template-areas: '... ... contents ... ...';
   grid-template-columns: $columns;
-  padding: size('gutter') 0;
+}
 
-  > * {
-    grid-column: 3 / span 1;
-  }
-
-  & > & {
-    grid-column: 1 / -1;
-  }
+[data-grid] {
+  grid-column: 1 / -1;
 }

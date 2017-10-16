@@ -92,6 +92,8 @@ def filter_pages(values, key, operator=None, value=None):
             # Configs don't implement all of dict, so I can't do:
             #   key in x.config
             return (hasattr(x, key) or x.config.get(key))
+        if operator == 'has':
+            return value in (getattr(x, key, None) or x.config.get(key) or [])
         if operator == 'eq':
             return (getattr(x, key, None) or x.config.get(key)) == value
         if operator == 'neq':

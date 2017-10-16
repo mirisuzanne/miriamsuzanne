@@ -1,0 +1,12 @@
+// Bios
+// ====
+
+
+[data-wrap~='intro'] {
+  border-bottom: 1px $border-style color('border');
+  font-size: size('intro');
+  grid-column: 2 / span 3;
+  margin: size('gutter') 0;
+  padding-bottom: size('shim');
+  position: relative;
+}

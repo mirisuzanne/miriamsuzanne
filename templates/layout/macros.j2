@@ -1,0 +1,16 @@
+{% macro hero(
+  config,
+  fallback=none
+) %}
+  {% set image = config.image[0] if config.image else {} %}
+
+  {% if image.src %}
+    <img src="/static/pictures/{{ image.src }}" alt="" class="hero-image" />
+  {% elif image.svg %}
+    {% include image.svg %}
+  {% elif fallback %}
+    {{ fallback }}
+  {% else %}
+    {% include 'layout/_face.svg' %}
+  {% endif %}
+{% endmacro %}

@@ -1,0 +1,11 @@
+{% import 'content/feature.macros.j2' as feature %}
+
+
+<section data-grid="feature">
+  {% set location = module.location or config.location %}
+
+  {% set section = all_pages|filter_pages('in', 'has', location) %}
+  {% set pages = section|filter_pages('public', 'eq', true) %}
+
+  {{ feature.grid(pages) }}
+</section>

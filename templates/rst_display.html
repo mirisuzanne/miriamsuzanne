@@ -1,5 +1,6 @@
 {% extends "layout.html" %}
 {% import "utility.macros.j2" as utility %}
+{% import "layout/macros.j2" as layout %}
 {% import "blog/macros.j2" as blog %}
 
 {% block title %}{{ rst.title }}{% endblock %}
@@ -25,15 +26,7 @@
 
 
 {% block hero %}
-  {% set image = config.image[0] if config.image else {} %}
-
-  {% if image.src %}
-    <img src="/static/pictures/{{ image.src }}" alt="" class="hero-image" />
-  {% elif image.svg %}
-    {% include image.svg %}
-  {% else %}
-    {{ super() }}
-  {% endif %}
+  {{ layout.hero(config, super()) }}
 {% endblock %}
 
 
@@ -58,9 +51,15 @@
       <input type="checkbox" id="erasure" />
     {% endif %}
 
-    <section data-module="{{ config.page or 'rst' }}" {{ utility.attr_if('data-erasure', config.erasure) }}>
+    {% if config.wrap or config.erasure %}
+      <section
+        data-wrap="{{ config.wrap or 'rst' }}"
+        {{ utility.attr_if('data-erasure', config.erasure) }} >
+        {{ rst.fragment }}
+      </section>
+    {% else %}
       {{ rst.fragment }}
-    </section>
+    {% endif %}
   {% endif %}
 
   {%- for module in config.after -%}

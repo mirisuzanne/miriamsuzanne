@@ -2,14 +2,15 @@ public: yes
 slug: 'sidesaddle'
 tags: ['publication', 'art', 'novel']
 image:
-  - src: 'sidesaddle.jpg'
+  - src: 'sidesaddle/art.jpg'
 tagline: 'a hybrid novel and art installation'
 roles: ['author', 'artist']
 related: 'riding sidesaddle*'
 
 
+******************
 Riding SideSaddle*
-==================
+******************
 
 **Riding SideSaddle\***
 is a fragmented memory written on

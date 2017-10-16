@@ -2,20 +2,46 @@
 // =============
 
 
+@function _mmx(
+  $size
+) {
+  @if map-has-key($sizes, $size) {
+    @return size($size);
+  }
+
+  @return $size;
+}
+
+
+@function mmx(
+  $min,
+  $max
+) {
+  $min: _mmx($min);
+  $max: _mmx($max);
+
+  @return minmax($min, $max);
+}
+
+
 $columns: (
-  repeat(2, minmax(0, 1fr))
-  minmax(0, size('page'))
-  repeat(2, minmax(0, 1fr))
+  mmx('shim', 1fr)
+  mmx(0, 'spacer')
+  mmx(0, 'page')
+  mmx(0, 'spacer')
+  mmx('shim', 1fr)
 );
 
 
 $nav: (
   'home',
-  'what',
-  'blog',
-  'about',
+  'writing',
+  'speaking',
+  'code',
+  'art',
   'contact',
 );
 
 
 $corners: 0 size('half-shim');
+$border-style: solid;

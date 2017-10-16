@@ -8,6 +8,7 @@
     @include contrasted('action');
     border-radius: $corners;
     display: inline-block;
+    margin-bottom: size('shim');
     padding: size('quarter-shim') size('gutter');
   }
 

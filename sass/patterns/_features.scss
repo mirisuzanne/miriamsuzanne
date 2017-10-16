@@ -1,0 +1,28 @@
+// Features
+// ========
+
+
+[data-grid='feature'] {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-auto-rows: mmx('feature-y', 1fr);
+  grid-gap: size('shim');
+  grid-template-columns: repeat(auto-fit, mmx('feature-x', 1fr));
+  padding: size('shim');
+}
+
+
+[data-feature] {
+  background-color: color('action');
+  background-image: var(--img, initial);
+  background-size: cover;
+  border: 1px $border-style color('border');
+}
+
+
+[data-feature='large'] {
+  @include above('feature-break') {
+    grid-column: auto / span 2;
+    grid-row: auto / span 2;
+  }
+}

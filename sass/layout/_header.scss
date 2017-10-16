@@ -30,7 +30,7 @@
 [data-layout='hero'] {
   grid-column: 1 / -2;
   grid-row: 1 / -1;
-  justify-self: start;
+  overflow: hidden;
 }
 
 

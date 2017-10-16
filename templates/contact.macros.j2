@@ -20,19 +20,19 @@
     <input type="hidden" name="_next" value="{{ next }}" />
     <input type="text" name="_gotcha" style="display:none" />
 
-    {{ form.input(
+    {{ form.input_field(
       text='Name',
       id='contact-name',
     ) }}
 
-    {{ form.input(
+    {{ form.input_field(
       text='Email',
       id='contact-email',
       name='_replyto',
       type='email',
     ) }}
 
-    {{ form.input(
+    {{ form.input_field(
       text='Message',
       id='contact-message',
       type='textarea',

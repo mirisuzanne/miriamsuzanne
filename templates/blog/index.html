@@ -2,14 +2,12 @@
 {% import "blog/macros.j2" as blog %}
 
 
-{% block title %}Articles{% endblock %}
-{% block page_title %}Articles{% endblock %}
-
-
 {% block body %}
-  {%- for post in pagination.get_slice() %}
-    {{ blog.list(post) }}
-  {%- endfor %}
+  <section data-module="posts">
+    {% for post in pagination.get_slice() %}
+      {{ blog.list(post) }}
+    {% endfor %}
+  </section>
 
   {% if show_pagination and pagination.pages > 1 %}
     {{ pagination }}
