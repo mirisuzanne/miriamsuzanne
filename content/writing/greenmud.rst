@@ -2,7 +2,6 @@ public: yes
 feature: 'small'
 tagline: 'an animated novel'
 location: 'writing'
-in: ['writing', 'art']
 wrap: 'intro'
 image:
   - src: 'greenmud/cover.jpg'

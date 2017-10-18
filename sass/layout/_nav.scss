@@ -10,6 +10,7 @@
   grid-template-columns: $columns;
   position: sticky;
   top: -1px;
+  z-index: 500;
 
   @include before('') {
     @include position(-1px 0 null 0);

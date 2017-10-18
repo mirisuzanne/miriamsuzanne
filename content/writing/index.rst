@@ -7,13 +7,18 @@ image:
     alt: '[  ] a longing [  ].'
 after:
   - include: 'content/_feature.html.j2'
-.. - include: 'blog/_taglist.j2'
+    slugs:
+      - ['writing/ridingsidesaddle', 'large']
+      - ['writing/oddbird', 'small']
+      - ['writing/10myths', 'small']
+      - ['writing/jumpstartsass', 'large']
+      - ['writing/csstricks', 'small']
+      - ['writing/postobsolete', 'small']
 
 
 *******
 Writing
 *******
-
 
 Miriam is
 a staff writer at `CSS Tricks`_ and `OddBird`_,
@@ -23,14 +28,6 @@ and `award-winning playwright`_.
 Her work has also appeared in
 *Denver Quarterly*, *SuperYesMore*, *Print!*,
 and others.
-
-.. callmacro:: content/macros.j2#btn
-  :url: 'http://oddbird.net/authors/miriam/'
-  :content: 'OddBird'
-
-.. callmacro:: content/macros.j2#btn
-  :url: 'https://css-tricks.com/author/miriam/'
-  :content: 'CSS Tricks'
 
 .. _CSS Tricks: 'https://css-tricks.com/author/miriam/'
 .. _OddBird: 'http://oddbird.net/authors/miriam/'

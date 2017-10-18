@@ -2,7 +2,6 @@ public: yes
 feature: 'large'
 tagline: 'a novel on note cards'
 location: 'writing'
-in: ['writing', 'art']
 image:
   - src: 'sidesaddle/box.jpg'
 

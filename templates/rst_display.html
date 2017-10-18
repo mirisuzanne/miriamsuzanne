@@ -36,7 +36,7 @@
 
 
 {% block page_tagline %}
-  {{ config.tagline or super() }}
+  {{ config.tagline|safe or super() }}
 {% endblock %}
 
 

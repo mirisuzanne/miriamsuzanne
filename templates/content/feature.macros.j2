@@ -1,11 +1,17 @@
 {% import 'utility.macros.j2' as utility %}
 
-{% macro grid(
-  pages
-) %}
-  {% for page in pages %}
-    {{ item(page, page.config.feature) }}
-  {% endfor %}
+
+{% macro grid(slugs=none) %}
+  <section data-grid="feature">
+    {% for slug in (slugs or kwargs) %}
+      {% set page = slug[0] if slugs else slug %}
+      {% set page = all_pages|filter_pages('slug', 'eq', page)|get_page %}
+      {% set size = slug[1] if slugs else kwargs[slug] %}
+      {% if page and size %}
+        {{ item(page, size) }}
+      {% endif %}
+    {% endfor %}
+  </section>
 {% endmacro %}
 
 
@@ -13,12 +19,23 @@
   page,
   size='small'
 ) %}
-  {% set image = page.config.image[0].src if page.config.image else none %}
-  {% set image = '--img: url("/static/pictures/%s");' % image if image else none %}
+  {% set image = page.config.image[0] if page.config.image else none %}
+  {% set src = '--img: url("/static/pictures/%s");' % image.src if image else none %}
+  {% set scale = '--size: %s;' % image.size if image.size else none %}
+  {% set style = [src or '', scale or '']|join if (src or scale) else none %}
+  {% set url = '/' + page.slug|replace('/index', '') + '/' %}
+  {% set link = page.config.elsewhere or url %}
 
   <article
-    data-feature="{{ size }}"
-    {{ utility.attr_if('style', image) }} >
-    <h2>{{ page.title }}</h2>
+    data-feature="{{ size }}" >
+    <a
+      class="feature-link"
+      href="{{ link }}"
+      {{ utility.attr_if('style', style) }} >
+
+      <h2 class="feature-title">
+        {{ page.title }}
+      </h2>
+    </a>
   </article>
 {% endmacro %}

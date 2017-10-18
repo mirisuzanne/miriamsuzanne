@@ -1,14 +1,14 @@
 public: yes
-tagline: 'digital poem & performance'
+tagline: 'learn <a href="http://sass-lang.com/">Sass</a> in a weekend'
 location: 'writing'
 wrap: 'intro'
 image:
-  - src: 'post-obsolete/cover.jpg'
+  - src: 'jssass.png'
 
 
-**********************
-The Post-Obsolete Book
-**********************
+***************
+Jump Start Sass
+***************
 
 
 *The Book is dead. Long live the book.*

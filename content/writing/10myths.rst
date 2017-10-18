@@ -3,12 +3,12 @@ tagline: 'digital poem & performance'
 location: 'writing'
 wrap: 'intro'
 image:
-  - src: 'post-obsolete/cover.jpg'
+  - src: 'sidesaddle/10myths.jpg'
 
 
-**********************
-The Post-Obsolete Book
-**********************
+*****************************************************
+10 Myths on the Proper Application of Beauty Projects
+*****************************************************
 
 
 *The Book is dead. Long live the book.*

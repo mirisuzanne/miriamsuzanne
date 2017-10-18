@@ -8,6 +8,13 @@
   grid-template-columns: $columns;
 }
 
+
 [data-grid] {
   grid-column: 1 / -1;
+}
+
+
+[data-module] {
+  grid-column: 3 / span 1;
+  margin: size('gutter') 0;
 }

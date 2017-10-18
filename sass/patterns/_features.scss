@@ -13,10 +13,21 @@
 
 
 [data-feature] {
-  background-color: color('action');
-  background-image: var(--img, initial);
-  background-size: cover;
   border: 1px $border-style color('border');
+  display: grid;
+  grid-auto-columns: 100%;
+  grid-auto-rows: 100%;
+  position: relative;
+  transition: transform 300ms ease, border-color 300ms ease, box-shadow 300ms ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: color('action');
+    box-shadow: 0 0 size('shim') color('border');
+    transform: scale(1.0125);
+    z-index: 1;
+  }
 }
 
 
@@ -25,4 +36,37 @@
     grid-column: auto / span 2;
     grid-row: auto / span 2;
   }
+}
+
+
+.feature-link {
+  $gradient: to top, color('callout'), color('callout' ('rgba': 0)) 50%;
+  #{--img}: linear-gradient($gradient);
+  background-color: color('callout');
+  background-image: var(--img), url('../images/wash.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: var(--size, cover), cover;
+  display: flex;
+  flex-direction: column-reverse;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+
+.feature-title {
+  @include contrasted('brand-blue');
+  @include font-family('alt');
+  flex: 0 0 auto;
+  font-size: size('boiler');
+  font-weight: normal;
+  max-width: 100%;
+  overflow: hidden;
+  padding: size('quarter-shim') size('half-shim');
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
