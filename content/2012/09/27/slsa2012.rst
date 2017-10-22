@@ -1,13 +1,12 @@
-public: yes
-tags: [writing, art, performance]
-slug: 'slsa2012'
+public: no
+tags: [writing, art, postobsolete]
 summary: |
-  I'll be in `Milwaukee <http://goo.gl/maps/MZW3g>`_ this weekend
-  for a brief appearance at
-  `SLSA 2012 <http://www.litsciarts.org/slsa12/>`_.
-  The `ELO <http://eliterature.org/electronic-literature-the-nonhuman/>`_
-  is hosting a jurried elit event,
-  and accepted my `submission <http://www.post-obsolete.com>`_.
+  I'll be at
+  `SLSA 2012`_
+  this weekend
+  presenting at the jurried elit event…
+
+  .. _SLSA 2012: http://www.litsciarts.org/slsa12/
 
 
 Electronic Literature and the Nonhuman

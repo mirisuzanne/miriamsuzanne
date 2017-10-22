@@ -1,0 +1,29 @@
+// Typography
+// ==========
+
+
+blockquote,
+.pullquote {
+  @include feature-type;
+  margin-bottom: size('gutter');
+
+  .attribution {
+    font-size: size('boiler');
+    font-style: normal;
+    font-weight: bold;
+  }
+}
+
+
+blockquote {
+  p {
+    &:not(.attribution) {
+      text-indent: -0.5em;
+
+      @include wrap-content {
+        color: color('action');
+        font-weight: bold;
+      }
+    }
+  }
+}

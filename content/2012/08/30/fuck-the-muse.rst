@@ -1,18 +1,13 @@
 public: yes
 tags: [writing, art, process]
-slug: 'fuck-the-muse'
 summary: |
-  The `Boulder Writer's Workshop <http://www.boulderwritersworkshop.org/>`_
-  has invited me to teach a class
-  on writing, creative process,
-  and multimedia collaboration,
-  from a queer perspective.
-  We've planned a 6-week class in Denver,
-  starting the first week of October.
+  A class on writing, creative process,
+  and multimedia collaboration…
 
 
-Fuck the Muse: Grab Your Writing by the Nasty Bits
-==================================================
+***********************************
+Grab Your Writing by the Nasty Bits
+***********************************
 
 The `Boulder Writer's Workshop`_
 has invited me to teach a class
@@ -46,8 +41,9 @@ and push our art as far as it will go.
 These aren't one-size-fits-all solutions,
 but a large enough toolkit will go a long way.
 
+
 The Details:
-------------
+============
 
 - Wednesdays from 7-9pm, Oct 10 - Nov 14.
 - Laundry on Lawrence, 27th and Lawrence, Denver.

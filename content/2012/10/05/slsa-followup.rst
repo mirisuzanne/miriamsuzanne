@@ -1,13 +1,11 @@
 public: yes
-tags: [writing, art, performance]
-slug: 'slsa-followup'
+tags: [writing, art, postobsolete]
 summary: |
-  After submitting on a whim,
-  I was `invited to perform </2012/09/27/slsa2012/>`_
-  last weekend at the `SLSA <http://www.litsciarts.org/slsa12/>`_
-  conference in Milwaukee,
-  and I went.
-  This was not a reasonable thing to do.
+  I was invited to perform
+  at the `SLSA`_
+  conference…
+
+  .. _SLSA: http://www.litsciarts.org/slsa12/
 
 
 A Whirlwind of Digital Humanities
@@ -22,6 +20,7 @@ This was not a reasonable thing to do.
 
 .. _invited to perform: /2012/09/27/slsa2012/
 .. _SLSA: http://www.litsciarts.org/slsa12/
+
 
 Friday
 ------
@@ -52,6 +51,7 @@ as a driver for the next day.
     <em>
       The Obsolete Book in a Post-Obsolete World,
       as Represented by a Post-Obsolete Book About Dance</em></a>
+
 
 Saturday
 --------
@@ -107,6 +107,7 @@ Mark Marino,
 Nick Montfort,
 and Stuart Moulthrop.
 A great group!
+
 
 Sunday
 ------

@@ -54,9 +54,12 @@
 
 
 [data-nav] {
-  flex: 0 0 auto;
-  font-weight: bold;
-  padding: size('half-shim') size('shim');
+  &:link,
+  &:visited {
+    flex: 0 0 auto;
+    font-weight: bold;
+    padding: size('half-shim') size('shim');
+  }
 }
 
 

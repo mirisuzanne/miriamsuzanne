@@ -26,9 +26,9 @@
 
 $columns: (
   mmx('shim', 1fr)
-  mmx(0, 'spacer')
+  minmax(0, 1fr)
   mmx(0, 'page')
-  mmx(0, 'spacer')
+  minmax(0, 1fr)
   mmx('shim', 1fr)
 );
 

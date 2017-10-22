@@ -7,16 +7,19 @@ wrap: 'intro'
 Miriam Suzanne
 **************
 
-
 **Hello Lovely –**
 
-I enjoy
+I’m a `web developer`_, `writer`_, and `artist`_
 building collaborative teams
-& experiences across media:
-`art and code`_ that can bring people together.
+& experiences across media –
+art & code that
+`bring people together`_.
 
-.. _art and code: '/why/'
+.. _web developer: /code/
+.. _writer: /writing/
+.. _artist: /art/
+.. _bring people together: /why/
 
 .. callmacro:: content/macros.j2#btn
   :url: '/contact/'
-  :content: 'let’s make things'
+  :content: 'start a conversation'

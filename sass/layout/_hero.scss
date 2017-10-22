@@ -5,6 +5,16 @@
   align-items: stretch;
   display: flex;
   pointer-events: none;
+  position: relative;
+
+  @include after('') {
+    @include position(0);
+    background-image: linear-gradient(
+      10deg,
+      color('contrast-dark' ('rgba': 0.25)),
+      color('contrast-dark' ('rgba': 0)) 35%
+    );
+  }
 
   svg,
   img {

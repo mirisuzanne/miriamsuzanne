@@ -1,34 +1,16 @@
 public: yes
-tags: [minifesto, fuck the muse, art, writing, process]
+tags: [minifesto, fuck the muse, art, writing]
+after:
+  - include: 'blog/_taglist.html.j2'
+    tag: 'fuck the muse'
+    reverse: true
 summary: |
-  |ftm|:
-  I was planning to spend this month teaching
-  `a class </2012/08/30/fuck-the-muse>`_ for the
-  `Boulder Writers' Workshop <http://www.boulderwritersworkshop.org/>`_.
-  That garnered some interest,
-  but didn't pan out in the end.
-  Instead, I'm going to explore the same themes right here
-  in a six-part *Fuck the Muse* blog
-  `mini-series <http://www.imdb.com/title/tt0088727/>`_.
-
-  .. |ftm| raw:: html
-
-    <em><a href="/2012/10/16/muse-intro/">Fuck the Muse</a> pt.1</em>
+  Take control of your art
+  by focusing on the creative process…
 
 
-Fuck the Muse: A Blog Mini-Series
-=================================
-
-[This is *part 1* in the ongoing
-`Fuck the Muse </2012/10/16/muse-intro/>`_ mini-series.]
-
-I was planning to spend this month
-teaching `a class`_ for the
-`Boulder Writers' Workshop`_.
-That garnered some interest,
-but didn't pan out in the end.
-Instead, I'm going to explore the same themes right here
-in a six-part *Fuck the Muse* blog `mini-series`_.
+Fuck The Muse
+=============
 
 The goal is simple:
 

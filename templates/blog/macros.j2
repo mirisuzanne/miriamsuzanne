@@ -1,35 +1,35 @@
+{% import "utility.macros.j2" as utility %}
+
+
 {% macro list(post) %}
-<article data-module="blog-post">
-  {% if post.title %}
-    <h2>
-      <a href="{{ link_to('page', slug=post.slug) }}">
-        {{ post.title }}
-      </a>
-    </h2>
-  {% endif %}
+<article class="post">
+  {% set away = post.config.elsewhere[0] if post.config.elsewhere else none %}
 
-  {{ byline(post) }}
+  {{ byline(post, away) }}
 
-  {%- if post.config.image -%}
-    {% set image = post.config.image[0] %}
-    <img
-      src="/static/pictures/{{ image.src }}"
-      alt="{{ image.alt }}"
-      utility.attr_if('style', image.style) />
-  {%- endif -%}
+  <h2 class="post-title">
+    <a href="{{ away.url or link_to('page', slug=post.slug) }}">
+      {{ post.title|typogrify }}
+    </a>
+  </h2>
 
   {% if post.summary %}
-    {{ post.render_summary() }}
+    {{ post.render_summary()|typogrify }}
   {% endif %}
 </article>
 {% endmacro %}
 
-{% macro byline(post) %}
+
+{% macro byline(post, away=none) %}
 <div class="byline">
   {{ pubdate(post.pub_date) }}
-  {# tags(post.tags) #}
+
+  {% if away %}
+    [{{ utility.link_if(away.src|typogrify, away.url) }}]
+  {% endif %}
 </div>
 {% endmacro %}
+
 
 {% macro pubdate(pub_date) %}
   {% if pub_date %}
@@ -40,6 +40,7 @@
     {% endif %}
   {% endif %}
 {% endmacro %}
+
 
 {% macro tags(taglist) %}
   {% if taglist %}

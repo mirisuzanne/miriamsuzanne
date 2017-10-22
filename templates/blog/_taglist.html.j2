@@ -1,0 +1,13 @@
+{% import "blog/macros.j2" as blog %}
+
+{% set entries = get_blog_entries_by_tag(module.tag) %}
+
+{% if entries %}
+  {% set entries = entries|reverse if module.reverse else entries %}
+
+  <section data-grid="posts">
+    {% for entry in entries %}
+      {{ blog.list(entry) }}
+    {% endfor %}
+  </section>
+{% endif %}

@@ -1,11 +1,8 @@
 public: yes
 tags: [sass, demo, code]
-slug: 'sass-striped-background'
 summary: |
-  In response to a request on twitter,
-  I wrote a simple function
-  for creating striped gradients
-  with Sass.
+  A simple Sass function
+  for creating striped gradients.
 
 
 Create a striped css background using Sass

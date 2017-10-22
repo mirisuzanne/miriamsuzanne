@@ -19,6 +19,7 @@ a {
   &:link,
   &:visited {
     color: color('action');
+    outline: none;
     text-decoration: none;
   }
 
@@ -27,6 +28,7 @@ a {
   &:active {
     color: color('action-hover');
     text-decoration: underline;
+    text-decoration-skip: ink;
   }
 }
 
@@ -39,7 +41,8 @@ svg {
 p,
 ul,
 ol,
-dl,
-blockquote {
-  margin-bottom: size('shim');
+dl {
+  &:not(:last-child) {
+    margin-bottom: size('shim');
+  }
 }

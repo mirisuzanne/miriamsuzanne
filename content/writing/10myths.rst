@@ -3,7 +3,7 @@ tagline: 'digital poem & performance'
 location: 'writing'
 wrap: 'intro'
 image:
-  - src: 'sidesaddle/10myths.jpg'
+  - src: 'writing/sidesaddle/10myths.jpg'
 
 
 *****************************************************

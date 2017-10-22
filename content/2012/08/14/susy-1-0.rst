@@ -1,6 +1,5 @@
 public: yes
 tags: [susy, code, sass]
-slug: 'susy-1-0'
 summary: |
   Susy 1.0 has officially launched!
 

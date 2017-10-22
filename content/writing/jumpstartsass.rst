@@ -3,7 +3,7 @@ tagline: 'learn <a href="http://sass-lang.com/">Sass</a> in a weekend'
 location: 'writing'
 wrap: 'intro'
 image:
-  - src: 'jssass.png'
+  - src: 'writing/jssass.jpg'
 
 
 ***************

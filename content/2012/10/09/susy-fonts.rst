@@ -1,15 +1,9 @@
 public: yes
-tags: [greenmud, writing, design]
+tags: [greenmud, writing, art]
 styles: pages/susy-fonts.css
 summary: |
   The first drafts
-  of the "GreenMud Susy" fonts
-  are kerned, complete,
-  and roughly `in place <http://greengreenmud.com/>`_.
-  Susy chapters now use her font,
-  JJ chapters use his,
-  and the remainder is split
-  until I flesh out a neutral "narrator" font.
+  of the "GreenMud Susy" fonts…
 
 
 A Font Family for Susy

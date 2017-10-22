@@ -24,12 +24,13 @@ $ratios: (
 $text-sizes: (
   'root': 24px,
   'responsive': calc(100% + 0.675vw),
+  'reset': 1rem,
 
-  'h1': calc(2em + 1.5vw),
-  'h2': calc(1em + 1vw),
+  'h1': calc(2rem + 1.5vw),
+  'h2': 'feature',
 
-  'boiler': 1em ('text-ratio': -1),
-  'intro': 1em ('text-ratio': 0.125),
+  'boiler': 1rem ('text-ratio': -1),
+  'feature': calc(1rem + 0.75vw),
 );
 
 
@@ -41,11 +42,12 @@ $spacing-sizes: (
   'rhythm': 'root' ('text-ratio': 1, 'convert-units': 'rem'),
   'gutter': 'rhythm',
   'double-gutter': 'gutter' ('times': 2),
+  'fast-gutter': calc(%s + %s) ('shim', 3vmin),
   'spacer': 'gutter' ('times': 3),
-  'shim': 'gutter' ('times': 0.5),
+  'shim': 'gutter' ('divide': 2),
   'shim-plus': 'shim' ('times': 1.5),
-  'half-shim': 'shim' ('times': 0.5),
-  'quarter-shim': 'shim' ('times': 0.25),
+  'half-shim': 'shim' ('divide': 2),
+  'quarter-shim': 'shim' ('divide': 4),
 );
 
 
@@ -55,6 +57,10 @@ $spacing-sizes: (
 /// @preview sizes; style: output-only
 $page-sizes: (
   'page': 28rem,
+  'half-page': 'page' ('divide': 2),
+  'page-plus': 'page' ('times': 1.5),
+  'page-minus': 'page' ('times': 0.75),
+  'double-page': 'page' ('times': 2),
   'hero-min': 'rhythm' ('times': 12),
   'hero': calc(%s - %s) (100vmin, 'double-gutter'),
 );
@@ -67,7 +73,8 @@ $page-sizes: (
 $pattern-sizes: (
   'feature-x': 13rem,
   'feature-y': 'feature-x' ('widescreen': -0.5),
-  'feature-break': 'feature-x' ('times': 1.75, 'convert-units': 'browser-ems'),
+  'feature-break': 'feature-x' ('times': 2, 'convert-units': 'browser-ems'),
+  'post-image': 5rem,
 );
 
 

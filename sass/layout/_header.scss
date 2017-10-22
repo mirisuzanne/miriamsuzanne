@@ -6,16 +6,6 @@
   display: grid;
   grid-template-columns: $columns;
   grid-template-rows: minmax(0, 1fr) auto;
-
-  @include before('') {
-    background: color('background');
-    clip-path: polygon(size('gutter') 0, 100% 0, 100% 100%, 0 100%, 0 size('gutter'));
-    grid-column: 3 / -1;
-    grid-row: -2 / -1;
-    margin-left: negative('shim');
-    position: relative;
-    z-index: 1;
-  }
 }
 
 
@@ -35,10 +25,13 @@
 
 
 [data-layout='title'] {
+  background: color('background');
+  clip-path: polygon(size('gutter') 0, 100% 0, 100% 100%, 0 100%, 0 size('gutter'));
   grid-column: 3 / -1;
   grid-row: -2 / -1;
   line-height: 1.2;
-  padding: size('shim') 0;
+  margin-left: negative('shim-plus');
+  padding: size('shim') 0 size('shim') size('shim-plus');
   position: relative;
   z-index: 1;
 }

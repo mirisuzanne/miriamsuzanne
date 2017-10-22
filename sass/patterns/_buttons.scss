@@ -8,6 +8,8 @@
     @include contrasted('action');
     border-radius: $corners;
     display: inline-block;
+    font-size: size('reset');
+    font-style: normal;
     margin-bottom: size('shim');
     padding: size('quarter-shim') size('gutter');
   }

@@ -22,7 +22,8 @@
   {% set image = page.config.image[0] if page.config.image else none %}
   {% set src = '--img: url("/static/pictures/%s");' % image.src if image else none %}
   {% set scale = '--size: %s;' % image.size if image.size else none %}
-  {% set style = [src or '', scale or '']|join if (src or scale) else none %}
+  {% set pos = '--pos: %s;' % image.position if image.position else none %}
+  {% set style = [src or '', scale or '', pos or '']|join if (src or scale or pos) else none %}
   {% set url = '/' + page.slug|replace('/index', '') + '/' %}
   {% set link = page.config.elsewhere or url %}
 

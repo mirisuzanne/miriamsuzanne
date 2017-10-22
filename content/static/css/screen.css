@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   -ms-overflow-style: -ms-autohiding-scrollbar;
   -webkit-text-size-adjust: 100%;
@@ -174,26 +175,28 @@ body {
 
 a:link, a:visited {
   color: #e60073;
+  outline: none;
   text-decoration: none; }
 
 a:focus, a:hover, a:active {
   color: #ac0056;
-  text-decoration: underline; }
+  text-decoration: underline;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink; }
 
 svg {
   fill: currentColor; }
 
-p,
-ul,
-ol,
-dl,
-blockquote {
+p:not(:last-child),
+ul:not(:last-child),
+ol:not(:last-child),
+dl:not(:last-child) {
   margin-bottom: 0.7rem; }
 
 body {
   display: grid;
   grid-template-areas: 'header header header header header' 'nav   nav   nav   nav   nav' 'main   main   main   main   main' '...... ...... footer ...... ......';
-  grid-template-columns: minmax(0.7rem, 1fr) minmax(0, 4.2rem) minmax(0, 28rem) minmax(0, 4.2rem) minmax(0.7rem, 1fr);
+  grid-template-columns: minmax(0.7rem, 1fr) minmax(0, 1fr) minmax(0, 28rem) minmax(0, 1fr) minmax(0.7rem, 1fr);
   grid-template-rows: minmax(16.8rem, calc(100vmin - 2.8rem)) repeat(3, auto);
   max-width: 100vw; }
 
@@ -218,7 +221,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  pointer-events: none; }
+  pointer-events: none;
+  position: relative; }
+  [data-layout='hero']::after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: linear-gradient(10deg, rgba(23, 60, 72, 0.25), rgba(23, 60, 72, 0) 35%); }
   [data-layout='hero'] svg,
   [data-layout='hero'] img {
     height: 100%;
@@ -265,18 +277,8 @@ body {
 
 [data-layout='header'] {
   display: grid;
-  grid-template-columns: minmax(0.7rem, 1fr) minmax(0, 4.2rem) minmax(0, 28rem) minmax(0, 4.2rem) minmax(0.7rem, 1fr);
+  grid-template-columns: minmax(0.7rem, 1fr) minmax(0, 1fr) minmax(0, 28rem) minmax(0, 1fr) minmax(0.7rem, 1fr);
   grid-template-rows: minmax(0, 1fr) auto; }
-  [data-layout='header']::before {
-    content: "";
-    background: #fff;
-    -webkit-clip-path: polygon(1.4rem 0, 100% 0, 100% 100%, 0 100%, 0 1.4rem);
-    clip-path: polygon(1.4rem 0, 100% 0, 100% 100%, 0 100%, 0 1.4rem);
-    grid-column: 3 / -1;
-    grid-row: -2 / -1;
-    margin-left: -0.7rem;
-    position: relative;
-    z-index: 1; }
 
 [data-layout='fancy'] {
   grid-column: 1 / -1;
@@ -290,19 +292,23 @@ body {
   overflow: hidden; }
 
 [data-layout='title'] {
+  background: #fff;
+  -webkit-clip-path: polygon(1.4rem 0, 100% 0, 100% 100%, 0 100%, 0 1.4rem);
+  clip-path: polygon(1.4rem 0, 100% 0, 100% 100%, 0 100%, 0 1.4rem);
   grid-column: 3 / -1;
   grid-row: -2 / -1;
   line-height: 1.2;
-  padding: 0.7rem 0;
+  margin-left: -1.05rem;
+  padding: 0.7rem 0 0.7rem 1.05rem;
   position: relative;
   z-index: 1; }
 
 .page-title {
   color: #ac0056;
-  font-size: calc(2em + 1.5vw); }
+  font-size: calc(2rem + 1.5vw); }
 
 .page-tagline {
-  font-size: calc(1em + 1vw);
+  font-size: calc(1rem + 0.75vw);
   font-style: italic;
   font-weight: normal; }
   .page-tagline a:only-child {
@@ -312,8 +318,8 @@ body {
   font-family: "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #fff;
   display: grid;
-  font-size: 0.71429em;
-  grid-template-columns: minmax(0.7rem, 1fr) minmax(0, 4.2rem) minmax(0, 28rem) minmax(0, 4.2rem) minmax(0.7rem, 1fr);
+  font-size: 0.71429rem;
+  grid-template-columns: minmax(0.7rem, 1fr) minmax(0, 1fr) minmax(0, 28rem) minmax(0, 1fr) minmax(0.7rem, 1fr);
   position: -webkit-sticky;
   position: sticky;
   top: -1px;
@@ -366,7 +372,7 @@ body {
     border-color: #fff;
     top: -2px; }
 
-[data-nav] {
+[data-nav]:link, [data-nav]:visited {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -499,13 +505,20 @@ body {
     border-color: #fff;
     bottom: -2px; }
 
-[data-layout='main'] {
+[data-layout='main'],
+[data-wrap='rst'] {
   display: grid;
   grid-template-areas: '... ... contents ... ...';
-  grid-template-columns: minmax(0.7rem, 1fr) minmax(0, 4.2rem) minmax(0, 28rem) minmax(0, 4.2rem) minmax(0.7rem, 1fr); }
+  grid-template-columns: minmax(0.7rem, 1fr) minmax(0, 1fr) minmax(0, 28rem) minmax(0, 1fr) minmax(0.7rem, 1fr); }
 
-[data-grid] {
+[data-grid],
+[data-wrap='rst'] {
   grid-column: 1 / -1; }
+
+[data-wrap='rst'] {
+  margin-bottom: 2.8rem; }
+  [data-wrap='rst'] > *:not([id*='intro']) {
+    grid-column: 3 / span 1; }
 
 [data-module] {
   grid-column: 3 / span 1;
@@ -514,7 +527,7 @@ body {
 [data-layout='footer'] {
   font-family: "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-top: 1px dotted #b3c9d0;
-  font-size: 0.71429em;
+  font-size: 0.71429rem;
   margin: 0 0 4.2rem -0.7rem;
   padding: 0.7rem; }
 
@@ -550,1054 +563,1054 @@ body {
     opacity: 1; }
 
 [data-fancy='0'] {
-  -webkit-animation-delay: -2s;
-  animation-delay: -2s;
-  background-color: #e60b00; }
-
-[data-fancy='1'] {
-  -webkit-animation-delay: -68s;
-  animation-delay: -68s;
-  background-color: #e68a00; }
-
-[data-fancy='2'] {
-  -webkit-animation-delay: -43s;
-  animation-delay: -43s;
-  background-color: #008ee6; }
-
-[data-fancy='3'] {
-  -webkit-animation-delay: -18s;
-  animation-delay: -18s;
-  background-color: #9d00e6; }
-
-[data-fancy='4'] {
-  -webkit-animation-delay: -69s;
-  animation-delay: -69s;
-  background-color: #005ce6; }
-
-[data-fancy='5'] {
-  -webkit-animation-delay: -78s;
-  animation-delay: -78s;
-  background-color: #17e600; }
-
-[data-fancy='6'] {
-  -webkit-animation-delay: -38s;
-  animation-delay: -38s;
-  background-color: #22e600; }
-
-[data-fancy='7'] {
-  -webkit-animation-delay: -9s;
-  animation-delay: -9s;
-  background-color: #e63d00; }
-
-[data-fancy='8'] {
-  -webkit-animation-delay: -9s;
-  animation-delay: -9s;
-  background-color: #3600e6; }
-
-[data-fancy='9'] {
-  -webkit-animation-delay: -26s;
-  animation-delay: -26s;
-  background-color: #e60058; }
-
-[data-fancy='10'] {
-  -webkit-animation-delay: -67s;
-  animation-delay: -67s;
-  background-color: #99e600; }
-
-[data-fancy='11'] {
-  -webkit-animation-delay: -46s;
-  animation-delay: -46s;
-  background-color: #e60067; }
-
-[data-fancy='12'] {
-  -webkit-animation-delay: -75s;
-  animation-delay: -75s;
-  background-color: #e60091; }
-
-[data-fancy='13'] {
-  -webkit-animation-delay: -43s;
-  animation-delay: -43s;
-  background-color: #5ce600; }
-
-[data-fancy='14'] {
-  -webkit-animation-delay: -13s;
-  animation-delay: -13s;
-  background-color: #00cfe6; }
-
-[data-fancy='15'] {
-  -webkit-animation-delay: -16s;
-  animation-delay: -16s;
-  background-color: #e69900; }
-
-[data-fancy='16'] {
-  -webkit-animation-delay: -35s;
-  animation-delay: -35s;
-  background-color: #e60036; }
-
-[data-fancy='17'] {
-  -webkit-animation-delay: -7s;
-  animation-delay: -7s;
-  background-color: #b800e6; }
-
-[data-fancy='18'] {
-  -webkit-animation-delay: -43s;
-  animation-delay: -43s;
-  background-color: #00a4e6; }
-
-[data-fancy='19'] {
-  -webkit-animation-delay: -48s;
-  animation-delay: -48s;
-  background-color: #2a00e6; }
-
-[data-fancy='20'] {
-  -webkit-animation-delay: -53s;
-  animation-delay: -53s;
-  background-color: #e66f00; }
-
-[data-fancy='21'] {
-  -webkit-animation-delay: -36s;
-  animation-delay: -36s;
-  background-color: #d6e600; }
-
-[data-fancy='22'] {
   -webkit-animation-delay: -71s;
   animation-delay: -71s;
-  background-color: #e64900; }
+  background-color: #e6002e; }
 
-[data-fancy='23'] {
-  -webkit-animation-delay: -29s;
-  animation-delay: -29s;
-  background-color: #2ee600; }
+[data-fancy='1'] {
+  -webkit-animation-delay: -52s;
+  animation-delay: -52s;
+  background-color: #2ae600; }
 
-[data-fancy='24'] {
-  -webkit-animation-delay: -76s;
-  animation-delay: -76s;
-  background-color: #91e600; }
+[data-fancy='2'] {
+  -webkit-animation-delay: -9s;
+  animation-delay: -9s;
+  background-color: #0095e6; }
 
-[data-fancy='25'] {
-  -webkit-animation-delay: -12s;
-  animation-delay: -12s;
-  background-color: #2600e6; }
-
-[data-fancy='26'] {
-  -webkit-animation-delay: -55s;
-  animation-delay: -55s;
-  background-color: #e60004; }
-
-[data-fancy='27'] {
-  -webkit-animation-delay: -82s;
-  animation-delay: -82s;
-  background-color: #e60091; }
-
-[data-fancy='28'] {
-  -webkit-animation-delay: -10s;
-  animation-delay: -10s;
-  background-color: #004de6; }
-
-[data-fancy='29'] {
-  -webkit-animation-delay: -35s;
-  animation-delay: -35s;
-  background-color: #00bbe6; }
-
-[data-fancy='30'] {
-  -webkit-animation-delay: -38s;
-  animation-delay: -38s;
-  background-color: #00e686; }
-
-[data-fancy='31'] {
-  -webkit-animation-delay: -16s;
-  animation-delay: -16s;
-  background-color: #0f00e6; }
-
-[data-fancy='32'] {
+[data-fancy='3'] {
   -webkit-animation-delay: -89s;
   animation-delay: -89s;
-  background-color: #e6000b; }
+  background-color: #00bfe6; }
 
-[data-fancy='33'] {
-  -webkit-animation-delay: -55s;
-  animation-delay: -55s;
-  background-color: #e64500; }
+[data-fancy='4'] {
+  -webkit-animation-delay: -61s;
+  animation-delay: -61s;
+  background-color: #e61300; }
 
-[data-fancy='34'] {
-  -webkit-animation-delay: -67s;
-  animation-delay: -67s;
-  background-color: #0000e6; }
+[data-fancy='5'] {
+  -webkit-animation-delay: -58s;
+  animation-delay: -58s;
+  background-color: #e60041; }
 
-[data-fancy='35'] {
-  -webkit-animation-delay: -15s;
-  animation-delay: -15s;
-  background-color: #b400e6; }
-
-[data-fancy='36'] {
-  -webkit-animation-delay: -39s;
-  animation-delay: -39s;
-  background-color: #e62600; }
-
-[data-fancy='37'] {
+[data-fancy='6'] {
   -webkit-animation-delay: -84s;
   animation-delay: -84s;
-  background-color: #e65400; }
+  background-color: #e600bf; }
 
-[data-fancy='38'] {
+[data-fancy='7'] {
+  -webkit-animation-delay: -85s;
+  animation-delay: -85s;
+  background-color: #e600cf; }
+
+[data-fancy='8'] {
+  -webkit-animation-delay: -34s;
+  animation-delay: -34s;
+  background-color: #0b00e6; }
+
+[data-fancy='9'] {
+  -webkit-animation-delay: -64s;
+  animation-delay: -64s;
+  background-color: #8600e6; }
+
+[data-fancy='10'] {
+  -webkit-animation-delay: -57s;
+  animation-delay: -57s;
+  background-color: #e6002a; }
+
+[data-fancy='11'] {
   -webkit-animation-delay: -31s;
   animation-delay: -31s;
-  background-color: #a400e6; }
+  background-color: #e65c00; }
 
-[data-fancy='39'] {
+[data-fancy='12'] {
+  -webkit-animation-delay: -85s;
+  animation-delay: -85s;
+  background-color: #e62200; }
+
+[data-fancy='13'] {
+  -webkit-animation-delay: -67s;
+  animation-delay: -67s;
+  background-color: #00e6b8; }
+
+[data-fancy='14'] {
+  -webkit-animation-delay: -56s;
+  animation-delay: -56s;
+  background-color: #e6e600; }
+
+[data-fancy='15'] {
+  -webkit-animation-delay: -3s;
+  animation-delay: -3s;
+  background-color: #00e6bf; }
+
+[data-fancy='16'] {
+  -webkit-animation-delay: -23s;
+  animation-delay: -23s;
+  background-color: #7a00e6; }
+
+[data-fancy='17'] {
+  -webkit-animation-delay: -87s;
+  animation-delay: -87s;
+  background-color: #4500e6; }
+
+[data-fancy='18'] {
+  -webkit-animation-delay: -77s;
+  animation-delay: -77s;
+  background-color: #e60099; }
+
+[data-fancy='19'] {
+  -webkit-animation-delay: -68s;
+  animation-delay: -68s;
+  background-color: #13e600; }
+
+[data-fancy='20'] {
+  -webkit-animation-delay: -55s;
+  animation-delay: -55s;
+  background-color: #82e600; }
+
+[data-fancy='21'] {
+  -webkit-animation-delay: -14s;
+  animation-delay: -14s;
+  background-color: #00e6d6; }
+
+[data-fancy='22'] {
+  -webkit-animation-delay: -90s;
+  animation-delay: -90s;
+  background-color: #00e61f; }
+
+[data-fancy='23'] {
+  -webkit-animation-delay: -27s;
+  animation-delay: -27s;
+  background-color: #e60082; }
+
+[data-fancy='24'] {
+  -webkit-animation-delay: -20s;
+  animation-delay: -20s;
+  background-color: #e6c700; }
+
+[data-fancy='25'] {
+  -webkit-animation-delay: -70s;
+  animation-delay: -70s;
+  background-color: #3900e6; }
+
+[data-fancy='26'] {
+  -webkit-animation-delay: -43s;
+  animation-delay: -43s;
+  background-color: #00e682; }
+
+[data-fancy='27'] {
+  -webkit-animation-delay: -55s;
+  animation-delay: -55s;
+  background-color: #e60060; }
+
+[data-fancy='28'] {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+  background-color: #36e600; }
+
+[data-fancy='29'] {
+  -webkit-animation-delay: -76s;
+  animation-delay: -76s;
+  background-color: #00e6a4; }
+
+[data-fancy='30'] {
+  -webkit-animation-delay: -32s;
+  animation-delay: -32s;
+  background-color: #e60086; }
+
+[data-fancy='31'] {
+  -webkit-animation-delay: -9s;
+  animation-delay: -9s;
+  background-color: #b4e600; }
+
+[data-fancy='32'] {
   -webkit-animation-delay: -39s;
   animation-delay: -39s;
-  background-color: #e63d00; }
+  background-color: #9500e6; }
+
+[data-fancy='33'] {
+  -webkit-animation-delay: -56s;
+  animation-delay: -56s;
+  background-color: #00e60b; }
+
+[data-fancy='34'] {
+  -webkit-animation-delay: -15s;
+  animation-delay: -15s;
+  background-color: #e600da; }
+
+[data-fancy='35'] {
+  -webkit-animation-delay: -58s;
+  animation-delay: -58s;
+  background-color: #0099e6; }
+
+[data-fancy='36'] {
+  -webkit-animation-delay: -52s;
+  animation-delay: -52s;
+  background-color: #a100e6; }
+
+[data-fancy='37'] {
+  -webkit-animation-delay: -41s;
+  animation-delay: -41s;
+  background-color: #50e600; }
+
+[data-fancy='38'] {
+  -webkit-animation-delay: -29s;
+  animation-delay: -29s;
+  background-color: #00e639; }
+
+[data-fancy='39'] {
+  -webkit-animation-delay: -90s;
+  animation-delay: -90s;
+  background-color: #00e67a; }
 
 [data-fancy='40'] {
-  -webkit-animation-delay: -88s;
-  animation-delay: -88s;
-  background-color: #e67e00; }
+  -webkit-animation-delay: -34s;
+  animation-delay: -34s;
+  background-color: #b0e600; }
 
 [data-fancy='41'] {
-  -webkit-animation-delay: -5s;
-  animation-delay: -5s;
-  background-color: #e2e600; }
+  -webkit-animation-delay: -74s;
+  animation-delay: -74s;
+  background-color: #d6e600; }
 
 [data-fancy='42'] {
   -webkit-animation-delay: -18s;
   animation-delay: -18s;
-  background-color: #39e600; }
+  background-color: #e60004; }
 
 [data-fancy='43'] {
-  -webkit-animation-delay: -67s;
-  animation-delay: -67s;
-  background-color: #e6c700; }
+  -webkit-animation-delay: -69s;
+  animation-delay: -69s;
+  background-color: #ace600; }
 
 [data-fancy='44'] {
-  -webkit-animation-delay: -40s;
-  animation-delay: -40s;
-  background-color: #00e6bb; }
+  -webkit-animation-delay: -67s;
+  animation-delay: -67s;
+  background-color: #c300e6; }
 
 [data-fancy='45'] {
-  -webkit-animation-delay: -9s;
-  animation-delay: -9s;
-  background-color: #e66f00; }
-
-[data-fancy='46'] {
-  -webkit-animation-delay: -27s;
-  animation-delay: -27s;
-  background-color: #cb00e6; }
-
-[data-fancy='47'] {
-  -webkit-animation-delay: -66s;
-  animation-delay: -66s;
-  background-color: #a400e6; }
-
-[data-fancy='48'] {
-  -webkit-animation-delay: -78s;
-  animation-delay: -78s;
-  background-color: #e600b0; }
-
-[data-fancy='49'] {
-  -webkit-animation-delay: -67s;
-  animation-delay: -67s;
-  background-color: #e60039; }
-
-[data-fancy='50'] {
   -webkit-animation-delay: -61s;
   animation-delay: -61s;
-  background-color: #5800e6; }
+  background-color: #5400e6; }
+
+[data-fancy='46'] {
+  -webkit-animation-delay: -76s;
+  animation-delay: -76s;
+  background-color: #00e6a1; }
+
+[data-fancy='47'] {
+  -webkit-animation-delay: -26s;
+  animation-delay: -26s;
+  background-color: #22e600; }
+
+[data-fancy='48'] {
+  -webkit-animation-delay: -31s;
+  animation-delay: -31s;
+  background-color: #e6004d; }
+
+[data-fancy='49'] {
+  -webkit-animation-delay: -23s;
+  animation-delay: -23s;
+  background-color: #e60041; }
+
+[data-fancy='50'] {
+  -webkit-animation-delay: -40s;
+  animation-delay: -40s;
+  background-color: #91e600; }
 
 [data-fancy='51'] {
-  -webkit-animation-delay: -67s;
-  animation-delay: -67s;
-  background-color: #1b00e6; }
+  -webkit-animation-delay: -74s;
+  animation-delay: -74s;
+  background-color: #4100e6; }
 
 [data-fancy='52'] {
-  -webkit-animation-delay: -15s;
-  animation-delay: -15s;
-  background-color: #00e62a; }
+  -webkit-animation-delay: -73s;
+  animation-delay: -73s;
+  background-color: #99e600; }
 
 [data-fancy='53'] {
-  -webkit-animation-delay: -44s;
-  animation-delay: -44s;
-  background-color: #00e6b4; }
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+  background-color: #b000e6; }
 
 [data-fancy='54'] {
-  -webkit-animation-delay: -17s;
-  animation-delay: -17s;
-  background-color: #e66000; }
+  -webkit-animation-delay: -78s;
+  animation-delay: -78s;
+  background-color: #7700e6; }
 
 [data-fancy='55'] {
-  -webkit-animation-delay: -87s;
-  animation-delay: -87s;
-  background-color: #e600e6; }
+  -webkit-animation-delay: -40s;
+  animation-delay: -40s;
+  background-color: #e66300; }
 
 [data-fancy='56'] {
-  -webkit-animation-delay: -15s;
-  animation-delay: -15s;
-  background-color: #0091e6; }
+  -webkit-animation-delay: -70s;
+  animation-delay: -70s;
+  background-color: #e60000; }
 
 [data-fancy='57'] {
-  -webkit-animation-delay: -64s;
-  animation-delay: -64s;
-  background-color: #0086e6; }
+  -webkit-animation-delay: -25s;
+  animation-delay: -25s;
+  background-color: #e60058; }
 
 [data-fancy='58'] {
-  -webkit-animation-delay: -39s;
-  animation-delay: -39s;
-  background-color: #e60082; }
+  -webkit-animation-delay: -89s;
+  animation-delay: -89s;
+  background-color: #e600d2; }
 
 [data-fancy='59'] {
-  -webkit-animation-delay: -56s;
-  animation-delay: -56s;
-  background-color: #00e6de; }
+  -webkit-animation-delay: -12s;
+  animation-delay: -12s;
+  background-color: #6f00e6; }
 
 [data-fancy='60'] {
-  -webkit-animation-delay: -24s;
-  animation-delay: -24s;
-  background-color: #4de600; }
+  -webkit-animation-delay: -16s;
+  animation-delay: -16s;
+  background-color: #a800e6; }
 
 [data-fancy='61'] {
-  -webkit-animation-delay: -50s;
-  animation-delay: -50s;
-  background-color: #a8e600; }
+  -webkit-animation-delay: -81s;
+  animation-delay: -81s;
+  background-color: #9de600; }
 
 [data-fancy='62'] {
-  -webkit-animation-delay: -29s;
-  animation-delay: -29s;
-  background-color: #ac00e6; }
+  -webkit-animation-delay: -4s;
+  animation-delay: -4s;
+  background-color: #0022e6; }
 
 [data-fancy='63'] {
-  -webkit-animation-delay: -18s;
-  animation-delay: -18s;
-  background-color: #009de6; }
+  -webkit-animation-delay: -23s;
+  animation-delay: -23s;
+  background-color: #00e658; }
 
 [data-fancy='64'] {
-  -webkit-animation-delay: -53s;
-  animation-delay: -53s;
-  background-color: #8ae600; }
+  -webkit-animation-delay: -87s;
+  animation-delay: -87s;
+  background-color: #00d2e6; }
 
 [data-fancy='65'] {
-  -webkit-animation-delay: -45s;
-  animation-delay: -45s;
-  background-color: #4d00e6; }
+  -webkit-animation-delay: -12s;
+  animation-delay: -12s;
+  background-color: #b400e6; }
 
 [data-fancy='66'] {
-  -webkit-animation-delay: -5s;
-  animation-delay: -5s;
-  background-color: #e67700; }
+  -webkit-animation-delay: -45s;
+  animation-delay: -45s;
+  background-color: #00e608; }
 
 [data-fancy='67'] {
-  -webkit-animation-delay: -66s;
-  animation-delay: -66s;
-  background-color: #e6b000; }
+  -webkit-animation-delay: -25s;
+  animation-delay: -25s;
+  background-color: #d6e600; }
 
 [data-fancy='68'] {
-  -webkit-animation-delay: -57s;
-  animation-delay: -57s;
-  background-color: #00e66b; }
+  -webkit-animation-delay: -19s;
+  animation-delay: -19s;
+  background-color: #00e6d6; }
 
 [data-fancy='69'] {
   -webkit-animation-delay: -52s;
   animation-delay: -52s;
-  background-color: #0067e6; }
+  background-color: #e6002a; }
 
 [data-fancy='70'] {
-  -webkit-animation-delay: -5s;
-  animation-delay: -5s;
-  background-color: #e61b00; }
+  -webkit-animation-delay: -57s;
+  animation-delay: -57s;
+  background-color: #5800e6; }
 
 [data-fancy='71'] {
-  -webkit-animation-delay: -37s;
-  animation-delay: -37s;
-  background-color: #007ee6; }
-
-[data-fancy='72'] {
-  -webkit-animation-delay: -35s;
-  animation-delay: -35s;
-  background-color: #e60054; }
-
-[data-fancy='73'] {
-  -webkit-animation-delay: -83s;
-  animation-delay: -83s;
-  background-color: #e65000; }
-
-[data-fancy='74'] {
-  -webkit-animation-delay: -80s;
-  animation-delay: -80s;
-  background-color: #36e600; }
-
-[data-fancy='75'] {
-  -webkit-animation-delay: -40s;
-  animation-delay: -40s;
-  background-color: #1be600; }
-
-[data-fancy='76'] {
-  -webkit-animation-delay: -19s;
-  animation-delay: -19s;
-  background-color: #00e6b4; }
-
-[data-fancy='77'] {
-  -webkit-animation-delay: -17s;
-  animation-delay: -17s;
-  background-color: #007ae6; }
-
-[data-fancy='78'] {
-  -webkit-animation-delay: -35s;
-  animation-delay: -35s;
-  background-color: #00e691; }
-
-[data-fancy='79'] {
-  -webkit-animation-delay: -85s;
-  animation-delay: -85s;
-  background-color: #00e6d2; }
-
-[data-fancy='80'] {
-  -webkit-animation-delay: -77s;
-  animation-delay: -77s;
-  background-color: #e6a800; }
-
-[data-fancy='81'] {
-  -webkit-animation-delay: -59s;
-  animation-delay: -59s;
-  background-color: #39e600; }
-
-[data-fancy='82'] {
-  -webkit-animation-delay: -5s;
-  animation-delay: -5s;
-  background-color: #00e650; }
-
-[data-fancy='83'] {
-  -webkit-animation-delay: -80s;
-  animation-delay: -80s;
-  background-color: #e62600; }
-
-[data-fancy='84'] {
-  -webkit-animation-delay: -89s;
-  animation-delay: -89s;
-  background-color: #0091e6; }
-
-[data-fancy='85'] {
-  -webkit-animation-delay: -40s;
-  animation-delay: -40s;
-  background-color: #0be600; }
-
-[data-fancy='86'] {
-  -webkit-animation-delay: -73s;
-  animation-delay: -73s;
-  background-color: #001fe6; }
-
-[data-fancy='87'] {
-  -webkit-animation-delay: -78s;
-  animation-delay: -78s;
-  background-color: #00e67e; }
-
-[data-fancy='88'] {
-  -webkit-animation-delay: -72s;
-  animation-delay: -72s;
-  background-color: #e60045; }
-
-[data-fancy='89'] {
-  -webkit-animation-delay: -37s;
-  animation-delay: -37s;
-  background-color: #e63600; }
-
-[data-fancy='90'] {
-  -webkit-animation-delay: -66s;
-  animation-delay: -66s;
-  background-color: #e6006b; }
-
-[data-fancy='91'] {
-  -webkit-animation-delay: -18s;
-  animation-delay: -18s;
-  background-color: #5c00e6; }
-
-[data-fancy='92'] {
-  -webkit-animation-delay: -47s;
-  animation-delay: -47s;
-  background-color: #00e691; }
-
-[data-fancy='93'] {
-  -webkit-animation-delay: -6s;
-  animation-delay: -6s;
-  background-color: #e61f00; }
-
-[data-fancy='94'] {
-  -webkit-animation-delay: -32s;
-  animation-delay: -32s;
-  background-color: #e66300; }
-
-[data-fancy='95'] {
-  -webkit-animation-delay: -37s;
-  animation-delay: -37s;
-  background-color: #e600b4; }
-
-[data-fancy='96'] {
-  -webkit-animation-delay: -44s;
-  animation-delay: -44s;
-  background-color: #e60091; }
-
-[data-fancy='97'] {
-  -webkit-animation-delay: -35s;
-  animation-delay: -35s;
-  background-color: #7ee600; }
-
-[data-fancy='98'] {
-  -webkit-animation-delay: -40s;
-  animation-delay: -40s;
-  background-color: #00e6e2; }
-
-[data-fancy='99'] {
-  -webkit-animation-delay: -6s;
-  animation-delay: -6s;
-  background-color: #e66300; }
-
-[data-fancy='100'] {
-  -webkit-animation-delay: -9s;
-  animation-delay: -9s;
-  background-color: #1300e6; }
-
-[data-fancy='101'] {
-  -webkit-animation-delay: -16s;
-  animation-delay: -16s;
-  background-color: #00bfe6; }
-
-[data-fancy='102'] {
   -webkit-animation-delay: -26s;
   animation-delay: -26s;
-  background-color: #e65000; }
+  background-color: #002ae6; }
 
-[data-fancy='103'] {
-  -webkit-animation-delay: -89s;
-  animation-delay: -89s;
-  background-color: #e6004d; }
-
-[data-fancy='104'] {
-  -webkit-animation-delay: -2s;
-  animation-delay: -2s;
-  background-color: #1300e6; }
-
-[data-fancy='105'] {
-  -webkit-animation-delay: -22s;
-  animation-delay: -22s;
-  background-color: #e61300; }
-
-[data-fancy='106'] {
-  -webkit-animation-delay: -11s;
-  animation-delay: -11s;
-  background-color: #002ee6; }
-
-[data-fancy='107'] {
-  -webkit-animation-delay: -76s;
-  animation-delay: -76s;
-  background-color: #1300e6; }
-
-[data-fancy='108'] {
-  -webkit-animation-delay: -25s;
-  animation-delay: -25s;
-  background-color: #e6a400; }
-
-[data-fancy='109'] {
-  -webkit-animation-delay: -80s;
-  animation-delay: -80s;
-  background-color: #00e654; }
-
-[data-fancy='110'] {
-  -webkit-animation-delay: -76s;
-  animation-delay: -76s;
-  background-color: #00e682; }
-
-[data-fancy='111'] {
-  -webkit-animation-delay: -36s;
-  animation-delay: -36s;
-  background-color: #e6c300; }
-
-[data-fancy='112'] {
-  -webkit-animation-delay: -8s;
-  animation-delay: -8s;
-  background-color: #22e600; }
-
-[data-fancy='113'] {
-  -webkit-animation-delay: -44s;
-  animation-delay: -44s;
-  background-color: #e67e00; }
-
-[data-fancy='114'] {
-  -webkit-animation-delay: -61s;
-  animation-delay: -61s;
-  background-color: #e68200; }
-
-[data-fancy='115'] {
-  -webkit-animation-delay: -87s;
-  animation-delay: -87s;
-  background-color: #e600a4; }
-
-[data-fancy='116'] {
-  -webkit-animation-delay: -51s;
-  animation-delay: -51s;
-  background-color: #b4e600; }
-
-[data-fancy='117'] {
-  -webkit-animation-delay: -40s;
-  animation-delay: -40s;
-  background-color: #c300e6; }
-
-[data-fancy='118'] {
-  -webkit-animation-delay: -72s;
-  animation-delay: -72s;
-  background-color: #e69500; }
-
-[data-fancy='119'] {
-  -webkit-animation-delay: -37s;
-  animation-delay: -37s;
-  background-color: #e61300; }
-
-[data-fancy='120'] {
-  -webkit-animation-delay: -27s;
-  animation-delay: -27s;
-  background-color: #e6001f; }
-
-[data-fancy='121'] {
-  -webkit-animation-delay: -10s;
-  animation-delay: -10s;
-  background-color: #e60041; }
-
-[data-fancy='122'] {
-  -webkit-animation-delay: -48s;
-  animation-delay: -48s;
-  background-color: #e60013; }
-
-[data-fancy='123'] {
-  -webkit-animation-delay: -56s;
-  animation-delay: -56s;
-  background-color: #e6009d; }
-
-[data-fancy='124'] {
-  -webkit-animation-delay: -37s;
-  animation-delay: -37s;
-  background-color: #e6000b; }
-
-[data-fancy='125'] {
-  -webkit-animation-delay: -53s;
-  animation-delay: -53s;
-  background-color: #8200e6; }
-
-[data-fancy='126'] {
-  -webkit-animation-delay: -40s;
-  animation-delay: -40s;
-  background-color: #6700e6; }
-
-[data-fancy='127'] {
-  -webkit-animation-delay: -56s;
-  animation-delay: -56s;
-  background-color: #e600a1; }
-
-[data-fancy='128'] {
-  -webkit-animation-delay: -4s;
-  animation-delay: -4s;
-  background-color: #49e600; }
-
-[data-fancy='129'] {
+[data-fancy='72'] {
   -webkit-animation-delay: -16s;
   animation-delay: -16s;
-  background-color: #2ae600; }
+  background-color: #000fe6; }
 
-[data-fancy='130'] {
-  -webkit-animation-delay: -85s;
-  animation-delay: -85s;
-  background-color: #e600e6; }
-
-[data-fancy='131'] {
-  -webkit-animation-delay: -31s;
-  animation-delay: -31s;
-  background-color: #00e691; }
-
-[data-fancy='132'] {
-  -webkit-animation-delay: -21s;
-  animation-delay: -21s;
-  background-color: #9de600; }
-
-[data-fancy='133'] {
-  -webkit-animation-delay: -20s;
-  animation-delay: -20s;
-  background-color: #0017e6; }
-
-[data-fancy='134'] {
-  -webkit-animation-delay: -8s;
-  animation-delay: -8s;
-  background-color: #2ae600; }
-
-[data-fancy='135'] {
-  -webkit-animation-delay: -58s;
-  animation-delay: -58s;
-  background-color: #e600c3; }
-
-[data-fancy='136'] {
-  -webkit-animation-delay: -9s;
-  animation-delay: -9s;
-  background-color: #e60026; }
-
-[data-fancy='137'] {
-  -webkit-animation-delay: -71s;
-  animation-delay: -71s;
-  background-color: #001be6; }
-
-[data-fancy='138'] {
-  -webkit-animation-delay: -73s;
-  animation-delay: -73s;
-  background-color: #77e600; }
-
-[data-fancy='139'] {
-  -webkit-animation-delay: -51s;
-  animation-delay: -51s;
-  background-color: #00e6c7; }
-
-[data-fancy='140'] {
-  -webkit-animation-delay: -6s;
-  animation-delay: -6s;
-  background-color: #001be6; }
-
-[data-fancy='141'] {
-  -webkit-animation-delay: -86s;
-  animation-delay: -86s;
-  background-color: #b4e600; }
-
-[data-fancy='142'] {
-  -webkit-animation-delay: -20s;
-  animation-delay: -20s;
-  background-color: #1b00e6; }
-
-[data-fancy='143'] {
-  -webkit-animation-delay: -12s;
-  animation-delay: -12s;
-  background-color: #50e600; }
-
-[data-fancy='144'] {
-  -webkit-animation-delay: -47s;
-  animation-delay: -47s;
-  background-color: #00e699; }
-
-[data-fancy='145'] {
-  -webkit-animation-delay: -27s;
-  animation-delay: -27s;
-  background-color: #0032e6; }
-
-[data-fancy='146'] {
-  -webkit-animation-delay: -69s;
-  animation-delay: -69s;
-  background-color: #6300e6; }
-
-[data-fancy='147'] {
-  -webkit-animation-delay: -18s;
-  animation-delay: -18s;
-  background-color: #1fe600; }
-
-[data-fancy='148'] {
-  -webkit-animation-delay: -78s;
-  animation-delay: -78s;
-  background-color: #00b8e6; }
-
-[data-fancy='149'] {
-  -webkit-animation-delay: -49s;
-  animation-delay: -49s;
-  background-color: #e60022; }
-
-[data-fancy='150'] {
-  -webkit-animation-delay: -39s;
-  animation-delay: -39s;
-  background-color: #e60036; }
-
-[data-fancy='151'] {
-  -webkit-animation-delay: -18s;
-  animation-delay: -18s;
-  background-color: #e60041; }
-
-[data-fancy='152'] {
-  -webkit-animation-delay: -77s;
-  animation-delay: -77s;
-  background-color: #0095e6; }
-
-[data-fancy='153'] {
-  -webkit-animation-delay: -32s;
-  animation-delay: -32s;
-  background-color: #e6006f; }
-
-[data-fancy='154'] {
-  -webkit-animation-delay: -56s;
-  animation-delay: -56s;
-  background-color: #a800e6; }
-
-[data-fancy='155'] {
-  -webkit-animation-delay: -90s;
-  animation-delay: -90s;
-  background-color: #0095e6; }
-
-[data-fancy='156'] {
-  -webkit-animation-delay: -60s;
-  animation-delay: -60s;
-  background-color: #00e61f; }
-
-[data-fancy='157'] {
-  -webkit-animation-delay: -33s;
-  animation-delay: -33s;
-  background-color: #00e6cf; }
-
-[data-fancy='158'] {
-  -webkit-animation-delay: -80s;
-  animation-delay: -80s;
-  background-color: #00e626; }
-
-[data-fancy='159'] {
-  -webkit-animation-delay: -3s;
-  animation-delay: -3s;
-  background-color: #4500e6; }
-
-[data-fancy='160'] {
-  -webkit-animation-delay: -32s;
-  animation-delay: -32s;
-  background-color: #00e62a; }
-
-[data-fancy='161'] {
-  -webkit-animation-delay: -58s;
-  animation-delay: -58s;
-  background-color: #e68600; }
-
-[data-fancy='162'] {
-  -webkit-animation-delay: -15s;
-  animation-delay: -15s;
-  background-color: #00e6d2; }
-
-[data-fancy='163'] {
-  -webkit-animation-delay: -5s;
-  animation-delay: -5s;
-  background-color: #00bfe6; }
-
-[data-fancy='164'] {
-  -webkit-animation-delay: -9s;
-  animation-delay: -9s;
-  background-color: #00e6e6; }
-
-[data-fancy='165'] {
-  -webkit-animation-delay: -87s;
-  animation-delay: -87s;
-  background-color: #82e600; }
-
-[data-fancy='166'] {
-  -webkit-animation-delay: -23s;
-  animation-delay: -23s;
-  background-color: #e66700; }
-
-[data-fancy='167'] {
-  -webkit-animation-delay: -38s;
-  animation-delay: -38s;
-  background-color: #e60095; }
-
-[data-fancy='168'] {
+[data-fancy='73'] {
   -webkit-animation-delay: -4s;
   animation-delay: -4s;
-  background-color: #e6007e; }
+  background-color: #2e00e6; }
 
-[data-fancy='169'] {
-  -webkit-animation-delay: -52s;
-  animation-delay: -52s;
-  background-color: #00e639; }
+[data-fancy='74'] {
+  -webkit-animation-delay: -68s;
+  animation-delay: -68s;
+  background-color: #e60058; }
 
-[data-fancy='170'] {
-  -webkit-animation-delay: -23s;
-  animation-delay: -23s;
-  background-color: #00e64d; }
+[data-fancy='75'] {
+  -webkit-animation-delay: -11s;
+  animation-delay: -11s;
+  background-color: #1300e6; }
 
-[data-fancy='171'] {
-  -webkit-animation-delay: -83s;
-  animation-delay: -83s;
-  background-color: #49e600; }
+[data-fancy='76'] {
+  -webkit-animation-delay: -37s;
+  animation-delay: -37s;
+  background-color: #3d00e6; }
 
-[data-fancy='172'] {
-  -webkit-animation-delay: -48s;
-  animation-delay: -48s;
-  background-color: #00e649; }
+[data-fancy='77'] {
+  -webkit-animation-delay: -90s;
+  animation-delay: -90s;
+  background-color: #00e645; }
 
-[data-fancy='173'] {
-  -webkit-animation-delay: -10s;
-  animation-delay: -10s;
-  background-color: #0039e6; }
+[data-fancy='78'] {
+  -webkit-animation-delay: -57s;
+  animation-delay: -57s;
+  background-color: #e600e2; }
 
-[data-fancy='174'] {
-  -webkit-animation-delay: -67s;
-  animation-delay: -67s;
-  background-color: #e600bb; }
+[data-fancy='79'] {
+  -webkit-animation-delay: -78s;
+  animation-delay: -78s;
+  background-color: #e600c7; }
 
-[data-fancy='175'] {
-  -webkit-animation-delay: -48s;
-  animation-delay: -48s;
-  background-color: #006fe6; }
+[data-fancy='80'] {
+  -webkit-animation-delay: -24s;
+  animation-delay: -24s;
+  background-color: #2600e6; }
 
-[data-fancy='176'] {
-  -webkit-animation-delay: -10s;
-  animation-delay: -10s;
-  background-color: #77e600; }
+[data-fancy='81'] {
+  -webkit-animation-delay: -86s;
+  animation-delay: -86s;
+  background-color: #e60b00; }
 
-[data-fancy='177'] {
-  -webkit-animation-delay: -20s;
-  animation-delay: -20s;
-  background-color: #e60099; }
+[data-fancy='82'] {
+  -webkit-animation-delay: -34s;
+  animation-delay: -34s;
+  background-color: #001fe6; }
 
-[data-fancy='178'] {
-  -webkit-animation-delay: -52s;
-  animation-delay: -52s;
-  background-color: #00e654; }
+[data-fancy='83'] {
+  -webkit-animation-delay: -28s;
+  animation-delay: -28s;
+  background-color: #e600de; }
 
-[data-fancy='179'] {
-  -webkit-animation-delay: -79s;
-  animation-delay: -79s;
-  background-color: #00e6a4; }
+[data-fancy='84'] {
+  -webkit-animation-delay: -41s;
+  animation-delay: -41s;
+  background-color: #e600e6; }
 
-[data-fancy='180'] {
-  -webkit-animation-delay: -75s;
-  animation-delay: -75s;
+[data-fancy='85'] {
+  -webkit-animation-delay: -34s;
+  animation-delay: -34s;
   background-color: #1700e6; }
 
-[data-fancy='181'] {
-  -webkit-animation-delay: -45s;
-  animation-delay: -45s;
+[data-fancy='86'] {
+  -webkit-animation-delay: -54s;
+  animation-delay: -54s;
+  background-color: #0036e6; }
+
+[data-fancy='87'] {
+  -webkit-animation-delay: -59s;
+  animation-delay: -59s;
+  background-color: #00e6a1; }
+
+[data-fancy='88'] {
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+  background-color: #e62600; }
+
+[data-fancy='89'] {
+  -webkit-animation-delay: -35s;
+  animation-delay: -35s;
+  background-color: #00e654; }
+
+[data-fancy='90'] {
+  -webkit-animation-delay: -14s;
+  animation-delay: -14s;
+  background-color: #0060e6; }
+
+[data-fancy='91'] {
+  -webkit-animation-delay: -88s;
+  animation-delay: -88s;
+  background-color: #002ee6; }
+
+[data-fancy='92'] {
+  -webkit-animation-delay: -44s;
+  animation-delay: -44s;
+  background-color: #00e6a1; }
+
+[data-fancy='93'] {
+  -webkit-animation-delay: -24s;
+  animation-delay: -24s;
+  background-color: #e200e6; }
+
+[data-fancy='94'] {
+  -webkit-animation-delay: -62s;
+  animation-delay: -62s;
+  background-color: #00e60b; }
+
+[data-fancy='95'] {
+  -webkit-animation-delay: -66s;
+  animation-delay: -66s;
+  background-color: #1b00e6; }
+
+[data-fancy='96'] {
+  -webkit-animation-delay: -48s;
+  animation-delay: -48s;
+  background-color: #00d6e6; }
+
+[data-fancy='97'] {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+  background-color: #99e600; }
+
+[data-fancy='98'] {
+  -webkit-animation-delay: -8s;
+  animation-delay: -8s;
+  background-color: #cfe600; }
+
+[data-fancy='99'] {
+  -webkit-animation-delay: -87s;
+  animation-delay: -87s;
+  background-color: #e6009d; }
+
+[data-fancy='100'] {
+  -webkit-animation-delay: -19s;
+  animation-delay: -19s;
+  background-color: #e6c700; }
+
+[data-fancy='101'] {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+  background-color: #9d00e6; }
+
+[data-fancy='102'] {
+  -webkit-animation-delay: -40s;
+  animation-delay: -40s;
+  background-color: #e67700; }
+
+[data-fancy='103'] {
+  -webkit-animation-delay: -57s;
+  animation-delay: -57s;
+  background-color: #00e61b; }
+
+[data-fancy='104'] {
+  -webkit-animation-delay: -41s;
+  animation-delay: -41s;
+  background-color: #e68200; }
+
+[data-fancy='105'] {
+  -webkit-animation-delay: -74s;
+  animation-delay: -74s;
+  background-color: #e60026; }
+
+[data-fancy='106'] {
+  -webkit-animation-delay: -47s;
+  animation-delay: -47s;
+  background-color: #a1e600; }
+
+[data-fancy='107'] {
+  -webkit-animation-delay: -82s;
+  animation-delay: -82s;
+  background-color: #00e6a1; }
+
+[data-fancy='108'] {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+  background-color: #50e600; }
+
+[data-fancy='109'] {
+  -webkit-animation-delay: -32s;
+  animation-delay: -32s;
+  background-color: #e6e600; }
+
+[data-fancy='110'] {
+  -webkit-animation-delay: -71s;
+  animation-delay: -71s;
+  background-color: #99e600; }
+
+[data-fancy='111'] {
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+  background-color: #e60400; }
+
+[data-fancy='112'] {
+  -webkit-animation-delay: -46s;
+  animation-delay: -46s;
+  background-color: #cf00e6; }
+
+[data-fancy='113'] {
+  -webkit-animation-delay: -69s;
+  animation-delay: -69s;
+  background-color: #0036e6; }
+
+[data-fancy='114'] {
+  -webkit-animation-delay: -48s;
+  animation-delay: -48s;
+  background-color: #e66000; }
+
+[data-fancy='115'] {
+  -webkit-animation-delay: -25s;
+  animation-delay: -25s;
+  background-color: #e69900; }
+
+[data-fancy='116'] {
+  -webkit-animation-delay: -59s;
+  animation-delay: -59s;
+  background-color: #00e667; }
+
+[data-fancy='117'] {
+  -webkit-animation-delay: -24s;
+  animation-delay: -24s;
+  background-color: #e60008; }
+
+[data-fancy='118'] {
+  -webkit-animation-delay: -80s;
+  animation-delay: -80s;
+  background-color: #e600e2; }
+
+[data-fancy='119'] {
+  -webkit-animation-delay: -8s;
+  animation-delay: -8s;
+  background-color: #e64100; }
+
+[data-fancy='120'] {
+  -webkit-animation-delay: -10s;
+  animation-delay: -10s;
+  background-color: #0077e6; }
+
+[data-fancy='121'] {
+  -webkit-animation-delay: -43s;
+  animation-delay: -43s;
+  background-color: #e60800; }
+
+[data-fancy='122'] {
+  -webkit-animation-delay: -69s;
+  animation-delay: -69s;
+  background-color: #6fe600; }
+
+[data-fancy='123'] {
+  -webkit-animation-delay: -67s;
+  animation-delay: -67s;
+  background-color: #bb00e6; }
+
+[data-fancy='124'] {
+  -webkit-animation-delay: -60s;
+  animation-delay: -60s;
+  background-color: #00e6da; }
+
+[data-fancy='125'] {
+  -webkit-animation-delay: -48s;
+  animation-delay: -48s;
+  background-color: #1300e6; }
+
+[data-fancy='126'] {
+  -webkit-animation-delay: -47s;
+  animation-delay: -47s;
+  background-color: #00e658; }
+
+[data-fancy='127'] {
+  -webkit-animation-delay: -23s;
+  animation-delay: -23s;
+  background-color: #e65000; }
+
+[data-fancy='128'] {
+  -webkit-animation-delay: -49s;
+  animation-delay: -49s;
+  background-color: #0be600; }
+
+[data-fancy='129'] {
+  -webkit-animation-delay: -90s;
+  animation-delay: -90s;
+  background-color: #0be600; }
+
+[data-fancy='130'] {
+  -webkit-animation-delay: -79s;
+  animation-delay: -79s;
+  background-color: #bfe600; }
+
+[data-fancy='131'] {
+  -webkit-animation-delay: -10s;
+  animation-delay: -10s;
+  background-color: #00e639; }
+
+[data-fancy='132'] {
+  -webkit-animation-delay: -70s;
+  animation-delay: -70s;
+  background-color: #5400e6; }
+
+[data-fancy='133'] {
+  -webkit-animation-delay: -29s;
+  animation-delay: -29s;
+  background-color: #007ae6; }
+
+[data-fancy='134'] {
+  -webkit-animation-delay: -47s;
+  animation-delay: -47s;
+  background-color: #99e600; }
+
+[data-fancy='135'] {
+  -webkit-animation-delay: -20s;
+  animation-delay: -20s;
+  background-color: #c3e600; }
+
+[data-fancy='136'] {
+  -webkit-animation-delay: -43s;
+  animation-delay: -43s;
+  background-color: #00e645; }
+
+[data-fancy='137'] {
+  -webkit-animation-delay: -43s;
+  animation-delay: -43s;
+  background-color: #54e600; }
+
+[data-fancy='138'] {
+  -webkit-animation-delay: -14s;
+  animation-delay: -14s;
+  background-color: #e6008e; }
+
+[data-fancy='139'] {
+  -webkit-animation-delay: -3s;
+  animation-delay: -3s;
+  background-color: #e6007a; }
+
+[data-fancy='140'] {
+  -webkit-animation-delay: -49s;
+  animation-delay: -49s;
   background-color: #00e663; }
 
+[data-fancy='141'] {
+  -webkit-animation-delay: -52s;
+  animation-delay: -52s;
+  background-color: #e60000; }
+
+[data-fancy='142'] {
+  -webkit-animation-delay: -84s;
+  animation-delay: -84s;
+  background-color: #e64100; }
+
+[data-fancy='143'] {
+  -webkit-animation-delay: -33s;
+  animation-delay: -33s;
+  background-color: #e60008; }
+
+[data-fancy='144'] {
+  -webkit-animation-delay: -4s;
+  animation-delay: -4s;
+  background-color: #00e654; }
+
+[data-fancy='145'] {
+  -webkit-animation-delay: -5s;
+  animation-delay: -5s;
+  background-color: #0091e6; }
+
+[data-fancy='146'] {
+  -webkit-animation-delay: -65s;
+  animation-delay: -65s;
+  background-color: #e6b000; }
+
+[data-fancy='147'] {
+  -webkit-animation-delay: -61s;
+  animation-delay: -61s;
+  background-color: #e60050; }
+
+[data-fancy='148'] {
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+  background-color: #e60060; }
+
+[data-fancy='149'] {
+  -webkit-animation-delay: -71s;
+  animation-delay: -71s;
+  background-color: #002ae6; }
+
+[data-fancy='150'] {
+  -webkit-animation-delay: -38s;
+  animation-delay: -38s;
+  background-color: #0091e6; }
+
+[data-fancy='151'] {
+  -webkit-animation-delay: -90s;
+  animation-delay: -90s;
+  background-color: #00e660; }
+
+[data-fancy='152'] {
+  -webkit-animation-delay: -29s;
+  animation-delay: -29s;
+  background-color: #5400e6; }
+
+[data-fancy='153'] {
+  -webkit-animation-delay: -51s;
+  animation-delay: -51s;
+  background-color: #4de600; }
+
+[data-fancy='154'] {
+  -webkit-animation-delay: -37s;
+  animation-delay: -37s;
+  background-color: #0060e6; }
+
+[data-fancy='155'] {
+  -webkit-animation-delay: -59s;
+  animation-delay: -59s;
+  background-color: #e6006f; }
+
+[data-fancy='156'] {
+  -webkit-animation-delay: -41s;
+  animation-delay: -41s;
+  background-color: #e600bf; }
+
+[data-fancy='157'] {
+  -webkit-animation-delay: -61s;
+  animation-delay: -61s;
+  background-color: #e200e6; }
+
+[data-fancy='158'] {
+  -webkit-animation-delay: -37s;
+  animation-delay: -37s;
+  background-color: #08e600; }
+
+[data-fancy='159'] {
+  -webkit-animation-delay: -86s;
+  animation-delay: -86s;
+  background-color: #e64900; }
+
+[data-fancy='160'] {
+  -webkit-animation-delay: -79s;
+  animation-delay: -79s;
+  background-color: #00e64d; }
+
+[data-fancy='161'] {
+  -webkit-animation-delay: -44s;
+  animation-delay: -44s;
+  background-color: #e6007e; }
+
+[data-fancy='162'] {
+  -webkit-animation-delay: -88s;
+  animation-delay: -88s;
+  background-color: #00e67e; }
+
+[data-fancy='163'] {
+  -webkit-animation-delay: -19s;
+  animation-delay: -19s;
+  background-color: #8a00e6; }
+
+[data-fancy='164'] {
+  -webkit-animation-delay: -17s;
+  animation-delay: -17s;
+  background-color: #00e61b; }
+
+[data-fancy='165'] {
+  -webkit-animation-delay: -75s;
+  animation-delay: -75s;
+  background-color: #e6007e; }
+
+[data-fancy='166'] {
+  -webkit-animation-delay: -61s;
+  animation-delay: -61s;
+  background-color: #e63200; }
+
+[data-fancy='167'] {
+  -webkit-animation-delay: -11s;
+  animation-delay: -11s;
+  background-color: #8ae600; }
+
+[data-fancy='168'] {
+  -webkit-animation-delay: -50s;
+  animation-delay: -50s;
+  background-color: #99e600; }
+
+[data-fancy='169'] {
+  -webkit-animation-delay: -90s;
+  animation-delay: -90s;
+  background-color: #e62a00; }
+
+[data-fancy='170'] {
+  -webkit-animation-delay: -4s;
+  animation-delay: -4s;
+  background-color: #b000e6; }
+
+[data-fancy='171'] {
+  -webkit-animation-delay: -57s;
+  animation-delay: -57s;
+  background-color: #dae600; }
+
+[data-fancy='172'] {
+  -webkit-animation-delay: -46s;
+  animation-delay: -46s;
+  background-color: #cbe600; }
+
+[data-fancy='173'] {
+  -webkit-animation-delay: -33s;
+  animation-delay: -33s;
+  background-color: #e65400; }
+
+[data-fancy='174'] {
+  -webkit-animation-delay: -46s;
+  animation-delay: -46s;
+  background-color: #00ace6; }
+
+[data-fancy='175'] {
+  -webkit-animation-delay: -47s;
+  animation-delay: -47s;
+  background-color: #00e677; }
+
+[data-fancy='176'] {
+  -webkit-animation-delay: -24s;
+  animation-delay: -24s;
+  background-color: #b400e6; }
+
+[data-fancy='177'] {
+  -webkit-animation-delay: -40s;
+  animation-delay: -40s;
+  background-color: #32e600; }
+
+[data-fancy='178'] {
+  -webkit-animation-delay: -71s;
+  animation-delay: -71s;
+  background-color: #00dae6; }
+
+[data-fancy='179'] {
+  -webkit-animation-delay: -66s;
+  animation-delay: -66s;
+  background-color: #e68a00; }
+
+[data-fancy='180'] {
+  -webkit-animation-delay: -85s;
+  animation-delay: -85s;
+  background-color: #00e677; }
+
+[data-fancy='181'] {
+  -webkit-animation-delay: -46s;
+  animation-delay: -46s;
+  background-color: #dee600; }
+
 [data-fancy='182'] {
-  -webkit-animation-delay: -39s;
-  animation-delay: -39s;
-  background-color: #e66b00; }
+  -webkit-animation-delay: -33s;
+  animation-delay: -33s;
+  background-color: #e6e600; }
 
 [data-fancy='183'] {
-  -webkit-animation-delay: -21s;
-  animation-delay: -21s;
-  background-color: #00e613; }
+  -webkit-animation-delay: -58s;
+  animation-delay: -58s;
+  background-color: #6fe600; }
 
 [data-fancy='184'] {
+  -webkit-animation-delay: -28s;
+  animation-delay: -28s;
+  background-color: #00e649; }
+
+[data-fancy='185'] {
+  -webkit-animation-delay: -56s;
+  animation-delay: -56s;
+  background-color: #e6007e; }
+
+[data-fancy='186'] {
+  -webkit-animation-delay: -46s;
+  animation-delay: -46s;
+  background-color: #e60036; }
+
+[data-fancy='187'] {
+  -webkit-animation-delay: -35s;
+  animation-delay: -35s;
+  background-color: #e67a00; }
+
+[data-fancy='188'] {
+  -webkit-animation-delay: -80s;
+  animation-delay: -80s;
+  background-color: #95e600; }
+
+[data-fancy='189'] {
+  -webkit-animation-delay: -80s;
+  animation-delay: -80s;
+  background-color: #63e600; }
+
+[data-fancy='190'] {
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+  background-color: #2ae600; }
+
+[data-fancy='191'] {
+  -webkit-animation-delay: -20s;
+  animation-delay: -20s;
+  background-color: #5000e6; }
+
+[data-fancy='192'] {
+  -webkit-animation-delay: -63s;
+  animation-delay: -63s;
+  background-color: #e6d600; }
+
+[data-fancy='193'] {
+  -webkit-animation-delay: -42s;
+  animation-delay: -42s;
+  background-color: #00e6da; }
+
+[data-fancy='194'] {
+  -webkit-animation-delay: -74s;
+  animation-delay: -74s;
+  background-color: #99e600; }
+
+[data-fancy='195'] {
+  -webkit-animation-delay: -53s;
+  animation-delay: -53s;
+  background-color: #00e6b4; }
+
+[data-fancy='196'] {
   -webkit-animation-delay: -6s;
   animation-delay: -6s;
   background-color: #0054e6; }
 
-[data-fancy='185'] {
-  -webkit-animation-delay: -15s;
-  animation-delay: -15s;
-  background-color: #e67a00; }
-
-[data-fancy='186'] {
-  -webkit-animation-delay: -7s;
-  animation-delay: -7s;
-  background-color: #86e600; }
-
-[data-fancy='187'] {
-  -webkit-animation-delay: -5s;
-  animation-delay: -5s;
-  background-color: #e65400; }
-
-[data-fancy='188'] {
-  -webkit-animation-delay: -67s;
-  animation-delay: -67s;
-  background-color: #3d00e6; }
-
-[data-fancy='189'] {
-  -webkit-animation-delay: -90s;
-  animation-delay: -90s;
-  background-color: #e60000; }
-
-[data-fancy='190'] {
-  -webkit-animation-delay: -11s;
-  animation-delay: -11s;
-  background-color: #e6d200; }
-
-[data-fancy='191'] {
-  -webkit-animation-delay: -7s;
-  animation-delay: -7s;
-  background-color: #e600a4; }
-
-[data-fancy='192'] {
-  -webkit-animation-delay: -67s;
-  animation-delay: -67s;
-  background-color: #17e600; }
-
-[data-fancy='193'] {
-  -webkit-animation-delay: -55s;
-  animation-delay: -55s;
-  background-color: #e66b00; }
-
-[data-fancy='194'] {
-  -webkit-animation-delay: -20s;
-  animation-delay: -20s;
-  background-color: #00cbe6; }
-
-[data-fancy='195'] {
-  -webkit-animation-delay: -8s;
-  animation-delay: -8s;
-  background-color: #002ee6; }
-
-[data-fancy='196'] {
-  -webkit-animation-delay: -3s;
-  animation-delay: -3s;
-  background-color: #008ee6; }
-
 [data-fancy='197'] {
-  -webkit-animation-delay: -43s;
-  animation-delay: -43s;
-  background-color: #e62e00; }
-
-[data-fancy='198'] {
-  -webkit-animation-delay: -18s;
-  animation-delay: -18s;
-  background-color: #e6a400; }
-
-[data-fancy='199'] {
-  -webkit-animation-delay: -85s;
-  animation-delay: -85s;
-  background-color: #00e66b; }
-
-[data-fancy='200'] {
-  -webkit-animation-delay: -10s;
-  animation-delay: -10s;
-  background-color: #00e60b; }
-
-[data-fancy='201'] {
-  -webkit-animation-delay: -63s;
-  animation-delay: -63s;
-  background-color: #e66700; }
-
-[data-fancy='202'] {
-  -webkit-animation-delay: -51s;
-  animation-delay: -51s;
-  background-color: #0099e6; }
-
-[data-fancy='203'] {
-  -webkit-animation-delay: -38s;
-  animation-delay: -38s;
-  background-color: #00e61f; }
-
-[data-fancy='204'] {
   -webkit-animation-delay: -1s;
   animation-delay: -1s;
-  background-color: #00e691; }
+  background-color: #e600b0; }
+
+[data-fancy='198'] {
+  -webkit-animation-delay: -19s;
+  animation-delay: -19s;
+  background-color: #006be6; }
+
+[data-fancy='199'] {
+  -webkit-animation-delay: -31s;
+  animation-delay: -31s;
+  background-color: #5000e6; }
+
+[data-fancy='200'] {
+  -webkit-animation-delay: -71s;
+  animation-delay: -71s;
+  background-color: #2200e6; }
+
+[data-fancy='201'] {
+  -webkit-animation-delay: -79s;
+  animation-delay: -79s;
+  background-color: #6000e6; }
+
+[data-fancy='202'] {
+  -webkit-animation-delay: -72s;
+  animation-delay: -72s;
+  background-color: #0036e6; }
+
+[data-fancy='203'] {
+  -webkit-animation-delay: -3s;
+  animation-delay: -3s;
+  background-color: #e600a1; }
+
+[data-fancy='204'] {
+  -webkit-animation-delay: -3s;
+  animation-delay: -3s;
+  background-color: #00e6a4; }
 
 [data-fancy='205'] {
-  -webkit-animation-delay: -69s;
-  animation-delay: -69s;
-  background-color: #0004e6; }
+  -webkit-animation-delay: -58s;
+  animation-delay: -58s;
+  background-color: #006be6; }
 
 [data-fancy='206'] {
-  -webkit-animation-delay: -45s;
-  animation-delay: -45s;
-  background-color: #0800e6; }
+  -webkit-animation-delay: -19s;
+  animation-delay: -19s;
+  background-color: #58e600; }
 
 [data-fancy='207'] {
-  -webkit-animation-delay: -57s;
-  animation-delay: -57s;
-  background-color: #e67300; }
+  -webkit-animation-delay: -75s;
+  animation-delay: -75s;
+  background-color: #bf00e6; }
 
 [data-fancy='208'] {
-  -webkit-animation-delay: -8s;
-  animation-delay: -8s;
-  background-color: #001fe6; }
+  -webkit-animation-delay: -37s;
+  animation-delay: -37s;
+  background-color: #007ee6; }
 
 [data-fancy='209'] {
-  -webkit-animation-delay: -45s;
-  animation-delay: -45s;
-  background-color: #00e67a; }
+  -webkit-animation-delay: -72s;
+  animation-delay: -72s;
+  background-color: #bf00e6; }
 
 [data-icon] {
   height: 1em;
@@ -1609,6 +1622,8 @@ body {
   color: #fff;
   border-radius: 0 0.35rem;
   display: inline-block;
+  font-size: 1rem;
+  font-style: normal;
   margin-bottom: 0.7rem;
   padding: 0.175rem 1.4rem; }
 
@@ -1631,7 +1646,7 @@ body {
   background: #fff;
   border-radius: 0 0.35rem;
   color: #266478;
-  font-size: 0.71429em;
+  font-size: 0.71429rem;
   margin: 0 auto -0.35rem 0.35rem;
   padding: 0 0.35rem;
   -webkit-transition: color 250ms ease;
@@ -1641,7 +1656,7 @@ body {
 [data-input='textarea'] {
   border: 2px solid #266478;
   border-radius: 0 0.35rem;
-  font-size: 0.71429em;
+  font-size: 0.71429rem;
   padding: 0.35rem;
   -webkit-transition: border-color 250ms ease;
   transition: border-color 250ms ease;
@@ -1672,22 +1687,35 @@ body {
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse; }
 
-[data-wrap~='intro'] {
-  font-size: 1.04296em;
+[data-wrap~='intro'],
+[id*='intro'] {
+  font-size: calc(1rem + 0.75vw);
+  font-style: italic;
   grid-column: 2 / span 3;
   margin: 2.8rem 0;
   position: relative; }
+  [data-wrap~='intro'] em,
+  [data-wrap~='intro'] i,
+  [id*='intro'] em,
+  [id*='intro'] i {
+    font-style: normal; }
+
+[id*='intro'] {
+  border-bottom: 1px solid #b3c9d0;
+  padding-bottom: 2.8rem; }
+  [id*='intro'] h2 {
+    display: none; }
 
 [data-grid='feature'] {
   display: grid;
+  grid-auto-columns: 0;
   grid-auto-flow: dense;
   grid-auto-rows: minmax(9.75rem, 1fr);
-  grid-gap: 0.7rem;
   grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
   padding: 0.7rem; }
 
 [data-feature] {
-  border: 1px solid #b3c9d0;
+  border: 1px solid #fff;
   display: grid;
   grid-auto-columns: 100%;
   grid-auto-rows: 100%;
@@ -1697,23 +1725,25 @@ body {
   transition: transform 300ms ease, border-color 300ms ease, box-shadow 300ms ease;
   transition: transform 300ms ease, border-color 300ms ease, box-shadow 300ms ease, -webkit-transform 300ms ease, -webkit-box-shadow 300ms ease; }
   [data-feature]:hover, [data-feature]:focus, [data-feature]:active {
-    border-color: #e60073;
-    -webkit-box-shadow: 0 0 0.7rem #b3c9d0;
-    box-shadow: 0 0 0.7rem #b3c9d0;
+    -webkit-box-shadow: 0 0 0.7rem #173c48;
+    box-shadow: 0 0 0.7rem #173c48;
     -webkit-transform: scale(1.0125);
     transform: scale(1.0125);
     z-index: 1; }
+  @media (max-width: 38.99em) {
+    [data-feature] {
+      grid-column: 1 / -1; } }
 
-@media (min-width: 34.125em) {
-  [data-feature='large'] {
-    grid-column: auto / span 2;
-    grid-row: auto / span 2; } }
+[data-feature='large'] {
+  grid-column: auto / span 2;
+  grid-row: auto / span 2; }
 
 .feature-link {
   --img: linear-gradient(to top, #e9eff2, rgba(233, 239, 242, 0) 50%);
+  --pos: center;
   background-color: #e9eff2;
   background-image: var(--img), url("../images/wash.jpg");
-  background-position: center;
+  background-position: var(--pos, center), center;
   background-repeat: no-repeat;
   background-size: var(--size, cover), cover;
   display: -webkit-box;
@@ -1725,20 +1755,81 @@ body {
   flex-direction: column-reverse; }
   .feature-link:hover, .feature-link:focus, .feature-link:active {
     text-decoration: none; }
+    .feature-link:hover .feature-title, .feature-link:focus .feature-title, .feature-link:active .feature-title {
+      background-color: #ac0056;
+      color: #fff; }
 
 .feature-title {
   background-color: #266478;
   color: #fff;
   font-family: "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-top: 1px solid #fff;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  font-size: 0.71429em;
+  font-size: 0.71429rem;
   font-weight: normal;
   max-width: 100%;
   overflow: hidden;
   padding: 0.175rem 0.35rem;
   text-overflow: ellipsis;
+  -webkit-transition: background-color 300ms ease;
+  transition: background-color 300ms ease;
   white-space: nowrap; }
+
+blockquote,
+.pullquote {
+  font-size: calc(1rem + 0.75vw);
+  font-style: italic;
+  margin-bottom: 1.4rem; }
+  blockquote em,
+  blockquote i,
+  .pullquote em,
+  .pullquote i {
+    font-style: normal; }
+  blockquote .attribution,
+  .pullquote .attribution {
+    font-size: 0.71429rem;
+    font-style: normal;
+    font-weight: bold; }
+
+blockquote p:not(.attribution) {
+  text-indent: -0.5em; }
+  blockquote p:not(.attribution)::before, blockquote p:not(.attribution)::after {
+    content: "“";
+    color: #e60073;
+    font-weight: bold; }
+  blockquote p:not(.attribution)::after {
+    content: "”"; }
+
+[data-grid='posts'] {
+  --edge: minmax(0.7rem, 1fr);
+  --side: 0;
+  --content: minmax(0, 28rem);
+  display: grid;
+  grid-row-gap: calc(0.7rem + 3vmin);
+  grid-template-columns: var(--edge, minmax(0.7rem, 1fr)) var(--side, minmax(0, 14rem)) var(--content, 14rem) var(--side, minmax(0, 14rem)) var(--edge, minmax(0.7rem, 1fr));
+  margin: calc(0.7rem + 3vmin) 0; }
+  @media (min-width: 28rem) {
+    [data-grid='posts'] {
+      --side: minmax(0, 14rem);
+      --content: 21rem; } }
+  @media (min-width: 42rem) {
+    [data-grid='posts'] {
+      --content: 14rem; } }
+
+.post {
+  grid-column: 3 / span 2; }
+  .post:nth-of-type(even) {
+    grid-column-start: 2; }
+
+.byline {
+  font-family: "freight-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.71429rem;
+  font-weight: bold; }
+
+.post-title {
+  font-size: calc(1rem + 0.75vw);
+  font-style: italic; }
 
 /*# sourceMappingURL=screen.css.map */

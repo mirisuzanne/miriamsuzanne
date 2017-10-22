@@ -1,0 +1,54 @@
+// Posts
+// =====
+
+
+$post-columns: (
+  var(--edge, #{mmx('shim', 1fr)})
+  var(--side, #{mmx(0, 'half-page')})
+  var(--content, #{size('half-page')})
+  var(--side, #{mmx(0, 'half-page')})
+  var(--edge, #{mmx('shim', 1fr)})
+);
+
+
+// sass-lint:disable-block no-duplicate-properties
+[data-grid='posts'] {
+  #{--edge}: mmx('shim', 1fr);
+  #{--side}: 0;
+  #{--content}: mmx(0, 'page');
+  display: grid;
+  grid-row-gap: size('fast-gutter');
+  grid-template-columns: $post-columns;
+  margin: size('fast-gutter') 0;
+
+  @include above('page') {
+    #{--side}: mmx(0, 'half-page');
+    #{--content}: size('page-minus');
+  }
+
+  @include above('page-plus') {
+    #{--content}: size('half-page');
+  }
+}
+
+
+.post {
+  grid-column: 3 / span 2;
+
+  &:nth-of-type(even) {
+    grid-column-start: 2;
+  }
+}
+
+
+.byline {
+  @include font-family('alt');
+  font-size: size('boiler');
+  font-weight: bold;
+}
+
+
+.post-title {
+  font-size: size('h2');
+  font-style: italic;
+}

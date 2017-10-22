@@ -1382,6 +1382,7 @@ event_tags:
 author: 'Miriam Suzanne'
 email: 'miriam@miriamsuzanne.com'
 description: 'The art and code and writing of Miriam Suzanne.'
+wrap: 'rst'
 
 copyright:
   - name: 'Miriam Eric Suzanne'

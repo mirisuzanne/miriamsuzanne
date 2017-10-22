@@ -5,7 +5,7 @@
   {% set image = config.image[0] if config.image else {} %}
 
   {% if image.src %}
-    <img src="/static/pictures/{{ image.src }}" alt="" class="hero-image" />
+    <img src="/static/pictures/{{ image.src }}" alt="{{ image.alt or '' }}" />
   {% elif image.svg %}
     {% include image.svg %}
   {% elif fallback %}

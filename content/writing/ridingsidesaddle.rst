@@ -1,9 +1,9 @@
 public: yes
 feature: 'large'
-tagline: 'a novel on note cards'
+tagline: 'a shuffled novel on note cards'
 location: 'writing'
 image:
-  - src: 'sidesaddle/box.jpg'
+  - src: 'writing/sidesaddle/box.jpg'
 
 
 ******************
@@ -20,25 +20,20 @@ Intro
   Herman gasps for air, and finds herself alone.
   They wipe the mud from their body.
 
-  -- Riding SideSaddle*
+  --`Riding SideSaddle*`_
 
-.. callmacro: content/macros.j2#btn
-  :url: 'http://springgunpress.com/'
-  :contents: 'Buy the Book'
+The fragmented memories of Herman & Sam –
+two people sharing one body –
+as they navigate fluid genders and relationships.
+Loosely based
+on the life of Margaret Clap,
+and the myth of Hermaphroditus.
+
+.. _Riding SideSaddle*: http://www.springgunpress.com/riding-sidesaddle-miriam-suzanne/
 
 
-About the Novel
-===============
-
-**Riding SideSaddle\***
-is a fragmented and fictional memory,
-written on 250 interchangeable index cards.
-It follows Herman, Sam, and their friends,
-as they navigate fluid genders, relationships,
-and bodies.
-The story is based loosely
-on the real life of Margaret Clap,
-and the various myths around Salmacis and Hermaphroditus.
+Credits
+=======
 
 Riding SideSaddle* is an
 `open source text`_

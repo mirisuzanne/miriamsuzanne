@@ -1,0 +1,13 @@
+// Type
+// ====
+
+
+@mixin feature-type {
+  font-size: size('feature');
+  font-style: italic;
+
+  em,
+  i {
+    font-style: normal;
+  }
+}
