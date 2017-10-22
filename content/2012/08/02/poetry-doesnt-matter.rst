@@ -1,4 +1,4 @@
-public: yes
+public: no
 tags: [art, writing, minifesto]
 summary: |
   Don't worry about the medium.
@@ -25,6 +25,7 @@ circulating again through the community.
 It's a good article,
 but it's the wrong question.
 
+
 The Medium is Irrelevant
 ------------------------
 
@@ -47,13 +48,9 @@ but you'll never hear her say it.
 
 Only poets buy "poetry" -
 everyone else is buying the experience it provides.
-Stop selling the *what*,
-and start selling the *why*.
-Sell your aesthetic vision for the world
-and experiences that can never be forgotten.
-
 Don't argue that poetry should matter.
 Prove that *you* matter.
+
 
 Finding an Audience is Your Job
 -------------------------------

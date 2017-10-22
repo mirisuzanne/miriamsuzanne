@@ -1,15 +1,17 @@
 public: yes
 tags: [writing, art, postobsolete]
 summary: |
+  After submitting on a whim,
   I was invited to perform
-  at the `SLSA`_
-  conference…
+  last weekend at the SLSA
+  conference in Milwaukee.
+  This was not a reasonable thing to do,
+  but I did it…
 
-  .. _SLSA: http://www.litsciarts.org/slsa12/
 
-
+*********************************
 A Whirlwind of Digital Humanities
-=================================
+*********************************
 
 After submitting on a whim,
 I was `invited to perform`_
@@ -23,7 +25,7 @@ This was not a reasonable thing to do.
 
 
 Friday
-------
+======
 
 It was a whirlwind_ of a weekend.
 The piece,
@@ -54,7 +56,7 @@ as a driver for the next day.
 
 
 Saturday
---------
+========
 
 Overhead projectors are not easy to find,
 but Micah tracked one down
@@ -110,7 +112,7 @@ A great group!
 
 
 Sunday
-------
+======
 
 Frontier Airlines flight 577.
 

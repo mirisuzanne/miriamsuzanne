@@ -1,6 +1,6 @@
 public: yes
-slug: 'true-west-award'
-tags: ['press', 'award', 'riding sidesaddle*', '10 myths...', 'buntport', 'teacup gorilla']
+tags: ['press', 'award', 'Riding Sidesaddle*', 'Teacup Gorilla']
+series: 'Riding Sidesaddle*'
 image:
   - src: 'sidesaddle/true-west-award.jpg'
 clipping:

@@ -1,9 +1,8 @@
 public: yes
-slug: '2017'
-tags: ['politics']
+tags: ['writing']
 image:
   - src: '2017/model-falcon.jpg'
-    caption: '2017: a new hope?'
+summary_intro: true
 summary: |
   I'm still reeling from this year of insults, 
   a traumatizing campaign turned traumatic election.
@@ -14,17 +13,9 @@ summary: |
   but 2017 is going to be even harder.
 
 
+****************************
 Justice [Under Construction]
-============================
-
-I'm still reeling from this year of insults, 
-a traumatizing campaign turned traumatic election.
-I'm not sad about a contest lost,
-but what these results mean
-for real people around me.
-2016 is over,
-but 2017 is going to take work,
-and I'm tired.
+****************************
 
 I've had a good year
 in many ways,
@@ -88,7 +79,7 @@ and I'm pretty sure it's a myth of our culture.
 
 
 Personal & Political
---------------------
+====================
 
 There are several tensions
 pulling me in different directions.
@@ -141,7 +132,7 @@ how are we supposed to deal with Trump?
 
 
 Known Unknowns
---------------
+==============
 
 No one knows exactly `what will happen next`_,
 but the threats against marginalized people
@@ -167,7 +158,7 @@ and a lot of people that need our help.
 
 
 Queering the Revolution
------------------------
+=======================
 
 I see a temptation to grasp for simple explanations,
 with simple sides,
@@ -322,7 +313,7 @@ And a few of my own:
 
 
 Notes on Showing Up
--------------------
+===================
 
 *Some incomplete notes to myself,
 for being present

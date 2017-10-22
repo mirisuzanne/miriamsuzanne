@@ -1,9 +1,10 @@
 public: yes
-tags: ['gender', 'personal', 'trans']
-slug: 'my-body'
+tags: ['transition', 'writing']
+series: 'transition'
 erasure: yes
 image:
   - src: '2017/fragments.jpg'
+summary_intro: true
 summary: |
   I wasn't born in the wrong body.
   *I was born, a body.*
@@ -12,10 +13,6 @@ summary: |
 
 Body & Gender Fragments
 =======================
-
-I wasn't born in the wrong body.
-*I was born, a body.*
-Without my body, I don't exist.
 
 Some **bodies have freckles,**
 while some are six-foot-four and near-sighted.

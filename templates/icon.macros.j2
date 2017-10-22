@@ -5,17 +5,19 @@
     'twitter': twitter(),
     'github': github(),
     'codepen': codepen(),
+    'list': list(),
+    'newtab': newtab(),
   } %}
 
   {{ icons[name] }}
 {% endmacro %}
 
 
-{% macro svg(name) %}
+{% macro svg(name, viewbox) %}
   <svg
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 19 19"
+    viewBox="{{ viewbox or '0 0 19 19'}}"
     width="19px"
     height="19px"
     data-icon{% if name %}="{{ name }}"{% endif %}
@@ -80,5 +82,20 @@
       M10,6.9V3.4l5.6,3.7L13,8.9L10,6.9L10,6.9z M9,6.9l-3,2L3.4,7.2L9,3.4V6.9L9,6.9z M5.1,9.5L3,10.9V8.1L5.1,9.5z M6,10.1l3,2v3.5
       l-5.6-3.7L6,10.1L6,10.1z M10,12.1l3-2l2.6,1.7L10,15.6V12.1L10,12.1z M13.9,9.5L16,8.1v2.8L13.9,9.5z"
       />
+  {% endcall %}
+{% endmacro %}
+
+
+{% macro list() %}
+  {% call svg('list', '0 0 16 16') %}
+    <path d="M0 0h4v4h-4zM6 1h10v2h-10zM0 6h4v4h-4zM6 7h10v2h-10zM0 12h4v4h-4zM6 13h10v2h-10z" />
+  {% endcall %}
+{% endmacro %}
+
+
+{% macro newtab() %}
+  {% call svg('newtab', '0 0 16 16') %}
+    <path d="M11 13h-8v-8h4.5l2-2h-8.5v12h12v-8.5l-2 2v4.5z" />
+    <path d="M16 0h-6.5l2.5 2.5-7.5 7.5 1.5 1.5 7.5-7.5 2.5 2.5v-6.5z" />
   {% endcall %}
 {% endmacro %}

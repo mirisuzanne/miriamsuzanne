@@ -1,13 +1,16 @@
 public: yes
-slug: 'transilient'
-tags: ['elsewhere']
+tags: ['inspiration']
+elsewhere:
+  - url: http://www.wearetransilient.com/
+    scr: 'Transilient'
 image:
   - src: '2017/transilient.jpg'
     caption: 'Photos by Basil Vaughn Soper and Johanna C Case'
 
 
+***********
 Transilient
-===========
+***********
 
 `Transilient`_ is an online project
 combining photography and interviews

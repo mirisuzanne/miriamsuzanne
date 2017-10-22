@@ -1,26 +1,22 @@
 public: yes
-slug: 'clarifications'
-tags: ['gender', 'politics', 'trans']
+tags: ['writing', 'transition']
+series: 'transition'
 erasure: yes
 image:
   - src: '2016/clarifications.jpg'
     caption: 'My dictionary prefers vaginae, but both are correct.'
+summary_intro: yes
 summary: |
   There's a lot of language that gets thrown around,
   but much of it comes loaded with
   over-simplified baggage and misconceptions.
-  Here are a few that have been on my mind,
+  Here are a few that have been on my mind –
   from *gender identity* to *biological sex*,
   *transition*, *passing*, and *visibility*.
 
 
 Some Clarifications on Trans Language
 =====================================
-
-There's a lot of language that gets thrown around,
-but much of it comes loaded with
-|over-simplified| baggage and misconceptions.
-Here are a few that have been on my mind...
 
 (See also `Julia Serano`_’s wonderful
 `Transgender Glossary`_

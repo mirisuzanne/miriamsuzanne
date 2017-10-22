@@ -1,7 +1,9 @@
 public: yes
 tags: [inspiration]
 summary: |
-  Advice on working through imposter syndrom…
+  "What has changed in my years of writing
+  is that I’ve come to regard the state of self-doubt as normal.
+  The trick to dispel doubts? Write anyway."
 
 
 Lori DeBoer on Self Doubt

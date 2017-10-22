@@ -3,7 +3,9 @@ tags: [inspiration]
 image:
   - src: '2012/i-made-this.jpg'
 summary: |
-  The beautiful, digital art
+  The beautiful digital art,
+  inexplicable games,
+  and "stunningly harmful" songs
   of Jason Nelson.
 
 

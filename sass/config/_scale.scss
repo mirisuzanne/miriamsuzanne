@@ -30,6 +30,7 @@ $text-sizes: (
   'h2': 'feature',
 
   'boiler': 1rem ('text-ratio': -1),
+  'code': 'boiler',
   'feature': calc(1rem + 0.75vw),
 );
 

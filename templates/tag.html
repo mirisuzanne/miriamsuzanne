@@ -1,0 +1,17 @@
+{% extends "blog/archives.html" %}
+
+{% import "blog/macros.j2" as blog %}
+{% import "layout/macros.j2" as layout %}
+
+{% block title %}{{ tag.name }}{% endblock %}
+{% block page_title %}{{ tag.name }}{% endblock %}
+{% block page_tagline %}All related articles…{% endblock %}
+{% block og_url %}{{ get_full_canonical_url(builder, slug=['/tags', tag.name]|join('/')) }}{% endblock %}
+
+{% block body %}
+  <section data-grid="posts">
+    {%- for post in entries %}
+      {{ blog.list(post) }}
+    {%- endfor %}
+  </section>
+{% endblock %}

@@ -4,12 +4,15 @@ elsewhere:
   - url: 'http://oddbird.net/2012/11/27/susy-off-canvas'
     src: 'OddBird'
 summary: |
-  Creating the off-canvas design pattern
-  in Susy1…
+  The off-canvas design pattern
+  for creating responsive websites
+  has been getting all the attention lately,
+  and I've had several people ask
+  how Susy might play along.
 
 
-Off-canvas design with Susy
-===========================
+Off-canvas design with Susy1
+============================
 
 The `off-canvas`_ design pattern
 for creating responsive websites

@@ -1,21 +1,18 @@
 public: yes
-tags: ['gender', 'personal', 'trans']
-slug: 'misgender'
+tags: ['transition', 'writing']
+series: 'transition'
 image:
   - src: '2017/herm.jpg'
+summary_intro: true
 summary: |
-  Gender is strange and elusive.
-  Sometime we attach it to genitals,
-  and sometimes we attach it to boats.
-  In Spanish, I can misgender my table.
-  Every day we gender each other, even strangers –
-  at a glance, on instinct, with very little to go on.
-
-  But when I’m misgendered, none of that matters.
+  Reflections on the instictive act of gendering,
+  how it can go terribly wrong,
+  and what happens next.
 
 
+***********
 (Mis)Gender
-===========
+***********
 
 At the family vacation in Moab,
 everyone is doing their best.
@@ -24,7 +21,7 @@ and my day is peppered with the wrong name and pronouns.
 I hide in my room through dinner
 so they won’t see me crying.
 
-------
+---
 
 Gender is strange and elusive.
 Sometime we attach it to genitals,

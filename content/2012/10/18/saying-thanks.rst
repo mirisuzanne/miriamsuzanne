@@ -1,20 +1,15 @@
 public: yes
-tags: [greenmud, art, writing]
+tags: [greenmud, art]
 summary: |
-  I was reminded yesterday,
-  while being harassed outside the
-  `Planned Parenthood <http://www.plannedparenthoodaction.org/>`_
-  where a friend of mine works,
-  `why I do what I do </why/>`_.
+  I was reminded yesterday
+  why I do what I do.
   Not for a distant invisible truth,
   but for the world around me and the people in it.
-  You make life wonderful —
-  laughing, drinking, sexting, dancing, vomiting, holding hands —
-  the whole bloody works.
 
 
+******************
 Saying “Thank You”
-==================
+******************
 
 I was reminded yesterday,
 while being harassed outside the

@@ -3,7 +3,7 @@
 
 
 {% block body %}
-  <section data-module="posts">
+  <section data-grid="posts">
     {% for post in pagination.get_slice() %}
       {{ blog.list(post) }}
     {% endfor %}

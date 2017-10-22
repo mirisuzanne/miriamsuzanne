@@ -51,9 +51,17 @@
       <input type="checkbox" id="erasure" />
     {% endif %}
 
+    {% if config.summary_intro %}
+      <section
+        data-wrap="intro"
+        {{ utility.attr_if('data-erasure', config.erasure) }} >
+        {{ rst.render_summary }}
+      </section>
+    {% endif %}
+
     {% if config.wrap or config.erasure %}
       <section
-        data-wrap="{{ config.wrap or 'rst' }}"
+        data-wrap="{{ config.wrap }}"
         {{ utility.attr_if('data-erasure', config.erasure) }} >
         {{ rst.fragment }}
       </section>
@@ -65,5 +73,10 @@
   {%- for module in config.after -%}
     {% include module.include %}
   {%- endfor -%}
+
+  {% if config.series %}
+    {% set entries = get_blog_entries_by_tag(config.series)|reverse %}
+    {{ blog.section(entries) }}
+  {% endif %}
 
 {% endblock %}

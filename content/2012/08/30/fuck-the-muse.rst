@@ -1,8 +1,10 @@
 public: yes
-tags: [writing, art, process]
+tags: [writing, process]
 summary: |
-  A class on writing, creative process,
-  and multimedia collaboration…
+  The Boulder Writer's Workshop
+  has invited me to teach a class
+  on writing, creative process,
+  and multimedia collaboration
 
 
 ***********************************

@@ -1,7 +1,11 @@
 public: yes
-slug: 'loops'
+tags: ['sass', 'code']
+elsewhere:
+  - url: https://css-tricks.com/loops-css-preprocessors/
+    src: 'CSS Tricks'
 image:
   - src: '2016/loops.jpg'
+summary_intros: yes
 summary: |
   A look at what loops can do,
   and how to use them in the major CSS preprocessors:
@@ -10,8 +14,8 @@ summary: |
   but they all get the job done.
 
 
-CSS Tricks: Loops in CSS Preprocessors
-======================================
+Loops in CSS Preprocessors
+==========================
 
 I wrote `an article for CSS-Tricks`_ —
 a look at what loops can do,

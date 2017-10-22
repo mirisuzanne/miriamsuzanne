@@ -1,4 +1,14 @@
 {% import "utility.macros.j2" as utility %}
+{% import "icon.macros.j2" as icon %}
+
+
+{% macro section(entries) %}
+  <section data-grid="posts">
+    {% for entry in entries %}
+      {{ list(entry) }}
+    {% endfor %}
+  </section>
+{% endmacro %}
 
 
 {% macro list(post) %}
@@ -24,8 +34,19 @@
 <div class="byline">
   {{ pubdate(post.pub_date) }}
 
-  {% if away %}
-    [{{ utility.link_if(away.src|typogrify, away.url) }}]
+  {% set series = post.config.series %}
+  {% set series_url = ['/tags/', series, '/']|join if series else none %}
+
+  {% if away or series %}
+    [
+      {% if series %}
+        {{ utility.link_if(icon.get('list') + series|typogrify, series_url) }}
+      {% endif %}
+      {% if away and series %}::{% endif %}
+      {% if away %}
+        {{ utility.link_if(icon.get('newtab') + away.src|typogrify, away.url) }}
+      {% endif %}
+    ]
   {% endif %}
 </div>
 {% endmacro %}
