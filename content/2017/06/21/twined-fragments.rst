@@ -1,6 +1,6 @@
 public: yes
-tags: ['transition', 'twined fragments', 'writing']
-series: 'twined fragments'
+tags: ['Transition', 'Twined Fragments', 'writing']
+series: 'Twined Fragments'
 image:
   - src: '2017/she-tried.jpg'
 summary_intro: true
