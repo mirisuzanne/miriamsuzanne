@@ -19,11 +19,11 @@ Mixed-Media Art
 Miriam is a visual/performance artist,
 creating music with `Teacup Gorilla`_ (bass & vocals),
 theater & performance with `Grapefruit Lab`_,
-and occasionally designing `book covers`_,
-or touring her `solo show`_ to festivals around the country.
+designing `book covers`_,
+and touring her `solo show`_ to festivals around the country.
 Formerly Artistic Director of *New World Arts*,
 and Technical Director
-of `The LIDA Projet`_ & `Countdown To Zero`_,
+of `The LIDA Project`_ & `Countdown To Zero`_,
 Miriam won the `2017 True West Award`_
 for `10 Myths on the Proper Application of Beauty Products`_
 in collaboration with *Teacup Gorilla* and *Buntport Theater*.
@@ -32,7 +32,7 @@ in collaboration with *Teacup Gorilla* and *Buntport Theater*.
 .. _Grapefruit Lab: #@@@
 .. _book covers: #@@@
 .. _solo show: #@@@
-.. _The LIDA Projet: #@@@
+.. _The LIDA Project: #@@@
 .. _Countdown To Zero: #@@@
 .. _2017 True West Award: #@@@
 .. _10 Myths on the Proper Application of Beauty Products: #@@@

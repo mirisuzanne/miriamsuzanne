@@ -10,9 +10,9 @@ summary: |
   introduction to my work.
 
 
-***********************************
-Operating System: Battlefield Notes
-***********************************
+*****************
+Battlefield Notes
+*****************
 
 The multimedia arts (`non`_)magazine,
 `The Operating System`_ has asked to cross post

@@ -55,7 +55,7 @@
       <section
         data-wrap="intro"
         {{ utility.attr_if('data-erasure', config.erasure) }} >
-        {{ rst.render_summary }}
+        {{ ctx.render_summary() }}
       </section>
     {% endif %}
 

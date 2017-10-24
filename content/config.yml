@@ -1354,6 +1354,12 @@ education:
     summary: 'Studied theater, writing, and visual art'
 
 
+# series pages
+series_pages:
+  - title: 'Twined Fragments'
+    url: '/writing/twinedfragments/'
+
+
 # navigation
 nav:
   - title: 'home'

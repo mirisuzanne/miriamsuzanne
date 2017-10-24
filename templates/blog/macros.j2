@@ -35,11 +35,13 @@
   {{ pubdate(post.pub_date) }}
 
   {% set series = post.config.series %}
-  {% set series_url = ['/tags/', series, '/']|join if series else none %}
 
   {% if away or series %}
     [
       {% if series %}
+        {% set series_url = ['/tags/', series|urlencode, '/']|join %}
+        {% set series_page = post.config.series_pages|selectattr('title', 'equalto', series)|list %}
+        {% set series_url = series_page[0].url if series_page[0] else series_url %}
         {{ utility.link_if(icon.get('list') + series|typogrify, series_url) }}
       {% endif %}
       {% if away and series %}::{% endif %}

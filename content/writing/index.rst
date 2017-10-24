@@ -9,10 +9,10 @@ after:
   - include: 'content/_feature.html.j2'
     slugs:
       - ['writing/ridingsidesaddle', 'large']
-      - ['writing/oddbird', 'small']
-      - ['writing/10myths', 'small']
-      - ['writing/jumpstartsass', 'large']
       - ['writing/csstricks', 'small']
+      - ['writing/twinedfragments', 'small']
+      - ['writing/jumpstartsass', 'large']
+      - ['writing/10myths', 'small']
       - ['writing/postobsolete', 'small']
   - include: 'blog/_taglist.html.j2'
     tag: 'writing'
@@ -36,4 +36,4 @@ and others.
 .. _Riding SideSaddle*: ridingsidesaddle/
 .. _Jump Start Sass: jumpstartsass/
 .. _The Post-Obsolete Book: post-obsolete/
-.. _award-winning playwright: true-west-award/
+.. _award-winning playwright: 10myths/
