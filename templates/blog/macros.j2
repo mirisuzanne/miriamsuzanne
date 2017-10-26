@@ -13,12 +13,10 @@
 
 {% macro list(post) %}
 <article class="post">
-  {% set away = post.config.elsewhere[0] if post.config.elsewhere else none %}
-
-  {{ byline(post, away) }}
+  {{ byline(post) }}
 
   <h2 class="post-title">
-    <a href="{{ away.url or link_to('page', slug=post.slug) }}">
+    <a href="{{ link_to('page', slug=post.slug) }}">
       {{ post.title|typogrify }}
     </a>
   </h2>
@@ -30,11 +28,12 @@
 {% endmacro %}
 
 
-{% macro byline(post, away=none) %}
+{% macro byline(post) %}
 <div class="byline">
   {{ pubdate(post.pub_date) }}
 
   {% set series = post.config.series %}
+  {% set away = post.config.elsewhere[0] if post.config.elsewhere else none %}
 
   {% if away or series %}
     [

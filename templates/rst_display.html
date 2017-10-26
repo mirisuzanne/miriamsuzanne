@@ -1,6 +1,7 @@
 {% extends "layout.html" %}
 {% import "utility.macros.j2" as utility %}
 {% import "layout/macros.j2" as layout %}
+{% import "content/macros.j2" as content %}
 {% import "blog/macros.j2" as blog %}
 
 {% block title %}{{ rst.title }}{% endblock %}
@@ -51,11 +52,17 @@
       <input type="checkbox" id="erasure" />
     {% endif %}
 
-    {% if config.summary_intro %}
+    {% if config.summary_intro or config.elsewhere %}
       <section
         data-wrap="intro"
         {{ utility.attr_if('data-erasure', config.erasure) }} >
         {{ ctx.render_summary() }}
+
+        {% if config.elsewhere %}
+          {% set where = config.elsewhere[0] %}
+          {% set text = ['Read More on ', where.src]|join %}
+          {{ content.btn(where.url, text) }}
+        {% endif %}
       </section>
     {% endif %}
 

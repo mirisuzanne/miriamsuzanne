@@ -15,10 +15,13 @@ body {
 }
 
 
-a {
+a,
+[for='erasure'] {
+  &,
   &:link,
   &:visited {
     color: color('action');
+    cursor: pointer;
     outline: none;
     text-decoration: none;
   }

@@ -25,7 +25,7 @@
   {% set pos = '--pos: %s;' % image.position if image.position else none %}
   {% set style = [src or '', scale or '', pos or '']|join if (src or scale or pos) else none %}
   {% set url = '/' + page.slug|replace('/index', '') + '/' %}
-  {% set link = page.config.elsewhere or url %}
+  {% set link = page.config.elsewhere[0].url if page.config.elsewhere else url %}
 
   <article
     data-feature="{{ size }}" >

@@ -6,16 +6,16 @@
 [id*='intro'] {
   @include feature-type;
   grid-column: 2 / span 3;
-  margin: size('double-gutter') 0;
+  padding: size('double-gutter') 0;
   position: relative;
 }
 
 
 [id*='intro'] {
   border-bottom: 1px $border-style color('border');
-  padding-bottom: size('double-gutter');
 
-  h2 {
-    display: none;
+  ~ .section {
+    grid-column: 3 / span 2;
+    margin: size('double-gutter') 0;
   }
 }

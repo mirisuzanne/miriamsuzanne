@@ -1,5 +1,6 @@
 public: yes
 tags: [sass, demo, code]
+wrap: false
 summary: |
   Jina asked twitter for help
   creating a rainbow-striped background gradient in Sass,

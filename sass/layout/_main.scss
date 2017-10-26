@@ -2,28 +2,21 @@
 // ===========
 
 
-[data-layout='main'],
-[data-wrap='rst'] {
+[data-layout='main'] {
   display: grid;
   grid-template-areas: '... ... contents ... ...';
   grid-template-columns: $columns;
 }
 
 
-[data-grid],
-[data-wrap='rst'] {
+[data-grid] {
   grid-column: 1 / -1;
 }
 
 
 [data-wrap='rst'] {
-  margin-bottom: size('double-gutter');
-
-  > * {
-    &:not([id*='intro']) {
-      grid-column: 3 / span 1;
-    }
-  }
+  grid-column: 3 / span 1;
+  margin: size('gutter') 0;
 }
 
 

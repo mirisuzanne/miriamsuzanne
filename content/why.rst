@@ -1,17 +1,18 @@
 public: yes
 location: why
 erasure: yes
+summary_intro: true
+summary: |
+  People are **queer**.
+  People are edge cases.
+  We fall between meanings,
+  and explore outside them.
+  I’m not interested in making objects —
+  only the experiences they manifest for real people.
 
 
 Some Kind of Manifesto
 ======================
-
-People are **queer**.
-People are edge cases.
-We fall between meanings,
-and explore outside them.
-I’m not interested in making objects —
-only the experiences they manifest for real people.
 
 That, to me, is beautiful.
 All of us stumbling

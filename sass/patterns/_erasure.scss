@@ -1,0 +1,44 @@
+// Erasure
+// =======
+
+
+[data-erasure] {
+  strong {
+    font-weight: normal;
+  }
+}
+
+
+[id='erasure'] {
+  @include is-hidden;
+  position: fixed;
+
+  &:checked {
+    ~ [data-erasure] {
+      &,
+      [href] {
+        color: transparent;
+      }
+
+      strong {
+        color: color('text');
+      }
+
+      [for='erasure'],
+      strong {
+        background: rgba(#fff, 0.9);
+        position: relative;
+
+        @include before(']') {
+          position: absolute;
+          transform: translateX(-0.6em);
+        }
+
+        @include after('[') {
+          position: absolute;
+          transform: translateX(0.2em);
+        }
+      }
+    }
+  }
+}
