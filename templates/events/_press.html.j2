@@ -6,7 +6,7 @@
     <h1>Press Coverage</h1>
   {% endif %}
 
-  {% for event in (config.future + config.past)|selectattr('press') %}
+{#   {% for event in (config.future + config.past)|selectattr('press') %}
     {% if event.press|map(attribute='quote')|join('') != '' %}
       <article class="h-event press-topic">
         {{ events.name(event.name, event.url) }}
@@ -14,5 +14,5 @@
         {{ events.press(event.press, show_noquote=false) }}
       </article>
     {% endif %}
-  {% endfor %}
+  {% endfor %} #}
 </section>

@@ -14,6 +14,6 @@ Into the Green Green Mud
 
 *love comes and goes.*
 
-.. callmacro: content/macros.j2#btn
+.. callmacro:: content/macros.j2#btn
   :url: 'http://greengreenmud.com/'
-  :contents: 'Read the Novel'
+  :content: 'Read the Novel'

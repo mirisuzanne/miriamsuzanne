@@ -1,16 +1,13 @@
-{% macro hero(
-  config,
-  fallback=none
-) %}
-  {% set image = config.image[0] if config.image else {} %}
 
-  {% if image.src %}
-    <img src="/static/pictures/{{ image.src }}" alt="{{ image.alt or '' }}" />
-  {% elif image.svg %}
-    {% include image.svg %}
-  {% elif fallback %}
-    {{ fallback }}
-  {% else %}
-    {% include 'layout/_face.svg' %}
+
+{% macro headline(title, tagline=none) %}
+  <h1 class="page-title">
+    {{ title|typogrify|safe }}
+  </h1>
+
+  {% if tagline %}
+    <h2 class="page-tagline">
+      {{ tagline|typogrify|safe }}
+    </h2>
   {% endif %}
 {% endmacro %}

@@ -1,13 +1,7 @@
 {% extends "layout.html" %}
+
 {% import 'layout/macros.j2' as layout %}
 
 
 {% block title %}Articles{% endblock %}
-{% block page_title %}Articles{% endblock %}
-{% block page_tagline %}
-  {% if (pagination.page > 1) %}
-    page {{ pagination.page }} of {{ pagination.pages }}
-  {% else %}
-    writing, news, and more…
-  {% endif %}
-{% endblock %}
+{% block headline %}Articles{% endblock %}

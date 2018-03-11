@@ -1,27 +1,52 @@
 // Hero Layout
 // ===========
 
+
 [data-layout='hero'] {
-  align-items: stretch;
-  display: flex;
-  pointer-events: none;
-  position: relative;
+  margin-bottom: var(--gutter);
 
   @include after('') {
-    @include position(0);
-    background-image: linear-gradient(
-      10deg,
-      color('brand-pink' ('rgba': 0.25)),
-      color('brand-pink' ('rgba': 0)) 35%
-    );
+    @include angle('top');
+    background: linear-gradient(to right, var(--text), transparent);
+    grid-column: left / right;
+    height: var(--border);
   }
+}
 
-  svg,
-  img {
-    height: 100%;
-    max-width: initial;
-    width: auto;
+
+.hero-image {
+  @include angle('top');
+  grid-column: left / right;
+  grid-row: 1 / span 1;
+  margin: -1px 0;
+}
+
+
+.hero-caption {
+  @include feature-type;
+  align-self: start;
+  border-right: var(--border) solid var(--action-hover);
+  grid-column: center / edge;
+  grid-row: 1 / span 1;
+  justify-self: end;
+  max-width: 40vw;
+  padding: var(--gutter) 0;
+  position: relative;
+  text-align: right;
+  transition: transform 200ms ease;
+  z-index: 2;
+
+  @include above('page' ('times': 2)) {
+    grid-column: center / right;
+    transform: translateX(50%);
   }
+}
+
+
+.caption-wrap {
+  --text-shadow: #000;
+  background: var(--action-hover);
+  color: var(--background);
 }
 
 
@@ -54,11 +79,11 @@
 
 
 .face {
-  padding: size('shim');
+  padding: var(--shim);
 
   [data-location='home'] & {
     animation: draw-logo 5s 1 ease-out both, fill-logo 4s 3s 1 ease-in-out both, fade-logo-outline 3s 3s 1 ease-in-out both;
-    stroke: color('action');
+    stroke: var(--action);
     stroke-dasharray: 800;
     stroke-dashoffset: 800;
     stroke-width: 1;

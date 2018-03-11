@@ -43,7 +43,8 @@ gulp.task('default', ['watch', 'runserver']);
 
 gulp.task('watch', function () {
   // lint and compile scss
-  gulp.watch(paths.SASS, ['sasslint', 'sass']);
+  // gulp.watch(paths.SASS, ['sasslint', 'sass']);
+  gulp.watch(paths.SASS, ['sass']);
 });
 
 gulp.task('sass', function () {

@@ -13,6 +13,6 @@ The Post-Obsolete Book
 
 *The Book is dead. Long live the book.*
 
-.. callmacro: content/macros.j2#btn
+.. callmacro:: content/macros.j2#btn
   :url: 'http://springgunpress.com/'
-  :contents: 'Play the Poem'
+  :content: 'Play the Poem'

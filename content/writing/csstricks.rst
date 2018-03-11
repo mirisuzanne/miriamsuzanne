@@ -6,7 +6,7 @@ elsewhere:
 image:
   - src: 'elsewhere/css-tricks.svg'
     size: '90% auto'
-summary:
+summary: |
   Miriam is a staff writer for CSS Tricks.
 
 

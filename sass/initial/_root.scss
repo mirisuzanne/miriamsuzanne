@@ -2,50 +2,33 @@
 // ====
 
 
+@include import-webfonts;
+
+
+ // sass-lint:disable-block no-duplicate-properties
 :root {
+  @include set-variables;
   @include font-family('body');
+
+  --h1: var(--xlarge);
+  --h2: var(--large);
+  --gutter: calc(var(--rhythm) * 0.5);
+  --shim: calc(var(--gutter) * 0.5);
+  --border: calc(var(--gutter) * 0.25);
+  --spacer: calc(var(--rhythm) * 2);
+
+  background-color: color('background');
+  background-color: var(--background, color('background'));
   color: color('text');
+  color: var(--text, color('text'));
   font-size: size('root');
-  font-size: size('responsive'); // sass-lint:disable-line no-duplicate-properties
-}
-
-
-body {
+  font-size: var(--responsive, size('root'));
   line-height: ratio('text-ratio');
+  line-height: var(--text-ratio, ratio('text-ratio'));
+  text-shadow: 0 1px 0 color('text-shadow');
 }
 
 
-a,
-[for='erasure'] {
-  &,
-  &:link,
-  &:visited {
-    color: color('action');
-    cursor: pointer;
-    outline: none;
-    text-decoration: none;
-  }
-
-  &:focus,
-  &:hover,
-  &:active {
-    color: color('action-hover');
-    text-decoration: underline;
-    text-decoration-skip: ink;
-  }
-}
-
-
-svg {
-  fill: currentColor;
-}
-
-
-p,
-ul,
-ol,
-dl {
-  &:not(:last-child) {
-    margin-bottom: size('shim');
-  }
+* {
+  text-shadow: 0 1px 0 var(--text-shadow);
 }

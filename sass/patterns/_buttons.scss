@@ -5,19 +5,23 @@
   &,
   &:link,
   &:visited {
-    @include contrasted('action');
-    border-radius: $corners;
+    background: var(--action);
+    border-radius: var(--border);
+    color: var(--background);
     display: inline-block;
-    font-size: size('reset');
+    font-size: 1rem;
     font-style: normal;
-    margin-bottom: size('shim');
-    padding: size('quarter-shim') size('gutter');
+    margin-bottom: var(--shim);
+    padding: var(--border) var(--gutter);
+    text-decoration: none;
+    text-shadow: 0 -1px 0 var(--action-hover);
+    transition: background-color 300ms, transform 350ms;
   }
 
   &:focus,
   &:hover,
   &:active {
-    background-color: color('action-hover');
-    text-decoration: none;
+    background: var(--action-hover);
+    transform: scale(1.05);
   }
 }

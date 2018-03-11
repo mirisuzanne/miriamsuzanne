@@ -7,57 +7,54 @@
   grid-auto-columns: 0;
   grid-auto-flow: dense;
   grid-auto-rows: mmx('feature-y', 1fr);
+  grid-gap: size('gutter');
   grid-template-columns: repeat(auto-fit, mmx('feature-x', 1fr));
-  padding: size('shim');
+  padding: size('shim') size('gutter') size('shim') size('shim');
 }
 
 
 [data-feature] {
-  border: 1px $border-style color('background');
-  display: grid;
-  grid-auto-columns: 100%;
-  grid-auto-rows: 100%;
-  position: relative;
-  transition: transform 300ms ease, border-color 300ms ease, box-shadow 300ms ease;
-
-  &:hover,
-  &:focus,
-  &:active {
-    box-shadow: 0 0 size('shim') color('contrast-dark');
-    transform: scale(1.0125);
-    z-index: 1;
-  }
-
-  @include below('feature-break') {
-    grid-column: 1 / -1;
-  }
+  align-items: stretch;
+  display: flex;
 }
 
 
 [data-feature='large'] {
   grid-column: auto / span 2;
   grid-row: auto / span 2;
+
+  @include below('feature-break') {
+    grid-column: 1 / span 1;
+  }
 }
 
 
 .feature-link {
-  $gradient: to top, color('callout'), color('callout' ('rgba': 0)) 50%;
-  #{--img}: linear-gradient($gradient);
-  #{--pos}: center; // sass-lint:disable-line no-duplicate-properties
-  background-color: color('callout');
-  background-image: var(--img), url('../images/wash.jpg');
-  background-position: var(--pos, center), center;
-  background-repeat: no-repeat;
-  background-size: var(--size, cover), cover;
-  display: flex;
-  flex-direction: column-reverse;
+  &:link,
+  &:visited {
+    align-items: flex-start;
+    background-color: color('callout');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: size('border') $border-style color('brand-blue');
+    border-radius: $corners;
+    display: flex;
+    flex: 1 1 auto;
+    margin-left: size('fast-gutter');
+    text-decoration: none;
+    text-shadow: 0 -1px 0 color('text');
+    transition: transform 300ms ease, box-shadow 300ms ease;
+  }
 
   &:hover,
   &:focus,
   &:active {
-    text-decoration: none;
+    border-color: color('action-hover');
+    transform: scale(1.0125);
+    z-index: 1;
 
-    .feature-title {
+    span {
       @include contrasted('action-hover');
     }
   }
@@ -65,16 +62,17 @@
 
 
 .feature-title {
-  @include contrasted('brand-blue');
-  @include font-family('alt');
-  border-top: 1px solid color('background');
-  flex: 0 0 auto;
-  font-size: size('boiler');
-  font-weight: normal;
-  max-width: 100%;
+  flex: 0 1 auto;
+  margin-left: size('fast-negative');
+  margin-top: size('shim');
+  max-width: 80%;
   overflow: hidden;
-  padding: size('quarter-shim') size('half-shim');
   text-overflow: ellipsis;
   transition: background-color 300ms ease;
-  white-space: nowrap;
+
+  span {
+    @include contrasted('brand-blue');
+    font-style: italic;
+    font-weight: normal;
+  }
 }

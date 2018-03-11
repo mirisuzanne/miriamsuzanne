@@ -1,26 +1,8 @@
 // Main Layout
 // ===========
 
-
-[data-layout='main'] {
-  display: grid;
-  grid-template-areas: '... ... contents ... ...';
-  grid-template-columns: $columns;
-}
-
-
-[data-grid] {
-  grid-column: 1 / -1;
-}
-
-
-[data-wrap='rst'] {
-  grid-column: 3 / span 1;
-  margin: size('gutter') 0;
-}
-
-
-[data-module] {
-  grid-column: 3 / span 1;
-  margin: size('gutter') 0;
+.page-tagline {
+  font-size: var(--h2);
+  font-style: italic;
+  margin-bottom: var(--gutter);
 }

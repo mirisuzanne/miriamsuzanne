@@ -6,3 +6,63 @@
 @import '../../node_modules/accoutrement-type/sass/type';
 @import '../../node_modules/accoutrement-scale/sass/scale';
 @import '../../node_modules/sassdoc-theme-herman/scss/utilities';
+
+
+@mixin herman-colors(
+  $key,
+  $map
+) {
+  @include add-colors($map);
+  @include herman-add('colors', $key, $map, 'color');
+}
+
+
+@mixin herman-ratios(
+  $key,
+  $map
+) {
+  $ratios: map-merge($ratios, $map) !global;
+  @include herman-add('ratios', $key, $map, 'ratio');
+}
+
+
+@mixin herman-sizes(
+  $key,
+  $map
+) {
+  $sizes: map-merge($sizes, $map) !global;
+  @include herman-add('sizes', $key, $map, 'size');
+}
+
+
+@mixin herman-font(
+  $key,
+  $map
+) {
+  $fonts: map-merge($fonts, ($key: $map)) !global;
+  @include herman-add('font', $key, $map);
+}
+
+
+@function neg(
+  $var
+) {
+  @return calc(0px - var(#{$var}));
+}
+
+
+@mixin set-variables {
+  $maps: (
+    'color': $colors,
+    'size': $sizes,
+    'ratio': $ratios,
+  );
+
+  @each $function, $map in $maps {
+    @each $key, $value in $map {
+      @if not str-index($key, 'hljs-') {
+        --#{$key}: call($function, $value);
+      }
+    }
+  }
+}

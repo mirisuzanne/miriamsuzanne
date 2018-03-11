@@ -2,15 +2,33 @@
 // ==========
 
 
+hr:not([data-layout='grid-border']) {
+  @include amp;
+  @include after('& & &');
+  color: var(--border);
+  margin: var(--gutter) 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+
+.amp {
+  @include amp;
+}
+
+
 blockquote,
 .pullquote {
   @include feature-type;
-  margin-bottom: size('gutter');
+  margin-bottom: var(--gutter);
 
   .attribution {
-    font-size: size('reset');
+    display: block;
+    font-size: 0.8rem;
     font-style: normal;
     font-weight: bold;
+    margin-top: neg(--shim);
   }
 }
 
@@ -18,10 +36,10 @@ blockquote,
 blockquote {
   p {
     &:not(.attribution) {
-      text-indent: -0.5em;
+      text-indent: -0.4em;
 
       @include wrap-content {
-        color: color('action');
+        color: var(--accent-light);
         font-weight: bold;
       }
     }

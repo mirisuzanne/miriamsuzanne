@@ -2,7 +2,7 @@ public: yes
 tags: ['inspiration']
 elsewhere:
   - url: http://www.wearetransilient.com/
-    scr: 'Transilient'
+    src: 'Transilient'
 image:
   - src: '2017/transilient.jpg'
     caption: 'Photos by Basil Vaughn Soper and Johanna C Case'

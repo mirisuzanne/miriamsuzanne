@@ -1,7 +1,6 @@
 public: yes
 location: why
 erasure: yes
-summary_intro: true
 summary: |
   People are **queer**.
   People are edge cases.

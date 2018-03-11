@@ -1,26 +1,104 @@
 public: yes
-feature: 'large'
-tagline: 'a shuffled novel on note cards'
-location: 'writing'
+tagline: 'a novel on note cards'
 image:
   - src: 'writing/sidesaddle/box.jpg'
+url: 'http://ridingsidesaddle.com'
+location: 'writing'
+publication:
+  - venue: 'SpringGun Press'
+    url: 'http://springgunpress.com'
+    date: [2015, 4, 2]
+event_type: reading
+events:
+  - venue: 'A Leon Affair'
+    date: [2017, 3, 18]
+  - venue: 'The Operating System, NY'
+    date: [2017, 1, 13]
+    url: 'https://www.facebook.com/events/306828783046470/'
+    series: 'Resistance Tour'
+  - venue: 'in your ear, DC'
+    date: [2017, 1, 15]
+    url: 'https://www.facebook.com/events/641655696042941/'
+    series: 'Resistance Tour'
+  - venue: 'Wooden Shoe Books, PA'
+    date: [2017, 1, 16]
+    url: 'http://woodenshoebooks.com/'
+    series: 'Resistance Tour'
+  - venue: 'Silver Spring, MD'
+    date: [2017, 1, 18]
+    series: 'Resistance Tour'
+  - venue: 'Small Rain #2, MD'
+    date: [2017, 1, 19]
+    series: 'Resistance Tour'
+  - venue: 'Open Grounds, VA'
+    date: [2017, 1, 23]
+    url: 'http://opengrounds.virginia.edu/'
+    series: 'Resistance Tour'
+  - venue: 'The Card Table'
+    url: 'http://tracyshaffer.com/the-card-table/'
+    date: [2016, 3, 19]
+  - venue: 'Huckleberry Roasters [art installation]'
+    url: 'http://huckleberryroasters.com/'
+    date: [2015, 10, 1]
+  - name: 'Fucking Fabulous Fiction Festival'
+    venue: Oriental Theater
+    url: 'http://www.theorientaltheater.com/event/214770/fiction-fest'
+    date: [2015, 7, 31]
+    with:
+      - name: 'BookBar'
+        url: 'http://bookbardenver.com/'
+      - name: 'High Fiction'
+        url: 'http://highfiction.com/'
+  - venue: 'Syntax Physic Opera [book release]'
+    url: 'http://physicopera.com/'
+    date: [2015, 4, 2]
+press:
+  - quote: |
+      It’s a new and wonderful adventure each time,
+      a story of outcasts, their caretaker,
+      and the friendship and love they find with each other.
+    credit: 'Ryo Yamaguchi'
+    source: 'Michigan Quarterly Review'
+    url: 'http://www.michiganquarterlyreview.com/2015/06/on-riding-sidesaddle-an-interview-with-eric-suzanne/'
+    date: [2015, 6, 1]
+  - quote: |
+      The characters, ideas, story are exposed, raw, alive --
+      merging masculine and feminine into some kind of mystical marriage.
+    credit: 'Erin Rollman & Brian Colonna'
+    source: 'Buntport Theater'
+  - quote: |
+      I was just digging everything,
+      and didn't want the night to be over.
+    credit: 'Sam O’Daniel'
+    source: 'Your Older Brother'
+    url: 'http://www.yourolderbrother.com/2015/07/riding-sidesaddle-with-teacup-gorilla.html'
+    date: [2015, 7, 21]
+  - source: 'Denver Westword'
+    url: 'http://www.westword.com/arts/music-art-and-words-are-in-the-cards-at-the-riding-sidesaddle-book-launch-6626798'
+    credit: 'Luke Leavitt'
+    date: [2015, 4, 2]
+  - source: 'Colorado Music Buzz'
+    url: 'http://www.colomusicbuzz.com/eric-suzanne-drops-non-linear-novel-in-conjunction-with-teacup-gorilla/'
+    credit: 'Tim Wenger'
+    date: [2015, 4, 1]
+actions:
+  - text: 'buy the novel'
+    url: 'http://www.springgunpress.com/riding-sidesaddle-eric-suzanne/'
+  - text: 'art from the novel'
+    url: 'http://squareup.com/store/miriamsuzanne/'
+summary: |
+  .. callmacro:: content/macros.j2#blockquote
+    :cite: 'Riding SideSaddle*'
+
+    Sam gasps for air, and finds herself alone.
+    Herman gasps for air, and finds herself alone.
+    They wipe the mud from their body.
 
 
 ******************
 Riding SideSaddle*
 ******************
 
-
-Intro
-=====
-
-.. epigraph::
-
-  Sam gasps for air, and finds herself alone.
-  Herman gasps for air, and finds herself alone.
-  They wipe the mud from their body.
-
-  --`Riding SideSaddle*`_
 
 The fragmented memories of Herman & Sam –
 two people sharing one body –

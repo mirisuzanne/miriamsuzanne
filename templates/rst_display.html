@@ -1,8 +1,11 @@
 {% extends "layout.html" %}
+
 {% import "utility.macros.j2" as utility %}
 {% import "layout/macros.j2" as layout %}
 {% import "content/macros.j2" as content %}
 {% import "blog/macros.j2" as blog %}
+{% import "events/macros.j2" as events %}
+
 
 {% block title %}{{ rst.title }}{% endblock %}
 {% block description %}{{ ctx.render_summary()|striptags or super() }}{% endblock %}
@@ -25,56 +28,79 @@
   {% endif %}
 {% endblock %}
 
-
-{% block hero %}
-  {{ layout.hero(config, super()) }}
-{% endblock %}
-
-
-{% block page_title %}
-  {{ rst.title or super() }}
-{% endblock %}
-
-
-{% block page_tagline %}
-  {{ config.tagline|safe or super() }}
-{% endblock %}
-
+{% block location -%}
+  {%- if config.location -%}
+    {{- config.location -}}
+  {%- elif ctx.pub_date -%}
+    {{ 'writing' }}
+  {%- else -%}
+    {%- set locations = config.nav|map(attribute='slug') -%}
+    {% for slug in locations %}
+      {{- slug if (slug in ctx.slug) else '' -}}
+    {% endfor %}
+  {%- endif -%}
+{%- endblock %}
 
 {% block body %}
+  <div data-layout="intro" data-align="full" data-grid="full">
+    {% block headline %}
+      <h1 data-align="center"
+        class="page-title{{ ' is-hidden' if config.hide_title else '' }}">
+        {{ rst.title|typogrify }}
+      </h1>
+    {% endblock %}
 
-  {%- for module in config.before -%}
-    {% include module.include %}
-  {%- endfor -%}
-
-  {% if rst.fragment %}
-    {% if config.erasure %}
-      <input type="checkbox" id="erasure" />
-    {% endif %}
-
-    {% if config.summary_intro or config.elsewhere %}
-      <section
-        data-wrap="intro"
-        {{ utility.attr_if('data-erasure', config.erasure) }} >
-        {{ ctx.render_summary() }}
+    {% if config.summary %}
+      <aside class="summary" data-align="center">
+        {{ ctx.render_summary()|typogrify }}
 
         {% if config.elsewhere %}
           {% set where = config.elsewhere[0] %}
           {% set text = ['Read More on ', where.src]|join %}
           {{ content.btn(where.url, text) }}
         {% endif %}
-      </section>
+      </aside>
     {% endif %}
 
-    {% if config.wrap or config.erasure %}
-      <section
-        data-wrap="{{ config.wrap }}"
-        {{ utility.attr_if('data-erasure', config.erasure) }} >
-        {{ rst.fragment }}
-      </section>
-    {% else %}
-      {{ rst.fragment }}
-    {% endif %}
+    <hr data-layout="grid-border" />
+  </div>
+
+  {% set image = config.image[0] if config.image else none %}
+  {% if image %}
+    <figure data-layout="hero" data-align="full" data-grid="full">
+      <img src="/static/pictures/{{ image.src }}"
+        alt="{{ image.alt or '' }}"
+        data-align="center-left"
+        class="hero-image">
+      {% if image.caption %}
+        <figcaption class="hero-caption" data-align="right-edge">
+          <span class="caption-wrap">{{ image.caption|typogrify }}</span>
+        </figcaption>
+      {% endif %}
+    </figure>
+  {% endif %}
+
+  {%- for module in config.before -%}
+    {% include module.include %}
+  {%- endfor -%}
+
+  {% if ctx.pub_date %}
+    {{ blog.byline(ctx) }}
+  {% endif %}
+
+  {% if rst.fragment %}
+    <div
+      data-layout="rst"
+      data-align="{{ config.align or 'center' }}"
+      {{ utility.attr_if('data-grid', config.grid) }}
+      {{ utility.attr_if('data-erasure', config.erasure) }} >
+
+      {% if config.tagline %}
+        <h2 class="page-tagline">{{ config.tagline|typogrify }}</h2>
+      {% endif %}
+
+      {{ rst.fragment|typogrify }}
+    </div>
   {% endif %}
 
   {%- for module in config.after -%}
@@ -83,7 +109,9 @@
 
   {% if config.series %}
     {% set entries = get_blog_entries_by_tag(config.series)|reverse %}
-    {{ blog.section(entries) }}
+    {{ blog.section(
+      entries,
+      title="Related Articles"
+    ) }}
   {% endif %}
-
 {% endblock %}

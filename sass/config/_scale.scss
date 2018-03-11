@@ -6,83 +6,44 @@
 /// and accessed using OddBird’s Accoutrement.
 /// @link http://oddbird.net/accoutrement-scale/
 ///   Accoutrement Scale
+$sizes: ();
 
 
 // Ratios
 // ------
 /// @group scale
-$ratios: (
+/// @ratios
+$text-ratios: (
   'text-ratio': 1.4,
-  'widescreen': 'minor-seventh',
 );
+
+@include herman-ratios('text-ratios', $text-ratios);
 
 
 // Text Sizes
 // ----------
 /// @group scale
-/// @preview sizes;
+/// @sizes
 $text-sizes: (
-  'root': 24px,
-  'responsive': calc(100% + 0.675vw),
-  'reset': 1rem,
-
-  'h1': calc(2rem + 1.5vw),
-  'h2': 'feature',
-
-  'boiler': 1rem ('text-ratio': -1),
-  'code': 'boiler',
-  'feature': calc(1rem + 0.75vw),
+  'root': 22px,
+  'responsive': calc(100% + 0.5vw),
+  'rhythm': 1rem ('text-ratio': 1),
+  'xlarge': calc(1em + 1vw),
+  'large': calc(1em + 0.5vw),
+  'medium': calc(1em + 0.25vw),
+  'small': 1em ('text-ratio': -0.25),
+  'xsmall': 1em ('text-ratio': -0.675),
 );
 
-
-// Spacing Sizes
-// -------------
-/// @group scale
-/// @preview sizes; style: ruler
-$spacing-sizes: (
-  'rhythm': 'root' ('text-ratio': 1, 'convert-units': 'rem'),
-  'gutter': 'rhythm',
-  'double-gutter': 'gutter' ('times': 2),
-  'fast-gutter': calc(%s + %s) ('shim', 3vmin),
-  'spacer': 'gutter' ('times': 3),
-  'shim': 'gutter' ('divide': 2),
-  'shim-plus': 'shim' ('times': 1.5),
-  'half-shim': 'shim' ('divide': 2),
-  'quarter-shim': 'shim' ('divide': 4),
-);
+@include herman-sizes('text-sizes', $text-sizes);
 
 
 // Page Sizes
 // ----------
 /// @group scale
-/// @preview sizes; style: output-only
+/// @sizes output-only
 $page-sizes: (
   'page': 28rem,
-  'half-page': 'page' ('divide': 2),
-  'page-plus': 'page' ('times': 1.5),
-  'page-minus': 'page' ('times': 0.75),
-  'double-page': 'page' ('times': 2),
-  'hero-min': 'rhythm' ('times': 12),
-  'hero': calc(%s - %s) (100vmin, 'double-gutter'),
 );
 
-
-// Pattern Sizes
-// -------------
-/// @group scale
-/// @preview sizes; style: output-only
-$pattern-sizes: (
-  'feature-x': 13rem,
-  'feature-y': 'feature-x' ('widescreen': -0.5),
-  'feature-break': 'feature-x' ('times': 2, 'convert-units': 'browser-ems'),
-  'post-image': 5rem,
-);
-
-
-$sizes: map-merge($text-sizes, $spacing-sizes);
-$sizes: map-merge($sizes, $page-sizes);
-$sizes: map-merge($sizes, $pattern-sizes);
-@include herman-add('sizes', 'text-sizes', $text-sizes, 'size');
-@include herman-add('sizes', 'spacing-sizes', $spacing-sizes, 'size');
-@include herman-add('sizes', 'page-sizes', $page-sizes, 'size');
-@include herman-add('sizes', 'pattern-sizes', $pattern-sizes, 'size');
+@include herman-sizes('page-sizes', $page-sizes);

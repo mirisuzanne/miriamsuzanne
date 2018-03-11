@@ -18,6 +18,23 @@
   {% set content = content if (content != none) else caller() %}
 
   <div class="pullquote">
-    <p>{{ content|rst|typogrify }}</p>
+    {{ content|rst }}
   </div>
 {% endmacro %}
+
+
+{% macro blockquote(cite, content=none) %}
+  {% set content = content if (content != none) else caller() %}
+
+  <blockquote>
+    {{ content|rst }}
+    <cite class="attribution">—{{ cite }}</cite>
+  </blockquote>
+{% endmacro %}
+
+
+{%- macro page_link(page) -%}
+  {%- set slug = page.slug|remove_index -%}
+  {%- set url = '/' if (slug == 'index') else ['/', slug, '/']|join -%}
+  {{ url }}
+{%- endmacro -%}

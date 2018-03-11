@@ -1,5 +1,5 @@
 public: yes
-tags: ['interview', 'speaking', 'Transition']
+tags: ['interview', 'Transition']
 series: 'Transition'
 image:
   - src: '2017/america-heard.jpg'

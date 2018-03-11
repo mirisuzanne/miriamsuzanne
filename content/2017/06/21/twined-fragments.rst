@@ -7,12 +7,15 @@ elsewhere:
   - url: https://medium.com/twined-fragments/twined-fragments-chapter-1-mothers-fathers-husbands-wives-9b25ea3aca3a
     src: 'Medium'
 summary: |
-  “Mother finds me at her wardrobe, in her pumps and pearls.
-  *What are you doing?*
-  Being a mommy.
-  *Are you, then?*
-  She clips on the earrings (they pinch!),
-  reaches for her lipstick.”
+  .. callmacro:: content/macros.j2#blockquote
+    :cite: 'Allison Washington'
+
+    Mother finds me at her wardrobe, in her pumps and pearls.
+    *What are you doing?*
+    Being a mommy.
+    *Are you, then?*
+    She clips on the earrings (they pinch!),
+    reaches for her lipstick.
 
 
 *********************************
@@ -32,9 +35,6 @@ that are sometimes too painful to interrogate deeply.
 In conversation, we do together what we could not alone.
 The result leaves us with more questions than answers,
 and we love that.
-
-We want those questions,
-and hope you will extend this conversation in the comments below.
 
 .. _Allison Washington: http://allisonwashington.net
 

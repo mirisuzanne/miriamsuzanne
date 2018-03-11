@@ -21,342 +21,342 @@ samp {
 
   // Punctuation
   .p {
-    color: color('code-punct');
+    color: color('code-punct', $highlight-colors);
   }
 
   // Error
   .err {
-    color: color('code-error');
+    color: color('code-error', $highlight-colors);
   }
 
   // Base Style
   .n {
-    color: color('code-name');
+    color: color('code-name', $highlight-colors);
   }
 
   // Name Attribute
   .na {
-    color: color('code-name-att');
+    color: color('code-name-att', $highlight-colors);
   }
 
   // Name Builtin
   .nb {
-    color: color('code-name-builtin');
+    color: color('code-name-builtin', $highlight-colors);
   }
 
   // Name Class
   .nc {
-    color: color('code-name-class');
+    color: color('code-name-class', $highlight-colors);
   }
 
   // Name Constant
   .no {
-    color: color('code-name-constant');
+    color: color('code-name-constant', $highlight-colors);
   }
 
   // Name Decorator
   .nd {
-    color: color('code-name-decorator');
+    color: color('code-name-decorator', $highlight-colors);
   }
 
   // Name Entity
   .ni {
-    color: color('code-name-entity');
+    color: color('code-name-entity', $highlight-colors);
   }
 
   // Name Exception
   .ne {
-    color: color('code-name-exception');
+    color: color('code-name-exception', $highlight-colors);
   }
 
   // Name Function
   .nf {
-    color: color('code-name-function');
+    color: color('code-name-function', $highlight-colors);
   }
 
   // Name Label
   .nl {
-    color: color('code-name-label');
+    color: color('code-name-label', $highlight-colors);
   }
 
   // Name Namespace
   .nn {
-    color: color('code-name-namespace');
+    color: color('code-name-namespace', $highlight-colors);
   }
 
   // Name Other
   .nx {
-    color: color('code-name-other');
+    color: color('code-name-other', $highlight-colors);
   }
 
   // Name Property
   .py {
-    color: color('code-name-property');
+    color: color('code-name-property', $highlight-colors);
   }
 
   // Name Tag
   .nt {
-    color: color('code-name-tag');
+    color: color('code-name-tag', $highlight-colors);
   }
 
   // Name Variable
   .nv {
-    color: color('code-name-var');
+    color: color('code-name-var', $highlight-colors);
   }
 
   // Name Variable Class
   .vc {
-    color: color('code-name-var-class');
+    color: color('code-name-var-class', $highlight-colors);
   }
 
   // Name Variable Global
   .vg {
-    color: color('code-name-var-global');
+    color: color('code-name-var-global', $highlight-colors);
   }
 
   // Name Variable Instance
   .vi {
-    color: color('code-name-var-instance');
+    color: color('code-name-var-instance', $highlight-colors);
   }
 
   // Name Builtin Pseudo
   .bp {
-    color: color('code-name-bi-pseudo');
+    color: color('code-name-bi-pseudo', $highlight-colors);
   }
 
   // Base Style
   .o {
-    color: color('code-operator');
+    color: color('code-operator', $highlight-colors);
   }
 
   // Operator Word
   .ow {
-    color: color('code-operator-word');
+    color: color('code-operator-word', $highlight-colors);
   }
 
   // Base Style
   .c {
-    color: color('code-comment');
+    color: color('code-comment', $highlight-colors);
     font-style: italic;
   }
 
   // Comment Multiline
   .cm {
-    color: color('code-comment-multi');
+    color: color('code-comment-multi', $highlight-colors);
     font-style: italic;
   }
 
   // Comment Preproc
   .cp {
-    color: color('code-comment-preproc');
+    color: color('code-comment-preproc', $highlight-colors);
     font-style: italic;
   }
 
   // Comment Single
   .c1 {
-    color: color('code-comment-single');
+    color: color('code-comment-single', $highlight-colors);
     font-style: italic;
   }
 
   // Comment Special
   .cs {
-    color: color('code-comment-special');
+    color: color('code-comment-special', $highlight-colors);
     font-style: italic;
   }
 
   // Base Style
   .k {
-    color: color('code-key');
+    color: color('code-key', $highlight-colors);
   }
 
   // Keyword Constant
   .kc {
-    color: color('code-key-constant');
+    color: color('code-key-constant', $highlight-colors);
   }
 
   // Keyword Declaration
   .kd {
-    color: color('code-key-declaration');
+    color: color('code-key-declaration', $highlight-colors);
   }
 
   // Keyword Namespace
   .kn {
-    color: color('code-key-namespace');
+    color: color('code-key-namespace', $highlight-colors);
   }
 
   // Keyword Pseudo
   .kp {
-    color: color('code-key-pseudo');
+    color: color('code-key-pseudo', $highlight-colors);
   }
 
   // Keyword Reserved
   .kr {
-    color: color('code-key-reserved');
+    color: color('code-key-reserved', $highlight-colors);
   }
 
   // Keyword Type
   .kt {
-    color: color('code-key-type');
+    color: color('code-key-type', $highlight-colors);
   }
 
   // Base Style
   .l {
-    color: color('brand-pink');
+    color: color('brand-pink', $highlight-colors);
   }
 
   // Literal Date
   .ld {
-    color: color('code-lit-date');
+    color: color('code-lit-date', $highlight-colors);
   }
 
   // Literal Number
   .m {
-    color: color('code-lit-num');
+    color: color('code-lit-num', $highlight-colors);
   }
 
   // Literal Number Float
   .mf {
-    color: color('code-lit-num-float');
+    color: color('code-lit-num-float', $highlight-colors);
   }
 
   // Literal Number Hex
   .mh {
-    color: color('code-lit-num-hex');
+    color: color('code-lit-num-hex', $highlight-colors);
   }
 
   // Literal Number Integer
   .mi {
-    color: color('code-lit-num-int');
+    color: color('code-lit-num-int', $highlight-colors);
   }
 
   // Literal Number Oct
   .mo {
-    color: color('code-lit-num-oct');
+    color: color('code-lit-num-oct', $highlight-colors);
   }
 
   // Literal Number Integer Long
   .il {
-    color: color('code-lit-num-long');
+    color: color('code-lit-num-long', $highlight-colors);
   }
 
   // Literal String
   .s {
-    color: color('code-string');
+    color: color('code-string', $highlight-colors);
   }
 
   // Literal String Backtick
   .sb {
-    color: color('code-string-backtick');
+    color: color('code-string-backtick', $highlight-colors);
   }
 
   // Literal String Char
   .sc {
-    color: color('code-string-char');
+    color: color('code-string-char', $highlight-colors);
   }
 
   // Literal String Doc
   .sd {
-    color: color('code-string-doc');
+    color: color('code-string-doc', $highlight-colors);
   }
 
   // Literal String Double
   .s2 {
-    color: color('code-string-double');
+    color: color('code-string-double', $highlight-colors);
   }
 
   // Literal String Escape
   .se {
-    color: color('code-string-escape');
+    color: color('code-string-escape', $highlight-colors);
   }
 
   // Literal String Heredoc
   .sh {
-    color: color('code-string-heredoc');
+    color: color('code-string-heredoc', $highlight-colors);
   }
 
   // Literal String Interpol
   .si {
-    color: color('code-string-interpol');
+    color: color('code-string-interpol', $highlight-colors);
   }
 
   // Literal String Other
   .sx {
-    color: color('code-string-other');
+    color: color('code-string-other', $highlight-colors);
   }
 
   // Literal String Regex
   .sr {
-    color: color('code-string-regex');
+    color: color('code-string-regex', $highlight-colors);
   }
 
   // Literal String Single
   .s1 {
-    color: color('code-string-single');
+    color: color('code-string-single', $highlight-colors);
   }
 
   // Literal String Symbol
   .ss {
-    color: color('code-string-sym');
+    color: color('code-string-sym', $highlight-colors);
   }
 
   // Base Style
   .g {
-    color: color('code-gen');
+    color: color('code-gen', $highlight-colors);
   }
 
   // Generic Deleted
   .gd {
-    color: color('code-gen-del');
+    color: color('code-gen-del', $highlight-colors);
   }
 
   // Generic Emph
   .ge {
-    color: color('code-gen-emph');
+    color: color('code-gen-emph', $highlight-colors);
   }
 
   // Generic Error
   .gr {
-    color: color('code-gen-error');
+    color: color('code-gen-error', $highlight-colors);
   }
 
   // Generic Heading
   .gh {
-    color: color('code-gen-heading');
+    color: color('code-gen-heading', $highlight-colors);
   }
 
   // Generic Inserted
   .gi {
-    color: color('code-gen-inserted');
+    color: color('code-gen-inserted', $highlight-colors);
   }
 
   // Generic Output
   .go {
-    color: color('code-gen-output');
+    color: color('code-gen-output', $highlight-colors);
   }
 
   // Generic Prompt
   .gp {
-    color: color('code-gen-prompt');
+    color: color('code-gen-prompt', $highlight-colors);
   }
 
   // Generic Strong
   .gs {
-    color: color('code-gen-strong');
+    color: color('code-gen-strong', $highlight-colors);
   }
 
   // Generic Subheading
   .gu {
-    color: color('code-gen-subhead');
+    color: color('code-gen-subhead', $highlight-colors);
   }
 
   // Generic Traceback
   .gt {
-    color: color('text');
+    color: color('text', $highlight-colors);
   }
 
   // Other
   .x {
-    color: color('text');
+    color: color('text', $highlight-colors);
   }
 
   // Text Whitespace

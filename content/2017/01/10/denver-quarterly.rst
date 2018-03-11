@@ -28,12 +28,10 @@ and the `Buntport`_ play
 `10 Myths on the Proper Application of Beauty Products`_
 which was based on it.
 
-|get|
+.. callmacro:: content/macros.j2#btn
+  :url: 'http://www.du.edu/denverquarterly/'
 
-.. |get| raw:: html
-
-  <a class="btn" href="http://www.du.edu/denverquarterly/">Get yer literary on</a>
-
+  Get yer literary on
 
 .. _Denver Quarterly: http://www.du.edu/denverquarterly/
 .. _`Riding SideSaddle*`: http://ridingsidesaddle.com

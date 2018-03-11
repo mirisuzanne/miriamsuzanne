@@ -7,7 +7,7 @@
       {{ module.title or ['the', module.time]|join(' ') }}
     </h2>
 
-    {{ calendar.filters(
+{#     {{ calendar.filters(
       list=config.past|map(attribute='type')|unique_chain,
       uuid=module.time,
       lookup=config.event_tags[0]
@@ -15,6 +15,6 @@
 
     {% for event in config.past %}
       {{ calendar.show(event) }}
-    {% endfor %}
+    {% endfor %} #}
   </section>
 {% endif %}

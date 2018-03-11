@@ -3,7 +3,6 @@ tags: ['speaking', 'writing', 'Riding Sidesaddle*']
 series: 'Riding Sidesaddle*'
 image:
   - src: '2016/resistence.jpg'
-summary_intro: yes
 summary: |
   It's been a month
   since our country pseudo-elected

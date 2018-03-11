@@ -3,9 +3,19 @@
 
 
 [data-layout='footer'] {
-  @include font-family('alt');
-  border-top: 1px dotted color('border');
-  font-size: size('boiler');
-  margin: 0 0 size('spacer') negative('shim');
-  padding: size('shim');
+  @include angle('top');
+  font-size: var(--small);
+  font-style: italic;
+  margin-top: var(--spacer);
+  padding: var(--gutter) 0;
+  position: relative;
+
+  p {
+    margin: 0;
+  }
+}
+
+
+.footer-content {
+  margin-top: var(--gutter);
 }

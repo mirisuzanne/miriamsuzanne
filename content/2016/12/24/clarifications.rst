@@ -5,7 +5,6 @@ erasure: yes
 image:
   - src: '2016/clarifications.jpg'
     caption: 'My dictionary prefers vaginae, but both are correct.'
-summary_intro: yes
 summary: |
   There's a lot of language that gets thrown around,
   but much of it comes loaded with

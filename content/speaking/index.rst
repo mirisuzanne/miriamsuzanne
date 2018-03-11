@@ -1,33 +1,40 @@
 public: yes
-location: 'speaking'
-tagline: 'conferences, meetups, readings, and more'
-wrap: 'intro'
-image:
-  - src: 'headshots/mia-2017.jpg'
+location: speaking
+align: full
+grid: full
 after:
   - include: 'blog/_taglist.html.j2'
     tag: 'speaking'
+summary: |
+  Miriam is an award-winning speaker --
+  presenting on art, code, collaboration, and process --
+  at conferences like `CSS Dev Conf`_ (`Best of 2017`_),
+  `DjangoCon US`_,
+  `Frontend Zurich`_,
+  `VueConf US`_,
+  and the `University of West Virginia`_
+  Digital Humanities graduate program.
+
+  .. _DjangoCon US: #@@@
+  .. _CSS Dev Conf: #@@@
+  .. _Best of 2017: #@@@
+  .. _Frontend Zurich: #@@@
+  .. _VueConf US: #@@@
+  .. _Beyond Tellerand: #@@@
+  .. _University of West Virginia: #@@@
+
+  .. callmacro:: content/macros.j2#btn
+    :url: '/contact/'
+    :content: 'Invite me to speak'
 
 
-********
-Speaking
-********
+***************
+Public Speaking
+***************
 
-Miriam is an award-winning speaker,
-presenting on a mix of art & code at conferences,
-festivals, meetups, and universities around the world –
-from `DjangoCon US`_, `CSS Dev Conf`_ (`Best of 2017`_),
-and `Frontend Conference Zurich`_,
-to the `University of West Virginia`_,
-and Colorado Univerity's `Brakhage Center For Media Arts`_.
-
-.. _DjangoCon US: #@@@
-.. _CSS Dev Conf: #@@@
-.. _Best of 2017: #@@@
-.. _Frontend Conference Zurich: #@@@
-.. _University of West Virginia: #@@@
-.. _Brakhage Center For Media Arts: #@@@
-
+.. callmacro:: events/macros.j2#by_type
+  :title: 'Upcoming talks & workshops'
+  :event_type: ['talk']
 
 .. Featured Talks:
 .. - Code Patterns

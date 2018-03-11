@@ -9,6 +9,17 @@
 }
 
 
+// [for='erasure'] {
+//   @include link;
+
+//   &:focus,
+//   &:hover,
+//   &:active {
+//     @include link('hover');
+//   }
+// }
+
+
 [id='erasure'] {
   @include is-hidden;
   position: fixed;
@@ -20,13 +31,10 @@
         color: transparent;
       }
 
-      strong {
-        color: color('text');
-      }
-
       [for='erasure'],
       strong {
         background: rgba(#fff, 0.9);
+        color: color('text');
         position: relative;
 
         @include before(']') {

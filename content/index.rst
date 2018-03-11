@@ -1,25 +1,42 @@
 public: yes
-location: 'home'
-wrap: 'intro'
+location: home
+hide_title: yes
+align: full
+grid: full
+image:
+  - src: 'headshots/mia-2017.jpg'
+    caption: 'My name is Miriam, and this is my face among flowers & leaves…'
+summary: |
+  **Hello Lovely –**
+
+  I’m a `web developer`_, `writer`_, and `artist`_ --
+  collaborating across media
+  to create experiences
+  that `bring people together`_.
+
+  .. _web developer: /work/
+  .. _writer: /writing/
+  .. _artist: /art/
+  .. _bring people together: /why/
+
+  .. callmacro:: content/macros.j2#btn
+    :url: '/contact/'
+    :content: 'Start a conversation'
 
 
-**************
-Miriam Suzanne
-**************
+**************************
+Introducing Miriam Suzanne
+**************************
 
-**Hello Lovely –**
 
-I’m a `web developer`_, `writer`_, and `artist`_
-building collaborative teams
-& experiences across media –
-art & code that
-`bring people together`_.
+.. callmacro:: content/feature.macros.j2#show
+  :slugs: [
+      ['work/oddbird', 'large'],
+      ['writing/ridingsidesaddle', 'large'],
+      ['art/teacupgorilla', 'small'],
+      ['writing/jumpstartsass', 'small'],
+      ['art/grapefruitlab', 'small'],
+    ]
 
-.. _web developer: /code/
-.. _writer: /writing/
-.. _artist: /art/
-.. _bring people together: /why/
 
-.. callmacro:: content/macros.j2#btn
-  :url: '/contact/'
-  :content: 'start a conversation'
+.. callmacro:: blog/macros.j2#recent_posts

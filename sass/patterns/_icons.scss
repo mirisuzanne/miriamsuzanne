@@ -1,9 +1,10 @@
 // Icons
 // =====
 
+
 [data-icon] {
   @include square(0.75em);
   display: inline-block;
-  margin: 0 size('quarter-shim');
+  margin: 0 0.1em;
   vertical-align: baseline;
 }

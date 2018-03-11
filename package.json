@@ -8,7 +8,7 @@
     "accoutrement-init": "^1.1.2",
     "accoutrement-layout": "^3.0.2",
     "accoutrement-scale": "^5.0.1",
-    "accoutrement-type": "^3.1.0",
+    "accoutrement-type": "^3.2.0-beta.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-sass": "^3.1.0",
@@ -17,7 +17,7 @@
     "gulp-sourcemaps": "^2.6.1",
     "gulp-util": "^3.0.8",
     "mathsass": "^0.9.5",
-    "sassdoc-theme-herman": "^1.0.0-alpha.13"
+    "sassdoc-theme-herman": "^1.0.0"
   },
   "scripts": {},
   "repository": {

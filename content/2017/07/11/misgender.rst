@@ -3,7 +3,6 @@ tags: ['Transition', 'writing']
 series: 'Transition'
 image:
   - src: '2017/herm.jpg'
-summary_intro: true
 summary: |
   Reflections on the instictive act of gendering,
   how it can go terribly wrong,

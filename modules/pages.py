@@ -8,6 +8,7 @@ Use like:
 
 from functools import partial
 from rstblog.modules.blog import get_all_entries
+import operator
 
 
 def is_blog_post(page):
@@ -92,28 +93,20 @@ def filter_pages(values, key, operator=None, value=None):
             # Configs don't implement all of dict, so I can't do:
             #   key in x.config
             return (hasattr(x, key) or x.config.get(key))
-        if operator == 'has':
-            return value in (getattr(x, key, None) or x.config.get(key) or [])
         if operator == 'eq':
-            return (getattr(x, key, None) or x.config.get(key)) == value
+            return value == (getattr(x, key, None) or x.config.get(key))
         if operator == 'neq':
-            return (getattr(x, key, None) or x.config.get(key)) != value
+            return value != (getattr(x, key, None) or x.config.get(key))
+        if operator == 'has':
+            return value in (getattr(x, key, None) or x.config.get(key, []))
+        if operator == 'in':
+            return (getattr(x, key, None) or x.config.get(key, [])) in value
 
     return [
         x
         for x
         in values
         if predicate(x, key)
-    ]
-
-
-def get_blog_entries_by_bird(builder, bird):
-    posts = get_all_entries(builder)
-    return [
-        post
-        for post
-        in posts
-        if bird == post.author
     ]
 
 
@@ -127,18 +120,73 @@ def get_blog_entries_by_tag(builder, tag):
     ]
 
 
+def get_some_recent_blog_entries(builder, count=10):
+    return get_all_entries(builder)[:count]
+
+
+def collect(pages, key, label_with=None):
+    result = []
+    for page in pages:
+        for item in page.config.get(key, []):
+            if label_with:
+                label = (
+                    getattr(page, label_with, None) or
+                    page.config.get(label_with)
+                )
+                item = item.copy()
+                item[label_with] = label
+            result.append(item)
+    return result
+
+
+def build_get_config(builder):
+    all_pages = {
+        p.slug: p
+        for p
+        in builder.iter_contexts()
+    }
+
+    def get_config(slug, key=None):
+        page = all_pages.get(slug, None)
+        if page is None:
+            return page
+        if key is not None:
+            page_config = getattr(page, 'config', None)
+            return (
+                getattr(page_config, key, None) or
+                page_config.get(key, None)
+            )
+        return page
+
+    return get_config
+
+
+def is_string(obj):
+    return isinstance(obj, basestring)
+
+
+def remove_index(str):
+    if str.endswith('/index'):
+        return str[:-6]
+    return str
+
+
 def setup(builder):
     env = builder.jinja_env
+    env.filters['is_string'] = is_string
+    env.filters['remove_index'] = remove_index
     env.filters['show_all_attrs'] = show_all_attrs
     env.filters['show_config'] = show_config
     env.filters['filter_pages'] = filter_pages
+    env.filters['collect'] = collect
     env.filters['get_page'] = get_page
-    env.globals['get_blog_entries_by_bird'] = partial(
-        get_blog_entries_by_bird,
-        builder,
-    )
+    env.filters['get_config'] = build_get_config(builder)
     env.globals['get_blog_entries_by_tag'] = partial(
         get_blog_entries_by_tag,
+        builder,
+    )
+    env.globals['get_some_recent_blog_entries'] = partial(
+        get_some_recent_blog_entries,
         builder,
     )
     env.globals['all_pages'] = get_pages(builder)

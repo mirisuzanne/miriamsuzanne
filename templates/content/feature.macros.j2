@@ -1,7 +1,7 @@
 {% import 'utility.macros.j2' as utility %}
 
 
-{% macro grid(slugs=none) %}
+{% macro show(slugs=none) %}
   <section data-grid="feature">
     {% for slug in (slugs or kwargs) %}
       {% set page = slug[0] if slugs else slug %}
@@ -20,23 +20,16 @@
   size='small'
 ) %}
   {% set image = page.config.image[0] if page.config.image else none %}
-  {% set src = '--img: url("/static/pictures/%s");' % image.src if image else none %}
-  {% set scale = '--size: %s;' % image.size if image.size else none %}
-  {% set pos = '--pos: %s;' % image.position if image.position else none %}
-  {% set style = [src or '', scale or '', pos or '']|join if (src or scale or pos) else none %}
+  {% set src = '/static/pictures/%s' % image.src if image else none %}
+  {% set style = [src or '', scale or '', pos or '']|join if src else none %}
   {% set url = '/' + page.slug|replace('/index', '') + '/' %}
   {% set link = page.config.elsewhere[0].url if page.config.elsewhere else url %}
 
-  <article
-    data-feature="{{ size }}" >
-    <a
-      class="feature-link"
-      href="{{ link }}"
-      {{ utility.attr_if('style', style) }} >
-
-      <h2 class="feature-title">
+  <article data-feature="{{ size }}" >
+    <h2 class="feature-title">
+      <a class="feature-link" href="{{ link }}">
         {{ page.title }}
-      </h2>
-    </a>
+      </a>
+    </h2>
   </article>
 {% endmacro %}

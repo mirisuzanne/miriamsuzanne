@@ -2,7 +2,10 @@
 
 
 {# Attributes #}
-{% macro attr_if(attr, value=none) %}
+{% macro attr_if(
+  attr,
+  value=none
+) %}
   {%- if value == true -%}
     {{ attr }}
   {%- elif value -%}
@@ -10,13 +13,20 @@
   {%- endif -%}
 {% endmacro %}
 
-{% macro show_attrs(attrs) %}
+
+{% macro show_attrs(
+  attrs
+) %}
   {%- for attr, value in attrs.items() %}{{ attr_if(attr, value) }}{% endfor -%}
 {% endmacro %}
 
 
 {# Links #}
-{% macro link_if(content, url=none, class=none) %}
+{% macro link_if(
+  content,
+  url=none,
+  class=none
+) %}
   {%- if url -%}
     <a href="{{ url }}" {{ attr_if('class', class) }}>{{ content|safe }}</a>
   {%- elif class -%}
@@ -28,7 +38,11 @@
 
 
 {# Date & Time #}
-{% macro time(datetime, style='long', attrs={'class':'dt-start'}) %}
+{% macro time(
+  datetime,
+  style='long',
+  attrs={'class':'dt-start'}
+) %}
   {% if datetime %}
     {% if datetime.start and datetime.end %}
       {% set end_style = 'mini' if (datetime.start[1] == datetime.end[1]) and (datetime.start[0] == datetime.end[0]) else style %}

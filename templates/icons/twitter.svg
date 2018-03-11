@@ -2,6 +2,9 @@
   version="1.1"
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 19 19"
+  width="19px"
+  height="19px"
+  data-icon="twitter"
 >
   <path
     d="M17.5,4.5c-0.6,0.3-1.2,0.4-1.9,0.5c0.7-0.4,1.2-1,1.4-1.8C16.4,3.6,15.7,3.9,15,4c-0.6-0.6-1.5-1-2.4-1

@@ -2,7 +2,6 @@ public: yes
 tags: ['writing']
 image:
   - src: '2017/model-falcon.jpg'
-summary_intro: true
 summary: |
   I'm still reeling from this year of insults, 
   a traumatizing campaign turned traumatic election.

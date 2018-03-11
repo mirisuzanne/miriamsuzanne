@@ -5,48 +5,47 @@
 [data-field] {
   display: flex;
   flex-direction: column-reverse;
-  margin-bottom: size('shim');
+  margin-bottom: var(--gutter);
 }
 
 
 [data-label] {
-  @include font-family('alt');
-  background: color('background');
-  border-radius: $corners;
-  color: color('field-chill');
-  font-size: size('boiler');
-  margin: 0 auto negative('half-shim') size('half-shim');
-  padding: 0 size('half-shim');
+  background: var(--background);
+  color: var(--field-chill);
+  font-size: calc(var(--small) * 0.75);
+  font-weight: bold;
+  margin: 0 auto neg(--shim) var(--shim);
+  padding: 0 var(--shim);
   transition: color 250ms ease;
 }
 
 
 [data-input='default'],
 [data-input='textarea'] {
-  border: 2px solid color('field-chill');
-  border-radius: $corners;
-  font-size: size('boiler');
-  padding: size('half-shim');
+  border: var(--border) solid var(--field-chill);
+  border-radius: var(--shim);
+  font-size: var(--small);
+  padding: var(--border);
   transition: border-color 250ms ease;
   width: 100%;
 
   &:invalid {
-    border-color: color('field-attention');
+    border-color: var(--field-attention);
   }
 
   &:focus {
-    border-color: color('field-chill');
+    border-color: var(--field-chill);
     outline: 0;
 
     & + [data-label] {
-      color: color('field-attention');
+      color: var(--field-attention);
     }
   }
 }
 
 
 [data-input='textarea'] {
-  min-height: size('rhythm') * 6;
+  min-height: calc(var(--rhythm) * 6);
 }
 
 

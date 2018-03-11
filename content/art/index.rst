@@ -1,41 +1,39 @@
 public: yes
-location: 'art'
+location: art
 tagline: 'Music, Design, & Performance'
-wrap: 'intro'
 after:
   - include: 'content/_feature.html.j2'
     slugs:
       - ['writing/ridingsidesaddle', 'large']
-      - ['writing/10myths', 'small']
+      - ['art/theater/10myths', 'small']
       - ['writing/postobsolete', 'large']
   - include: 'blog/_taglist.html.j2'
     tag: 'art'
+summary: |
+  Miriam creates music with `Teacup Gorilla`_,
+  theater with `Grapefruit Lab`_,
+  and visual art for albums, book-covers, and galleries.
+  Formerly Artistic Director of *New World Arts*,
+  and Technical Director
+  of `The LIDA Project`_,
+  Miriam won the `2017 True West Award`_
+  for `10 Myths on the Proper Application of Beauty Products`_.
+
+  .. _Teacup Gorilla: #@@@
+  .. _Grapefruit Lab: #@@@
+  .. _The LIDA Project: #@@@
+  .. _2017 True West Award: #@@@
+  .. _10 Myths on the Proper Application of Beauty Products: #@@@
 
 
-***************
-Mixed-Media Art
-***************
+*****************************
+Cross-Media Art & Performance
+*****************************
 
-Miriam is a visual/performance artist,
-creating music with `Teacup Gorilla`_ (bass & vocals),
-theater & performance with `Grapefruit Lab`_,
-designing `book covers`_,
-and touring her `solo show`_ to festivals around the country.
-Formerly Artistic Director of *New World Arts*,
-and Technical Director
-of `The LIDA Project`_ & `Countdown To Zero`_,
-Miriam won the `2017 True West Award`_
-for `10 Myths on the Proper Application of Beauty Products`_
-in collaboration with *Teacup Gorilla* and *Buntport Theater*.
+.. callmacro:: events/macros.j2#by_type
+  :title: 'Upcoming Performances'
+  :event_type: ['theater', 'music']
 
-.. _Teacup Gorilla: #@@@
-.. _Grapefruit Lab: #@@@
-.. _book covers: #@@@
-.. _solo show: #@@@
-.. _The LIDA Project: #@@@
-.. _Countdown To Zero: #@@@
-.. _2017 True West Award: #@@@
-.. _10 Myths on the Proper Application of Beauty Products: #@@@
 
 .. Orgs:
 .. - Teacup Gorilla

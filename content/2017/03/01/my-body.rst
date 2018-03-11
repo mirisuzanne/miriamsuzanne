@@ -4,7 +4,6 @@ series: 'Transition'
 erasure: yes
 image:
   - src: '2017/fragments.jpg'
-summary_intro: true
 summary: |
   I wasn't born in the wrong body.
   *I was born, a body.*
@@ -70,7 +69,7 @@ What does it mean for you **to be your** gender?
 ---------
 
 Dysphoria is a subtle,
-grumpy, **subconscious beast — **
+grumpy, **subconscious beast —**
 like an upset stomach,
 **or the anger you feel** when you haven't eaten.
 

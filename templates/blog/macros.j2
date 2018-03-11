@@ -2,8 +2,32 @@
 {% import "icon.macros.j2" as icon %}
 
 
-{% macro section(entries) %}
-  <section data-grid="posts">
+{% macro recent_posts(
+  title="Recent Articles",
+  count=5
+) %}
+  {% set entries = get_some_recent_blog_entries(count) %}
+
+  {% if entries|length %}
+    {{ section(
+      entries=entries,
+      title=title
+    ) }}
+  {% endif %}
+{% endmacro %}
+
+
+{% macro section(
+  entries,
+  title=none
+) %}
+  <section class="post-list" data-grid="full" data-align="full">
+    {% if title %}
+      <h2 class="post-section-title">
+        <span>{{ title|typogrify }}</span>
+      </h2>
+    {% endif %}
+
     {% for entry in entries %}
       {{ list(entry) }}
     {% endfor %}
@@ -12,19 +36,17 @@
 
 
 {% macro list(post) %}
-<article class="post">
-  {{ byline(post) }}
-
-  <h2 class="post-title">
+  <h2 class="post-title" data-align="center">
     <a href="{{ link_to('page', slug=post.slug) }}">
       {{ post.title|typogrify }}
     </a>
   </h2>
 
-  {% if post.summary %}
+  {{ byline(post) }}
+
+  <div class="post-summary" data-align="center">
     {{ post.render_summary()|typogrify }}
-  {% endif %}
-</article>
+  </div>
 {% endmacro %}
 
 
@@ -35,19 +57,22 @@
   {% set series = post.config.series %}
   {% set away = post.config.elsewhere[0] if post.config.elsewhere else none %}
 
-  {% if away or series %}
-    [
-      {% if series %}
-        {% set series_url = ['/tags/', series|urlencode, '/']|join %}
-        {% set series_page = post.config.series_pages|selectattr('title', 'equalto', series)|list %}
-        {% set series_url = series_page[0].url if series_page[0] else series_url %}
-        {{ utility.link_if(icon.get('list') + series|typogrify, series_url) }}
-      {% endif %}
-      {% if away and series %}::{% endif %}
-      {% if away %}
-        {{ utility.link_if(icon.get('newtab') + away.src|typogrify, away.url) }}
-      {% endif %}
-    ]
+  {% if series %}
+    {% set series_url = ['/tags/', series|urlencode, '/']|join %}
+    {% set series_page = post.config.series_pages|selectattr('title', 'equalto', series)|list %}
+    {% set series_url = series_page[0].url if series_page[0] else series_url %}
+    <span class="meta-in">
+      <i>in</i>
+      {{ utility.link_if(series|typogrify, series_url) }}
+    </span>
+  {% endif %}
+
+
+  {% if away %}
+    <span class="meta-see">
+      <i>on</i>
+      {{ utility.link_if(away.src|typogrify, away.url) }}
+    </span>
   {% endif %}
 </div>
 {% endmacro %}

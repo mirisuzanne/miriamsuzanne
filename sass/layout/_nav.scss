@@ -3,86 +3,95 @@
 
 
 [data-layout='nav'] {
-  @include font-family('alt');
-  background: color('background');
+  align-items: start;
   display: grid;
-  font-size: size('boiler');
-  grid-template-columns: $columns;
-  position: sticky;
-  top: -1px;
-  z-index: 500;
+  grid-auto-flow: column;
+  grid-template-columns: auto;
+  justify-content: center;
 
-  @include before('') {
-    @include position(-1px 0 null 0);
-    border-top: 1px $border-style color('border');
-    grid-column: 1 / 5;
-  }
-
-  @include after('') {
-    @include position(null 0 -1px 0);
-    border-bottom: 1px $border-style color('border');
-    grid-column: 2 / -1;
-  }
-}
-
-
-.nav-inner {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  grid-column: 3 / span 1;
-  margin-left: negative('shim');
-  max-width: size('page');
-  position: relative;
-
-  // active angle
-  @include wrap-content('') {
-    @include position(-1px 0 null null);
-    @include square('half-shim');
-    background: color('background');
-    border: 1px $border-style color('border');
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    transform: translate3d(50%, -50%, 0) rotate(45deg);
-    z-index: 2;
-  }
-
-  @include before(null) {
-    border-color: color('background');
-    top: -2px;
+  @include above('page') {
+    justify-content: end;
+    margin-bottom: neg(--gutter);
   }
 }
 
 
 [data-nav] {
-  &:link,
-  &:visited {
-    flex: 0 0 auto;
+  $r1: calc(93% - var(--shim) * #{(30 + random(60)) / 100});
+  $r2: calc(100% - var(--spacer) * #{(30 + random(60)) / 100});
+  $l1: calc(var(--shim) * #{(30 + random(60)) / 100});
+  $l2: calc(100% - var(--spacer) * #{(30 + random(60)) / 100});
+
+  #{$link} {
+    --r: $r1 $r2;
+    --l: $l1 $l2;
+    border-top: var(--shim) solid var(--action-hover);
+    color: inherit;
+    clip-path: polygon(0 0, 100% 0, var(--r), var(--l));
+    display: block;
+    font-size: var(--small);
+    font-style: italic;
     font-weight: bold;
-    padding: size('half-shim') size('shim');
+    margin: 0 -1px;
+    padding: var(--gutter) var(--shim) var(--spacer);
+    text-decoration: none;
+    transition: background-color 200ms ease, clip-path 300ms ease;
+    writing-mode: vertical-rl;
+
+    @include above('page') {
+      border-top: 0;
+    }
+  }
+
+  #{$focus} {
+    background: var(--action-light);
+    color: var(--action);
   }
 }
 
 
+
+// Locations
+// ---------
+
+
+$nav: (
+  'home'
+  'writing'
+  'speaking'
+  'work'
+  'art'
+  'contact'
+);
+
+
 @each $item in $nav {
+  $i: index($nav, $item);
+  $r1: calc(95% - var(--shim) * #{(30 + random(60)) / 100});
+  $r2: calc(100% - var(--gutter) * #{random()});
+  $l1: calc(var(--shim) * #{(30 + random(60)) / 100});
+  $l2: calc(100% - var(--gutter) * #{random()});
+
+  [data-nav='#{$item}'] {
+    order: length($nav) - $i;
+
+    #{$focus} {
+      --r: $r1 $r2;
+      --l: $l1 $l2;
+    }
+  }
+
+
   [data-location='#{$item}'] {
     [data-nav='#{$item}'] {
-      color: color('text');
-      position: relative;
-
-      // active angle
-      @include wrap-content('') {
-        @include position(null null -1px 50%);
-        @include square('half-shim');
-        background: color('background');
-        border: 1px $border-style color('border');
-        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-        transform: translate3d(-50%, 50%, 0) rotate(-135deg);
-        z-index: 2;
-      }
-
-      @include before(null) {
-        border-color: color('background');
-        bottom: -2px;
+      #{$link} {
+        --r: $r1 $r2;
+        --l: $l1 $l2;
+        --text-shadow: #000;
+        background-color: var(--action-hover);
+        color: var(--background);
+        font-style: normal;
+        font-weight: normal;
       }
     }
   }
