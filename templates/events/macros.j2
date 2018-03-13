@@ -6,17 +6,25 @@
   title,
   event_type=none,
   show='future',
-  slice=none
+  count=none
 ) %}
   {% set pages = all_pages|filter_pages('event_type', 'in', event_type) if event_type else all_pages|filter_pages('events') %}
   {% set events = pages|collect('events', label_with='slug')|sort(attribute='date') %}
+  {% set future = events|filter_events(past=false)|list %}
+  {% set past = events|filter_events(past=true)|reverse|list %}
 
-  {{ show_events(
-    title=title,
-    events=events,
-    show=show,
-    slice=slice
-  ) }}
+  {% if (show == 'video') %}
+    {{ videos(
+      events=events[:count],
+      title=title
+    ) }}
+  {% else %}
+    {% set events = past if (show == 'past') else future %}
+    {{ show_events(
+      title=title,
+      events=events[:count]
+    ) }}
+  {% endif %}
 {% endmacro %}
 
 
@@ -24,115 +32,74 @@
   title,
   slug,
   show='future',
-  slice=none
+  count=none
 ) %}
   {% set page = all_pages|filter_pages('slug', 'eq', slug)|get_page %}
   {% set events = page.events|sort(attribute='date') %}
+  {% set future = events|filter_events(past=false)|list %}
+  {% set past = events|filter_events(past=true)|reverse|list %}
 
-  {{ show_events(
-    title=title,
-    events=events,
-    show=show,
-    slice=slice
-  ) }}
+  {% if (show == 'video') %}
+    {{ videos(
+      events=events[:count],
+      title=title
+    ) }}
+  {% else %}
+    {% set events = past if (show == 'past') else future %}
+    {{ show_events(
+      title=title,
+      events=events[:count]
+    ) }}
+  {% endif %}
 {% endmacro %}
 
 
 {% macro show_events(
   title,
-  events,
-  show='future',
-  slice=none
+  events
 ) %}
-  {% if (show == 'video') %}
-    {{ videos(
+  {% if events %}
+    <h2 data-title="section">
+      <span>{{ title|typogrify }}</span>
+    </h2>
+
+    {{ list(
       events=events,
-      title=title,
-      slice=slice
+      count=count
     ) }}
-  {% endif %}
-
-  {% if (show in ['future', 'past']) %}
-    {% set future = events|filter_events(past=false)|list %}
-    {% set past = events|filter_events(past=true)|reverse|list %}
-    {% set events = past if (show == 'past') else future %}
-
-    {% if events %}
-      <section data-events="{{ show }}" data-align="full" data-grid="full">
-        <h2 class="events-list-title">{{ title|typogrify }}</h2>
-        {{ list(
-          events=events,
-          slice=slice,
-          highlight=(show == 'future')
-        ) }}
-      </section>
-    {% endif %}
   {% endif %}
 {% endmacro %}
 
 
 {% macro videos(
   events,
-  title=none,
-  slice=3
+  title=none
 ) %}
   {% set events = events|selectattr('video')|sort(attribute='date')|reverse|list %}
 
   {% if events|length %}
     <figure data-gallery="events">
       {% if title %}
-        <figcaption class="events-list-title">
+        <figcaption data-title="gallery">
           {{ title|typogrify }}
         </figcaption>
       {% endif %}
       {% for event in events %}
-        {% if (not slice) or (loop.index <= slice) %}
-          {{ event.video|safe }}
-        {% endif %}
+        {{ event.video|safe }}
       {% endfor %}
     </figure>
   {% endif %}
 {% endmacro %}
 
 
-{% macro feature(
-  event
-) %}
-  {% if event %}
-    <article class="feature-event" data-align="full" data-grid="full">
-      {% set page = page if page else all_pages|filter_pages('slug', 'eq', event.slug)|get_page %}
-
-      {{ name(
-        event=event,
-        page=page
-      ) }}
-
-      {{ meta(
-        event=event,
-        page=page
-      ) }}
-
-      <div class="event-summary" data-align="center">
-        {{ page.render_summary() }}
-      </div>
-    </article>
-  {% endif %}
-{% endmacro %}
-
-
 {% macro list(
   events,
-  slice=none,
-  highlight=none
+  count=none
 ) %}
   {% if events|length %}
     {% for event in events %}
-      {% if (not slice) or (loop.index <= slice) %}
-        {% if highlight and loop.first  %}
-          {{ feature(event) }}
-        {% else %}
-          {{ item(event) }}
-        {% endif %}
+      {% if (not count) or (loop.index <= count) %}
+        {{ item(event) }}
       {% endif %}
     {% endfor %}
   {% endif %}
@@ -145,22 +112,17 @@
   {% set event_date = event.date|make_date %}
   {% set page = all_pages|filter_pages('slug', 'eq', event.slug)|get_page %}
 
-  <article class="event" data-align="full" data-grid="full">
-    {{ name(
-      event=event,
-      page=page
-    ) }}
+  {{ name(
+    event=event,
+    page=page
+  ) }}
 
-    {{ meta(
-      event=event,
-      page=page
-    ) }}
+  {{ byline(event) }}
 
-    <div class="event-summary" data-align="center">
-      {{ page.config.brag|rst if page.config.brag else page.render_summary() }}
-      {{ show_links(event) }}
-    </div>
-  </article>
+  <div data-summary="post">
+    {{ page.config.brag|rst if page.config.brag else page.render_summary() }}
+    {{ links(event) }}
+  </div>
 {% endmacro %}
 
 
@@ -168,43 +130,53 @@
   event,
   page
 ) %}
-  <h3 class="event-title" data-align="center">
+  <h3 data-title="post">
     {{ utility.link_if(
       content=event.venue,
-      url=event.url,
-      class='event-venue'
+      url=event.url
     ) }}:
     {{ utility.link_if(
       content=page.title|typogrify,
-      url=content.page_link(page),
-      class='event-slug'
+      url=content.page_link(page)
     ) }}
   </h3>
 {% endmacro %}
 
 
-{% macro meta(
-  event,
-  page=none
+{% macro byline(
+  event
 ) %}
-  {% set event_date = event.date|make_date %}
-  {% set page = page if page else all_pages|filter_pages('slug', 'eq', event.slug)|get_page %}
-
-  <div class="event-meta">
-    <time datetime="{{ event_date }}">
-      {{ event_date|format_date('%B %-d, %Y') }}
-    </time>
-    {% if event.adr %}
-      <span class="adr">
-        <i>in</i>
-        <b>{{ event.adr|typogrify }}</b>
-      </span>
-    {% endif %}
+  <div data-byline="post">
+    {{ date(event) }}
+    {{ adr(event) }}
   </div>
 {% endmacro %}
 
 
-{% macro show_links(
+{% macro date(
+  event
+) %}
+  {% set event_date = event.date|make_date %}
+
+  <time datetime="{{ event_date }}" data-meta="time">
+    {{ event_date|format_date('%B %-d, %Y') }}
+  </time>
+{% endmacro %}
+
+
+{% macro adr(
+  event
+) %}
+  {% if event.adr %}
+    <span data-meta="adr">
+      <i>in</i>
+      <strong>{{ event.adr|typogrify }}</strong>
+    </span>
+  {% endif %}
+{% endmacro %}
+
+
+{% macro links(
   event
 ) %}
   {% set links = {
@@ -214,13 +186,12 @@
   } %}
 
   {% if event.slides or event.video_link or event.transcript %}
-    <div class="event-list-links">
+    <div class="event-links">
       {% for link in links %}
         {% if event[link] %}
           {{ utility.link_if(
             url=event[link],
-            content=links[link],
-            class='event-list-link'
+            content=links[link]
           ) }}
         {% endif %}
       {% endfor %}

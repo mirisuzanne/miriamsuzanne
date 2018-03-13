@@ -24,6 +24,8 @@ press:
 actions:
   - name: 'buy the book'
     url: 'http://www.amazon.com/Jump-Start-Sass-Hugo-Giraudel/dp/0994182678'
+brag: |
+  Get up to speed with Sass in a weekend…
 summary: |
   Learn `Sass`_ in a weekend.
 

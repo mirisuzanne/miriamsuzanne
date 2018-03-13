@@ -13,6 +13,7 @@
   --h1: var(--xlarge);
   --h2: var(--large);
   --gutter: calc(var(--rhythm) * 0.5);
+  --gutter-plus: calc(var(--gutter) * 1.5);
   --shim: calc(var(--gutter) * 0.5);
   --border: calc(var(--gutter) * 0.25);
   --spacer: calc(var(--rhythm) * 2);

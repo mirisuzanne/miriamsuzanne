@@ -7,7 +7,7 @@
 ) {
   transform: rotate(-0.0125turn);
 
-  @include above('page') {
+  @include above('break') {
     @if ($origin == 'top') {
       $origin: 0 0;
     } @else if ($origin == 'bottom') {

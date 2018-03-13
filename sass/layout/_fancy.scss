@@ -11,7 +11,7 @@
   overflow: hidden;
 
 
-  @include above('page') {
+  @include above('break') {
     display: grid;
   }
 }

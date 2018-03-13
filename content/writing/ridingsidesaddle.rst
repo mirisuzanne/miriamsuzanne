@@ -86,6 +86,8 @@ actions:
     url: 'http://www.springgunpress.com/riding-sidesaddle-eric-suzanne/'
   - text: 'art from the novel'
     url: 'http://squareup.com/store/miriamsuzanne/'
+brag: |
+  A queer novel, in fragments of memory…
 summary: |
   .. callmacro:: content/macros.j2#blockquote
     :cite: 'Riding SideSaddle*'

@@ -1,16 +1,6 @@
 public: yes
+grid: yes
 event_type: reading
-after:
-  - include: 'content/_feature.html.j2'
-    slugs:
-      - ['writing/ridingsidesaddle', 'large']
-      - ['writing/csstricks', 'small']
-      - ['writing/twinedfragments', 'small']
-      - ['writing/jumpstartsass', 'large']
-      - ['writing/10myths', 'small']
-      - ['writing/postobsolete', 'small']
-  - include: 'blog/_taglist.html.j2'
-    tag: 'writing'
 summary: |
   Miriam is
   a staff writer at `CSS Tricks`_ and `OddBird`_,
@@ -38,6 +28,20 @@ Writing: Fiction & Otherwise
 ****************************
 
 
+.. callmacro:: content/feature.macros.j2#show
+  :title: 'Featured Writing…'
+  :slugs: [
+      'writing/ridingsidesaddle',
+      'writing/twinedfragments',
+      'art/theater/10myths',
+      'writing/jumpstartsass',
+    ]
+
+
 .. callmacro:: events/macros.j2#by_type
   :title: 'Upcoming Readings'
   :event_type: ['reading']
+
+
+.. callmacro:: blog/macros.j2#taglist
+  :tag: 'writing'

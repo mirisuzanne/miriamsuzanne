@@ -9,10 +9,22 @@
   {% set entries = get_some_recent_blog_entries(count) %}
 
   {% if entries|length %}
-    {{ section(
-      entries=entries,
-      title=title
-    ) }}
+    {{ section(entries, title) }}
+  {% endif %}
+{% endmacro %}
+
+
+{% macro taglist(
+  tag,
+  title="Related Articles",
+  count=5,
+  reverse=false
+) %}
+  {% set entries = get_blog_entries_by_tag(tag) %}
+  {% set entries = entries|reverse if (entries and reverse) else entries %}
+
+  {% if entries %}
+    {{ section(entries[:count], title) }}
   {% endif %}
 {% endmacro %}
 
@@ -21,78 +33,80 @@
   entries,
   title=none
 ) %}
-  <section class="post-list" data-grid="full" data-align="full">
-    {% if title %}
-      <h2 class="post-section-title">
-        <span>{{ title|typogrify }}</span>
-      </h2>
-    {% endif %}
+  {% if title %}
+    <h2 data-title="section">
+      <span>{{ title|typogrify }}</span>
+    </h2>
+  {% endif %}
 
-    {% for entry in entries %}
-      {{ list(entry) }}
-    {% endfor %}
-  </section>
+  {% for entry in entries %}
+    {{ list(entry) }}
+  {% endfor %}
 {% endmacro %}
 
 
 {% macro list(post) %}
-  <h2 class="post-title" data-align="center">
-    <a href="{{ link_to('page', slug=post.slug) }}">
-      {{ post.title|typogrify }}
-    </a>
-  </h2>
+  <h3 data-title="post">
+    {{ utility.link_if(
+      content=post.title|typogrify,
+      url=link_to('page', slug=post.slug)
+    ) }}
+  </h3>
 
   {{ byline(post) }}
 
-  <div class="post-summary" data-align="center">
+  <div data-summary="post">
     {{ post.render_summary()|typogrify }}
   </div>
 {% endmacro %}
 
 
 {% macro byline(post) %}
-<div class="byline">
-  {{ pubdate(post.pub_date) }}
+  <div data-byline="post">
+    {{ pubdate(post.pub_date) }}
+    {{ meta(post) }}
+  </div>
+{% endmacro %}
 
+
+{% macro meta(post) %}
   {% set series = post.config.series %}
-  {% set away = post.config.elsewhere[0] if post.config.elsewhere else none %}
 
   {% if series %}
     {% set series_url = ['/tags/', series|urlencode, '/']|join %}
     {% set series_page = post.config.series_pages|selectattr('title', 'equalto', series)|list %}
     {% set series_url = series_page[0].url if series_page[0] else series_url %}
-    <span class="meta-in">
+    <span data-meta="in">
       <i>in</i>
       {{ utility.link_if(series|typogrify, series_url) }}
     </span>
   {% endif %}
 
-
+  {% set away = post.config.elsewhere[0] if post.config.elsewhere else none %}
   {% if away %}
-    <span class="meta-see">
+    <span data-meta="on">
       <i>on</i>
       {{ utility.link_if(away.src|typogrify, away.url) }}
     </span>
   {% endif %}
-</div>
 {% endmacro %}
 
 
 {% macro pubdate(pub_date) %}
   {% if pub_date %}
-    {% if pub_date %}
-    <time datetime="{{ pub_date.isoformat() }}" pubdate="pubdate">
+    <time datetime="{{ pub_date.isoformat() }}"
+      pubdate="pubdate"
+      data-meta='time'>
       {{ pub_date.strftime("%B %d, %Y") }}
     </time>
-    {% endif %}
   {% endif %}
 {% endmacro %}
 
 
 {% macro tags(taglist) %}
   {% if taglist %}
-    in
-    <span class="tags">
+    <span data-meta="tags">
+      <i>in</i>
       {% for tag in taglist|sort(case_sensitive=true) %}
         {%- if not loop.first %}, {% endif -%}
         <a href="{{ link_to('tag', tag=tag) }}" rel="tag">{{ tag }}</a>

@@ -3,11 +3,9 @@
 
 
 [data-layout='hero'] {
-  margin-bottom: var(--gutter);
-
   @include after('') {
     @include angle('top');
-    background: linear-gradient(to right, var(--text), transparent);
+    background: var(--text);
     grid-column: left / right;
     height: var(--border);
   }
@@ -18,7 +16,7 @@
   @include angle('top');
   grid-column: left / right;
   grid-row: 1 / span 1;
-  margin: -1px 0;
+  margin: var(--border) 0;
 }
 
 
@@ -26,7 +24,7 @@
   @include feature-type;
   align-self: start;
   border-right: var(--border) solid var(--action-hover);
-  grid-column: center / edge;
+  grid-column: center / end;
   grid-row: 1 / span 1;
   justify-self: end;
   max-width: 40vw;
@@ -36,7 +34,7 @@
   transition: transform 200ms ease;
   z-index: 2;
 
-  @include above('page' ('times': 2)) {
+  @include above('full') {
     grid-column: center / right;
     transform: translateX(50%);
   }

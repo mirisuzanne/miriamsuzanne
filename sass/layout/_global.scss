@@ -27,7 +27,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 
-  @include above('page') {
+  @include above('break') {
     grid-template-columns: (
       line('head-start fancy-start') auto
       line('head-end nav-start main-start foot-start') 2fr
@@ -88,17 +88,23 @@ body {
 // Grid Helpers
 // ------------
 
-[data-layout='grid-border'],
-[data-grid='full'] {
+$full-columns: (
+  line('start') 0
+  line('left') minmax(auto, 1fr)
+  line('center') minmax(var(--spacer), var(--page))
+  line('right') minmax(0, 1fr)
+  line('gutter') minmax(0, 0.25fr)
+  line('end')
+);
+
+@mixin full-grid {
   display: grid;
-  grid-column-gap: var(--gutter);
-  grid-template-columns: (
-    line('left') minmax(auto, 1fr)
-    line('center') minmax(var(--spacer), var(--page))
-    line('right') minmax(0, 1fr)
-    line('gutter') minmax(var(--gutter), 0.25fr)
-    line('edge')
-  );
+  grid-column-gap: var(--gutter-plus);
+  grid-template-columns: $full-columns;
+}
+
+[data-grid='full'] {
+  @include full-grid;
 }
 
 [data-align='left'] {
@@ -114,11 +120,11 @@ body {
 }
 
 [data-align='right-edge'] {
-  grid-column: right / edge;
+  grid-column: right / end;
 }
 
 [data-align='center-edge'] {
-  grid-column: center / edge;
+  grid-column: center / end;
 }
 
 [data-align='left-center'] {
@@ -129,39 +135,10 @@ body {
   grid-column: center / gutter;
 }
 
-[data-align='full-gutter'] {
+[data-align='gutters'] {
   grid-column: left / gutter;
 }
 
 [data-align='full'] {
-  grid-column: left / edge;
-}
-
-
-// Grid Borders
-// ------------
-
-[data-layout='grid-border'] {
-  align-items: stretch;
-  align-self: end;
-  background: transparent;
-  border: 0;
-  grid-column: left / edge;
-  grid-template-rows: var(--shim) var(--border);
-  grid-row-gap: var(--border);
-  justify-items: stretch;
-  position: relative;
-
-  @include wrap-content('') {
-    background: var(--text);
-  }
-
-  @include before(null) {
-    grid-column: center / edge;
-    margin-right: neg(--gutter);
-  }
-
-  @include after(null) {
-    grid-column: left / right;
-  }
+  grid-column: start / end;
 }

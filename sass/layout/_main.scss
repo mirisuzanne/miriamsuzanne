@@ -6,3 +6,15 @@
   font-style: italic;
   margin-bottom: var(--gutter);
 }
+
+
+[data-layout='grid'] {
+  @include full-grid;
+  grid-column: start / end;
+  margin-bottom: var(--gutter-plus);
+}
+
+
+[data-layout='rst'] {
+  margin-bottom: var(--gutter-plus);
+}

@@ -1,8 +1,7 @@
 public: yes
 location: home
 hide_title: yes
-align: full
-grid: full
+grid: yes
 image:
   - src: 'headshots/mia-2017.jpg'
     caption: 'My name is Miriam, and this is my face among flowers & leaves…'
@@ -30,13 +29,17 @@ Introducing Miriam Suzanne
 
 
 .. callmacro:: content/feature.macros.j2#show
+  :title: 'Featured Stuff…'
   :slugs: [
-      ['work/oddbird', 'large'],
-      ['writing/ridingsidesaddle', 'large'],
-      ['art/teacupgorilla', 'small'],
-      ['writing/jumpstartsass', 'small'],
-      ['art/grapefruitlab', 'small'],
+      'writing/ridingsidesaddle',
+      'art/music/index',
+      'writing/jumpstartsass',
+      'art/theater/index',
     ]
+
+
+.. callmacro:: events/macros.j2#by_type
+  :title: 'Upcoming Events'
 
 
 .. callmacro:: blog/macros.j2#recent_posts

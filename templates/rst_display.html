@@ -89,10 +89,7 @@
   {% endif %}
 
   {% if rst.fragment %}
-    <div
-      data-layout="rst"
-      data-align="{{ config.align or 'center' }}"
-      {{ utility.attr_if('data-grid', config.grid) }}
+    <div data-layout="{{ 'grid' if config.grid else 'rst' }}"
       {{ utility.attr_if('data-erasure', config.erasure) }} >
 
       {% if config.tagline %}

@@ -1,14 +1,22 @@
 {% import 'utility.macros.j2' as utility %}
+{% import 'content/macros.j2' as content %}
 
 
-{% macro show(slugs=none) %}
+{% macro show(
+  slugs,
+  title=none
+) %}
   <section data-grid="feature">
-    {% for slug in (slugs or kwargs) %}
-      {% set page = slug[0] if slugs else slug %}
-      {% set page = all_pages|filter_pages('slug', 'eq', page)|get_page %}
-      {% set size = slug[1] if slugs else kwargs[slug] %}
-      {% if page and size %}
-        {{ item(page, size) }}
+    {% if title %}
+      <h2 data-title="feature">{{ title|typogrify }}</h2>
+    {% endif %}
+
+    {% for slug in slugs %}
+      {% set page = slug|get_config %}
+      {% if page %}
+        {{ item(page, loop.index) }}
+      {% else %}
+        <div>MISSING: {{ slug }}</div>
       {% endif %}
     {% endfor %}
   </section>
@@ -17,19 +25,31 @@
 
 {% macro item(
   page,
-  size='small'
+  index
 ) %}
   {% set image = page.config.image[0] if page.config.image else none %}
-  {% set src = '/static/pictures/%s' % image.src if image else none %}
-  {% set style = [src or '', scale or '', pos or '']|join if src else none %}
-  {% set url = '/' + page.slug|replace('/index', '') + '/' %}
-  {% set link = page.config.elsewhere[0].url if page.config.elsewhere else url %}
+  {% set url = content.page_link(page) %}
 
-  <article data-feature="{{ size }}" >
-    <h2 class="feature-title">
-      <a class="feature-link" href="{{ link }}">
-        {{ page.title }}
+  {% set large = ((index + 2) is divisibleby(3)) %}
+  {% set size = 'large' if large else 'small' %}
+  {% set flip = ((index + 2) is divisibleby(6)) %}
+  {% set flip = ((index + 3) is divisibleby(6)) or flip %}
+  {% set flip = 'flip' if flip else none %}
+
+  <article data-feature="{{ size }}" {{ utility.attr_if('class', flip) }}>
+    <div class="feature-text">
+      <a href="url" class="feature-wrap">
+        <h3 class="feature-title">
+          {{ page.title|typogrify }}
+        </h3>
+        {% if page.config.brag %}
+          — {{ page.config.brag|rst }}
+        {% endif %}
       </a>
-    </h2>
+    </div>
+
+    <a href="url" class="feature-image">
+      <img src="/static/pictures/{{ image.src }}" alt="{{ image.alt or '' }}" />
+    </a>
   </article>
 {% endmacro %}

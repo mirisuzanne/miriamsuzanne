@@ -9,7 +9,7 @@
   grid-template-columns: auto;
   justify-content: center;
 
-  @include above('page') {
+  @include above('break') {
     justify-content: end;
     margin-bottom: neg(--gutter);
   }
@@ -38,7 +38,7 @@
     transition: background-color 200ms ease, clip-path 300ms ease;
     writing-mode: vertical-rl;
 
-    @include above('page') {
+    @include above('break') {
       border-top: 0;
     }
   }

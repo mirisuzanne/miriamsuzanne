@@ -1,10 +1,5 @@
 public: yes
-location: speaking
-align: full
-grid: full
-after:
-  - include: 'blog/_taglist.html.j2'
-    tag: 'speaking'
+grid: yes
 summary: |
   Miriam is an award-winning speaker --
   presenting on art, code, collaboration, and process --
@@ -32,9 +27,22 @@ summary: |
 Public Speaking
 ***************
 
+
+.. callmacro:: content/feature.macros.j2#show
+  :slugs: [
+      'speaking/talks/agile-systems',
+      'speaking/talks/data-design',
+      'speaking/talks/web-project',
+    ]
+
+
 .. callmacro:: events/macros.j2#by_type
   :title: 'Upcoming talks & workshops'
   :event_type: ['talk']
+
+
+.. callmacro:: blog/macros.j2#taglist
+  :tag: 'speaking'
 
 .. Featured Talks:
 .. - Code Patterns

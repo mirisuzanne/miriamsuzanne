@@ -5,7 +5,7 @@
 [data-layout='header'] {
   margin-left: neg(--shim);
 
-  @include above('page') {
+  @include above('break') {
     writing-mode: vertical-rl;
   }
 }
@@ -27,7 +27,7 @@
       color: var(--action-light);
     }
 
-    @include above('page') {
+    @include above('break') {
       font-size: calc(var(--h2) + 15vh);
       height: 100vh;
       position: sticky;
@@ -54,7 +54,7 @@
   transform: translateX(var(--offset));
   transition: transform 400ms ease;
 
-  @include above('page') {
+  @include above('break') {
     transform: translateY(var(--offset));
   }
 }

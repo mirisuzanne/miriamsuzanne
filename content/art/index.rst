@@ -1,14 +1,6 @@
 public: yes
-location: art
 tagline: 'Music, Design, & Performance'
-after:
-  - include: 'content/_feature.html.j2'
-    slugs:
-      - ['writing/ridingsidesaddle', 'large']
-      - ['art/theater/10myths', 'small']
-      - ['writing/postobsolete', 'large']
-  - include: 'blog/_taglist.html.j2'
-    tag: 'art'
+grid: yes
 summary: |
   Miriam creates music with `Teacup Gorilla`_,
   theater with `Grapefruit Lab`_,
@@ -30,9 +22,21 @@ summary: |
 Cross-Media Art & Performance
 *****************************
 
+.. callmacro:: content/feature.macros.j2#show
+  :slugs: [
+      'writing/ridingsidesaddle',
+      'art/theater/10myths',
+      'writing/postobsolete',
+    ]
+
+
 .. callmacro:: events/macros.j2#by_type
   :title: 'Upcoming Performances'
   :event_type: ['theater', 'music']
+
+
+.. callmacro:: blog/macros.j2#taglist
+  :tag: 'art'
 
 
 .. Orgs:
