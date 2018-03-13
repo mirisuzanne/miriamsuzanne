@@ -1,0 +1,58 @@
+// Grid Sections
+// -------------
+
+[data-layout='grid-border'],
+[data-title='section'] {
+  @include full-grid;
+  align-items: stretch;
+  grid-column: start / end;
+  grid-row-gap: var(--border);
+  justify-items: stretch;
+
+  @include wrap-content('') {
+    background: var(--text);
+  }
+
+  @include before(null) {
+    grid-column: center / end;
+    margin-right: neg(--gutter);
+  }
+
+  @include after(null) {
+    grid-column: start / right;
+
+    @include above('break') {
+      grid-column-start: left;
+    }
+  }
+}
+
+
+[data-layout='grid-border'] {
+  align-self: end;
+  background: transparent;
+  border: 0;
+  grid-template-rows: var(--shim) var(--border);
+}
+
+
+[data-title='section'] {
+  @include angle('top');
+  font-size: var(--xsmall);
+  grid-template-rows: var(--shim) var(--border) auto;
+  margin: var(--spacer) 0;
+  text-transform: uppercase;
+
+  span {
+    grid-row-start: 3;
+    grid-column: left / end;
+  }
+
+  @include before(null) {
+    grid-row-start: 1;
+  }
+
+  @include after(null) {
+    grid-row-start: 2;
+  }
+}
