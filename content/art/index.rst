@@ -22,7 +22,6 @@ Cross-Media Art & Performance
 *****************************
 
 .. callmacro:: content/feature.macros.j2#show
-  :title: 'Featured Art…'
   :slugs: [
       'writing/ridingsidesaddle',
       'art/theater/10myths',

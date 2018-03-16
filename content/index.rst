@@ -29,7 +29,6 @@ Introducing Miriam Suzanne
 
 
 .. callmacro:: content/feature.macros.j2#show
-  :title: 'Featured Stuff…'
   :slugs: [
       'work/oddbird',
       'art/music/index',

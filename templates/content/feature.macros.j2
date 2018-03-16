@@ -3,54 +3,22 @@
 
 
 {% macro show(
-  slugs,
-  title=none
+  slugs
 ) %}
-  <section data-grid="feature">
-    {% if title %}
-      <h2 data-title="feature">{{ title|typogrify }}</h2>
-    {% endif %}
-
+  <nav data-layout="feature">
     {% for slug in slugs %}
-      {% set page = slug|get_config %}
-      {% if page %}
-        {{ item(page, loop.index) }}
-      {% else %}
-        <div>MISSING: {{ slug }}</div>
-      {% endif %}
+      {{ item(slug|get_config) }}
     {% endfor %}
-  </section>
+  </nav>
 {% endmacro %}
 
 
 {% macro item(
-  page,
-  index
+  page
 ) %}
-  {% set image = page.config.image[0] if page.config.image else none %}
-  {% set url = content.page_link(page) %}
-
-  {% set large = ((index + 2) is divisibleby(3)) %}
-  {% set size = 'large' if large else 'small' %}
-  {% set flip = ((index + 2) is divisibleby(6)) %}
-  {% set flip = ((index + 3) is divisibleby(6)) or flip %}
-  {% set flip = 'flip' if flip else none %}
-
-  <a href="{{ url }}" data-feature="{{ size }}"
-    {{ utility.attr_if('class', flip) }}>
-    <div class="feature-text">
-      <div class="caption-wrap">
-        <h3 class="feature-title">
-          {{ page.title|typogrify }}
-        </h3>
-        {% if page.config.brag %}
-          — {{ page.config.brag|rst }}
-        {% endif %}
-      </div>
-    </div>
-
-    <div class="feature-image">
-      <img src="/static/pictures/{{ image.src }}" alt="{{ image.alt or '' }}" />
-    </div>
-  </a>
+  {% if page %}
+    <a href="{{ content.page_link(page) }}" class="feature">
+      {{ page.title|typogrify }}
+    </a>
+  {% endif %}
 {% endmacro %}

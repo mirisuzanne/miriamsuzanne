@@ -29,7 +29,6 @@ Writing: Fiction & Otherwise
 
 
 .. callmacro:: content/feature.macros.j2#show
-  :title: 'Featured Writing…'
   :slugs: [
       'writing/ridingsidesaddle',
       'writing/twinedfragments',
