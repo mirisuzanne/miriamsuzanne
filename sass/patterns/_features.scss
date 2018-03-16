@@ -6,6 +6,10 @@
   display: grid;
   grid-column: left / gutter;
   grid-template-columns: repeat(6, minmax(0, 1fr));
+
+  @include above('page') {
+    margin-bottom: var(--spacer);
+  }
 }
 
 
@@ -14,28 +18,37 @@
   font-size: var(--xsmall);
   grid-column: 1 / -1;
   text-transform: uppercase;
+  margin-bottom: neg(--gutter);
 }
 
 
 [data-feature] {
-  align-items: center;
-  display: inherit;
-  grid-column-gap: inherit;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  #{$link} {
+    align-items: center;
+    display: inherit;
+    grid-column-gap: inherit;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    text-decoration: none;
+  }
 }
 
 
 // Size & Position
-[data-feature~='small'] {
-  grid-column: 1 / span 3;
+[data-feature~='large'] {
+  grid-column: 1 / -1;
 
-  & + & {
-    grid-column-start: auto;
+  @include above('extend') {
+    grid-column: 2 / -2;
   }
 }
 
-[data-feature~='large'] {
-  grid-column: 2 / -2;
+
+[data-feature~='small'] {
+  grid-column: 1 / -1;
+
+  @include above('extend') {
+    grid-column: auto / span 3;
+  }
 }
 
 .feature-image,
@@ -46,32 +59,31 @@
 
 // Text Layout
 .feature-text {
-  border: 0 solid var(--action);
+  border: 0 solid var(--action-hover);
   border-left-width: var(--border);
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 3;
   justify-self: start;
   padding: var(--shim) 0;
   position: relative;
+  text-decoration: none;
   z-index: 2;
 
-  .flip & {
-    border-width: 0 var(--border) 0 0;
-    grid-column-start: 3;
-    justify-self: end;
-    text-align: right;
+  @include below('extend') {
+    :nth-of-type(even) > & {
+      border-width: 0 var(--border) 0 0;
+      grid-column-start: 2;
+      justify-self: end;
+      text-align: right;
+    }
   }
 
-  * {
-    display: inline;
-  }
-}
-
-.feature-wrap {
-  #{$link} {
-    @include feature-type;
-    --text-shadow: var(--action-hover);
-    background-color: var(--action);
-    color: var(--background);
+  @include above('extend') {
+    .flip & {
+      border-width: 0 var(--border) 0 0;
+      grid-column-start: 2;
+      justify-self: end;
+      text-align: right;
+    }
   }
 }
 
@@ -98,12 +110,22 @@ $flip-clip: polygon(
   padding: var(--border);
 
   img {
+    background: var(--background);
     clip-path: inherit;
     width: 100%;
   }
 
-  .flip & {
-    clip-path: $flip-clip;
-    grid-column-start: 1;
+  @include below('extend') {
+    :nth-of-type(even) > & {
+      clip-path: $flip-clip;
+      grid-column-start: 1;
+    }
+  }
+
+  @include above('extend') {
+    .flip & {
+      clip-path: $flip-clip;
+      grid-column-start: 1;
+    }
   }
 }

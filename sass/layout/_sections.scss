@@ -40,7 +40,7 @@
   @include angle('top');
   font-size: var(--xsmall);
   grid-template-rows: var(--shim) var(--border) auto;
-  margin: var(--spacer) 0;
+  margin: var(--spacer) 0 var(--gutter);
   text-transform: uppercase;
 
   span {

@@ -36,20 +36,21 @@
   {% set flip = ((index + 3) is divisibleby(6)) or flip %}
   {% set flip = 'flip' if flip else none %}
 
-  <article data-feature="{{ size }}" {{ utility.attr_if('class', flip) }}>
+  <a href="{{ url }}" data-feature="{{ size }}"
+    {{ utility.attr_if('class', flip) }}>
     <div class="feature-text">
-      <a href="url" class="feature-wrap">
+      <div class="caption-wrap">
         <h3 class="feature-title">
           {{ page.title|typogrify }}
         </h3>
         {% if page.config.brag %}
           — {{ page.config.brag|rst }}
         {% endif %}
-      </a>
+      </div>
     </div>
 
-    <a href="url" class="feature-image">
+    <div class="feature-image">
       <img src="/static/pictures/{{ image.src }}" alt="{{ image.alt or '' }}" />
-    </a>
-  </article>
+    </div>
+  </a>
 {% endmacro %}

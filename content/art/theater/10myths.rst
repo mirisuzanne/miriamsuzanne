@@ -1,7 +1,7 @@
 public: yes
 location: art
 image:
-  - src: 'writing/sidesaddle/10myths.jpg'
+  - src: 'art/theater/10myths.jpg'
 event_type: theater
 events:
   - venue: 'Buntport Theater'

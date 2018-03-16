@@ -1,4 +1,6 @@
 public: yes
+image:
+  - src: 'art/theater/in-between.jpg'
 event_type: theater
 events:
   - venue: 'University of Utah, Rio Mesa Center'

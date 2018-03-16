@@ -4,9 +4,9 @@ elsewhere:
   - url: 'https://oddbird.net/'
     src: 'OddBird'
 image:
-  - src: 'elsewhere/oddbird.svg'
+  - src: 'elsewhere/oddlogo.svg'
 brag: |
-  OddBird provides integrated software **design & development**.
+  Integrated software design & development.
 summary: |
   I founded OddBird with my brothers in 2008.
   We help build and refactor custom mobile & web applications.

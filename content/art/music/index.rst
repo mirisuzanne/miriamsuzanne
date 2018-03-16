@@ -4,7 +4,7 @@ elsewhere:
   - url: 'https://teacupgorilla.com/'
     src: 'Teacup Gorilla'
 image:
-  - src: 'elsewhere/oddbird.svg'
+  - src: 'art/music/video-meta.jpg'
 event_type: music
 events:
   - venue: 'FACEMAN’s 100 Year Storm'
@@ -16,8 +16,10 @@ events:
   - venue: 'Underground Music Showcase'
     url: 'http://theums.com/'
     date: [2015, 7, 25]
+brag: |
+  Dark indie soundscapes with evocative poetry.
 summary: |
-  Dark indie sound-scapes with evocative poetry.
+  Dark indie soundscapes with evocative poetry.
 
 
 **************

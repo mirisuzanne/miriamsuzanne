@@ -1,5 +1,4 @@
 public: yes
-tagline: 'Music, Design, & Performance'
 grid: yes
 summary: |
   Miriam creates music with `Teacup Gorilla`_,
@@ -23,10 +22,12 @@ Cross-Media Art & Performance
 *****************************
 
 .. callmacro:: content/feature.macros.j2#show
+  :title: 'Featured Art…'
   :slugs: [
       'writing/ridingsidesaddle',
       'art/theater/10myths',
-      'writing/postobsolete',
+      'art/music/index',
+      'art/theater/jane-eyre',
     ]
 
 

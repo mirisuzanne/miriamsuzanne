@@ -1,7 +1,7 @@
 public: yes
 tagline: 'Songs & Stories Based on the Classic Novel'
 image:
-  - src: 'writing/jane.jpg'
+  - src: 'art/theater/jane.jpg'
 event_type: theater
 events:
   - venue: 'The Bakery'

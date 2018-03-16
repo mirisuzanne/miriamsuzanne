@@ -21,7 +21,6 @@
 
 
 .hero-caption {
-  @include feature-type;
   align-self: start;
   border-right: var(--border) solid var(--action-hover);
   grid-column: center / end;
@@ -42,9 +41,16 @@
 
 
 .caption-wrap {
+  @include feature-type;
   --text-shadow: #000;
   background: var(--action-hover);
   color: var(--background);
+  display: inline;
+  line-height: 1.3;
+
+  * {
+    display: inline;
+  }
 }
 
 

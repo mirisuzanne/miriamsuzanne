@@ -31,9 +31,9 @@ Introducing Miriam Suzanne
 .. callmacro:: content/feature.macros.j2#show
   :title: 'Featured Stuff…'
   :slugs: [
-      'writing/ridingsidesaddle',
+      'work/oddbird',
       'art/music/index',
-      'writing/jumpstartsass',
+      'writing/ridingsidesaddle',
       'art/theater/index',
     ]
 

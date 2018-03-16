@@ -1,9 +1,11 @@
 public: yes
 tagline: 'digital poem & performance'
-location: 'writing'
-wrap: 'intro'
 image:
-  - src: 'post-obsolete/cover.jpg'
+  - src: 'writing/post-obsolete.jpg'
+brag: |
+  The Book is dead. Long live the book.
+summary: |
+  The Book is dead. Long live the book.
 
 
 **********************
