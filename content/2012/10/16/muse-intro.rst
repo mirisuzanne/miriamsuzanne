@@ -1,6 +1,6 @@
 public: yes
 tags: [minifesto, fuck the muse, art, writing]
-series: 'fuck the muse'
+series: fuck the muse
 summary: |
   We think of creativity as sudden, sexy,
   inexplicable moments of inspiration —

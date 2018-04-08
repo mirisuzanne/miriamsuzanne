@@ -23,10 +23,12 @@
 
 {# Links #}
 {% macro link_if(
-  content,
+  content=none,
   url=none,
   class=none
 ) %}
+  {%- set content = content if (content != none) else caller() -%}
+  
   {%- if url -%}
     <a href="{{ url }}" {{ attr_if('class', class) }}>{{ content|safe }}</a>
   {%- elif class -%}

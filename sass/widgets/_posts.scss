@@ -4,7 +4,7 @@
 
 [data-layout='rst'],
 [data-title='post'],
-[data-byline='post'],
+[data-byline],
 [data-summary='post'] {
   grid-column: left / gutter;
 
@@ -15,6 +15,7 @@
 
 
 [data-title='post'] {
+  align-self: first baseline;
   font-size: var(--h2);
   font-style: italic;
 }
@@ -25,10 +26,12 @@
 }
 
 
-[data-byline="post"] {
+[data-byline] {
+  align-self: first baseline;
   font-size: var(--xsmall);
   font-weight: bold;
   font-variant: small-caps;
+  margin-bottom: var(--gutter-plus);
 
   i {
     font-weight: normal;
@@ -43,6 +46,11 @@
     grid-column: left / center;
     text-align: right;
   }
+}
+
+
+[data-byline='post'] {
+  grid-row-end: span 2;
 }
 
 

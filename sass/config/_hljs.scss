@@ -81,4 +81,10 @@ $highlight-colors: (
   'hljs-gen-subhead': hsl(165, 58%, 42%),
 );
 
-@include herman-add('colors', 'highlight-colors', $highlight-colors, 'color', $highlight-colors);
+@include herman-add(
+  'colors',
+  'highlight-colors',
+  $highlight-colors,
+  get-function('color'),
+  $highlight-colors
+);

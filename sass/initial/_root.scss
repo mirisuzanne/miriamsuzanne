@@ -14,9 +14,11 @@
   --h2: var(--large);
   --gutter: calc(var(--rhythm) * 0.5);
   --gutter-plus: calc(var(--gutter) * 1.5);
+  --double-gutter: calc(var(--gutter) * 2);
   --shim: calc(var(--gutter) * 0.5);
   --border: calc(var(--gutter) * 0.25);
   --spacer: calc(var(--rhythm) * 2);
+  --double-spacer: calc(var(--spacer) * 2);
 
   background-color: color('background');
   background-color: var(--background, color('background'));

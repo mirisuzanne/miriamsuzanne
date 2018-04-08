@@ -3,22 +3,35 @@
 {% import "blog/macros.j2" as blog %}
 {% import "layout/macros.j2" as layout %}
 
-
 {% block title %}{{ tag.name }}{% endblock %}
-
-
-{% block headline %}
-  {{ tag.name|typogrify or super() }}
-{% endblock %}
-
-
 {% block og_url %}{{ get_full_canonical_url(builder, slug=['/tags', tag.name]|join('/')) }}{% endblock %}
+{% block location %}home{% endblock %}
 
+{% set page = all_pages|filter_pages('tag_index', 'eq', tag.name)|get_page %}
 
 {% block body %}
-  <section data-grid="posts">
-    {%- for post in entries %}
-      {{ blog.list(post) }}
-    {%- endfor %}
-  </section>
+  {% if page %}
+    {{ blog.intro(
+      title=page.title,
+      summary=page.render_summary() if page.config.summary else none,
+      hide_title=page.config.hide_title
+    ) }}
+
+    {{ blog.hero(
+      image=page.config.image[0] if page.config.image else none
+    ) }}
+
+    {{ blog.render(
+      byline=blog.byline(page) if page.pub_date else none,
+      fragment=page.render_contents(),
+      config=page.config
+    ) }}
+  {% else %}
+    {{ blog.intro(title=tag.name) }}
+  {% endif %}
+
+  {{ blog.section(
+    title='%s Articles…' % entries|length,
+    entries=entries
+  ) }}
 {% endblock %}

@@ -40,8 +40,20 @@
   @include angle('top');
   font-size: var(--xsmall);
   grid-template-rows: var(--shim) var(--border) auto;
-  margin: var(--spacer) 0 var(--gutter);
+  margin: var(--double-spacer) 0 var(--gutter);
   text-transform: uppercase;
+
+  &:first-child,
+  [data-layout='intro'] + &,
+  [data-layout='hero'] + & {
+    grid-row-gap: 0;
+    grid-template-rows: 0 0 auto;
+    margin-top: 0;
+
+    @include wrap-content(null) {
+      display: none;
+    }
+  }
 
   span {
     grid-row-start: 3;

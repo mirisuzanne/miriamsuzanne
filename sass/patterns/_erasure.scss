@@ -3,21 +3,22 @@
 
 
 [data-erasure] {
-  strong {
-    font-weight: normal;
+  code {
+    font: inherit;
   }
 }
 
 
-// [for='erasure'] {
-//   @include link;
+[for='erasure'] {
+  color: var(--action);
+  cursor: pointer;
+  font-style: italic;
 
-//   &:focus,
-//   &:hover,
-//   &:active {
-//     @include link('hover');
-//   }
-// }
+  #{$focus} {
+    color: var(--action-hover);
+    text-decoration: underline;
+  }
+}
 
 
 [id='erasure'] {
@@ -28,24 +29,14 @@
     ~ [data-erasure] {
       &,
       [href] {
+        --text-shadow: transparent;
         color: transparent;
       }
 
       [for='erasure'],
-      strong {
-        background: rgba(#fff, 0.9);
-        color: color('text');
-        position: relative;
-
-        @include before(']') {
-          position: absolute;
-          transform: translateX(-0.6em);
-        }
-
-        @include after('[') {
-          position: absolute;
-          transform: translateX(0.2em);
-        }
+      code {
+        background: var(--text);
+        color: var(--background);
       }
     }
   }

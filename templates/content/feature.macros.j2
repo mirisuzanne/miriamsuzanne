@@ -3,13 +3,20 @@
 
 
 {% macro show(
-  slugs
+  slugs,
+  title='Featuring…'
 ) %}
-  <nav data-layout="feature">
+  {% if title %}
+    <h2 data-title="section">
+      <span>{{ title }}</span>
+    </h2>
+  {% endif %}
+
+  <section data-grid="feature">
     {% for slug in slugs %}
       {{ item(slug|get_config) }}
     {% endfor %}
-  </nav>
+  </section>
 {% endmacro %}
 
 
@@ -17,8 +24,19 @@
   page
 ) %}
   {% if page %}
-    <a href="{{ content.page_link(page) }}" class="feature">
-      {{ page.title|typogrify }}
-    </a>
+    <article class="feature">
+      <h3 class="feature-title">
+        {{ utility.link_if(
+          url=content.page_link(page),
+          content=page.title,
+          class='feature-link'
+        ) }}
+      </h3>
+      {% if page.config.brag %}
+        <div class="feature-brag">
+          {{ page.config.brag|rst }}
+        </div>
+      {% endif %}
+      </article>
   {% endif %}
 {% endmacro %}

@@ -3,9 +3,12 @@
 
 
 @mixin angle(
-  $origin: null
+  $origin: null,
+  $reverse: false
 ) {
-  transform: rotate(-0.0125turn);
+  $angle: -0.0125turn;
+  $angle: if($reverse, ($angle * -1), $angle);
+  transform: rotate($angle);
 
   @include above('break') {
     @if ($origin == 'top') {

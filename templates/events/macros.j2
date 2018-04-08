@@ -63,10 +63,12 @@
       <span>{{ title|typogrify }}</span>
     </h2>
 
-    {{ list(
-      events=events,
-      count=count
-    ) }}
+    <section data-grid="feature">
+      {{ list(
+        events=events,
+        count=count
+      ) }}
+    </section>
   {% endif %}
 {% endmacro %}
 
@@ -112,41 +114,34 @@
   {% set event_date = event.date|make_date %}
   {% set page = all_pages|filter_pages('slug', 'eq', event.slug)|get_page %}
 
-  {{ name(
-    event=event,
-    page=page
-  ) }}
-
-  {{ byline(event) }}
-
-  <div data-summary="post">
-    {{ page.config.brag|rst if page.config.brag else page.render_summary() }}
-    {{ links(event) }}
-  </div>
+  <article class="feature">
+    {{ name(event) }}
+    {{ brag(event, page) }}
+  </article>
 {% endmacro %}
 
 
 {% macro name(
-  event,
-  page
+  event
 ) %}
-  <h3 data-title="post">
+  <h3 class="feature-title">
     {{ utility.link_if(
       content=event.venue,
       url=event.url
-    ) }}:
-    {{ utility.link_if(
-      content=page.title|typogrify,
-      url=content.page_link(page)
     ) }}
   </h3>
 {% endmacro %}
 
 
-{% macro byline(
-  event
+{% macro brag(
+  event,
+  page
 ) %}
-  <div data-byline="post">
+  <div class="feature-brag">
+    {{ utility.link_if(
+      content=page.title,
+      url=content.page_link(page)
+    ) }} 
     {{ date(event) }}
     {{ adr(event) }}
   </div>
@@ -157,7 +152,8 @@
   event
 ) %}
   {% set event_date = event.date|make_date %}
-
+  
+  <i>on</i>
   <time datetime="{{ event_date }}" data-meta="time">
     {{ event_date|format_date('%B %-d, %Y') }}
   </time>

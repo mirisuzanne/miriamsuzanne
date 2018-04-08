@@ -28,7 +28,7 @@ I'm lucky to have a supportive community around me,
 so I thought I'd write down my most common answers
 to help ease your stress about
 *getting it right*,
-and **ease my stress about**
+and ``ease my stress about``
 answering the same questions over and over.
 
 *These answers are very much my own.
@@ -37,12 +37,12 @@ If you don't know how to relate to another trans person,
 you should talk to them!*
 
 If you are interested in queer art
-**more than queer** answers,
+``more than queer`` answers,
 check out my novel: `Riding SideSaddle*`_.
 It's totally about transition,
-**and totally** not-at-all about transition.
-It's about **bodies** and identities that won't stay put.
-I think you might **enjoy it**.
+``and totally`` not-at-all about transition.
+It's about ``bodies`` and identities that won't stay put.
+I think you might ``enjoy it``.
 
 .. _`Riding SideSaddle*`: http://ridingsidesaddle.com/
 
@@ -50,19 +50,19 @@ I think you might **enjoy it**.
 I heard you shouldn't ask trans people questions...
 ---------------------------------------------------
 
-You should relate to **trans people**
+You should relate to ``trans people``
 the same way you relate to other people.
 Some questions are appropriate,
 and some aren't.
 You already know how to filter what's appropriate:
-**you do** it every day,
+``you do`` it every day,
 in millions of different situations.
 My transness doesn't change the calculation at all.
 If we're really close and talk about everything,
 you can ask me anything!
 If we're not, you can't.
 
-If **you** do have appropriate questions,
+If ``you`` do have appropriate questions,
 I'd love to talk!
 Some questions are better in person,
 but I'm always hanging out on `Twitter`_ as well,
@@ -94,9 +94,9 @@ How do I refer to you in the past?
 ----------------------------------
 
 See above.
-**My name is Miriam**,
+``My name is Miriam``,
 and I use she/her pronouns.
-That name and those pronouns can be used for any time **period**,
+That name and those pronouns can be used for any time ``period``,
 because they refer to me,
 not my age or presentation-at-the-time.
 
@@ -104,37 +104,37 @@ If you went by "Johnny" as a child,
 but now you go by "John",
 and maybe you used your middle name for a few years in High School,
 I don't need to adjust for the exact time period
-**I'm talking about** —
+``I'm talking about`` —
 I can just use your name.
-Your name is **John.**
+Your name is ``John.``
 *Remember when John was a kid?*
 
 Unless my dead name is specifically relevant to the conversation
 (it usually isn't),
 there is no need to use it or mention it.
-Even if you are quoting someone **in the past,**
+Even if you are quoting someone ``in the past,``
 it won't ruin the story to use my current name —
 it will just make things more clear.
-**Who are you talking about?**
+``Who are you talking about?``
 Miriam.
 *Oh, I know her.
 She's right here.*
 
-**You are probably** paraphrasing already,
+``You are probably`` paraphrasing already,
 because your memory isn't that good.
 What's one more editorial adjustment going to hurt?
 
-If my **dead** name is relevant,
+If my ``dead`` name is relevant,
 just make sure you aren't outing me.
 You might not notice,
 but even when people are well-meaning,
 they treat me differently once I've been outed.*
 If they're not well meaning,
-I could be **in real danger**.
+I could be ``in real danger``.
 
 I'm very public,
 and usually happy to be out,
-but not **in every situation**,
+but not ``in every situation``,
 and not when I'm outed by someone else.
 
 \*
@@ -148,7 +148,7 @@ But I have fond/terrible memories of E—
 ---------------------------------------
 
 Those are memories of me,
-and **my name is Miriam**.
+and ``my name is Miriam``.
 I was not a different person then.
 I haven't transtioned lives,
 I've only transitioned what you call me.
@@ -163,7 +163,7 @@ What if I get your name or pronoun wrong?
 
 If you slip up,
 you may feel nervous or upset with yourself.
-**I'm** not **thinking about you** —
+``I'm`` not ``thinking about you`` —
 I'm feeling guilty, sad,
 and worried about `what's going to happen next`_.
 
@@ -186,7 +186,7 @@ you'll get them wrong without even realizing it.
 
 So it's time for everyone to start practicing.
 Make an effort to notice *every pronoun you ever use*.
-It takes some **work**,
+It takes some ``work``,
 but it's worth the effort.
 Once you are paying attention,
 it's much easier to adjust
@@ -200,7 +200,7 @@ Should I update my old blog post or website that mentions you?
 
 Probably.
 I'd love for you to update my name anywhere you can.
-**I'm** not **scouring the interwebs** to find every instance,
+``I'm`` not ``scouring the interwebs`` to find every instance,
 but I might ask you to update my name if I see it.
 Not because |I need to erase| any mention of my past,
 but because it's confusing to refer to a person by a name they don't use.
@@ -214,19 +214,19 @@ What about this old photo I have?
 ---------------------------------
 
 If you have a headshot of me before I started transtion,
-please replace it with **a recent headshot**.
+please replace it with ``a recent headshot``.
 You can find several `on my about page`_.
 
 If you have a photo of us together,
-**or** me in some specific context
+``or`` me in some specific context
 (like at a conference),
 leave it up.
 I don't love old pictures of me,
 but who does?
 That was me,
-and **I'm not interested in**
+and ``I'm not interested in``
 losing all proof of my existence before 2015.
-It's **a trade-off** I'm happy to live with.
+It's ``a trade-off`` I'm happy to live with.
 
 Many trans people will want to remove all old photos,
 and they have *very good reasons for it*.
@@ -243,18 +243,18 @@ You can!
 
 - If you hear someone misgender or deadname me in person,
   use my correct name and pronouns as soon as you can.
-  **It will help** them remember without making a fuss,
+  ``It will help`` them remember without making a fuss,
   and it will help me relax.
 - Again, if I'm around, try not to make a big fuss.
   You can pull them aside later if you have to.
-- If you see **an old** site/post that needs updating,
+- If you see ``an old`` site/post that needs updating,
   feel free to contact the author and point them here.
-- If we're in a group with **people I'm not out to**,
+- If we're in a group with ``people I'm not out to``,
   or you aren't sure,
   don't out me.
 
 If you've known me for a long time,
-you might **have a hard time** updating your perception of me.
+you might ``have a hard time`` updating your perception of me.
 You might think other people see the same thing you do.
 They don't.
 Most people I meet
@@ -277,7 +277,7 @@ specific meanings and political debates
 around trans terminology,
 I recommend starting with
 `Julia Serano`_’s extensive writing on the topic.
-**I recommend everything** Julia has written,
+``I recommend everything`` Julia has written,
 especially her first book: `Whipping Girl`_.
 You can also read
 `Jennifer Boylan`_,
@@ -285,32 +285,32 @@ You can also read
 and `Janet Mock`_,
 to list a few popular ones.
 Books and articles by cis people,
-**about transgender people**,
+``about transgender people``,
 should be taken with salt or avoided entirely.
 
 I call myself trans, transgender, or a trans woman.
-I'm **also gender-queer**, non-binary, and a bunch of other good words.
+I'm ``also gender-queer``, non-binary, and a bunch of other good words.
 I'm transsexual,
 but that one feels like a medical term —
 similar to using "females" when you mean women.
-**You can probably just call me a woman.**
+``You can probably just call me a woman.``
 
-**Some people like** to differentiate
+``Some people like`` to differentiate
 between "sex" and "gender" —
 as though one is biology and the other is identity.
 Don't bother.
 Biology and identity are deeply intertwined,
 and neither of them is binary.
 There is only gender,
-and it is always **a rough approximation of**
+and it is always ``a rough approximation of``
 a million different factors:
 `social, biological, and experienced`_.
 
-**Sex is** something else entirely,
+``Sex is`` something else entirely,
 and I recommend it,
 if you're into that sort of thing.
 
-Stay **safe, kids**.
+Stay ``safe, kids``.
 
 .. _Julia Serano: http://www.juliaserano.com/terminology.html
 .. _`social, biological, and experienced`: http://juliaserano.blogspot.com/2013/11/what-is-gender-artifactualism.html
@@ -318,4 +318,3 @@ Stay **safe, kids**.
 .. _Jennifer Boylan: http://www.jenniferboylan.net/
 .. _Kate Bornstein: http://katebornstein.com/
 .. _Janet Mock: http://janetmock.com/
-

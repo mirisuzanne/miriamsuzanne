@@ -1,5 +1,6 @@
 {% import "utility.macros.j2" as utility %}
 {% import "icon.macros.j2" as icon %}
+{% import "content/macros.j2" as content %}
 
 
 {% macro recent_posts(
@@ -113,4 +114,85 @@
       {%- endfor %}
     </span>
   {% endif %}
+{% endmacro %}
+
+
+{% macro intro(
+  title, 
+  summary=none, 
+  elsewhere=none, 
+  hide_title=none
+) %}
+  <div data-layout="intro" data-align="full" data-grid="full">
+    <h1 data-align="center"
+      class="page-title{{ ' is-hidden' if hide_title else '' }}">
+      {{ title|typogrify }}
+    </h1>
+
+    {% if summary %}
+      <aside class="summary" data-align="center">
+        {{ summary|typogrify }}
+
+        {% if elsewhere %}
+          {% set where = elsewhere[0] %}
+          {% set text = ['Read More on ', where.src]|join %}
+          {{ content.btn(where.url, text) }}
+        {% endif %}
+      </aside>
+    {% endif %}
+
+    <hr data-layout="grid-border" />
+  </div>
+{% endmacro %}
+
+
+{% macro hero(
+  image
+) %}
+  {% if image %}
+    <figure data-layout="hero" data-align="full" data-grid="full">
+      <img src="/static/pictures/{{ image.src }}"
+        alt="{{ image.alt or '' }}"
+        data-align="center-left"
+        class="hero-image">
+      {% if image.caption %}
+        <figcaption class="hero-caption" data-align="right-edge">
+          <span class="caption-wrap">{{ image.caption|typogrify }}</span>
+        </figcaption>
+      {% endif %}
+    </figure>
+  {% endif %}
+{% endmacro %}
+
+
+{% macro render(
+  byline=none,
+  fragment=none,
+  config=none
+) %}
+  {%- for module in config.before -%}
+    {% include module.include %}
+  {%- endfor -%}
+
+  {{ byline or '' }}
+
+  {% if fragment %}
+    {% if config.erasure %}
+      <input type="checkbox" id="erasure">
+    {% endif %}
+
+    <div data-layout="{{ 'grid' if config.grid else 'rst' }}"
+      {{ utility.attr_if('data-erasure', config.erasure) }} >
+
+      {% if config.tagline %}
+        <h2 class="page-tagline">{{ config.tagline|typogrify }}</h2>
+      {% endif %}
+
+      {{ fragment|typogrify }}
+    </div>
+  {% endif %}
+
+  {%- for module in config.after -%}
+    {% include module.include %}
+  {%- endfor -%}
 {% endmacro %}

@@ -16,7 +16,7 @@ summary: |
   .. _web developer: /work/
   .. _writer: /writing/
   .. _artist: /art/
-  .. _bring people together: /why/
+  .. _bring people together: /who/
 
   .. callmacro:: content/macros.j2#btn
     :url: '/contact/'
@@ -28,17 +28,15 @@ Introducing Miriam Suzanne
 **************************
 
 
-.. callmacro:: content/feature.macros.j2#show
-  :slugs: [
-      'work/oddbird',
-      'art/music/index',
-      'writing/ridingsidesaddle',
-      'art/theater/index',
-    ]
-
-
 .. callmacro:: events/macros.j2#by_type
   :title: 'Upcoming Events'
 
 
-.. callmacro:: blog/macros.j2#recent_posts
+.. callmacro:: content/feature.macros.j2#show
+  :slugs: [
+      'work/oddbird',
+      'art/music/index',
+      'art/theater/index',
+      'writing/ridingsidesaddle',
+      'writing/jumpstartsass',
+    ]

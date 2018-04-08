@@ -870,16 +870,12 @@ nav:
   - title: 'art'
     slug: 'art'
     url: '/art/'
+  - title: 'about'
+    slug: 'who'
+    url: '/who/'
   - title: 'contact'
     slug: 'contact'
     url: '/contact/'
-
-
-# tags
-event_tags:
-  - publication: 'writing'
-    album: 'albums'
-    film: 'film'
 
 
 # site
@@ -910,7 +906,8 @@ active_modules: [
   ]
 canonical_url: 'http://www.miriamsuzanne.com/'
 output_folder: '../gh-pages'
+rst_writer: html5writer
 template_path: '../templates'
 modules:
   blog:
-    index_url: '/blog/'
+    index_url: '/'

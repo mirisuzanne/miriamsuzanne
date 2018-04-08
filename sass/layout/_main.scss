@@ -10,8 +10,8 @@
 
 [data-layout='grid'] {
   @include full-grid;
+  grid-auto-flow: row dense;
   grid-column: start / end;
-  margin-bottom: var(--gutter-plus);
 }
 
 
