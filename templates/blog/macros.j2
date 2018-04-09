@@ -54,7 +54,7 @@
     ) }}
   </h3>
 
-  {{ byline(post) }}
+  {{ byline(post, 'post') }}
 
   <div data-summary="post">
     {{ post.render_summary()|typogrify }}
@@ -62,8 +62,11 @@
 {% endmacro %}
 
 
-{% macro byline(post) %}
-  <div data-byline="post">
+{% macro byline(
+  post,
+  type='rst'
+) %}
+  <div data-byline="{{ type }}">
     {{ pubdate(post.pub_date) }}
     {{ meta(post) }}
   </div>

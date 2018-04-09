@@ -1,6 +1,7 @@
 public: yes
 tags: ['writing', 'Transition']
 series: 'Transition'
+tagline: 'A Very Incomplete Glossary'
 erasure: yes
 image:
   - src: '2016/clarifications.jpg'
@@ -8,14 +9,10 @@ image:
 summary: |
   There's a lot of language that gets thrown around,
   but much of it comes loaded with
-  |simplified| baggage and misconceptions.
+  over-simplified baggage and misconceptions.
   Here are a few that have been on my mind –
   from *gender identity* to *biological sex*,
   *transition*, *passing*, and *visibility*.
-
-  .. |simplified| raw:: html
-    
-      <label for="erasure">over-simplified</label>
 
 
 Some Clarifications on Trans Language
@@ -38,7 +35,11 @@ but refers to two very ``different concepts`` —
 often interchangeably,
 and without distinction.
 
-1. Our conscious acts of identifying
+.. |conscious acts| raw:: html
+  
+    <label for="erasure">conscious acts</label>
+
+1. Our |conscious acts| of identifying
    with a gender or sexuality —
    male, female, non-binary, fluid,
    straight, bi, gay,

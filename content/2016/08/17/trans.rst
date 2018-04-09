@@ -1,7 +1,7 @@
 public: yes
 erasure: yes
-tags: ['gender', 'personal', 'trans']
-slug: 'trans'
+tags: ['gender', 'personal', 'Transition']
+series: 'Transition'
 image:
   - src: '2016/mia-wtf.jpg'
 summary: |
@@ -19,17 +19,6 @@ summary: |
 
 Miriam: A How-To Guide
 ======================
-
-There are some questions that come up again and again
-if you are trans.
-A few of those questions are terrible,
-but most of them are well-intentioned.
-I'm lucky to have a supportive community around me,
-so I thought I'd write down my most common answers
-to help ease your stress about
-*getting it right*,
-and ``ease my stress about``
-answering the same questions over and over.
 
 *These answers are very much my own.
 I am not attempting to speak for anyone else.

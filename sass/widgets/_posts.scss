@@ -4,7 +4,7 @@
 
 [data-layout='rst'],
 [data-title='post'],
-[data-byline],
+[data-byline='post'],
 [data-summary='post'] {
   grid-column: left / gutter;
 
@@ -26,17 +26,9 @@
 }
 
 
-[data-byline] {
+[data-byline='post'] {
   align-self: first baseline;
-  font-size: var(--xsmall);
-  font-weight: bold;
-  font-variant: small-caps;
-  margin-bottom: var(--gutter-plus);
-
-  i {
-    font-weight: normal;
-    font-variant: normal;
-  }
+  grid-row-end: span 2;
 
   @include above('extend') {
     align-self: start;
@@ -44,13 +36,9 @@
     grid-auto-flow: row;
     grid-auto-rows: auto;
     grid-column: left / center;
+    margin-bottom: var(--gutter-plus);
     text-align: right;
   }
-}
-
-
-[data-byline='post'] {
-  grid-row-end: span 2;
 }
 
 

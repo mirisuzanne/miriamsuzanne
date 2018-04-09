@@ -33,6 +33,7 @@ Introducing Miriam Suzanne
 
 
 .. callmacro:: content/feature.macros.j2#show
+  :title: 'Featured Projects…'
   :slugs: [
       'work/oddbird',
       'art/music/index',

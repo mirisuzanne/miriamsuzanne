@@ -33,6 +33,7 @@ $text-sizes: (
   'medium': calc(1em + 0.25vw),
   'small': 1em ('text-ratio': -0.25),
   'xsmall': 1em ('text-ratio': -0.675),
+  'code': 1em ('text-ratio': -1),
 );
 
 @include herman-sizes('text-sizes', $text-sizes);

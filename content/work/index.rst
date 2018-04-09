@@ -1,7 +1,18 @@
 public: yes
-after:
-  - include: 'blog/_taglist.html.j2'
-    tag: 'code'
+grid: yes
+feature:
+  - title: Herman
+    url: http://oddbird.net/herman/
+    brag: 'Get your design & development teams on the same page'
+  - title: True
+    url: http://oddbird.net/true/
+    brag: 'Integrated unit-tests for Sass'
+  - title: Accoutrement
+    url: http://oddbird.net/accoutrement/
+    brag: 'A suite of Sass tools for managing design systems'
+  - title: Susy
+    url: http://oddbird.net/susy/
+    brag: 'Web layout power-tools, with grids-on-demand'
 summary: |
   Miriam is a co-founder at `OddBird`_,
   with 15 years experience
@@ -27,11 +38,13 @@ Web Development & Consulting
 ****************************
 
 
-.. Featured:
-.. - OddBird
-.. - Herman
-.. - True
-.. - Susy
+.. callmacro:: content/feature.macros.j2#show
+  :title: 'Featured Projects…'
+  :slugs: ['work/oddbird', 'writing/csstricks']
+  :yaml: 'work/index'
+
+.. callmacro:: blog/macros.j2#taglist
+  :tag: 'code'
 
 .. Clients:
 .. - Mozilla

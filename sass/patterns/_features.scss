@@ -26,7 +26,7 @@
       transform-origin: center;
 
       @include above('extend') {
-        --end: span #{random(4) + 6};
+        --end: span #{random(5) + 7};
       }
     }
   }

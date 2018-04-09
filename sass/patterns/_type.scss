@@ -13,8 +13,42 @@ hr:not([data-layout='grid-border']) {
 }
 
 
-.amp {
-  @include amp;
+[data-layout='rst'] {
+  margin-top: var(--double-gutter);
+
+  h1 {
+    font-size: var(--h1);
+  }
+
+  h2 {
+    font-size: var(--h2);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-style: italic;
+    margin-bottom: var(--shim);
+    margin-top: var(--double-gutter);
+  }
+}
+
+
+[data-byline] {
+  font-size: var(--xsmall);
+  font-weight: bold;
+  font-variant: small-caps;
+
+  i {
+    font-weight: normal;
+    font-variant: normal;
+  }
+}
+
+
+[data-byline='rst'] {
+  @include angle('top');
+  grid-column: left / right;
 }
 
 
