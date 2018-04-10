@@ -10,11 +10,11 @@ summary: |
   Miriam won the `2017 True West Award`_
   for `10 Myths on the Proper Application of Beauty Products`_.
 
-  .. _Teacup Gorilla: #@@@
-  .. _Grapefruit Lab: #@@@
-  .. _The LIDA Project: #@@@
-  .. _2017 True West Award: #@@@
-  .. _10 Myths on the Proper Application of Beauty Products: #@@@
+  .. _Teacup Gorilla: http://teacupgorilla.com/
+  .. _Grapefruit Lab: http://grapefruitlab.com/
+  .. _The LIDA Project: http://lida.org/
+  .. _2017 True West Award: /2016/12/18/true-west-award/
+  .. _10 Myths on the Proper Application of Beauty Products: /art/theater/10myths/
 
 
 *****************************

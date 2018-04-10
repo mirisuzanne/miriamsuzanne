@@ -27,7 +27,6 @@ summary: |
 Public Speaking
 ***************
 
-
 .. callmacro:: content/feature.macros.j2#show
   :slugs: [
       'speaking/talks/agile-systems',

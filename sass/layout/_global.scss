@@ -46,38 +46,15 @@ body {
       [head-end]
     );
   }
-
-  @include before('') {
-    background-image: repeating-linear-gradient(
-      -45deg,
-      yellow,
-      yellow 1em,
-      black 1em,
-      black 2em
-    );
-    grid-area: message;
-    position: relative;
-    text-align: center;
-    z-index: -1;
-  }
-
-  @include after('Under construction…') {
-    @include font-family('code');
-    align-self: center;
-    background: yellow;
-    border-radius: var(--half-shim);
-    display: block;
-    font-size: var(--code);
-    grid-area: message;
-    justify-self: center;
-    margin: var(--half-shim);
-    padding: 0 var(--shim);
-  }
 }
 
 
 // Template Areas
 // --------------
+
+[data-layout='message'] {
+  grid-area: message;
+}
 
 [data-layout='header'],
 [data-layout='nav'],

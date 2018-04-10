@@ -1,0 +1,28 @@
+// Sitewide Message
+// ================
+
+[data-layout='message'] {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    yellow,
+    yellow 1em,
+    black 1em,
+    black 2em
+  );
+  display: grid;
+  position: relative;
+  text-align: center;
+  z-index: -1;
+}
+
+.message {
+  @include font-family('code');
+  align-self: center;
+  background: yellow;
+  border-radius: var(--half-shim);
+  display: block;
+  font-size: var(--code);
+  justify-self: center;
+  margin: var(--half-shim);
+  padding: 0 var(--shim);
+}

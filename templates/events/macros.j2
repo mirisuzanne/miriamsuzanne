@@ -141,7 +141,7 @@
     {{ utility.link_if(
       content=page.title,
       url=content.page_link(page)
-    ) }} 
+    ) }}
     {{ date(event) }}
     {{ adr(event) }}
   </div>
@@ -152,7 +152,7 @@
   event
 ) %}
   {% set event_date = event.date|make_date %}
-  
+
   <i>on</i>
   <time datetime="{{ event_date }}" data-meta="time">
     {{ event_date|format_date('%B %-d, %Y') }}

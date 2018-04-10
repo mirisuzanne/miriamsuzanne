@@ -1,10 +1,10 @@
 public: yes
 event_type: talk
-events:
-  - venue: 'CSSConf Argentina'
-    url: 'https://cssconfar.com/'
-    date: [2018, 8, 18]
-    adr: 'Buenos Aires, Argentina'
+.. events:
+..   - venue: 'CSSConf Argentina'
+..     url: 'https://cssconfar.com/'
+..     date: [2018, 8, 18]
+..     adr: 'Buenos Aires, Argentina'
 brag: |
   Learn to **integrate design and code**
   to isolate components and

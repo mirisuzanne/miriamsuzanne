@@ -5,6 +5,14 @@
 
 
 {% block layout %}
+  {% if config.message %}
+    <aside data-layout="message">
+      <div class="message">
+        {{ config.message|rst }}
+      </div>
+    </aside>
+  {% endif %}
+
   <header data-layout="header">
     <a href="/" rel="home">
       <b class="first">Miriam</b>

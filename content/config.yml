@@ -843,15 +843,9 @@
 #     summary: 'Studied theater, writing, and visual art'
 
 
-# series pages
-series_pages:
-  - title: 'Twined Fragments'
-    url: '/writing/twinedfragments/'
-  - title: 'Resistance Tour'
-    url: '/2016/12/09/resistence-tour/'
-  - title: 'Fuck the Muse'
-    url: '/writing/fuckthemuse/'
-
+# message
+message: |
+  Under construction…
 
 # navigation
 nav:
@@ -882,7 +876,6 @@ nav:
 author: 'Miriam Suzanne'
 email: 'miriam@miriamsuzanne.com'
 description: 'The art and code of Miriam Suzanne.'
-wrap: 'rst'
 
 copyright:
   - name: 'Miriam Eric Suzanne'

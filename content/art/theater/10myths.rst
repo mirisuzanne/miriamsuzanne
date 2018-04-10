@@ -10,6 +10,14 @@ events:
     end: [2016, 3, 26]
 quotes:
   - text: |
+      Suzanne wanted to tell a story that
+      assumed queerness from start to finish,
+      while giving the characters free reign over their identities.
+    credit: 'John Moore'
+    source: '2016 True West Award'
+    slug: 'truewest'
+    url: 'http://www.denvercenter.org/blog-posts/news-center/2016/12/18/2016-true-west-award-miriam-suzanne'
+  - text: |
       The play makes us think about the dizzying variety
       of possible physical variations to human genitalia
       and their spiritual and psychological consequences;
