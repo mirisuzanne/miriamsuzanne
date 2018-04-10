@@ -6,14 +6,14 @@ publication:
   - name: 'SitePoint'
     url: 'https://www.sitepoint.com/premium/books/jump-start-sass'
     date: [2016, 3, 22]
-press:
-  - quote: |
+quotes:
+  - text: |
       Miriam and Hugo have become some of the most notable
       creators of Sass plugins and best practices.
     credit: 'Chris Eppstein'
     source: 'Sass Core Developer'
     url: 'http://sass-lang.com/'
-  - quote: |
+  - text: |
       This is hands down the best book on Sass
       if you want to learn the most important parts of the Sass language
       that will help you architect a good application.

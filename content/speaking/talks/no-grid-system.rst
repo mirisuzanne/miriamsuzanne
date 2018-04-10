@@ -1,10 +1,13 @@
 public: yes
 event_type: talk
-location: speaking
 slides: 'https://www.oddbooksapp.com/book/css-layout'
 image:
   - src: 'pages/devconf-best.jpg'
 events:
+  - venue: 'Beyond Tellerand'
+    url: 'https://beyondtellerrand.com/events/duesseldorf-2018'
+    date: [2018, 5, 7]
+    adr: 'Düsseldorf, Germany'
   - venue: 'Clarity Conference'
     url: 'https://www.clarityconf.com/2017'
     date: [2017, 11, 28]
@@ -24,18 +27,17 @@ events:
     video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/mDRfFEcj3-Q" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>'
     feature: true
 brag: |
-  The creator of `Susy`_,
+  The creator of `Susy`_
   provides **practical techniques**
   for avoiding grid systems.
   **"Best Of" CSS Dev Conf, 2017**.
 
   .. _Susy: /susy/
 summary: |
-  `Miriam`_
-  (the creator of `Susy`_)
-  will show you the history of web layout,
+  A complete guide to the history of web layout,
   how grid systems work,
-  and practical tip to avoid using them.
+  and practical tip to avoid using them --
+  from the creator of `Susy`_.
   For those few cases where a grid really is required,
   we'll talk about the best ways to roll your own,
   so you're not relying on a bloated library to make decisions for you.
@@ -43,7 +45,6 @@ summary: |
   from flexbox to CSS Grid —
   and how to get started with only a few lines of code.
 
-  .. _Miriam: /authors/miriam/
   .. _Susy: /susy/
 
 

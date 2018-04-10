@@ -1,19 +1,18 @@
 public: yes
 event_type: talk
-location: speaking
 events:
   - venue: 'Front Range Front-End'
     url: 'https://www.meetup.com/front-range-front-end/events/zwjmwlyxgbhb/'
     date: [2018, 4, 5]
     adr: 'Denver, CO'
-  - venue: 'Tech Confluence'
-    url: 'https://www.meetup.com/TechConfluence/events/nxcfhlyxfbcc/'
-    date: [2018, 3, 21]
-    adr: 'Denver, CO'
   - venue: 'VueConf US'
     url: 'http://vueconf.us/'
     date: [2018, 3, 26]
     adr: 'New Orleans, LA'
+  - venue: 'Tech Confluence'
+    url: 'https://www.meetup.com/TechConfluence/events/nxcfhlyxfbcc/'
+    date: [2018, 3, 21]
+    adr: 'Denver, CO'
 brag: |
   Agile tools for **maintaining style guides**
   and component libraries

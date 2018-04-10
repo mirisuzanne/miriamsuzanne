@@ -8,8 +8,8 @@ events:
     url: 'http://buntport.com/archive/10myths.htm'
     date: [2016, 3, 4]
     end: [2016, 3, 26]
-press:
-  - quote: |
+quotes:
+  - text: |
       The play makes us think about the dizzying variety
       of possible physical variations to human genitalia
       and their spiritual and psychological consequences;
@@ -18,21 +18,21 @@ press:
     source: 'Westword'
     url: 'http://www.westword.com/arts/review-10-myths-on-the-proper-application-of-beauty-products-is-a-beaut-of-a-show-7678439'
     date: [2016, 3, 9]
-  - quote: |
+  - text: |
       Definitely a production worth writing about,
       talking about, and going to see.
     credit: 'Berlin Sylvestre'
     source: 'Out Front'
     url: 'http://www.outfrontonline.com/culture/buntport-theater-presents-10-myths-proper-application-beauty-products/'
     date: [2016, 3, 7]
-  - quote: |
+  - text: |
       An oddly satisfying dark comedy,
       a meditation on bodies, humanity, love and loss.
     credit: 'Joanne Ostrow'
     source: 'The Denver Post'
     url: 'http://www.denverpost.com/theater/ci_29605936/buntports-dark-comedy-10-myths-an-oddly-satisfying'
     date: [2016, 3, 7]
-  - quote: "The soul of the piece lies in the gender-blending love and acceptance that flows like water through these relationships."
+  - text: "The soul of the piece lies in the gender-blending love and acceptance that flows like water through these relationships."
     credit: 'Tracy Shaffer'
     source: 'Huffington Post'
     url: 'http://www.huffingtonpost.com/tracy-shaffer/buntport-theatres-new-sho_b_9386846.html'
@@ -60,6 +60,9 @@ press:
 actions:
   - name: 'read the script'
     url: 'https://oddbooksapp.com/book/10-myths'
+brag: |
+  Award-winning stage adaptation of
+  Riding SideSaddle*.
 summary: |
   A stage adaptation of my novel,
   `Riding SideSaddle*`_,
@@ -74,3 +77,7 @@ summary: |
 *****************************************************
 10 Myths on the Proper Application of Beauty Projects
 *****************************************************
+
+.. callmacro:: content/macros.j2#get_quotes
+  :page: 'art/theater/10myths'
+

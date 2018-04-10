@@ -5,7 +5,11 @@ tag_index: 'Twined Fragments'
 wrap: 'intro'
 image:
   - src: '2017/she-tried.jpg'
-summary: | 
+brag:
+  An ongoing collaboration
+  of memory-fragments
+  from two trans-feminine authors.
+summary: |
   `Twined Fragments`_ is an ongoing collaboration with
   `Allison Washington`_.
   Each fragment is sparked by the previous,

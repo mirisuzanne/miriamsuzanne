@@ -12,37 +12,66 @@ body {
 
 body {
   display: grid;
-  grid-gap: var(--gutter);
+  grid-column-gap: var(--gutter);
   grid-template-columns: (
-    line('head-start nav-start main-start foot-start')
-    minmax(0, 100vw)
-    line('head-end nav-end intro-end hero-end main-end foot-end')
+    [message-start head-start nav-start main-start foot-start] minmax(0, 100vw)
+    [message-end head-end nav-end intro-end hero-end main-end foot-end]
   );
   grid-template-rows: (
-    line('head-start') auto
-    line('head-end nav-start') auto
-    line('nav-end main-start') 1fr
-    line('main-end foot-start') auto line('foot-end head-end')
+    [message-start] auto
+    [message-end head-start] auto
+    [head-end nav-start] auto
+    [nav-end main-start] 1fr
+    [main-end foot-start] auto
+    [foot-end head-end]
   );
   min-height: 100vh;
   overflow-x: hidden;
 
   @include above('break') {
     grid-template-columns: (
-      line('head-start fancy-start') auto
-      line('head-end nav-start main-start foot-start') 2fr
-      line('fancy-end') 1fr
-      line('nav-end') minmax(var(--gutter), var(--spacer))
-      line('main-end foot-end')
+      [message-start head-start fancy-start] auto
+      [head-end nav-start main-start foot-start] 2fr
+      [fancy-end] 1fr
+      [nav-end] minmax(var(--gutter), var(--spacer))
+      [message-end main-end foot-end]
     );
     grid-template-rows: (
-      line('head-start nav-start fancy-start') auto
-      line('nav-end main-start') auto
-      line('fancy-end') 1fr
-      line('main-end foot-start') auto
-      line('foot-end') var(--spacer)
-      line('head-end')
+      [head-start message-start] auto
+      [message-end nav-start fancy-start] auto
+      [nav-end main-start] auto
+      [fancy-end] 1fr
+      [main-end foot-start] auto
+      [foot-end] var(--spacer)
+      [head-end]
     );
+  }
+
+  @include before('') {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      yellow,
+      yellow 1em,
+      black 1em,
+      black 2em
+    );
+    grid-area: message;
+    position: relative;
+    text-align: center;
+    z-index: -1;
+  }
+
+  @include after('Under construction…') {
+    @include font-family('code');
+    align-self: center;
+    background: yellow;
+    border-radius: var(--half-shim);
+    display: block;
+    font-size: var(--code);
+    grid-area: message;
+    justify-self: center;
+    margin: var(--half-shim);
+    padding: 0 var(--shim);
   }
 }
 
@@ -89,12 +118,12 @@ body {
 // ------------
 
 $full-columns: (
-  line('start') 0
-  line('left') minmax(auto, 1fr)
-  line('center') minmax(var(--spacer), var(--page))
-  line('right') minmax(0, 1fr)
-  line('gutter') minmax(0, 0.25fr)
-  line('end')
+  [start] 0
+  [left] minmax(auto, 1fr)
+  [center] minmax(var(--spacer), var(--page))
+  [right] minmax(0, 1fr)
+  [gutter] minmax(0, 0.25fr)
+  [end]
 );
 
 @mixin full-grid {

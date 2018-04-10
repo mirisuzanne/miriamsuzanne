@@ -1,6 +1,10 @@
 public: yes
 event_type: talk
-location: speaking
+events:
+  - venue: 'CSSConf Argentina'
+    url: 'https://cssconfar.com/'
+    date: [2018, 8, 18]
+    adr: 'Buenos Aires, Argentina'
 brag: |
   Learn to **integrate design and code**
   to isolate components and
@@ -16,9 +20,9 @@ summary: |
   without all the invasive Javascript.
 
 
-Data-Driven Design in CSS
-=========================
+Dynamic CSS: Layouts & Beyond
+=============================
 
 - Basics for understanding Custom Properties & ``Calc()``.
-- Practical examples and use-cases for data-driven design.
+- Practical examples and use-cases for data-infused design.
 - Integrating with CSS Grids to build layouts on-the-fly.

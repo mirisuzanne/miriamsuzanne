@@ -6,7 +6,7 @@ event_type: theater
 events:
   - venue: 'Buntport Theater'
     date: [2015, 9, 24]
-press:
+quotes:
   - credit: 'Eden Lane'
     source: '9 News'
     url: 'http://legacy.9news.com/story/life/2015/09/22/museum-and-theater-team-up-for-unique-collaboration/72653748/'

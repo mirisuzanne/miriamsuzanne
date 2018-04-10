@@ -45,8 +45,8 @@ events:
     adr: 'San Francisco, CA'
     video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/b4vSy1e1ai8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>'
     slides: 'https://oddbooksapp.com/release/ab1987b6-7d5f-42e4-b0ff-e7312cb345f6'
-press:
-  - quote: |
+quotes:
+  - text: |
       I was fascinated by the idea that a (web) style guide deliverable
       could take different forms.
     credit: 'Chris Coyier'

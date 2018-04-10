@@ -3,8 +3,8 @@ tags: ['press', 'award', 'Riding Sidesaddle*', 'Teacup Gorilla']
 series: 'Riding Sidesaddle*'
 image:
   - src: 'sidesaddle/true-west-award.jpg'
-clipping:
-  - quote: |
+quotes:
+  - text: |
       Suzanne wanted to tell a story that
       assumed queerness from start to finish,
       while giving the characters free reign over their identities.

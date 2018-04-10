@@ -1,11 +1,9 @@
 public: yes
 event_type: talk
-location: speaking
 events:
-  - venue: 'Beyond Tellerand'
-    url: 'https://beyondtellerrand.com/events/duesseldorf-2018'
-    date: [2018, 5, 7]
-    adr: 'Düsseldorf, Germany'
+  - venue: 'AIGA Colorado'
+    date: [2018, 4, 26]
+    adr: 'Denver, CO'
 summary: |
   This event has been scheduled,
   but the title & topic

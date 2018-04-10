@@ -33,8 +33,67 @@
 {% endmacro %}
 
 
+{% macro get_quotes(
+  page,
+  slug=none,
+  count=none
+) %}
+  {% set page = page|get_config or page %}
+  {% set client = page.config.client[0] if page.config.client else none %}
+
+  {% if slug %}
+    {% set quote = page.config.quotes|selectattr('slug', 'equalto', slug)|list %}
+    {% set quote = quote[0] %}
+    {{ blockquote(
+      content=quote.text,
+      cite=cite(quote.credit, quote.source, quote.url, quote.date)
+    ) }}
+  {% else %}
+    {% for quote in page.config.quotes|selectattr('text') %}
+      {% if (count == none) or (loop.index0 < count) %}
+        {{ blockquote(
+          content=quote.text,
+          cite=cite(quote.credit, quote.source, quote.url, quote.date)
+        ) }}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endmacro %}
+
+
+{% macro cite(
+  credit,
+  source,
+  url,
+  date
+) %}
+  {{ utility.link_if(
+    content=credit,
+    url=none if source else url
+  ) }}{{ ',' if source else '' }}
+  {% if source %}
+    {{ utility.link_if(
+      content=source,
+      url=url
+    ) }}
+  {% endif %}
+  {% if date %}
+    [{{ utility.time(date, 'short') }}]
+  {% endif %}
+{% endmacro %}
+
+
+{% macro get_role(role=none, client=none) -%}
+  {{ [role, 'at', client]|join(' ') if (role and client and role != 'User') else role }}
+{%- endmacro %}
+
+
 {%- macro page_link(page) -%}
-  {%- set slug = page.slug|remove_index -%}
-  {%- set url = '/' if (slug == 'index') else ['/', slug, '/']|join -%}
-  {{ url }}
+  {%- if page.config.tag_index -%}
+    {{ ['/tags/', page.config.tag_index|urlencode, '/']|join }}
+  {%- else -%}
+    {%- set slug = page.slug|remove_index -%}
+    {%- set url = '/' if (slug == 'index') else ['/', slug, '/']|join -%}
+    {{ url }}
+  {%- endif -%}
 {%- endmacro -%}

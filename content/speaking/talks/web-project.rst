@@ -1,10 +1,9 @@
 public: yes
 event_type: talk
-location: speaking
 slides: 'https://www.oddbooksapp.com/book/web-projects'
 events:
   - venue: 'Boost Biz Ed'
-    url: 'https://www.meetup.com/BoostBizEd/'
+    url: 'https://boostbized.com/events/how-to-plan-a-web-project'
     date: [2018, 7, 11]
     adr: 'Westminster, CO'
   - venue: 'EdTech Colorado'
@@ -14,7 +13,7 @@ events:
 brag: |
   A **non-technical guide**
   for taking your project from concept to launch,
-  without ever losing site of the goals.
+  without ever losing sight of the goals.
 summary: |
   **Are you looking to expand your web presence,
   or develop a new application?**

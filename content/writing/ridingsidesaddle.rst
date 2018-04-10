@@ -52,8 +52,8 @@ events:
   - venue: 'Syntax Physic Opera [book release]'
     url: 'http://physicopera.com/'
     date: [2015, 4, 2]
-press:
-  - quote: |
+quotes:
+  - text: |
       It’s a new and wonderful adventure each time,
       a story of outcasts, their caretaker,
       and the friendship and love they find with each other.
@@ -61,12 +61,12 @@ press:
     source: 'Michigan Quarterly Review'
     url: 'http://www.michiganquarterlyreview.com/2015/06/on-riding-sidesaddle-an-interview-with-eric-suzanne/'
     date: [2015, 6, 1]
-  - quote: |
+  - text: |
       The characters, ideas, story are exposed, raw, alive --
       merging masculine and feminine into some kind of mystical marriage.
     credit: 'Erin Rollman & Brian Colonna'
     source: 'Buntport Theater'
-  - quote: |
+  - text: |
       I was just digging everything,
       and didn't want the night to be over.
     credit: 'Sam O’Daniel'
@@ -89,27 +89,57 @@ actions:
 brag: |
   A queer novel, in fragments of memory…
 summary: |
-  .. callmacro:: content/macros.j2#blockquote
-    :cite: 'Riding SideSaddle*'
+  The fragmented memories of Herman & Sam –
+  two people sharing one body –
+  as they navigate fluid genders and relationships.
+  Loosely based
+  on the life of Margaret Clap,
+  and the myth of Hermaphroditus.
 
-    Sam gasps for air, and finds herself alone.
-    Herman gasps for air, and finds herself alone.
-    They wipe the mud from their body.
+  .. callmacro:: content/macros.j2#btn
+    :url: 'https://www.oddbooksapp.com/book/ridingsidesaddle'
+
+    Read the novel online
 
 
 ******************
 Riding SideSaddle*
 ******************
 
+.. callmacro:: content/macros.j2#blockquote
+  :cite: 'Riding SideSaddle*'
 
-The fragmented memories of Herman & Sam –
-two people sharing one body –
-as they navigate fluid genders and relationships.
-Loosely based
-on the life of Margaret Clap,
-and the myth of Hermaphroditus.
+  Sam gasps for air, and finds herself alone.
+  Herman gasps for air, and finds herself alone.
+  They wipe the mud from their body.
 
-.. _Riding SideSaddle*: http://www.springgunpress.com/riding-sidesaddle-miriam-suzanne/
+.. callmacro:: content/macros.j2#btn
+  :url: 'http://www.springgunpress.com/riding-sidesaddle-eric-suzanne/'
+
+  Buy the novel
+
+
+Adapted for the Stage
+=====================
+
+Riding SideSaddle was adapted for the stage by Buntport Theater,
+with original music by Teacup Gorilla.
+
+.. raw:: html
+
+  <iframe style="border: 0; width: 100%; height: 310px;" src="https://bandcamp.com/EmbeddedPlayer/album=1383025660/size=large/bgcol=ffffff/linkcol=ef3939/artwork=small/transparent=true/" seamless><a href="http://teacupgorilla.bandcamp.com/album/the-holes-they-leave">The Holes They Leave by Teacup Gorilla</a></iframe>
+
+.. callmacro:: content/macros.j2#btn
+  :url: 'https://oddbooksapp.com/book/10-myths'
+
+  Read the stage adaptation
+
+
+Press
+=====
+
+.. callmacro:: content/macros.j2#get_quotes
+  :page: 'writing/ridingsidesaddle'
 
 
 Credits

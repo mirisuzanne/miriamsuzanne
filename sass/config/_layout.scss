@@ -20,8 +20,3 @@
     transform-origin: $origin;
   }
 }
-
-
-@function line($name) {
-  @return unquote('[#{$name}]')
-}
