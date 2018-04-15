@@ -6,6 +6,11 @@
   margin-left: neg(--shim);
 
   @include above('break') {
+    align-self: start;
+    height: 100vh;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
     writing-mode: vertical-rl;
   }
 }
@@ -17,7 +22,6 @@
     font-size: calc(var(--h2) + 15vw);
     grid-template-columns: repeat(2, 1fr);
     line-height: 0.75;
-    overflow: hidden;
 
     .first {
       color: var(--accent);
@@ -29,9 +33,6 @@
 
     @include above('break') {
       font-size: calc(var(--h2) + 15vh);
-      height: 100vh;
-      position: sticky;
-      top: 0;
     }
   }
 
