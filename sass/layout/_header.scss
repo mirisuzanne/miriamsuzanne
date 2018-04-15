@@ -20,9 +20,8 @@
     display: grid;
     font-size: calc(var(--h2) + 15vw);
     grid-template-columns: repeat(2, 1fr);
-    height: 100%;
     line-height: 0.75;
-    writing-mode: vertical-rl;
+    text-decoration: none;
 
     .first {
       color: var(--accent);
@@ -34,6 +33,8 @@
 
     @include above('break') {
       font-size: calc(var(--h2) + 15vh);
+      height: 100%;
+      writing-mode: vertical-rl;
     }
   }
 
