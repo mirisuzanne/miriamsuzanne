@@ -7,7 +7,10 @@
   grid-gap: var(--gutter);
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-content: center;
-  margin: var(--double-gutter) var(--spacer) var(--double-spacer);
+  justify-self: center;
+  margin: var(--double-gutter) 0 var(--double-spacer);
+  max-width: 100%;
+  width: var(--wide);
 }
 
 .video {

@@ -89,7 +89,8 @@
       </h2>
     {% endif %}
 
-    <figure data-gallery="video">
+    {% set single = true if (events|length == 1) else none %}
+    <figure data-gallery="video" {{ utility.attr_if('data-single', single) }}>
       {% for event in events %}
         <div class="video">
           {{ event.video|safe }}

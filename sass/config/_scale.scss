@@ -45,6 +45,7 @@ $text-sizes: (
 /// @sizes output-only
 $page-sizes: (
   'page': 28rem,
+  'wide': 'page' ('times': 1.5),
   'break': 'page' ('convert': 'browser-ems'),
   'extend': 'break' ('times': 1.5),
   'full': 'break' ('times': 2),
