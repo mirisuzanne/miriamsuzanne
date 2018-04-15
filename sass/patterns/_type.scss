@@ -5,8 +5,8 @@
 hr:not([data-layout='grid-border']) {
   @include amp;
   @include after('& & &');
-  color: var(--border);
-  margin: var(--gutter) 0;
+  color: var(--callout);
+  margin: var(--spacer) 0;
   padding: 0;
   text-align: center;
   width: 100%;
@@ -14,8 +14,6 @@ hr:not([data-layout='grid-border']) {
 
 
 [data-layout='rst'] {
-  margin-top: var(--double-gutter);
-
   h1 {
     font-size: var(--h1);
   }
@@ -34,35 +32,22 @@ hr:not([data-layout='grid-border']) {
 }
 
 
-[data-byline] {
-  font-size: var(--xsmall);
-  font-weight: bold;
-  font-variant: small-caps;
-
-  i {
-    font-weight: normal;
-    font-variant: normal;
-  }
-}
-
-
-[data-byline='rst'] {
-  @include angle('top');
-  grid-column: left / right;
-}
-
-
 blockquote,
 .pullquote {
   @include feature-type;
-  margin-bottom: var(--gutter);
+  margin: var(--double-gutter) 0;
+}
 
-  .attribution {
-    display: block;
-    font-size: 0.8rem;
-    font-style: normal;
-    font-weight: bold;
-    margin-top: neg(--shim);
+
+.attribution {
+  display: block;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: neg(--shim);
+
+  time {
+    font-weight: normal;
   }
 }
 

@@ -1,0 +1,22 @@
+// Gallery
+// =======
+
+[data-gallery] {
+  display: grid;
+  grid-column: left / gutter;
+  grid-gap: var(--gutter);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  margin: var(--double-gutter) var(--spacer) var(--double-spacer);
+}
+
+.video {
+  padding-top: percentage(9/16);
+  position: relative;
+
+  > * {
+    @include position(0);
+    height: 100%;
+    width: 100%;
+  }
+}

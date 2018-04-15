@@ -7,9 +7,11 @@
   slugs=none,
   yaml=none
 ) %}
+  <hr data-layout="grid-border" />
+
   {% if title %}
     <h2 data-title="section">
-      <span>{{ title }}</span>
+      {{ title }}
     </h2>
   {% endif %}
 
@@ -28,7 +30,10 @@
     {% endif %}
 
     {% if yaml %}
-      {% set links = yaml|get_config('feature') %}
+      {% set file = yaml[0] %}
+      {% set key = yaml[1] or 'feature' %}
+      {% set links = file|get_config(key) %}
+
       {% for link in links %}
         {{ item(
           title=link.title,

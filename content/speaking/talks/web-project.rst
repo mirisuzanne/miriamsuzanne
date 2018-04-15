@@ -10,6 +10,16 @@ events:
     url: 'https://www.meetup.com/EducelerateCO/'
     date: [2017, 12, 12]
     adr: 'Denver, CO'
+after:
+  - include: 'events/_by-page.html.j2'
+    title: 'Upcoming Appearances'
+  - include: 'events/_by-page.html.j2'
+    title: 'Featured Video'
+    show: 'video'
+    count: 1
+  - include: 'events/_by-page.html.j2'
+    title: 'Past Appearances'
+    show: 'past'
 brag: |
   A **non-technical guide**
   for taking your project from concept to launch,

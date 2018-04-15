@@ -7,6 +7,7 @@
   grid-row-gap: var(--spacer);
   grid-template-columns: repeat(20, minmax(1px, 1fr));
   justify-content: center;
+  margin: var(--double-gutter) 0 var(--double-spacer);
 
   @include above('extend') {
     grid-column: center / gutter;
@@ -15,13 +16,12 @@
 
 .feature {
   @for $i from 1 through 10 {
-    &:nth-child(#{$i}) {
+    &:nth-child(#{$i}n) {
       --start: #{random(7)};
       --end: #{random(4) * -1};
       $deg: random() * 0.025turn;
       $neg: if(random(2) == 1, 1, -1);
       grid-column: var(--start) / var(--end);
-      grid-row-start: $i; 
       transform: rotate(#{$deg * $neg});
       transform-origin: center;
 

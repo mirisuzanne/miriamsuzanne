@@ -1,0 +1,8 @@
+{% import "events/macros.j2" as events %}
+
+{{ events.by_page(
+  title=module.title or 'Events…',
+  slug=module.slug or slug,
+  show=module.show or 'future',
+  count=module.count or none
+) }}

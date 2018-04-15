@@ -78,3 +78,6 @@ Code Patterns for Pattern Making
 - Using pre-processors for pattern-making in CSS and HTML.
 - Designing and integrating toolkits that force pattern-making.
 - Examples of what we've done, where we've failed, and where we're headed.
+
+.. callmacro:: content/macros.j2#get_quotes
+  :page: 'speaking/talks/code-patterns'

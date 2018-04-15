@@ -55,7 +55,8 @@
   {{ blog.render(
     byline=blog.byline(ctx) if ctx.pub_date else none,
     fragment=rst.fragment,
-    config=config
+    config=config,
+    slug=ctx.slug
   ) }}
 
   {% if config.series %}

@@ -1,3 +1,7 @@
 {% import 'content/feature.macros.j2' as feature %}
 
-{{ feature.show(module.slugs) }}
+{{ feature.show(
+  title=module.title or 'Featuring…',
+  slugs=module.slugs,
+  yaml=module.yaml
+) }}

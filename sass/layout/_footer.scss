@@ -3,19 +3,16 @@
 
 
 [data-layout='footer'] {
+  margin-top: var(--spacer);
+}
+
+.footer {
   @include angle('top');
   font-size: var(--small);
   font-style: italic;
-  margin-top: var(--spacer);
-  padding: var(--gutter) 0;
-  position: relative;
+  margin-bottom: var(--gutter);
 
   p {
     margin: 0;
   }
-}
-
-
-.footer-content {
-  margin-top: var(--gutter);
 }

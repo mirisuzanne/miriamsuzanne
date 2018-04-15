@@ -5,7 +5,7 @@
 
 {% block title %}{{ tag.name }}{% endblock %}
 {% block og_url %}{{ get_full_canonical_url(builder, slug=['/tags', tag.name]|join('/')) }}{% endblock %}
-{% block location %}home{% endblock %}
+{% block location %}writing{% endblock %}
 
 {% set page = all_pages|filter_pages('tag_index', 'eq', tag.name)|get_page %}
 

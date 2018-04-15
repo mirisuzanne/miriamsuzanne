@@ -2,7 +2,6 @@
 // =====
 
 
-[data-layout='rst'],
 [data-title='post'],
 [data-byline='post'],
 [data-summary='post'] {
@@ -18,11 +17,30 @@
   align-self: first baseline;
   font-size: var(--h2);
   font-style: italic;
+  margin-top: var(--double-gutter);
 }
 
 
 [data-summary=post] {
   margin-bottom: var(--gutter-plus);
+}
+
+
+[data-byline] {
+  font-size: var(--xsmall);
+  font-weight: bold;
+  font-variant: small-caps;
+
+  i {
+    font-weight: normal;
+    font-variant: normal;
+  }
+}
+
+
+[data-byline='rst'] {
+  @include angle('top');
+  grid-column: left / right;
 }
 
 

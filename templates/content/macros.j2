@@ -33,6 +33,26 @@
 {% endmacro %}
 
 
+{% macro quote_section(
+  page,
+  slug=none,
+  count=none,
+  title=none
+) %}
+  <hr data-layout="grid-border" />
+
+  {% if title %}
+    <h2 data-title="section">
+      {{ title }}
+    </h2>
+  {% endif %}
+
+  <div data-layout="rst">
+    {{ get_quotes(page, slug, count) }}
+  </div>
+{% endmacro %}
+
+
 {% macro get_quotes(
   page,
   slug=none,
@@ -50,7 +70,7 @@
     ) }}
   {% else %}
     {% for quote in page.config.quotes|selectattr('text') %}
-      {% if (count == none) or (loop.index0 < count) %}
+      {% if (not count) or (loop.index0 < count) %}
         {{ blockquote(
           content=quote.text,
           cite=cite(quote.credit, quote.source, quote.url, quote.date)

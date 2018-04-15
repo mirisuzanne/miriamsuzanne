@@ -9,6 +9,16 @@ events:
     date: [2018, 4, 5]
     adr: 'Denver, CO'
     slides: 'https://www.oddbooksapp.com/book/mobile-prototype'
+after:
+  - include: 'events/_by-page.html.j2'
+    title: 'Upcoming Appearances'
+  - include: 'events/_by-page.html.j2'
+    title: 'Featured Video'
+    show: 'video'
+    count: 1
+  - include: 'events/_by-page.html.j2'
+    title: 'Past Appearances'
+    show: 'past'
 brag: |
   A project-manager's reflections
   on **human-centered problem-solving**,

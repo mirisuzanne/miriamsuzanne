@@ -2,7 +2,7 @@ public: yes
 grid: yes
 summary: |
   Miriam creates music with `Teacup Gorilla`_,
-  theater with `Grapefruit Lab`_,
+  `theater`_ with `Grapefruit Lab`_,
   and visual art for albums, book-covers, and galleries.
   Formerly Artistic Director of *New World Arts*,
   and Technical Director
@@ -10,8 +10,9 @@ summary: |
   Miriam won the `2017 True West Award`_
   for `10 Myths on the Proper Application of Beauty Products`_.
 
-  .. _Teacup Gorilla: http://teacupgorilla.com/
-  .. _Grapefruit Lab: http://grapefruitlab.com/
+  .. _Teacup Gorilla: /art/music/
+  .. _theater: /art/theater/grapefruitlab/
+  .. _Grapefruit Lab: /art/theater/grapefruitlab/
   .. _The LIDA Project: http://lida.org/
   .. _2017 True West Award: /2016/12/18/true-west-award/
   .. _10 Myths on the Proper Application of Beauty Products: /art/theater/10myths/
@@ -21,11 +22,22 @@ summary: |
 Cross-Media Art & Performance
 *****************************
 
+
 .. callmacro:: content/feature.macros.j2#show
+  :title: 'Featured Media'
+  :slugs: [
+      'art/theater/index',
+      'art/theater/grapefruitlab',
+      'art/music/index',
+    ]
+
+
+.. callmacro:: content/feature.macros.j2#show
+  :title: 'Featured Projects'
   :slugs: [
       'writing/ridingsidesaddle',
       'art/theater/10myths',
-      'art/music/index',
+      'art/music/holes',
       'art/theater/jane-eyre',
     ]
 
@@ -37,14 +49,3 @@ Cross-Media Art & Performance
 
 .. callmacro:: blog/macros.j2#taglist
   :tag: 'art'
-
-
-.. Orgs:
-.. - Teacup Gorilla
-.. - Grapefruit Lab
-
-.. Features:
-.. - Riding SideSaddle*
-.. - The Holes They Leave
-.. - Kingdom Come
-.. - Cover Art

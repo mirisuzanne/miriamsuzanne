@@ -10,13 +10,13 @@ summary: |
   and the `University of West Virginia`_
   Digital Humanities graduate program.
 
-  .. _DjangoCon US: #@@@
-  .. _CSS Dev Conf: #@@@
-  .. _Best of 2017: #@@@
-  .. _Frontend Zurich: #@@@
-  .. _VueConf US: #@@@
-  .. _Beyond Tellerand: #@@@
-  .. _University of West Virginia: #@@@
+  .. _DjangoCon US: https://2017.djangocon.us/
+  .. _CSS Dev Conf: http://2017.cssdevconf.com/
+  .. _Best of 2017: https://blog.cssdevconf.com/slides-and-resources-from-css-dev-conf-2017-new-orleans-8e2a5edb06b0#2b07
+  .. _Frontend Zurich: http://frontendconf.ch/
+  .. _VueConf US: http://vueconf.us/
+  .. _Beyond Tellerand: https://beyondtellerrand.com/events/duesseldorf-2018
+  .. _University of West Virginia: http://cal.lib.virginia.edu/event/3088981
 
   .. callmacro:: content/macros.j2#btn
     :url: '/contact/'
@@ -27,39 +27,30 @@ summary: |
 Public Speaking
 ***************
 
+.. callmacro:: content/macros.j2#quote_section
+  :page: 'speaking/talks/agile-systems'
+  :slug: 'sarah_edo'
+
+.. callmacro:: events/macros.j2#by_type
+  :title: 'Upcoming Appearances…'
+  :event_type: ['talk']
+
+.. callmacro:: events/macros.j2#by_type
+  :title: 'Videos…'
+  :event_type: ['talk']
+  :show: 'video'
+  :count: 2
+
 .. callmacro:: content/feature.macros.j2#show
+  :title: 'Featured Talks & Workshops…'
   :slugs: [
-      'speaking/talks/agile-systems',
       'speaking/talks/data-design',
+      'speaking/talks/agile-systems',
+      'speaking/talks/no-grid-systems',
       'speaking/talks/web-project',
     ]
 
-
 .. callmacro:: events/macros.j2#by_type
-  :title: 'Upcoming talks & workshops'
+  :title: 'Past Appearances…'
   :event_type: ['talk']
-
-
-.. callmacro:: blog/macros.j2#taglist
-  :tag: 'speaking'
-
-.. Featured Talks:
-.. - Code Patterns
-.. - Don't Use My Grid System
-.. - Playing with CSS
-.. - Custom Properties for Love & Profit
-
-.. Featured Conferences:
-.. - CSS Conf
-.. - Frontend Zurich
-.. - Clarity Conference
-.. - DjangoCon US
-.. - CSS Dev Conf
-
-.. Upcoming Events:
-.. - etc
-.. - etc
-
-.. Past Events:
-.. - etc
-.. - etc
+  :show: 'past'

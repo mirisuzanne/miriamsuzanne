@@ -3,20 +3,25 @@
 
 
 [data-layout='hero'] {
-  @include after('') {
-    @include angle('top');
-    background: var(--text);
-    grid-column: left / right;
-    height: var(--border);
-  }
+  display: grid;
+  grid: inherit;
+  grid-column: start / end;
 }
 
-
-.hero-image {
+.hero-wrap {
   @include angle('top');
   grid-column: left / right;
   grid-row: 1 / span 1;
-  margin: var(--border) 0;
+  padding: var(--border) 0;
+  text-align: center;
+}
+
+.hero-image {
+  margin: 0 auto;
+
+  &[src$='.svg'] {
+    margin: var(--shim) auto;
+  }
 }
 
 
@@ -50,46 +55,5 @@
 
   * {
     display: inline;
-  }
-}
-
-
-// Animating My Face
-// -----------------
-
-@keyframes draw-logo {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-
-@keyframes fill-logo {
-  from {
-    fill-opacity: 0;
-  }
-
-  to {
-    fill-opacity: 1;
-  }
-}
-
-
-@keyframes fade-logo-outline {
-  to {
-    stroke-width: 0;
-  }
-}
-
-
-.face {
-  padding: var(--shim);
-
-  [data-location='home'] & {
-    animation: draw-logo 5s 1 ease-out both, fill-logo 4s 3s 1 ease-in-out both, fade-logo-outline 3s 3s 1 ease-in-out both;
-    stroke: var(--action);
-    stroke-dasharray: 800;
-    stroke-dashoffset: 800;
-    stroke-width: 1;
   }
 }

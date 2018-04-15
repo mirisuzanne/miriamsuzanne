@@ -13,6 +13,28 @@ events:
     url: 'https://www.meetup.com/TechConfluence/events/nxcfhlyxfbcc/'
     date: [2018, 3, 21]
     adr: 'Denver, CO'
+after:
+  - include: 'events/_by-page.html.j2'
+    title: 'Upcoming Appearances'
+  - include: 'events/_by-page.html.j2'
+    title: 'Featured Video'
+    show: 'video'
+    count: 1
+  - include: 'events/_by-page.html.j2'
+    title: 'Past Appearances'
+    show: 'past'
+quotes:
+  - text: |
+      Every time I hear `@mirisuzanne`_ talk
+      I learn a ton and laugh a ton.
+      She’s an amazing speaker.
+      Watch this talk when it’s published!
+
+      .. _`@mirisuzanne`: http://twitter.com/mirisuzanne
+    credit: Sarah Drasner
+    source: 'Sr. Developer Advocate at Microsoft'
+    url: https://twitter.com/sarah_edo/status/979023728611905536
+    slug: sarah_edo
 brag: |
   Agile tools for **maintaining style guides**
   and component libraries

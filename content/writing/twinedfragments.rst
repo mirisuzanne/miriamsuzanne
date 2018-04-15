@@ -1,5 +1,4 @@
 public: yes
-tagline: 'a collaborative reflection'
 location: 'writing'
 tag_index: 'Twined Fragments'
 wrap: 'intro'

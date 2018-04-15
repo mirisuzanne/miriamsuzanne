@@ -1,10 +1,20 @@
 public: yes
 event_type: talk
-.. events:
-..   - venue: 'CSSConf Argentina'
-..     url: 'https://cssconfar.com/'
-..     date: [2018, 8, 18]
-..     adr: 'Buenos Aires, Argentina'
+events:
+  - venue: 'CSSConf Argentina'
+    url: 'https://cssconfar.com/'
+    date: [2018, 8, 18]
+    adr: 'Buenos Aires, Argentina'
+after:
+  - include: 'events/_by-page.html.j2'
+    title: 'Upcoming Appearances'
+  - include: 'events/_by-page.html.j2'
+    title: 'Featured Video'
+    show: 'video'
+    count: 1
+  - include: 'events/_by-page.html.j2'
+    title: 'Past Appearances'
+    show: 'past'
 brag: |
   Learn to **integrate design and code**
   to isolate components and

@@ -2,7 +2,7 @@ public: yes
 event_type: talk
 slides: 'https://www.oddbooksapp.com/book/css-layout'
 image:
-  - src: 'pages/devconf-best.jpg'
+  - src: 'talks/devconf-best.jpg'
 events:
   - venue: 'Beyond Tellerand'
     url: 'https://beyondtellerrand.com/events/duesseldorf-2018'
@@ -26,6 +26,16 @@ events:
     slides: 'https://www.oddbooksapp.com/book/djangocon-layout'
     video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/mDRfFEcj3-Q" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>'
     feature: true
+after:
+  - include: 'events/_by-page.html.j2'
+    title: 'Upcoming Appearances'
+  - include: 'events/_by-page.html.j2'
+    title: 'Featured Video'
+    show: 'video'
+    count: 1
+  - include: 'events/_by-page.html.j2'
+    title: 'Past Appearances'
+    show: 'past'
 brag: |
   The creator of `Susy`_
   provides **practical techniques**

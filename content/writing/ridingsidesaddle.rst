@@ -156,6 +156,6 @@ by `Buntport Theater`_ and `Teacup Gorilla`_.
 .. _SpringGun Press: http://springgunpress.com
 .. _released online: http://oddbooksapp.com/book/ridingsidesaddle
 .. _OddBird: http://oddbird.net/
-.. _adapted for the stage: #@@@
+.. _adapted for the stage: /art/theater/10myths/
 .. _Buntport Theater: http://buntport.com/
 .. _Teacup Gorilla: http://teacupgorilla.com/

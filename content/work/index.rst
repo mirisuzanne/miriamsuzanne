@@ -1,6 +1,27 @@
 public: yes
 grid: yes
-feature:
+clients:
+  - title: 'CoachHub'
+    url: 'http://oddbird.net/work/coachhub'
+    brag: |
+      Integrated health coaching suite,
+      used by the **US Coast Guard**
+  - title: 'Quarq Race Intelligence'
+    url: 'https://quarqrace.com/'
+    brag: |
+      Real-time race state-of-play and analytics,
+      used by **Ironman** & **Enduro** races
+  - title: 'MedCurbside'
+    url: 'http://medcurbside.com'
+    brag: |
+      Clinical knowledge crowd-sourcing
+      maintained by practicing healthcare professionals
+  - title: 'MozTrap'
+    url: 'http://oddbird.net/work/'
+    brag: |
+      Distributed quality-assurance tools
+      used by Mozilla product testers
+oss:
   - title: Herman
     url: http://oddbird.net/herman/
     brag: 'Get your design & development teams on the same page'
@@ -23,10 +44,10 @@ summary: |
   author of SitePoint's `Jump Start Sass`_,
   and staff-writer for `CSS Tricks`_.
 
-  .. _OddBird: #@@@
-  .. _Susy: #@@@
-  .. _Jump Start Sass: #@@@
-  .. _CSS Tricks: #@@@
+  .. _OddBird: /work/oddbird/
+  .. _Susy: http://oddbird.net/susy/
+  .. _Jump Start Sass: /writing/jumpstartsass/
+  .. _CSS Tricks: /writing/csstricks/
 
   .. callmacro:: content/macros.j2#btn
     :url: 'http://oddbird.net/'
@@ -37,18 +58,13 @@ summary: |
 Web Development & Consulting
 ****************************
 
+.. callmacro:: content/feature.macros.j2#show
+  :title: 'Open-Source Projects…'
+  :yaml: ['work/index', 'oss']
 
 .. callmacro:: content/feature.macros.j2#show
-  :title: 'Featured Projects…'
-  :slugs: ['work/oddbird', 'writing/csstricks']
-  :yaml: 'work/index'
+  :title: 'Featured Clients…'
+  :yaml: ['work/index', 'clients']
 
 .. callmacro:: blog/macros.j2#taglist
   :tag: 'code'
-
-.. Clients:
-.. - Mozilla
-.. - ORCAS
-.. - RedBull
-.. - SRAM
-.. - Lab06

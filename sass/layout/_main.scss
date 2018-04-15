@@ -9,12 +9,19 @@
 
 
 [data-layout='grid'] {
-  @include full-grid;
+  display: grid;
+  grid: inherit;
   grid-auto-flow: row dense;
   grid-column: start / end;
 }
 
 
 [data-layout='rst'] {
-  margin-bottom: var(--gutter-plus);
+  grid-column: left / gutter;
+  margin-bottom: var(--double-spacer);
+  margin-top: var(--double-gutter);
+
+  @include above('break') {
+    grid-column: center / right;
+  }
 }

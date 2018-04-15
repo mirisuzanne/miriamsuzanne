@@ -3,7 +3,7 @@ location: 'who'
 tagline: "Some Kind of Manifesto…"
 erasure: yes
 image:
-  - src: 'headshots/mia-smirk.jpg'
+  - src: 'headshots/face.svg'
 summary: |
   **Miriam**
   is an author, performer, musician, designer, and web developer —

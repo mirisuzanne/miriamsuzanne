@@ -35,8 +35,9 @@
   title=none
 ) %}
   {% if title %}
+    <hr data-layout="grid-border" />
     <h2 data-title="section">
-      <span>{{ title|typogrify }}</span>
+      {{ title|typogrify }}
     </h2>
   {% endif %}
 
@@ -126,25 +127,22 @@
   elsewhere=none,
   hide_title=none
 ) %}
-  <div data-layout="intro" data-align="full" data-grid="full">
-    <h1 data-align="center"
-      class="page-title{{ ' is-hidden' if hide_title else '' }}">
+  <div data-layout="intro" data-align="center">
+    <h1 class="page-title{{ ' is-hidden' if hide_title else '' }}">
       {{ title|typogrify }}
     </h1>
 
     {% if summary %}
-      <aside class="summary" data-align="center">
+      <aside class="summary">
         {{ summary|typogrify }}
 
         {% if elsewhere %}
           {% set where = elsewhere[0] %}
-          {% set text = ['Read More on ', where.src]|join %}
+          {% set text = [where.action or 'Read More on', ' ', where.src]|join %}
           {{ content.btn(where.url, text) }}
         {% endif %}
       </aside>
     {% endif %}
-
-    <hr data-layout="grid-border" />
   </div>
 {% endmacro %}
 
@@ -153,11 +151,14 @@
   image
 ) %}
   {% if image %}
-    <figure data-layout="hero" data-align="full" data-grid="full">
-      <img src="/static/pictures/{{ image.src }}"
-        alt="{{ image.alt or '' }}"
-        data-align="center-left"
-        class="hero-image">
+    <hr data-layout="grid-border" />
+    <figure data-layout="hero">
+      <div class="hero-wrap">
+        <img src="/static/pictures/{{ image.src }}"
+          alt="{{ image.alt or '' }}"
+          data-align="center-left"
+          class="hero-image">
+      </div>
       {% if image.caption %}
         <figcaption class="hero-caption" data-align="right-edge">
           <span class="caption-wrap">{{ image.caption|typogrify }}</span>
@@ -171,28 +172,35 @@
 {% macro render(
   byline=none,
   fragment=none,
-  config=none
+  config=none,
+  slug=none
 ) %}
   {%- for module in config.before -%}
     {% include module.include %}
   {%- endfor -%}
 
-  {{ byline or '' }}
+  {% if fragment or config.tagline %}
+    {% if not config.grid %}
+      <hr data-layout="grid-border" />
+      {{ byline or '' }}
 
-  {% if fragment %}
-    {% if config.erasure %}
-      <input type="checkbox" id="erasure">
-    {% endif %}
-
-    <div data-layout="{{ 'grid' if config.grid else 'rst' }}"
-      {{ utility.attr_if('data-erasure', config.erasure) }} >
-
-      {% if config.tagline %}
-        <h2 class="page-tagline">{{ config.tagline|typogrify }}</h2>
+      {% if config.erasure %}
+        <input type="checkbox" id="erasure">
       {% endif %}
 
-      {{ fragment|typogrify }}
-    </div>
+      <div data-layout="rst"
+        {{ utility.attr_if('data-erasure', config.erasure) }} >
+    {% endif %}
+
+    {% if config.tagline %}
+      <h2 class="page-tagline">{{ config.tagline|typogrify }}</h2>
+    {% endif %}
+
+    {{ fragment|typogrify }}
+
+    {% if not config.grid %}
+      </div>
+    {% endif %}
   {% endif %}
 
   {%- for module in config.after -%}
