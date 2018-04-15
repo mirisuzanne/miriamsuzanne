@@ -2,6 +2,7 @@ public: yes
 tagline: 'a novel on note cards'
 image:
   - src: 'writing/sidesaddle/box.jpg'
+    caption: 'A novel on 250 note-cards'
 url: 'http://ridingsidesaddle.com'
 location: 'writing'
 publication:

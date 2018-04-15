@@ -1,7 +1,11 @@
 public: yes
 image:
   - src: 'sidesaddle/affair.jpg'
-    alt: 'Riding SideSaddle* [a novel affair]'
+    caption: 'Riding SideSaddle* [a novel affair]'
+summary: |
+  Join us for the official release
+  of my first novel --
+  with live music and special guests!
 
 
 ***********************************

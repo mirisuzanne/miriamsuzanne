@@ -39,91 +39,91 @@ Those Nice Bright Colors
 
 .. |titlepages| raw:: html
 
-  <figure class="gallery">
+  <figure data-gallery="image">
     <a href="http://greengreenmud.com/dancing-without-architecture/">
-      <img src="/static/pictures/greenmud-titles/ggm02.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm02.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/dancing-without-architecture/in-which-jj/">
-      <img src="/static/pictures/greenmud-titles/ggm03.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm03.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/dancing-without-architecture/daymares-poor-boy/">
-      <img src="/static/pictures/greenmud-titles/ggm04.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm04.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/dancing-without-architecture/the-susy-within/">
-      <img src="/static/pictures/greenmud-titles/ggm05.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm05.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/dancing-without-architecture/yes-mother-goodnight/">
-      <img src="/static/pictures/greenmud-titles/ggm06.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm06.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/dancing-without-architecture/bring-down-the-house-house/">
-      <img src="/static/pictures/greenmud-titles/ggm07.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm07.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/dancing-without-architecture/dance-together-and-cry/">
-      <img src="/static/pictures/greenmud-titles/ggm08.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm08.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/dancing-without-architecture/forever-amen/">
-      <img src="/static/pictures/greenmud-titles/ggm09.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm09.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/dancing-without-architecture/twice-three-plus-one/">
-      <img src="/static/pictures/greenmud-titles/ggm10.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm10.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/dancing-without-architecture/love-in-the-time-of-dandelions/">
-      <img src="/static/pictures/greenmud-titles/ggm11.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm11.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/dancing-without-architecture/those-nice-bright-colors/">
-      <img src="/static/pictures/greenmud-titles/ggm12.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm12.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/dancing-without-architecture/into-the-green-green-mud/">
-      <img src="/static/pictures/greenmud-titles/ggm13.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm13.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/dancing-without-architecture/given-time-silence/">
-      <img src="/static/pictures/greenmud-titles/ggm14.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm14.png" alt="" class="gallery-image"/>
     </a>
 
     <a href="http://greengreenmud.com/this-everafter-life/">
-      <img src="/static/pictures/greenmud-titles/ggm15.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm15.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/this-everafter-life/stranger-than-a-sunny-day-on-the-beach/">
-      <img src="/static/pictures/greenmud-titles/ggm16.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm16.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/this-everafter-life/once-upon-a-sunday-raining/">
-      <img src="/static/pictures/greenmud-titles/ggm17.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm17.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/this-everafter-life/open-and-empty/">
-      <img src="/static/pictures/greenmud-titles/ggm18.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm18.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/this-everafter-life/not-a-susy-in-sight-for-miles-and-miles/">
-      <img src="/static/pictures/greenmud-titles/ggm19.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm19.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/this-everafter-life/of-blood/">
-      <img src="/static/pictures/greenmud-titles/ggm20.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm20.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/this-everafter-life/anon-and-anon/">
-      <img src="/static/pictures/greenmud-titles/ggm21.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm21.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/this-everafter-life/why-cry-when-you-can-kick-a-cat/">
-      <img src="/static/pictures/greenmud-titles/ggm22.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm22.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/this-everafter-life/there-and-back-again-forever/">
-      <img src="/static/pictures/greenmud-titles/ggm23.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm23.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/this-everafter-life/nothing/">
-      <img src="/static/pictures/greenmud-titles/ggm24.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm24.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/this-everafter-life/under-the-sky-is-gray/">
-      <img src="/static/pictures/greenmud-titles/ggm25.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm25.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/this-everafter-life/still/">
-      <img src="/static/pictures/greenmud-titles/ggm26.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm26.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/this-everafter-life/whence-from-two/">
-      <img src="/static/pictures/greenmud-titles/ggm27.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm27.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/this-everafter-life/this-road-full-glittered/">
-      <img src="/static/pictures/greenmud-titles/ggm28.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm28.png" alt="" class="gallery-image"/>
     </a>
     <a href="http://greengreenmud.com/this-everafter-life/this-road-full-glittered/">
-      <img src="/static/pictures/greenmud-titles/ggm29.png" alt="" />
+      <img src="/static/pictures/greenmud/greenmud-titles/ggm29.png" alt="" class="gallery-image"/>
     </a>
     <figcaption>
       Book & chapter titles for
@@ -137,12 +137,10 @@ Getting Things Done
 
 In that time I found a new job,
 went to a million conferences,
-moved into a `new house`_,
+moved into a new house,
 and still managed to get some work done.
 For anyone keeping track,
 this is where we are:
-
-.. _new house: http://www.chickpeasandhulahoops.com/blog/?p=1605
 
 - |del| Semi-final edits |/del|
 - |del| Code structure |/del|

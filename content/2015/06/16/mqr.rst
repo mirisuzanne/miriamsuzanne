@@ -1,15 +1,18 @@
 public: yes
+elsewhere:
+  - url: 'http://www.michiganquarterlyreview.com/2015/06/on-riding-sidesaddle-an-interview-with-eric-suzanne/'
+    src: 'Michigan Quarterly Review'
 image:
-  - src: 'sidesaddle/box.jpg'
-    alt: 'Riding SideSaddle* [box]'
+  - src: 'writing/sidesaddle/box.jpg'
+    caption: 'A novel on 250 note-cards'
+summary: |
+  An interview with the insightful Ryo Yamaguchi
+  at **Michigan Quarterly Review**.
 
 
 *****************************
 Michigan Quarterly: Interview
 *****************************
-
-A great interview with the insightful `Ryo Yamaguchi`_
-at `Michigan Quarterly Review`_:
 
   Riding SideSaddle* is not like most things you’ve read.
   On the surface it startles with its three-dimensionality —
@@ -22,8 +25,6 @@ at `Michigan Quarterly Review`_:
   based on the myth of Hermaphroditus —
   and it’s a story about magic and the slipperiness of categories.
 
-`Read the full interview »`_
+  ---`Ryo Yamaguchi`_
 
 .. _Ryo Yamaguchi: http://plotsandoaths.com/
-.. _Michigan Quarterly Review: http://www.michiganquarterlyreview.com/2015/06/on-riding-sidesaddle-an-interview-with-eric-suzanne/
-.. _`Read the full interview »`: http://www.michiganquarterlyreview.com/2015/06/on-riding-sidesaddle-an-interview-with-eric-suzanne/

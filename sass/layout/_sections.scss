@@ -38,10 +38,6 @@
   @include after(null) {
     grid-column: start / right;
     order: 2;
-
-    @include above('break') {
-      grid-column: left / right;
-    }
   }
 }
 

@@ -11,6 +11,22 @@
   margin: var(--double-gutter) 0 var(--double-spacer);
   max-width: 100%;
   width: var(--wide);
+
+  @include above('extend') {
+    [data-layout='rst'] & {
+      margin-left: neg(--spacer);
+      margin-right: neg(--spacer);
+      max-width: initial;
+    }
+  }
+}
+
+[data-size='full'] {
+  grid-column: 1 / -1;
+}
+
+.gallery-image {
+  width: 100%;
 }
 
 .video {

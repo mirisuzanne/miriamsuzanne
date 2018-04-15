@@ -1,5 +1,6 @@
 {% import "utility.macros.j2" as utility %}
 {% import "content/macros.j2" as content %}
+{% import "gallery/macros.html.j2" as media %}
 
 
 {% macro by_type(
@@ -80,24 +81,12 @@
   events,
   title=none
 ) %}
-  {% if events|length %}
-    <hr data-layout="grid-border" />
-
-    {% if title %}
-      <h2 data-title="section">
-        {{ title|typogrify }}
-      </h2>
-    {% endif %}
-
-    {% set single = true if (events|length == 1) else none %}
-    <figure data-gallery="video" {{ utility.attr_if('data-single', single) }}>
-      {% for event in events %}
-        <div class="video">
-          {{ event.video|safe }}
-        </div>
-      {% endfor %}
-    </figure>
-  {% endif %}
+  {{ media.figure(
+    events,
+    caption=title,
+    section=true,
+    type='video'
+  ) }}
 {% endmacro %}
 
 

@@ -1,40 +1,67 @@
 {% import "utility.macros.j2" as utility %}
 
 
-{% macro figure(gallery) %}
-  <figure data-module="gallery">
-    {% if gallery.caption %}
-      <figcaption>
-        {{ gallery.caption|safe }}
-      </figcaption>
+{% macro figure(
+  gallery,
+  caption=none,
+  section=none,
+  type='image'
+) %}
+  {% if gallery|length %}
+    {% if section %}
+      <hr data-layout="grid-border" />
+
+      {% if caption %}
+        <h2 data-title="section">
+          {{ caption|typogrify }}
+        </h2>
+      {% endif %}
     {% endif %}
 
-    {% for item in gallery.body -%}
-      {{ object(item) }}
-    {%- endfor %}
-  </figure>
+    <figure data-gallery="{{ type }}">
+      {% if caption and not section %}
+        <figcaption data-title="gallery">
+          {{ caption|typogrify }}
+        </figcaption>
+      {% endif %}
+
+      {% for item in gallery %}
+        {{ object(item, type) }}
+      {% endfor %}
+    </figure>
+  {% endif %}
 {% endmacro %}
 
 
-{% macro object(item) %}
-  {% set item_type = 'video' if item.video else 'image' %}
+{% macro object(
+  item,
+  type='image'
+) %}
+  {% set item_type = 'video' if item.video else (type or 'image') %}
   {% set item_type = 'music' if item.music else item_type %}
+  {% set size = utility.attr_if('data-size', item.size) %}
 
-  <div data-gallery="{{ item_type }}" {{ utility.attr_if('data-size', item.size) }}>
-    {% if item_type == 'image' %}
-      {% if item.link %}
-        <a href="{{ item.link }}">
-          <img src="/static/pictures/{{ item.image }}" {{ utility.attr_if('alt', item.alt) }}/>
-        </a>
-      {% else %}
-        <img src="/static/pictures/{{ item.image }}" {{ utility.attr_if('alt', item.alt) }}/>
-      {% endif %}
-    {% elif item_type == 'video' %}
-      <div class="video-wrap">
-        {{ item.video|safe }}
-      </div>
-    {% elif item_type == 'music' %}
+  {% if item_type == 'image' %}
+    {{ utility.link_if(
+      url=item.link,
+      content=img(item.image, item.alt),
+      class=size
+    ) }}
+  {% elif item_type == 'video' %}
+    <div class="video" {{ size }}>
+      {{ item.video|safe }}
+    </div>
+  {% elif item_type == 'music' %}
+    <div class="music" {{ size }}>
       {{ item.music|safe }}
-    {% endif %}
-  </div>
+    </div>
+  {% endif %}
+{% endmacro %}
+
+
+{% macro img(
+  image,
+  alt=''
+) %}
+  <img src="/static/pictures/{{ image }}" alt="{{ alt or '' }}" class="gallery-image" />
 {% endmacro %}
