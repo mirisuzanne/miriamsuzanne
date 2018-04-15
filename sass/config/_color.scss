@@ -1,35 +1,58 @@
-// Color Config
-// ============
+// Color Configuration
+// ===================
 
-@import '../../node_modules/mathsass/dist/math';
-@import '../../node_modules/accoutrement-color/sass/color';
 
+// Brand Colors
+// ------------
+/// @group color
+/// @colors
+/// @type Map
 $brand-colors: (
-  'white': #fff,
-  'black': #111,
-
-  'blue': hsl(195, 100%, 43%),
-  'red': hsl(0, 100%, 50%),
-  'pink': hsl(330, 100%, 45%),
+  'brand-blue': hsl(195, 52%, 31%),
+  'brand-pink': hsl(330, 100%, 45%) ('shade': 25%),
 );
 
-$theme-colors: (
-  'background': 'white',
-  'text': 'black',
-  'overlay': 'background' ('rgba': 0.9),
+@include herman-colors('brand-colors', $brand-colors);
 
-  'action': 'pink' ('shade': 15%),
-  'accent': 'blue' ('shade': 15%),
 
-  'dark-background': 'accent' ('shade': 70%),
-  'light-action': 'pink' ('tint': 30%),
-
-  'border': 'action',
-  'callout': 'accent' ('tint': 90%),
-
-  'contrast-light': 'white',
-  'contrast-dark': 'black',
+// Contrast Colors
+// ---------------
+/// The light and dark contrast colors act as
+/// the high and low range of our palette.
+/// @group color
+/// @colors
+/// @type Map
+$contrast-colors: (
+  'contrast-light': #f6f6f6,
+  'contrast-dark': 'brand-blue' ('shade': 35%, 'desaturate': 40%),
 );
 
-$colors: map-merge($brand-colors, $theme-colors);
+@include herman-colors('contrast-colors', $contrast-colors);
 
+
+// Pattern Colors
+// --------------
+/// Re-usable color patterns for
+/// application in different components.
+/// @group color
+/// @colors
+/// @type Map
+$pattern-colors: (
+  'text': 'contrast-dark',
+  'text-shadow': #fff,
+  'background': 'contrast-light',
+  'background-0': 'background' ('rgba': 0),
+
+  'action': 'brand-pink',
+  'action-light': 'action' ('tint': 70%),
+  'action-hover': 'action' ('shade': 25%),
+
+  'accent': 'brand-blue',
+  'accent-light': 'accent' ('tint': 70%),
+  'callout': 'accent-light',
+
+  'field-chill': 'brand-blue',
+  'field-attention': 'action',
+);
+
+@include herman-colors('pattern-colors', $pattern-colors);

@@ -1,8 +1,12 @@
 public: yes
-tags: [writing, art]
-slug: 'arcticacre-oddities'
+tags: [inspiration]
 image:
   - src: '2012/i-made-this.jpg'
+summary: |
+  The beautiful digital art,
+  inexplicable games,
+  and "stunningly harmful" songs
+  of Jason Nelson.
 
 
 Oddities and Curious Lands

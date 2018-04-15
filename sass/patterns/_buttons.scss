@@ -1,0 +1,27 @@
+// Buttons
+// =======
+
+[data-btn] {
+  &,
+  &:link,
+  &:visited {
+    background: var(--action);
+    border-radius: var(--border);
+    color: var(--background);
+    display: inline-block;
+    font-size: 1rem;
+    font-style: normal;
+    margin-bottom: var(--shim);
+    padding: var(--border) var(--gutter);
+    text-decoration: none;
+    text-shadow: 0 -1px 0 var(--action-hover);
+    transition: background-color 300ms, transform 350ms;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    background: var(--action-hover);
+    transform: scale(1.05);
+  }
+}

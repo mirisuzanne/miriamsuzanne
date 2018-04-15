@@ -1,17 +1,13 @@
 public: yes
 tags: [minifesto, fuck the muse, art, writing, process]
+series: 'fuck the muse'
 summary: |
-  |ftm|:
   Cycles have become the core of my creative process.
   Thinking in cycles means I always know
   where I am and where I'm going,
   even when I feel overwhelmed by the size of a project.
   If I'm stuck, it's time for a new mindset.
   If my last move was to zig, my next move is to zag.
-
-  .. |ftm| raw:: html
-
-    <em><a href="/2012/10/16/muse-intro/">Fuck the Muse</a> pt.3</em>
 
 
 Creative Modes and Cycles

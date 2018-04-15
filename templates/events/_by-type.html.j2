@@ -1,0 +1,9 @@
+{% import "events/macros.j2" as events %}
+
+
+{{ events.by_type(
+  title=module.title or 'Events…',
+  event_type=module.type or none,
+  show=module.show or 'future',
+  count=module.count or none
+) }}

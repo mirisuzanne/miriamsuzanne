@@ -1,0 +1,38 @@
+// Root
+// ====
+
+
+@include import-webfonts;
+
+
+ // sass-lint:disable-block no-duplicate-properties
+:root {
+  @include set-variables;
+  @include font-family('body');
+
+  --h1: var(--xlarge);
+  --h2: var(--large);
+  --gutter: calc(var(--rhythm) * 0.5);
+  --gutter-plus: calc(var(--gutter) * 1.5);
+  --double-gutter: calc(var(--gutter) * 2);
+  --shim: calc(var(--gutter) * 0.5);
+  --half-shim: calc(var(--gutter) * 0.25);
+  --border: calc(var(--gutter) * 0.25);
+  --spacer: calc(var(--rhythm) * 2);
+  --double-spacer: calc(var(--spacer) * 2);
+
+  background-color: color('background');
+  background-color: var(--background, color('background'));
+  color: color('text');
+  color: var(--text, color('text'));
+  font-size: size('root');
+  font-size: var(--responsive, size('root'));
+  line-height: ratio('text-ratio');
+  line-height: var(--text-ratio, ratio('text-ratio'));
+  text-shadow: 0 1px 0 color('text-shadow');
+}
+
+
+* {
+  text-shadow: 0 1px 0 var(--text-shadow);
+}

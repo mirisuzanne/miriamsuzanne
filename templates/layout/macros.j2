@@ -1,0 +1,13 @@
+
+
+{% macro headline(title, tagline=none) %}
+  <h1 class="page-title">
+    {{ title|typogrify|safe }}
+  </h1>
+
+  {% if tagline %}
+    <h2 class="page-tagline">
+      {{ tagline|typogrify|safe }}
+    </h2>
+  {% endif %}
+{% endmacro %}

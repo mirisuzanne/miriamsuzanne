@@ -1,7 +1,7 @@
 public: yes
 tags: [minifesto, fuck the muse, art, writing, process]
+series: 'fuck the muse'
 summary: |
-  |ftm|:
   You can't start working
   until you know what you are working towards.
   That doesn't mean knowing all the answers,
@@ -9,13 +9,10 @@ summary: |
   I refer to those guiding questions as
   the "seed" of a project.
 
-  .. |ftm| raw:: html
 
-    <em><a href="/2012/10/16/muse-intro/">Fuck the Muse</a> pt.4</em>
-
-
+********************
 Starting from a Seed
-====================
+********************
 
 [This is *part 4* in the ongoing
 `Fuck the Muse </2012/10/16/muse-intro/>`_ mini-series.]
@@ -30,8 +27,9 @@ it means knowing the questions that will guide you.
 I refer to those guiding questions as
 the "seed" of a project.
 
+
 A Range of Specimen
--------------------
+===================
 
 |specimen|
 
@@ -81,8 +79,9 @@ In the end,
 I have a list similar to Anne's
 before I move to the next step.
 
+
 A Seed of My Own
-----------------
+================
 
 One of my current projects-in-development
 started with a quote I found on the internet
@@ -133,8 +132,9 @@ and the songs of `Tom Waits`_ & `Lou`_ `Reed`_.
 .. _Lou: http://rd.io/x/QFp1KzMxvg
 .. _Reed: http://rd.io/x/QFp1K2_sfw
 
+
 DIYourself
-----------
+==========
 
 The goal isn't to do it exactly the way I do it,
 or the way LIDA, Anne Bogart, or Simon Sinek do it.
@@ -144,16 +144,6 @@ and then pay attention to how you get there.
 De-mystify the process,
 then learn to repeat it.
 
-The Series
-----------
-
-1. `Fuck the Muse: a Blog Mini-Series [intro] </2012/10/16/muse-intro/>`_
-2. `Ordinary Tools of Thought </2012/10/23/ordinary-tools-of-thought/>`_
-3. `Creative Modes and Cycles </2012/11/08/creative-cycles>`_
-4. `Starting from a Seed </2012/12/13/starting-from-a-seed/>`_
-5. `Get Curious </2013/02/07/get-curious/>`_
-6. `Explosive Growth </2013/02/14/explosive-growth/>`_
-7. `(re)Thinking on Your Feet </2013/03/29/rethinking-on-your-feet/>`_
 
 .. |specimen| raw:: html
 

@@ -1,44 +1,94 @@
 {% import 'utility.macros.j2' as utility %}
 
 
-{% macro label(text, is_hidden=false) %}
-  <span class="form-label{{ ' is-hidden' if is_hidden }}">{{ text }}</span>
+{% macro label(
+  text,
+  hidden=false
+) %}
+  <span
+    data-label
+    utility.attr_if('hidden', hidden)
+  >
+    {{ text }}
+  </span>
 {% endmacro %}
 
-{% macro field(id, required=none) %}
-  <label for="{{ id }}" data-form-field="{{ id }}" data-field-state="{{ 'required' if required else 'optional'}}">
+
+{% macro field(
+  id
+) %}
+  <label
+    for="{{ id }}"
+    data-field="{{ id }}"
+    {% for attr in kwargs %}
+      utility.attr_if(attr, kwargs[attr])
+    {% endfor %}
+  >
     {{ caller() }}
   </label>
 {% endmacro %}
 
-{% macro input(text, id, name=none, type='text', placeholder=none, required=none, hide_label=false) %}
-  {% set input_types = {
-    'text': 'default',
-    'password': 'default',
-    'search': 'default',
-    'email': 'default',
-    'url': 'default',
-    'tel': 'default',
-    'number': 'default',
-    'date': 'default',
-    'month': 'default',
-    'week': 'default',
-    'time': 'default',
-    'datetime': 'default',
-    'datetime-local': 'default',
-    'color': 'default'
-  } %}
 
-  {% call field(id, required) %}
+{% macro input_field(
+  text,
+  id,
+  name=none,
+  type='text',
+  required=true,
+  hide_label=false
+) %}
+
+  {% call field(id) %}
+    {{ input(id, name, type, required, **kwargs) }}
     {{ label(text, hide_label) }}
-    <input type="{{ type }}" id="{{ id }}" name="{{ name or id }}" data-input-type="{{ input_types[type] or type }}" {{ utility.attr_if('required', required) }} {{ utility.attr_if('placeholder', placeholder) }} />
   {% endcall %}
 {% endmacro %}
 
-{% macro textarea(text, id, name=none, placeholder=none, required=none, hide_label=false) %}
-  {% call field(id, required) %}
-    {{ label(text, hide_label) }}
-    <textarea id="{{ id }}" name="{{ name or id }}" data-input-type="textarea" {{ utility.attr_if('required', required) }} {{ utility.attr_if('placeholder', placeholder) }}></textarea>
-  {% endcall %}
-{% endmacro %}
 
+{% macro input(
+  id,
+  name=none,
+  type='text',
+  required=false
+) %}
+  {% set input_types = [
+    'text',
+    'password',
+    'search',
+    'email',
+    'url',
+    'tel',
+    'number',
+    'date',
+    'month',
+    'week',
+    'time',
+    'datetime',
+    'datetime-local',
+    'color'
+  ] %}
+  {% set data_type = 'default' if (type in input_types) else type %}
+
+  {% if type == 'textarea' %}
+    <textarea
+      id="{{ id }}"
+      name="{{ name or id }}"
+      data-input="textarea"
+      {{ utility.attr_if('required', required) }}
+      {% for attr in kwargs %}
+        utility.attr_if(attr, kwargs[attr])
+      {% endfor %}
+    ></textarea>
+  {% else %}
+    <input
+      type="{{ type }}"
+      id="{{ id }}"
+      name="{{ name or id }}"
+      data-input="{{ data_type }}"
+      {{ utility.attr_if('required', required) }}
+      {% for attr in kwargs %}
+        utility.attr_if(attr, kwargs[attr])
+      {% endfor %}
+    />
+  {% endif %}
+{% endmacro %}

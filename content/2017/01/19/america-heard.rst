@@ -1,6 +1,6 @@
 public: yes
-slug: 'america-heard'
-tags: ['interview', 'gender', 'politics', 'trans']
+tags: ['interview', 'Transition']
+series: 'Transition'
 image:
   - src: '2017/america-heard.jpg'
 summary: |
@@ -11,8 +11,9 @@ summary: |
   .. _America Heard: https://americaheard.com/
 
 
+**************************
 America Heard: Transitions
-==========================
+**************************
 
 My friend `Maureen Maloney`_ asked to document
 my reaction to the 2016 election,

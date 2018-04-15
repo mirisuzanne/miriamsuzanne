@@ -1,56 +1,209 @@
-{% macro list(post) %}
-<article data-module="blog-post">
-  {% if post.title %}
-    <h2>
-      <a href="{{ link_to('page', slug=post.slug) }}">
-        {{ post.title }}
-      </a>
+{% import "utility.macros.j2" as utility %}
+{% import "icon.macros.j2" as icon %}
+{% import "content/macros.j2" as content %}
+
+
+{% macro recent_posts(
+  title="Recent Articles",
+  count=5
+) %}
+  {% set entries = get_some_recent_blog_entries(count) %}
+
+  {% if entries|length %}
+    {{ section(entries, title) }}
+  {% endif %}
+{% endmacro %}
+
+
+{% macro taglist(
+  tag,
+  title="Related Articles",
+  count=5,
+  reverse=false
+) %}
+  {% set entries = get_blog_entries_by_tag(tag) %}
+  {% set entries = entries|reverse if (entries and reverse) else entries %}
+
+  {% if entries %}
+    {{ section(entries[:count], title) }}
+  {% endif %}
+{% endmacro %}
+
+
+{% macro section(
+  entries,
+  title=none
+) %}
+  {% if title %}
+    <hr data-layout="grid-border" />
+    <h2 data-title="section">
+      {{ title|typogrify }}
     </h2>
   {% endif %}
 
-  {{ byline(post) }}
+  {% for entry in entries %}
+    {{ list(entry) }}
+  {% endfor %}
+{% endmacro %}
 
-  {%- if post.config.image -%}
-    {% set image = post.config.image[0] %}
-    <div class="post-image" style="background-image: url(/static/pictures/{{ image.src }})"; {{ image.styles or '' }}></div>
-  {%- endif -%}
 
-  {% if post.summary %}
-    {{ post.render_summary() }}
-    <a href="{{ link_to('page', slug=post.slug) }}" class="more-link">
-      read more »
-    </a>
-  {% else %}
-    {{ post.render_contents() }}
+{% macro list(post) %}
+  <h3 data-title="post">
+    {{ utility.link_if(
+      content=post.title|typogrify,
+      url=link_to('page', slug=post.slug)
+    ) }}
+  </h3>
+
+  {{ byline(post, 'post') }}
+
+  <div data-summary="post">
+    {{ post.render_summary()|typogrify }}
+  </div>
+{% endmacro %}
+
+
+{% macro byline(
+  post,
+  type='rst'
+) %}
+  <div data-byline="{{ type }}">
+    {{ pubdate(post.pub_date) }}
+    {{ meta(post) }}
+  </div>
+{% endmacro %}
+
+
+{% macro meta(post) %}
+  {% set series = post.config.series %}
+
+  {% if series %}
+    {% set series_url = ['/tags/', series|urlencode, '/']|join %}
+    {% set series_page = all_pages|filter_pages('tag_index', 'eq', series)|get_page %}
+    {% set series_url = content.page_link(series_page) if series_page else series_url %}
+    <span data-meta="in">
+      <i>in</i>
+      {{ utility.link_if(series|typogrify, series_url) }}
+    </span>
   {% endif %}
-</article>
+
+  {% set away = post.config.elsewhere[0] if post.config.elsewhere else none %}
+  {% if away %}
+    <span data-meta="on">
+      <i>on</i>
+      {{ utility.link_if(away.src|typogrify, away.url) }}
+    </span>
+  {% endif %}
 {% endmacro %}
 
-{% macro byline(post) %}
-<div class="byline">
-  {{ pubdate(post.pub_date) }}
-  {# tags(post.tags) #}
-</div>
-{% endmacro %}
 
 {% macro pubdate(pub_date) %}
   {% if pub_date %}
-    {% if pub_date %}
-    <time datetime="{{ pub_date.isoformat() }}" pubdate="pubdate">
+    <time datetime="{{ pub_date.isoformat() }}"
+      pubdate="pubdate"
+      data-meta='time'>
       {{ pub_date.strftime("%B %d, %Y") }}
     </time>
-    {% endif %}
   {% endif %}
 {% endmacro %}
 
+
 {% macro tags(taglist) %}
   {% if taglist %}
-    in
-    <span class="tags">
+    <span data-meta="tags">
+      <i>in</i>
       {% for tag in taglist|sort(case_sensitive=true) %}
         {%- if not loop.first %}, {% endif -%}
         <a href="{{ link_to('tag', tag=tag) }}" rel="tag">{{ tag }}</a>
       {%- endfor %}
     </span>
   {% endif %}
+{% endmacro %}
+
+
+{% macro intro(
+  title,
+  summary=none,
+  elsewhere=none,
+  hide_title=none
+) %}
+  <div data-layout="intro" data-align="center">
+    <h1 class="page-title{{ ' is-hidden' if hide_title else '' }}">
+      {{ title|typogrify }}
+    </h1>
+
+    {% if summary %}
+      <aside class="summary">
+        {{ summary|typogrify }}
+
+        {% if elsewhere %}
+          {% set where = elsewhere[0] %}
+          {% set text = [where.action or 'Read More on', ' ', where.src]|join %}
+          {{ content.btn(where.url, text) }}
+        {% endif %}
+      </aside>
+    {% endif %}
+  </div>
+{% endmacro %}
+
+
+{% macro hero(
+  image
+) %}
+  {% if image %}
+    <hr data-layout="grid-border" />
+    <figure data-layout="hero">
+      <div class="hero-wrap">
+        <img src="/static/pictures/{{ image.src }}"
+          alt="{{ image.alt or '' }}"
+          data-align="center-left"
+          class="hero-image">
+      </div>
+      {% if image.caption %}
+        <figcaption class="hero-caption" data-align="right-edge">
+          <span class="caption-wrap">{{ image.caption|typogrify }}</span>
+        </figcaption>
+      {% endif %}
+    </figure>
+  {% endif %}
+{% endmacro %}
+
+
+{% macro render(
+  byline=none,
+  fragment=none,
+  config=none,
+  slug=none
+) %}
+  {%- for module in config.before -%}
+    {% include module.include %}
+  {%- endfor -%}
+
+  {% if fragment or config.tagline %}
+    {% if not config.grid %}
+      <hr data-layout="grid-border" />
+      {{ byline or '' }}
+
+      {% if config.erasure %}
+        <input type="checkbox" id="erasure">
+      {% endif %}
+
+      <div data-layout="rst"
+        {{ utility.attr_if('data-erasure', config.erasure) }} >
+    {% endif %}
+
+    {% if config.tagline %}
+      <h2 class="page-tagline">{{ config.tagline|typogrify }}</h2>
+    {% endif %}
+
+    {{ fragment|typogrify }}
+
+    {% if not config.grid %}
+      </div>
+    {% endif %}
+  {% endif %}
+
+  {%- for module in config.after -%}
+    {% include module.include %}
+  {%- endfor -%}
 {% endmacro %}

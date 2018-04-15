@@ -1,16 +1,17 @@
 public: yes
-tags: [greenmud, art, writing]
+tags: [greenmud, art]
 summary: |
   Last month I posted my first
-  `GreenMud reward portrait </2012/10/18/saying-thanks/>`_
+  GreenMud reward portrait
   of Kitten Karlyle.
   This weekend I finished the second portrait,
-  a joint image of my ongoing collaborators
+  a joint image of my collaborators:
   Dan Eisenstat and Sondra Eby.
 
 
+*******
 Sketchy
-=======
+*******
 
 Last month I posted my first
 `GreenMud reward portrait`_

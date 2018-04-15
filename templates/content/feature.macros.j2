@@ -1,0 +1,68 @@
+{% import 'utility.macros.j2' as utility %}
+{% import 'content/macros.j2' as content %}
+
+
+{% macro show(
+  title='Featuring…',
+  slugs=none,
+  yaml=none
+) %}
+  <hr data-layout="grid-border" />
+
+  {% if title %}
+    <h2 data-title="section">
+      {{ title }}
+    </h2>
+  {% endif %}
+
+  <section data-grid="feature">
+    {% if slugs %}
+      {% for slug in slugs %}
+        {% set page = slug|get_config %}
+        {% if page %}
+          {{ item(
+            title=page.title,
+            url=content.page_link(page),
+            brag=page.config.brag
+          ) }}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% if yaml %}
+      {% set file = yaml[0] %}
+      {% set key = yaml[1] or 'feature' %}
+      {% set links = file|get_config(key) %}
+
+      {% for link in links %}
+        {{ item(
+          title=link.title,
+          url=link.url,
+          brag=link.brag
+        ) }}
+      {% endfor %}
+    {% endif %}
+  </section>
+{% endmacro %}
+
+
+{% macro item(
+  title,
+  url,
+  brag
+) %}
+  <article class="feature">
+    <h3 class="feature-title">
+      {{ utility.link_if(
+        url=url,
+        content=title,
+        class='feature-link'
+      ) }}
+    </h3>
+    {% if brag %}
+      <div class="feature-brag">
+        {{ brag|rst }}
+      </div>
+    {% endif %}
+  </article>
+{% endmacro %}

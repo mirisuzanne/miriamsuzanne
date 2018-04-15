@@ -1,0 +1,22 @@
+// Layout Config
+// =============
+
+
+@mixin angle(
+  $origin: null,
+  $reverse: false
+) {
+  $angle: -0.0125turn;
+  $angle: if($reverse, ($angle * -1), $angle);
+  transform: rotate($angle);
+
+  @include above('break') {
+    @if ($origin == 'top') {
+      $origin: 0 0;
+    } @else if ($origin == 'bottom') {
+      $origin: 0 100%;
+    }
+
+    transform-origin: $origin;
+  }
+}

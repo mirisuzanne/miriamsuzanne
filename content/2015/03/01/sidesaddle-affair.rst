@@ -1,10 +1,12 @@
 public: yes
+image:
+  - src: 'sidesaddle/affair.jpg'
+    alt: 'Riding SideSaddle* [a novel affair]'
 
 
+***********************************
 Riding SideSaddle* [a novel affair]
-===================================
-
-|sidesaddle|
+***********************************
 
 `Riding SideSaddle*`_ is an open-source novel on notecards,
 with contributions from
@@ -29,11 +31,3 @@ at `Syntax Physic Opera`_ 554 S Broadway, Denver CO.
 .. _Jen Korte: http://ridingsidesaddle.net/www.jkandtheloss.com
 .. _Open to the Hound: http://ridingsidesaddle.net/www.opentothehound.com
 .. _Syntax Physic Opera: http://ridingsidesaddle.net/physicopera.com
-
-.. |sidesaddle| raw:: html
-
-  <figure>
-    <a href="http://ridingsidesaddle.net">
-      <img src="/static/pictures/sidesaddle-affair.jpg" alt="Riding SideSaddle* [a novel affair]" />
-    </a>
-  </figure>

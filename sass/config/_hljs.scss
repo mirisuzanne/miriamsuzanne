@@ -1,0 +1,90 @@
+// Code Highlighting Colors
+// ========================
+
+
+// Code Highlighting Colors
+// ------------------------
+/// Colors used with pygments
+/// @group config-color
+/// @colors
+/// @type Map
+$highlight-colors: (
+  'hljs-punct': hsl(250, 5%, 20%),
+  'hljs-error': hsl(10, 65%, 60%),
+
+  'hljs-comment': hsl(0, 0%, 63%),
+  'hljs-comment-multi': 'hljs-comment' ('adjust-hue': 10%),
+  'hljs-comment-preproc': 'hljs-comment' ('adjust-hue': 20%),
+  'hljs-comment-single': 'hljs-comment' ('adjust-hue': 30%),
+
+  'hljs-name': hsl(284, 70%, 35%),
+  'hljs-name-att': 'hljs-name' ('adjust-hue': 30%),
+  'hljs-name-builtin': 'hljs-name' ('adjust-hue': 60%),
+  'hljs-name-class': hsl(180, 100%, 32%),
+  'hljs-name-constant': 'hljs-name' ('adjust-hue': 160%),
+  'hljs-name-decorator': color('text') ('lighten': 20%),
+  'hljs-name-entity': 'hljs-name' ('adjust-hue': 220%),
+  'hljs-name-exception': 'hljs-name' ('adjust-hue': 240%),
+  'hljs-name-function': 'hljs-name' ('adjust-hue': 270%),
+  'hljs-name-label': 'hljs-name' ('adjust-hue': 300%),
+  'hljs-name-namespace': 'hljs-name' ('adjust-hue': 330%),
+  'hljs-name-other': 'hljs-name' ('adjust-hue': 360%),
+  'hljs-name-property': 'hljs-name' ('adjust-hue': 390%),
+  'hljs-name-tag': hsl(322, 40%, 50%),
+  'hljs-name-var': hsl(260, 50%, 42%),
+  'hljs-name-var-class': hsl(210, 50%, 42%),
+  'hljs-name-var-global': hsl(300, 60%, 32%),
+  'hljs-name-var-instance': hsl(135, 30%, 40%),
+  'hljs-name-bi-pseudo': 'hljs-name' ('adjust-hue': 320%, 'darken': 10%, 'saturate': 10%),
+
+  'hljs-operator': hsl(200, 10%, 50%),
+  'hljs-operator-word': hsl(200, 30%, 50%),
+
+  'hljs-key': hsl(283, 21%, 30%),
+  'hljs-key-constant': hsl(253, 61%, 30%),
+  'hljs-key-declaration': hsl(153, 61%, 30%),
+  'hljs-key-namespace': hsl(183, 61%, 30%),
+  'hljs-key-pseudo': hsl(103, 61%, 30%),
+  'hljs-key-reserved': hsl(3, 61%, 30%),
+  'hljs-key-type': hsl(110, 61%, 40%),
+
+  'hljs-lit-date': hsl(20, 50%, 40%),
+  'hljs-lit-num': hsl(270, 50%, 40%),
+  'hljs-lit-num-float': hsl(200, 50%, 40%),
+  'hljs-lit-num-hex': hsl(160, 50%, 40%),
+  'hljs-lit-num-int': hsl(200, 50%, 25%),
+  'hljs-lit-num-oct': hsl(130, 50%, 30%),
+  'hljs-lit-num-long': hsl(70, 80%, 30%),
+
+  'hljs-string': hsl(0, 15%, 25%),
+  'hljs-string-backtick': hsl(30, 15%, 25%),
+  'hljs-string-char': hsl(60, 15%, 25%),
+  'hljs-string-doc': hsl(90, 15%, 25%),
+  'hljs-string-double': hsl(120, 15%, 25%),
+  'hljs-string-escape': hsl(150, 15%, 25%),
+  'hljs-string-heredoc': hsl(180, 15%, 25%),
+  'hljs-string-interpol': hsl(210, 15%, 25%),
+  'hljs-string-other': hsl(240, 15%, 25%),
+  'hljs-string-regex': hsl(270, 15%, 25%),
+  'hljs-string-single': hsl(300, 15%, 25%),
+  'hljs-string-sym': hsl(330, 15%, 25%),
+
+  'hljs-gen': hsl(205, 58%, 22%),
+  'hljs-gen-del': hsl(235, 38%, 42%),
+  'hljs-gen-emph': hsl(265, 38%, 22%),
+  'hljs-gen-error': hsl(295, 48%, 32%),
+  'hljs-gen-heading': hsl(325, 48%, 22%),
+  'hljs-gen-inserted': hsl(355, 48%, 22%),
+  'hljs-gen-output': hsl(15, 58%, 22%),
+  'hljs-gen-prompt': hsl(55, 58%, 42%),
+  'hljs-gen-strong': hsl(135, 58%, 42%),
+  'hljs-gen-subhead': hsl(165, 58%, 42%),
+);
+
+@include herman-add(
+  'colors',
+  'highlight-colors',
+  $highlight-colors,
+  get-function('color'),
+  $highlight-colors
+);

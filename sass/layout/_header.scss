@@ -1,0 +1,73 @@
+// Site Header
+// ===========
+
+
+[data-layout='header'] {
+  margin-left: neg(--shim);
+
+  @include above('break') {
+    writing-mode: vertical-rl;
+  }
+}
+
+
+[rel='home'] {
+  #{$link} {
+    display: grid;
+    font-size: calc(var(--h2) + 15vw);
+    grid-template-columns: repeat(2, 1fr);
+    line-height: 0.75;
+    overflow: hidden;
+
+    .first {
+      color: var(--accent);
+    }
+
+    .last {
+      color: var(--action-light);
+    }
+
+    @include above('break') {
+      font-size: calc(var(--h2) + 15vh);
+      height: 100vh;
+      position: sticky;
+      top: 0;
+    }
+  }
+
+  #{$focus} {
+    .first,
+    .last {
+      --offset: 0;
+      font-style: italic;
+      font-weight: normal;
+    }
+  }
+}
+
+
+.first,
+.last {
+  --offset: 0;
+  grid-column: 1 / -1;
+  grid-row: 1 / span 1;
+  transform: translateX(var(--offset));
+  transition: transform 400ms ease;
+
+  @include above('break') {
+    transform: translateY(var(--offset));
+  }
+}
+
+
+.first {
+  --offset: neg(--gutter);
+  position: relative;
+  z-index: 2;
+}
+
+
+.last {
+  --offset: var(--gutter);
+  text-align: right;
+}

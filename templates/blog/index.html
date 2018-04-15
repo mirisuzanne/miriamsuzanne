@@ -1,15 +1,40 @@
 {% extends "blog/archives.html" %}
 {% import "blog/macros.j2" as blog %}
 
-{% block title %}Blog{% endblock %}
-{% block list_intro %}{% endblock list_intro %}
+{% block location %}home{% endblock %}
 
-{% block archive %}
-  {%- for post in pagination.get_slice() %}
-    {{ blog.list(post) }}
-  {%- endfor %}
+{% block body %}
+  {% if pagination.has_prev %}
+    {{ blog.intro(
+      title='Articles…',
+      summary=pagination
+    ) }}
+  {% else %}
+    {% set page = all_pages|filter_pages('slug', 'eq', 'index')|get_page %}
+
+    {{ blog.intro(
+      title=page.title,
+      summary=page.render_summary() if page.config.summary else none,
+      hide_title=page.config.hide_title
+    ) }}
+
+    {{ blog.hero(
+      image=page.config.image[0] if page.config.image else none
+    ) }}
+
+    {{ blog.render(
+      byline=blog.byline(page) if page.pub_date else none,
+      fragment=page.render_contents(),
+      config=page.config
+    ) }}
+  {% endif %}
+
+  {{ blog.section(
+    entries=pagination.get_slice(),
+    title='Recent Articles…'
+  ) }}
 
   {% if show_pagination and pagination.pages > 1 %}
     {{ pagination }}
   {% endif %}
-{% endblock archive %}
+{% endblock %}

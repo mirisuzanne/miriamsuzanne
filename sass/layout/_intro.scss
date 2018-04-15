@@ -1,0 +1,31 @@
+// Bios
+// ====
+
+
+[data-layout='intro'] {
+  @include angle('bottom');
+}
+
+
+.page-title,
+.summary {
+  background: var(--background);
+  margin-left: neg(--shim);
+  margin-right: neg(--shim);
+  padding: 0 var(--shim);
+}
+
+
+.page-title {
+  font-size: var(--h1);
+  font-style: italic;
+  justify-self: start;
+  line-height: 1.2;
+  margin-bottom: var(--gutter);
+}
+
+
+.summary {
+  font-size: var(--large);
+  margin-bottom: var(--spacer);
+}

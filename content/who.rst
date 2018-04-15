@@ -1,46 +1,73 @@
 public: yes
-location: 'about'
+location: 'who'
+tagline: "Some Kind of Manifesto…"
+erasure: yes
 image:
-  - src: 'headshots/mia-16.jpg'
+  - src: 'headshots/face.svg'
+summary: |
+  **Miriam**
+  is an author, performer, musician, designer, and web developer —
+  working with `OddBird`_,
+  `Teacup Gorilla`_,
+  `Grapefruit Lab`_,
+  and `CSS Tricks`_.
+  She's the author of
+  `Riding SideSaddle*`_ and
+  `The Post-Obsolete Book`_,
+  co-author of
+  `Jump Start Sass`_,
+  and creator of the
+  `Susy`_ and `True`_
+  `open-source`_ toolkits.
+
+  .. _Riding SideSaddle*: http://ridingsidesaddle.com
+  .. _OddBird: http://oddbird.net/
+  .. _Teacup Gorilla: http://teacupgorilla.com/
+  .. _open-source: http://github.com/mirisuzanne/
+  .. _Grapefruit Lab: http://grapefruitlab.com/
+  .. _CSS Tricks: https://css-tricks.com/
+  .. _Jump Start Sass: https://www.sitepoint.com/premium/books/jump-start-sass
+  .. _The Post-Obsolete Book: http://www.post-obsolete.com
+  .. _Susy: http://susy.oddbird.net/
+  .. _True: http://oddbird.net/true
 
 
-Miriam Eric Suzanne
-===================
+*************
+About Miriam…
+*************
 
-**Miriam**
-is an author, performer, musician, designer, and web developer —
-working with `OddBird`_,
-`Teacup Gorilla`_,
-and `CSS Tricks`_.
-She's the author of
-`Riding SideSaddle*`_ and
-`The Post-Obsolete Book`_,
-co-author of
-`Jump Start Sass`_ and
-`10 Myths on the Proper Application of Beauty Products`_,
-and creator of the
-`Susy`_ and `True`_
-`open-source`_ toolkits.
+People are ``queer``.
+People are edge cases.
+We fall between meanings,
+and explore outside them.
+I’m not interested in making objects —
+only the experiences they manifest for real people.
 
-*Miriam has also been published under the names
-"Eric A Meyer" and "Eric M Suzanne" —
-but you should call her Miriam,
-or Mia,
-or maybe Princess DieHard,
-or something like that.*
+That, to me, is beautiful.
+All of us stumbling
+through this wreckage ``and rubble together``,
+finding beauty in the world
+and in each other along the way.
+Software that respects our opinions and autonomy;
+collaborations that reflect back our diversity;
+and art that gives us a venue to consider
+|the non-sense| that remains —
+what manifestos can never say.
+Because understanding is not a pre-requisite ``for beauty``.
 
-`Download Headshots »`_
+So I like narratives that are full of
+holes and misdirection.
+Bits borrowed from here and there,
+fragments and remixes,
+fused into a visceral barrage,
+inviting you into an experience —
+the start of ``a conversation``.
+Diverse people breathing and sweating
+and fighting and playing together.
+Accidents, contradictions, and broken expectations.
+Grasping at stability and form,
+but always ``coming up short``.
 
+.. |the non-sense| raw:: html
 
-.. _Riding SideSaddle*: http://ridingsidesaddle.com
-.. _OddBird: http://oddbird.net/
-.. _Teacup Gorilla: http://teacupgorilla.com/
-.. _open-source: http://github.com/mirisuzanne/
-.. _CSS Tricks: https://css-tricks.com/
-.. _10 Myths on the Proper Application of Beauty Products: https://www.oddbooksapp.com/book/10-myths
-.. _Jump Start Sass: https://www.sitepoint.com/premium/books/jump-start-sass
-.. _The Post-Obsolete Book: http://www.post-obsolete.com
-.. _Accoutrement: http://oddbird.net/accoutrement/
-.. _Susy: http://susy.oddbird.net/
-.. _True: http://oddbird.net/true
-.. _`Download Headshots »`: https://www.dropbox.com/sh/loscfxexvij5vrq/AACiE-RRbf0xoIruMDBN53lca?dl=0
+  <label for="erasure">the non-sense</label>

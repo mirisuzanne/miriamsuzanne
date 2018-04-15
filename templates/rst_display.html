@@ -1,14 +1,20 @@
 {% extends "layout.html" %}
+
 {% import "utility.macros.j2" as utility %}
+{% import "layout/macros.j2" as layout %}
 {% import "blog/macros.j2" as blog %}
+{% import "events/macros.j2" as events %}
+
 
 {% block title %}{{ rst.title }}{% endblock %}
 {% block description %}{{ ctx.render_summary()|striptags or super() }}{% endblock %}
+
 
 {% block og_url %}{{ get_full_canonical_url(ctx.builder, slug=ctx.slug) }}{% endblock %}
 {% block og_description %}{{ ctx.render_summary()|striptags or super() }}{% endblock %}
 {% block og_type %}{{ 'article' if ctx.pub_date else super() }}{% endblock %}
 {% block twitter_type %}{{ 'summary_large_image' if ctx.config.image and ctx.config.image[0].src else super() }}{% endblock %}
+
 
 {% block extra_og %}
   {% if ctx.pub_date %}
@@ -21,43 +27,43 @@
   {% endif %}
 {% endblock %}
 
+{% block location -%}
+  {%- if config.location -%}
+    {{- config.location -}}
+  {%- elif ctx.pub_date -%}
+    {{ 'writing' }}
+  {%- else -%}
+    {%- set locations = config.nav|map(attribute='slug') -%}
+    {% for slug in locations %}
+      {{- slug if (slug in ctx.slug) else '' -}}
+    {% endfor %}
+  {%- endif -%}
+{%- endblock %}
 
 {% block body %}
+  {{ blog.intro(
+    title=rst.title,
+    summary=ctx.render_summary() if config.summary else none,
+    elsewhere=config.elsewhere,
+    hide_title=config.hide_title
+  ) }}
 
-  {%- if config.image -%}
-    {% set image = config.image[0] %}
-    <figure class="hero">
-      <img src="/static/pictures/{{ image.src }}" alt="" class="hero-image" />
-      {% if image.caption %}
-        <figcaption class="hero-caption">
-          {{ image.caption }}
-        </figcaption>
-      {% endif %}
-    </figure>
-  {%- endif -%}
+  {{ blog.hero(
+    image=config.image[0] if config.image else none
+  ) }}
 
-  {%- if not config.hide_title -%}
-  <header data-module="page-header" class="rst-header">
-    <h1>{{ rst.title }}</h1>
-    {{ blog.byline(ctx) }}
-  </header>
-  {%- endif -%}
+  {{ blog.render(
+    byline=blog.byline(ctx) if ctx.pub_date else none,
+    fragment=rst.fragment,
+    config=config,
+    slug=ctx.slug
+  ) }}
 
-  {%- for module in config.before -%}
-    {% include module.include %}
-  {%- endfor -%}
-
-  {% if rst.fragment %}
-    {% if config.erasure %}
-      <input type="checkbox" id="erasure" />
-    {% endif %}
-
-    <section data-module="{{ config.page or 'rst' }}" {{ utility.attr_if('data-erasure', config.erasure) }}>
-      {{ rst.fragment }}
-    </section>
+  {% if config.series %}
+    {% set entries = get_blog_entries_by_tag(config.series)|reverse %}
+    {{ blog.section(
+      entries,
+      title="Related Articles"
+    ) }}
   {% endif %}
-
-  {%- for module in config.after -%}
-    {% include module.include %}
-  {%- endfor -%}
 {% endblock %}

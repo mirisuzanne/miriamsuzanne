@@ -1,18 +1,8 @@
-{% import "utility.macros.j2" as utility %}
-{% import "events/macros.j2" as events %}
+{% import "content/macros.j2" as content %}
 
-<section data-module="press">
-  {% if not module.hide_title %}
-    <h1>Press Coverage</h1>
-  {% endif %}
-
-  {% for event in (config.future + config.past)|selectattr('press') %}
-    {% if event.press|map(attribute='quote')|join('') != '' %}
-      <article class="h-event press-topic">
-        {{ events.name(event.name, event.url) }}
-        {{ events.body(event, show_location=false) }}
-        {{ events.press(event.press, show_noquote=false) }}
-      </article>
-    {% endif %}
-  {% endfor %}
-</section>
+{{ content.quote_section(
+  page=module.page or slug,
+  slug=module.slug,
+  count=module.count,
+  title=module.title
+) }}

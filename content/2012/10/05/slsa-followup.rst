@@ -1,17 +1,17 @@
 public: yes
-tags: [writing, art, performance]
-slug: 'slsa-followup'
+tags: [writing, art, postobsolete]
 summary: |
   After submitting on a whim,
-  I was `invited to perform </2012/09/27/slsa2012/>`_
-  last weekend at the `SLSA <http://www.litsciarts.org/slsa12/>`_
-  conference in Milwaukee,
-  and I went.
-  This was not a reasonable thing to do.
+  I was invited to perform
+  last weekend at the SLSA
+  conference in Milwaukee.
+  This was not a reasonable thing to do,
+  but I did it…
 
 
+*********************************
 A Whirlwind of Digital Humanities
-=================================
+*********************************
 
 After submitting on a whim,
 I was `invited to perform`_
@@ -23,8 +23,9 @@ This was not a reasonable thing to do.
 .. _invited to perform: /2012/09/27/slsa2012/
 .. _SLSA: http://www.litsciarts.org/slsa12/
 
+
 Friday
-------
+======
 
 It was a whirlwind_ of a weekend.
 The piece,
@@ -53,8 +54,9 @@ as a driver for the next day.
       The Obsolete Book in a Post-Obsolete World,
       as Represented by a Post-Obsolete Book About Dance</em></a>
 
+
 Saturday
---------
+========
 
 Overhead projectors are not easy to find,
 but Micah tracked one down
@@ -108,8 +110,9 @@ Nick Montfort,
 and Stuart Moulthrop.
 A great group!
 
+
 Sunday
-------
+======
 
 Frontier Airlines flight 577.
 

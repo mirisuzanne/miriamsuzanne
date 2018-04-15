@@ -1,12 +1,15 @@
 public: yes
 tags: [susy, code, sass]
-slug: 'susy-1-0'
 summary: |
   Susy 1.0 has officially launched!
+  This release is loaded with new features,
+  but don't let that fool you.
+  Susy has become shockingly simple to use.
 
 
+****************
 Susy 1.0 Release
-================
+****************
 
 Susy 1.0 has officially launched!
 

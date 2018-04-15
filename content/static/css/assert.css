@@ -9,7 +9,9 @@ p {
   height: 0;
   margin: 0;
   opacity: 0;
+  -webkit-transform: translate3d(0, -3rem, 0);
   transform: translate3d(0, -3rem, 0);
+  -webkit-transition: all 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275), height 150ms 50ms cubic-bezier(0.77, 0, 0.175, 1);
   transition: all 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275), height 150ms 50ms cubic-bezier(0.77, 0, 0.175, 1);
   white-space: nowrap; }
   p:first-child + p {
@@ -17,6 +19,7 @@ p {
   p + p {
     height: 1.5rem;
     opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
 
 /*# sourceMappingURL=assert.css.map */

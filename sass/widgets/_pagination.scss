@@ -1,0 +1,23 @@
+// Pagination
+// ==========
+
+[data-layout='pagination'] {
+  @include font-family('code');
+  grid-column: center / right;
+  margin: var(--spacer) 0;
+  text-align: center;
+}
+
+.current,
+.total {
+  font-size: var(--xlarge);
+}
+
+.prev,
+.next {
+  opacity: 0.25;
+
+  #{$link} {
+    opacity: 1;
+  }
+}

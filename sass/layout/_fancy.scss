@@ -1,0 +1,54 @@
+// Fancy Layout
+// ============
+
+
+[data-layout='fancy'] {
+  display: none;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(16, minmax(0, 1fr));
+  grid-template-rows: repeat(12, minmax(0, 1fr));
+  min-height: 75vh;
+  overflow: hidden;
+
+
+  @include above('break') {
+    display: grid;
+  }
+}
+
+
+@keyframes blip {
+  62%,
+  68% {
+    opacity: 0;
+  }
+
+  65% {
+    opacity: 0.25;
+  }
+}
+
+
+[data-fancy] {
+  animation: blip 120s 3 both ease;
+  background-color: var(--action);
+  background-image: linear-gradient(
+    to bottom right,
+    var(--background),
+    var(--background-0)
+  );
+  opacity: 0;
+}
+
+
+@for $i from 0 to 192 {
+  $bg: color('action');
+  $h: random(360);
+  $s: saturation($bg);
+  $l: lightness($bg);
+
+  [data-fancy='#{$i}'] {
+    animation-delay: 0s - random(90);
+    background-color: hsl($h, $s, $l);
+  }
+}

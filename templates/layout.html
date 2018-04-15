@@ -1,25 +1,57 @@
 {% extends "base.html" %}
 
+{% import "layout/macros.j2" as layout %}
+{% import "utility.macros.j2" as utility %}
+
+
 {% block layout %}
-  <header data-region="banner">
-    {% include "layout/_banner.html.j2" %}
-    {% include "layout/_nav.html.j2" %}
+  {% if config.message %}
+    <aside data-layout="message">
+      <div class="message">
+        {{ config.message|rst }}
+      </div>
+    </aside>
+  {% endif %}
+
+  <header data-layout="header">
+    <a href="/" rel="home">
+      <b class="first">Miriam</b>
+      <b class="last">Suzanne</b>
+    </a>
   </header>
 
-  <main data-region="main">
-    {% block body %}{% endblock %}
+  <nav data-layout="nav">
+    {% for item in config.nav %}
+      <a href="{{ item.url }}" data-nav="{{ item.slug or item.title }}">
+        {{ item.title|capitalize|typogrify }}
+      </a>
+    {% endfor %}
+  </nav>
 
-    {% if config.location != 'home' %}
-      {% include "modules/_novel.html.j2" %}
-    {% endif %}
+  <main data-layout="main" data-grid="full">
+    {% block body %}{% endblock %}
   </main>
 
-  <div class="fatfooter">
-    {% if not config.hide_contact %}
-      {% include 'layout/_contact.html.j2' %}
-    {% endif %}
+  <footer data-layout="footer" data-grid="full">
+    <hr data-layout="grid-border" />
 
-    {% include "layout/_tinyletter.html.j2" %}
-    {% include "layout/_contentinfo.html.j2" %}
-  </div>
+    <div class="footer" data-align="center">
+      <p>
+        {% set copy = config.copyright[0] %}
+        &copy; {{ copy.year }}
+        <a href="{{ copy.url }}">{{ copy.name }}</a>
+      </p>
+      <p>
+        <a href="http://oddbird.net">OddBird</a> |
+        <a href="http://teacupgorilla.com">Teacup Gorilla</a> |
+        <a href="http://grapefruitlab.com">Grapefruit Lab</a>
+      </p>
+    </div>
+  </footer>
+
+  <span data-layout="fancy" role="presentation">
+    {% for i in range(0, 192) %}
+      <span data-fancy="{{ i }}"></span>
+    {% endfor %}
+  </span>
 {% endblock %}

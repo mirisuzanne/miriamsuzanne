@@ -1,5 +1,6 @@
 public: yes
-slug: 'resistence-tour'
+tags: ['speaking', 'writing', 'Riding Sidesaddle*']
+series: 'Riding Sidesaddle*'
 image:
   - src: '2016/resistence.jpg'
 summary: |
@@ -14,12 +15,7 @@ summary: |
 Some Kind of Resistance Tour, 2017
 ==================================
 
-It's been a month and change
-since our country pseudo-elected
-a bigoted blow-hard for president.
-I'm heading to DC to protest his inauguration,
-visit friends,
-and perform some mixed-media resistance:
+On tour, I'll be:
 
 - reading from my queer-as-fuck novel `Riding SideSaddle*`_,
   while being a loud and vocal trans woman.

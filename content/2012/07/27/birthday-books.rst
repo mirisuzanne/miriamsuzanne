@@ -1,6 +1,5 @@
 public: yes
-tags: [writing, art]
-slug: 'birthday-books.rst'
+tags: [inspiration]
 image:
   - src: '2012/lighthead.jpg'
 summary: |

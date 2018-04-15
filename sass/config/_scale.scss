@@ -1,27 +1,54 @@
 // Scale Config
 // ============
 
-@import '../../node_modules/accoutrement-scale/sass/scale';
 
-$ratios: (
-  'mia': 1.4,
+/// Sizes are contained in Sass maps,
+/// and accessed using OddBird’s Accoutrement.
+/// @link http://oddbird.net/accoutrement-scale/
+///   Accoutrement Scale
+$sizes: ();
+
+
+// Ratios
+// ------
+/// @group scale
+/// @ratios
+$text-ratios: (
+  'text-ratio': 1.4,
 );
 
-$sizes: (
-  'root': 20px,
-  'rhythm': 'root' ('mia': 1),
+@include herman-ratios('text-ratios', $text-ratios);
 
-  'small': 'root' ('mia': -0.75),
-  'large': 'root' ('mia': 1),
 
-  'gutter': 'rhythm',
-  'shim': 'gutter' ('linear': 0.5),
-  'half-shim': 'gutter' ('linear': 0.25),
-
-  'corners': 6px,
-  'block': 24rem,
-  'page': 32rem,
-  'wide': 'block' ('linear': 2),
-
-  'logo': 'rhythm' ('linear': 3),
+// Text Sizes
+// ----------
+/// @group scale
+/// @sizes
+$text-sizes: (
+  'root': 22px,
+  'responsive': calc(100% + 0.5vw),
+  'rhythm': 1rem ('text-ratio': 1),
+  'xlarge': calc(1em + 1vw),
+  'large': calc(1em + 0.5vw),
+  'medium': calc(1em + 0.25vw),
+  'small': 1em ('text-ratio': -0.25),
+  'xsmall': 1em ('text-ratio': -0.675),
+  'code': 1em ('text-ratio': -1),
 );
+
+@include herman-sizes('text-sizes', $text-sizes);
+
+
+// Page Sizes
+// ----------
+/// @group scale
+/// @sizes output-only
+$page-sizes: (
+  'page': 28rem,
+  'wide': 'page' ('times': 1.5),
+  'break': 'page' ('convert': 'browser-ems'),
+  'extend': 'break' ('times': 1.5),
+  'full': 'break' ('times': 2),
+);
+
+@include herman-sizes('page-sizes', $page-sizes);

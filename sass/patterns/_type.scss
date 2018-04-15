@@ -1,0 +1,66 @@
+// Typography
+// ==========
+
+
+hr:not([data-layout='grid-border']) {
+  @include amp;
+  @include after('& & &');
+  color: var(--callout);
+  margin: var(--spacer) 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+
+[data-layout='rst'] {
+  h1 {
+    font-size: var(--h1);
+  }
+
+  h2 {
+    font-size: var(--h2);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-style: italic;
+    margin-bottom: var(--shim);
+    margin-top: var(--double-gutter);
+  }
+}
+
+
+blockquote,
+.pullquote {
+  @include feature-type;
+  margin: var(--double-gutter) 0;
+}
+
+
+.attribution {
+  display: block;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: neg(--shim);
+
+  time {
+    font-weight: normal;
+  }
+}
+
+
+blockquote {
+  p {
+    &:not(.attribution) {
+      text-indent: -0.4em;
+
+      @include wrap-content {
+        color: var(--accent-light);
+        font-weight: bold;
+      }
+    }
+  }
+}

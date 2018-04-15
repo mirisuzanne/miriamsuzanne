@@ -1,10 +1,12 @@
 public: yes
+image:
+  - src: 'sidesaddle/box.jpg'
+    alt: 'Riding SideSaddle* [box]'
 
 
+*****************************
 Michigan Quarterly: Interview
-=============================
-
-|sidesaddle|
+*****************************
 
 A great interview with the insightful `Ryo Yamaguchi`_
 at `Michigan Quarterly Review`_:
@@ -25,11 +27,3 @@ at `Michigan Quarterly Review`_:
 .. _Ryo Yamaguchi: http://plotsandoaths.com/
 .. _Michigan Quarterly Review: http://www.michiganquarterlyreview.com/2015/06/on-riding-sidesaddle-an-interview-with-eric-suzanne/
 .. _`Read the full interview »`: http://www.michiganquarterlyreview.com/2015/06/on-riding-sidesaddle-an-interview-with-eric-suzanne/
-
-.. |sidesaddle| raw:: html
-
-  <figure>
-    <a href="http://ridingsidesaddle.net">
-      <img src="/static/pictures/sidesaddle-box.jpg" alt="Riding SideSaddle* [box]" />
-    </a>
-  </figure>

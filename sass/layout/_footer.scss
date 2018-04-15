@@ -1,18 +1,18 @@
 // Footer Layout
 // =============
 
-[data-region='contentinfo'] {
-  margin-top: size('gutter');
-  padding: size('gutter') size('shim');
-  text-align: center;
+
+[data-layout='footer'] {
+  margin-top: var(--spacer);
 }
 
-.copyright {
-  @include font-size('small');
+.footer {
+  @include angle('top');
+  font-size: var(--small);
   font-style: italic;
-  text-transform: lowercase;
+  margin-bottom: var(--gutter);
 
-  i {
-    font-style: normal;
+  p {
+    margin: 0;
   }
 }

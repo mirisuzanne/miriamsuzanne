@@ -1,17 +1,15 @@
 public: yes
-tags: [writing, art, performance]
-slug: 'slsa2012'
+tags: [writing, art, postobsolete]
 summary: |
-  I'll be in `Milwaukee <http://goo.gl/maps/MZW3g>`_ this weekend
-  for a brief appearance at
-  `SLSA 2012 <http://www.litsciarts.org/slsa12/>`_.
-  The `ELO <http://eliterature.org/electronic-literature-the-nonhuman/>`_
-  is hosting a jurried elit event,
-  and accepted my `submission <http://www.post-obsolete.com>`_.
+  I'll be in Milwaukee this weekend
+  for a brief appearance at the
+  SLSA 2012 jurried elit event –
+  performing the Post-Obsolete Book.
 
 
+**************************************
 Electronic Literature and the Nonhuman
-======================================
+**************************************
 
 I'll be in `Milwaukee`_ this weekend
 for a brief appearance at
@@ -32,7 +30,7 @@ Thank you, ELO/SLSA jury.
 
 
 The Obsolete Book in a Post-Obsolete World
-------------------------------------------
+==========================================
 
 My text is `available online`_,
 but the performance includes text-to-speech voice-over,
@@ -57,8 +55,8 @@ was gracious about my theft:
 Thank you Mr. Leech.
 
 
-Electronic Literature |&| the Nonhuman
---------------------------------------
+Electronic Literature & the Nonhuman
+====================================
 
 Saturday, September 29th, 5-7pm |
 201C of the Frontier Airlines Center |
@@ -77,7 +75,3 @@ Maybe they're humans too! Who can say?
 .. _Michelle Ellsworth: http://michelleellsworth.com/
 .. _The Widow's Bane: http://www.myspace.com/widowsbane
 .. _Mark Marino: http://markcmarino.com
-
-.. |&| raw:: html
-
-  <span class="amp">&</span>

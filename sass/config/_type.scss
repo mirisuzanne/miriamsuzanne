@@ -1,0 +1,23 @@
+// Type
+// ====
+
+
+$link: '&:link, &:visited';
+$focus: '&:focus, &:hover, &:active';
+
+
+@mixin feature-type {
+  font-size: var(--medium);
+  font-style: italic;
+
+  em,
+  i {
+    font-style: normal;
+  }
+}
+
+
+@mixin amp {
+  @include font-family('amp');
+  font-style: italic;
+}

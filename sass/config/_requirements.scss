@@ -1,0 +1,81 @@
+// Requirements
+// ============
+
+@import '../../node_modules/accoutrement-color/sass/color';
+@import '../../node_modules/accoutrement-layout/sass/layout';
+@import '../../node_modules/accoutrement-type/sass/type';
+@import '../../node_modules/accoutrement-scale/sass/scale';
+@import '../../node_modules/sassdoc-theme-herman/scss/utilities';
+
+
+$functions: (
+  'adjust-hue': get-function('adjust-hue'),
+  'convert': get-function('convert-units'),
+  'darken': get-function('darken'),
+  'desaturate': get-function('desaturate'),
+  'lighten': get-function('lighten'),
+  'rgba': get-function('rgba'),
+  'saturate': get-function('saturate'),
+);
+
+
+@mixin herman-colors(
+  $key,
+  $map
+) {
+  @include add-colors($map);
+  @include herman-add('colors', $key, $map, get-function('color'));
+}
+
+
+@mixin herman-ratios(
+  $key,
+  $map
+) {
+  @include add-ratios($map);
+  @include herman-add('ratios', $key, $map, get-function('ratio'));
+}
+
+
+@mixin herman-sizes(
+  $key,
+  $map
+) {
+  @include add-sizes($map);
+  @include herman-add('sizes', $key, $map, get-function('size'));
+}
+
+
+@mixin herman-font(
+  $key,
+  $map
+) {
+  $fonts: map-merge($fonts, ($key: $map)) !global;
+  @include herman-add('font', $key, $map);
+}
+
+
+@function neg(
+  $var
+) {
+  @return calc(-1 * var(#{$var}));
+}
+
+
+@mixin set-variables {
+  $maps: (
+    'color': $colors,
+    'size': $sizes,
+    'ratio': $ratios,
+  );
+
+  @each $function, $map in $maps {
+    @each $key, $value in $map {
+      @if not str-index($key, 'hljs-') {
+        $key: unquote('--#{$key}');
+        $value: call(get-function($function), $value);
+        #{$key}: $value;
+      }
+    }
+  }
+}

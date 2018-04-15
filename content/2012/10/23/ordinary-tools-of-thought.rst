@@ -1,22 +1,18 @@
 public: yes
-tags: [minifesto, fuck the muse, art, writing, process]
+tags: [minifesto, fuck the muse, art, writing]
+series: 'fuck the muse'
 summary: |
-  |ftm|:
-  It seems I can't dive straight into
-  the `five steps of creative process </2012/10/16/muse-intro/>`_ —
-  my content wants to take a different route
-  (more on that later).
-  Instead,
-  let's start by establishing some broad themes
-  that will resurface regularly along the way.
-
-  .. |ftm| raw:: html
-
-    <em><a href="/2012/10/16/muse-intro/">Fuck the Muse</a> pt.2</em>
+  Kirby Ferguson
+  argues that the three basic techniques of remixing
+  (*copy*, *transform*, *combine*)
+  form the foundation of all creative process.
+  He refers to these techniques as the
+  "Elements of Creativity"…
 
 
+*************************
 Ordinary Tools of Thought
-=========================
+*************************
 
 [This is *part 2* in the ongoing
 `Fuck the Muse </2012/10/16/muse-intro/>`_ mini-series.]
@@ -35,8 +31,9 @@ Instead,
 let's start by establishing some broad themes
 that will resurface regularly along the way.
 
+
 The Elements of Creativity
---------------------------
+==========================
 
 Kirby Ferguson's fantastic video series,
 `Everything is a Remix`_,
@@ -66,15 +63,16 @@ Consider it homework.
   takes up the ladder and carries it out.
   Pause.) `*`_
 
-Spark |&| Slip
---------------
+
+Spark & Slip
+============
 
 Douglas Hofstadter,
 a writer and professor of cognitive science,
 makes the same argument in his book
 `Metamagical Themas`_.
 He talks about creativity as
-a process of "sparking |&| slipping":
+a process of "sparking & slipping":
 
   There is a way that concepts have of "slipping"
   from one into another,
@@ -87,11 +85,12 @@ a process of "sparking |&| slipping":
 This isn't just technique,
 this is how our brains work —
 sparking off ideas and slipping towards other ideas —
-copying, transforming, |&| combining
+copying, transforming, & combining
 into new ideas.
 
+
 The Art is Inevitable
----------------------
+=====================
 
   I invented nothing new.
   I simply assembled the discoveries of other men
@@ -118,16 +117,6 @@ and we'll borrow from them regularly —
 but I want to show that the conceptual/remix process is essential
 for *every* medium and *every* genre.
 
-The Series
-----------
-
-1. `Fuck the Muse: a Blog Mini-Series [intro] </2012/10/16/muse-intro/>`_
-2. `Ordinary Tools of Thought </2012/10/23/ordinary-tools-of-thought/>`_
-3. `Creative Modes and Cycles </2012/11/08/creative-cycles>`_
-4. `Starting from a Seed </2012/12/13/starting-from-a-seed/>`_
-5. `Get Curious </2013/02/07/get-curious/>`_
-6. `Explosive Growth </2013/02/14/explosive-growth/>`_
-7. `(re)Thinking on Your Feet </2013/03/29/rethinking-on-your-feet/>`_
 
 .. _five steps of creative process: /2012/10/16/muse-intro/
 .. _Everything is a Remix: http://everythingisaremix.info/
@@ -135,7 +124,3 @@ The Series
 .. _Metamagical Themas: http://books.google.com/books/about/Metamagical_Themas.html?id=o8jzWF7rD6oC
 .. _conceptual artists: http://en.wikipedia.org/wiki/Conceptual_art
 .. _remix artists: http://en.wikipedia.org/wiki/Remix
-
-.. |&| raw:: html
-
-  <span class="amp">&</span>

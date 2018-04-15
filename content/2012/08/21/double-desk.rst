@@ -1,17 +1,17 @@
 public: yes
-tags: [tools]
+tags: [inspiration]
 image:
   - src: '2012/double-desk.jpg'
 summary: |
-  I always build my own desks.
+  I've always built my own desks.
   You can make a desk in minutes
   from any number of common components,
   and tear it down just as fast if you need more space.
-  This time I made a double-decker standing desk.
 
 
+***************************
 Double-decker standing desk
-===========================
+***************************
 
 The internet says I'm `getting fat`_,
 and `slowly decomposing`_ as I work,

@@ -1,0 +1,66 @@
+// Posts
+// =====
+
+
+[data-title='post'],
+[data-byline='post'],
+[data-summary='post'] {
+  grid-column: left / gutter;
+
+  @include above('break') {
+    grid-column: center / right;
+  }
+}
+
+
+[data-title='post'] {
+  align-self: first baseline;
+  font-size: var(--h2);
+  font-style: italic;
+  margin-top: var(--double-gutter);
+}
+
+
+[data-summary=post] {
+  margin-bottom: var(--gutter-plus);
+}
+
+
+[data-byline] {
+  font-size: var(--xsmall);
+  font-weight: bold;
+  font-variant: small-caps;
+
+  i {
+    font-weight: normal;
+    font-variant: normal;
+  }
+}
+
+
+[data-byline='rst'] {
+  @include angle('top');
+  grid-column: left / right;
+}
+
+
+[data-byline='post'] {
+  align-self: first baseline;
+  grid-row-end: span 2;
+
+  @include above('extend') {
+    align-self: start;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: auto;
+    grid-column: left / center;
+    margin-bottom: var(--gutter-plus);
+    text-align: right;
+  }
+}
+
+
+[data-meta] {
+  display: inline-block;
+  white-space: nowrap;
+}

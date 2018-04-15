@@ -1,0 +1,56 @@
+// Forms
+// =====
+
+
+[data-field] {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: var(--gutter);
+}
+
+
+[data-label] {
+  background: var(--background);
+  color: var(--field-chill);
+  font-size: calc(var(--small) * 0.75);
+  font-weight: bold;
+  margin: 0 auto neg(--shim) var(--shim);
+  padding: 0 var(--shim);
+  transition: color 250ms ease;
+}
+
+
+[data-input='default'],
+[data-input='textarea'] {
+  border: var(--border) solid var(--field-chill);
+  border-radius: var(--shim);
+  font-size: var(--small);
+  padding: var(--border);
+  transition: border-color 250ms ease;
+  width: 100%;
+
+  &:invalid {
+    border-color: var(--field-attention);
+  }
+
+  &:focus {
+    border-color: var(--field-chill);
+    outline: 0;
+
+    & + [data-label] {
+      color: var(--field-attention);
+    }
+  }
+}
+
+
+[data-input='textarea'] {
+  min-height: calc(var(--rhythm) * 6);
+}
+
+
+[data-actions] {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+}

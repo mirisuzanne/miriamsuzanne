@@ -1,20 +1,8 @@
-public: yes
+public: no
 tags: [art, writing, minifesto]
-slug: 'poetry-doesnt-matter'
 summary: |
-  Theatres are concerned about the lack of audience.
-  Poets are concerned about their lack of audience.
-  Classical musicians are concerned.
-  Dance companies are concerned.
-  Every one is filled with concern for the "survival"
-  of their medium.
-  Yesterday I ran across
-  "`Can Poetry Matter? <http://www.theatlantic.com/magazine/archive/1991/05/can-poetry-matter/5062/>`_",
-  an old-but-somewhat-prescient article
-  about the dwindling influence of modern poetry,
-  circulating again through the community.
-  It's a good article,
-  but it's the wrong question.
+  Don't worry about the medium.
+  Focus on the experience.
 
 
 Poetry Doesn't Matter (but you should)
@@ -36,6 +24,7 @@ circulating again through the community.
 
 It's a good article,
 but it's the wrong question.
+
 
 The Medium is Irrelevant
 ------------------------
@@ -59,13 +48,9 @@ but you'll never hear her say it.
 
 Only poets buy "poetry" -
 everyone else is buying the experience it provides.
-Stop selling the *what*,
-and start selling the *why*.
-Sell your aesthetic vision for the world
-and experiences that can never be forgotten.
-
 Don't argue that poetry should matter.
 Prove that *you* matter.
+
 
 Finding an Audience is Your Job
 -------------------------------

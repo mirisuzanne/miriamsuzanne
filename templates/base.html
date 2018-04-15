@@ -38,6 +38,10 @@
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/images/favicons/apple-touch-icon-72x72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="/static/images/favicons/apple-touch-icon-precomposed.png">
 
+  <!-- TypeKit Fonts -->
+  <script src="https://use.typekit.net/slx1xnq.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
   <!-- Styles -->
   {% block styles %}
   <link rel="stylesheet" href="/static/css/screen.css" />
@@ -64,9 +68,5 @@
 
 <body data-location="{% block location %}{{ config.location }}{% endblock %}">
   {% block layout %}{% endblock %}
-
-  <!-- JavaScript -->
-  <script src="/static/js/local.js"></script>
-  {% block extrajs %}{% endblock %}
 </body>
 </html>

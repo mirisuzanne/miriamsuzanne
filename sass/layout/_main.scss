@@ -1,25 +1,27 @@
 // Main Layout
 // ===========
 
-@mixin page(
-  $size: 'page',
-  $pad: true
-) {
-  margin: size('gutter') * 2 auto;
-  max-width: size($size);
+.page-tagline {
+  font-size: var(--h2);
+  font-style: italic;
+  margin-bottom: var(--gutter);
+}
 
-  @if $pad {
-    padding-left: size('shim');
-    padding-right: size('shim');
+
+[data-layout='grid'] {
+  display: grid;
+  grid: inherit;
+  grid-auto-flow: row dense;
+  grid-column: start / end;
+}
+
+
+[data-layout='rst'] {
+  grid-column: left / gutter;
+  margin-bottom: var(--double-spacer);
+  margin-top: var(--double-gutter);
+
+  @include above('break') {
+    grid-column: center / right;
   }
-}
-
-
-[data-region='main'] {
-  margin-bottom: size('gutter');
-}
-
-
-[data-module] {
-  @include page;
 }

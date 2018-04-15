@@ -1,12 +1,9 @@
 public: yes
-tags: [writing, art]
-slug: 'lori-deboer-self-doubt'
+tags: [inspiration]
 summary: |
-  From Lori Deboer:
-
-    What has changed in my years of writing
-    is that I’ve come to regard the state of self-doubt as normal.
-    The trick to dispel doubts? Write anyway.
+  "What has changed in my years of writing
+  is that I’ve come to regard the state of self-doubt as normal.
+  The trick to dispel doubts? Write anyway."
 
 
 Lori DeBoer on Self Doubt

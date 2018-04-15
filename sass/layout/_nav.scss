@@ -1,35 +1,88 @@
-// Nav Layout
-// ==========
+// Navigation Layout
+// =================
 
-$locations: (
-  'home',
-  'past',
-  'blog',
-  'press',
-  'about',
-  'contact',
-);
 
-[data-region='nav'] {
-  @include font-size('small');
-  font-style: italic;
-  text-transform: lowercase;
-}
+[data-layout='nav'] {
+  border-top: var(--shim) solid var(--action-hover);
+  justify-self: center;
+  display: grid;
+  justify-items: start;
+  padding: 0 var(--gutter);
+  writing-mode: vertical-rl;
 
-[data-nav] {
-  #{$link} {
-    display: inline-block;
-    padding: 0 size('half-shim');
+  @include above('break') {
+    border-top: 0;
+    justify-self: end;
   }
 }
 
-@each $loc in $locations {
-  [data-location='#{$loc}'] {
-    [data-nav='#{$loc}'] {
-      #{$link} {
-        color: inherit;
 
-        @include wrap-content('[' ']');
+[data-nav] {
+  $r1: calc(93% - var(--shim) * #{(30 + random(60)) / 100});
+  $r2: calc(100% - var(--spacer) * #{(30 + random(60)) / 100});
+  $l1: calc(var(--shim) * #{(30 + random(60)) / 100});
+  $l2: calc(100% - var(--spacer) * #{(30 + random(60)) / 100});
+
+  #{$link} {
+    --r: #{$r1 $r2};
+    --l: #{$l1 $l2};
+    color: inherit;
+    clip-path: polygon(0 0, 100% 0, var(--r), var(--l));
+    display: block;
+    font-size: var(--small);
+    font-style: italic;
+    font-weight: bold;
+    margin: 0 -1px;
+    padding: var(--gutter) var(--shim) var(--spacer);
+    text-decoration: none;
+    transition: background-color 200ms ease, clip-path 300ms ease;
+  }
+
+  #{$focus} {
+    clip-path: polygon(0 0, 100% 0, var(--fr), var(--fl));
+    background: var(--action-light);
+    color: var(--action);
+  }
+}
+
+
+
+// Locations
+// ---------
+
+
+$nav: (
+  'home',
+  'writing',
+  'speaking',
+  'work',
+  'art',
+  'contact',
+  'who',
+);
+
+
+@each $item in $nav {
+  $i: index($nav, $item);
+  $r1: calc(95% - var(--shim) * #{(30 + random(60)) / 100});
+  $r2: calc(100% - var(--gutter) * #{random()});
+  $l1: calc(var(--shim) * #{(30 + random(60)) / 100});
+  $l2: calc(100% - var(--gutter) * #{random()});
+
+  [data-nav='#{$item}'] {
+    --fr: #{$r1 $r2};
+    --fl: #{$l1 $l2};
+  }
+
+  [data-location='#{$item}'] {
+    [data-nav='#{$item}'] {
+      #{$link} {
+        --text-shadow: #000;
+        background-color: var(--action-hover);
+        color: var(--background);
+        clip-path: polygon(0 0, 100% 0, var(--fr), var(--fl));
+        font-style: normal;
+        font-weight: normal;
       }
     }
   }

@@ -1,0 +1,8 @@
+{% import "blog/macros.j2" as blog %}
+
+{% set entries = get_blog_entries_by_tag(module.tag) %}
+{% set entries = entries|reverse if (entries and module.reverse) else entries %}
+
+{% if entries %}
+  {{ blog.section(entries) }}
+{% endif %}

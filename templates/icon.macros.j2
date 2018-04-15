@@ -1,0 +1,22 @@
+{% import 'utility.macros.j2' as utility %}
+
+
+{# Get Icons #}
+{% macro get(
+  name
+) %}
+  {% include 'icons/%s.svg' % name %}
+{% endmacro %}
+
+
+{# Icon Link #}
+{% macro link(
+  icon,
+  content,
+  url
+) %}
+  <a href="{{ url }}" class="icon-link">
+    <span class="link-icon">{{ get(icon) }}</span>
+    <span class="link-text">{{ content }}</span>
+  </a>
+{% endmacro %}

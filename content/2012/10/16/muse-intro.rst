@@ -1,34 +1,15 @@
 public: yes
-tags: [minifesto, fuck the muse, art, writing, process]
+tags: [minifesto, fuck the muse, art, writing]
+series: fuck the muse
 summary: |
-  |ftm|:
-  I was planning to spend this month teaching
-  `a class </2012/08/30/fuck-the-muse>`_ for the
-  `Boulder Writers' Workshop <http://www.boulderwritersworkshop.org/>`_.
-  That garnered some interest,
-  but didn't pan out in the end.
-  Instead, I'm going to explore the same themes right here
-  in a six-part *Fuck the Muse* blog
-  `mini-series <http://www.imdb.com/title/tt0088727/>`_.
-
-  .. |ftm| raw:: html
-
-    <em><a href="/2012/10/16/muse-intro/">Fuck the Muse</a> pt.1</em>
+  We think of creativity as sudden, sexy,
+  inexplicable moments of inspiration —
+  ignoring the hard work that makes those moments possible.
 
 
-Fuck the Muse: A Blog Mini-Series
-=================================
-
-[This is *part 1* in the ongoing
-`Fuck the Muse </2012/10/16/muse-intro/>`_ mini-series.]
-
-I was planning to spend this month
-teaching `a class`_ for the
-`Boulder Writers' Workshop`_.
-That garnered some interest,
-but didn't pan out in the end.
-Instead, I'm going to explore the same themes right here
-in a six-part *Fuck the Muse* blog `mini-series`_.
+*************
+Fuck The Muse
+*************
 
 The goal is simple:
 
@@ -38,16 +19,17 @@ The goal is simple:
 I've been told that you can't teach creativity, but I disagree.
 We think of creativity as sudden, sexy, inexplicable moments of inspiration —
 ignoring the hard work that makes those moments possible.
-I can't teach you how to be inspired,
-but I can teach you how to hunt down inspiration,
+You can't learn to be inspired,
+but you can learn to hunt down inspiration,
 kill it, and tan the hide.
 
 .. _a class: /2012/08/30/fuck-the-muse
 .. _Boulder Writers' Workshop: http://www.boulderwritersworkshop.org/
 .. _mini-series: http://www.imdb.com/title/tt0088727/
 
+
 The Art of Control
-------------------
+==================
 
 Taking control of your art isn't a matter of brute force.
 You have to let go, explore, take risks, and throw yourself off-balance.
@@ -73,8 +55,9 @@ while nudging you in the right direction.
   where you need training or practice,
   and how to turn your flaws into assets along the way.
 
+
 Class Overview
---------------
+==============
 
 I break the creative process down into five major steps.
 We'll look at each one in it's own post:
@@ -96,8 +79,9 @@ This isn't paint-by-numbers —
 it's a toolkit and a way of thinking.
 What you do with it is up to you.
 
+
 Credit Where Due
-----------------
+================
 
 My approach is influenced most heavily by
 Anne Bogart's `Viewpoints`_,
@@ -111,17 +95,6 @@ standard graphic design processes,
 Don Fry's `Writing Your Way`_,
 `queer theory`_,
 and many years of working with ensemble theatres and bands.
-
-The Series
-----------
-
-1. `Fuck the Muse: a Blog Mini-Series [intro] </2012/10/16/muse-intro/>`_
-2. `Ordinary Tools of Thought </2012/10/23/ordinary-tools-of-thought/>`_
-3. `Creative Modes and Cycles </2012/11/08/creative-cycles>`_
-4. `Starting from a Seed </2012/12/13/starting-from-a-seed/>`_
-5. `Get Curious </2013/02/07/get-curious/>`_
-6. `Explosive Growth </2013/02/14/explosive-growth/>`_
-7. `(re)Thinking on Your Feet </2013/03/29/rethinking-on-your-feet/>`_
 
 .. _Viewpoints: http://en.wikipedia.org/wiki/Viewpoints
 .. _(re)making project: http://www.charlesmee.org/indexf.html

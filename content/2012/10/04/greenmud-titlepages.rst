@@ -1,25 +1,8 @@
 public: yes
-tags: [greenmud, writing, art]
-slug: 'greenmud-titlepages'
+tags: [greenmud]
 summary: |
-  Six months ago we completed
-  a `RocketHub campaign <http://www.rockethub.com/projects/6066-into-the-green-green-mud-multimedia-novel>`_
-  with your help.
-  Since then
-  We've been editing,
-  sketching,
-  adjusting,
-  coding,
-  testing,
-  designing,
-  and coding some more.
-  I'm happy to say
-  *we've reached a milestone*!
   The foundation is complete,
-  the frontmatter is styled,
-  and from here on out we are working
-  page by page and chapter by chapter
-  to bring everything together.
+  and the frontmatter is styled…
 
 
 Foundation and Frontmatter
