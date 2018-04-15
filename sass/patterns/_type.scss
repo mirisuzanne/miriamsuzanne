@@ -35,7 +35,10 @@ hr:not([data-layout='grid-border']) {
 blockquote,
 .pullquote {
   @include feature-type;
-  margin: var(--double-gutter) 0;
+
+  &:not(:only-child) {
+    margin: var(--double-gutter) 0;
+  }
 }
 
 
