@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 
-{% import "layout/macros.j2" as layout %}
 {% import "utility.macros.j2" as utility %}
 
 
@@ -20,34 +19,36 @@
     </a>
   </header>
 
-  <nav data-layout="nav">
-    {% for item in config.nav %}
-      <a href="{{ item.url }}" data-nav="{{ item.slug or item.title }}">
-        {{ item.title|capitalize|typogrify }}
-      </a>
-    {% endfor %}
-  </nav>
+  <div data-layout="content">
+    <nav data-layout="nav">
+      {% for item in config.nav %}
+        <a href="{{ item.url }}" data-nav="{{ item.slug or item.title }}">
+          {{ item.title|capitalize|typogrify }}
+        </a>
+      {% endfor %}
+    </nav>
 
-  <main data-layout="main" data-grid="full">
-    {% block body %}{% endblock %}
-  </main>
+    <main data-layout="main" data-grid="full">
+      {% block body %}{% endblock %}
+    </main>
 
-  <footer data-layout="footer" data-grid="full">
-    <hr data-layout="grid-border" />
+    <footer data-layout="footer" data-grid="full">
+      <hr data-layout="grid-border" />
 
-    <div class="footer" data-align="center">
-      <p>
-        {% set copy = config.copyright[0] %}
-        &copy; {{ copy.year }}
-        <a href="{{ copy.url }}">{{ copy.name }}</a>
-      </p>
-      <p>
-        <a href="http://oddbird.net">OddBird</a> |
-        <a href="http://teacupgorilla.com">Teacup Gorilla</a> |
-        <a href="http://grapefruitlab.com">Grapefruit Lab</a>
-      </p>
-    </div>
-  </footer>
+      <div class="footer" data-align="center">
+        <p>
+          {% set copy = config.copyright[0] %}
+          &copy; {{ copy.year }}
+          <a href="{{ copy.url }}">{{ copy.name }}</a>
+        </p>
+        <p>
+          <a href="http://oddbird.net">OddBird</a> |
+          <a href="http://teacupgorilla.com">Teacup Gorilla</a> |
+          <a href="http://grapefruitlab.com">Grapefruit Lab</a>
+        </p>
+      </div>
+    </footer>
+  </div>
 
   <span data-layout="fancy" role="presentation">
     {% for i in range(0, 192) %}

@@ -14,16 +14,14 @@ body {
   display: grid;
   grid-column-gap: var(--gutter);
   grid-template-columns: (
-    [message-start head-start nav-start main-start foot-start] minmax(0, 100vw)
-    [message-end head-end nav-end intro-end hero-end main-end foot-end]
+    [message-start head-start content-start] 100vw
+    [message-end head-end content-end]
   );
   grid-template-rows: (
     [message-start] auto
     [message-end head-start] auto
-    [head-end nav-start] auto
-    [nav-end main-start] 1fr
-    [main-end foot-start] auto
-    [foot-end head-end]
+    [head-end content-start] auto
+    [content-end]
   );
   min-height: 100vh;
   overflow-x: hidden;
@@ -31,21 +29,33 @@ body {
   @include above('break') {
     grid-template-columns: (
       [message-start head-start fancy-start] auto
-      [head-end nav-start main-start foot-start] 2fr
-      [fancy-end] 1fr
-      [nav-end] minmax(var(--gutter), var(--spacer))
-      [message-end main-end foot-end]
+      [head-end content-start] minmax(0, 1fr)
+      [fancy-end message-end content-end]
     );
     grid-template-rows: (
       [head-start message-start] auto
-      [message-end nav-start fancy-start] auto
-      [nav-end main-start] auto
+      [message-end content-start fancy-start] auto
       [fancy-end] 1fr
-      [main-end foot-start] auto
-      [foot-end] var(--spacer)
-      [head-end]
+      [content-end head-end]
     );
   }
+}
+
+[data-layout="content"] {
+  display: grid;
+  grid-area: content;
+  grid-column-gap: var(--gutter);
+  grid-template-columns: (
+    [nav-start main-start foot-start] auto
+    [nav-end main-end foot-end]
+  );
+  grid-template-rows: (
+    [nav-start] auto
+    [nav-end main-start] auto
+    [main-end foot-start] auto
+    [foot-end]
+  );
+  overflow: hidden;
 }
 
 

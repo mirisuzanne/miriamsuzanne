@@ -3,14 +3,16 @@
 
 
 [data-layout='header'] {
+  font-size: calc(var(--h2) + 15vw);
   margin-left: neg(--shim);
 
   @include above('break') {
     align-self: start;
+    font-size: calc(var(--h2) + 15vh);
     height: 100vh;
-    overflow: hidden;
     position: sticky;
     top: 0;
+    width: 0.75em;
   }
 }
 
@@ -18,9 +20,9 @@
 [rel='home'] {
   #{$link} {
     display: grid;
-    font-size: calc(var(--h2) + 15vw);
     grid-template-columns: repeat(2, 1fr);
     line-height: 0.75;
+    overflow: hidden;
     text-decoration: none;
 
     .first {
@@ -32,7 +34,6 @@
     }
 
     @include above('break') {
-      font-size: calc(var(--h2) + 15vh);
       height: 100%;
       writing-mode: vertical-rl;
     }
@@ -52,6 +53,7 @@
 .first,
 .last {
   --offset: 0;
+  display: block;
   grid-column: 1 / -1;
   grid-row: 1 / span 1;
   transform: translateX(var(--offset));
