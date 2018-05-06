@@ -5,9 +5,11 @@
 
 {% block layout %}
   {% if config.message %}
-    <aside data-layout="message">
+    {% set message = config.message[0] %}
+    {% set message_type = message.type or 'warning' %}
+    <aside data-message="{{ message_type }}">
       <div class="message">
-        {{ config.message|rst }}
+        {{ message.content|rst }}
       </div>
     </aside>
   {% endif %}

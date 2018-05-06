@@ -1,17 +1,31 @@
 // Sitewide Message
 // ================
 
-@keyframes caution {
-  from {
-    background-position: 0 0;
-  }
+from {
+  background-position: 0 0;
+}
+      @keyframes caution {
 
   to {
     background-position: 100vw 0;
   }
 }
 
-[data-layout='message'] {
+.message {
+  @include font-family('code');
+  align-self: center;
+  border-radius: var(--half-shim);
+  display: block;
+  font-size: var(--code);
+  justify-self: center;
+  margin: var(--half-shim);
+  padding: 0 var(--shim);
+}
+
+// Warning
+// -------
+
+[data-message~='warning'] {
   animation: caution 20s linear infinite;
   animation-play-state: paused;
   background-image: repeating-linear-gradient(
@@ -23,22 +37,89 @@
     black 1em,
   );
   background-size: 1.45em 100%;
+  border-bottom: 1px solid black;
   display: grid;
   text-align: center;
 
   &:hover {
     animation-play-state: running;
   }
+
+  .message {
+    background: yellow;
+  }
 }
 
-.message {
-  @include font-family('code');
-  align-self: center;
-  background: yellow;
-  border-radius: var(--half-shim);
-  display: block;
-  font-size: var(--code);
-  justify-self: center;
-  margin: var(--half-shim);
-  padding: 0 var(--shim);
+// Browser
+// -------
+
+[data-message~='browser'] {
+  display: none;
+
+  @supports (display: block) {
+    display: grid;
+  }
+
+  a {
+    display: block;
+    font-size: var(--xlarge);
+    margin: var(--gutter) 0;
+  }
+
+  .message {
+    text-align: left;
+  }
+}
+
+[data-content='browser-warning'] {
+  [data-layout='main'] {
+    display: block;
+
+    * {
+      all: initial !important;
+      font-family: serif !important;
+
+      &::before,
+      &::after {
+        display: none !important;
+      }
+    }
+
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    p ,
+    blockquote {
+      display: block !important;
+      margin: 1em 0 !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-weight: bold !important;
+    }
+
+    a {
+      #{$link} {
+        color: blue !important;
+        text-decoration: underline !important;
+      }
+
+      #{$focus} {
+        color: rebeccapurple !important;
+      }
+    }
+
+    strong {
+      font-weight: bold !important;
+    }
+
+    * {
+      all: revert !important;
+    }
+  }
 }

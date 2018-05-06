@@ -844,8 +844,10 @@
 
 
 # message
-message: |
-  Under construction…
+message:
+  - type: 'warning'
+    content: |
+      Under construction…
 
 # navigation
 nav:
