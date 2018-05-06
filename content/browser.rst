@@ -1,5 +1,8 @@
 public: yes
 hook: 'browser-warning'
+image:
+  - src: 'pages/netscape.gif'
+    alt: 'Netscape Navigator animated logo'
 message:
   - type: 'browser warning'
     content: |
