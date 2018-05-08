@@ -48,7 +48,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('sass', function () {
-  return gulp.src(paths.SASS_DIR + '*.scss')
+  return gulp.src(paths.SASS_DIR + '**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(autoprefixer({
