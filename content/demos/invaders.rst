@@ -7,4 +7,4 @@ Invaders
 ========
 
 .. callmacro:: demos/invaders.macros.j2#invade
-  :count: 600
+  :count: 800
