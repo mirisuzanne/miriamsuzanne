@@ -71,3 +71,16 @@ but always ``coming up short``.
 .. |the non-sense| raw:: html
 
   <label for="erasure">the non-sense</label>
+
+.. callmacro:: gallery/macros.html.j2#figure
+  :caption: 'Headshots'
+  :gallery: [
+              {
+                'image': 'headshots/mia-2017.jpg',
+                'link': '/static/pictures/headshots/mia-2017.jpg',
+              },
+              {
+                'image': 'headshots/mia-smirk.jpg',
+                'link': '/static/pictures/headshots/mia-smirk.jpg',
+              },
+            ]
