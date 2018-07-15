@@ -1,4 +1,5 @@
 public: yes
+tags: ['art', 'music', 'Teacup Gorilla']
 feature:
   - image: 'ums/14-25/raven-jane.jpg'
 after:

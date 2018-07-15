@@ -1,6 +1,6 @@
 public: yes
 grid: yes
-event_type: reading
+event_type: ['reading']
 summary: |
   Miriam is
   a staff writer at `CSS Tricks`_ and `OddBird`_,

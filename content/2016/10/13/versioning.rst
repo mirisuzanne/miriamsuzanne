@@ -1,4 +1,5 @@
 public: yes
+tags: ['interview', 'code']
 slug: 'versioning'
 image:
   - src: '2016/versioning.png'

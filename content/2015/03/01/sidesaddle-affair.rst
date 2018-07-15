@@ -1,4 +1,6 @@
 public: yes
+tags: ['writing', 'art', 'music', 'Teacup Gorilla', 'Riding SideSaddle*']
+series: 'Riding SideSaddle*'
 image:
   - src: 'sidesaddle/affair.jpg'
     caption: 'Riding SideSaddle* [a novel affair]'
@@ -25,7 +27,7 @@ featuring `Teacup Gorilla`_,
 `Jen Korte`_, and `Open to the Hound`_
 at `Syntax Physic Opera`_ 554 S Broadway, Denver CO.
 
-.. _Riding SideSaddle*: http://ridingsidesaddle.com/
+.. _Riding SideSaddle*: /writing/ridingsidesaddle//
 .. _Jacob Liechty: http://jacobliechty.tumblr.com/
 .. _Sondra Eby: http://sondraedesign.tumblr.com/
 .. _Aaron Liechty: http://aaronliechty.tumblr.com/

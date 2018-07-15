@@ -1,7 +1,17 @@
 public: yes
+tags: ['writing', 'art', 'theater', 'Riding SideSaddle*']
+series: 'Riding SideSaddle*'
 slug: '10-myths'
 image:
   - src: '2016/10-myths.png'
+event_type: ['theater']
+events:
+  - venue: 'Buntport Theater'
+    venue_url: 'https://buntport.com/'
+    url: 'https://buntport.com/2016/03/10-myths-proper-application-beauty-products/'
+    date: [2015, 9, 24]
+brag: |
+  Award-winning stage adaptation of Riding SideSaddle*
 summary: |
   I'm excited to be part of `Buntport Theater`_’s
   40th original full-length production —
@@ -10,7 +20,7 @@ summary: |
   It's been a wild month pulling it all together!
 
   .. _Buntport Theater: http://buntport.com
-  .. _Riding SideSaddle*: http://ridingsidesaddle.com
+  .. _Riding SideSaddle*: /writing/ridingsidesaddle/
   .. _Teacup Gorilla: http://teacupgorilla.com
 
 
@@ -35,7 +45,7 @@ Read the reviews in
 then `reserve your tickets before they're gone`_!
 
 .. _Buntport Theater: http://buntport.com
-.. _Riding SideSaddle*: http://ridingsidesaddle.com
+.. _Riding SideSaddle*: /writing/ridingsidesaddle/
 .. _Teacup Gorilla: http://teacupgorilla.com
 .. _10 Myths on the Proper Application of Beauty Products: http://buntport.com/archive/archive.htm
 .. _Out Front: http://www.outfrontonline.com/culture/buntport-theater-presents-10-myths-proper-application-beauty-products/

@@ -1,5 +1,5 @@
 public: yes
-tags: [design, writing, art, process]
+tags: ['writing', 'art', 'process']
 feature:
   - image: 'tennis/volley6.jpg'
 after:

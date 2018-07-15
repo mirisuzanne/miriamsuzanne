@@ -1,5 +1,5 @@
 public: yes
-event_type: talk
+event_type: ['talk']
 events:
   - venue: 'Creative Connections'
     url: 'https://www.meetup.com/Creative-Connections/events/dcwhhpyxgbjb/'

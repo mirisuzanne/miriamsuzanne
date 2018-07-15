@@ -25,12 +25,13 @@
 {% macro link_if(
   content=none,
   url=none,
-  class=none
+  class=none,
+  attrs={}
 ) %}
   {%- set content = content if (content != none) else caller() -%}
 
   {%- if url -%}
-    <a href="{{ url }}" {{ attr_if('class', class) }}>{{ content|safe }}</a>
+    <a href="{{ url }}" {{ attr_if('class', class) }} {{ show_attrs(attrs) }}>{{ content|safe }}</a>
   {%- elif class -%}
     <span class="{{ class }}">{{ content|safe }}</span>
   {%- else -%}

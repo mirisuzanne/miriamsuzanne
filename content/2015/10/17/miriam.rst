@@ -1,4 +1,5 @@
 public: yes
+tags: ['Transition']
 slug: 'miriam'
 summary: |
   It’s the third Saturday in October,

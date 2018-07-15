@@ -1,6 +1,10 @@
 public: yes
-event_type: talk
+event_type: ['talk']
 events:
+  - venue: 'Agile Denver'
+    url: 'https://www.meetup.com/Agile-Denver2/events/251897187/'
+    date: [2018, 10, 22]
+    adr: 'Denver, CO'
   - venue: 'Front Range Front-End'
     url: 'https://www.meetup.com/front-range-front-end/events/zwjmwlyxgbhb/'
     date: [2018, 4, 5]

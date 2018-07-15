@@ -1,6 +1,6 @@
 public: yes
 erasure: yes
-tags: ['gender', 'personal', 'Transition']
+tags: ['writing', 'Transition']
 series: 'Transition'
 image:
   - src: '2016/mia-wtf.jpg'
@@ -33,7 +33,7 @@ It's totally about transition,
 It's about ``bodies`` and identities that won't stay put.
 I think you might ``enjoy it``.
 
-.. _`Riding SideSaddle*`: http://ridingsidesaddle.com/
+.. _`Riding SideSaddle*`: /writing/ridingsidesaddle//
 
 
 I heard you shouldn't ask trans people questions...

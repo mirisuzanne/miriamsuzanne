@@ -1,5 +1,5 @@
 public: yes
-tags: ['inspiration']
+tags: ['elsewhere']
 elsewhere:
   - url: http://www.wearetransilient.com/
     src: 'Transilient'

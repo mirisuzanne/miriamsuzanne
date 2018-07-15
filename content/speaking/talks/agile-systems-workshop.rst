@@ -1,5 +1,5 @@
 public: yes
-event_type: talk
+event_type: ['talk']
 location: speaking
 brag: |
   Learn to **integrate design and code**

@@ -1,5 +1,5 @@
 public: yes
-event_type: talk
+event_type: ['talk']
 location: speaking
 slides: 'https://oddbooksapp.com/book/wwc-layout'
 events:

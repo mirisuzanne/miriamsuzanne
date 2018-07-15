@@ -1,4 +1,5 @@
 public: yes
+tags: ['writing', 'art', 'postobsolete']
 image:
   - src: 'elo14/dancesex.jpg'
     caption: 'Say "ooooooooo" while you dance'

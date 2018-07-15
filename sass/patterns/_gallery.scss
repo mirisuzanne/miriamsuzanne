@@ -7,13 +7,13 @@
   grid-gap: var(--gutter);
   grid-template-columns: minmax(0, 1fr);
   justify-content: center;
-  justify-self: center;
   margin: var(--double-gutter) 0 var(--double-spacer);
   max-width: 100%;
 
   @include above('extend') {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
     [data-layout='rst'] & {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
       margin-left: neg(--spacer);
       margin-right: neg(--spacer);
       max-width: initial;

@@ -1,4 +1,5 @@
 public: yes
+tags: ['sass', 'code']
 slug: 'sitepoint-qa'
 image:
   - src: '2016/QandA.png'

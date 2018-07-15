@@ -1,6 +1,6 @@
 public: yes
 location: art
-event_type: theater
+event_type: ['theater']
 events:
   - venue: 'The Bakery'
     date: [2016, 8, 18]

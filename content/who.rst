@@ -4,6 +4,10 @@ tagline: "Some Kind of Manifesto…"
 erasure: yes
 image:
   - src: 'headshots/face.svg'
+after:
+  - include: events/_by-type.html.j2
+    title: 'A History…'
+    show: 'past'
 summary: |
   **Miriam**
   is an author, performer, musician, designer, and web developer —
@@ -20,7 +24,7 @@ summary: |
   `Susy`_ and `True`_
   `open-source`_ toolkits.
 
-  .. _Riding SideSaddle*: http://ridingsidesaddle.com
+  .. _Riding SideSaddle*: /writing/ridingsidesaddle/
   .. _OddBird: http://oddbird.net/
   .. _Teacup Gorilla: http://teacupgorilla.com/
   .. _open-source: http://github.com/mirisuzanne/
@@ -72,7 +76,7 @@ but always ``coming up short``.
 
   <label for="erasure">the non-sense</label>
 
-.. callmacro:: gallery/macros.html.j2#figure
+.. callmacro:: gallery/macros.j2#figure
   :caption: 'Headshots'
   :gallery: [
               {

@@ -1,5 +1,5 @@
 public: yes
-event_type: talk
+event_type: ['talk']
 location: speaking
 slides: 'http://oddbooksapp.com/book/pattern-making'
 events:

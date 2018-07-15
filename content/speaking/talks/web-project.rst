@@ -1,5 +1,5 @@
 public: yes
-event_type: talk
+event_type: ['talk']
 slides: 'https://www.oddbooksapp.com/book/web-projects'
 events:
   - venue: 'Boost Biz Ed'

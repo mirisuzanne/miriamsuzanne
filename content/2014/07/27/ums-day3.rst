@@ -1,4 +1,5 @@
 public: yes
+tags: ['art', 'music', 'Teacup Gorilla']
 feature:
   - image: 'ums/14-26/magic-cyclops.jpg'
 after:

@@ -1,5 +1,5 @@
 public: yes
-event_type: talk
+event_type: ['talk']
 summary: |
   This event has been scheduled,
   but the title & topic

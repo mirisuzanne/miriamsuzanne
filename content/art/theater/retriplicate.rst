@@ -2,9 +2,10 @@ public: yes
 image:
   - src: 'projects/clyffordstill.jpg'
 url: 'https://clyffordstillmuseum.org/retriplicate-reflects-on-clyfford-stills-replicates-and-the-artistic-process/'
-event_type: theater
+event_type: ['theater']
 events:
   - venue: 'Buntport Theater'
+    venue_url: 'https://buntport.com/'
     date: [2015, 9, 24]
 quotes:
   - credit: 'Eden Lane'

@@ -2,6 +2,23 @@
 {% import 'utility.macros.j2' as utility %}
 
 
+{% macro rst(
+  title=none
+) %}
+  {% if title %}
+    <hr data-layout="grid-border" />
+    <h2 data-title="section">
+      {{ title }}
+    </h2>
+  {% endif %}
+
+  <div data-layout="rst">
+    {% set content = caller() %}
+    {{ content|rst }}
+  </div>
+{% endmacro %}
+
+
 {% macro btn(
   url,
   content=none

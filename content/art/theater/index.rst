@@ -28,9 +28,19 @@ summary: |
 Theater
 *******
 
+.. callmacro:: content/feature.macros.j2#show
+  :slugs: [
+      'art/theater/grapefruitlab',
+      'art/theater/jane-eyre',
+      'art/theater/10myths',
+    ]
+
 .. callmacro:: events/macros.j2#by_type
   :title: 'Upcoming Shows…'
   :event_type: ['theater']
+
+.. callmacro:: blog/macros.j2#taglist
+  :tag: 'theater'
 
 .. callmacro:: events/macros.j2#by_type
   :title: 'Past Shows…'

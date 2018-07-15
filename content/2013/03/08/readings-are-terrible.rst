@@ -1,5 +1,5 @@
 public: yes
-tags: [rant, poetry, reading, performance, punctuation]
+tags: [minifesto]
 
 
 Poetry Readings are Terrible

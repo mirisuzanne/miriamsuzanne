@@ -1,15 +1,15 @@
 public: yes
-tagline: 'a novel on note cards'
+grid: true
 image:
   - src: 'writing/sidesaddle/box.jpg'
     caption: 'A novel on 250 note-cards'
-url: 'http://ridingsidesaddle.com'
+url: '/writing/ridingsidesaddle/'
 location: 'writing'
 publication:
   - venue: 'SpringGun Press'
     url: 'http://springgunpress.com'
     date: [2015, 4, 2]
-event_type: reading
+event_type: ['reading']
 events:
   - venue: 'A Leon Affair'
     date: [2017, 3, 18]
@@ -90,73 +90,139 @@ actions:
 brag: |
   A queer novel, in fragments of memory…
 summary: |
-  The fragmented memories of Herman & Sam –
-  two people sharing one body –
-  as they navigate fluid genders and relationships.
-  Loosely based
-  on the life of Margaret Clap,
-  and the myth of Hermaphroditus.
+  A fragmented memory of friendship --
+  navigating fluid genders, relationships,
+  and bodies that resist order, category, or completion.
+  Inspired by Margaret Clap,
+  and the many myths of Hermaphroditus.
 
   .. callmacro:: content/macros.j2#btn
-    :url: 'https://www.oddbooksapp.com/book/ridingsidesaddle'
+    :url: 'http://www.springgunpress.com/riding-sidesaddle-eric-suzanne/'
 
-    Read the novel online
+    Buy the novel
 
 
 ******************
 Riding SideSaddle*
 ******************
 
-.. callmacro:: content/macros.j2#blockquote
-  :cite: 'Riding SideSaddle*'
+.. -------------------------------------------
+.. callmacro:: content/macros.j2#rst
 
-  Sam gasps for air, and finds herself alone.
-  Herman gasps for air, and finds herself alone.
-  They wipe the mud from their body.
+  .. callmacro:: content/macros.j2#blockquote
+    :cite: 'Riding SideSaddle*'
 
-.. callmacro:: content/macros.j2#btn
-  :url: 'http://www.springgunpress.com/riding-sidesaddle-eric-suzanne/'
+    Sam gasps for air, and finds herself alone.
+    Herman gasps for air, and finds herself alone.
+    They wipe the mud from their body.
 
-  Buy the novel
+  .. callmacro:: content/macros.j2#btn
+    :url: 'https://www.oddbooksapp.com/book/ridingsidesaddle'
 
-
-Adapted for the Stage
-=====================
-
-Riding SideSaddle was adapted for the stage by Buntport Theater,
-with original music by Teacup Gorilla.
-
-.. raw:: html
-
-  <iframe style="border: 0; width: 100%; height: 310px;" src="https://bandcamp.com/EmbeddedPlayer/album=1383025660/size=large/bgcol=ffffff/linkcol=ef3939/artwork=small/transparent=true/" seamless><a href="http://teacupgorilla.bandcamp.com/album/the-holes-they-leave">The Holes They Leave by Teacup Gorilla</a></iframe>
-
-.. callmacro:: content/macros.j2#btn
-  :url: 'https://oddbooksapp.com/book/10-myths'
-
-  Read the stage adaptation
+    Read more online
 
 
-Press
-=====
+.. -------------------------------------------
+.. callmacro:: gallery/macros.j2#figure
+  :caption: 'Art from the novel (available as prints)'
+  :section: true
+  :gallery: [
+              {
+                'image': 'writing/sidesaddle/neck.jpg',
+                'link': 'http://art.miriamsuzanne.com/item/a-longing-print',
+              },
+              {
+                'image': 'writing/sidesaddle/dancers.jpg',
+                'link': 'http://art.miriamsuzanne.com/item/carcass-print',
+              },
+              {
+                'image': 'writing/sidesaddle/divers.jpg',
+                'link': 'http://art.miriamsuzanne.com/item/when-we-walked-print',
+              },
+              {
+                'image': 'writing/sidesaddle/house.jpg',
+                'link': 'http://art.miriamsuzanne.com/item/deformed-print',
+              },
+              {
+                'image': 'writing/sidesaddle/moths.jpg',
+                'link': 'http://art.miriamsuzanne.com/item/sunset-burns-print',
+              },
+              {
+                'image': 'writing/sidesaddle/denver.svg',
+                'link': 'http://art.miriamsuzanne.com/item/cities-rise-sweaty-print',
+              },
+              {
+                'image': 'writing/sidesaddle/reeds.jpg',
+                'link': 'http://art.miriamsuzanne.com/item/dangly-bits-print',
+              },
+              {
+                'image': 'writing/sidesaddle/boxer.jpg',
+                'link': 'http://art.miriamsuzanne.com/item/into-your-heart-print',
+              },
+              {
+                'image': 'writing/sidesaddle/herm.jpg',
+                'link': 'http://art.miriamsuzanne.com/item/a-body-print',
+                'size': 'full',
+              },
+              {
+                'image': 'writing/sidesaddle/volvo.jpg',
+                'link': 'http://art.miriamsuzanne.com/item/high-heels-print',
+              },
+              {
+                'image': 'writing/sidesaddle/mascara.jpg',
+                'link': 'http://art.miriamsuzanne.com/item/boy-on-the-tv-print',
+              },
+            ]
 
-.. callmacro:: content/macros.j2#get_quotes
+
+.. -------------------------------------------
+.. callmacro:: content/macros.j2#rst
+  :Title: '10 Myths on the Proper Application of Beauty Products'
+
+  .. image:: /static/pictures/writing/sidesaddle/true-west-award.jpg
+    :alt: True West Award
+
+  Riding SideSaddle was `adapted for the stage`_ by `Buntport Theater`_,
+  with original music by `Teacup Gorilla`_.
+
+  .. _adapted for the stage: /art/theater/10myths/
+  .. _Buntport Theater: http://buntport.com/
+  .. _Teacup Gorilla: /art/music/teacupgorilla/
+
+  .. callmacro:: content/macros.j2#btn
+    :url: 'https://oddbooksapp.com/book/10-myths'
+
+    Read the script
+
+
+.. -------------------------------------------
+.. callmacro:: content/macros.j2#quote_section
   :page: 'writing/ridingsidesaddle'
+  :title: 'Press'
 
 
-Credits
-=======
+.. -------------------------------------------
+.. callmacro:: blog/macros.j2#taglist
+  :tag: 'Riding SideSaddle*'
 
-Riding SideSaddle* is an
-`open source text`_
-published by `SpringGun Press`_,
-`released online`_ by `OddBird`_,
-and `adapted for the stage`_
-by `Buntport Theater`_ and `Teacup Gorilla`_.
 
-.. _open source text: http://creativecommons.org/licenses/by-nc-sa/4.0/
-.. _SpringGun Press: http://springgunpress.com
-.. _released online: http://oddbooksapp.com/book/ridingsidesaddle
-.. _OddBird: http://oddbird.net/
-.. _adapted for the stage: /art/theater/10myths/
-.. _Buntport Theater: http://buntport.com/
-.. _Teacup Gorilla: http://teacupgorilla.com/
+.. -------------------------------------------
+.. callmacro:: content/macros.j2#rst
+  :Title: 'Publishing Credits'
+
+  Riding SideSaddle* is an
+  `open source text`_
+  published by `SpringGun Press`_,
+  `released online`_ by `OddBird`_,
+  and `adapted for the stage`_
+  by `Buntport Theater`_ and `Teacup Gorilla`_.
+
+  .. _open source text: http://creativecommons.org/licenses/by-nc-sa/4.0/
+  .. _SpringGun Press: http://springgunpress.com
+  .. _released online: http://oddbooksapp.com/book/ridingsidesaddle
+  .. _OddBird: http://oddbird.net/
+  .. _adapted for the stage: /art/theater/10myths/
+  .. _Buntport Theater: http://buntport.com/
+  .. _Teacup Gorilla: http://teacupgorilla.com/
+
+

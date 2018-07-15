@@ -1,5 +1,5 @@
 public: yes
-event_type: talk
+event_type: ['talk']
 location: speaking
 slides: 'https://www.oddbooksapp.com/book/sassy-toolkits'
 events:

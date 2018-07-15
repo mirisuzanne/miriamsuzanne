@@ -1,5 +1,6 @@
 public: yes
-tags: [minifesto, fuck the muse, art, writing, process]
+tags: [minifesto, fuck the muse, art, writing]
+series: fuck the muse
 summary: |
   |ftm|:
   Now that you have

@@ -1,6 +1,6 @@
 public: yes
-tags: ['speaking', 'writing', 'Riding Sidesaddle*']
-series: 'Riding Sidesaddle*'
+tags: ['speaking', 'writing', 'Riding SideSaddle*']
+series: 'Riding SideSaddle*'
 image:
   - src: '2016/resistence.jpg'
 summary: |
@@ -31,7 +31,7 @@ but it feels like a nice way to get started,
 find my energy,
 and find my people.
 
-.. _`Riding SideSaddle*`: http://ridingsidesaddle.com/
+.. _`Riding SideSaddle*`: /writing/ridingsidesaddle//
 .. _`there's more to do`: /2017/01/01/2017/
 
 

@@ -45,7 +45,7 @@
     {{ utility.link_if(
       url=item.link,
       content=img(item.image, item.alt),
-      class=size
+      attrs={'data-size': item.size}
     ) }}
   {% elif item_type == 'video' %}
     <div class="video" {{ size }}>

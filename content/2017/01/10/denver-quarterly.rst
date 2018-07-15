@@ -1,6 +1,6 @@
 public: yes
-tags: ['Riding Sidesaddle*', 'writing']
-series: 'Riding Sidesaddle*'
+tags: ['Riding SideSaddle*', 'writing']
+series: 'Riding SideSaddle*'
 image:
   - src: '2017/denver-quarterly.jpg'
 summary: |
@@ -12,7 +12,7 @@ summary: |
   which was based on it.
 
   .. _Denver Quarterly: http://www.du.edu/denverquarterly/
-  .. _`Riding SideSaddle*`: http://ridingsidesaddle.com
+  .. _`Riding SideSaddle*`: /writing/ridingsidesaddle/
   .. _Buntport: http://buntport.com
   .. _10 Myths on the Proper Application of Beauty Products: https://oddbooksapp.com/book/10-myths
 
@@ -34,6 +34,6 @@ which was based on it.
   Get yer literary on
 
 .. _Denver Quarterly: http://www.du.edu/denverquarterly/
-.. _`Riding SideSaddle*`: http://ridingsidesaddle.com
+.. _`Riding SideSaddle*`: /writing/ridingsidesaddle/
 .. _Buntport: http://buntport.com
 .. _10 Myths on the Proper Application of Beauty Products: https://oddbooksapp.com/book/10-myths

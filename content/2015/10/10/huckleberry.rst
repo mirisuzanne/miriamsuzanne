@@ -1,4 +1,6 @@
 public: yes
+tags: ['writing', 'art', 'Riding SideSaddle*']
+series: 'Riding SideSaddle*'
 image:
   - src: 'huck.jpg'
     caption: 'Riding SideSaddle* art installation'

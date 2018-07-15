@@ -2,7 +2,7 @@ public: yes
 location: art
 image:
   - src: 'art/theater/10myths.jpg'
-event_type: theater
+event_type: ['theater']
 events:
   - venue: 'Buntport Theater'
     url: 'http://buntport.com/archive/10myths.htm'
@@ -77,9 +77,14 @@ summary: |
   created with `Buntport Theater`_
   and `Teacup Gorilla`_.
 
-  .. _Riding SideSaddle*: http://ridingsidesaddle.com/
+  .. _Riding SideSaddle*: /writing/ridingsidesaddle/
   .. _Buntport Theater: http://buntport.com
   .. _Teacup Gorilla: http://teacupgorilla.com
+
+  .. callmacro:: content/macros.j2#btn
+    :url: 'https://oddbooksapp.com/book/10-myths'
+
+    Read the script
 
 
 *****************************************************
@@ -89,3 +94,7 @@ summary: |
 .. callmacro:: content/macros.j2#get_quotes
   :page: 'art/theater/10myths'
 
+.. callmacro:: content/macros.j2#btn
+  :url: '/writing/ridingsidesaddle/'
+
+  More about the novel

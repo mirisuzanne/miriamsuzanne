@@ -1,4 +1,5 @@
 public: yes
+tags: ['sass', 'code', 'writing']
 slug: 'jssass'
 image:
   - src: '2016/jssass.jpg'

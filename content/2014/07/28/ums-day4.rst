@@ -1,4 +1,5 @@
 public: yes
+tags: ['art', 'music', 'Teacup Gorilla']
 feature:
   - image: 'ums/14-27/brokenspirits.jpg'
 after:
