@@ -384,7 +384,7 @@ any amount will help make a difference.
 
 |gofundme|
 
-.. _purchasing art: http://art.miriamsuzanne.com/
+.. _purchasing art: https://squareup.com/store/mirisuzanne
 .. _direct gift: https://www.gofundme.com/mias-medical-upgrade
 .. |gofundme| raw:: html
 
