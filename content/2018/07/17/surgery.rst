@@ -341,7 +341,7 @@ any amount will help make a difference.
 |gofundme|
 
 .. _purchasing art: http://art.miriamsuzanne.com/
-.. _direct gift: https://www.gofundme.com/manage/mias-medical-upgrade
+.. _direct gift: https://www.gofundme.com/mias-medical-upgrade
 .. |gofundme| raw:: html
 
   <iframe class='gfm-media-widget' image='1' coinfo='1' width='100%' height='100%' frameborder='0' id='mias-medical-upgrade'></iframe><script src='//funds.gofundme.com/js/5.0/media-widget.js'></script>
