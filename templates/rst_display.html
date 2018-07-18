@@ -59,7 +59,7 @@
   ) }}
 
   {% if config.series %}
-    {% set entries = get_blog_entries_by_tag(config.series)|reverse %}
+    {% set entries = get_blog_entries_by_tag(config.series) %}
     {{ blog.section(
       entries,
       title="Related Articles"

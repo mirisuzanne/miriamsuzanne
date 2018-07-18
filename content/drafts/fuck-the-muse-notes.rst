@@ -125,6 +125,9 @@ Space, Story, Time, Emotion, Movement, and Shape.
 Anne Bogart and Tina Landau expanded on the list,
 translating it for the theatre:
 
+.. _viewpoints: #
+.. _elements of design: #
+
 - Time: Tempo, Duration, Kinesthetic Response, and Repetition.
 - Space: Shape, Gesture, Architecture, Spatial Relationship, and Topography.
 - Vocal: Pitch, Dynamic, and Timbre.

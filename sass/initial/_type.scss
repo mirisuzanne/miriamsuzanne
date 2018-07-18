@@ -35,6 +35,12 @@ dl {
 }
 
 
+abbr[title] {
+  border: 0;
+  text-decoration: underline dotted;
+}
+
+
 .amp {
   @include font-family('amp');
   font-style: italic;
