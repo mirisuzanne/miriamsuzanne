@@ -17,6 +17,27 @@ summary: |
 Mia's Medical Upgrade
 *********************
 
+|emo|
+
+**OMFG!#!$!1!!**
+I'm excited, and terrified,
+and I might start crying.
+It's hard to unpack all my feelings,
+so I try to focus on the details:
+what needs to happen
+so this goes smoothly.
+Let's do this!
+
+|emo|
+
+.. |emo| raw:: html
+
+  <span style="font-size: var(--xlarge);">🎉😆😭❤️</span>
+
+
+-------
+
+
 .. callmacro:: content/macros.j2#pullquote
 
   |tldr|:
@@ -41,11 +62,13 @@ Mia's Medical Upgrade
 Grandma, I was wrong
 ====================
 
-Three years ago,
-I came out to my extended family
+Early August, 2015 --
+I come out to my extended family
 at a reunion in Michigan.
-It was the first time I had called myself trans
+The same reunion I'll be at next week.
+It's the first time I call myself trans
 in front of other people.
+
 I still don’t know what that means.
 
 Grandma asks how often I wear dresses.
@@ -60,20 +83,21 @@ She seems happy with that.
 --*Will they still date me?*
 
 In October of that year,
-I changed my name publicly.
+I change my name publicly.
 In January,
-I swallowed my first *hormone replacement* pills --
+I swallow my first *hormone replacement* pills --
 a mix of Spironolactone
 (an androgen-blocker)
 and Estradiol
 (an estrogen).
-This September,
+
+On September 10, 2018,
 I will stop taking the androgen-blockers,
-after undergoing the first surgery of my life:
+after completing the first surgery of my life:
 a procedure officially called vaginoplasty,
 but more colloquially referred to as *bottom surgery*.
 
-Grandma, I was wrong.
+*Grandma, I was wrong.*
 
 
 -------
@@ -89,46 +113,51 @@ is to ask about *the surgery*.
 
 When we ask to change the gender-markers
 on government-issued documents,
-many states ask for proof of *the surgery*.
+many states require proof of *the surgery*.
 
-When we say *transition*
-people only hear *genitals*.
+.. callmacro:: content/macros.j2#pullquote
+
+  When we say *transition*
+  people only hear *genitals*.
 
 Historical terms like *Sex Reassignment Surgery* (SRS)
 or *Gender Reassignment Surgery* (GRS)
-also imply a centrality and finality to this one procedure --
+also imply a *centrality* and *finality* to this one procedure --
 as though we aren't *real* men or women
 before we've undergone genital reconstruction.
 
-In reality,
-there are many aspects to transition --
+But there are many aspects to transition --
 social, legal, and medical --
 with every person choosing their own path.
 There is no right way to be trans,
 just as there is no right way to be a woman.
 
-Bottom surgery is only one in a long list of interventions
+Bottom surgery is only one in a long list of medical interventions
 that can help reduce gender dysphoria,
 and improve our quality of life.
-It may be right and necessary for some of us,
-but it does not define our genders or transitions.
+It is absolutely necessary for some of us,
+but it does not validate our genders
+or transitions.
 It is not the primary intervention,
 nor the most common,
 nor the final --
 but in a society that places the full weight of gender
 on our genitals,
 this one procedure tends to
-grab the communal (often salacious) attention.
+grab the most communal (often salacious) attention.
 
-There is no "the surgery" for all trans people.
+There is no "the surgery" for all trans people,
+and there are no *correct* genitals for womanhood.
 I'm already a complete and real woman --
-I only hope to become more comfortable in my own body,
-to trade in some of my gender dysphorias
-for a chance at something better.
+I only hope to relate to my body in new ways:
+to trade in some of my body dysphoria
+for a chance at bodily joy.
 
-Our stories don't have to be defined only by pain --
-we can also strive for *comfort* and *pleasure*
-and a *joy* in our own bodies.
+.. callmacro:: content/macros.j2#pullquote
+
+  Our stories don't have to be defined by pain.
+  We can also strive for *comfort* and *pleasure*
+  and even *ecstasy* in our own bodies.
 
 
 -------
@@ -137,7 +166,7 @@ and a *joy* in our own bodies.
 Change of Plans
 ===============
 
-Trans people are often called on to explain ourselves,
+Trans people are often asked to explain ourselves,
 and defend our medical interventions
 to a cis public that finds us fascinating or disgusting.
 We are expected to beg for validity at every step --
@@ -163,7 +192,8 @@ but at the time no one in my life
 (especially me) knew what to look for.
 One of my `favorite comedians`_ expresses this best,
 with her roommate metaphor
-near the end of this wonderful set:
+near the end of this wonderful set.
+Laugh break!
 
 .. _favorite comedians: https://www.carinamagyar.com/
 
@@ -183,25 +213,26 @@ of repressed trauma in my body,
 along with a euphoria of new discovery.
 
 In the spring of 2017
-I began to consider bottom surgery more seriously.
-I did research on `how it works`_
+I begin to consider bottom surgery more seriously.
+I do my research on `how it works`_
 (CW: this video is graphic,
 and uses outdated "MtF" language),
-and learned about the development
+and learn about the development
 of genital tissue.
-I began to see my body in new ways,
-and found that it was much easier to own and understand
+I begin to see my body in new ways,
+and find that it's much easier to own and understand
 my physical form.
-I talked to friends,
-and learned what to expect.
-Finally, I researched `available surgeons`_,
-and sent an application to Dr. Marci Bowers --
-one of the leading experts in the field.
+I talk to friends,
+and learn what to expect from surgery.
+I research `available surgeons`_,
+and eventually send an application to `Dr. Marci Bowers`_ --
+a ground-breaking expert in the field.
 
 .. _how it works: https://www.youtube.com/watch?v=d90SaWlODlQ
 .. _available surgeons: http://www.transhealthcare.org/vaginoplasty/
+.. _`Dr. Marci Bowers`: http://marcibowers.com/
 
-The next week,
+One week later,
 I get a phone call from her office:
 
 --Are you available on June 9, 2020? |br|
@@ -247,23 +278,26 @@ most of us simply have to go where we're told.
 Meanwhile, there are no national standards for certification,
 and each hospital is making it up as they go.
 
-While I was looking into insurance options,
-I discovered that Denver Health
-was working with Dr Bowers to train local surgeons,
-and a Denver Health plan would be guaranteed to cover
+While I'm looking into insurance options,
+I discover that Denver Health
+is working with Dr Bowers to train two local surgeons,
+and a Denver Health insurance plan
+would be guaranteed to cover
 this new Denver Health surgery.
-I switched my insurance at the end of the year,
-applied for the new DH waiting list,
-and immediately began preparation.
+I switch my insurance at the end of the year,
+apply for the new DH waiting list,
+and immediately begin preparation.
 With an unknown timeline,
-I wanted to be ready.
+I want to be ready.
 
-In the meantime I've done my research on Dr Chris Carey,
-my new surgeon.
-Previous patients of Dr Carey have recommended him,
-and he seems to have the training to to back up his new credentials.
+In the meantime I do some research on my new surgeon,
+Dr Chris Carey.
+Previous patients of Dr Carey recommend him,
+and he seems to have experience and training
+to back up his new credentials.
+I sure hope that's enough.
 
-I get a call in early July:
+In early July, I get the call:
 
 -- Can you be ready in August? |br|
 -- *No, I'll be traveling.* |br|
@@ -273,10 +307,18 @@ I get a call in early July:
 
 They call again this week:
 
--- When do you get home? |br|
+-- You're traveling, right? When will you get home? |br|
 -- *September 9.* |br|
 -- Can we schedule you on September 10?
 
+
+-------
+
+|emo2|
+
+.. |emo2| raw:: html
+
+  <span style="font-size: var(--xlarge);">😳😳😳😏😂</span>
 
 -------
 
@@ -285,7 +327,7 @@ They call again this week:
 =================
 
 As I've started to share the news,
-many people have asked how they can help.
+several people have asked how they can help.
 
 I'll be in the hospital for 3-4 days.
 After that,
@@ -293,12 +335,12 @@ recovery is slow and difficult --
 with 4-6 weeks of limited movement
 before I'm back to my routine,
 and back to work.
-The bills and the boredom are likely to pile up,
-and you can help with both:
+My bills and my boredom are likely to pile up,
+so you can help with either or both:
 
 
-1. Social
----------
+1. Boredom
+----------
 
 I have three amazing women
 who will be my primary caretakers
@@ -311,30 +353,32 @@ since we're not entirely sure
 when I'll have time or energy.
 If you want to drop by the hospital
 (Sept 10-13),
-or my house (the rest of Sept, into Oct),
+or my house (through mid-Oct),
 get in touch with one of them.
 
 If you need contact information,
-let us know.
+`let us know`_.
+
+.. _let us know: /contact/
 
 
-2. Financial
-------------
+2. Bills
+--------
 
 With my insurance,
-I expect to pay roughly $1300 in preparation
+I expect to pay roughly $1,300 in preparation
 (surgery-site hair removal),
-and another $7150 for the surgery
+and another $7,150 for the surgery
 (my out-of-pocket maximum).
 I will also lose 6 weeks wages,
-while trying to cover all my normal bills.
+while trying to cover all my normal expenses.
 All told, I'm looking at $10k-12k
-in surgery-related expenses.
+in surgery-related costs.
 
 That's a debt I'm willing to take on,
 but it's not money that I have.
 If you want to help financially,
-either through `purchasing art`_,
+either by `purchasing art`_,
 or with a `direct gift`_,
 any amount will help make a difference.
 
@@ -364,7 +408,14 @@ to help trans people more broadly:
 - `The Trevor Project <https://www.thetrevorproject.org/>`_
 - `Transgender Law Center <https://transgenderlawcenter.org/>`_
 
+I know there are other issues in the world
+that also need money and attention.
+Support immigrants, and refugees,
+and anyone else who needs it.
+
+
 -------
+
 
 Thank you again for all your love and support
 over the last few years --
