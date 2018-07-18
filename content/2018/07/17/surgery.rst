@@ -29,7 +29,7 @@ Mia's Medical Upgrade
   or on `gofundme.com`_.
 
   .. _at the end of this page: #how-can-i-help
-  .. _gofundme.com: https://www.gofundme.com/manage/mias-medical-upgrade
+  .. _gofundme.com: https://www.gofundme.com/mias-medical-upgrade
   .. |tldr| raw:: html
 
     <strong><abbr title="too long; didn't read">tl;dr</abbr></strong>
