@@ -175,9 +175,9 @@ to the current `moral panic around trans children`_.
 
 .. _moral panic around trans children: https://www.theatlantic.com/family/archive/2018/07/desistance/564560/
 
-(I don't love linking The Atlantic here,
+(*I don't love linking The Atlantic here,
 since they stoke the flames from all sides --
-but it's a good article on the topic.)
+but it's a good article on the topic.*)
 
 I don't want to play that game,
 but I am happy to share some of my experience
@@ -215,8 +215,8 @@ along with a euphoria of new discovery.
 In the spring of 2017
 I begin to consider bottom surgery more seriously.
 I do my research on `how it works`_
-(CW: this video is graphic,
-and uses outdated "MtF" language),
+(*warning: this animated video is still graphic,
+and uses outdated "MtF" language*),
 and learn about the development
 of genital tissue.
 I begin to see my body in new ways,
