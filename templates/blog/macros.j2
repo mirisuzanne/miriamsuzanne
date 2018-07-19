@@ -161,7 +161,7 @@
       </div>
       {% if image.caption %}
         <figcaption class="hero-caption" data-align="right-edge">
-          <span class="caption-wrap">{{ image.caption|typogrify }}</span>
+          <span class="caption-wrap">{{ image.caption|rst }}</span>
         </figcaption>
       {% endif %}
     </figure>
