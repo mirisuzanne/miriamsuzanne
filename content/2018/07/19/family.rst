@@ -101,11 +101,12 @@ and build my life around
   through a video I recorded this morning,
   I’m sorry that I didn’t kiss you more.
 
-  ---`Riding SideSaddle* </writing/ridingsidesaddle/>`_
+  ---`Riding SideSaddle*`_ (a novel about chosen family)
 
 *Much love and gratitude*, |br|
 ❤️ Mia
 
+.. _`Riding SideSaddle*`: /writing/ridingsidesaddle/
 .. |br| raw:: html
 
   <br />
