@@ -110,3 +110,13 @@ and build my life around
 .. |br| raw:: html
 
   <br />
+
+
+------
+
+
+|gofundme|
+
+.. |gofundme| raw:: html
+
+  <iframe class='gfm-media-widget' image='1' coinfo='1' width='100%' height='100%' frameborder='0' id='mias-medical-upgrade'></iframe><script src='//funds.gofundme.com/js/5.0/media-widget.js'></script>
