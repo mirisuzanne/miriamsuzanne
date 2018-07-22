@@ -1,6 +1,6 @@
 public: yes
-tags: ['interview', 'writing', 'Riding SideSaddle*']
-series: 'Riding SideSaddle*'
+tags: ['interview', 'writing', 'riding sidesaddle*']
+series: 'riding sidesaddle*'
 elsewhere:
   - url: 'http://www.michiganquarterlyreview.com/2015/06/on-riding-sidesaddle-an-interview-with-eric-suzanne/'
     src: 'Michigan Quarterly Review'

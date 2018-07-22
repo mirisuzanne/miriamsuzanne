@@ -1,6 +1,6 @@
 public: yes
-tags: ['press', 'award', 'Riding SideSaddle*', 'Teacup Gorilla', 'art', 'writing', 'theater']
-series: 'Riding SideSaddle*'
+tags: ['press', 'award', 'riding sidesaddle*', 'teacup gorilla', 'art', 'writing', 'theater']
+series: 'riding sidesaddle*'
 image:
   - src: 'writing/sidesaddle/true-west-award.jpg'
 summary: |

@@ -1,5 +1,5 @@
 public: yes
-tags: ['art', 'music', 'Teacup Gorilla']
+tags: ['art', 'music', 'teacup gorilla']
 
 
 A Dark Plain [Demo]

@@ -1,6 +1,6 @@
 public: yes
-tags: ['speaking', 'writing', 'Riding SideSaddle*']
-series: 'Riding SideSaddle*'
+tags: ['speaking', 'writing', 'riding sidesaddle*']
+series: 'riding sidesaddle*'
 image:
   - src: '2016/resistence.jpg'
 summary: |

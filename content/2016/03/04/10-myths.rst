@@ -1,6 +1,6 @@
 public: yes
-tags: ['writing', 'art', 'theater', 'Riding SideSaddle*']
-series: 'Riding SideSaddle*'
+tags: ['writing', 'art', 'theater', 'riding sidesaddle*']
+series: 'riding sidesaddle*'
 slug: '10-myths'
 image:
   - src: '2016/10-myths.png'

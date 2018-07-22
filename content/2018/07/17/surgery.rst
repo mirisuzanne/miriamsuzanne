@@ -1,6 +1,6 @@
 public: yes
-tags: ['Transition', 'writing']
-series: 'Transition'
+tags: ['transition', 'writing']
+series: 'transition'
 image:
   - src: 'writing/sidesaddle/reeds.jpg'
 summary: |

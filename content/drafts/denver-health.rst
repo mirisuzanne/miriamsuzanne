@@ -23,7 +23,7 @@ if only there were surgeons available.
 
 I applied for Dr. Marci Bowers waiting list
 in the spring of 2017,
-and recieved a phone call a couple weeks later:
+and received a phone call a couple weeks later:
 
 -- Is this Miriam Suzanne?
 -- Yes

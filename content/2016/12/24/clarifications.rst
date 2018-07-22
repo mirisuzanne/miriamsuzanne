@@ -1,6 +1,6 @@
 public: yes
-tags: ['writing', 'Transition']
-series: 'Transition'
+tags: ['writing', 'transition']
+series: 'transition'
 tagline: 'A Very Incomplete Glossary'
 erasure: yes
 image:
@@ -36,7 +36,7 @@ often interchangeably,
 and without distinction.
 
 .. |conscious acts| raw:: html
-  
+
     <label for="erasure">conscious acts</label>
 
 1. Our |conscious acts| of identifying

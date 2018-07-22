@@ -1,6 +1,6 @@
 public: yes
-tags: ['Transition', 'writing']
-series: 'Transition'
+tags: ['transition', 'writing']
+series: 'transition'
 tagline: 'Choosing Vulnerability, Choosing Each Other'
 image:
   - src: '2018/pose.jpg'

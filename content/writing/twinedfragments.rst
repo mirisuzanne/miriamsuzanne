@@ -1,6 +1,6 @@
 public: yes
 location: 'writing'
-tag_index: 'Twined Fragments'
+tag_index: 'twined fragments'
 wrap: 'intro'
 image:
   - src: '2017/she-tried.jpg'

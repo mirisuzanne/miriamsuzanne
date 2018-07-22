@@ -1,6 +1,6 @@
 public: yes
-tags: ['Riding SideSaddle*', 'writing']
-series: 'Riding SideSaddle*'
+tags: ['riding sidesaddle*', 'writing']
+series: 'riding sidesaddle*'
 image:
   - src: '2017/denver-quarterly.jpg'
 summary: |

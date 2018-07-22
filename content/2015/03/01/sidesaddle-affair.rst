@@ -1,6 +1,6 @@
 public: yes
-tags: ['writing', 'art', 'music', 'Teacup Gorilla', 'Riding SideSaddle*']
-series: 'Riding SideSaddle*'
+tags: ['writing', 'art', 'music', 'teacup gorilla', 'riding sidesaddle*']
+series: 'riding sidesaddle*'
 image:
   - src: 'sidesaddle/affair.jpg'
     caption: 'Riding SideSaddle* [a novel affair]'

@@ -1,10 +1,10 @@
 public: yes
-tags: ['Transition', 'writing']
-series: 'Transition'
+tags: ['transition', 'writing']
+series: 'transition'
 image:
   - src: '2017/herm.jpg'
 summary: |
-  Reflections on the instictive act of gendering,
+  Reflections on the instinctive act of gendering,
   how it can go terribly wrong,
   and what happens next.
 
@@ -48,7 +48,7 @@ usually by accident.
 As a child,
 I was only gendered correctly with insults.
 Looking back,
-*“long haired african girl”*
+*“long haired African girl”*
 seems a bit on-the-nose.
 I had long hair,
 was born in Lesotho,
@@ -134,7 +134,7 @@ go out in public,
 where my existence is so offensive
 they pass laws about it.
 I’m a national threat.
-I get my own special TSA patdown
+I get my own special TSA pat-down
 and papers-please potty regulations.
 
 I'm not fragile,

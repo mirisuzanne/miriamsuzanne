@@ -1,5 +1,5 @@
 public: yes
-tags: ['Teacup Gorilla', art, music, performance]
+tags: ['teacup gorilla', art, music, performance]
 summary: |
   |five5|
 

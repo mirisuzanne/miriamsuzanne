@@ -1,6 +1,6 @@
 public: yes
-tags: ['Transition', 'writing']
-series: 'Transition'
+tags: ['transition', 'writing']
+series: 'transition'
 erasure: yes
 image:
   - src: '2017/fragments.jpg'

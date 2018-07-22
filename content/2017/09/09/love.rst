@@ -1,6 +1,6 @@
 public: yes
-tags: ['Transition', 'Twined Fragments', 'writing']
-series: 'Twined Fragments'
+tags: ['transition', 'twined fragments', 'writing']
+series: 'twined fragments'
 image:
   - src: '2017/the-man.jpg'
 elsewhere:

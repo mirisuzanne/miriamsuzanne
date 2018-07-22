@@ -1,7 +1,7 @@
 public: yes
 erasure: yes
-tags: ['writing', 'Transition']
-series: 'Transition'
+tags: ['writing', 'transition']
+series: 'transition'
 image:
   - src: '2016/mia-wtf.jpg'
 summary: |
