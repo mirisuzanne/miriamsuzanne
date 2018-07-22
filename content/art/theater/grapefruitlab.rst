@@ -1,5 +1,6 @@
 public: yes
 grid: yes
+tag_index: 'grapefruit lab'
 image:
   - src: 'art/theater/lab.jpg'
 elsewhere:

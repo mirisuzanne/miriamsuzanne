@@ -1,14 +1,14 @@
 public: yes
 tags: ['art', 'music', 'teacup gorilla']
+summary: |
+  Another demo!
+  This one features Daniel Rule on the second guitar & vocals.
+  Daniel has started playing with us regularly these days —
+  we're excited to have him in the band!
 
 
 I'm Not Ready To Go Yet [Demo]
 ==============================
-
-Another demo!
-This one features Daniel Rule on the second guitar & vocals.
-Daniel has started playing with us regularly these days —
-we're excited to have him in the band!
 
 I'm Not Ready To Go Yet is our follow-up
 to the earlier Suicide Note.

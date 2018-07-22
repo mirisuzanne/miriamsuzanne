@@ -1,21 +1,21 @@
 public: yes
 tags: ['art', 'music', 'teacup gorilla']
+summary: |
+  The last demo of new material (for now).
+  This is Pig Sez,
+  with words from CA Conrad's
+  `The Book of Frank`_.
+
+  .. _The Book of Frank: http://wavepoetry.myshopify.com/products/the-book-of-frank
 
 
 Pig Sez [Demo]
 ==============
 
-The last demo of new material (for now).
-This is Pig Sez,
-with words from CA Conrad's
-`The Book of Frank`_.
-
 |pig|
 
 Feel free to leave comments on `SoundCloud`_,
 or find us on `Twitter`_ & `Facebook`_.
-
-.. _The Book of Frank: http://wavepoetry.myshopify.com/products/the-book-of-frank
 
 .. |pig| raw:: html
 

@@ -1,11 +1,11 @@
 public: yes
 tags: ['speaking', 'code', 'art']
+summary: |
+  2013 was nuts…
 
 
 2013
 ====
-
-2013 was nuts.
 
 I presented (for the first time) at conferences
 on both art & technology,

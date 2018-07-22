@@ -1,5 +1,6 @@
 public: yes
 grid: yes
+tag_index: music
 image:
   - src: 'art/music/video-meta.jpg'
 brag: |

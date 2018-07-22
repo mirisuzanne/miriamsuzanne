@@ -58,8 +58,9 @@
     slug=ctx.slug
   ) }}
 
-  {% if config.series %}
-    {% set entries = get_blog_entries_by_tag(config.series) %}
+  {% if config.series or config.tag_index %}
+    {% set tag = config.series or config.tag_index %}
+    {% set entries = get_blog_entries_by_tag(tag) %}
     {{ blog.section(
       entries,
       title="Related Articles"

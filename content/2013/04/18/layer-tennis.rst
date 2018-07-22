@@ -1,7 +1,7 @@
 public: yes
 tags: ['writing', 'art', 'process']
-feature:
-  - image: 'tennis/volley6.jpg'
+image:
+  - src: 'tennis/volley6.jpg'
 after:
   - include: 'gallery/_gallery.html'
     body:
@@ -17,30 +17,25 @@ after:
       - image: 'tennis/volley8.jpg'
       - image: 'tennis/volley9.jpg'
       - image: 'tennis/volley10.jpg'
+summary: |
+  `Exit Strata`_ asked me to design the cover of their next issue,
+  `PRINT!`_ VOL 3.
+
+    ...focussed on issues of translation, transmutation,
+    and language forms across media,
+    as well as the textual/visual/sonic/physical (etc) manifestations
+    of these transmissions as they travel between and betwixt our minds...
+    The biggest tension is between that of the printed page
+    and that of the new virtual realities...
+
+  There's only one way I know to make all that happen.
+
+  .. _Exit Strata: http://www.exitstrata.com/
+  .. _PRINT!: http://www.exitstrata.com/category/print-2/
 
 
 Stratified Design
 =================
-
-|10|
-
-`Exit Strata`_ asked me to design the cover of their next issue,
-`PRINT!`_ VOL 3.
-
-  ...focussed on issues of translation, transmutation,
-  and language forms across media,
-  as well as the textual/visual/sonic/physical (etc) manifestations
-  of these transmissions as they travel between and betwixt our minds...
-  The biggest tension is between that of the printed page
-  and that of the new virtual realities...
-
-There's only one way I know to make all that happen.
-
-.. _Exit Strata: http://www.exitstrata.com/
-.. _PRINT!: http://www.exitstrata.com/category/print-2/
-
-Layer Tennis
-------------
 
 |8|
 
@@ -70,12 +65,6 @@ but here are the volleys:
 .. _Jacob Liechty: http://jacobliechty.tumblr.com/
 .. _Sondra Eisenstat: http://sondraedesign.tumblr.com/
 .. _Exit Strata blog: http://www.exitstrata.com/layer-tennis-live-stream-print-vol-3-ole/
-
-.. |10| raw:: html
-
-  <figure>
-    <img src="/static/pictures/tennis/volley10.jpg" alt="" />
-  </figure>
 
 .. |8| raw:: html
 

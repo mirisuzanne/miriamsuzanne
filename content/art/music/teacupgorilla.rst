@@ -1,5 +1,6 @@
 public: yes
 grid: yes
+tag_index: 'teacup gorilla'
 elsewhere:
   - url: 'https://teacupgorilla.com/'
     src: 'Teacup Gorilla'

@@ -1,5 +1,6 @@
 public: yes
 grid: yes
+tag_index: theater
 brag: |
   Award-winning playwright,
   producer,
@@ -38,9 +39,6 @@ Theater
 .. callmacro:: events/macros.j2#by_type
   :title: 'Upcoming Shows…'
   :event_type: ['theater']
-
-.. callmacro:: blog/macros.j2#taglist
-  :tag: 'theater'
 
 .. callmacro:: events/macros.j2#by_type
   :title: 'Past Shows…'

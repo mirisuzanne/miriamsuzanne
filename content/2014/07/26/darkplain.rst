@@ -1,15 +1,15 @@
 public: yes
 tags: ['art', 'music', 'teacup gorilla']
+summary: |
+  Here it is!
+  The first in a new set of demos,
+  updated to reflect our current sound.
+  There are more on the way,
+  so check back again tomorrow.
 
 
 A Dark Plain [Demo]
 ===================
-
-Here it is!
-The first in a new set of demos,
-updated to reflect our current sound.
-There are more on the way,
-so check back again tomorrow.
 
 |darkplain|
 

@@ -1,5 +1,6 @@
 public: yes
 grid: true
+tag_index: 'riding sidesaddle*'
 image:
   - src: 'writing/sidesaddle/box.jpg'
     caption: 'A novel on 250 note-cards'
