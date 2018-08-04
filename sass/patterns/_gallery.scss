@@ -27,6 +27,17 @@
   grid-column: 1 / -1;
 }
 
+[data-gallery-item] {
+  border: 1px solid var(--callout);
+  box-shadow: 0 0 var(--half-shim) var(--callout);
+
+  &[href] {
+    #{$focus} {
+      border-color: var(--border);
+    }
+  }
+}
+
 [data-size='full'] {
   grid-column: 1 / -1;
 }

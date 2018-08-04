@@ -24,4 +24,11 @@
     background: var(--action-hover);
     transform: scale(1.05);
   }
+
+  [data-grid='full'] > & {
+    grid-column: center / right;
+    justify-self: start;
+    margin-bottom: var(--spacer);
+    margin-top: var(--gutter);
+  }
 }

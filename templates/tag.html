@@ -4,9 +4,23 @@
 
 {% block title %}{{ tag.name }}{% endblock %}
 {% block og_url %}{{ get_full_canonical_url(builder, slug=['/tags', tag.name]|join('/')) }}{% endblock %}
-{% block location %}writing{% endblock %}
 
 {% set page = all_pages|filter_pages('tag_index', 'eq', tag.name)|get_page %}
+
+{% block location %}
+  {%- if page -%}
+    {%- if page.config.location -%}
+      {{- page.config.location -}}
+    {%- else -%}
+      {%- set locations = config.nav|map(attribute='slug') -%}
+      {% for slug in locations %}
+        {{- slug if (slug in page.slug) else '' -}}
+      {% endfor %}
+    {%- endif -%}
+  {%- else -%}
+    {{ 'writing' }}
+  {%- endif -%}
+{% endblock %}
 
 {% block body %}
   {% if page %}

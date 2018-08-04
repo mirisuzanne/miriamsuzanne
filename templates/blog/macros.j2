@@ -25,14 +25,19 @@
   {% set entries = entries|reverse if (entries and reverse) else entries %}
 
   {% if entries %}
-    {{ section(entries[:count], title) }}
+    {{ section(
+      entries=entries[:count],
+      title=title,
+      more=link_to('tag', tag=tag)
+    ) }}
   {% endif %}
 {% endmacro %}
 
 
 {% macro section(
   entries,
-  title=none
+  title=none,
+  more=none
 ) %}
   {% if title %}
     <hr data-layout="grid-border" />
@@ -44,6 +49,13 @@
   {% for entry in entries %}
     {{ list(entry) }}
   {% endfor %}
+
+  {% if more %}
+    {{ content.btn(
+      content='Read More',
+      url=more
+    ) }}
+  {% endif %}
 {% endmacro %}
 
 

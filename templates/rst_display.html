@@ -27,12 +27,16 @@
 {% endblock %}
 
 {% block location -%}
+  {%- set locations = config.nav|map(attribute='slug') -%}
   {%- if config.location -%}
     {{- config.location -}}
+  {%- elif ctx.tags -%}
+    {% for slug in locations %}
+      {{- slug if (slug in ctx.tags) else '' -}}
+    {% endfor %}
   {%- elif ctx.pub_date -%}
     {{ 'writing' }}
   {%- else -%}
-    {%- set locations = config.nav|map(attribute='slug') -%}
     {% for slug in locations %}
       {{- slug if (slug in ctx.slug) else '' -}}
     {% endfor %}

@@ -1,5 +1,6 @@
 public: yes
 grid: yes
+tag_index: writing
 event_type: ['reading']
 summary: |
   Miriam is
@@ -40,7 +41,3 @@ Writing: Fiction & Otherwise
 .. callmacro:: events/macros.j2#by_type
   :title: 'Upcoming Readings'
   :event_type: ['reading']
-
-
-.. callmacro:: blog/macros.j2#taglist
-  :tag: 'writing'
