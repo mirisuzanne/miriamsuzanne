@@ -82,7 +82,7 @@ summary: |
   .. _Teacup Gorilla: http://teacupgorilla.com
 
   .. callmacro:: content/macros.j2#btn
-    :url: '/writing/scripts/10-myths'
+    :url: '/writing/scripts/10myths'
 
     Read the script
 
