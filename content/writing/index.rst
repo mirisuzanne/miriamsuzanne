@@ -33,7 +33,7 @@ Writing: Fiction & Otherwise
   :slugs: [
       'writing/ridingsidesaddle',
       'writing/twinedfragments',
-      'art/theater/10myths',
+      'writing/scripts/janeeyre',
       'writing/jumpstartsass',
     ]
 

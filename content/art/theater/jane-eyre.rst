@@ -18,6 +18,11 @@ summary: |
   but we believe in the existence of other,
   and more vivid kinds of goodness.
 
+  .. callmacro:: content/macros.j2#btn
+    :url: '/writing/scripts/janeeyre/'
+
+    Read the script
+
 
 *********
 JANE/EYRE

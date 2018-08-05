@@ -1,0 +1,51 @@
+// Script Styles
+// =============
+
+[data-is='script'] {
+  counter-reset: act scene;
+
+  h2 {
+    counter-reset: scene;
+
+    @include before(counter(act, upper-roman) '. ') {
+      counter-increment: act;
+    }
+  }
+
+  h3 {
+    @include before(counter(scene, decimal) '. ') {
+      counter-increment: scene;
+    }
+  }
+
+  .contents {
+    ul {
+      list-style-type: upper-roman;
+
+      ul {
+        list-style-type: decimal;
+      }
+    }
+  }
+
+  p {
+    > em {
+      &:only-child {
+        display: block;
+        margin: var(--double-gutter) auto;
+        max-width: 20rem;
+      }
+    }
+  }
+
+  .line-block {
+    @include font-family('code');
+    border-left: var(--half-shim) solid var(--callout);
+    font-size: var(--code);
+    margin: var(--double-gutter)
+      0
+      var(--double-gutter)
+      calc(-1 * (var(--gutter) + var(--half-shim)));
+    padding: var(--gutter);
+  }
+}

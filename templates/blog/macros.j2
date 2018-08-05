@@ -201,6 +201,7 @@
       {% endif %}
 
       <div data-layout="rst"
+         {{ utility.attr_if('data-is', config.is) }}
         {{ utility.attr_if('data-erasure', config.erasure) }} >
     {% endif %}
 
