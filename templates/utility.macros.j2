@@ -33,7 +33,7 @@
   {%- if url -%}
     <a href="{{ url }}" {{ attr_if('class', class) }} {{ show_attrs(attrs) }}>{{ content|safe }}</a>
   {%- elif class -%}
-    <span class="{{ class }}">{{ content|safe }}</span>
+    <span {{ attr_if('class', class) }} {{ show_attrs(attrs) }}>{{ content|safe }}</span>
   {%- else -%}
     {{ content|safe }}
   {%- endif -%}

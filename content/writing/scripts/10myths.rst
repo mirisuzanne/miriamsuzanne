@@ -34,8 +34,12 @@ Script: 10 Myths on the Proper Application of Beauty Products
 
 ------
 
+.. image:: /static/pictures/art/theater/10myths/teacup.jpg
+  :class: extend-small
+
 *[Lights up. A bathroom surrounded by emptiness. Sam is in the bathroom --
-alive and alone. Everyone else in the emptiness, doing their thing.
+alive and alone. There's a band in the bathtub.
+Everyone else in the emptiness, doing their thing.
 Jenny and Jolene are dancing together, Herman doing his nails,
 Edward cleaning, the Narrator watching.
 Time can pass slowly outside the bathroom]*
@@ -85,7 +89,7 @@ Hermaphroditus, that’s his name.
 It’s his myth, not hers,
 and no man wants to get “womaned” out of the blue like that.
 
-*[Herman scoffs]*
+*[Herman scoffs, and exits]*
 
 **Sam:**
 He didn't ask for it, she did!
@@ -128,6 +132,8 @@ There. See. All gone.
 *[Sam walks out of the bathroom. Time changes]*
 
 ------
+
+.. image:: /static/pictures/art/theater/10myths/jenny-film.jpg
 
 *[Sam is dead in her chair.
 Someone takes a tape out of a box, puts it in the VCR and presses play.
@@ -476,6 +482,9 @@ turning it off and going to do their own thing. Time changes]*
 
 ------
 
+.. image:: /static/pictures/art/theater/10myths/dressing.jpg
+  :class: extend-small
+
 *[Sam stands up --
 alive and alone again --
 and goes into the bathroom, slamming the door]*
@@ -804,6 +813,9 @@ I'd like to take a bath! How is anyone supposed to deal with this?
 *[Narrator exits. Time changes]*
 
 ------
+
+.. image:: /static/pictures/art/theater/10myths/herman-sam-narrator.jpg
+  :class: extend-small
 
 *[Herman merges into Sam. Everyone else continues what they were doing.
 Jenny and Jolene enter and groom in the mirror]*
@@ -1442,6 +1454,9 @@ But goddamnit, that still looks like me.
 
 ------
 
+.. image:: /static/pictures/art/theater/10myths/jenny-herman.jpg
+  :class: extend-small
+
 *[Sam separates from Herman and sits down, dead in her chair.
 Everyone goes to watch TV and eat. Herman stays, looking in the mirror]*
 
@@ -1514,6 +1529,8 @@ I mucus you. I scab you.
 
 ------
 
+.. image:: /static/pictures/art/theater/10myths/narrator-edward.jpg
+
 *[Narrator enters. Sam is still dead]*
 
 **Narrator:**
@@ -1577,6 +1594,9 @@ I don't know… fuck it if it's that kind of day.
 *[Narrator exits. Time remains the same]*
 
 ------
+
+.. image:: /static/pictures/art/theater/10myths/jenny-others.jpg
+  :class: extend-small
 
 *[Sam is alone. People do what they do. Edward enters]*
 
@@ -1981,6 +2001,9 @@ All gone.
 
 ------
 
+.. image:: /static/pictures/art/theater/10myths/herman-sam.jpg
+  :class: extend-small
+
 *[Sam merges into Herman. They enter the bathroom quickly, as one]*
 
 **Sam:**
@@ -2123,6 +2146,9 @@ Good. We should get back out there. *[holding up her arm]* Last check.
 *[They exit. Time remains the same]*
 
 ------
+
+.. image:: /static/pictures/art/theater/10myths/herman-sam-others.jpg
+  :class: extend-small
 
 *[Herman/Sam are merged. Everyone does their own thing. Jenny enters.
 She is being a bit cagey and secretive, checking the door.

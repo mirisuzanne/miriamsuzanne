@@ -1,5 +1,6 @@
 public: yes
 location: art
+grid: true
 image:
   - src: 'art/theater/10myths.jpg'
 event_type: ['theater']
@@ -91,10 +92,32 @@ summary: |
 10 Myths on the Proper Application of Beauty Projects
 *****************************************************
 
-.. callmacro:: content/macros.j2#get_quotes
-  :page: 'art/theater/10myths'
+.. callmacro:: content/macros.j2#rst
 
-.. callmacro:: content/macros.j2#btn
-  :url: '/writing/ridingsidesaddle/'
+  .. callmacro:: content/macros.j2#get_quotes
+    :page: 'art/theater/10myths'
 
-  More about the novel
+  .. callmacro:: content/macros.j2#btn
+    :url: '/writing/ridingsidesaddle/'
+
+    More about the novel
+
+.. callmacro:: gallery/macros.j2#figure
+  :caption: 'Production Photos'
+  :section: true
+  :gallery: [
+              { 'image': '/art/theater/10myths/dressing.jpg' },
+              { 'image': '/art/theater/10myths/full-cast-wide.jpg' },
+              { 'image': '/art/theater/10myths/herman-sam.jpg' },
+              { 'image': '/art/theater/10myths/jenny-eyes.jpg' },
+              { 'image': '/art/theater/10myths/jenny-film.jpg' },
+              { 'image': '/art/theater/10myths/narrator-edward.jpg' },
+              { 'image': '/art/theater/10myths/jenny-others.jpg' },
+              { 'image': '/art/theater/10myths/teacup.jpg' },
+              {
+                'image': '/art/theater/10myths/herman-sam-others.jpg',
+                'size':  'full',
+              },
+              { 'image': '/art/theater/10myths/herman-sam-narrator.jpg' },
+              { 'image': '/art/theater/10myths/jenny-herman.jpg' },
+            ]

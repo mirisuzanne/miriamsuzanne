@@ -28,6 +28,7 @@
 }
 
 [data-gallery-item] {
+  align-self: center;
   border: 1px solid var(--callout);
   box-shadow: 0 0 var(--half-shim) var(--callout);
 
@@ -54,5 +55,12 @@
     @include position(0);
     height: 100%;
     width: 100%;
+  }
+}
+
+.extend-small {
+  @include above('extend') {
+    margin-left: neg(--double-gutter);
+    margin-right: neg(--double-gutter);
   }
 }
