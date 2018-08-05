@@ -14,7 +14,7 @@ summary: |
   .. _Denver Quarterly: http://www.du.edu/denverquarterly/
   .. _`Riding SideSaddle*`: /writing/ridingsidesaddle/
   .. _Buntport: http://buntport.com
-  .. _10 Myths on the Proper Application of Beauty Products: https://oddbooksapp.com/book/10-myths
+  .. _10 Myths on the Proper Application of Beauty Products: /writing/scripts/10myths/
 
 
 ****************************
@@ -36,4 +36,4 @@ which was based on it.
 .. _Denver Quarterly: http://www.du.edu/denverquarterly/
 .. _`Riding SideSaddle*`: /writing/ridingsidesaddle/
 .. _Buntport: http://buntport.com
-.. _10 Myths on the Proper Application of Beauty Products: https://oddbooksapp.com/book/10-myths
+.. _10 Myths on the Proper Application of Beauty Products: /writing/scripts/10myths/

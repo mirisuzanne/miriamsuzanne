@@ -1095,6 +1095,7 @@ Just so. Grace Poole--you have guessed it.
 
 **Band Voices:**
 *[in darkness]*
+
 - What a mercy master was not burnt in his bed!
 - It is always dangerous to keep a candle lit at night.
 - I wonder he waked nobody!
@@ -1383,6 +1384,7 @@ Help! help! Help! Will no one come?
 Rochester! Rochester! for God’s sake, come!
 
 **Band Voices:**
+
 - Who is hurt?
 - Fetch a light!
 - Is it fire?
@@ -2651,3 +2653,32 @@ Transparency: “The End [sic]…”]*
   :url: '/art/theater/jane-eyre/'
 
   About the production
+
+------
+
+This work is licensed under a Creative Commons
+`Attribution-NonCommercial-ShareAlike 4.0 International
+License <http://creativecommons.org/licenses/by-nc-sa/4.0/>`_.
+You are free to:
+
+- **Share:**
+  copy and redistribute the material in any medium or format.
+- **Adapt:**
+  remix, transform, and build upon the material.
+
+Under the following conditions:
+
+- **Attribution:**
+  You must give appropriate credit, provide a link to the license,
+  and indicate if changes were made --
+  without suggesting that the licensor endorses you or your use.
+- **Noncommercial:**
+  You may not use this work for commercial purposes.
+- **Share Alike:**
+  If you remix, transform, or build upon the material,
+  you must distribute your contributions
+  under the same license as the original.
+
+Any of the above conditions can be waived with my permission.
+See the `full license <http://creativecommons.org/licenses/by-nc-sa/4.0/>`_
+for legal details.

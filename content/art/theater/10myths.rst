@@ -67,10 +67,10 @@ quotes:
     date: [2016, 3, 4]
 actions:
   - name: 'read the script'
-    url: 'https://oddbooksapp.com/book/10-myths'
+    url: '/writing/scripts/10myths/'
 brag: |
   Award-winning stage adaptation of
-  Riding SideSaddle*.
+  Riding SideSaddle*
 summary: |
   A stage adaptation of my novel,
   `Riding SideSaddle*`_,
@@ -82,7 +82,7 @@ summary: |
   .. _Teacup Gorilla: http://teacupgorilla.com
 
   .. callmacro:: content/macros.j2#btn
-    :url: 'https://oddbooksapp.com/book/10-myths'
+    :url: '/writing/scripts/10-myths'
 
     Read the script
 

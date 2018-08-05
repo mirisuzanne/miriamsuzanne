@@ -191,7 +191,7 @@ Riding SideSaddle*
   .. _Teacup Gorilla: /art/music/teacupgorilla/
 
   .. callmacro:: content/macros.j2#btn
-    :url: 'https://oddbooksapp.com/book/10-myths'
+    :url: '/writing/scripts/10myths/'
 
     Read the script
 
