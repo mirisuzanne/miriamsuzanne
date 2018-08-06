@@ -1,5 +1,6 @@
 {% import "utility.macros.j2" as utility %}
 {% import "content/macros.j2" as content %}
+{% import "content/feature.macros.j2" as feature %}
 {% import "gallery/macros.j2" as media %}
 
 
@@ -94,11 +95,10 @@
   events,
   count=none
 ) %}
+  {% set events = events[:count] if count else events %}
   {% if events|length %}
     {% for event in events %}
-      {% if (not count) or (loop.index <= count) %}
-        {{ item(event) }}
-      {% endif %}
+      {{ item(event) }}
     {% endfor %}
   {% endif %}
 {% endmacro %}
@@ -110,22 +110,12 @@
   {% set event_date = event.date|make_date %}
   {% set page = all_pages|filter_pages('slug', 'eq', event.slug)|get_page %}
 
-  <article class="feature">
-    {{ name(event) }}
-    {{ brag(event, page) }}
-  </article>
-{% endmacro %}
-
-
-{% macro name(
-  event
-) %}
-  <h3 class="feature-title">
-    {{ utility.link_if(
-      content=event.venue,
-      url=event.url
-    ) }}
-  </h3>
+  {{ feature.item(
+    title=event.venue,
+    url=event.url,
+    brag_html=brag(event, page),
+    image=page.config.image[0].src if page.config.image else none
+  ) }}
 {% endmacro %}
 
 
@@ -133,14 +123,12 @@
   event,
   page
 ) %}
-  <div class="feature-brag">
-    {{ utility.link_if(
-      content=page.title,
-      url=content.page_link(page)
-    ) }}
-    {{ date(event) }}
-    {{ adr(event) }}
-  </div>
+  {{ utility.link_if(
+    content=page.title,
+    url=content.page_link(page)
+  ) }}
+  {{ date(event) }}
+  {{ adr(event) }}
 {% endmacro %}
 
 
@@ -148,9 +136,8 @@
   event
 ) %}
   {% set event_date = event.date|make_date %}
-
-  <i>on</i>
   <time datetime="{{ event_date }}" data-meta="time">
+    <i>on</i>
     {{ event_date|format_date('%B %-d, %Y') }}
   </time>
 {% endmacro %}

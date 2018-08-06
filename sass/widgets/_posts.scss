@@ -3,7 +3,6 @@
 
 
 [data-title='post'],
-[data-byline='post'],
 [data-summary='post'] {
   grid-column: left / gutter;
 
@@ -21,7 +20,7 @@
 }
 
 
-[data-summary=post] {
+[data-summary='post'] {
   margin-bottom: var(--gutter-plus);
 }
 
@@ -45,17 +44,21 @@
 
 
 [data-byline='post'] {
-  align-self: first baseline;
-  grid-row-end: span 2;
+  grid-column: left / right;
 
-  @include above('extend') {
-    align-self: start;
+  @include between('break', 'full') {
+    grid-column-start: center;
+  }
+
+  @include above('full') {
     display: grid;
-    grid-auto-flow: row;
-    grid-auto-rows: auto;
-    grid-column: left / center;
-    margin-bottom: var(--gutter-plus);
+    align-content: first baseline;
+    grid-column-end: center;
     text-align: right;
+
+    [data-meta] {
+      display: block;
+    }
   }
 }
 

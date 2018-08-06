@@ -23,7 +23,8 @@
           {{ item(
             title=page.title,
             url=content.page_link(page),
-            brag=page.config.brag
+            brag=page.config.brag,
+            image=page.config.image[0].src if page.config.image else none
           ) }}
         {% endif %}
       {% endfor %}
@@ -38,7 +39,8 @@
         {{ item(
           title=link.title,
           url=link.url,
-          brag=link.brag
+          brag=link.brag,
+          image=link.image
         ) }}
       {% endfor %}
     {% endif %}
@@ -49,20 +51,31 @@
 {% macro item(
   title,
   url,
-  brag
+  brag=none,
+  image=none,
+  brag_html=none
 ) %}
   <article class="feature">
-    <h3 class="feature-title">
-      {{ utility.link_if(
-        url=url,
-        content=title,
-        class='feature-link'
-      ) }}
-    </h3>
-    {% if brag %}
-      <div class="feature-brag">
-        {{ brag|rst }}
-      </div>
-    {% endif %}
+    {% set style = "--background: url('/static/pictures/%s')" % image %}
+    {{ utility.link_if(
+      url=url,
+      content='',
+      class='feature-image',
+      attrs={'style': style}
+    ) }}
+    <div class="feature-text">
+      <h3 class="feature-title">
+        {{ utility.link_if(
+          url=url,
+          content=title,
+          class='feature-link'
+        ) }}
+      </h3>
+      {% if brag or brag_html %}
+        <div class="feature-brag">
+          {{ brag_html or brag|rst }}
+        </div>
+      {% endif %}
+    </div>
   </article>
 {% endmacro %}

@@ -15,21 +15,62 @@
 }
 
 .feature {
+  display: grid;
+  grid-column: var(--start) / var(--end);
+  grid-template-columns:
+    [img-start] minmax(0, 2fr)
+    [text-start] minmax(0, 1fr)
+    [img-end] minmax(0, 5fr) [text-end];
+  transform: rotate(var(--turn));
+  transform-origin: center;
+
   @for $i from 1 through 10 {
     &:nth-child(#{$i}n) {
-      --start: #{random(7)};
+      --start: #{random(4)};
       --end: #{random(4) * -1};
-      $deg: random() * 0.025turn;
-      $neg: if(random(2) == 1, 1, -1);
-      grid-column: var(--start) / var(--end);
-      transform: rotate(#{$deg * $neg});
-      transform-origin: center;
+      --deg: #{random() * 0.025turn};
+      --neg: #{if(random(2) == 1, 1, -1)};
+      --turn: calc(var(--deg) * var(--neg));
+      --img-deg: #{random() * 0.025turn};
+      --img-neg: #{if(random(2) == 1, 1, -1)};
+      --image: calc(var(--img-deg) * var(--img-neg));
 
       @include above('extend') {
-        --end: span #{random(5) + 7};
+        --start: #{random(5)};
+        --end: span #{random(6) + 10};
       }
     }
   }
+}
+
+.feature-image {
+  background-image: var(--background);
+  background-position: center;
+  background-size: cover;
+  border: 1px solid var(--accent);
+  grid-area: img;
+  transform: rotate(var(--image)) scale(var(--scale-img));
+  transform-origin: center;
+
+  &[href] {
+    border-color: currentColor;
+    transition: transform 150ms ease;
+
+    #{$focus} {
+      --image: calc(var(--deg) * var(--neg) * -1);
+      --scale-img: 1.12;
+    }
+  }
+}
+
+.feature-text {
+  align-self: center;
+  background: color('background');
+  grid-area: text;
+  margin: var(--double-gutter) 0;
+  padding-left: var(--shim);
+  position: relative;
+  z-index: 2;
 }
 
 .feature-title {
@@ -40,4 +81,8 @@
 .feature-brag {
   @include font-family('code');
   font-size: var(--xsmall);
+
+  [data-meta] {
+    display: block;
+  }
 }
