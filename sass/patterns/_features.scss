@@ -49,7 +49,7 @@
   background-size: cover;
   border: 1px solid var(--accent);
   grid-area: img;
-  transform: rotate(var(--image)) scale(var(--scale-img));
+  transform: rotate(var(--image)) scale(var(--scale-img, 1));
   transform-origin: center;
 
   &[href] {
@@ -60,6 +60,10 @@
       --image: calc(var(--deg) * var(--neg) * -1);
       --scale-img: 1.12;
     }
+  }
+
+  @include after('') {
+    padding-top: fluid-media('widescreen');
   }
 }
 

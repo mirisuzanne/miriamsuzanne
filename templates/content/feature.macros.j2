@@ -56,7 +56,7 @@
   brag_html=none
 ) %}
   <article class="feature">
-    {% set style = "--background: url('/static/pictures/%s')" % image %}
+    {% set style = "--background: url('/static/pictures/%s')" % image if image else none %}
     {{ utility.link_if(
       url=url,
       content='',
