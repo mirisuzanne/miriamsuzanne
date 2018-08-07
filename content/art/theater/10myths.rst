@@ -93,6 +93,7 @@ summary: |
 *****************************************************
 
 .. callmacro:: content/macros.j2#rst
+  :title: 'Friendships and bodies that defy category or completion'
 
   .. callmacro:: content/macros.j2#get_quotes
     :page: 'art/theater/10myths'
