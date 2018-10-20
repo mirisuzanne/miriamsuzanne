@@ -36,6 +36,12 @@ run ``make build``.
 Deployment
 ----------
 
+Clone the gh-pages repo into `gh-pages/`
+and build the static site:
+
+  git clone git@github.com:mirisuzanne/mirisuzanne.github.io.git gh-pages
+  make build
+
 Change into the ``gh-pages`` directory
 and commit the changes.
 
