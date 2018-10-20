@@ -1,6 +1,16 @@
 public: yes
+image:
+  - src: 'talks/dynamic.jpg'
 event_type: ['talk']
 events:
+  - venue: 'Smashing Conference'
+    url: 'https://www.smashingconf.com/sf-2019/'
+    date: [2019, 4, 16]
+    adr: 'San Francisco, CA'
+  - venue: 'Front Range Front-End'
+    url: 'https://www.meetup.com/front-range-front-end/events/chtxtpyxpbcb/'
+    date: [2018, 11, 1]
+    adr: 'Denver, CO'
   - venue: 'Full Stack Fest'
     url: 'https://2018.fullstackfest.com/'
     date: [2018, 9, 6]

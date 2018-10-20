@@ -1,5 +1,7 @@
 public: yes
 grid: yes
+image:
+  - src: 'art/design/gotl-cover.jpg'
 brag: |
   book covers, album art, and prints…
 summary: |

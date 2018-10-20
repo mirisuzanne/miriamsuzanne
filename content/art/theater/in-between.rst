@@ -1,7 +1,7 @@
 public: yes
 image:
   - src: 'art/theater/in-between.jpg'
-event_type: ['theater']
+event_type: ['theater', 'art']
 events:
   - venue: 'University of Utah, Rio Mesa Center'
     url: 'http://www.julierada.com/#/the-in-between/'

@@ -10,7 +10,7 @@
   show='future',
   count=none
 ) %}
-  {% set pages = all_pages|filter_pages('event_type', 'in', event_type) if event_type else all_pages|filter_pages('events') %}
+  {% set pages = all_pages|filter_pages('event_type', 'has', event_type) if event_type else all_pages|filter_pages('events') %}
   {% set events = pages|collect('events', label_with='slug')|sort(attribute='date') %}
   {% set future = events|filter_events(past=false)|list %}
   {% set past = events|filter_events(past=true)|reverse|list %}
@@ -109,11 +109,17 @@
 ) %}
   {% set event_date = event.date|make_date %}
   {% set page = all_pages|filter_pages('slug', 'eq', event.slug)|get_page %}
+  {% set is_venue = true if not ('theater' in page.config.event_type) else false %}
+
+  {% set title = event.venue if is_venue else page.title %}
+  {% set title_url = event.url if is_venue else content.page_link(page) %}
+  {% set sub = page.title if is_venue else event.venue %}
+  {% set sub_url = content.page_link(page) if is_venue else event.url %}
 
   {{ feature.item(
-    title=event.venue,
-    url=event.url,
-    brag_html=brag(event, page),
+    title=title,
+    url=title_url,
+    brag_html=brag(event, sub, sub_url),
     image=page.config.image[0].src if page.config.image else none
   ) }}
 {% endmacro %}
@@ -121,12 +127,10 @@
 
 {% macro brag(
   event,
-  page
+  title,
+  url
 ) %}
-  {{ utility.link_if(
-    content=page.title,
-    url=content.page_link(page)
-  ) }}
+  {{ utility.link_if(title, url) }}
   {{ date(event) }}
   {{ adr(event) }}
 {% endmacro %}

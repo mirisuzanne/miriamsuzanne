@@ -1,7 +1,7 @@
 public: yes
 image:
   - src: 'art/theater/in-between.jpg'
-event_type: ['theater']
+event_type: ['theater', 'art']
 events:
   - venue: 'PackingHouse Center for the Arts'
     url: 'https://www.grapefruitlab.com/shows/2010/3/12/missa-populi'

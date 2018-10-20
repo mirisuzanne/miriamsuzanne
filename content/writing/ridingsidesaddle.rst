@@ -10,7 +10,7 @@ publication:
   - venue: 'SpringGun Press'
     url: 'http://springgunpress.com'
     date: [2015, 4, 2]
-event_type: ['reading']
+event_type: ['reading', 'art']
 events:
   - venue: 'A Leon Affair'
     date: [2017, 3, 18]

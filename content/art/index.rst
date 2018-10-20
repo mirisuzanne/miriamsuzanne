@@ -51,8 +51,8 @@ Cross-Media Art & Performance
 
 
 .. callmacro:: events/macros.j2#by_type
-  :title: 'Upcoming Performances'
-  :event_type: ['theater', 'music', 'design']
+  :title: 'Upcoming Shows'
+  :event_type: 'art'
 
 
 .. callmacro:: blog/macros.j2#taglist

@@ -1,5 +1,5 @@
 public: yes
-event_type: ['music', 'reading']
+event_type: ['music', 'reading', 'art']
 with:
   - name: Playground Ensemble
     url: 'http://playgroundensemble.org/'

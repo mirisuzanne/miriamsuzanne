@@ -30,15 +30,15 @@ Music
 
 .. callmacro:: events/macros.j2#by_type
   :title: 'Upcoming Appearances…'
-  :event_type: ['music']
+  :event_type: 'music'
 
 .. callmacro:: events/macros.j2#by_type
   :title: 'Videos…'
-  :event_type: ['music']
+  :event_type: 'music'
   :show: 'video'
   :count: 2
 
 .. callmacro:: events/macros.j2#by_type
   :title: 'Past Appearances…'
-  :event_type: ['music']
+  :event_type: 'music'
   :show: 'past'

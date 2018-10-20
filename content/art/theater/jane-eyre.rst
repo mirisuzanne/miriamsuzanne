@@ -2,7 +2,7 @@ public: yes
 grid: true
 image:
   - src: 'art/theater/jane.jpg'
-event_type: ['theater']
+event_type: ['theater', 'art']
 events:
   - venue: 'The Bakery'
     date: [2018, 2, 23]

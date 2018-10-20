@@ -1,6 +1,8 @@
 public: yes
 event_type: ['talk']
 slides: 'https://www.oddbooksapp.com/book/web-projects'
+image:
+  - src: 'talks/planning.jpg'
 events:
   - venue: 'Boost Biz Ed'
     url: 'https://boostbized.com/events/how-to-plan-a-web-project'

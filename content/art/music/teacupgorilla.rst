@@ -6,7 +6,7 @@ elsewhere:
     src: 'Teacup Gorilla'
 image:
   - src: 'art/music/video-meta.jpg'
-event_type: ['music']
+event_type: ['music', 'art']
 events:
   - venue: 'FACEMAN’s 100 Year Storm'
     date: [2016, 11, 18]

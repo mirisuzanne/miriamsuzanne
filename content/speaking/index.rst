@@ -1,5 +1,7 @@
 public: yes
 grid: yes
+image:
+  - src: 'talks/speaking.jpg'
 summary: |
   Miriam is an award-winning speaker --
   presenting on art, code, collaboration, and process --
@@ -33,11 +35,11 @@ Public Speaking
 
 .. callmacro:: events/macros.j2#by_type
   :title: 'Upcoming Appearances…'
-  :event_type: ['talk']
+  :event_type: 'talk'
 
 .. callmacro:: events/macros.j2#by_type
   :title: 'Videos…'
-  :event_type: ['talk']
+  :event_type: 'talk'
   :show: 'video'
   :count: 2
 
@@ -46,11 +48,11 @@ Public Speaking
   :slugs: [
       'speaking/talks/data-design',
       'speaking/talks/agile-systems',
-      'speaking/talks/no-grid-systems',
+      'speaking/talks/no-grid-system',
       'speaking/talks/web-project',
     ]
 
 .. callmacro:: events/macros.j2#by_type
   :title: 'Past Appearances…'
-  :event_type: ['talk']
+  :event_type: 'talk'
   :show: 'past'

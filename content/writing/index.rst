@@ -1,7 +1,7 @@
 public: yes
 grid: yes
 tag_index: writing
-event_type: ['reading']
+event_type: ['reading', 'art']
 summary: |
   Miriam is
   a staff writer at `CSS Tricks`_ and `OddBird`_,
@@ -40,4 +40,4 @@ Writing: Fiction & Otherwise
 
 .. callmacro:: events/macros.j2#by_type
   :title: 'Upcoming Readings'
-  :event_type: ['reading']
+  :event_type: 'reading'

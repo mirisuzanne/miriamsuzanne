@@ -1,4 +1,6 @@
 public: yes
+image:
+  - src: 'talks/systems.jpg'
 event_type: ['talk']
 events:
   - venue: 'Agile Denver'

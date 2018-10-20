@@ -16,7 +16,7 @@ into your Python environment.
 
 .. _virtualenv: http://www.virtualenv.org
 
-Run ``npm install`` to install
+Run ``yarn`` to install
 all the required npm packages
 for linting and compiling Sass.
 

@@ -2,7 +2,7 @@ public: yes
 image:
   - src: 'projects/clyffordstill.jpg'
 url: 'https://clyffordstillmuseum.org/retriplicate-reflects-on-clyfford-stills-replicates-and-the-artistic-process/'
-event_type: ['theater']
+event_type: ['theater', 'art']
 events:
   - venue: 'Buntport Theater'
     venue_url: 'https://buntport.com/'

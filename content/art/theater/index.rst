@@ -1,6 +1,8 @@
 public: yes
 grid: yes
 tag_index: theater
+image:
+  - src: 'art/theater/jane/DSC_0116.jpg'
 brag: |
   Award-winning playwright,
   producer,
@@ -32,15 +34,16 @@ Theater
 .. callmacro:: content/feature.macros.j2#show
   :slugs: [
       'art/theater/grapefruitlab',
+      'art/theater/outsidetheroom',
       'art/theater/jane-eyre',
       'art/theater/10myths',
     ]
 
 .. callmacro:: events/macros.j2#by_type
   :title: 'Upcoming Shows…'
-  :event_type: ['theater']
+  :event_type: 'theater'
 
 .. callmacro:: events/macros.j2#by_type
   :title: 'Past Shows…'
-  :event_type: ['theater']
+  :event_type: 'theater'
   :show: 'past'

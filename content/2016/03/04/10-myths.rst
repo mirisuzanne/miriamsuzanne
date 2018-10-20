@@ -4,7 +4,7 @@ series: 'riding sidesaddle*'
 slug: '10-myths'
 image:
   - src: '2016/10-myths.png'
-event_type: ['theater']
+event_type: ['theater', 'art']
 events:
   - venue: 'Buntport Theater'
     venue_url: 'https://buntport.com/'

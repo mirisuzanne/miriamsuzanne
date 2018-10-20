@@ -3,7 +3,7 @@ location: art
 grid: true
 image:
   - src: 'art/theater/10myths.jpg'
-event_type: ['theater']
+event_type: ['theater', 'art']
 events:
   - venue: 'Buntport Theater'
     url: 'http://buntport.com/archive/10myths.htm'
