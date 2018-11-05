@@ -23,7 +23,6 @@ nursing his favorite doll.
 *I'm going to be a mommy when I grow up.*
 Mom is proud, but corrects him:
 *Boys grow up to be daddies.*
-
 She’s only trying to be accurate,
 but he sets down the doll,
 and never picks it up again.
@@ -34,6 +33,8 @@ If I had a story like that,
 maybe everything would make sense.
 Maybe I could string this together into a narrative:
 beginning, middle, and end.
+
+------
 
 Two months ago,
 I woke up in a hospital bed
@@ -50,7 +51,6 @@ but that’s really none of your business,
 and not why I’m here.
 I've used the name Miriam since 2015,
 and started hormone replacement a few months later.
-
 But I’ve been a woman since I grew too old to be a girl.
 I remember her, young Miriam, boy Miriam,
 not quite a boy, but sure –
@@ -88,6 +88,8 @@ What you get is not what I get.
 There is no one way to have a genital,
 and no one way to be a gender.
 
+------
+
 I was originally going to read an Eve Ensler monologue
 titled *They Beat The Girl Out Of My Boy… Or So They Tried*.
 And I can talk about that violence --
@@ -105,8 +107,13 @@ or go outside,
 or be alive in public.
 *Think of the women and children.*
 
-Not me, not us.
-The other women, and the other children.
+| Not me.
+
+Not us.
+
+The *other* women, and the *other* children.
+
+------
 
 But this isn’t their monologue, it’s mine.
 I would rather tell you stories about the joy we have
