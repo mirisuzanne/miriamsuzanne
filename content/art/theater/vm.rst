@@ -15,11 +15,6 @@ summary: |
 
   .. _It Grows Wild: https://www.facebook.com/itgrowswild/
 
-  .. callmacro:: content/macros.j2#btn
-    :url: '/writing/scripts/mygender/'
-
-    Read the script
-
 
 ******************************************
 Trans Vagina Monologue: My Body, My Gender
@@ -64,16 +59,18 @@ group of women.
 .. _It Grows Wild: https://www.facebook.com/itgrowswild/
 
 In my mind it has a subtitle:
-*Why Is No One Talking About The Mouthfeel?*
+`Why Is No One Talking About The Mouthfeel?`_
 Parts of it
 (especially the opening)
 are familiar if you've read my work.
 Most of it is new material.
 
-  .. callmacro:: content/macros.j2#btn
-    :url: '/writing/scripts/mygender/'
+.. _`Why Is No One Talking About The Mouthfeel?`: https://www.youtube.com/watch?v=j1dJ8whOM8E
 
-    Read the script
+.. callmacro:: content/macros.j2#btn
+  :url: '/writing/scripts/mygender/'
+
+  Read the script
 
 .. [1] I don't assume trans men *want* a monologue,
    but they do also, sometimes, have vaginas…
