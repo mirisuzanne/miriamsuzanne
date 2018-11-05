@@ -1,5 +1,6 @@
 public: yes
 grid: yes
+tag_index: 'art'
 image:
   - src: 'writing/sidesaddle/moths.jpg'
 summary: |
@@ -53,7 +54,3 @@ Cross-Media Art & Performance
 .. callmacro:: events/macros.j2#by_type
   :title: 'Upcoming Shows'
   :event_type: 'art'
-
-
-.. callmacro:: blog/macros.j2#taglist
-  :tag: 'art'

@@ -4,6 +4,7 @@ events:
   - venue: 'Denver Center for the Performing Arts'
     url: 'https://www.denvercenter.org/dcpas-off-center-names-colorado-writers-selected-for-micro-theatre-project/'
     date: [2018, 10, 23]
+    end: [2018, 11, 18]
 brag: |
   Grapefruit Lab adapts Kafka
   for a series of DCPA "Bite Size" productions

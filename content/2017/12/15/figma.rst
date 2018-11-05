@@ -1,15 +1,11 @@
 public: yes
 tags: ['design', 'interview', 'css', 'code']
+show_tag: 'interview'
 image:
   - src: '2017/figma.png'
 elsewhere:
   - url: https://blog.figma.com/18-designers-predict-ui-ux-trends-for-2018-2d04d41361c6
     src: 'Figma Design'
-after:
-  - include: 'blog/_taglist.html.j2'
-    tag: 'interview'
-    title: 'More Interviews'
-
 summary: |
   Figma asked 18 designers
   what UI/UX trends they predict for 2018.

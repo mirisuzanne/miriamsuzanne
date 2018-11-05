@@ -17,7 +17,7 @@ quotes:
     credit: 'John Moore'
     source: '2016 True West Award'
     slug: 'truewest'
-    url: 'http://www.denvercenter.org/blog-posts/news-center/2016/12/18/2016-true-west-award-miriam-suzanne'
+    url: 'https://www.denvercenter.org/2016-true-west-award-miriam-suzanne/'
   - text: |
       The play makes us think about the dizzying variety
       of possible physical variations to human genitalia

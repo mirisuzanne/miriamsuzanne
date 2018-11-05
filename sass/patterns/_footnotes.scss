@@ -1,0 +1,26 @@
+// Footnotes
+// =========
+
+.footnote-reference {
+  font-size: size('xsmall');
+  vertical-align: super;
+}
+
+.footnote {
+  font-size: size('small');
+  font-style: italic;
+  margin: var(--spacer) 0 var(--gutter) neg(--double-gutter);
+
+  & + & {
+    margin-top: var(--gutter);
+  }
+
+  .label,
+  em {
+    font-style: normal;
+  }
+
+  td:not(.label) {
+    padding: 0 0 var(--shim) var(--shim);
+  }
+}

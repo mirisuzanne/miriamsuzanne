@@ -1,5 +1,6 @@
 public: true
 tags: [transition, writing, elsewhere]
+series: transition
 elsewhere:
   - url: https://mennonitewriting.org/journal/10/3/rejecting-maleness-apology-revolution/#all
     src: Journal of Mennonite Writing

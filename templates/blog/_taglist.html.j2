@@ -1,8 +1,11 @@
 {% import "blog/macros.j2" as blog %}
 
+{% set slug = ctx.slug if ctx else none %}
+
 {{ taglist(
   tag=module.tag,
   title=module.title or "Related Articles",
   count=module.count or 5,
-  reverse=module.reverse
+  reverse=module.reverse,
+  skip=module.skip or slug
 ) }}

@@ -62,12 +62,13 @@
     slug=ctx.slug
   ) }}
 
-  {% if config.series or config.tag_index %}
-    {% set tag = config.series or config.tag_index %}
+  {% if config.series or config.tag_index or config.show_tag %}
+    {% set tag = config.series or config.tag_index or config.show_tag %}
     {% set entries = get_blog_entries_by_tag(tag) %}
     {{ blog.section(
       entries,
-      title="Related Articles"
+      title="Related '%s' Articles" % tag,
+      skip=ctx.slug
     ) }}
   {% endif %}
 {% endblock %}

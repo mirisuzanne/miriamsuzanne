@@ -17,6 +17,6 @@ summary: |
   :slug: 'truewest'
 
 .. callmacro:: content/macros.j2#btn
-  :url: 'http://www.denvercenter.org/blog-posts/news-center/2016/12/18/2016-true-west-award-miriam-suzanne'
+  :url: 'https://www.denvercenter.org/2016-true-west-award-miriam-suzanne/'
 
   Read the full article

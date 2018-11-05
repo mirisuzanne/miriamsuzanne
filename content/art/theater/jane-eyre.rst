@@ -5,9 +5,9 @@ image:
 event_type: ['theater', 'art']
 events:
   - venue: 'The Bakery'
+    url: 'http://www.grapefruitlab.com/shows/janeeyre/'
     date: [2018, 2, 23]
     end: [2018, 3, 3]
-    url: 'http://www.grapefruitlab.com/shows/janeeyre/'
 brag: |
   A queer adaptation of the classic novel, with music…
 summary: |

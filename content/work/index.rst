@@ -1,4 +1,5 @@
 public: yes
+tag_index: 'code'
 grid: yes
 clients:
   - title: 'CoachHub'
@@ -65,6 +66,3 @@ Web Development & Consulting
 .. callmacro:: content/feature.macros.j2#show
   :title: 'Featured Clients…'
   :yaml: ['work/index', 'clients']
-
-.. callmacro:: blog/macros.j2#taglist
-  :tag: 'code'

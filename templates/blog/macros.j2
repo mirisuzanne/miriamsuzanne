@@ -19,7 +19,8 @@
   tag,
   title="Related Articles",
   count=5,
-  reverse=false
+  reverse=false,
+  skip=none
 ) %}
   {% set entries = get_blog_entries_by_tag(tag) %}
   {% set entries = entries|reverse if (entries and reverse) else entries %}
@@ -28,7 +29,8 @@
     {{ section(
       entries=entries[:count],
       title=title,
-      more=link_to('tag', tag=tag)
+      more=link_to('tag', tag=tag),
+      skip=skip
     ) }}
   {% endif %}
 {% endmacro %}
@@ -37,7 +39,8 @@
 {% macro section(
   entries,
   title=none,
-  more=none
+  more=none,
+  skip=none
 ) %}
   {% if title %}
     <hr data-layout="grid-border" />
@@ -47,7 +50,9 @@
   {% endif %}
 
   {% for entry in entries %}
-    {{ list(entry) }}
+    {% if (not skip) or (entry.slug != skip) %}
+      {{ list(entry) }}
+    {% endif %}
   {% endfor %}
 
   {% if more %}
@@ -60,17 +65,20 @@
 
 
 {% macro list(post) %}
+  {% set try = all_pages|filter_pages('slug', 'eq', post.config.placeholder)|get_page if post.config.placeholder else none %}
+  {% set page = try or post %}
+
   <h3 data-title="post">
     {{ utility.link_if(
-      content=post.title|typogrify,
-      url=link_to('page', slug=post.slug)
+      content=page.title|typogrify,
+      url=link_to('page', slug=page.slug)
     ) }}
   </h3>
 
   {{ byline(post, 'post') }}
 
   <div data-summary="post">
-    {{ post.render_summary()|typogrify }}
+    {{ page.render_summary()|typogrify }}
   </div>
 {% endmacro %}
 

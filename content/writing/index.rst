@@ -19,10 +19,6 @@ summary: |
   .. _The Post-Obsolete Book: post-obsolete/
   .. _award-winning playwright: 10myths/
 
-  .. callmacro:: content/macros.j2#btn
-    :url: 'http://oddbird.net/'
-    :content: 'Check out OddBird'
-
 
 ****************************
 Writing: Fiction & Otherwise
@@ -30,11 +26,19 @@ Writing: Fiction & Otherwise
 
 
 .. callmacro:: content/feature.macros.j2#show
+  :title: 'Books'
   :slugs: [
       'writing/ridingsidesaddle',
-      'writing/twinedfragments',
-      'writing/scripts/janeeyre',
       'writing/jumpstartsass',
+    ]
+
+
+.. callmacro:: content/feature.macros.j2#show
+  :title: 'Plays'
+  :slugs: [
+      'writing/scripts/10myths',
+      'writing/scripts/janeeyre',
+      'writing/scripts/mygender',
     ]
 
 

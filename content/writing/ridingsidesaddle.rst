@@ -203,11 +203,6 @@ Riding SideSaddle*
 
 
 .. -------------------------------------------
-.. callmacro:: blog/macros.j2#taglist
-  :tag: 'Riding SideSaddle*'
-
-
-.. -------------------------------------------
 .. callmacro:: content/macros.j2#rst
   :Title: 'Publishing Credits'
 

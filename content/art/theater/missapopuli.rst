@@ -6,12 +6,7 @@ events:
   - venue: 'PackingHouse Center for the Arts'
     url: 'https://www.grapefruitlab.com/shows/2010/3/12/missa-populi'
     date: [2010, 3, 12]
-  - venue: 'PackingHouse Center for the Arts'
-    url: 'https://www.grapefruitlab.com/shows/2010/3/12/missa-populi'
-    date: [2010, 3, 13]
-  - venue: 'PackingHouse Center for the Arts'
-    url: 'https://www.grapefruitlab.com/shows/2010/3/12/missa-populi'
-    date: [2010, 3, 14]
+    end: [2010, 3, 14]
 brag: |
   This ain’t grace, this all fucked, this old thing…
 summary: |
