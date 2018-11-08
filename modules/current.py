@@ -18,7 +18,7 @@ def filter_events(event_list, past=None):
     future_list = []
     past_list = []
     for event in event_list:
-        date = make_date(event['date'])
+        date = make_date(event['end'])
         if date >= datetime.now():
             future_list.append(event)
         else:

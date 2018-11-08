@@ -5,10 +5,7 @@
 
 {% block body %}
   {% if pagination.has_prev %}
-    {{ blog.intro(
-      title='Articles…',
-      summary=pagination
-    ) }}
+    {{ blog.intro(title=pagination) }}
   {% else %}
     {% set page = all_pages|filter_pages('slug', 'eq', 'index')|get_page %}
 
@@ -29,9 +26,11 @@
     ) }}
   {% endif %}
 
+  {% set section_title = 'More' if pagination.has_prev else 'Recent' %}
+
   {{ blog.section(
     entries=pagination.get_slice(),
-    title='Recent Articles…'
+    title='%s Articles…' % section_title
   ) }}
 
   {% if show_pagination and pagination.pages > 1 %}

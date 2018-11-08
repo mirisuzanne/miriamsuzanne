@@ -3,6 +3,7 @@ tags: [susy, demo, sass, code]
 elsewhere:
   - url: 'http://oddbird.net/2012/11/27/susy-off-canvas'
     src: 'OddBird'
+    direct: true
 summary: |
   The off-canvas design pattern
   for creating responsive websites

@@ -9,15 +9,6 @@ summary: |
   created by Grapefruit Lab,
   Teacup Gorilla, and myself.
 
-    We are not here to flatter egotism,
-    or prop up humbug;
-    we are merely telling the [queer] story.
-    We value what is good in the book;
-    but we believe in the existence of other,
-    and more vivid kinds of goodness.
-
-    ---Charlotte Brontë, 1847 (edited)
-
 
 Script: JANE/EYRE
 =================

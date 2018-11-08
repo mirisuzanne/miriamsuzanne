@@ -14,38 +14,48 @@ event_type: ['reading', 'art']
 events:
   - venue: 'A Leon Affair'
     date: [2017, 3, 18]
+    end: [2017, 3, 18]
   - venue: 'The Operating System, NY'
     date: [2017, 1, 13]
+    end: [2017, 1, 13]
     url: 'https://www.facebook.com/events/306828783046470/'
     series: 'Resistance Tour'
   - venue: 'in your ear, DC'
     date: [2017, 1, 15]
+    end: [2017, 1, 15]
     url: 'https://www.facebook.com/events/641655696042941/'
     series: 'Resistance Tour'
   - venue: 'Wooden Shoe Books, PA'
     date: [2017, 1, 16]
+    end: [2017, 1, 16]
     url: 'http://woodenshoebooks.com/'
     series: 'Resistance Tour'
   - venue: 'Silver Spring, MD'
     date: [2017, 1, 18]
+    end: [2017, 1, 18]
     series: 'Resistance Tour'
   - venue: 'Small Rain #2, MD'
     date: [2017, 1, 19]
+    end: [2017, 1, 19]
     series: 'Resistance Tour'
   - venue: 'Open Grounds, VA'
     date: [2017, 1, 23]
+    end: [2017, 1, 23]
     url: 'http://opengrounds.virginia.edu/'
     series: 'Resistance Tour'
   - venue: 'The Card Table'
     url: 'http://tracyshaffer.com/the-card-table/'
     date: [2016, 3, 19]
+    end: [2016, 3, 19]
   - venue: 'Huckleberry Roasters [art installation]'
     url: 'http://huckleberryroasters.com/'
     date: [2015, 10, 1]
+    end: [2015, 10, 1]
   - name: 'Fucking Fabulous Fiction Festival'
     venue: Oriental Theater
     url: 'http://www.theorientaltheater.com/event/214770/fiction-fest'
     date: [2015, 7, 31]
+    end: [2015, 7, 31]
     with:
       - name: 'BookBar'
         url: 'http://bookbardenver.com/'
@@ -54,6 +64,7 @@ events:
   - venue: 'Syntax Physic Opera [book release]'
     url: 'http://physicopera.com/'
     date: [2015, 4, 2]
+    end: [2015, 4, 2]
 quotes:
   - text: |
       It’s a new and wonderful adventure each time,

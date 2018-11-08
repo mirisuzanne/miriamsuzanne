@@ -4,20 +4,17 @@ series: 'riding sidesaddle*'
 slug: '10-myths'
 image:
   - src: '2016/10-myths.png'
-event_type: ['theater', 'art']
-events:
-  - venue: 'Buntport Theater'
-    venue_url: 'https://buntport.com/'
-    url: 'https://buntport.com/2016/03/10-myths-proper-application-beauty-products/'
-    date: [2015, 9, 24]
-brag: |
-  Award-winning stage adaptation of Riding SideSaddle*
 summary: |
   I'm excited to be part of `Buntport Theater`_’s
   40th original full-length production —
   based on my novel, `Riding SideSaddle*`_,
   and featuring a live score by `Teacup Gorilla`_.
   It's been a wild month pulling it all together!
+
+  .. callmacro:: content/macros.j2#btn
+    :url: '/writing/scripts/10myths'
+
+    Read the script
 
   .. _Buntport Theater: http://buntport.com
   .. _Riding SideSaddle*: /writing/ridingsidesaddle/

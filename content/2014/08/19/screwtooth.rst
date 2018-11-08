@@ -4,6 +4,7 @@ event_type: ['art', 'design']
 events:
   - venue: 'Buntport Theater'
     date: [2014, 8, 8]
+    end: [2014, 8, 8]
 image:
   - src: 'prophetia/installation.jpg'
     caption: 'The full sci-fi art installation at Buntport Theater'

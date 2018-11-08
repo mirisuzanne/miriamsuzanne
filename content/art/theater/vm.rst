@@ -13,6 +13,11 @@ summary: |
   for the 2018
   `It Grows Wild`_ production.
 
+  .. callmacro:: content/macros.j2#btn
+    :url: '/writing/scripts/mygender/'
+
+    Read the script
+
   .. _It Grows Wild: https://www.facebook.com/itgrowswild/
 
 
@@ -58,11 +63,20 @@ group of women.
 
 .. _It Grows Wild: https://www.facebook.com/itgrowswild/
 
-In my mind it has a subtitle:
+Despite undergoing bottom surgery recently,
+I didn't want to perpetuate a
+narrative that *surgery makes us women*.
+Instead,
+this monologue is almost entirely based
+on my pre-surgery experience
+of having an "inverted" vagina.
+
+In my mind the subtitle should be:
 `Why Is No One Talking About The Mouthfeel?`_
 Parts of it
 (especially the opening)
-are familiar if you've read my work.
+will be familiar
+if you've read my work.
 Most of it is new material.
 
 .. _`Why Is No One Talking About The Mouthfeel?`: https://www.youtube.com/watch?v=j1dJ8whOM8E

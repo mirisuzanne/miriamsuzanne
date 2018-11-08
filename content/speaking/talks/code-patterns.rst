@@ -6,42 +6,50 @@ events:
   - venue: 'Refresh Denver'
     url: 'https://www.meetup.com/refreshdenver/events/241230495/?from=ref'
     date: [2017, 9, 13]
+    end: [2017, 9, 13]
     adr: 'Denver, CO'
     slides: 'https://oddbooksapp.com/release/7564d481-b132-4636-be3b-0907452955c7'
   - venue: 'Front Range Front End'
     url: 'https://www.meetup.com/Sass-Hack-Denver/events/239687418/'
     date: [2017, 6, 1]
+    end: [2017, 6, 1]
     adr: 'Denver, CO'
     slides: 'https://oddbooksapp.com/release/06f61771-0205-4cbc-a478-050ac52cfe92'
   - venue: 'Gotham Sass'
     url: 'https://www.meetup.com/gothamsass/events/235946893/'
     date: [2017, 1, 12]
+    end: [2017, 1, 12]
     adr: 'New York, NY'
     slides: 'https://oddbooksapp.com/release/e063d143-df07-4392-a6f3-3ae53e7fa2ca'
     series: 'Resistance Tour'
   - venue: 'CSSDay.io'
     url: 'http://cssday.io/'
     date: [2016, 12, 3]
+    end: [2016, 12, 3]
     adr: 'Chandler, AZ'
     slides: 'https://oddbooksapp.com/release/1f08a0cb-198f-4c5f-ac85-93e55daa471d'
     video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/lK_akjzOUY0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>'
   - venue: 'CascadiaFest'
     url: 'http://2016.cascadiafest.org/'
     date: [2016, 8, 3]
+    end: [2016, 8, 3]
     slides: 'https://oddbooksapp.com/release/3964dd55-982a-4171-a46b-6dd0354eac27'
     video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/cVZreFHgLFw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>'
     feature: true
   - venue: 'CSS Summit'
     url: 'http://environmentsforhumans.com/2016/css-summit/'
     date: [2016, 7, 26]
+    end: [2016, 7, 26]
     slides: 'https://oddbooksapp.com/release/1f76aa54-df02-4f83-8a7b-c54e1c745fbf'
   - venue: 'DublinCSS'
     url: 'http://www.meetup.com/DublinCSS/events/230011902/'
     date: [2016, 5, 19]
+    end: [2016, 5, 19]
     slides: 'http://oddbooksapp.com/book/sass-patterns'
   - venue: 'Clarity Conference'
     url: 'http://clarityconf.com/'
     date: [2016, 3, 31]
+    end: [2016, 3, 31]
     adr: 'San Francisco, CA'
     video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/b4vSy1e1ai8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>'
     slides: 'https://oddbooksapp.com/release/ab1987b6-7d5f-42e4-b0ff-e7312cb345f6'

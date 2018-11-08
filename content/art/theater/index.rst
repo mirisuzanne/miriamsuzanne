@@ -34,9 +34,6 @@ Theater
 .. callmacro:: content/feature.macros.j2#show
   :slugs: [
       'art/theater/grapefruitlab',
-      'art/theater/outsidetheroom',
-      'art/theater/jane-eyre',
-      'art/theater/10myths',
     ]
 
 .. callmacro:: events/macros.j2#by_type

@@ -7,14 +7,17 @@ events:
   - venue: 'Invisible City'
     url: 'http://playgroundensemble.org/2018/05/speaking-of-pride/'
     date: [2018, 6, 14]
+    end: [2018, 6, 14]
     adr: 'Denver, CO'
   - venue: 'GLBT Community Center'
     url: 'http://playgroundensemble.org/2018/05/speaking-of-pride/'
     date: [2018, 6, 13]
+    end: [2018, 6, 13]
     adr: 'Denver, CO'
   - venue: 'Denver Public Library'
     url: 'http://playgroundensemble.org/2018/05/speaking-of-pride/'
     date: [2018, 6, 9]
+    end: [2018, 6, 9]
     adr: 'Denver, CO'
 brag: |
   Minimalist music with fragments of memoir

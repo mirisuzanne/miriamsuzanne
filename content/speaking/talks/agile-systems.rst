@@ -6,18 +6,22 @@ events:
   - venue: 'Agile Denver'
     url: 'https://www.meetup.com/Agile-Denver2/events/251897187/'
     date: [2018, 10, 22]
+    end: [2018, 10, 22]
     adr: 'Denver, CO'
   - venue: 'Front Range Front-End'
     url: 'https://www.meetup.com/front-range-front-end/events/zwjmwlyxgbhb/'
     date: [2018, 4, 5]
+    end: [2018, 4, 5]
     adr: 'Denver, CO'
   - venue: 'VueConf US'
     url: 'http://vueconf.us/'
     date: [2018, 3, 26]
+    end: [2018, 3, 26]
     adr: 'New Orleans, LA'
   - venue: 'Tech Confluence'
     url: 'https://www.meetup.com/TechConfluence/events/nxcfhlyxfbcc/'
     date: [2018, 3, 21]
+    end: [2018, 3, 21]
     adr: 'Denver, CO'
 after:
   - include: 'events/_by-page.html.j2'

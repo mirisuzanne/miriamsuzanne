@@ -67,11 +67,15 @@
 {% macro list(post) %}
   {% set try = all_pages|filter_pages('slug', 'eq', post.config.placeholder)|get_page if post.config.placeholder else none %}
   {% set page = try or post %}
+  {% set away = page.config.elsewhere[0] if page.config.elsewhere else none %}
+
+  {% set title = '➡ %s' % page.title if away.direct else page.title %}
+  {% set url = away.url if away.direct else link_to('page', slug=page.slug) %}
 
   <h3 data-title="post">
     {{ utility.link_if(
-      content=page.title|typogrify,
-      url=link_to('page', slug=page.slug)
+      content=title|typogrify,
+      url=url
     ) }}
   </h3>
 

@@ -6,6 +6,7 @@ events:
   - venue: 'UVA Scholars’ Lab'
     url: 'http://cal.lib.virginia.edu/event/3088981'
     date: [2017, 1, 23]
+    end: [2017, 1, 23]
     adr: 'Charlottesville, VA'
     series: 'Resistance Tour'
 summary: |

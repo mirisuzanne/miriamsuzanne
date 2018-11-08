@@ -1,6 +1,6 @@
-public: yes
-tags: ['transition']
-slug: 'miriam'
+public: no
+tags: [transition]
+series: transition
 summary: |
   It’s the third Saturday in October,
   which everyone knows is

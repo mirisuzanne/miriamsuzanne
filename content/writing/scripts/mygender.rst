@@ -42,9 +42,8 @@ with my vagina wrapped in bandages.
 There’s a man at the foot of my bed,
 a stranger.
 
--- *Congratulations! How does it feel? You're finally Miriam!*
-
--- I What? That’s… what? I’ve *been* Miriam.
+| -- *Congratulations! How does it feel? You're finally Miriam!*
+| -- I What? That’s… what? I’ve *been* Miriam.
 
 I've had a recognizable vulva for 8 weeks,
 but that’s really none of your business,
@@ -108,10 +107,8 @@ or be alive in public.
 *Think of the women and children.*
 
 | Not me.
-
-Not us.
-
-The *other* women, and the *other* children.
+| Not us.
+| The *other* women, and the *other* children.
 
 ------
 

@@ -7,10 +7,12 @@ events:
   - venue: 'Boost Biz Ed'
     url: 'https://boostbized.com/events/how-to-plan-a-web-project'
     date: [2018, 7, 11]
+    end: [2018, 7, 11]
     adr: 'Westminster, CO'
   - venue: 'EdTech Colorado'
     url: 'https://www.meetup.com/EducelerateCO/'
     date: [2017, 12, 12]
+    end: [2017, 12, 12]
     adr: 'Denver, CO'
 after:
   - include: 'events/_by-page.html.j2'

@@ -10,13 +10,16 @@ event_type: ['music', 'art']
 events:
   - venue: 'FACEMAN’s 100 Year Storm'
     date: [2016, 11, 18]
+    end: [2016, 11, 18]
     url: 'http://www.theorientaltheater.com/event/260005/facemans-100-year-storm-'
   - venue: 'Underground Music Showcase'
     url: 'http://theums.com/'
     date: [2016, 7, 25]
+    end: [2016, 7, 25]
   - venue: 'Underground Music Showcase'
     url: 'http://theums.com/'
     date: [2015, 7, 25]
+    end: [2015, 7, 25]
 quotes:
   - text: |
       Teacup Gorilla's amiable creative approach,

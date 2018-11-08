@@ -1,4 +1,6 @@
 public: yes
+image:
+  - src: 'art/theater/outsidetheroom.jpg'
 event_type: ['theater', 'art']
 events:
   - venue: 'Denver Center for the Performing Arts'
@@ -21,9 +23,16 @@ summary: |
 Outside The Room
 ****************
 
+.. callmacro:: gallery/macros.j2#figure
+  :gallery: [
+              {
+                'video': '<iframe width="560" height="315" src="https://www.youtube.com/embed/aBBnSi5MJ8o" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+                'size': 'full',
+              }
+            ]
+
 Created by Theatre Artibus
 (Buba Basishvili and Meghan Frank)
 and Grapefruit Lab
 (Julie Rada, Kenny Storms, and Miriam Suzanne)
-
 Conceived with writing by Larry Mitchell

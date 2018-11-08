@@ -6,16 +6,19 @@ events:
   - venue: 'Women Who Code Fort Collins'
     url: 'https://www.meetup.com/Women-Who-Code-Fort-Collins/events/242033627/'
     date: [2017, 8, 30]
+    end: [2017, 8, 30]
     adr: 'Fort Collins, CO'
     slides: 'https://oddbooksapp.com/book/wwc-layout'
   - venue: 'Develop Denver'
     url: 'https://developdenver.org/'
     date: [2017, 8, 10]
+    end: [2017, 8, 10]
     adr: 'Denver, CO'
     slides: 'https://oddbooksapp.com/release/76673f1e-63dc-4271-b326-76047288a10d'
   - venue: 'Refresh Denver'
     url: 'https://www.meetup.com/refreshdenver/events/239219853/'
     date: [2017, 6, 14]
+    end: [2017, 6, 14]
     adr: 'Denver, CO'
     slides: 'https://oddbooksapp.com/release/543aea12-2264-4794-867d-d01fbf3a79c9'
 summary: |

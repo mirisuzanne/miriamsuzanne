@@ -8,20 +8,24 @@ events:
   - venue: 'AIGA Colorado'
     url: 'https://colorado.aiga.org/event/04-26-18-rethinking-ux-design/'
     date: [2018, 4, 26]
+    end: [2018, 4, 26]
     adr: 'Denver, CO'
     slides: 'https://oddbooksapp.com/release/e5bd52de-a9db-4e59-a2af-ffa8a68f9100'
   - venue: 'Creative Connections'
     url: 'https://www.meetup.com/Creative-Connections/events/dcwhhpyxgbjb/'
     date: [2018, 4, 16]
+    end: [2018, 4, 16]
     adr: 'Denver, CO'
     slides: 'https://oddbooksapp.com/release/650ad542-a9c9-4036-8f91-af34ae449d3c'
   - venue: 'Metro State Mobile Prototyping'
     date: [2018, 4, 5]
+    end: [2018, 4, 5]
     adr: 'Denver, CO'
     slides: 'https://www.oddbooksapp.com/book/mobile-prototype'
   - venue: 'SassConf 2015'
     url: 'http://sassconf.com'
     date: [2015, 11, 11]
+    end: [2015, 11, 11]
     slides: 'https://www.oddbooksapp.com/book/user-unfriendly'
 after:
   - include: 'events/_by-page.html.j2'

@@ -140,9 +140,17 @@
   event
 ) %}
   {% set event_date = event.date|make_date %}
+  {% set end_date = event.end|make_date %}
+
   <time datetime="{{ event_date }}" data-meta="time">
-    <i>on</i>
-    {{ event_date|format_date('%B %-d, %Y') }}
+    {% if (event_date == end_date) %}
+      <i>on</i>
+      {{ event_date|format_date('%B %-d, %Y') }}
+    {% else %}
+      {{ event_date|format_date('%b %-d') }}
+      <i>—</i>
+      {{ end_date|format_date('%b %-d, %Y') }}
+    {% endif %}
   </time>
 {% endmacro %}
 

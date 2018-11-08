@@ -3,6 +3,7 @@ tags: ['sass', 'code']
 elsewhere:
   - url: https://css-tricks.com/loops-css-preprocessors/
     src: 'CSS Tricks'
+    direct: true
 image:
   - src: '2016/loops.jpg'
 summary_intros: yes

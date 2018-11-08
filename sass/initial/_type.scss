@@ -28,7 +28,8 @@ svg {
 p,
 ul,
 ol,
-dl {
+dl,
+.line-block {
   &:not(:last-child) {
     margin-bottom: var(--gutter);
   }

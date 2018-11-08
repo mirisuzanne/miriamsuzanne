@@ -36,9 +36,10 @@ Writing: Fiction & Otherwise
 .. callmacro:: content/feature.macros.j2#show
   :title: 'Plays'
   :slugs: [
-      'writing/scripts/10myths',
-      'writing/scripts/janeeyre',
       'writing/scripts/mygender',
+      'writing/scripts/janeeyre',
+      'writing/scripts/10myths',
+      'writing/scripts/missapopuli',
     ]
 
 

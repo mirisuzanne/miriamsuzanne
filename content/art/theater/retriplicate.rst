@@ -7,6 +7,7 @@ events:
   - venue: 'Buntport Theater'
     venue_url: 'https://buntport.com/'
     date: [2015, 9, 24]
+    end: [2015, 9, 24]
 quotes:
   - credit: 'Eden Lane'
     source: '9 News'
