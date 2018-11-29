@@ -1,6 +1,7 @@
 TAGS
 collected-assets/
 *.DS_Store
+*.vscode/
 *~
 *.pyc
 .sass-cache/

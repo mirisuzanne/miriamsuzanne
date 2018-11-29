@@ -1,4 +1,3 @@
-public: yes
 is: script
 image:
   - src: 'art/theater/missa.jpg'
@@ -46,50 +45,43 @@ the tone returns
 repeating
 there is a voice:*
 
-and then we separated the inside of our houses
-from the outside of our houses
-we all know the dust cannot be swept from the dirt floor
-we all know the bacteria cannot be scrubbed from our bodies
-from our skin
-from our selves
-and wash it down the drain
-down the hole
-
-down the mighty mississipp
-
-the muddy
-the ganges
-down the san andreas
-to the center of the earth
-the universe
-the veins
-
-in my eye
-
-wrong
-
-this ain't grace
-this all fucked
-this old thing
-
-wrong
-
-wash me down
-wash me down
-wash me down
+| and then we separated the inside of our houses
+| from the outside of our houses
+| we all know the dust cannot be swept from the dirt floor
+| we all know the bacteria cannot be scrubbed from our bodies
+| from our skin
+| from our selves
+| and wash it down the drain
+| down the hole
+| down the mighty mississipp
+| the muddy
+| the ganges
+| down the san andreas
+| to the center of the earth
+| the universe
+| the veins
+| in my eye
+| wrong
+| this ain't grace
+| this all fucked
+| this old thing
+| wrong
+| wash me down
+| wash me down
+| wash me down
 
 *a harsh light
 a silhouette
 blood on a lab coat
 washing hands*
 
-and from within him stir
-the hell within him
-for within him hell
+| and from within him stir
+| the hell within him
+| for within him hell
 
 *a pause*
 
-please continue
+| please continue
 
 *the washing continues
 it becomes jagged and stylized
@@ -101,56 +93,56 @@ so do the screams
 and all sounds
 the silence is deafening*
 
-I can kill you but instead I hold you tight
+| I can kill you but instead I hold you tight
 
 *the silhouette becomes limp*
 
-the trash requires that you continue
-the trash requires trash
-continue
+| the trash requires that you continue
+| the trash requires trash
+| continue
 
 *washing / sporadic
 screams when the hands are in water
 stops
 has the water become blood?*
 
-it is absolutely essential that you continue
-it is absolutely essential
-continue
+| it is absolutely essential that you continue
+| it is absolutely essential
+| continue
 
 *the washing is frantic
 the screams are frantic
 full body*
 
-it is only a job
-the job requires it
-the job
-there is a speck
-cut
-dissect
-a speck of dust
-cut
-on your father
-cut
-in your shadows and up your ass the contamination
-the cut
-cut out
-you have no choice
-dissect contamination
-it is only right
-it is just
-you have no other choice
-you must go on
+| it is only a job
+| the job requires it
+| the job
+| there is a speck
+| cut
+| dissect
+| a speck of dust
+| cut
+| on your father
+| cut
+| in your shadows and up your ass the contamination
+| the cut
+| cut out
+| you have no choice
+| dissect contamination
+| it is only right
+| it is just
+| you have no other choice
+| you must go on
 
 *soaked
 the body collapses
 as do the screams
 and the feedback*
 
-I've never dripped in punishment
-quite
-like
-this
+| I've never dripped in punishment
+| quite
+| like
+| this
 
 
 ------
@@ -183,53 +175,53 @@ full of plastic toys and kitchen accouterment
 which they throw one-by-one against the wall
 while Lady GaGa sings us this song:*
 
-I fold you into my mouth
-that goes
-that leaves
-and now i will destroy it all
-I can’t help it
-it all embarrasses me
-and so I’ll fuck it
-and mourn it
-what?
-where was i?
-now now now nownownownownownownownownownownow
-crash
-oops
-crash
-fleeting
-tickle/giggle/fidget and bounce
-a blanket of sadness
-dropped on me from the gods
-from the ghosts of grandmothers and illusions and dead cats
-forget it
-can I put you in my mouth?
-because
-cuz
-I desire it
-drop it
-(I can kill you and take all your money)
-and hold you tight
-just lay on my chest
-feel the comfort of heartbeat in your ear pressed to my skin
-the weightedness
-the love song
-loins
-don’t look
-don’t behold
-me
-mememememememe
-a wish
-I am Prada,
-born among the demons,
-and of all that measures,
-I am time
-I am I am
-the cow that fulfills
-I am
-the power of sex
-and
-the king
+| I fold you into my mouth
+| that goes
+| that leaves
+| and now i will destroy it all
+| I can’t help it
+| it all embarrasses me
+| and so I’ll fuck it
+| and mourn it
+| what?
+| where was i?
+| now now now nownownownownownownownownownownow
+| crash
+| oops
+| crash
+| fleeting
+| tickle/giggle/fidget and bounce
+| a blanket of sadness
+| dropped on me from the gods
+| from the ghosts of grandmothers and illusions and dead cats
+| forget it
+| can I put you in my mouth?
+| because
+| cuz
+| I desire it
+| drop it
+| (I can kill you and take all your money)
+| and hold you tight
+| just lay on my chest
+| feel the comfort of heartbeat in your ear pressed to my skin
+| the weightedness
+| the love song
+| loins
+| don’t look
+| don’t behold
+| me
+| mememememememe
+| a wish
+| I am Prada,
+| born among the demons,
+| and of all that measures,
+| I am time
+| I am I am
+| the cow that fulfills
+| I am
+| the power of sex
+| and
+| the king
 
 *by the end of which
 Lady Gaga has jumped from the acropolis
@@ -256,10 +248,10 @@ to affix such a connection: a maker to make cunningly. And so on it
 goes.
 
 *other voices and texts join in
-they are hitler and groucho marx
+they are dictators and groucho marx
 and the scum manifesto and tweets
 and status update blog post personal diary
-literature and everything:*
+literature and everything words:*
 
 Concentric circles in the mind. Interior in conversation with the
 exterior (or the inverse), and again and again we are re-creating what
@@ -363,22 +355,22 @@ and several candles are lit*
 
 *someone in a bath:*
 
-I could say I believe in the world today
-that each day will follow the other like pots to pans
-that the cog of my life turns with some precision
-even that when I am dead I will die
-and stay that way
-I know this
-I know the skies
-black
-yellow
-black
-on and on that way
-and the old dragon and his crony angels
-are nowhere to be seen
-looking for guns and gold and gasoline
-I could say that I believe in this
-that it is
+| I could say I believe in the world today
+| that each day will follow the other like pots to pans
+| that the cog of my life turns with some precision
+| even that when I am dead I will die
+| and stay that way
+| I know this
+| I know the skies
+| black
+| yellow
+| black
+| on and on that way
+| and the old dragon and his crony angels
+| are nowhere to be seen
+| looking for guns and gold and gasoline
+| I could say that I believe in this
+| that it is
 
 *someone else attempting and failing*
 
@@ -387,82 +379,82 @@ repeat*
 
 *someone making tea or combing hair:*
 
-on the way home from work
-I got onto i70
-I missed my exit
-but kept driving
-I noticed after an hour or two
-that I was no longer merely driving east
-past gaudy warehouses and outlet stores
-but driving back through years
+| on the way home from work
+| I got onto i70
+| I missed my exit
+| but kept driving
+| I noticed after an hour or two
+| that I was no longer merely driving east
+| past gaudy warehouses and outlet stores
+| but driving back through years
 
 *while in the bathtub:*
 
-every day I cut back the rust
-my heart is a muscle
-the only thing
-left tensed when I sleep
-like a face down in the gravel
-I have to wonder
-after the workday
-I scrub at my hands until they grow old
-I am too young
-for this
-what I didn’t make or take still played out
-plays out
-every fucking day
-fucking federals,
-goddamn fools. Next time kick yourselves out
-cut your own damn faces up
-god doesn’t care, he doesn’t give a fuck
-he’s as tired as the rest of us
+| every day I cut back the rust
+| my heart is a muscle
+| the only thing
+| left tensed when I sleep
+| like a face down in the gravel
+| I have to wonder
+| after the workday
+| I scrub at my hands until they grow old
+| I am too young
+| for this
+| what I didn’t make or take still played out
+| plays out
+| every fucking day
+| fucking federals,
+| goddamn fools. Next time kick yourselves out
+| cut your own damn faces up
+| god doesn’t care, he doesn’t give a fuck
+| he’s as tired as the rest of us
 
 *tea/comb:*
 
-I passed the room where I got my first blow-job
-the day I stopped going to church
-the bathroom I took my first pill
-the rundown church where the holy spirit entered me
-the airport I left for Africa
-the street I first got mugged
-the theater where I lost feeling
-for the first time
-to when I was eight
-and lived on a street with fuschia bushes
-and snail-slicked paths
-and football outside everyday
-and, you know,
-it never would have crossed my mind
-there as an eight year old child
-that I'd ever even make it to 29
-and be a man who stood 6'2 and 300 lbs
-with a shaved head and childish lips
-who lived a mile above sea level and laid naked with women
-and didn't believe in god
-who had felt the pentecost
-believing in magic
-sitting with homeless on iona road
-reading bible verses at them
-whose mind, heavy with stalagtites,
-had, one day, just caved in.
-but then, I suspect,
-that no one ever ends where they expected
-or is not horribly changed
-by the arriving
-
-Some days I walk the 2.4 miles across the bridge,
-along the freeway,
-past the man in a Mad Hatter outfit
-spinning a sign selling BBQ Ribs,
-past 3 bus stops where a woman is stuffing her purse with blank slips of paper,
-just to buy a large coffee from the 7-11.
-
-Some days I get so lonely I forget my own name
+| I passed the room where I got my first blow-job
+| the day I stopped going to church
+| the bathroom I took my first pill
+| the rundown church where the holy spirit entered me
+| the airport I left for Africa
+| the street I first got mugged
+| the theater where I lost feeling
+| for the first time
+| to when I was eight
+| and lived on a street with fuschia bushes
+| and snail-slicked paths
+| and football outside everyday
+| and, you know,
+| it never would have crossed my mind
+| there as an eight year old child
+| that I'd ever even make it to 29
+| and be a man who stood 6'2 and 300 lbs
+| with a shaved head and childish lips
+| who lived a mile above sea level and laid naked with women
+| and didn't believe in god
+| who had felt the pentecost
+| believing in magic
+| sitting with homeless on iona road
+| reading bible verses at them
+| whose mind, heavy with stalagtites,
+| had, one day, just caved in.
+| but then, I suspect,
+| that no one ever ends where they expected
+| or is not horribly changed
+| by the arriving
+|
+| Some days I walk the 2.4 miles across the bridge,
+| along the freeway,
+| past the man in a Mad Hatter outfit
+| spinning a sign selling BBQ Ribs,
+| past 3 bus stops where a woman is stuffing her purse with blank slips of paper,
+| just to buy a large coffee from the 7-11.
+|
+| Some days I get so lonely I forget my own name
 
 *bathtub:*
 
-I only notice the ripples
-when I am absolutely still
+| I only notice the ripples
+| when I am absolutely still
 
 *sex
 slow
@@ -473,48 +465,44 @@ breathing*
 
 *Lady GaGa prepares for her death*
 
-I know that I shall meet my fate
-Somewhere among the clouds above;
-Those that I fight I do not hate,
-Those that I guard I do not love;
-
-As I speak
-highly civilized human beings are flying overhead,
-trying to kill me.
-They do not feel any enmity against me
-as an individual,
-nor I against them.
-
-Most of them,
-I have no doubt
-are kind-hearted.
-
-Law-abiding men
-who would never dream of committing murder
-in private life.
-But
-if one of them succeeds
-he will never sleep any the worse for it.
-He is serving his country.
-He will be absolved from evil.
+| I know that I shall meet my fate
+| Somewhere among the clouds above;
+| Those that I fight I do not hate,
+| Those that I guard I do not love;
+| As I speak
+| highly civilized human beings are flying overhead,
+| trying to kill me.
+| They do not feel any enmity against me
+| as an individual,
+| nor I against them.
+| Most of them,
+| I have no doubt
+| are kind-hearted.
+| Law-abiding men
+| who would never dream of committing murder
+| in private life.
+| But
+| if one of them succeeds
+| he will never sleep any the worse for it.
+| He is serving his country.
+| He will be absolved from evil.
 
 *and hangs herself
 while saying:*
 
-my hell comes from inside myself. why fight this?
-no one’s gonna play the harp when you die.
-
-I balanced all, brought all to mind,
-The years to come seemed waste of breath,
-A waste of breath the years behind
-In balance with this life, this death.
+| my hell comes from inside myself. why fight this?
+| no one’s gonna play the harp when you die.
+| I balanced all, brought all to mind,
+| The years to come seemed waste of breath,
+| A waste of breath the years behind
+| In balance with this life, this death.
 
 *Lady Gaga finds a birthday cake
 and lights the candles
 and eats some frosting with her finger*
 
-I'm not fighting because I believe in it
-I'm fighting because I don't know what else to do.
+| I'm not fighting because I believe in it
+| I'm fighting because I don't know what else to do.
 
 *everyone lights candles
 the place becomes holy*
@@ -522,49 +510,48 @@ the place becomes holy*
 *someone arranging fruit
 in neat rows across the entire space:*
 
-my grandmother survived the war barefoot, scavenging other
-people’s inedibles: rotting potatoes, discarded scraps of meat,
-skins, and the bits that clung to bones.
-
-food is not food. it is terror, dignity, gratitude, vengeance,
-joyfulness, humiliation, religion, history, and, of course
-
-love
-
-terror
-
-sacrifice
+| my grandmother survived the war barefoot, scavenging other
+| people’s inedibles: rotting potatoes, discarded scraps of meat,
+| skins, and the bits that clung to bones.
+|
+| food is not food. it is terror, dignity, gratitude, vengeance,
+| joyfulness, humiliation, religion, history, and, of course
+|
+| love
+|
+| terror
+|
+| sacrifice
 
 *they begin to squash the fruit
 beneath their feet*
 
-animals and humans
-entrails
-guts on canvas
-kisses
-guts on canvas
-kisses
-bowing to the blood
-dissolution of the self/ves
-orpheus torn limb from limb
-a lamb's head floating on a river
-dancing/fucking in the guts of a beast
-
-as man breathes, so does the universe
+| animals and humans
+| entrails
+| guts on canvas
+| kisses
+| guts on canvas
+| kisses
+| bowing to the blood
+| dissolution of the self/ves
+| orpheus torn limb from limb
+| a lamb's head floating on a river
+| dancing/fucking in the guts of a beast
+| as man breathes, so does the universe
 
 *Lady GaGa is about to die*
 
-what happens when the heart just stops?
-no more to breathe, no more to grieve, coming home
-remember to live before you die
+| what happens when the heart just stops?
+| no more to breathe, no more to grieve, coming home
+| remember to live before you die
 
 *pause*
 
-make a wish
+| make a wish
 
 *she blows out the candles on her cake*
 
-what else do I have to do today?
+| what else do I have to do today?
 
 *she jumps from the acropolis
 and hangs herself
@@ -583,7 +570,6 @@ A CONSPIRACY OF US
 a sound
 followed by sounds from all around
 a cappella
-which become a pseudo-song
 as there is light
 and everyone moves
 one at a time
