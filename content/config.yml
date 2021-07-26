@@ -25,12 +25,12 @@
 #     url: 'https://www.sitepoint.com/premium/books/jump-start-sass'
 #     image: 'jssass.png'
 #     with:
-#       - name: 'Hugo Giraudel'
-#         url: 'http://hugogiraudel.com/'
+#       - name: 'Kitty Giraudel'
+#         url: 'http://kittygiraudel.com/'
 #       - name: 'SitePoint'
 #         url: 'http://www.sitepoint.com/'
 #     press:
-#       - quote: 'Miriam and Hugo have become some of the most notable
+#       - quote: 'Miriam and Kitty have become some of the most notable
 #                 creators of Sass plugins and best&nbsp;practices.'
 #         credit: 'Chris Eppstein'
 #         source: 'Sass Core Developer'
@@ -79,9 +79,9 @@
 #   #       url: 'http://oddbird.net'
 #   #   press:
 #   #     - quote: 'OMG I just love this tool way too&nbsp;much.'
-#   #       credit: 'Hugo Giraudel'
+#   #       credit: 'Kitty Giraudel'
 #   #       source: 'Sass Developer'
-#   #       url: 'http://hugogiraudel.com/'
+#   #       url: 'http://kittygiraudel.com/'
 #   #   actions:
 #   #     - text: 'start testing'
 #   #       url: 'http://oddbird.net/true'
@@ -436,7 +436,7 @@
 #         url: 'http://oddbird.net/'
 #     press:
 #       - quote: 'If you’re interested in reading Sass poetry, be sure to look at Susy’s source code!'
-#         credit: 'Hugo Giraudel'
+#         credit: 'Kitty Giraudel'
 #         source: 'SitePoint'
 #         url: 'http://www.sitepoint.com/my-favorite-sass-tools/'
 #         datetime: ['2014', '04', '22']

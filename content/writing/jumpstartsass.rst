@@ -8,7 +8,7 @@ publication:
     date: [2016, 3, 22]
 quotes:
   - text: |
-      Miriam and Hugo have become some of the most notable
+      Miriam and Kitty have become some of the most notable
       creators of Sass plugins and best practices.
     credit: 'Chris Eppstein'
     source: 'Sass Core Developer'
@@ -23,7 +23,7 @@ quotes:
     datetime: ['2016', '03', '23']
 actions:
   - name: 'buy the book'
-    url: 'http://www.amazon.com/Jump-Start-Sass-Hugo-Giraudel/dp/0994182678'
+    url: 'https://www.sitepoint.com/premium/books/jump-start-sass'
 brag: |
   Get up to speed with Sass in a weekend…
 summary: |
